@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "policy": "Categories describe negotiated intentions, never execution or extra conditions.",
+  "actions": {
+    "non_aggression_pact": {
+      "root": "mechanic_nap"
+    },
+    "guarantee": {
+      "root": "mechanic_guarantee"
+    },
+    "military_access": {
+      "root": "mechanic_access"
+    },
+    "embargo": {
+      "root": "mechanic_embargo"
+    },
+    "faction_join": {
+      "root": "mechanic_faction"
+    },
+    "territory_partition": {
+      "root": "mechanic_territory"
+    },
+    "white_peace": {
+      "root": "mechanic_peace"
+    },
+    "lift_embargo": {
+      "root": "mechanic_lift"
+    },
+    "political_annexation": {
+      "root": "mechanic_union"
+    },
+    "truce": {
+      "root": "mechanic_truce"
+    },
+    "docking_rights": {
+      "root": "mechanic_docking",
+      "phases": [
+        "proposal",
+        "accept",
+        "reject",
+        "review"
+      ]
+    },
+    "air_base_access": {
+      "root": "mechanic_air",
+      "phases": [
+        "proposal",
+        "accept",
+        "reject",
+        "review"
+      ]
+    },
+    "peace_conference": {
+      "root": "mechanic_conference",
+      "phases": [
+        "proposal",
+        "accept",
+        "reject",
+        "review"
+      ]
+    }
+  },
+  "phases": [
+    "proposal",
+    "clarify",
+    "accept",
+    "reject",
+    "counter_offer",
+    "review"
+  ],
+  "automatic_suffix_phases": [
+    "accept",
+    "reject",
+    "counter_offer"
+  ]
+}

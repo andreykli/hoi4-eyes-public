@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "reject.friendly.001",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "К сожалению, поддержать инициативу {COUNTRY_B} по безопасности мы не можем: обязательства перед {COUNTRY_C} ограничивают {COUNTRY_A}.",
+    "en": "Unfortunately, we cannot support the security initiative of {COUNTRY_B}: obligations towards {COUNTRY_C} constrain {COUNTRY_A}."
+  },
+  {
+    "id": "reject.neutral.002",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}",
+      "{ACTION}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Отказ по {TOPIC} обусловлен процедурой: {COUNTRY_A} не может принять {ACTION} без согласования позиций с {COUNTRY_C}.",
+    "en": "Refusal on {TOPIC} is due to procedure: {COUNTRY_A} cannot accept {ACTION} without aligning positions with {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.003",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{ACTION}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Нынешние обстоятельства не позволяют {COUNTRY_A} поддержать {ACTION}; вопрос требует проработки с {COUNTRY_C}.",
+    "en": "Under present circumstances {COUNTRY_A} does not consider it possible to support {ACTION}; the matter requires further work with {COUNTRY_C}."
+  },
+  {
+    "id": "reject.solemn.004",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_C}",
+      "{ACTION}"
+    ],
+    "ru": "Со всей серьёзностью заявляем: обязательства {COUNTRY_A} перед {COUNTRY_C} не позволяют принять {ACTION}.",
+    "en": "Full gravity is required here: obligations of {COUNTRY_A} towards {COUNTRY_C} do not permit accepting {ACTION}."
+  },
+  {
+    "id": "reject.compromising.005",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{ACTION}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ценим готовность {COUNTRY_B} к взаимным уступкам, но {ACTION} в нынешнем виде {COUNTRY_A} принять не может.",
+    "en": "Readiness of {COUNTRY_B} for mutual concessions is valued, but {COUNTRY_A} cannot accept {ACTION} in its current form."
+  },
+  {
+    "id": "reject.conciliatory.006",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{ACTION}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Просим не истолковывать наш ответ как недоверие: {COUNTRY_A} не может поддержать {ACTION} из-за обязательств перед {COUNTRY_C}.",
+    "en": "Please do not read our answer as distrust: {COUNTRY_A} cannot support {ACTION} because of obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.friendly.007",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Сожалеем, что не сможем присоединиться к {TREATY_TYPE}: для {COUNTRY_A} условия {TERMS} неприемлемы, хотя мы ценим вашу открытость.",
+    "en": "It is with regret that we will not be able to join the {TREATY_TYPE}: for {COUNTRY_A} the {TERMS} are unacceptable, though we value your openness."
+  },
+  {
+    "id": "reject.neutral.008",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Условия {TERMS} не соответствуют нашим обязательствам перед {COUNTRY_C}, поэтому {COUNTRY_A} отклоняет {TREATY_TYPE}.",
+    "en": "The {TERMS} do not correspond to our obligations towards {COUNTRY_C}, therefore {COUNTRY_A} rejects the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.cautious.009",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Осторожно оценивая {TERMS}, мы не можем присоединиться к {TREATY_TYPE}: нужны консультации с {COUNTRY_C}.",
+    "en": "Assessing the {TERMS} cautiously, we cannot join the {TREATY_TYPE}: consultations with {COUNTRY_C} are needed."
+  },
+  {
+    "id": "reject.solemn.010",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Торжественно подтверждаем верность взятым обязательствам, однако {TREATY_TYPE} в нынешнем виде {COUNTRY_A} подписать не может.",
+    "en": "Solemnly we reaffirm our commitment to the obligations undertaken; however, {COUNTRY_A} cannot sign the {TREATY_TYPE} in its current form."
+  },
+  {
+    "id": "reject.compromising.011",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{TERMS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Позиции по {TOPIC} ближе, чем кажется, однако условия {TERMS} для {COUNTRY_A} всё же неприемлемы.",
+    "en": "Positions on {TOPIC} are closer than they seem, however the {TERMS} are still unacceptable to {COUNTRY_A}."
+  },
+  {
+    "id": "reject.conciliatory.012",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Заверяем {COUNTRY_B} в уважении: {TERMS} нам не подходят, но это не охлаждение отношений, а лишь отказ от {TREATY_TYPE}.",
+    "en": "Rest assured of our respect, {COUNTRY_B}: the {TERMS} do not suit us, yet this is not a cooling of relations but only a refusal of the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.friendly.013",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Относимся с теплотой к {COUNTRY_B}, но территориальный вопрос в рамках {TREATY_TYPE} решить на этих условиях мы не готовы и вынуждены отказаться.",
+    "en": "Warmly disposed towards {COUNTRY_B} as we are, we are not ready to settle the territorial question under the {TREATY_TYPE} on these terms and must decline."
+  },
+  {
+    "id": "reject.neutral.014",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Вопрос о территории не согласован, и {COUNTRY_A} не может подписать {TREATY_TYPE} на этих условиях.",
+    "en": "No agreement has been reached on the territorial question, and {COUNTRY_A} cannot sign the {TREATY_TYPE} on these terms."
+  },
+  {
+    "id": "reject.cautious.015",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорная территория требует осторожности: {COUNTRY_A} не может дать согласия без обсуждения с {COUNTRY_B}.",
+    "en": "A disputed territory requires caution: {COUNTRY_A} cannot give consent without discussion with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.solemn.016",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Земли и границы — предмет высшей ответственности, и {COUNTRY_A} не даёт согласия на {TOPIC}.",
+    "en": "Land and borders are a matter of the highest responsibility, and {COUNTRY_A} does not consent to {TOPIC}."
+  },
+  {
+    "id": "reject.compromising.017",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Идя навстречу {COUNTRY_B}, мы готовы обсудить детали, но передачу территории по {TREATY_TYPE} не примем.",
+    "en": "Meeting {COUNTRY_B} halfway, we are ready to discuss details, but we will not accept the transfer of territory under the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.conciliatory.018",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Мирное решение территориального спора остаётся нашей целью, но {TOPIC} в нынешнем виде {COUNTRY_A} принять не может.",
+    "en": "Peaceful settlement of the territorial dispute remains our goal, but {COUNTRY_A} cannot accept {TOPIC} in its current form."
+  },
+  {
+    "id": "reject.friendly.019",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Дружески благодарим за приглашение в союз, однако {COUNTRY_A} не может принять его: союзные обязательства перед {COUNTRY_C} уже определяют нашу линию.",
+    "en": "Thank you warmly for the invitation to an alliance; yet {COUNTRY_A} cannot accept it: allied obligations towards {COUNTRY_C} already define our course."
+  },
+  {
+    "id": "reject.neutral.020",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Предложение о союзе отклоняется: {TREATY_TYPE} не учитывает действующие обязательства {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Alliance proposal declined: the {TREATY_TYPE} does not take into account {COUNTRY_A}'s existing obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.021",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Возможность союза с {COUNTRY_B} в принципе не исключена, однако {TREATY_TYPE} в нынешнем виде {COUNTRY_A} принять не может.",
+    "en": "Union with {COUNTRY_B} is not excluded in principle, however {COUNTRY_A} cannot accept the {TREATY_TYPE} in its current form."
+  },
+  {
+    "id": "reject.solemn.022",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Долг перед {COUNTRY_C} выше соображений удобства, поэтому {TREATY_TYPE} {COUNTRY_A} не подпишет.",
+    "en": "Duty towards {COUNTRY_C} stands above considerations of convenience, therefore {COUNTRY_A} will not sign the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.compromising.023",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Стремление {COUNTRY_B} к союзу нам понятно, и мы не отвергаем его с порога, однако {TREATY_TYPE} сейчас неприемлем.",
+    "en": "Aspiration of {COUNTRY_B} for an alliance is understandable, and we do not dismiss it out of hand, however the {TREATY_TYPE} is unacceptable at present."
+  },
+  {
+    "id": "reject.conciliatory.024",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Дружба с {COUNTRY_B} для нас дорога, и именно поэтому мы не хотим связывать её с {TREATY_TYPE}, который сейчас неприемлем.",
+    "en": "Friendship with {COUNTRY_B} is dear to us, and that is why we do not wish to tie it to the {TREATY_TYPE}, which is unacceptable at present."
+  },
+  {
+    "id": "reject.friendly.025",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Признаём важность предложения {COUNTRY_B}, но суверенитет {COUNTRY_A} не позволяет нам принять внешние {CONDITIONS}.",
+    "en": "Recognising the importance of {COUNTRY_B}'s proposal, we state that the sovereignty of {COUNTRY_A} does not allow us to accept external {CONDITIONS}."
+  },
+  {
+    "id": "reject.neutral.026",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенитет {COUNTRY_A} не может быть предметом {TREATY_TYPE}: наша линия здесь неизменна.",
+    "en": "Sovereignty of {COUNTRY_A} cannot be the subject of the {TREATY_TYPE}: our line here is unchanged."
+  },
+  {
+    "id": "reject.cautious.027",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Любое ограничение суверенитета {COUNTRY_A} требует внутреннего согласования, которого у нас нет; поэтому {TOPIC} отклоняется.",
+    "en": "Any limitation of {COUNTRY_A}'s sovereignty requires internal approval that we do not have; therefore {TOPIC} is declined."
+  },
+  {
+    "id": "reject.solemn.028",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Незыблемость суверенитета {COUNTRY_A} не подлежит торгу; предложение {COUNTRY_B} по {TOPIC} отклоняется.",
+    "en": "Inviolability of {COUNTRY_A}'s sovereignty is not subject to bargaining; {COUNTRY_B}'s proposal on {TOPIC} is declined."
+  },
+  {
+    "id": "reject.compromising.029",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Уступки возможны во многом, но не в суверенных правах {COUNTRY_A}; поэтому {TOPIC} мы не примем.",
+    "en": "Concessions are possible in many areas, but not in {COUNTRY_A}'s sovereign rights; therefore we will not accept {TOPIC}."
+  },
+  {
+    "id": "reject.conciliatory.030",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Извините за категоричность, но суверенитет {COUNTRY_A} не предмет уступок, и на {TOPIC} мы ответим отказом.",
+    "en": "Forgive us for being categorical, but {COUNTRY_A}'s sovereignty is not a matter for concessions, and we will answer {TOPIC} with a refusal."
+  },
+  {
+    "id": "reject.friendly.031",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "По-дружески ценим ваш шаг, но экономические обязательства перед {COUNTRY_C} не дают {COUNTRY_A} согласиться на {TERMS}.",
+    "en": "In a friendly spirit we value your step, but economic obligations towards {COUNTRY_C} do not allow {COUNTRY_A} to agree to the {TERMS}."
+  },
+  {
+    "id": "reject.neutral.032",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Экономические статьи {TREATY_TYPE} требуют дополнительной проверки, и {COUNTRY_A} не принимает {TERMS}.",
+    "en": "Economic articles of the {TREATY_TYPE} require further review, and {COUNTRY_A} does not accept the {TERMS}."
+  },
+  {
+    "id": "reject.cautious.033",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Сомнения вызывает экономическая часть {TREATY_TYPE}: без консультаций с {COUNTRY_C} {COUNTRY_A} не примет {TERMS}.",
+    "en": "Doubts are raised by the economic part of the {TREATY_TYPE}: without consultations with {COUNTRY_C}, {COUNTRY_A} will not accept the {TERMS}."
+  },
+  {
+    "id": "reject.solemn.034",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Груз обязательств перед {COUNTRY_C} не позволяет {COUNTRY_A} принять экономические {TERMS}.",
+    "en": "Burden of obligations towards {COUNTRY_C} does not allow {COUNTRY_A} to accept the {TERMS}."
+  },
+  {
+    "id": "reject.compromising.035",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Добрые отношения с {COUNTRY_B} важны, но экономические {TERMS} несовместимы с обязательствами {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Good relations with {COUNTRY_B} matter, but the economic {TERMS} are incompatible with {COUNTRY_A}'s obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.conciliatory.036",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Огорчительно, если ответ разочарует: экономические {TERMS} несовместимы с обязательствами {COUNTRY_A} перед {COUNTRY_C}, но добрые чувства остаются.",
+    "en": "Regrettably, the answer may disappoint: the economic {TERMS} are incompatible with {COUNTRY_A}'s obligations towards {COUNTRY_C}, but our good feelings remain."
+  },
+  {
+    "id": "reject.friendly.037",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Жаль, что не сможем подписать документ сейчас: по протоколу {COUNTRY_A} нуждается в предварительном согласовании с {COUNTRY_B}.",
+    "en": "We regret that we cannot sign the document today: under protocol, {COUNTRY_A} requires prior coordination with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.neutral.038",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{ACTION}",
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "По регламенту {ACTION} требует предварительного уведомления {COUNTRY_B}; без этого {COUNTRY_A} не даёт согласия.",
+    "en": "Under the rules, {ACTION} requires prior notification of {COUNTRY_B}; without it, {COUNTRY_A} does not consent."
+  },
+  {
+    "id": "reject.cautious.039",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Прежде чем подписывать {TREATY_TYPE}, необходимо убедиться в соблюдении процедуры; без этого {COUNTRY_A} не даёт согласия.",
+    "en": "Before signing the {TREATY_TYPE}, compliance with procedure must be verified; without that, {COUNTRY_A} does not consent."
+  },
+  {
+    "id": "reject.solemn.040",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Соблюдение протокола есть долг, а не формальность: без согласования с {COUNTRY_B} {COUNTRY_A} не подпишет {TREATY_TYPE}.",
+    "en": "Observing protocol is a duty, not a formality: without coordination with {COUNTRY_B}, {COUNTRY_A} will not sign the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.compromising.041",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Разумный компромисс по процедуре был бы полезен, однако предложенный порядок подписания {TREATY_TYPE} {COUNTRY_A} не устраивает.",
+    "en": "A reasonable compromise on procedure would be useful, however the proposed procedure for signing the {TREATY_TYPE} does not suit {COUNTRY_A}."
+  },
+  {
+    "id": "reject.conciliatory.042",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Простите за формальность: по процедуре {TREATY_TYPE} {COUNTRY_A} не может обойти консультации с {COUNTRY_B}.",
+    "en": "Forgive the formality: under the procedure of the {TREATY_TYPE}, {COUNTRY_A} cannot bypass consultations with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.friendly.043",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Не сердитесь за этот ответ: присоединиться к {TOPIC} мы не в состоянии, но двери для разговора остаются открытыми.",
+    "en": "Please do not take this answer amiss: we are not in a position to join {TOPIC}, but the door for conversation remains open."
+  },
+  {
+    "id": "reject.neutral.044",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ответ на {TOPIC} отрицательный: в текущей редакции документ не может быть одобрен {COUNTRY_A}.",
+    "en": "Answer on {TOPIC}: negative, since in its current wording the document cannot be approved by {COUNTRY_A}."
+  },
+  {
+    "id": "reject.cautious.045",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Осторожность диктует отказ: {TOPIC} затрагивает интересы {COUNTRY_A} слишком глубоко для поспешного решения.",
+    "en": "Caution dictates refusal: {TOPIC} affects {COUNTRY_A}'s interests too deeply for a hasty decision."
+  },
+  {
+    "id": "reject.solemn.046",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Принимая во внимание всю тяжесть {TOPIC}, {COUNTRY_A} отвечает отказом; иного ответа ответственность перед нашими гражданами не допускает.",
+    "en": "Taking into account the full weight of {TOPIC}, {COUNTRY_A} answers with a refusal; responsibility before our citizens allows no other answer."
+  },
+  {
+    "id": "reject.compromising.047",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Мы высоко ценим встречные шаги {COUNTRY_B}, но по {TOPIC} отказ {COUNTRY_A} остаётся в силе.",
+    "en": "Reciprocal steps of {COUNTRY_B} are highly valued, but on {TOPIC} {COUNTRY_A}'s refusal stands."
+  },
+  {
+    "id": "reject.conciliatory.048",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Нам жаль, что приходится отказывать по {TOPIC}; заверяем, что относимся к {COUNTRY_B} с неизменным уважением.",
+    "en": "With sorrow we must refuse on {TOPIC}; we assure you that we hold {COUNTRY_B} in unchanging respect."
+  },
+  {
+    "id": "reject.friendly.049",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Симпатия к {COUNTRY_B} у нас велика, однако {CONDITIONS} в сфере безопасности несовместимы с обязательствами перед {COUNTRY_C}.",
+    "en": "Our sympathy for {COUNTRY_B} is considerable, yet the {CONDITIONS} in the security sphere are incompatible with our obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.neutral.050",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Соглашение по безопасности не может быть заключено, поскольку {CONDITIONS} не согласуются с гарантиями, данными {COUNTRY_C}.",
+    "en": "No security agreement can be concluded, since the {CONDITIONS} are inconsistent with the guarantees given to {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.051",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Без полной картины по {TOPIC} мы воздерживаемся от согласия; нужны консультации с {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Without the full picture on {TOPIC}, we withhold consent; consultations with {COUNTRY_B} and {COUNTRY_C} are needed."
+  },
+  {
+    "id": "reject.solemn.052",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Мир и безопасность требуют осмотрительности: {CONDITIONS} не могут быть приняты {COUNTRY_A} без ущерба для обязательств перед {COUNTRY_C}.",
+    "en": "Peace and security require prudence: the {CONDITIONS} cannot be accepted by {COUNTRY_A} without harm to obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.compromising.053",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{CONDITIONS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Общая цель по {TOPIC} совпадает, но средства {CONDITIONS} расходятся с линией {COUNTRY_A}, поэтому участия не будет.",
+    "en": "The common goal on {TOPIC} coincides, but the means in {CONDITIONS} diverge from {COUNTRY_A}'s line, so there will be no participation."
+  },
+  {
+    "id": "reject.conciliatory.054",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Уверяем, что отказ не направлен против {COUNTRY_B}: {CONDITIONS} задевают обязательства {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Be assured that the refusal is not directed against {COUNTRY_B}: the {CONDITIONS} affect {COUNTRY_A}'s obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.friendly.055",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Тёплые отношения с {COUNTRY_B} для нас важны, но торговые обязательства перед {COUNTRY_C} не позволяют {COUNTRY_A} принять {TERMS}.",
+    "en": "Warm relations with {COUNTRY_B} matter to us, but trade obligations towards {COUNTRY_C} do not allow {COUNTRY_A} to accept the {TERMS}."
+  },
+  {
+    "id": "reject.neutral.056",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Тарифные статьи {TREATY_TYPE} мы не принимаем: они противоречат торговым обязательствам {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Tariff articles of the {TREATY_TYPE} are not accepted: they conflict with {COUNTRY_A}'s trade obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.057",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Взвесив торговые последствия {TERMS}, {COUNTRY_A} не может принять {TREATY_TYPE} без согласования с {COUNTRY_C}.",
+    "en": "After weighing the trade consequences of the {TERMS}, {COUNTRY_A} cannot accept the {TREATY_TYPE} without coordination with {COUNTRY_C}."
+  },
+  {
+    "id": "reject.solemn.058",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Уважение к договору не означает согласия на любой текст: {TREATY_TYPE} в нынешней редакции {COUNTRY_A} отклоняет.",
+    "en": "Respect for treaties does not mean consent to any text: {COUNTRY_A} rejects the {TREATY_TYPE} in its current wording."
+  },
+  {
+    "id": "reject.compromising.059",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}",
+      "{COUNTRY_C}",
+      "{TOPIC}"
+    ],
+    "ru": "Добрая воля {COUNTRY_A} остаётся, однако {TERMS} в торговле с {COUNTRY_C} неприемлемы, и {TOPIC} отклоняется.",
+    "en": "Good will of {COUNTRY_A} remains, however the {TERMS} in trade with {COUNTRY_C} are unacceptable, and {TOPIC} is declined."
+  },
+  {
+    "id": "reject.conciliatory.060",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обиды тут нет: {TERMS} просто не согласуются с торговыми обязательствами {COUNTRY_A}, и {TREATY_TYPE} подписан не будет.",
+    "en": "There is no offence here: the {TERMS} simply do not accord with {COUNTRY_A}'s trade obligations, and the {TREATY_TYPE} will not be signed."
+  },
+  {
+    "id": "reject.friendly.061",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Отрадно видеть стремление {COUNTRY_B} к сближению; тем не менее {TREATY_TYPE} в нынешнем виде {COUNTRY_A} принять не может.",
+    "en": "It is heartening to see {COUNTRY_B}'s desire for closer ties; nevertheless, {COUNTRY_A} cannot accept the {TREATY_TYPE} in its current form."
+  },
+  {
+    "id": "reject.neutral.062",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Присоединение к {TREATY_TYPE} невозможно: устав союза не допускает одновременного участия с {COUNTRY_C}.",
+    "en": "Joining the {TREATY_TYPE} is impossible: the alliance charter does not allow simultaneous participation with {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.063",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Участие в {TREATY_TYPE} требует осторожного подхода: у {COUNTRY_A} сохраняются обязательства перед {COUNTRY_C}.",
+    "en": "Participation in the {TREATY_TYPE} requires a cautious approach: {COUNTRY_A} retains obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.solemn.064",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Верность союзному слову не позволяет {COUNTRY_A} войти в {TREATY_TYPE} ввиду действующих обязательств перед {COUNTRY_C}.",
+    "en": "Fidelity to our allied word does not allow {COUNTRY_A} to enter the {TREATY_TYPE} in view of existing obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.compromising.065",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Встречное движение ценим, но в {TREATY_TYPE} участвовать {COUNTRY_A} не станет, чтобы не нарушить обязательства перед {COUNTRY_C}.",
+    "en": "Appreciating the reciprocal movement, we must say that {COUNTRY_A} will not take part in the {TREATY_TYPE} so as not to breach obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.conciliatory.066",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Расположение к {COUNTRY_B} неизменно, однако {TREATY_TYPE} мы вынуждены отклонить, сохраняя добрую волю.",
+    "en": "Regard for {COUNTRY_B} is unchanged, yet we are compelled to decline the {TREATY_TYPE}, keeping good will."
+  },
+  {
+    "id": "reject.friendly.067",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ваше понимание территориального вопроса мы ценим, но передача территории по {TREATY_TYPE} для {COUNTRY_A} неприемлема.",
+    "en": "Your understanding of the territorial question is appreciated, but the transfer of territory under the {TREATY_TYPE} is unacceptable to {COUNTRY_A}."
+  },
+  {
+    "id": "reject.neutral.068",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Территориальные претензии в рамках {TOPIC} {COUNTRY_A} не признаёт, поэтому {TREATY_TYPE} не может быть подписан.",
+    "en": "Territorial claims within {TOPIC} are not recognised by {COUNTRY_A}, so the {TREATY_TYPE} cannot be signed."
+  },
+  {
+    "id": "reject.cautious.069",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Границы — вопрос, где осторожность важнее скорости, поэтому {COUNTRY_A} не может согласиться на {TOPIC} в предложенном виде.",
+    "en": "Borders are a matter where caution matters more than speed, therefore {COUNTRY_A} cannot agree to {TOPIC} in the proposed form."
+  },
+  {
+    "id": "reject.solemn.070",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "О территориальной целостности не торгуются; {TOPIC} в предложенном виде {COUNTRY_A} не примет.",
+    "en": "Territorial integrity is not a subject of bargaining; {COUNTRY_A} will not accept {TOPIC} in the proposed form."
+  },
+  {
+    "id": "reject.compromising.071",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Спор о территории можно смягчить, однако {TREATY_TYPE} в нынешнем виде {COUNTRY_A} принять не может.",
+    "en": "Dispute over territory can be softened, however {COUNTRY_A} cannot accept the {TREATY_TYPE} in its current form."
+  },
+  {
+    "id": "reject.conciliatory.072",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Пусть не останется обиды: территориальный вопрос слишком сложен, и {COUNTRY_A} не может решить его в рамках {TOPIC}.",
+    "en": "Let there be no resentment: the territorial question is too complex, and {COUNTRY_A} cannot settle it within {TOPIC}."
+  },
+  {
+    "id": "reject.friendly.073",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "При всём уважении к {COUNTRY_B} мы не можем поступиться суверенитетом {COUNTRY_A} ради {TOPIC}.",
+    "en": "With all due respect to {COUNTRY_B}, we cannot compromise the sovereignty of {COUNTRY_A} for the sake of {TOPIC}."
+  },
+  {
+    "id": "reject.neutral.074",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Государственный суверенитет не подлежит обсуждению в обмен на {TERMS}; {COUNTRY_A} отклоняет предложение.",
+    "en": "State sovereignty is not open to negotiation in exchange for the {TERMS}; {COUNTRY_A} rejects the proposal."
+  },
+  {
+    "id": "reject.cautious.075",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенные права не обсуждаются в спешке, поэтому {COUNTRY_A} отклоняет текущую редакцию {TOPIC}.",
+    "en": "Sovereign rights are not discussed in haste, so {COUNTRY_A} rejects the current version of {TOPIC}."
+  },
+  {
+    "id": "reject.solemn.076",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Высшим благом остаётся самостоятельность {COUNTRY_A}; во имя неё {TOPIC} отклоняется без колебаний.",
+    "en": "Highest good remains the independence of {COUNTRY_A}; in its name {TOPIC} is declined without hesitation."
+  },
+  {
+    "id": "reject.compromising.077",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Гибкость в переговорах приветствуем, но гибкости в вопросе суверенитета {COUNTRY_A} быть не может, и {TOPIC} отклоняется.",
+    "en": "Flexibility in negotiations is welcome, but there can be no flexibility on the question of {COUNTRY_A}'s sovereignty, and {TOPIC} is declined."
+  },
+  {
+    "id": "reject.conciliatory.078",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Приносим извинения за твёрдость: суверенные права {COUNTRY_A} не обсуждаются, и {TOPIC} остаётся без согласия.",
+    "en": "Apologising for our firmness: {COUNTRY_A}'s sovereign rights are not negotiable, and {TOPIC} remains without consent."
+  },
+  {
+    "id": "reject.friendly.079",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Любезно благодарим за расчёты по {TOPIC}, однако бюджетные обязательства {COUNTRY_A} перед {COUNTRY_C} не допускают таких расходов.",
+    "en": "Many thanks for the calculations on {TOPIC}; however, {COUNTRY_A}'s budgetary obligations towards {COUNTRY_C} do not permit such expenditure."
+  },
+  {
+    "id": "reject.neutral.080",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Оценка такова: {CONDITIONS} невыполнимы для экономики {COUNTRY_A}, поэтому участие отклоняется.",
+    "en": "Our assessment is as follows: the {CONDITIONS} are unattainable for the economy of {COUNTRY_A}, so participation is declined."
+  },
+  {
+    "id": "reject.cautious.081",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Финансовые последствия {TOPIC} ещё не ясны, и {COUNTRY_A} не берёт на себя такие обязательства.",
+    "en": "Financial consequences of {TOPIC} are not yet clear, and {COUNTRY_A} does not assume such obligations."
+  },
+  {
+    "id": "reject.solemn.082",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Ответственность перед будущим требует отказа: экономические {TERMS} несовместимы с обязательствами {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Responsibility before the future requires refusal: the economic {TERMS} are incompatible with {COUNTRY_A}'s obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.compromising.083",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{TERMS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Компромисс по {TOPIC} мыслим лишь в деталях, а не в {TERMS}, которые {COUNTRY_A} принять не может.",
+    "en": "Compromise on {TOPIC} is conceivable only in details, not in the {TERMS}, which {COUNTRY_A} cannot accept."
+  },
+  {
+    "id": "reject.conciliatory.084",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Глубоко сожалеем, что экономические {TERMS} не позволяют {COUNTRY_A} поддержать {TOPIC}; вины {COUNTRY_B} в этом нет.",
+    "en": "Deep regret: the economic {TERMS} do not allow {COUNTRY_A} to support {TOPIC}; {COUNTRY_B} bears no blame for this."
+  },
+  {
+    "id": "reject.friendly.085",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Досадно, но без соблюдения формальностей {TREATY_TYPE} {COUNTRY_A} не может поставить подпись; нужны консультации с {COUNTRY_B}.",
+    "en": "It is a pity, but without observing the formalities of the {TREATY_TYPE}, {COUNTRY_A} cannot sign; consultations with {COUNTRY_B} are required."
+  },
+  {
+    "id": "reject.neutral.086",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Формальная сторона {TREATY_TYPE} не завершена, и {COUNTRY_A} не может зафиксировать договорённость.",
+    "en": "Formal side of the {TREATY_TYPE} is not complete, and {COUNTRY_A} cannot record the agreement."
+  },
+  {
+    "id": "reject.cautious.087",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Процедура не позволяет обойти согласование с {COUNTRY_B}: {COUNTRY_A} отказывается подписывать {TREATY_TYPE}.",
+    "en": "Procedure does not allow bypassing coordination with {COUNTRY_B}: {COUNTRY_A} declines to sign the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.solemn.088",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Надлежащее оформление {TREATY_TYPE} отсутствует, и {COUNTRY_A} не станет подписывать его в спешке.",
+    "en": "Proper formalisation of the {TREATY_TYPE} is absent, and {COUNTRY_A} will not sign it in haste."
+  },
+  {
+    "id": "reject.compromising.089",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Уважая ваши процедурные усилия, {COUNTRY_A} всё же не подпишет {TREATY_TYPE} без консультаций с {COUNTRY_B}.",
+    "en": "Respecting your procedural efforts, {COUNTRY_A} still will not sign the {TREATY_TYPE} without consultations with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.conciliatory.090",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Виноваты обстоятельства, а не вы: порядок {TREATY_TYPE} требует консультаций с {COUNTRY_B}, и {COUNTRY_A} не может подписать.",
+    "en": "Circumstances are to blame, not you: the procedure of the {TREATY_TYPE} requires consultations with {COUNTRY_B}, and {COUNTRY_A} cannot sign."
+  },
+  {
+    "id": "reject.friendly.091",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{ACTION}"
+    ],
+    "ru": "Хотели бы найти общий язык по {TOPIC}, но поддержать {ACTION} сейчас не можем.",
+    "en": "Much as we would like to find common ground on {TOPIC}, we cannot support {ACTION} at present."
+  },
+  {
+    "id": "reject.neutral.092",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Рассмотрев {TOPIC}, {COUNTRY_A} не находит оснований для согласия и отклоняет обращение {COUNTRY_B}.",
+    "en": "Having considered {TOPIC}, {COUNTRY_A} finds no grounds for consent and declines the request of {COUNTRY_B}."
+  },
+  {
+    "id": "reject.cautious.093",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{ACTION}"
+    ],
+    "ru": "После зрелого размышления {COUNTRY_A} не видит достаточных оснований для {ACTION} и предпочитает отказаться.",
+    "en": "After mature reflection {COUNTRY_A} sees insufficient grounds for {ACTION} and prefers to decline."
+  },
+  {
+    "id": "reject.solemn.094",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{ACTION}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "С честью принимаем вашу настойчивость, но {ACTION} противоречит обязательствам {COUNTRY_A}, и мы говорим «нет».",
+    "en": "We honour your persistence, but {ACTION} contradicts {COUNTRY_A}'s obligations, and we say no."
+  },
+  {
+    "id": "reject.compromising.095",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Двигаться навстречу по {TOPIC} мы готовы, но {CONDITIONS} остаются неприемлемыми.",
+    "en": "Ready to move towards you on {TOPIC} we are, but the {CONDITIONS} remain unacceptable."
+  },
+  {
+    "id": "reject.conciliatory.096",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наш отказ по {TOPIC} продиктован заботой об отношениях, а не холодностью; благодарим {COUNTRY_B} за понимание.",
+    "en": "The refusal on {TOPIC} is dictated by care for the relationship, not by coldness; we thank {COUNTRY_B} for understanding."
+  },
+  {
+    "id": "reject.friendly.097",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{ACTION}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Дорогие партнёры, мы искренне сожалеем, что не можем разделить ответственность за {ACTION} без согласования с {COUNTRY_C}.",
+    "en": "Dear partners, we sincerely regret that we cannot share responsibility for {ACTION} without coordination with {COUNTRY_C}."
+  },
+  {
+    "id": "reject.neutral.098",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Данное предложение по безопасности требует консультаций с {COUNTRY_C}, без которых {COUNTRY_A} не может ответить согласием.",
+    "en": "This security proposal requires consultations with {COUNTRY_C}, without which {COUNTRY_A} cannot answer affirmatively."
+  },
+  {
+    "id": "reject.cautious.099",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Настороженно относимся к формулировкам {CONDITIONS}: они допускают толкования, несовместимые с безопасностью {COUNTRY_A}, поэтому согласия не будет.",
+    "en": "Wary of the wording of the {CONDITIONS}, we note they allow interpretations incompatible with {COUNTRY_A}'s security, so there will be no consent."
+  },
+  {
+    "id": "reject.solemn.100",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_C}",
+      "{ACTION}"
+    ],
+    "ru": "Безопасность {COUNTRY_A} зиждется на обязательствах перед {COUNTRY_C}, которые {ACTION} поколебал бы; отказ неизбежен.",
+    "en": "Security of {COUNTRY_A} rests on obligations towards {COUNTRY_C} that {ACTION} would shake; refusal is inevitable."
+  },
+  {
+    "id": "reject.compromising.101",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{ACTION}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Компромиссный дух {COUNTRY_B} заслуживает уважения; тем не менее {ACTION} не может быть поддержано {COUNTRY_A}.",
+    "en": "Conciliatory spirit of {COUNTRY_B} deserves respect; nevertheless {ACTION} cannot be supported by {COUNTRY_A}."
+  },
+  {
+    "id": "reject.conciliatory.102",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{ACTION}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Понимаем ваше разочарование и разделяем его; однако {ACTION} задевает обязательства {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Understanding your disappointment, we share it; however {ACTION} affects {COUNTRY_A}'s obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.friendly.103",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Сердечно признательны за предложение по {TOPIC}, но режим торговли с {COUNTRY_C} не позволяет {COUNTRY_A} изменить условия {TERMS}.",
+    "en": "Sincere gratitude for the proposal on {TOPIC}, but our trade regime with {COUNTRY_C} does not allow {COUNTRY_A} to change the {TERMS}."
+  },
+  {
+    "id": "reject.neutral.104",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговый режим с {COUNTRY_C} исключает {TERMS}, поэтому {COUNTRY_A} отклоняет {TREATY_TYPE}.",
+    "en": "Trade regime with {COUNTRY_C} excludes the {TERMS}, therefore {COUNTRY_A} rejects the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.cautious.105",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_C}",
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Риски для торговли с {COUNTRY_C} слишком велики: {COUNTRY_A} не принимает {TERMS} без длительной проверки.",
+    "en": "Risks for trade with {COUNTRY_C} are too great: {COUNTRY_A} does not accept the {TERMS} without lengthy review."
+  },
+  {
+    "id": "reject.solemn.106",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Хранить верность договору — значит не подписывать необдуманных текстов; {COUNTRY_A} отклоняет {TERMS}.",
+    "en": "To keep faith with treaties means not signing ill-considered texts; {COUNTRY_A} rejects the {TERMS}."
+  },
+  {
+    "id": "reject.compromising.107",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Торговые разногласия можно сгладить, однако {TERMS} в нынешнем виде {COUNTRY_A} не подпишет.",
+    "en": "Trade differences can be smoothed over, however {COUNTRY_A} will not sign the {TERMS} in their current form."
+  },
+  {
+    "id": "reject.conciliatory.108",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Тяжело огорчать {COUNTRY_B}, но {TERMS} неприемлемы для {COUNTRY_A}, и от {TOPIC} приходится отказаться.",
+    "en": "Sorry to disappoint {COUNTRY_B}, but the {TERMS} are unacceptable to {COUNTRY_A}, and {TOPIC} has to be declined."
+  },
+  {
+    "id": "reject.friendly.109",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Искренне рады нашему диалогу, однако вступление в {TREATY_TYPE} противоречит обязательствам {COUNTRY_A} перед {COUNTRY_C}.",
+    "en": "Sincerely glad of our dialogue, we must note that joining the {TREATY_TYPE} contradicts {COUNTRY_A}'s obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.neutral.110",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Намерение заключить {TREATY_TYPE} не может быть реализовано: у {COUNTRY_A} есть обязательства перед {COUNTRY_C}.",
+    "en": "Intention to conclude the {TREATY_TYPE} cannot be realised: {COUNTRY_A} has obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.cautious.111",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сближение с {COUNTRY_B} требует времени, а {TREATY_TYPE} в нынешней редакции мы принять не рискуем.",
+    "en": "Closer ties with {COUNTRY_B} take time, and we do not venture to accept the {TREATY_TYPE} in its current wording."
+  },
+  {
+    "id": "reject.solemn.112",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Союзное слово священно, и именно поэтому {COUNTRY_A} не даёт согласия на {TREATY_TYPE} при действующих обязательствах перед {COUNTRY_C}.",
+    "en": "An allied word is sacred, and that is precisely why {COUNTRY_A} does not consent to the {TREATY_TYPE} with existing obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.compromising.113",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_C}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Союзный формат остаётся для нас открытой темой, но {TREATY_TYPE} с обязательствами перед {COUNTRY_C} несовместим, и {COUNTRY_A} отказывается.",
+    "en": "Alliance format remains an open topic for us, but the {TREATY_TYPE} is incompatible with obligations towards {COUNTRY_C}, and {COUNTRY_A} declines."
+  },
+  {
+    "id": "reject.conciliatory.114",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ссориться из-за {TREATY_TYPE} не станем: отказ по союзу не означает вражды, и {COUNTRY_A} это подчёркивает.",
+    "en": "There will be no quarrel over the {TREATY_TYPE}: a refusal on the alliance does not mean enmity, and {COUNTRY_A} stresses this."
+  },
+  {
+    "id": "reject.friendly.115",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Увы, {TOPIC} в предложенном виде мы принять не можем; надеемся сохранить добрые отношения с {COUNTRY_B}.",
+    "en": "Alas, we cannot accept {TOPIC} in the proposed form; we hope to preserve good relations with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.neutral.116",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Отрицательный ответ на {TOPIC} сохраняется: обстоятельства не позволяют {COUNTRY_A} согласиться.",
+    "en": "Our negative answer on {TOPIC} stands: circumstances do not permit {COUNTRY_A} to consent."
+  },
+  {
+    "id": "reject.cautious.117",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}",
+      "{COUNTRY_C}"
+    ],
+    "ru": "Непростое решение: {COUNTRY_A} склоняется к отказу, поскольку {TOPIC} задевает обязательства перед {COUNTRY_C}.",
+    "en": "A difficult decision: {COUNTRY_A} leans towards refusal, since {TOPIC} touches obligations towards {COUNTRY_C}."
+  },
+  {
+    "id": "reject.solemn.118",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Заявляем со всей серьёзностью: {TOPIC} не может быть принят {COUNTRY_A} в нынешнем виде.",
+    "en": "With full gravity we declare: {TOPIC} cannot be accepted by {COUNTRY_A} in its current form."
+  },
+  {
+    "id": "reject.compromising.119",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Надеемся, что отказ по {TOPIC} не разрушит доброго расположения; {COUNTRY_A} дорожит отношениями с {COUNTRY_B}.",
+    "en": "Hope remains that the refusal on {TOPIC} will not destroy the good disposition; {COUNTRY_A} values its relations with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.conciliatory.120",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Поверьте, дело вовсе не в неуважении: {COUNTRY_A} не может подписать {TREATY_TYPE} без согласования с {COUNTRY_B}.",
+    "en": "Believe us, this is not about disrespect: {COUNTRY_A} cannot sign the {TREATY_TYPE} without coordination with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.friendly.121",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Будем признательны за понимание: порядок {TREATY_TYPE} требует согласования с {COUNTRY_B}, поэтому подписать документ сейчас {COUNTRY_A} не может.",
+    "en": "Grateful for your understanding: the procedure of the {TREATY_TYPE} requires coordination with {COUNTRY_B}, so {COUNTRY_A} cannot sign the document now."
+  },
+  {
+    "id": "reject.neutral.122",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Документ {TREATY_TYPE} не может быть парафирован: {COUNTRY_A} ожидает заключения профильных ведомств.",
+    "en": "The {TREATY_TYPE} cannot be initialled: {COUNTRY_A} awaits the conclusions of the competent departments."
+  },
+  {
+    "id": "reject.cautious.123",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Юридическая экспертиза {TREATY_TYPE} не завершена, поэтому подпись {COUNTRY_A} под документом невозможна.",
+    "en": "Legal review of the {TREATY_TYPE} is not complete, therefore {COUNTRY_A}'s signature on the document is not possible."
+  },
+  {
+    "id": "reject.solemn.124",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Печать и подпись — не формальность, а гарантия; {COUNTRY_A} не ставит их под {TREATY_TYPE} без консультаций с {COUNTRY_B}.",
+    "en": "Seal and signature are not a formality but a guarantee; {COUNTRY_A} does not put them to the {TREATY_TYPE} without consultations with {COUNTRY_B}."
+  },
+  {
+    "id": "reject.compromising.125",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "refuse"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сроки можно обсудить, но {TREATY_TYPE} без согласования с {COUNTRY_B} подписан не будет.",
+    "en": "Timelines can be discussed, but the {TREATY_TYPE} will not be signed without coordination with {COUNTRY_B}."
+  }
+]

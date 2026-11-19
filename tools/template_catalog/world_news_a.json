@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "news.security.001",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "{COUNTRY_A} и {COUNTRY_B} начали консультации по вопросам безопасности.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have begun consultations on security issues."
+  },
+  {
+    "id": "news.security.002",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Министерства обороны {COUNTRY_A} и {COUNTRY_B} согласовали порядок обмена информацией.",
+    "en": "The defence ministries of {COUNTRY_A} and {COUNTRY_B} have agreed on procedures for exchanging information."
+  },
+  {
+    "id": "news.security.003",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Наблюдатели подтвердили, что совместные учения {COUNTRY_A} и {COUNTRY_B} прошли по согласованному плану.",
+    "en": "Observers have confirmed that the joint exercises of {COUNTRY_A} and {COUNTRY_B} followed the agreed plan."
+  },
+  {
+    "id": "news.security.004",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{DATE}"],
+    "ru": "Патрулирование границы между {COUNTRY_A} и {COUNTRY_B} идёт в обычном режиме по состоянию на {DATE}.",
+    "en": "Border patrolling between {COUNTRY_A} and {COUNTRY_B} is proceeding as usual as of {DATE}."
+  },
+  {
+    "id": "news.security.005",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} обсудили меры укрепления доверия.",
+    "en": "Delegations from {COUNTRY_A} and {COUNTRY_B} discussed confidence-building measures."
+  },
+  {
+    "id": "news.security.006",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Стороны согласились создать канал связи между военными ведомствами {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "The sides agreed to set up a communication channel between the military agencies of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.security.007",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обмен наблюдателями между {COUNTRY_A} и {COUNTRY_B} возобновлён.",
+    "en": "The exchange of observers between {COUNTRY_A} and {COUNTRY_B} has resumed."
+  },
+  {
+    "id": "news.security.008",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Комитет по безопасности {COUNTRY_A} и {COUNTRY_B} провёл очередное заседание.",
+    "en": "The security committee of {COUNTRY_A} and {COUNTRY_B} held a regular meeting."
+  },
+  {
+    "id": "news.security.009",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Повестка консультаций {COUNTRY_A} и {COUNTRY_B} дополнена темой {TOPIC}.",
+    "en": "The agenda of the consultations between {COUNTRY_A} and {COUNTRY_B} has been expanded with the topic of {TOPIC}."
+  },
+  {
+    "id": "news.security.010",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Спецслужбы {COUNTRY_A} и {COUNTRY_B} договорились совместно проверять сигналы о нарушениях.",
+    "en": "The intelligence services of {COUNTRY_A} and {COUNTRY_B} agreed to verify reports of violations jointly."
+  },
+  {
+    "id": "news.security.011",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Подписание {TREATY_TYPE} между {COUNTRY_A} и {COUNTRY_B} названо шагом исторического значения.",
+    "en": "The signing of {TREATY_TYPE} between {COUNTRY_A} and {COUNTRY_B} has been described as a step of historic significance."
+  },
+  {
+    "id": "news.security.012",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Церемония подписания {TREATY_TYPE} между {COUNTRY_A} и {COUNTRY_B} прошла в торжественной обстановке.",
+    "en": "The ceremony for the signing of {TREATY_TYPE} between {COUNTRY_A} and {COUNTRY_B} took place in a solemn setting."
+  },
+  {
+    "id": "news.security.013",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "{COUNTRY_A} и {COUNTRY_B} торжественно подтвердили приверженность обязательствам по {TREATY_TYPE}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have solemnly reaffirmed their commitment to the obligations of {TREATY_TYPE}."
+  },
+  {
+    "id": "news.security.014",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Парламент {COUNTRY_A} приветствовал соглашение с {COUNTRY_B} как значимый шаг.",
+    "en": "The parliament of {COUNTRY_A} has welcomed the agreement with {COUNTRY_B} as a significant step."
+  },
+  {
+    "id": "news.security.015",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Совместная декларация {COUNTRY_A} и {COUNTRY_B} о безопасности зачитана на официальной церемонии.",
+    "en": "The joint security declaration of {COUNTRY_A} and {COUNTRY_B} was read out at an official ceremony."
+  },
+  {
+    "id": "news.security.016",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Главы внешнеполитических ведомств {COUNTRY_A} и {COUNTRY_B} отметили весомость достигнутых договорённостей.",
+    "en": "The foreign ministers of {COUNTRY_A} and {COUNTRY_B} stressed the weight of the agreements reached."
+  },
+  {
+    "id": "news.security.017",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Новой страницей в отношениях {COUNTRY_A} и {COUNTRY_B} названо подписание {TREATY_TYPE}.",
+    "en": "The signing of {TREATY_TYPE} has been called a new page in relations between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.security.018",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Меморандум {COUNTRY_A} и {COUNTRY_B} о взаимодействии в сфере безопасности скреплён подписями.",
+    "en": "The memorandum of {COUNTRY_A} and {COUNTRY_B} on security cooperation has been signed."
+  },
+  {
+    "id": "news.security.019",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Договорённости {COUNTRY_A} и {COUNTRY_B} в области безопасности названы свидетельством ответственности сторон.",
+    "en": "The arrangements between {COUNTRY_A} and {COUNTRY_B} in the security field have been called evidence of the sides' responsibility."
+  },
+  {
+    "id": "news.security.020",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Торжественная церемония в честь соглашения {COUNTRY_A} и {COUNTRY_B} собрала представителей ведомств.",
+    "en": "A solemn ceremony marking the agreement between {COUNTRY_A} and {COUNTRY_B} brought together representatives of the agencies."
+  },
+  {
+    "id": "news.security.021",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Переговоры {COUNTRY_A} и {COUNTRY_B} о безопасности не привели к сближению позиций.",
+    "en": "Security talks between {COUNTRY_A} and {COUNTRY_B} have not brought the positions any closer."
+  },
+  {
+    "id": "news.security.022",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Дистанция между {COUNTRY_A} и {COUNTRY_B} в вопросах {TOPIC} сохраняется.",
+    "en": "The distance between {COUNTRY_A} and {COUNTRY_B} on {TOPIC} persists."
+  },
+  {
+    "id": "news.security.023",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Сдержанная реакция {COUNTRY_A} на предложения {COUNTRY_B} по безопасности отмечена наблюдателями.",
+    "en": "Observers have noted the restrained reaction of {COUNTRY_A} to the security proposals of {COUNTRY_B}."
+  },
+  {
+    "id": "news.security.024",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Отказ {COUNTRY_A} от предложенного {COUNTRY_B} формата консультаций подтверждён.",
+    "en": "{COUNTRY_A}'s refusal of the consultation format proposed by {COUNTRY_B} has been confirmed."
+  },
+  {
+    "id": "news.security.025",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Взаимные обвинения {COUNTRY_A} и {COUNTRY_B} в нарушении режима границы не сняты.",
+    "en": "Mutual accusations between {COUNTRY_A} and {COUNTRY_B} over border violations have not been withdrawn."
+  },
+  {
+    "id": "news.security.026",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{DATE}"],
+    "ru": "Контакты военных ведомств {COUNTRY_A} и {COUNTRY_B} остаются ограниченными по состоянию на {DATE}.",
+    "en": "Contacts between the military agencies of {COUNTRY_A} and {COUNTRY_B} remain limited as of {DATE}."
+  },
+  {
+    "id": "news.security.027",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Оценка {COUNTRY_A} перспектив соглашения с {COUNTRY_B} по {TOPIC} прозвучала без иллюзий.",
+    "en": "The assessment by {COUNTRY_A} of the prospects for an agreement with {COUNTRY_B} on {TOPIC} was delivered without illusions."
+  },
+  {
+    "id": "news.security.028",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Делегация {COUNTRY_B} встретила в {COUNTRY_A} холодный приём.",
+    "en": "The delegation of {COUNTRY_B} received a cold reception in {COUNTRY_A}."
+  },
+  {
+    "id": "news.security.029",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Стороны {COUNTRY_A} и {COUNTRY_B} расходятся в оценке угроз.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} differ in their assessment of threats."
+  },
+  {
+    "id": "news.security.030",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Продвижение {COUNTRY_A} и {COUNTRY_B} к соглашению по {TOPIC} идёт осторожно.",
+    "en": "The movement of {COUNTRY_A} and {COUNTRY_B} toward an agreement on {TOPIC} is cautious."
+  },
+  {
+    "id": "news.security.031",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Возможность военного сотрудничества {COUNTRY_A} и {COUNTRY_B} обсуждается с оговорками.",
+    "en": "The possibility of military cooperation between {COUNTRY_A} and {COUNTRY_B} is being discussed with reservations."
+  },
+  {
+    "id": "news.security.032",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Прогнозировать итог переговоров {COUNTRY_A} с {COUNTRY_B} по {TOPIC} не берутся.",
+    "en": "No one ventures to predict the outcome of the talks between {COUNTRY_A} and {COUNTRY_B} on {TOPIC}."
+  },
+  {
+    "id": "news.security.033",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожная формулировка выбрана {COUNTRY_A} и {COUNTRY_B} для совместного заявления о безопасности.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} chose cautious wording for their joint statement on security."
+  },
+  {
+    "id": "news.security.034",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Предложение {COUNTRY_B} о мерах доверия изучается в {COUNTRY_A} без спешки.",
+    "en": "The proposal of {COUNTRY_B} on confidence-building measures is being studied in {COUNTRY_A} without haste."
+  },
+  {
+    "id": "news.security.035",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Сближение {COUNTRY_A} и {COUNTRY_B} по {TOPIC} пока преждевременно считать устойчивым.",
+    "en": "It is still premature to consider the rapprochement between {COUNTRY_A} and {COUNTRY_B} on {TOPIC} stable."
+  },
+  {
+    "id": "news.security.036",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "К обсуждению гарантий безопасности {COUNTRY_A} и {COUNTRY_B} подключились посредники.",
+    "en": "Mediators have joined the discussion of security guarantees between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.security.037",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Взвешенный подход к {TREATY_TYPE} между {COUNTRY_A} и {COUNTRY_B} подтверждён обеими сторонами.",
+    "en": "A measured approach to {TREATY_TYPE} between {COUNTRY_A} and {COUNTRY_B} has been confirmed by both sides."
+  },
+  {
+    "id": "news.security.038",
+    "category": "world_news",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Условия безопасности на границе {COUNTRY_A} и {COUNTRY_B} оцениваются как хрупкие.",
+    "en": "Security conditions on the border between {COUNTRY_A} and {COUNTRY_B} are assessed as fragile."
+  },
+  {
+    "id": "news.alliance.039",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Союзные обязательства {COUNTRY_A} и {COUNTRY_B} обсуждены на совместном заседании.",
+    "en": "The allied commitments of {COUNTRY_A} and {COUNTRY_B} were discussed at a joint meeting."
+  },
+  {
+    "id": "news.alliance.040",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Делегация {COUNTRY_A} прибыла в {COUNTRY_B} для переговоров об альянсе.",
+    "en": "A delegation of {COUNTRY_A} has arrived in {COUNTRY_B} for talks on an alliance."
+  },
+  {
+    "id": "news.alliance.041",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Условия вступления в {TREATY_TYPE} для {COUNTRY_A} и {COUNTRY_B} согласованы.",
+    "en": "The terms of joining {TREATY_TYPE} for {COUNTRY_A} and {COUNTRY_B} have been agreed."
+  },
+  {
+    "id": "news.alliance.042",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Совместное коммюнике {COUNTRY_A} и {COUNTRY_B} о союзе опубликовано.",
+    "en": "The joint communique of {COUNTRY_A} and {COUNTRY_B} on the alliance has been published."
+  },
+  {
+    "id": "news.alliance.043",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Военное сотрудничество {COUNTRY_A} и {COUNTRY_B} расширено по итогам переговоров.",
+    "en": "Military cooperation between {COUNTRY_A} and {COUNTRY_B} has been expanded following the talks."
+  },
+  {
+    "id": "news.alliance.044",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Повестка союза {COUNTRY_A} и {COUNTRY_B} включает вопросы {TOPIC}.",
+    "en": "The agenda of the alliance between {COUNTRY_A} and {COUNTRY_B} includes matters of {TOPIC}."
+  },
+  {
+    "id": "news.alliance.045",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Наблюдатели подтвердили, что консультации {COUNTRY_A} и {COUNTRY_B} об альянсе продолжаются.",
+    "en": "Observers have confirmed that consultations between {COUNTRY_A} and {COUNTRY_B} on the alliance are continuing."
+  },
+  {
+    "id": "news.alliance.046",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Штабные переговоры {COUNTRY_A} и {COUNTRY_B} завершились подписанием протокола о взаимодействии.",
+    "en": "Staff talks between {COUNTRY_A} and {COUNTRY_B} concluded with the signing of a cooperation protocol."
+  },
+  {
+    "id": "news.alliance.047",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "График совместных мероприятий {COUNTRY_A} и {COUNTRY_B} по линии союза утверждён.",
+    "en": "The schedule of joint events between {COUNTRY_A} and {COUNTRY_B} under the alliance has been approved."
+  },
+  {
+    "id": "news.alliance.048",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Регламент принятия решений в союзе {COUNTRY_A} и {COUNTRY_B} согласован.",
+    "en": "The decision-making rules within the alliance of {COUNTRY_A} and {COUNTRY_B} have been agreed."
+  },
+  {
+    "id": "news.alliance.049",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Решение {COUNTRY_A} о союзе с {COUNTRY_B} названо событием исторического масштаба.",
+    "en": "The decision of {COUNTRY_A} on an alliance with {COUNTRY_B} has been called an event of historic scale."
+  },
+  {
+    "id": "news.alliance.050",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Церемония подписания союзного договора {COUNTRY_A} и {COUNTRY_B} прошла с участием глав ведомств.",
+    "en": "The ceremony for the signing of the alliance treaty between {COUNTRY_A} and {COUNTRY_B} was attended by heads of agencies."
+  },
+  {
+    "id": "news.alliance.051",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Значение союза {COUNTRY_A} и {COUNTRY_B} подчёркнуто в совместном обращении.",
+    "en": "The significance of the alliance between {COUNTRY_A} and {COUNTRY_B} was emphasised in a joint address."
+  },
+  {
+    "id": "news.alliance.052",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Заключение {TREATY_TYPE} между {COUNTRY_A} и {COUNTRY_B} названо вехой в двусторонних отношениях.",
+    "en": "The conclusion of {TREATY_TYPE} between {COUNTRY_A} and {COUNTRY_B} has been called a milestone in bilateral relations."
+  },
+  {
+    "id": "news.alliance.053",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обещание взаимной поддержки {COUNTRY_A} и {COUNTRY_B} закреплено в декларации.",
+    "en": "The promise of mutual support between {COUNTRY_A} and {COUNTRY_B} has been set down in a declaration."
+  },
+  {
+    "id": "news.alliance.054",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Историческим шагом назван союз {COUNTRY_A} и {COUNTRY_B} в заявлении сторон.",
+    "en": "The alliance of {COUNTRY_A} and {COUNTRY_B} has been called a historic step in a statement by the sides."
+  },
+  {
+    "id": "news.alliance.055",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Оглашено совместное заявление {COUNTRY_A} и {COUNTRY_B} о союзе.",
+    "en": "A joint statement by {COUNTRY_A} and {COUNTRY_B} on the alliance has been read out."
+  },
+  {
+    "id": "news.alliance.056",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Договор о союзе {COUNTRY_A} и {COUNTRY_B} скреплён подписями в торжественной обстановке.",
+    "en": "The alliance treaty of {COUNTRY_A} and {COUNTRY_B} has been signed in a solemn setting."
+  },
+  {
+    "id": "news.alliance.057",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Символом нового союза {COUNTRY_A} и {COUNTRY_B} назвали подписанный документ.",
+    "en": "The document signed by {COUNTRY_A} and {COUNTRY_B} has been called a symbol of their new alliance."
+  },
+  {
+    "id": "news.alliance.058",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Сотрудничество {COUNTRY_A} и {COUNTRY_B} в рамках союза остаётся ограниченным.",
+    "en": "Cooperation between {COUNTRY_A} and {COUNTRY_B} within the alliance remains limited."
+  },
+  {
+    "id": "news.alliance.059",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Расширение союза {COUNTRY_A} и {COUNTRY_B} отложено.",
+    "en": "The expansion of the alliance between {COUNTRY_A} and {COUNTRY_B} has been postponed."
+  },
+  {
+    "id": "news.alliance.060",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Вопрос о союзе с {COUNTRY_A} остаётся открытым для {COUNTRY_B}.",
+    "en": "For {COUNTRY_B}, the question of an alliance with {COUNTRY_A} remains open."
+  },
+  {
+    "id": "news.alliance.061",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Доверие между союзниками {COUNTRY_A} и {COUNTRY_B} не восстановлено.",
+    "en": "Trust between the allies {COUNTRY_A} and {COUNTRY_B} has not been restored."
+  },
+  {
+    "id": "news.alliance.062",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Контакты {COUNTRY_A} и {COUNTRY_B} по союзу проходят подчёркнуто сдержанно.",
+    "en": "Contacts between {COUNTRY_A} and {COUNTRY_B} on the alliance are markedly restrained."
+  },
+  {
+    "id": "news.alliance.063",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обязательства {COUNTRY_A} по союзу с {COUNTRY_B} выполняются без энтузиазма.",
+    "en": "The alliance commitments of {COUNTRY_A} toward {COUNTRY_B} are being carried out without enthusiasm."
+  },
+  {
+    "id": "news.alliance.064",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Союзники {COUNTRY_A} и {COUNTRY_B} избегают прямых формулировок о взаимной помощи.",
+    "en": "The allies {COUNTRY_A} and {COUNTRY_B} avoid direct wording on mutual assistance."
+  },
+  {
+    "id": "news.alliance.065",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Подозрения {COUNTRY_A} в адрес {COUNTRY_B} в рамках союза не развеяны.",
+    "en": "The suspicions of {COUNTRY_A} toward {COUNTRY_B} within the alliance have not been dispelled."
+  },
+  {
+    "id": "news.alliance.066",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Единство союза {COUNTRY_A} и {COUNTRY_B} оценено без оптимизма.",
+    "en": "The unity of the alliance between {COUNTRY_A} and {COUNTRY_B} has been assessed without optimism."
+  },
+  {
+    "id": "news.alliance.067",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Взаимную настороженность в союзе {COUNTRY_A} и {COUNTRY_B} отметили наблюдатели.",
+    "en": "Observers have noted mutual wariness within the alliance of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.alliance.068",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожные шаги к сближению в союзе делают {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} are taking cautious steps toward closer alliance ties."
+  },
+  {
+    "id": "news.alliance.069",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Оценку перспектив союза с {COUNTRY_B} в {COUNTRY_A} дали с оговорками.",
+    "en": "In {COUNTRY_A}, the prospects of an alliance with {COUNTRY_B} were assessed with reservations."
+  },
+  {
+    "id": "news.alliance.070",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Возможное вступление {COUNTRY_A} в союз с {COUNTRY_B} пока обсуждается.",
+    "en": "The possible accession of {COUNTRY_A} to an alliance with {COUNTRY_B} is still under discussion."
+  },
+  {
+    "id": "news.alliance.071",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Проект союзного договора {COUNTRY_A} и {COUNTRY_B} отправлен на доработку.",
+    "en": "The draft alliance treaty of {COUNTRY_A} and {COUNTRY_B} has been sent back for revision."
+  },
+  {
+    "id": "news.alliance.072",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "К идее союза с {COUNTRY_B} в {COUNTRY_A} относятся осторожно.",
+    "en": "In {COUNTRY_A}, the idea of an alliance with {COUNTRY_B} is treated with caution."
+  },
+  {
+    "id": "news.alliance.073",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожную позицию заняла {COUNTRY_A} в вопросе союза с {COUNTRY_B}.",
+    "en": "{COUNTRY_A} has taken a cautious position on the question of an alliance with {COUNTRY_B}."
+  },
+  {
+    "id": "news.alliance.074",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "ru": "Сближение {COUNTRY_A} и {COUNTRY_B} в рамках {TREATY_TYPE} идёт медленно.",
+    "en": "Rapprochement between {COUNTRY_A} and {COUNTRY_B} under {TREATY_TYPE} is proceeding slowly."
+  },
+  {
+    "id": "news.alliance.075",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Предварительные условия союза {COUNTRY_A} и {COUNTRY_B} согласованы с оговорками.",
+    "en": "The preliminary terms of the alliance between {COUNTRY_A} and {COUNTRY_B} were agreed with reservations."
+  },
+  {
+    "id": "news.alliance.076",
+    "category": "world_news",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Быстрое оформление союза с {COUNTRY_B} исключили в {COUNTRY_A}.",
+    "en": "In {COUNTRY_A}, a rapid formalisation of an alliance with {COUNTRY_B} has been ruled out."
+  },
+  {
+    "id": "news.territory.077",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Переговоры о границе между {COUNTRY_A} и {COUNTRY_B} начались.",
+    "en": "Talks on the border between {COUNTRY_A} and {COUNTRY_B} have begun."
+  },
+  {
+    "id": "news.territory.078",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Комиссия по демаркации границы {COUNTRY_A} и {COUNTRY_B} провела заседание.",
+    "en": "The border demarcation commission of {COUNTRY_A} and {COUNTRY_B} held a meeting."
+  },
+  {
+    "id": "news.territory.079",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Карта спорных участков между {COUNTRY_A} и {COUNTRY_B} уточняется.",
+    "en": "The map of disputed sections between {COUNTRY_A} and {COUNTRY_B} is being refined."
+  },
+  {
+    "id": "news.territory.080",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Статус спорных территорий {COUNTRY_A} и {COUNTRY_B} обсуждён на переговорах.",
+    "en": "The status of the disputed territories of {COUNTRY_A} and {COUNTRY_B} was discussed at the talks."
+  },
+  {
+    "id": "news.territory.081",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Соглашение о границе {COUNTRY_A} и {COUNTRY_B} подписано.",
+    "en": "The border agreement between {COUNTRY_A} and {COUNTRY_B} has been signed."
+  },
+  {
+    "id": "news.territory.082",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обмен картами между {COUNTRY_A} и {COUNTRY_B} состоялся.",
+    "en": "The exchange of maps between {COUNTRY_A} and {COUNTRY_B} has taken place."
+  },
+  {
+    "id": "news.territory.083",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Работа по уточнению линии границы {COUNTRY_A} и {COUNTRY_B} продолжается.",
+    "en": "Work on refining the border line between {COUNTRY_A} and {COUNTRY_B} continues."
+  },
+  {
+    "id": "news.territory.084",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Вопрос принадлежности спорного района между {COUNTRY_A} и {COUNTRY_B} вынесен на консультации.",
+    "en": "The question of the disputed district's affiliation between {COUNTRY_A} and {COUNTRY_B} has been referred to consultations."
+  },
+  {
+    "id": "news.territory.085",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Документы по территориальному размежеванию {COUNTRY_A} и {COUNTRY_B} переданы на рассмотрение.",
+    "en": "Documents on the territorial delimitation between {COUNTRY_A} and {COUNTRY_B} have been submitted for review."
+  },
+  {
+    "id": "news.territory.086",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Договор о границе {COUNTRY_A} и {COUNTRY_B} назван историческим событием.",
+    "en": "The border treaty of {COUNTRY_A} and {COUNTRY_B} has been called a historic event."
+  },
+  {
+    "id": "news.territory.087",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Территориальное соглашение {COUNTRY_A} и {COUNTRY_B} отмечено торжественной церемонией.",
+    "en": "The territorial agreement between {COUNTRY_A} and {COUNTRY_B} has been marked with a solemn ceremony."
+  },
+  {
+    "id": "news.territory.088",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Достигнутая договорённость {COUNTRY_A} и {COUNTRY_B} о территориях названа знаком зрелости сторон.",
+    "en": "The arrangement reached between {COUNTRY_A} and {COUNTRY_B} on territories has been called a sign of the sides' maturity."
+  },
+  {
+    "id": "news.territory.089",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Протокол о границе между {COUNTRY_A} и {COUNTRY_B} торжественно подписан.",
+    "en": "The border protocol between {COUNTRY_A} and {COUNTRY_B} has been signed in a solemn ceremony."
+  },
+  {
+    "id": "news.territory.090",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Знаковым назван шаг {COUNTRY_A} и {COUNTRY_B} к согласованию территорий.",
+    "en": "The step taken by {COUNTRY_A} and {COUNTRY_B} toward agreeing on territories has been called significant."
+  },
+  {
+    "id": "news.territory.091",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Приверженность мирному размежеванию торжественно подтвердили {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have solemnly reaffirmed their commitment to peaceful delimitation."
+  },
+  {
+    "id": "news.territory.092",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Общая граница {COUNTRY_A} и {COUNTRY_B} названа границей добрососедства.",
+    "en": "The shared border of {COUNTRY_A} and {COUNTRY_B} has been called a border of good neighbourliness."
+  },
+  {
+    "id": "news.territory.093",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Вехой в отношениях {COUNTRY_A} и {COUNTRY_B} назван документ о территориальном размежевании.",
+    "en": "The document on territorial delimitation has been called a milestone in relations between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.territory.094",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Высокую оценку территориальным договорённостям с {COUNTRY_B} дали в {COUNTRY_A}.",
+    "en": "The territorial arrangements with {COUNTRY_B} received high praise in {COUNTRY_A}."
+  },
+  {
+    "id": "news.territory.095",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обещание уважать территориальную целостность дали {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have given a promise to respect territorial integrity."
+  },
+  {
+    "id": "news.territory.096",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Территориальный спор {COUNTRY_A} и {COUNTRY_B} не урегулирован.",
+    "en": "The territorial dispute between {COUNTRY_A} and {COUNTRY_B} has not been settled."
+  },
+  {
+    "id": "news.territory.097",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Комиссия по границе {COUNTRY_A} и {COUNTRY_B} работает без заметного продвижения.",
+    "en": "The border commission of {COUNTRY_A} and {COUNTRY_B} is working without noticeable progress."
+  },
+  {
+    "id": "news.territory.098",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Расхождение позиций {COUNTRY_A} и {COUNTRY_B} по территориям зафиксировано в протоколе.",
+    "en": "The divergence of positions between {COUNTRY_A} and {COUNTRY_B} on territories has been recorded in a protocol."
+  },
+  {
+    "id": "news.territory.099",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Претензии {COUNTRY_A} к {COUNTRY_B} на спорные районы не сняты.",
+    "en": "The claims of {COUNTRY_A} against {COUNTRY_B} to the disputed districts have not been withdrawn."
+  },
+  {
+    "id": "news.territory.100",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Территориальные уступки {COUNTRY_B} не рассматриваются {COUNTRY_A}.",
+    "en": "Territorial concessions by {COUNTRY_B} are not being considered by {COUNTRY_A}."
+  },
+  {
+    "id": "news.territory.101",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Настороженность {COUNTRY_A} в вопросе границы с {COUNTRY_B} не спадает.",
+    "en": "The wariness of {COUNTRY_A} over the border with {COUNTRY_B} shows no sign of easing."
+  },
+  {
+    "id": "news.territory.102",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Нежелательность пересмотра линии границы с {COUNTRY_B} подчёркнута в {COUNTRY_A}.",
+    "en": "In {COUNTRY_A}, the undesirability of revising the border line with {COUNTRY_B} has been stressed."
+  },
+  {
+    "id": "news.territory.103",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Отставание в демаркации границы {COUNTRY_A} и {COUNTRY_B} признано сторонами.",
+    "en": "The delay in demarcating the border between {COUNTRY_A} and {COUNTRY_B} has been acknowledged by the sides."
+  },
+  {
+    "id": "news.territory.104",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Сдержанно отнеслись в {COUNTRY_A} к территориальному предложению {COUNTRY_B}.",
+    "en": "In {COUNTRY_A}, the territorial proposal of {COUNTRY_B} met a restrained response."
+  },
+  {
+    "id": "news.territory.105",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Обсуждение спорных территорий {COUNTRY_A} и {COUNTRY_B} идёт осторожно.",
+    "en": "The discussion of the disputed territories of {COUNTRY_A} and {COUNTRY_B} is proceeding cautiously."
+  },
+  {
+    "id": "news.territory.106",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Компромисс по территориям {COUNTRY_A} и {COUNTRY_B} не исключён.",
+    "en": "A compromise between {COUNTRY_A} and {COUNTRY_B} on territories is not ruled out."
+  },
+  {
+    "id": "news.territory.107",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Пока рано говорить об окончательном размежевании {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "It is still too early to speak of a final delimitation between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.territory.108",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Идею обмена территориями между {COUNTRY_A} и {COUNTRY_B} встретили осторожно.",
+    "en": "The idea of exchanging territories between {COUNTRY_A} and {COUNTRY_B} was met with caution."
+  },
+  {
+    "id": "news.territory.109",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "О необходимости терпения в вопросе границы заявили {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have spoken of the need for patience on the border question."
+  },
+  {
+    "id": "news.territory.110",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Уточнение линии границы {COUNTRY_A} и {COUNTRY_B} идёт с оговорками.",
+    "en": "The refinement of the border line between {COUNTRY_A} and {COUNTRY_B} is proceeding with reservations."
+  },
+  {
+    "id": "news.territory.111",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожный подход к вопросу о спорных районах подтвердили {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have confirmed a cautious approach to the question of the disputed districts."
+  },
+  {
+    "id": "news.territory.112",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Ни одна из сторон {COUNTRY_A} и {COUNTRY_B} не спешит с территориальными решениями.",
+    "en": "Neither {COUNTRY_A} nor {COUNTRY_B} is rushing territorial decisions."
+  },
+  {
+    "id": "news.territory.113",
+    "category": "world_news",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Взвешенно оценили перспективы территориального соглашения с {COUNTRY_B} в {COUNTRY_A}.",
+    "en": "In {COUNTRY_A}, the prospects of a territorial agreement with {COUNTRY_B} were assessed in a measured way."
+  },
+  {
+    "id": "news.crisis.114",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Экстренные консультации {COUNTRY_A} и {COUNTRY_B} начались.",
+    "en": "Emergency consultations between {COUNTRY_A} and {COUNTRY_B} have begun."
+  },
+  {
+    "id": "news.crisis.115",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Посредники приступили к работе между {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Mediators have begun their work between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.crisis.116",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{DATE}"],
+    "ru": "Ситуация между {COUNTRY_A} и {COUNTRY_B} остаётся напряжённой по состоянию на {DATE}.",
+    "en": "The situation between {COUNTRY_A} and {COUNTRY_B} remains tense as of {DATE}."
+  },
+  {
+    "id": "news.crisis.117",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Обстановка вокруг {TOPIC} в отношениях {COUNTRY_A} и {COUNTRY_B} обсуждается на переговорах.",
+    "en": "The situation around {TOPIC} in relations between {COUNTRY_A} and {COUNTRY_B} is being discussed at the talks."
+  },
+  {
+    "id": "news.crisis.118",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} встретились для обсуждения кризиса.",
+    "en": "Delegations of {COUNTRY_A} and {COUNTRY_B} met to discuss the crisis."
+  },
+  {
+    "id": "news.crisis.119",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Канал связи между {COUNTRY_A} и {COUNTRY_B} в кризисной ситуации задействован.",
+    "en": "The communication channel between {COUNTRY_A} and {COUNTRY_B} has been used in the crisis situation."
+  },
+  {
+    "id": "news.crisis.120",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Мониторинговую миссию между {COUNTRY_A} и {COUNTRY_B} продлили.",
+    "en": "The monitoring mission between {COUNTRY_A} and {COUNTRY_B} has been extended."
+  },
+  {
+    "id": "news.crisis.121",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Кризис в отношениях {COUNTRY_A} и {COUNTRY_B} обсуждён на заседании.",
+    "en": "The crisis in relations between {COUNTRY_A} and {COUNTRY_B} was discussed at a meeting."
+  },
+  {
+    "id": "news.crisis.122",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TOPIC}"],
+    "ru": "Положение вокруг {TOPIC} между {COUNTRY_A} и {COUNTRY_B} остаётся сложным.",
+    "en": "The situation around {TOPIC} between {COUNTRY_A} and {COUNTRY_B} remains difficult."
+  },
+  {
+    "id": "news.crisis.123",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Договорённость о снижении напряжения между {COUNTRY_A} и {COUNTRY_B} названа долгом перед будущими поколениями.",
+    "en": "The arrangement to reduce tension between {COUNTRY_A} and {COUNTRY_B} has been called a duty to future generations."
+  },
+  {
+    "id": "news.crisis.124",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Твёрдое намерение продолжать диалог подтвердили {COUNTRY_A} и {COUNTRY_B} на церемонии.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} confirmed a firm intention to continue the dialogue at a ceremony."
+  },
+  {
+    "id": "news.crisis.125",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Значение переговоров {COUNTRY_A} и {COUNTRY_B} для мира подчёркнуто посредниками.",
+    "en": "The significance of the talks between {COUNTRY_A} and {COUNTRY_B} for peace was stressed by the mediators."
+  },
+  {
+    "id": "news.crisis.126",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Достигнутое между {COUNTRY_A} и {COUNTRY_B} понимание названо хрупким, но важным.",
+    "en": "The understanding reached between {COUNTRY_A} and {COUNTRY_B} has been called fragile but important."
+  },
+  {
+    "id": "news.crisis.127",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Памятным назвали совместное заявление {COUNTRY_A} и {COUNTRY_B} о сдержанности.",
+    "en": "The joint statement of {COUNTRY_A} and {COUNTRY_B} on restraint has been called memorable."
+  },
+  {
+    "id": "news.crisis.128",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Совместное обращение {COUNTRY_A} и {COUNTRY_B} о сдержанности оглашено.",
+    "en": "A joint appeal of {COUNTRY_A} and {COUNTRY_B} for restraint has been read out."
+  },
+  {
+    "id": "news.crisis.129",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Историческим назван сам факт переговоров {COUNTRY_A} и {COUNTRY_B} в условиях кризиса.",
+    "en": "The very fact of talks between {COUNTRY_A} and {COUNTRY_B} amid the crisis has been called historic."
+  },
+  {
+    "id": "news.crisis.130",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Торжественно подтверждена приверженность {COUNTRY_A} и {COUNTRY_B} мирному пути.",
+    "en": "The commitment of {COUNTRY_A} and {COUNTRY_B} to a peaceful path has been solemnly reaffirmed."
+  },
+  {
+    "id": "news.crisis.131",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Готовность к сдержанности подтвердили {COUNTRY_A} и {COUNTRY_B} на переговорах.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} confirmed their readiness for restraint at the talks."
+  },
+  {
+    "id": "news.crisis.132",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Кризис между {COUNTRY_A} и {COUNTRY_B} не преодолён.",
+    "en": "The crisis between {COUNTRY_A} and {COUNTRY_B} has not been overcome."
+  },
+  {
+    "id": "news.crisis.133",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Разрядки между {COUNTRY_A} и {COUNTRY_B} не наступило.",
+    "en": "No detente between {COUNTRY_A} and {COUNTRY_B} has followed."
+  },
+  {
+    "id": "news.crisis.134",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Упрёки {COUNTRY_A} и {COUNTRY_B} прозвучали на заседании.",
+    "en": "Recriminations between {COUNTRY_A} and {COUNTRY_B} were voiced at the meeting."
+  },
+  {
+    "id": "news.crisis.135",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Позиции {COUNTRY_A} и {COUNTRY_B} в кризисе остаются далёкими друг от друга.",
+    "en": "The positions of {COUNTRY_A} and {COUNTRY_B} in the crisis remain far apart."
+  },
+  {
+    "id": "news.crisis.136",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Раунд консультаций {COUNTRY_A} и {COUNTRY_B} завершился без результата.",
+    "en": "A round of consultations between {COUNTRY_A} and {COUNTRY_B} ended without result."
+  },
+  {
+    "id": "news.crisis.137",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{DATE}"],
+    "ru": "Напряжение между {COUNTRY_A} и {COUNTRY_B} не спадает по состоянию на {DATE}.",
+    "en": "Tension between {COUNTRY_A} and {COUNTRY_B} shows no sign of easing as of {DATE}."
+  },
+  {
+    "id": "news.crisis.138",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Подозрительность в отношениях {COUNTRY_A} и {COUNTRY_B} сохраняется.",
+    "en": "Suspicion in relations between {COUNTRY_A} and {COUNTRY_B} persists."
+  },
+  {
+    "id": "news.crisis.139",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Об уступках в кризисе с {COUNTRY_B} в {COUNTRY_A} говорить отказались.",
+    "en": "In {COUNTRY_A}, officials declined to discuss concessions in the crisis with {COUNTRY_B}."
+  },
+  {
+    "id": "news.crisis.140",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cold",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Холодная атмосфера сопутствовала контактам {COUNTRY_A} и {COUNTRY_B} в кризисе.",
+    "en": "A cold atmosphere accompanied the contacts between {COUNTRY_A} and {COUNTRY_B} during the crisis."
+  },
+  {
+    "id": "news.crisis.141",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожные шаги по снижению напряжения делают {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} are taking cautious steps to reduce tension."
+  },
+  {
+    "id": "news.crisis.142",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Пока неясно, удастся ли {COUNTRY_A} и {COUNTRY_B} выйти из кризиса.",
+    "en": "It remains unclear whether {COUNTRY_A} and {COUNTRY_B} will manage to emerge from the crisis."
+  },
+  {
+    "id": "news.crisis.143",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Перспективы выхода из кризиса {COUNTRY_A} и {COUNTRY_B} оцениваются с оговорками.",
+    "en": "The prospects for an exit of {COUNTRY_A} and {COUNTRY_B} from the crisis are assessed with reservations."
+  },
+  {
+    "id": "news.crisis.144",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "С осторожностью оценили сигналы {COUNTRY_B} о готовности к диалогу в {COUNTRY_A}.",
+    "en": "In {COUNTRY_A}, the signals from {COUNTRY_B} about readiness for dialogue were assessed with caution."
+  },
+  {
+    "id": "news.crisis.145",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "От поспешных выводов о намерениях {COUNTRY_B} предостерегли в {COUNTRY_A}.",
+    "en": "In {COUNTRY_A}, warnings were issued against hasty conclusions about the intentions of {COUNTRY_B}."
+  },
+  {
+    "id": "news.crisis.146",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "От прогнозов по кризису {COUNTRY_A} и {COUNTRY_B} воздержались.",
+    "en": "Forecasts about the crisis between {COUNTRY_A} and {COUNTRY_B} were avoided."
+  },
+  {
+    "id": "news.crisis.147",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Умеренные ожидания возлагают на контакты {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Moderate expectations are placed on the contacts between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.crisis.148",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожный оптимизм высказали {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "{COUNTRY_A} and {COUNTRY_B} have voiced cautious optimism."
+  },
+  {
+    "id": "news.crisis.149",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Осторожная надежда на развязку кризиса {COUNTRY_A} и {COUNTRY_B} сохраняется.",
+    "en": "Cautious hope for a resolution of the crisis between {COUNTRY_A} and {COUNTRY_B} persists."
+  },
+  {
+    "id": "news.crisis.150",
+    "category": "world_news",
+    "subcategory": "crisis",
+    "tone": "cautious",
+    "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Дальнейшее развитие кризиса {COUNTRY_A} и {COUNTRY_B} предсказывать не берутся.",
+    "en": "No one ventures to predict the further development of the crisis between {COUNTRY_A} and {COUNTRY_B}."
+  }
+]

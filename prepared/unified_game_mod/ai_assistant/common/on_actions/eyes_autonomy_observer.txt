@@ -1,0 +1,13 @@
+# Disabled by default: requires an explicit human country flag.
+on_actions = {
+    on_daily = {
+        effect = {
+            if = {
+                limit = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled
+                    NOT = { has_country_flag = eyes_autonomy_observer_cooldown } }
+                set_country_flag = { flag = eyes_autonomy_observer_cooldown days = 7 }
+                eyes_autonomy_observe = yes
+            }
+        }
+    }
+}

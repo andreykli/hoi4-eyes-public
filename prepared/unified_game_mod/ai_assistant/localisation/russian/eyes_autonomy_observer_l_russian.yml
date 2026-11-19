@@ -1,0 +1,5 @@
+﻿l_russian:
+ eyes_autonomy_observer_category:0 "HOI4-EYES · Действия"
+ eyes_autonomy_enable_observer:0 "Включить еженедельные дипломатические наблюдения"
+ eyes_autonomy_enable_observer_desc:0 "Экспорт для Bridge только для чтения. Договоры не согласуются и не исполняются. Автономия сервера включается отдельно."
+ eyes_autonomy_disable_observer:0 "Отключить дипломатические наблюдения"

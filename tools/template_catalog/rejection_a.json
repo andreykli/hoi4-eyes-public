@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "reject.cold.001",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Нет. Обсуждать гарантии безопасности в рамках {TREATY_TYPE} мы не намерены.",
+    "en": "No. We do not intend to discuss security guarantees under the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.firm.002",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Отказ. Условия {TREATY_TYPE} закрепляют односторонние преимущества, и мы их не примем.",
+    "en": "Refusal. The terms of the {TREATY_TYPE} lock in one-sided advantages, and we will not accept them."
+  },
+  {
+    "id": "reject.distrustful.003",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Территориальные вопросы в такой постановке не обсуждаются: границы не являются предметом сделки.",
+    "en": "Territorial matters are not discussed in this framing: borders are not a subject of a bargain."
+  },
+  {
+    "id": "reject.disappointed.004",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Союза на таких условиях не будет, и это разочаровывает: мы ожидали более равноправного текста {TREATY_TYPE}.",
+    "en": "There will be no alliance on such terms, and that is disappointing: we expected a more equal text of the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.cold.005",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Предложение затрагивает внутренние решения, а это уже вопрос суверенитета, не переговоров.",
+    "en": "The proposal touches internal decisions, and that is a matter of sovereignty, not of negotiation."
+  },
+  {
+    "id": "reject.firm.006",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Мы не подпишем документ, в котором {CONDITIONS} сформулированы как обязательства только для одной стороны.",
+    "en": "A document in which {CONDITIONS} are worded as obligations for one side only will not be signed."
+  },
+  {
+    "id": "reject.distrustful.007",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Этот протокол выглядит как попытка зафиксировать результат, которого ещё нет.",
+    "en": "This protocol looks like an attempt to lock in an outcome that does not yet exist."
+  },
+  {
+    "id": "reject.disappointed.008",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "К сожалению, условия, переданные нам, неприемлемы, и мы говорим это прямо.",
+    "en": "Unfortunately, the terms handed to us are unacceptable, and we say so plainly."
+  },
+  {
+    "id": "reject.cold.009",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Согласие на размещение сил в рамках {TREATY_TYPE} мы не даём.",
+    "en": "Consent to the stationing of forces under the {TREATY_TYPE} is not given."
+  },
+  {
+    "id": "reject.firm.010",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Подписание торгового соглашения в нынешнем виде исключено: квоты не сбалансированы.",
+    "en": "Signing a trade agreement in its current form is out of the question: the quotas are not balanced."
+  },
+  {
+    "id": "reject.distrustful.011",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Участие в комиссии по границе мы отклоняем: состав комиссии заранее предопределяет вывод.",
+    "en": "Participation in the border commission is rejected: its composition predetermines the conclusion."
+  },
+  {
+    "id": "reject.disappointed.012",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Присоединение к {TREATY_TYPE} означало бы для нас отказ от собственной линии, на что мы не пойдём.",
+    "en": "Joining the {TREATY_TYPE} would mean abandoning our own line, and we will not go that far."
+  },
+  {
+    "id": "reject.cold.013",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ответ на экономический пакет — отрицательный, и дополнительных пояснений здесь не требуется.",
+    "en": "Answer to the economic package is negative, and no further explanation is required here."
+  },
+  {
+    "id": "reject.firm.014",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "Рассмотрение {TERMS} вне нашего правового поля мы считаем неприемлемым.",
+    "en": "Reviewing {TERMS} outside our legal framework is unacceptable."
+  },
+  {
+    "id": "reject.distrustful.015",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Позиция ясна: гарантии, которые нельзя проверить, нам не нужны.",
+    "en": "Position is clear: guarantees that cannot be verified are of no use to us."
+  },
+  {
+    "id": "reject.disappointed.016",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Доверие к этому предложению невелико: {CONDITIONS} допускают слишком широкое толкование.",
+    "en": "Trust in this proposal is low: {CONDITIONS} allow too broad an interpretation."
+  },
+  {
+    "id": "reject.cold.017",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Опыт подобных протоколов показывает, что расплывчатые формулировки работают против нас.",
+    "en": "Experience with such protocols shows that vague wording works against us."
+  },
+  {
+    "id": "reject.firm.018",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Прошлые договорённости с {COUNTRY_A} и {COUNTRY_B} мы помним, поэтому спешить не станем.",
+    "en": "We remember past arrangements between {COUNTRY_A} and {COUNTRY_B}, so we will not rush."
+  },
+  {
+    "id": "reject.distrustful.019",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "После сказанного в прошлый раз ожидать нашего согласия на {TREATY_TYPE} не стоит.",
+    "en": "After what was said last time, our consent to the {TREATY_TYPE} should not be expected."
+  },
+  {
+    "id": "reject.disappointed.020",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Ранее мы обозначали свои озабоченности, но в тексте {TREATY_TYPE} они не отражены.",
+    "en": "Concerns we raised earlier are not reflected in the text of the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.cold.021",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "Учитывая расхождение по {TERMS}, обсуждать тарифные уступки преждевременно.",
+    "en": "Given the divergence on {TERMS}, discussing tariff concessions is premature."
+  },
+  {
+    "id": "reject.firm.022",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ссылка на исторические права не меняет нашего ответа: изменения границы мы не поддержим.",
+    "en": "Citing historical rights does not change our answer: we will not support a border change."
+  },
+  {
+    "id": "reject.distrustful.023",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Оснований верить, что альянс будет равноправным, у нас нет.",
+    "en": "Grounds to believe that the alliance would be equal are absent."
+  },
+  {
+    "id": "reject.disappointed.024",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Жаль, но тема закрыта: пункт об автоматическом продлении мы не примем.",
+    "en": "Regrettably, the topic is closed: we will not accept the automatic renewal clause."
+  },
+  {
+    "id": "reject.cold.025",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Вопрос о внешней юрисдикции мы снимаем с обсуждения.",
+    "en": "External jurisdiction is not open for discussion."
+  },
+  {
+    "id": "reject.firm.026",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Вариант обмена территориями мы отвергаем: он не учитывает интересы {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Rejected: the option of exchanging territories ignores the interests of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "reject.distrustful.027",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Проект соглашения составлен так, что проверка исполнения невозможна.",
+    "en": "Draft agreement is drawn up so that verification is impossible."
+  },
+  {
+    "id": "reject.disappointed.028",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Текст {TREATY_TYPE} мы прочитали внимательно, и он нас не убедил.",
+    "en": "Careful reading of the {TREATY_TYPE} did not convince us."
+  },
+  {
+    "id": "reject.cold.029",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Пункт о совместной обороне звучит как обязательство, которого мы не давали.",
+    "en": "Joint defence clause sounds like an obligation we never took on."
+  },
+  {
+    "id": "reject.firm.030",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Статья о едином командовании не будет нами подписана.",
+    "en": "Unified command article will not be signed by us."
+  },
+  {
+    "id": "reject.distrustful.031",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Механизм сверки данных вызывает у нас сомнения, и принимать его мы не станем.",
+    "en": "Data verification mechanism raises doubts, and we decline to adopt it."
+  },
+  {
+    "id": "reject.disappointed.032",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Порядок, при котором {COUNTRY_A} и {COUNTRY_B} получают разные права, нас не устроит.",
+    "en": "An arrangement in which {COUNTRY_A} and {COUNTRY_B} get different rights does not suit us."
+  },
+  {
+    "id": "reject.cold.033",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "Схема расчётов по {TERMS} для нас неприемлема.",
+    "en": "Settlement scheme under {TERMS} is unacceptable for us."
+  },
+  {
+    "id": "reject.firm.034",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Пакет помощи с условиями мы не примем: {CONDITIONS} ущемляют наши интересы.",
+    "en": "Aid package with conditions will not be accepted: {CONDITIONS} harm our interests."
+  },
+  {
+    "id": "reject.distrustful.035",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Формулировка о наших обязательствах написана так, будто мы уже согласились.",
+    "en": "Wording on our obligations reads as if we had already agreed."
+  },
+  {
+    "id": "reject.disappointed.036",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Данный вариант союза мы не поддерживаем, хотя и не закрываем тему навсегда.",
+    "en": "Version of the alliance proposed here does not have our support, although we are not closing the topic forever."
+  },
+  {
+    "id": "reject.cold.037",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Данное предложение по квотам отклоняется без дальнейших пояснений.",
+    "en": "Quota proposal is rejected without further explanation."
+  },
+  {
+    "id": "reject.firm.038",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Документ о демаркации в предложенном виде подписан не будет.",
+    "en": "Demarcation document will not be signed in the proposed form."
+  },
+  {
+    "id": "reject.distrustful.039",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Никаких совместных заявлений до прояснения {CONDITIONS} с нашей стороны не будет.",
+    "en": "No joint statements will come from our side until {CONDITIONS} are clarified."
+  },
+  {
+    "id": "reject.disappointed.040",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Разочарованы привязкой торговли к политическим уступкам и принять её не можем.",
+    "en": "Disappointed by linking trade to political concessions, and we cannot accept it."
+  },
+  {
+    "id": "reject.cold.041",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Категорически против обмена данными на таких условиях.",
+    "en": "Categorically against any data exchange on such terms."
+  },
+  {
+    "id": "reject.firm.042",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Сегодня подписание {TREATY_TYPE} невозможно: текст содержит внутренние противоречия.",
+    "en": "Signing the {TREATY_TYPE} is impossible today: the text contains internal contradictions."
+  },
+  {
+    "id": "reject.distrustful.043",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Сейчас доверия к гарантиям {COUNTRY_A} и {COUNTRY_B} недостаточно для союза.",
+    "en": "At present, trust in the guarantees of {COUNTRY_A} and {COUNTRY_B} is insufficient for an alliance."
+  },
+  {
+    "id": "reject.disappointed.044",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Нынешний вид {TREATY_TYPE} нас не устраивает, хотя тема нам близка.",
+    "en": "Current shape of the {TREATY_TYPE} does not suit us, although the topic matters to us."
+  },
+  {
+    "id": "reject.cold.045",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Существующий порядок границы мы не обсуждаем: изменений не предполагается.",
+    "en": "Existing border arrangement is not up for discussion: no changes are envisioned."
+  },
+  {
+    "id": "reject.firm.046",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Предложенный механизм надзора посягает на наши внутренние процедуры.",
+    "en": "Proposed oversight mechanism encroaches on our internal procedures."
+  },
+  {
+    "id": "reject.distrustful.047",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Заявленный график исполнения выглядит нереалистичным.",
+    "en": "Stated implementation timetable looks unrealistic."
+  },
+  {
+    "id": "reject.disappointed.048",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}", "{CONDITIONS}"],
+    "ru": "Обсуждаемый текст {TREATY_TYPE} не отражает {CONDITIONS}, о которых мы говорили.",
+    "en": "Discussed text of the {TREATY_TYPE} does not reflect the {CONDITIONS} we spoke about."
+  },
+  {
+    "id": "reject.cold.049",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Указанный размер квоты для нас неприемлем.",
+    "en": "Stated quota size is unacceptable for us."
+  },
+  {
+    "id": "reject.firm.050",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Любые обязательства без гарантий возврата мы считаем несерьёзными.",
+    "en": "Any commitments without repayment guarantees are not serious in our view."
+  },
+  {
+    "id": "reject.distrustful.051",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Всякое сотрудничество по линии спецслужб мы исключаем.",
+    "en": "Intelligence cooperation is ruled out."
+  },
+  {
+    "id": "reject.disappointed.052",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Никакое партнёрство не строится на предварительных уступках с нашей стороны.",
+    "en": "Partnership cannot be built on prior concessions from our side."
+  },
+  {
+    "id": "reject.cold.053",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Признание границы мы увязываем с другими вопросами и сейчас не готовы его дать.",
+    "en": "Recognition of the border is tied to other issues, and we are not ready to grant it now."
+  },
+  {
+    "id": "reject.firm.054",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Гарантии по {TREATY_TYPE} мы не даём: они ограничивают нашу свободу решений.",
+    "en": "Guarantees under the {TREATY_TYPE} will not be given: they restrict our freedom of decision."
+  },
+  {
+    "id": "reject.distrustful.055",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Обязательства по долгу мы не признаём в предложенном объёме.",
+    "en": "Debt obligations in the proposed amount are not recognised by us."
+  },
+  {
+    "id": "reject.disappointed.056",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "Интересы {COUNTRY_A} и {COUNTRY_B} здесь учтены неравно, и потому ответ отрицательный.",
+    "en": "The interests of {COUNTRY_A} and {COUNTRY_B} are weighted unequally here, and that is why the answer is negative."
+  },
+  {
+    "id": "reject.cold.057",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Безопасность поставок нам важнее сиюминутной выгоды, поэтому отказ.",
+    "en": "Security of supply matters more to us than immediate gain, hence the refusal."
+  },
+  {
+    "id": "reject.firm.058",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Торговля с третьими странами не станет предметом союзного договора.",
+    "en": "Trade with third countries will not become part of an alliance treaty."
+  },
+  {
+    "id": "reject.distrustful.059",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Территория под совместным управлением — это не компромисс, а отложенный конфликт.",
+    "en": "Territory under joint administration is not a compromise but a postponed conflict."
+  },
+  {
+    "id": "reject.disappointed.060",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Жаль, но суверенитет не дробится на пункты, и документ мы не подпишем.",
+    "en": "Sadly, sovereignty is not divided into clauses, and we will not sign the document."
+  },
+  {
+    "id": "reject.cold.061",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Экономика не выиграет от схемы, где {CONDITIONS} прописаны только для нас.",
+    "en": "Economy will not benefit from a scheme where {CONDITIONS} apply only to us."
+  },
+  {
+    "id": "reject.firm.062",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Протокол о намерениях нас не связывает, и подписывать его мы не будем.",
+    "en": "A protocol of intentions does not bind us, and we will not sign it."
+  },
+  {
+    "id": "reject.distrustful.063",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Сотрудничество в предложенном формате слишком односторонне.",
+    "en": "Cooperation in the proposed format is too one-sided."
+  },
+  {
+    "id": "reject.disappointed.064",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ожидали более сбалансированной интеграции, но по этим правилам отказываемся.",
+    "en": "We expected a more balanced integration, but under these rules we decline."
+  },
+  {
+    "id": "reject.cold.065",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ратификация документа в нынешнем виде невозможна по нашим процедурам.",
+    "en": "Ratification of the document in its current form is impossible under our procedures."
+  },
+  {
+    "id": "reject.firm.066",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Мониторинг, который ведёт только одна сторона, мы не признаём.",
+    "en": "Monitoring run by one side alone is not recognised by us."
+  },
+  {
+    "id": "reject.distrustful.067",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Верификация без доступа к первичным данным бессмысленна.",
+    "en": "Verification without access to primary data is meaningless."
+  },
+  {
+    "id": "reject.disappointed.068",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Надеялись на независимый арбитраж, но этот вариант не примем.",
+    "en": "Hoped for independent arbitration, but this option will not be accepted."
+  },
+  {
+    "id": "reject.cold.069",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Юрисдикция чужого суда в торговых спорах для нас исключена.",
+    "en": "Jurisdiction of a foreign court in trade disputes is excluded for us."
+  },
+  {
+    "id": "reject.firm.070",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Квоты на промысел в этих водах мы не согласуем.",
+    "en": "Fishing quotas in these waters are not something we will agree to."
+  },
+  {
+    "id": "reject.distrustful.071",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Тарифы, предложенные в приложении, не соответствуют нашим расчётам.",
+    "en": "Tariffs proposed in the annex do not match our calculations."
+  },
+  {
+    "id": "reject.disappointed.072",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Транзит по этой схеме мы отклоняем: ответственность за груз не определена.",
+    "en": "Transit under this scheme is rejected: responsibility for cargo is undefined."
+  },
+  {
+    "id": "reject.cold.073",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Поставки техники в счёт будущих обязательств нас не интересуют.",
+    "en": "Supplies of equipment against future obligations do not interest us."
+  },
+  {
+    "id": "reject.firm.074",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Цены, зафиксированные на весь срок, мы считаем несправедливыми.",
+    "en": "Prices fixed for the entire term strike us as unfair."
+  },
+  {
+    "id": "reject.distrustful.075",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Долг нельзя списать по документу, который не имеет обязательной силы.",
+    "en": "Debt cannot be written off under a document that has no binding force."
+  },
+  {
+    "id": "reject.disappointed.076",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Кредит с политическими условиями нас разочаровывает, и мы его не примем.",
+    "en": "Loan with political conditions disappoints us, and we will not accept it."
+  },
+  {
+    "id": "reject.cold.077",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Инвестиции под внешним контролем мы не приветствуем.",
+    "en": "Investment under external control is not welcome here."
+  },
+  {
+    "id": "reject.firm.078",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ресурсы недр — не предмет уступки за подпись под протоколом.",
+    "en": "Subsoil resources are not a bargaining item for a signature under a protocol."
+  },
+  {
+    "id": "reject.distrustful.079",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Границы правовой ответственности в {TREATY_TYPE} размыты намеренно.",
+    "en": "Limits of legal liability in the {TREATY_TYPE} are blurred deliberately."
+  },
+  {
+    "id": "reject.disappointed.080",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "В таком составе переговорщиков мы не видим смысла продолжать.",
+    "en": "With these negotiators we see no point in continuing."
+  },
+  {
+    "id": "reject.cold.081",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "По разделу о взаимопомощи у нас возражения принципиального характера.",
+    "en": "On the mutual assistance section we have objections of principle."
+  },
+  {
+    "id": "reject.firm.082",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}"],
+    "ru": "При обмене анклавами выгода для {COUNTRY_A} и {COUNTRY_B} выглядит сомнительной.",
+    "en": "In an enclave exchange, the benefit for {COUNTRY_A} and {COUNTRY_B} looks doubtful."
+  },
+  {
+    "id": "reject.distrustful.083",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Для нас это не сделка, а закрепление зависимости.",
+    "en": "For us this is not a deal but locking in dependence."
+  },
+  {
+    "id": "reject.disappointed.084",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "С протоколом в таком виде мы не согласны, хотя сама идея обсуждаема.",
+    "en": "Protocol in this form is not acceptable to us, although the idea itself is open to discussion."
+  },
+  {
+    "id": "reject.cold.085",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "С уступками по тарифам мы не спешим: сначала нужна ясность по {TERMS}.",
+    "en": "Concessions on tariffs are not something we are rushing: clarity on {TERMS} comes first."
+  },
+  {
+    "id": "reject.firm.086",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "У нас остаются вопросы к {TERMS}, и снимать их мы не намерены.",
+    "en": "Questions about {TERMS} remain on our side, and we do not intend to drop them."
+  },
+  {
+    "id": "reject.distrustful.087",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "На таких условиях границу мы не признаём.",
+    "en": "On such terms we will not recognise the border."
+  },
+  {
+    "id": "reject.disappointed.088",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Такой союз больше похож на подчинение, и мы от него отказываемся.",
+    "en": "Such an alliance looks more like subordination, and we refuse it."
+  },
+  {
+    "id": "reject.cold.089",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Такое распределение обязанностей нас не защищает.",
+    "en": "Distribution of duties like this does not protect us."
+  },
+  {
+    "id": "reject.firm.090",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Такие формулировки мы подписывать не станем.",
+    "en": "Wording of this kind will not be signed by us."
+  },
+  {
+    "id": "reject.distrustful.091",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Наше участие в проекте исключено, пока {CONDITIONS} не станут взаимными.",
+    "en": "Participation in the project is ruled out for us until {CONDITIONS} become mutual."
+  },
+  {
+    "id": "reject.disappointed.092",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Нам жаль, но позиция по {TREATY_TYPE} остаётся отрицательной.",
+    "en": "We regret it, but our position on the {TREATY_TYPE} remains negative."
+  },
+  {
+    "id": "reject.cold.093",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Наш ответ по квотам — отказ, и он не изменится от повторных запросов.",
+    "en": "Quota answer is a refusal, and repeated requests will not change it."
+  },
+  {
+    "id": "reject.firm.094",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Наши обязательства по {TREATY_TYPE} ограничены тем, что мы готовы признать.",
+    "en": "Obligations under the {TREATY_TYPE} are limited to what we are ready to acknowledge."
+  },
+  {
+    "id": "reject.distrustful.095",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Этот документ не даёт нам никаких реальных гарантий.",
+    "en": "Document gives us no real guarantees."
+  },
+  {
+    "id": "reject.disappointed.096",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Эта схема раздела сфер влияния нам чужда.",
+    "en": "Scheme of dividing spheres of influence is alien to us."
+  },
+  {
+    "id": "reject.cold.097",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Эти цифры не подтверждены и не могут быть основой соглашения.",
+    "en": "These figures are unconfirmed and cannot be the basis of an agreement."
+  },
+  {
+    "id": "reject.firm.098",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Здесь мы вынуждены сказать нет: компромисса по сути не предложено.",
+    "en": "Here we must say no: no compromise on substance has been offered."
+  },
+  {
+    "id": "reject.distrustful.099",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Иного ответа на это предложение у нас нет.",
+    "en": "Answer to this proposal will not be different."
+  },
+  {
+    "id": "reject.disappointed.100",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Отмечаем с сожалением: равноправного союза нам не предложено.",
+    "en": "Noted with regret: no equal alliance has been offered to us."
+  },
+  {
+    "id": "reject.cold.101",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Более мягкий вариант по территории мы не обсуждаем: уступок не будет.",
+    "en": "Softer option on territory is not under discussion: there will be no concessions."
+  },
+  {
+    "id": "reject.firm.102",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Меньше, чем полный суверенитет, нас не устроит.",
+    "en": "Anything less than full sovereignty will not satisfy us."
+  },
+  {
+    "id": "reject.distrustful.103",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Вместо ясных обязательств нам предлагают общие слова.",
+    "en": "Instead of clear obligations we are offered general words."
+  },
+  {
+    "id": "reject.disappointed.104",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Взамен нам не предложено ничего, что имело бы цену.",
+    "en": "In return, nothing of value has been offered to us."
+  },
+  {
+    "id": "reject.cold.105",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Сперва нужны гарантии проверки, а не декларации.",
+    "en": "First come verification guarantees, not declarations."
+  },
+  {
+    "id": "reject.firm.106",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "Прежде чем говорить о снижении пошлин, нужен баланс по {TERMS}.",
+    "en": "Before discussing tariff reductions, a balance on {TERMS} is needed."
+  },
+  {
+    "id": "reject.distrustful.107",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Пока условия не станут взаимными, союз остаётся невозможным.",
+    "en": "While the terms are not mutual, an alliance remains impossible."
+  },
+  {
+    "id": "reject.disappointed.108",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}", "{CONDITIONS}"],
+    "ru": "К сожалению, до прояснения {CONDITIONS} {TREATY_TYPE} мы не подпишем.",
+    "en": "Unfortunately, until {CONDITIONS} are clarified we will not sign the {TREATY_TYPE}."
+  },
+  {
+    "id": "reject.cold.109",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Без права выхода из {TREATY_TYPE} мы его не примем.",
+    "en": "Without a right of withdrawal from the {TREATY_TYPE}, we will not accept it."
+  },
+  {
+    "id": "reject.firm.110",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Против изменения границы мы выступаем и сейчас, и в дальнейшем.",
+    "en": "Border change we oppose now and will oppose henceforth."
+  },
+  {
+    "id": "reject.distrustful.111",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Возражение вызывает сам порядок принятия решений.",
+    "en": "Objection is caused by the decision-making procedure itself."
+  },
+  {
+    "id": "reject.disappointed.112",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TERMS}"],
+    "ru": "Досадно, что ответственность за исполнение {TERMS} не определена.",
+    "en": "It is unfortunate that responsibility for implementing {TERMS} is undefined."
+  },
+  {
+    "id": "reject.cold.113",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Неясно, что именно мы получим в обмен на уступки.",
+    "en": "What exactly we would receive in exchange for concessions remains unclear."
+  },
+  {
+    "id": "reject.firm.114",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": ["{CONDITIONS}"],
+    "ru": "Неприемлемо обсуждать союз в отрыве от {CONDITIONS}.",
+    "en": "Discussing an alliance apart from {CONDITIONS} is unacceptable."
+  },
+  {
+    "id": "reject.distrustful.115",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Невозможно гарантировать исполнение документа, который не предусматривает проверки.",
+    "en": "Implementation cannot be guaranteed for a document that provides no verification."
+  },
+  {
+    "id": "reject.disappointed.116",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": ["{TREATY_TYPE}"],
+    "ru": "Сожалеем, но {TREATY_TYPE} отклоняем целиком, а не частями.",
+    "en": "To our regret, the {TREATY_TYPE} is rejected as a whole, not in parts."
+  },
+  {
+    "id": "reject.cold.117",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Отвергаем саму идею внешнего контроля над нашими силами.",
+    "en": "Idea of external control over our forces is rejected outright."
+  },
+  {
+    "id": "reject.firm.118",
+    "category": "rejection",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Отрицаем наличие оснований для особых условий.",
+    "en": "Denied: there are no grounds for special conditions."
+  },
+  {
+    "id": "reject.distrustful.119",
+    "category": "rejection",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Отказываем в обсуждении наших внутренних дел.",
+    "en": "Discussion of our internal affairs is refused."
+  },
+  {
+    "id": "reject.disappointed.120",
+    "category": "rejection",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Огорчает, что союз преждевременен, и на таких условиях мы его не подпишем.",
+    "en": "It is saddening that the alliance is premature, and on such terms we will not sign it."
+  },
+  {
+    "id": "reject.cold.121",
+    "category": "rejection",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Полагаем, что вопрос территории не решается обменом уступками.",
+    "en": "Territorial question, in our view, is not settled by an exchange of concessions."
+  },
+  {
+    "id": "reject.firm.122",
+    "category": "rejection",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Расцениваем документ как попытку закрепить невыгодный для нас порядок.",
+    "en": "The document reads as an attempt to lock in an arrangement unfavourable to us."
+  },
+  {
+    "id": "reject.distrustful.123",
+    "category": "rejection",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Воспринимаем это как давление, а не как предложение.",
+    "en": "Pressure, not a proposal, is what we see here."
+  },
+  {
+    "id": "reject.disappointed.124",
+    "category": "rejection",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Печально, но подписывать документ без гарантий мы не намерены.",
+    "en": "Pity, but we do not intend to sign a document without guarantees."
+  },
+  {
+    "id": "reject.cold.125",
+    "category": "rejection",
+    "subcategory": "general",
+    "tone": "cold",
+    "statuses": ["refuse"],
+    "placeholders": [],
+    "ru": "Ожидать нашего согласия после такой редакции не следует.",
+    "en": "Consent should not be expected after such a draft."
+  }
+]

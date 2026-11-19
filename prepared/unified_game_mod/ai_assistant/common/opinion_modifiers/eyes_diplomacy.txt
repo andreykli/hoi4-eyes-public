@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	eyes_refused_political_ultimatum = {
+		value = -50
+		months = 24
+	}
+}

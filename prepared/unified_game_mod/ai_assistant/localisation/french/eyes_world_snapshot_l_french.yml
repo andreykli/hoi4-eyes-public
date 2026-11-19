@@ -1,0 +1,6 @@
+﻿l_french:
+ eyes_world_snapshot_interval_1:0 "Intervalle des instantanés · 1 jours"
+ eyes_world_snapshot_interval_3:0 "Intervalle des instantanés · 3 jours"
+ eyes_world_snapshot_interval_7:0 "Intervalle des instantanés · 7 jours"
+ eyes_world_snapshot_interval_14:0 "Intervalle des instantanés · 14 jours"
+ eyes_world_snapshot_now:0 "Exporter un instantané Atlas maintenant"

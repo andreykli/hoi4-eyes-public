@@ -1,0 +1,5 @@
+﻿l_russian:
+ eyes_exp_disable_news:0 "EYES: отключить международные новости"
+ eyes_exp_enable_news:0 "EYES: включить международные новости (не чаще раза в 7 дней)"
+ eyes_exp_disable_personal:0 "EYES: отключить личные сообщения"
+ eyes_exp_enable_personal:0 "EYES: включить подготовленные личные сообщения"

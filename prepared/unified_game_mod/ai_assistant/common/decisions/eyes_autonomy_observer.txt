@@ -1,0 +1,17 @@
+# This decision enables telemetry, not treaty approval or execution.
+eyes_autonomy_observer_category = {
+    eyes_autonomy_enable_observer = {
+        icon = generic_political_actions
+        visible = { NOT = { has_country_flag = eyes_autonomy_observer_enabled } }
+        cost = 0
+        complete_effect = { set_country_flag = eyes_autonomy_observer_enabled }
+        ai_will_do = { factor = 0 }
+    }
+    eyes_autonomy_disable_observer = {
+        icon = generic_political_actions
+        visible = { has_country_flag = eyes_autonomy_observer_enabled }
+        cost = 0
+        complete_effect = { clr_country_flag = eyes_autonomy_observer_enabled }
+        ai_will_do = { factor = 0 }
+    }
+}

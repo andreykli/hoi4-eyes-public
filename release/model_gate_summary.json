@@ -1,0 +1,14 @@
+{
+  "model": "qwen3:4b-instruct",
+  "license": "Apache-2.0",
+  "thinking": false,
+  "json_schema_and_semantic_cases_passed": 6,
+  "behavioral_rubric": 5,
+  "baseline_behavioral_rubric": 5,
+  "cases": 6,
+  "median_seconds": 23.768,
+  "baseline_median_seconds": 28.588,
+  "passed": true,
+  "gameplay_test": false,
+  "limitation": "Six controlled synthetic cases. One French case chose rejection instead of the expected counteroffer, as did the old model; no claim of universal equivalence."
+}

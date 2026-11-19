@@ -1,0 +1,12 @@
+﻿l_russian:
+ EYES_DIPLOMACY_OPEN:0 "Дипломатия EYES"
+ EYES_DIPLOMACY_TITLE:0 "HOI4-EYES — Выбор страны"
+ EYES_DIPLOMACY_HINT:0 "Выберите страну для открытия дипломатического канала. Это не исполняет договоры."
+ EYES_ANNEX_VOLUNTARY:0 "Предложить объединение"
+ EYES_ANNEX_PRESSURE:0 "Политическое требование"
+ EYES_DIPLOMACY_SELECTED:0 "Выбранная страна"
+ EYES_DIPLOMACY_AVAILABLE:0 "Страны с собственными территориями"
+ EYES_DIPLOMACY_SELECT:0 "Выбрать"
+ EYES_DIPLOMACY_PREVIOUS:0 "Назад"
+ EYES_DIPLOMACY_NEXT:0 "Далее"
+ EYES_DIPLOMACY_PAGE_STATUS:0 "Страница [?ROOT.eyes_gui_page_display] / [?ROOT.eyes_gui_page_count]"

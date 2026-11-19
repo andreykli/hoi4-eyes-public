@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="{{ locale }}" translate="no">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOI4–EYES · {{ t('Government meetings') }}</title>
+<link rel="stylesheet" href="/static/world.css"><link rel="stylesheet" href="/static/fleet.css">
+<script src="/static/meetings.js" defer></script></head>
+<body>
+<header><div><small>HOI4–EYES</small><h1>{{ t('Government meetings') }}</h1></div>
+<div class="fleet-actions"><a href="/world">{{ t('Recognition Atlas') }}</a><button id="refresh">{{ t('Refresh') }}</button></div></header>
+<main class="fleet-layout">
+<section class="fleet-panel">
+ <p id="context" class="notice" role="status">{{ t('Loading…') }}</p>
+ <form id="schedule">
+  <h2>{{ t('Schedule a meeting') }}</h2>
+  <label for="subject">{{ t('Meeting title') }}</label><input id="subject" maxlength="100" required>
+  <label for="topic">{{ t('Agenda') }}</label>
+  <select id="topic">{% for topic in topics %}<option value="{{ topic }}">{{ t('meeting-topic-' + topic) }}</option>{% endfor %}</select>
+  <label for="mode">{{ t('Historical mode') }}</label>
+  <select id="mode">{% for mode in modes %}<option value="{{ mode }}">{{ t('meeting-mode-' + mode) }}</option>{% endfor %}</select>
+  <label for="format">{{ t('Meeting format') }}</label>
+  <select id="format">{% for format in formats %}<option value="{{ format }}">{{ t('meeting-format-' + format) }}</option>{% endfor %}</select>
+  <label for="delay">{{ t('Start after (game days)') }}</label><input id="delay" type="number" min="0" max="365" value="0" required>
+  <fieldset><legend>{{ t('Participants') }}</legend>{% for role in roles %}<div>
+   <label for="seat-{{ role }}" style="display:flex;gap:.5rem">
+   <input id="seat-{{ role }}" type="checkbox" value="{{ role }}" style="width:auto" {% if role=='minister' %}checked{% endif %}>{{ t('meeting-role-' + role) }}</label>
+   <select data-seat="{{ role }}" aria-label="{{ t('meeting-role-' + role) }}" hidden></select>
+  </div>{% endfor %}</fieldset>
+  <button class="primary">{{ t('Schedule a meeting') }}</button>
+ </form>
+ <label for="archive">{{ t('Meeting timeline') }}</label><select id="archive"></select>
+ <label for="meeting">{{ t('Meeting history') }}</label><select id="meeting"></select>
+ <h2>{{ t('Press') }}</h2>
+ <label for="press">{{ t('Editorial perspective') }}</label><select id="press">{% for view in views %}<option value="{{ view }}">{{ t('meeting-press-' + view) }}</option>{% endfor %}</select>
+ <button type="button" id="news">{{ t('Read campaign news') }}</button>
+ <p id="press-context" class="fleet-muted"></p><ul id="headlines"></ul>
+</section>
+<section class="fleet-panel">
+ <h2 id="meeting-heading">{{ t('Meeting history') }}</h2>
+ <p class="warning">{{ t('Discussion, decisions and project progress are recorded in EYES only.') }}</p>
+ <p id="message" role="status"></p>
+ <div id="discussion-controls" class="fleet-actions" hidden>
+  <button type="button" id="continue-discussion">{{ t('Continue discussion') }}</button>
+  <button type="button" id="stop-discussion" disabled>{{ t('Stop discussion') }}</button>
+ </div>
+ <details id="positions" hidden><summary>{{ t('Latest participant positions') }}</summary><ul id="position-list"></ul></details>
+ <div id="history" aria-live="polite"></div>
+ <form id="turn" hidden><label for="message-text">{{ t('Discuss or record a decision') }}</label>
+ <textarea id="message-text" rows="3" maxlength="2000" required></textarea>
+ <div class="fleet-actions"><button type="submit">{{ t('Send') }}</button>
+  <button type="button" id="compromise">{{ t('Propose a compromise') }}</button>
+  <button type="button" id="approve">{{ t('Record cabinet decision') }}</button></div></form>
+ <form id="motion" hidden><h3>{{ t('Cabinet motion') }}</h3>
+ <label for="motion-title">{{ t('Question for the cabinet') }}</label><input id="motion-title" maxlength="240" required>
+ <label for="options">{{ t('Two to four options, one per line') }}</label><textarea id="options" maxlength="960" rows="3" required></textarea>
+ <button type="submit">{{ t('Propose motion') }}</button></form>
+ <form id="project" hidden><h3>{{ t('Government project') }}</h3>
+ <label for="project-title">{{ t('Project name') }}</label><input id="project-title" maxlength="100" required>
+ <label for="project-stages">{{ t('Milestones, one per line') }}</label><textarea id="project-stages" rows="3" maxlength="1440" required></textarea>
+ <label for="duration">{{ t('Duration (game days)') }}</label><input id="duration" type="number" min="1" max="3650" value="30" required>
+ <button class="primary">{{ t('Record project') }}</button></form>
+ <div id="projects"></div><button id="close-meeting" type="button" hidden>{{ t('Close meeting') }}</button>
+</section>
+</main>
+<script id="meeting-labels" type="application/json">{{ {
+  'role_labels': {'head':t('meeting-role-head'),'minister':t('meeting-role-minister'),'general':t('meeting-role-general'),'marshal':t('meeting-role-marshal'),'admiral':t('meeting-role-admiral'),'diplomat':t('meeting-role-diplomat')},
+  'kinds': {'proposal':t('Proposal'),'objection':t('Objection'),'alternative':t('Alternative'),'response':t('Response')},
+  'lenses': {'government':t('What are the government’s stated aims?'),'independent':t('What can be checked from the evidence?'),'opposition':t('What costs and risks should be scrutinized?')},
+  'scope':t('Export and bind a fresh Atlas snapshot to open meetings.'),
+  'future':t('Further records belong to a later day or another session. Use the archive or a separate branch.'),
+  'not_due':t('This meeting is scheduled for a later game day.'),
+  'error':t('The request could not be completed.'),'choose':t('Choose a meeting'),'participant':t('Select a participant.'),
+  'player':t('Player'),'decision':t('Cabinet decision'),'day':t('Game day'),
+  'confirm':t('Record this in EYES? No change will be sent to HOI4.'),
+  'unavailable':t('No valid reply from Ollama. The player message has been saved.'),
+  'finish':t('Record milestone evidence'),'progress':t('Player record'),'closed':t('Meeting closed'),
+  'empty_news':t('No confirmed news in this campaign archive.'), 'live':t('Active timeline'),
+  'archive':t('Archive only'),'selected':t('Selected option'),
+  'stances':{'support':t('Support'),'concern':t('Concern'),'conditional':t('Conditional'),'undecided':t('Undecided')},
+  'adviser':t('Political adviser'),'generic':t('Unnamed role'),
+  'generating':t('Generating a reply…'),'paused':t('Discussion paused'),
+  'send':t('Send'),
+  'reply_error':t('Ollama did not return a valid reply. The discussion has paused.'),
+  'compromise':t('Compromise requested'),'intervene':t('Intervene in discussion'),
+  'round_size':limit,
+  'limit':t('Discussion limit reached. Send a message to start another round.'),
+  'unverified_role':t('The selected participant is absent from the current Atlas roster.'),
+  'format_error':t('Choose one participant for a private meeting or several for a group.'),
+  'stale':t('The meeting or game context changed. Refresh before continuing.')
+}|tojson }}</script>
+</body></html>

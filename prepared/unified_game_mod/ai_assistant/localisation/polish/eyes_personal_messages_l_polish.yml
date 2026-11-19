@@ -1,0 +1,4 @@
+﻿l_polish:
+ eyes_personal_message.title:0 "Nowa wiadomość od [?event_target:eyes_message_sender.GetName]"
+ eyes_personal_message.desc:0 "[?event_target:eyes_message_sender.GetName] wysłało nową wiadomość dyplomatyczną. Otwórz HOI4-EYES, aby ją przeczytać i odpowiedzieć."
+ eyes_personal_message.ok:0 "OK"

@@ -1,0 +1,5 @@
+﻿l_english:
+ eyes_exp_disable_news:0 "EYES: mute international news"
+ eyes_exp_enable_news:0 "EYES: enable international news (at most once per 7 days)"
+ eyes_exp_disable_personal:0 "EYES: mute personal message popups"
+ eyes_exp_enable_personal:0 "EYES: enable preloaded personal message popups"

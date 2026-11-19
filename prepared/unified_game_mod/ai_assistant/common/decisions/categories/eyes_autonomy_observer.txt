@@ -1,0 +1,5 @@
+eyes_autonomy_observer_category = {
+    icon = generic_political_actions
+    allowed = { is_ai = no }
+    visible = { is_ai = no }
+}

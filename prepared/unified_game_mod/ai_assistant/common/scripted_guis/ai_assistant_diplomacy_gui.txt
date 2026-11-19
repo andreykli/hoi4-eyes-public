@@ -1,0 +1,106 @@
+scripted_gui = {
+	eyes_diplomacy_launcher = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "eyes_diplomacy_launcher_window"
+		visible = { always = yes }
+
+		effects = {
+			eyes_diplomacy_open_button_click = {
+				set_variable = { var = ROOT.eyes_gui_page value = 0 }
+				set_country_flag = eyes_gui_refresh_diagnostics_active
+				eyes_refresh_country_list = yes
+				clr_country_flag = eyes_gui_refresh_diagnostics_active
+				set_country_flag = eyes_diplomacy_panel_open
+				log = "EYES_HOI4_GUI_OPENED_V1|[ROOT.GetTag]"
+			}
+		}
+
+		triggers = {
+			eyes_diplomacy_open_button_click_enabled = {
+				always = yes
+			}
+		}
+	}
+
+	eyes_diplomacy_panel = {
+		context_type = player_context
+		window_name = "eyes_diplomacy_panel_window"
+		visible = { has_country_flag = eyes_diplomacy_panel_open }
+
+		effects = {
+			eyes_diplomacy_close_button_click = {
+				clr_country_flag = eyes_diplomacy_panel_open
+			}
+			eyes_country_page_previous_button_click = {
+				if = {
+					limit = { check_variable = { ROOT.eyes_gui_page > 0 } }
+					add_to_variable = { var = ROOT.eyes_gui_page value = -1 }
+				}
+				eyes_rebuild_country_page = yes
+			}
+			eyes_country_page_next_button_click = {
+				if = {
+					limit = {
+						check_variable = { ROOT.eyes_gui_page < ROOT.eyes_gui_page_last }
+					}
+					add_to_variable = { var = ROOT.eyes_gui_page value = 1 }
+				}
+				eyes_rebuild_country_page = yes
+			}
+			eyes_country_select_button_click = {
+				log = "EYES_HOI4_GUI_COUNTRY_ROW_CLICK_V1|[ROOT.GetTag]|[THIS.GetTag]"
+				eyes_select_country_from_list = yes
+			}
+				eyes_annex_voluntary_button_click = {
+					eyes_log_annexation_proposal_voluntary = yes
+				}
+				eyes_annex_pressure_button_click = {
+					eyes_log_annexation_proposal_pressure = yes
+				}
+		}
+		triggers = {
+			eyes_country_page_previous_button_click_enabled = {
+				check_variable = { ROOT.eyes_gui_page > 0 }
+			}
+			eyes_country_page_next_button_click_enabled = {
+				check_variable = { ROOT.eyes_gui_page < ROOT.eyes_gui_page_last }
+			}
+			eyes_country_select_button_click_enabled = {
+				exists = yes
+				any_owned_state = { always = yes }
+				NOT = { tag = ROOT }
+			}
+				eyes_annex_voluntary_button_click_enabled = {
+					exists = yes
+					any_owned_state = { always = yes }
+					NOT = { tag = ROOT }
+				}
+				eyes_annex_pressure_button_click_enabled = {
+					exists = yes
+					any_owned_state = { always = yes }
+					NOT = { tag = ROOT }
+				}
+		}
+		properties = {
+			eyes_diplomacy_country_flag = {
+				image = "[THIS.GetFlag]"
+			}
+			eyes_diplomacy_selected_country_flag = {
+				image = "[THIS.GetFlag]"
+			}
+		}
+		dynamic_lists = {
+			eyes_country_list = {
+				array = global.eyes_visible_countries
+				change_scope = yes
+				country_scope_entry_container = "eyes_diplomacy_country_entry"
+			}
+			eyes_selected_country_list = {
+				array = global.eyes_selected_country
+				change_scope = yes
+				country_scope_entry_container = "eyes_diplomacy_selected_country_entry"
+			}
+		}
+	}
+}

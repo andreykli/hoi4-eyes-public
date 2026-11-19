@@ -1,0 +1,4 @@
+﻿l_spanish:
+ eyes_personal_message.title:0 "Nuevo mensaje de [?event_target:eyes_message_sender.GetName]"
+ eyes_personal_message.desc:0 "[?event_target:eyes_message_sender.GetName] le ha enviado un mensaje diplomático. Abra HOI4-EYES para leerlo y responder."
+ eyes_personal_message.ok:0 "Aceptar"

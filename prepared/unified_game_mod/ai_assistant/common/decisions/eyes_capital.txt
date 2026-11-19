@@ -1,0 +1,93 @@
+eyes_capital_category = {
+    eyes_begin_capital_selection = {
+        icon = GFX_decision_generic_political_discourse
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = eyes_capital_selecting }
+        }
+        available = {
+            is_ai = no
+            NOT = { has_country_flag = eyes_capital_selecting }
+            any_owned_state = { eyes_capital_destination = yes }
+        }
+        cost = 0
+        custom_cost_trigger = { eyes_capital_can_pay = yes }
+        custom_cost_text = eyes_move_capital_cost
+        ai_will_do = { factor = 0 }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    is_ai = no
+                    NOT = { has_country_flag = eyes_capital_selecting }
+                    eyes_capital_can_pay = yes
+                    any_owned_state = { eyes_capital_destination = yes }
+                }
+                set_country_flag = eyes_capital_selecting
+                custom_effect_tooltip = eyes_capital_choose_on_map
+            }
+        }
+    }
+
+    eyes_cancel_capital_selection = {
+        icon = GFX_decision_generic_political_discourse
+        visible = {
+            is_ai = no
+            has_country_flag = eyes_capital_selecting
+        }
+        available = {
+            is_ai = no
+            has_country_flag = eyes_capital_selecting
+        }
+        cost = 0
+        ai_will_do = { factor = 0 }
+        complete_effect = {
+            if = {
+                limit = { is_ai = no has_country_flag = eyes_capital_selecting }
+                clr_country_flag = eyes_capital_selecting
+            }
+        }
+    }
+
+    eyes_move_capital = {
+        icon = GFX_decision_generic_political_discourse
+        state_target = yes
+        target_array = ROOT.owned_states
+        target_root_trigger = { has_country_flag = eyes_capital_selecting }
+        target_trigger = { FROM = { eyes_capital_destination = yes } }
+        on_map_mode = map_only
+        # Target instances are refreshed daily. Visibility also checks the
+        # current mode so an already instantiated marker can hide immediately.
+        visible = {
+            is_ai = no
+            has_country_flag = eyes_capital_selecting
+            FROM = { eyes_capital_destination = yes }
+        }
+        available = {
+            is_ai = no
+            has_country_flag = eyes_capital_selecting
+            FROM = { eyes_capital_destination = yes }
+        }
+        cost = 0
+        custom_cost_trigger = { eyes_capital_can_pay = yes }
+        custom_cost_text = eyes_move_capital_cost
+        ai_will_do = { factor = 0 }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    is_ai = no
+                    has_country_flag = eyes_capital_selecting
+                    eyes_capital_can_pay = yes
+                    FROM = { eyes_capital_destination = yes }
+                }
+                set_capital = { state = FROM remember_old_capital = no }
+                if = {
+                    limit = { FROM = { is_capital = yes } }
+                    add_political_power = -100
+                    clr_country_flag = eyes_capital_selecting
+                }
+            }
+        }
+    }
+}

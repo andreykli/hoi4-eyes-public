@@ -1,0 +1,34 @@
+[h1]HOI4-EYES — Local AI Diplomacy & Government[/h1]
+[b]NightPulse | 0.9.0-beta.1 | HOI4 1.19.5.0[/b]
+[url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
+
+Talk to countries, negotiate precise treaties and consult your government with
+a local AI. HOI4-EYES combines a Windows companion with guarded game scripts.
+
+Features: diplomatic chats and conferences; revision-specific confirmations;
+supported pact, guarantee and access actions; Bridge receipts and repeat protection;
+diplomatic memory and news; Atlas, Recognition Atlas and Country Maker;
+government discussions and fleet planning templates. EN/RU/FR interface.
+
+IMPORTANT: Workshop contains the game mod, not the AI backend. Download the
+Windows-source companion separately. Install Python 3.10+, WebView2 and Ollama;
+download qwen3:4b-instruct, run setup_windows.bat once, then start.bat.
+No paid AI API is required. Enable one EYES copy only. The companion currently
+manages a writable bundled local mod: do not enable its local copy together
+with the Workshop subscription. See the companion README for registration.
+
+Beta limits: not every proposal has a game executor. Some installations require
+restarting HOI4. A signature is not game confirmation. Modified maps require
+geometry validation; fleet templates and many reforms remain advisory. Multiplayer,
+Ironman/achievements and all DLC/playset combinations are not certified.
+First use: a disposable campaign. Keep backups of important saves.
+
+Original project: HOI4-EYES. Author: NightPulse.
+Apache-2.0; retain applicable NOTICE and third-party notices when redistributing.
+Please also credit the author and link the original GitHub/Workshop in your
+public description. This request does not add a condition to Apache-2.0.
+Unofficial project; not affiliated with or endorsed by Paradox Interactive.
+
+The owner-authorized cover uses the existing project-owned EYES icon. It is not an in-game screenshot.
+
+Original Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3842411221

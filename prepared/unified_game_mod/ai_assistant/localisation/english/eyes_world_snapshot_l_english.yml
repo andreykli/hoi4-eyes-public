@@ -1,0 +1,6 @@
+﻿l_english:
+ eyes_world_snapshot_interval_1:0 "World snapshot interval · 1"
+ eyes_world_snapshot_interval_3:0 "World snapshot interval · 3"
+ eyes_world_snapshot_interval_7:0 "World snapshot interval · 7"
+ eyes_world_snapshot_interval_14:0 "World snapshot interval · 14"
+ eyes_world_snapshot_now:0 "Export Atlas snapshot now"

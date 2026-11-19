@@ -1,0 +1,66 @@
+# EYES original sparse telemetry: O(N) roster, at most 16 directed rows.
+eyes_autonomy_observe = {
+ eyes_ensure_campaign_identity = yes
+ add_to_variable = { eyes_autonomy_sequence = 1 }
+ set_variable = { eyes_autonomy_rows = 0 }
+ set_variable = { eyes_world_count = 0 }
+ every_country = { limit = { exists = yes }
+  set_variable = { eyes_world_index = ROOT.eyes_world_count }
+  ROOT = { add_to_variable = { eyes_world_count = 1 } }
+ }
+ if = { limit = { check_variable = { var = eyes_world_cursor value = eyes_world_count compare = greater_than_or_equals } }
+  set_variable = { eyes_world_cursor = 0 }
+  add_to_variable = { eyes_world_offset = 1 }
+ }
+ if = { limit = { OR = { check_variable = { eyes_world_offset = 0 } check_variable = { var = eyes_world_offset value = eyes_world_count compare = greater_than_or_equals } } }
+  set_variable = { eyes_world_offset = 1 }
+ }
+ set_variable = { eyes_world_end = eyes_world_cursor }
+ add_to_variable = { eyes_world_end = 4 }
+ if = { limit = { is_historical_focus_on = yes }
+  log = "EYES_AUTONOMY_V2|BEGIN|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[?global.num_days|0]|[ROOT.GetTag]|1"
+ } else = { log = "EYES_AUTONOMY_V2|BEGIN|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[?global.num_days|0]|[ROOT.GetTag]|0" }
+ every_country = { limit = { exists = yes }
+  set_variable = { eyes_autonomy_is_ai = 0 }
+  set_variable = { eyes_autonomy_major = 0 }
+  if = { limit = { is_ai = yes } set_variable = { eyes_autonomy_is_ai = 1 } }
+  if = { limit = { is_major = yes } set_variable = { eyes_autonomy_major = 1 } }
+  log = "EYES_AUTONOMY_V2|COUNTRY|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[THIS.GetTag]|[?eyes_autonomy_is_ai|0]|[?eyes_autonomy_major|0]"
+  ROOT = { add_to_variable = { eyes_autonomy_rows = 1 } }
+ }
+ every_country = { limit = { exists = yes is_ai = yes
+   OR = {
+    AND = { ROOT = { has_country_flag = eyes_world_focus_ger_fra } tag = GER }
+    AND = { ROOT = { NOT = { has_country_flag = eyes_world_focus_ger_fra } }
+      check_variable = { var = eyes_world_index value = ROOT.eyes_world_cursor compare = greater_than_or_equals }
+      check_variable = { var = eyes_world_index value = ROOT.eyes_world_end compare = less_than } }
+   } }
+  set_variable = { eyes_world_target_index = eyes_world_index }
+  add_to_variable = { eyes_world_target_index = ROOT.eyes_world_offset }
+  modulo_variable = { var = eyes_world_target_index value = ROOT.eyes_world_count }
+  every_country = { limit = { exists = yes NOT = { tag = PREV }
+   OR = { tag = ROOT
+    AND = { ROOT = { has_country_flag = eyes_world_focus_ger_fra } tag = FRA }
+    AND = { ROOT = { NOT = { has_country_flag = eyes_world_focus_ger_fra } } check_variable = { var = eyes_world_index value = PREV.eyes_world_target_index compare = equals } }
+   } }
+   set_variable = { eyes_autonomy_war = 0 }
+set_variable = { eyes_autonomy_faction = 0 }
+set_variable = { eyes_autonomy_nap = 0 }
+if = { limit = { has_war_with = PREV } set_variable = { eyes_autonomy_war = 1 } }
+if = { limit = { is_in_faction_with = PREV } set_variable = { eyes_autonomy_faction = 1 } }
+if = { limit = { has_non_aggression_pact_with = PREV } set_variable = { eyes_autonomy_nap = 1 } }
+log = "EYES_AUTONOMY_V2|PAIR|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[PREV.GetTag]|[THIS.GetTag]|[?PREV.opinion@THIS|0]|[?eyes_autonomy_war|0]|[?eyes_autonomy_faction|0]|[?eyes_autonomy_nap|0]|[?global.threat|2]"
+ROOT = { add_to_variable = { eyes_autonomy_rows = 1 } }
+   PREV = { set_variable = { eyes_autonomy_war = 0 }
+set_variable = { eyes_autonomy_faction = 0 }
+set_variable = { eyes_autonomy_nap = 0 }
+if = { limit = { has_war_with = PREV } set_variable = { eyes_autonomy_war = 1 } }
+if = { limit = { is_in_faction_with = PREV } set_variable = { eyes_autonomy_faction = 1 } }
+if = { limit = { has_non_aggression_pact_with = PREV } set_variable = { eyes_autonomy_nap = 1 } }
+log = "EYES_AUTONOMY_V2|PAIR|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[PREV.GetTag]|[THIS.GetTag]|[?PREV.opinion@THIS|0]|[?eyes_autonomy_war|0]|[?eyes_autonomy_faction|0]|[?eyes_autonomy_nap|0]|[?global.threat|2]"
+ROOT = { add_to_variable = { eyes_autonomy_rows = 1 } } }
+  }
+ }
+ add_to_variable = { eyes_world_cursor = 4 }
+ log = "EYES_AUTONOMY_V2|END|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_autonomy_sequence|0]|[?ROOT.eyes_autonomy_rows|0]"
+}

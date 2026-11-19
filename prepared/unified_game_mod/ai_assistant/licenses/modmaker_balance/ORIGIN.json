@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/Floxizdia/hoi4-modmaker",
+  "revision": "a5c138ffacf4ed471769558f864cbe55ec5163fa",
+  "file": "app/validator.py",
+  "source_sha256": "6937de0b1d1159930220fdc2d9344a5c3de9634a5fcec810bcd5f8c00583a288",
+  "adaptation": "Standalone import; original algorithms retained",
+  "copyright": "Copyright (c) 2026 Floxizdia"
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ eyes_recognize:0 "Recognize country · position unknown"
+ eyes_recognize_again:0 "Recognize country · previously not recognized"
+ eyes_withdraw_recognition:0 "Withdraw recognition · currently recognized"
+ eyes_recognize_confirm:0 "Record legal recognition of this country in HOI4-EYES?"
+ eyes_recognize_again_confirm:0 "Restore legal recognition of this country in HOI4-EYES?"
+ eyes_withdraw_recognition_confirm:0 "Withdraw legal recognition of this country in HOI4-EYES?"
+ MAPMODE_EYES_RECOGNITION_NAME:0 "Diplomatic recognition"
+ MAPMODE_EYES_RECOGNITION_DESCRIPTION:0 "Green: recognized. Red: not recognized. Grey: unknown."
+ MAPMODE_EYES_RECOGNITION:0 "Diplomatic recognition"
+ eyes_recognition_tooltip:0 "Diplomatic recognition"
+ eyes_recognition_tooltip_delayed:0 "Green: recognized. Red: not recognized. Grey: unknown."

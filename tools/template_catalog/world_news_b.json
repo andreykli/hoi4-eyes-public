@@ -1,0 +1,2269 @@
+[
+  {
+    "id": "news.trade.001",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Консультации {COUNTRY_A} и {COUNTRY_B} по торговым вопросам перешли в рабочую стадию; стороны обменялись перечнями тем.",
+    "en": "Consultations between {COUNTRY_A} and {COUNTRY_B} on trade issues have entered a working phase; the sides exchanged lists of topics."
+  },
+  {
+    "id": "news.trade.002",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Комиссия {COUNTRY_A} и {COUNTRY_B} официально объявила о старте переговоров; в повестке — {TREATY_TYPE}.",
+    "en": "Joint commission of {COUNTRY_A} and {COUNTRY_B} formally announced the start of talks; the agenda includes the {TREATY_TYPE}."
+  },
+  {
+    "id": "news.trade.003",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наблюдатели подтвердили, что {COUNTRY_A} и {COUNTRY_B} провели таможенные процедуры в согласованном порядке; окончательный отчёт пока не опубликован.",
+    "en": "Observers confirmed that {COUNTRY_A} and {COUNTRY_B} carried out customs procedures in the agreed order; the final report has not yet been published."
+  },
+  {
+    "id": "news.trade.004",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} в конструктивной атмосфере согласовали новый раунд консультаций и назначили его на {DATE}.",
+    "en": "Delegations of {COUNTRY_A} and {COUNTRY_B} agreed in a constructive atmosphere on a new round of consultations and scheduled it for {DATE}."
+  },
+  {
+    "id": "news.trade.005",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Тарифные консультации {COUNTRY_A} и {COUNTRY_B} продолжаются; итоговые формулировки не опубликованы.",
+    "en": "Tariff consultations between {COUNTRY_A} and {COUNTRY_B} continue; the final wording has not been published."
+  },
+  {
+    "id": "news.trade.006",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наблюдатели официально подтвердили, что {COUNTRY_A} и {COUNTRY_B} применяют согласованный порядок торговых инспекций.",
+    "en": "Observers formally confirmed that {COUNTRY_A} and {COUNTRY_B} apply the agreed procedure for trade inspections."
+  },
+  {
+    "id": "news.trade.007",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Квоты на ввоз промышленных товаров обсуждались {COUNTRY_A} и {COUNTRY_B}; окончательных решений пока нет.",
+    "en": "Import quotas for industrial goods were discussed by {COUNTRY_A} and {COUNTRY_B}; there are no final decisions yet."
+  },
+  {
+    "id": "news.trade.008",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Торговая миссия {COUNTRY_A} и {COUNTRY_B} в дружественной атмосфере обсудила расширение поставок и договорилась продолжить работу.",
+    "en": "Trade mission of {COUNTRY_A} and {COUNTRY_B} discussed expanding supplies in a friendly atmosphere and agreed to continue its work."
+  },
+  {
+    "id": "news.trade.009",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Мониторинг подтвердил, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованные условия поставок.",
+    "en": "Monitoring confirmed that {COUNTRY_A} and {COUNTRY_B} comply with the agreed supply terms."
+  },
+  {
+    "id": "news.trade.010",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "В коммюнике {COUNTRY_A} и {COUNTRY_B} указано, что стороны вернулись к обсуждению {TREATY_TYPE}.",
+    "en": "Communiqué from {COUNTRY_A} and {COUNTRY_B} states that the sides have returned to discussing the {TREATY_TYPE}."
+  },
+  {
+    "id": "news.trade.011",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Порядок транзита грузов обсуждался {COUNTRY_A} и {COUNTRY_B} в закрытом режиме; подробности не раскрываются.",
+    "en": "Cargo transit rules were discussed by {COUNTRY_A} and {COUNTRY_B} behind closed doors; details were not disclosed."
+  },
+  {
+    "id": "news.trade.012",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сверка таможенных формальностей, проведённая {COUNTRY_A} и {COUNTRY_B} в конструктивном ключе, подтвердила их выполнение.",
+    "en": "Reconciliation of customs formalities carried out by {COUNTRY_A} and {COUNTRY_B} in a constructive spirit confirmed that they had been completed."
+  },
+  {
+    "id": "news.trade.013",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Экспортные лицензии и их взаимное признание обсуждаются {COUNTRY_A} и {COUNTRY_B} в рабочем порядке.",
+    "en": "Export licences and their mutual recognition are being discussed by {COUNTRY_A} and {COUNTRY_B} in a working format."
+  },
+  {
+    "id": "news.trade.014",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Повестка официальной встречи представителей {COUNTRY_A} и {COUNTRY_B}: {TOPIC}; коммюнике не публиковалось.",
+    "en": "Agenda of the official meeting of representatives of {COUNTRY_A} and {COUNTRY_B}: {TOPIC}; no communiqué was published."
+  },
+  {
+    "id": "news.trade.015",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Независимая проверка установила, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный график торговых поставок; отдельные пункты требуют уточнения.",
+    "en": "Independent review found that {COUNTRY_A} and {COUNTRY_B} follow the agreed schedule for trade deliveries; certain points still require clarification."
+  },
+  {
+    "id": "news.trade.016",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Готовность продолжить торговый диалог с удовлетворением отметили представители {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Readiness to continue the trade dialogue was noted with satisfaction by representatives of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.trade.017",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "{TREATY_TYPE} остаётся в работе: {COUNTRY_A} и {COUNTRY_B} проводят консультации по спорным статьям.",
+    "en": "{TREATY_TYPE} remains in progress: {COUNTRY_A} and {COUNTRY_B} are consulting on disputed articles."
+  },
+  {
+    "id": "news.trade.018",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итоговое заключение наблюдателей фиксирует, что {COUNTRY_A} и {COUNTRY_B} сняли взаимные ограничения на поставки.",
+    "en": "Final conclusion of the observers records that {COUNTRY_A} and {COUNTRY_B} removed the mutual restrictions on supplies."
+  },
+  {
+    "id": "news.trade.019",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Объёмы поставок не называются: {COUNTRY_A} и {COUNTRY_B} ограничились общими формулировками.",
+    "en": "No volumes were disclosed: {COUNTRY_A} and {COUNTRY_B} limited themselves to general wording."
+  },
+  {
+    "id": "news.trade.020",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Портовые сборы и логистика обсуждались {COUNTRY_A} и {COUNTRY_B} в конструктивном ключе; согласованных решений не объявлено.",
+    "en": "Port fees and logistics were discussed by {COUNTRY_A} and {COUNTRY_B} in a constructive spirit; no agreed decisions have been announced."
+  },
+  {
+    "id": "news.trade.021",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Таможенные органы {COUNTRY_A} и {COUNTRY_B} подтвердили совместимость процедур по итогам проверки.",
+    "en": "Customs authorities of {COUNTRY_A} and {COUNTRY_B} confirmed the compatibility of their procedures following the review."
+  },
+  {
+    "id": "news.trade.022",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальное заявление {COUNTRY_A} и {COUNTRY_B} касается условий торговли и порядка разрешения споров.",
+    "en": "Formal statement by {COUNTRY_A} and {COUNTRY_B} concerns trade terms and the procedure for settling disputes."
+  },
+  {
+    "id": "news.trade.023",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Доступ на рынки обсуждается {COUNTRY_A} и {COUNTRY_B} без публичных комментариев; делегации воздерживаются от оценок.",
+    "en": "Market access is being discussed by {COUNTRY_A} and {COUNTRY_B} without public comment; the delegations are withholding assessments."
+  },
+  {
+    "id": "news.trade.024",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Рабочая группа {COUNTRY_A} и {COUNTRY_B} в партнёрском ключе подтвердила выполнение согласованных складских и транспортных процедур.",
+    "en": "Working group of {COUNTRY_A} and {COUNTRY_B}, in a spirit of partnership, confirmed that the agreed warehousing and transport procedures had been completed."
+  },
+  {
+    "id": "news.trade.025",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вопросы стандартизации в торговле {COUNTRY_A} и {COUNTRY_B} переданы в профильные ведомства.",
+    "en": "Standardisation issues in trade between {COUNTRY_A} and {COUNTRY_B} have been referred to the relevant agencies."
+  },
+  {
+    "id": "news.trade.026",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Совместное заявление {COUNTRY_A} и {COUNTRY_B} подтверждает опору на {TREATY_TYPE} в торговых вопросах.",
+    "en": "Statement by {COUNTRY_A} and {COUNTRY_B} reaffirms their reliance on the {TREATY_TYPE} in trade matters."
+  },
+  {
+    "id": "news.trade.027",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Отчёты третьих стран фиксируют, что {COUNTRY_A} и {COUNTRY_B} исполняют согласованные правила происхождения товаров, но проверка продолжается.",
+    "en": "Reports from third countries record that {COUNTRY_A} and {COUNTRY_B} implement the agreed rules of origin, although the review continues."
+  },
+  {
+    "id": "news.trade.028",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Партнёрство {COUNTRY_A} и {COUNTRY_B} в сфере поставок продолжается: стороны обсудили расширение номенклатуры товаров.",
+    "en": "Supply partnership of {COUNTRY_A} and {COUNTRY_B} continues: the sides discussed broadening the range of goods."
+  },
+  {
+    "id": "news.trade.029",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Смешанная комиссия {COUNTRY_A} и {COUNTRY_B} обсудила {TREATY_TYPE} и сроки его ратификации.",
+    "en": "Mixed commission of {COUNTRY_A} and {COUNTRY_B} discussed the {TREATY_TYPE} and its ratification timeline."
+  },
+  {
+    "id": "news.trade.030",
+    "category": "world_news",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальная итоговая сверка подтвердила, что {COUNTRY_A} и {COUNTRY_B} выполнили взаимные обязательства по торговым поставкам.",
+    "en": "Official final reconciliation confirmed that {COUNTRY_A} and {COUNTRY_B} met their mutual obligations on trade deliveries."
+  },
+  {
+    "id": "news.economy.031",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Бюджетные консультации {COUNTRY_A} и {COUNTRY_B} касаются совместных программ и порядка их финансирования.",
+    "en": "Budget consultations between {COUNTRY_A} and {COUNTRY_B} concern joint programmes and how they are financed."
+  },
+  {
+    "id": "news.economy.032",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Финансовые ведомства {COUNTRY_A} и {COUNTRY_B} официально подтвердили продолжение технического диалога.",
+    "en": "Finance ministries of {COUNTRY_A} and {COUNTRY_B} formally confirmed that their technical dialogue continues."
+  },
+  {
+    "id": "news.economy.033",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Проверка отчётности подтвердила соответствие {COUNTRY_A} и {COUNTRY_B} согласованным параметрам совместных программ; часть данных уточняется.",
+    "en": "Audit of the accounts confirmed that {COUNTRY_A} and {COUNTRY_B} meet the agreed parameters of their joint programmes; some data are still being clarified."
+  },
+  {
+    "id": "news.economy.034",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Инвестиционные предложения {COUNTRY_A} и {COUNTRY_B} обсуждались в конструктивном ключе; итоговый пакет дорабатывается.",
+    "en": "Investment proposals from {COUNTRY_A} and {COUNTRY_B} were discussed constructively; the final package is being finalised."
+  },
+  {
+    "id": "news.economy.035",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Промышленная кооперация {COUNTRY_A} и {COUNTRY_B} остаётся темой переговоров; совместных решений не объявлено.",
+    "en": "Industrial cooperation between {COUNTRY_A} and {COUNTRY_B} remains a subject of negotiations; no joint decisions have been announced."
+  },
+  {
+    "id": "news.economy.036",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Мониторинг официально подтвердил, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный порядок расчётов.",
+    "en": "Monitoring formally confirmed that {COUNTRY_A} and {COUNTRY_B} follow the agreed settlement procedure."
+  },
+  {
+    "id": "news.economy.037",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Долговые вопросы {COUNTRY_A} и {COUNTRY_B} обсуждаются без публичных цифр; стороны ссылаются на технические консультации.",
+    "en": "Debt issues between {COUNTRY_A} and {COUNTRY_B} are being discussed without public figures; the sides cite technical consultations."
+  },
+  {
+    "id": "news.economy.038",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Энергетический диалог {COUNTRY_A} и {COUNTRY_B} продолжился в дружественном ключе; стороны отметили близость подходов.",
+    "en": "Energy dialogue between {COUNTRY_A} and {COUNTRY_B} continued in a friendly spirit; the sides noted the closeness of their approaches."
+  },
+  {
+    "id": "news.economy.039",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Аудиторы зафиксировали, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные меры по совместным проектам.",
+    "en": "Auditors recorded that {COUNTRY_A} and {COUNTRY_B} completed the agreed measures on joint projects."
+  },
+  {
+    "id": "news.economy.040",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальное коммюнике {COUNTRY_A} и {COUNTRY_B} посвящено финансовой стабильности и координации политики.",
+    "en": "Official communiqué of {COUNTRY_A} and {COUNTRY_B} addresses financial stability and policy coordination."
+  },
+  {
+    "id": "news.economy.041",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Налоговые аспекты сотрудничества {COUNTRY_A} и {COUNTRY_B} остаются несогласованными; обсуждение продолжается.",
+    "en": "Tax aspects of cooperation between {COUNTRY_A} and {COUNTRY_B} remain unresolved; discussions continue."
+  },
+  {
+    "id": "news.economy.042",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Финансовая группа {COUNTRY_A} и {COUNTRY_B} в духе партнёрства подтвердила, что согласованные процедуры отчётности выполнены.",
+    "en": "Financial group of {COUNTRY_A} and {COUNTRY_B}, in a spirit of partnership, confirmed that the agreed reporting procedures had been implemented."
+  },
+  {
+    "id": "news.economy.043",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Кредитные линии и их условия обсуждались ведомствами {COUNTRY_A} и {COUNTRY_B}; детали не раскрыты.",
+    "en": "Credit lines and their terms were discussed by agencies of {COUNTRY_A} and {COUNTRY_B}; details were not disclosed."
+  },
+  {
+    "id": "news.economy.044",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Церемония обмена документами между {COUNTRY_A} и {COUNTRY_B} прошла в официальной обстановке; содержание не опубликовано.",
+    "en": "Exchange of documents between {COUNTRY_A} and {COUNTRY_B} took place in a formal setting; the content has not been published."
+  },
+  {
+    "id": "news.economy.045",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Независимая экспертиза подтвердила, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованные бюджетные ориентиры, хотя отдельные показатели требуют проверки.",
+    "en": "Expert review confirmed that {COUNTRY_A} and {COUNTRY_B} adhere to the agreed budget benchmarks, although certain indicators still require verification."
+  },
+  {
+    "id": "news.economy.046",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Продолжение валютного сотрудничества {COUNTRY_A} и {COUNTRY_B} с удовлетворением отметили профильные ведомства.",
+    "en": "Continuation of currency cooperation between {COUNTRY_A} and {COUNTRY_B} was noted with satisfaction by the relevant agencies."
+  },
+  {
+    "id": "news.economy.047",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Процентные ставки не обсуждались: {COUNTRY_A} и {COUNTRY_B} сосредоточились на процедурах.",
+    "en": "Interest rates were not discussed: {COUNTRY_A} and {COUNTRY_B} focused on procedures."
+  },
+  {
+    "id": "news.economy.048",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В итоговом коммюнике наблюдателей подтверждено, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные шаги по стабилизации расчётов.",
+    "en": "Final communiqué of the observers confirms that {COUNTRY_A} and {COUNTRY_B} completed the agreed steps to stabilise settlements."
+  },
+  {
+    "id": "news.economy.049",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Совместные проекты в промышленности {COUNTRY_A} и {COUNTRY_B} требуют дополнительной проработки; сроки не определены.",
+    "en": "Joint industrial projects of {COUNTRY_A} and {COUNTRY_B} require further elaboration; no timelines have been set."
+  },
+  {
+    "id": "news.economy.050",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Деловые круги {COUNTRY_A} и {COUNTRY_B} приветствовали продолжение экономического диалога и обсудили {TOPIC}.",
+    "en": "Business circles of {COUNTRY_A} and {COUNTRY_B} welcomed the continuation of the economic dialogue and discussed {TOPIC}."
+  },
+  {
+    "id": "news.economy.051",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сверка данных подтвердила, что {COUNTRY_A} и {COUNTRY_B} применяют согласованные правила учёта.",
+    "en": "Data reconciliation confirmed that {COUNTRY_A} and {COUNTRY_B} apply the agreed accounting rules."
+  },
+  {
+    "id": "news.economy.052",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Официальные представители {COUNTRY_A} и {COUNTRY_B} огласили повестку экономических консультаций на {DATE}.",
+    "en": "Official representatives of {COUNTRY_A} and {COUNTRY_B} announced the agenda of economic consultations on {DATE}."
+  },
+  {
+    "id": "news.economy.053",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Инфраструктурные сметы {COUNTRY_A} и {COUNTRY_B} остаются предметом технической экспертизы; публичных выводов нет.",
+    "en": "Infrastructure estimates of {COUNTRY_A} and {COUNTRY_B} remain under technical review; no public findings have been issued."
+  },
+  {
+    "id": "news.economy.054",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Рабочая группа по экономике {COUNTRY_A} и {COUNTRY_B} в конструктивном ключе подтвердила, что согласованные процедуры обмена данными выполнены.",
+    "en": "Economic working group of {COUNTRY_A} and {COUNTRY_B}, in a constructive spirit, confirmed that the agreed data-exchange procedures had been completed."
+  },
+  {
+    "id": "news.economy.055",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Тарифная сетка и её пересмотр обсуждаются {COUNTRY_A} и {COUNTRY_B} на уровне экспертов.",
+    "en": "Tariff schedule and its revision are being discussed by {COUNTRY_A} and {COUNTRY_B} at expert level."
+  },
+  {
+    "id": "news.economy.056",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "{TREATY_TYPE}: церемония подписания с участием {COUNTRY_A} и {COUNTRY_B} прошла в официальной обстановке, текст документа не опубликован.",
+    "en": "{TREATY_TYPE}: signing ceremony with {COUNTRY_A} and {COUNTRY_B} took place in a formal setting; the text has not been published."
+  },
+  {
+    "id": "news.economy.057",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Бюджетные ограничения {COUNTRY_A} и {COUNTRY_B} проверены: итоговые выводы не опубликованы.",
+    "en": "Budget constraints of {COUNTRY_A} and {COUNTRY_B} have been reviewed: final conclusions have not been published."
+  },
+  {
+    "id": "news.economy.058",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Стороны — {COUNTRY_A} и {COUNTRY_B} — отметили взаимную заинтересованность в устойчивом экономическом сотрудничестве.",
+    "en": "Sides — {COUNTRY_A} and {COUNTRY_B} — noted mutual interest in sustainable economic cooperation."
+  },
+  {
+    "id": "news.economy.059",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Финансовый мониторинг {COUNTRY_A} и {COUNTRY_B} продолжается; промежуточные результаты не публикуются.",
+    "en": "Financial monitoring of {COUNTRY_A} and {COUNTRY_B} continues; interim results are not being published."
+  },
+  {
+    "id": "news.economy.060",
+    "category": "world_news",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итоговый протокол фиксирует, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные обязательства по совместным программам.",
+    "en": "Final protocol records that {COUNTRY_A} and {COUNTRY_B} fulfilled the agreed obligations under their joint programmes."
+  },
+  {
+    "id": "news.sovereignty.061",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вопрос о признании границ между {COUNTRY_A} и {COUNTRY_B} остаётся в повестке консультаций.",
+    "en": "Question of recognising the borders between {COUNTRY_A} and {COUNTRY_B} remains on the consultation agenda."
+  },
+  {
+    "id": "news.sovereignty.062",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальная позиция {COUNTRY_A} и {COUNTRY_B} по вопросам суверенитета изложена в совместном заявлении.",
+    "en": "Official position of {COUNTRY_A} and {COUNTRY_B} on sovereignty is set out in a joint statement."
+  },
+  {
+    "id": "news.sovereignty.063",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Правовая экспертиза подтвердила, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный порядок пограничных процедур; отдельные нормы остаются предметом уточнения.",
+    "en": "Legal review confirmed that {COUNTRY_A} and {COUNTRY_B} follow the agreed border procedure; certain provisions are still being clarified."
+  },
+  {
+    "id": "news.sovereignty.064",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} обсудили статус спорных участков в конструктивном ключе, без итоговых договорённостей.",
+    "en": "Delegations of {COUNTRY_A} and {COUNTRY_B} discussed the status of disputed areas constructively, without final agreements."
+  },
+  {
+    "id": "news.sovereignty.065",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Принцип невмешательства между {COUNTRY_A} и {COUNTRY_B} подтверждён на уровне ведомств.",
+    "en": "Principle of non-interference between {COUNTRY_A} and {COUNTRY_B} was reaffirmed at agency level."
+  },
+  {
+    "id": "news.sovereignty.066",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наблюдатели официально подтвердили, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные шаги по демаркации.",
+    "en": "Observers formally confirmed that {COUNTRY_A} and {COUNTRY_B} completed the agreed demarcation steps."
+  },
+  {
+    "id": "news.sovereignty.067",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Юридические консультации {COUNTRY_A} и {COUNTRY_B} продолжаются; в центре — {TREATY_TYPE}, окончательных формулировок нет.",
+    "en": "Consultations on legal matters between {COUNTRY_A} and {COUNTRY_B} continue; the {TREATY_TYPE} is at the centre, with no final wording yet."
+  },
+  {
+    "id": "news.sovereignty.068",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Приверженность территориальной целостности подтвердили представители {COUNTRY_A} и {COUNTRY_B}, продолжив диалог в дружественном ключе.",
+    "en": "Commitment to territorial integrity was reaffirmed by representatives of {COUNTRY_A} and {COUNTRY_B}, who continued the dialogue in a friendly spirit."
+  },
+  {
+    "id": "news.sovereignty.069",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Проверка документов подтвердила, что {COUNTRY_A} и {COUNTRY_B} применяют согласованные правила пересечения границы.",
+    "en": "Document check confirmed that {COUNTRY_A} and {COUNTRY_B} apply the agreed border-crossing rules."
+  },
+  {
+    "id": "news.sovereignty.070",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В коммюнике {COUNTRY_A} и {COUNTRY_B} ратификация названа текущим этапом.",
+    "en": "Communiqué of {COUNTRY_A} and {COUNTRY_B} describes ratification as the current stage."
+  },
+  {
+    "id": "news.sovereignty.071",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Стороны воздерживаются от публичных формулировок: {COUNTRY_A} и {COUNTRY_B} обсуждают {TOPIC} в закрытом режиме.",
+    "en": "Public wording is being withheld: {COUNTRY_A} and {COUNTRY_B} are discussing {TOPIC} behind closed doors."
+  },
+  {
+    "id": "news.sovereignty.072",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Правовая группа {COUNTRY_A} и {COUNTRY_B} в духе партнёрства подтвердила, что согласованные процедуры признания документов выполнены.",
+    "en": "Legal group of {COUNTRY_A} and {COUNTRY_B}, in a spirit of partnership, confirmed that the agreed document-recognition procedures had been completed."
+  },
+  {
+    "id": "news.sovereignty.073",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Дипломатическое признание между {COUNTRY_A} и {COUNTRY_B} остаётся взаимным; изменений не объявлено.",
+    "en": "Diplomatic recognition between {COUNTRY_A} and {COUNTRY_B} remains mutual; no changes have been announced."
+  },
+  {
+    "id": "news.sovereignty.074",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Заявление о суверенитете оглашено по итогам встречи {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Statement on sovereignty was delivered following the meeting of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.sovereignty.075",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Границы и их делимитация проверены экспертами {COUNTRY_A} и {COUNTRY_B}; окончательные формулировки не опубликованы.",
+    "en": "Borders and their delimitation have been reviewed by experts from {COUNTRY_A} and {COUNTRY_B}; final wording has not been published."
+  },
+  {
+    "id": "news.sovereignty.076",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Обсуждение границ между {COUNTRY_A} и {COUNTRY_B} прошло в дружественной обстановке; итогов не объявлено.",
+    "en": "Discussion of borders between {COUNTRY_A} and {COUNTRY_B} took place in a friendly atmosphere; no conclusions were announced."
+  },
+  {
+    "id": "news.sovereignty.077",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спор о юрисдикции между {COUNTRY_A} и {COUNTRY_B} рассматривается согласительной комиссией; решений нет.",
+    "en": "Jurisdictional dispute between {COUNTRY_A} and {COUNTRY_B} is before a conciliation commission; no decisions have been taken."
+  },
+  {
+    "id": "news.sovereignty.078",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальное заключение инспекции фиксирует, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный режим границы.",
+    "en": "Inspection conclusion records that {COUNTRY_A} and {COUNTRY_B} observe the agreed border regime."
+  },
+  {
+    "id": "news.sovereignty.079",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Принципы добрососедства {COUNTRY_A} и {COUNTRY_B} подтверждены лишь в общих формулировках; детали не раскрываются.",
+    "en": "Principles of good-neighbourliness between {COUNTRY_A} and {COUNTRY_B} were confirmed only in general terms; details were not disclosed."
+  },
+  {
+    "id": "news.sovereignty.080",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Представители {COUNTRY_A} и {COUNTRY_B} тепло отозвались о ходе консультаций по границам.",
+    "en": "Representatives of {COUNTRY_A} and {COUNTRY_B} spoke warmly about the course of the border consultations."
+  },
+  {
+    "id": "news.sovereignty.081",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Мониторинг границы подтвердил, что {COUNTRY_A} и {COUNTRY_B} выполняют согласованные договорённости о режиме.",
+    "en": "Border monitoring confirmed that {COUNTRY_A} and {COUNTRY_B} implement the agreed arrangements on the regime."
+  },
+  {
+    "id": "news.sovereignty.082",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В совместной декларации {COUNTRY_A} и {COUNTRY_B} зафиксировано намерение уважать суверенитет друг друга.",
+    "en": "Joint declaration of {COUNTRY_A} and {COUNTRY_B} records their intention to respect each other's sovereignty."
+  },
+  {
+    "id": "news.sovereignty.083",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Формулировки о статусе территорий {COUNTRY_A} и {COUNTRY_B} остаются общими; юридическая оценка не дана.",
+    "en": "Wording on the status of territories in {COUNTRY_A} and {COUNTRY_B} remains general; no legal assessment has been issued."
+  },
+  {
+    "id": "news.sovereignty.084",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Согласительная группа {COUNTRY_A} и {COUNTRY_B} в конструктивном ключе подтвердила, что согласованные шаги по уточнению линии границы выполнены.",
+    "en": "Conciliation group of {COUNTRY_A} and {COUNTRY_B}, in a constructive spirit, confirmed that the agreed steps to clarify the border line had been completed."
+  },
+  {
+    "id": "news.sovereignty.085",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Тема суверенитета над водными путями обсуждалась {COUNTRY_A} и {COUNTRY_B} на техническом уровне.",
+    "en": "Sovereignty over waterways was discussed by {COUNTRY_A} and {COUNTRY_B} at technical level."
+  },
+  {
+    "id": "news.sovereignty.086",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Памятная нота о признании границ вручена представителями {COUNTRY_A} и {COUNTRY_B} друг другу.",
+    "en": "Note on border recognition was exchanged by representatives of {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "news.sovereignty.087",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Проверка правовых консультаций {COUNTRY_A} и {COUNTRY_B} завершена; взаимных уступок не объявлено.",
+    "en": "Review of the legal consultations between {COUNTRY_A} and {COUNTRY_B} is complete; no mutual concessions have been announced."
+  },
+  {
+    "id": "news.sovereignty.088",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Дружественный обмен мнениями о границах состоялся между {COUNTRY_A} и {COUNTRY_B}; итогов не объявлено.",
+    "en": "Friendly exchange of views on borders took place between {COUNTRY_A} and {COUNTRY_B}; no conclusions were announced."
+  },
+  {
+    "id": "news.sovereignty.089",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорные формулировки о суверенитете остаются; {COUNTRY_A} и {COUNTRY_B} продолжают консультации.",
+    "en": "Disputed sovereignty wording remains; {COUNTRY_A} and {COUNTRY_B} continue consultations."
+  },
+  {
+    "id": "news.sovereignty.090",
+    "category": "world_news",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итоговая проверка подтвердила, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные процедуры, хотя часть документов остаётся закрытой.",
+    "en": "Final review confirmed that {COUNTRY_A} and {COUNTRY_B} completed the agreed procedures, although some documents remain closed."
+  },
+  {
+    "id": "news.protocol.091",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Визит делегации {COUNTRY_A} в {COUNTRY_B} проходит по согласованной программе; итоги не объявлены.",
+    "en": "Visit of a delegation from {COUNTRY_A} to {COUNTRY_B} follows the agreed programme; no results have been announced."
+  },
+  {
+    "id": "news.protocol.092",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Верительные грамоты представителя {COUNTRY_A} вручены в {COUNTRY_B} в официальной обстановке.",
+    "en": "Credentials of the representative of {COUNTRY_A} were presented in {COUNTRY_B} in a formal ceremony."
+  },
+  {
+    "id": "news.protocol.093",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Протокольная проверка подтвердила, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный порядок аккредитации; отдельные детали уточняются.",
+    "en": "Protocol review confirmed that {COUNTRY_A} and {COUNTRY_B} follow the agreed accreditation procedure; certain details are still being clarified."
+  },
+  {
+    "id": "news.protocol.094",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Приём в честь делегации {COUNTRY_A} в {COUNTRY_B} прошёл в тёплой обстановке; официальных заявлений не делалось.",
+    "en": "Reception for the delegation of {COUNTRY_A} in {COUNTRY_B} was held in a warm atmosphere; no official statements were made."
+  },
+  {
+    "id": "news.protocol.095",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Программа визита {COUNTRY_A} в {COUNTRY_B} включает рабочий завтрак и переговоры.",
+    "en": "Programme of the visit of {COUNTRY_A} to {COUNTRY_B} includes a working breakfast and talks."
+  },
+  {
+    "id": "news.protocol.096",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наблюдатели официально подтвердили, что {COUNTRY_A} и {COUNTRY_B} провели обмен нотами в согласованном протокольном порядке.",
+    "en": "Observers formally confirmed that {COUNTRY_A} and {COUNTRY_B} exchanged notes in the agreed protocol procedure."
+  },
+  {
+    "id": "news.protocol.097",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сроки визита {COUNTRY_A} в {COUNTRY_B} не уточнены; подготовка продолжается.",
+    "en": "Dates of the visit of {COUNTRY_A} to {COUNTRY_B} have not been specified; preparations continue."
+  },
+  {
+    "id": "news.protocol.098",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Переговоры {COUNTRY_A} и {COUNTRY_B} прошли в дружественной атмосфере; в повестке — {TOPIC}.",
+    "en": "Talks between {COUNTRY_A} and {COUNTRY_B} were held in a friendly atmosphere; the agenda included {TOPIC}."
+  },
+  {
+    "id": "news.protocol.099",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Независимая протокольная проверка подтвердила, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные требования к оформлению документов.",
+    "en": "Independent protocol review confirmed that {COUNTRY_A} and {COUNTRY_B} met the agreed document formalities."
+  },
+  {
+    "id": "news.protocol.100",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Обмен нотами между {COUNTRY_A} и {COUNTRY_B} состоялся в торжественной обстановке; содержание не раскрыто.",
+    "en": "Exchange of notes between {COUNTRY_A} and {COUNTRY_B} took place in a solemn setting; the content was not disclosed."
+  },
+  {
+    "id": "news.protocol.101",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Состав делегации {COUNTRY_A} на переговорах в {COUNTRY_B} не объявлен.",
+    "en": "Composition of the {COUNTRY_A} delegation for the talks in {COUNTRY_B} has not been announced."
+  },
+  {
+    "id": "news.protocol.102",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Протокольная группа {COUNTRY_A} и {COUNTRY_B} в партнёрском ключе подтвердила, что согласованные церемониальные процедуры выполнены.",
+    "en": "Protocol group of {COUNTRY_A} and {COUNTRY_B}, in a spirit of partnership, confirmed that the agreed ceremonial procedures had been completed."
+  },
+  {
+    "id": "news.protocol.103",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Открытие представительства {COUNTRY_A} в {COUNTRY_B} обсуждается на протокольном уровне.",
+    "en": "Opening of a {COUNTRY_A} mission in {COUNTRY_B} is being discussed at protocol level."
+  },
+  {
+    "id": "news.protocol.104",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Церемония с участием представителей {COUNTRY_A} и {COUNTRY_B} прошла в официальной обстановке; подробности не публикуются.",
+    "en": "Ceremony with representatives of {COUNTRY_A} and {COUNTRY_B} took place in a formal setting; details have not been published."
+  },
+  {
+    "id": "news.protocol.105",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Порядок аккредитации журналистов на мероприятиях {COUNTRY_A} и {COUNTRY_B} проверен; отдельные пункты остаются предметом согласования.",
+    "en": "Accreditation rules for journalists at events of {COUNTRY_A} and {COUNTRY_B} have been reviewed; certain points remain subject to agreement."
+  },
+  {
+    "id": "news.protocol.106",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ответный визит делегации {COUNTRY_B} в {COUNTRY_A} готовится в духе партнёрства.",
+    "en": "Return visit of a delegation from {COUNTRY_B} to {COUNTRY_A} is being prepared in a spirit of partnership."
+  },
+  {
+    "id": "news.protocol.107",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Консульские учреждения {COUNTRY_A} и {COUNTRY_B} обсудили порядок приёма обращений.",
+    "en": "Consular offices of {COUNTRY_A} and {COUNTRY_B} discussed the procedure for receiving applications."
+  },
+  {
+    "id": "news.protocol.108",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальная проверка подтвердила, что {COUNTRY_A} и {COUNTRY_B} провели дальнейшие контакты в согласованном порядке.",
+    "en": "Official review confirmed that {COUNTRY_A} and {COUNTRY_B} conducted further contacts in the agreed order."
+  },
+  {
+    "id": "news.protocol.109",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Протокольные детали визита {COUNTRY_A} в {COUNTRY_B} остаются несогласованными.",
+    "en": "Details of the visit of {COUNTRY_A} to {COUNTRY_B} remain unagreed."
+  },
+  {
+    "id": "news.protocol.110",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Порядок встречи делегаций {COUNTRY_A} и {COUNTRY_B} согласован протокольными службами в дружественном ключе.",
+    "en": "Arrangements for the meeting of delegations of {COUNTRY_A} and {COUNTRY_B} were agreed by the protocol services in a friendly spirit."
+  },
+  {
+    "id": "news.protocol.111",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сверка протокольных документов подтвердила, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные процедуры обмена грамотами.",
+    "en": "Reconciliation of protocol documents confirmed that {COUNTRY_A} and {COUNTRY_B} completed the agreed procedures for exchanging credentials."
+  },
+  {
+    "id": "news.protocol.112",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальное приглашение представителям {COUNTRY_A} посетить {COUNTRY_B} передано; сроки не указаны.",
+    "en": "Formal invitation to representatives of {COUNTRY_A} to visit {COUNTRY_B} has been conveyed; the dates were not indicated."
+  },
+  {
+    "id": "news.protocol.113",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Статус дипломатических миссий {COUNTRY_A} и {COUNTRY_B} обсуждается осторожно, без итогов.",
+    "en": "Status of diplomatic missions of {COUNTRY_A} and {COUNTRY_B} is being discussed cautiously, without conclusions."
+  },
+  {
+    "id": "news.protocol.114",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Церемониальная группа {COUNTRY_A} и {COUNTRY_B} в тёплой атмосфере подтвердила, что согласованные подготовительные шаги к встрече выполнены.",
+    "en": "Ceremonial group of {COUNTRY_A} and {COUNTRY_B}, in a warm atmosphere, confirmed that the agreed preparatory steps for the meeting had been completed."
+  },
+  {
+    "id": "news.protocol.115",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Список участников переговоров {COUNTRY_A} и {COUNTRY_B} не опубликован; протокольная служба ссылается на регламент.",
+    "en": "List of participants in the talks between {COUNTRY_A} and {COUNTRY_B} has not been published; the protocol service cites internal rules."
+  },
+  {
+    "id": "news.protocol.116",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итоговый протокол подписан {COUNTRY_A} и {COUNTRY_B} в официальной обстановке; текст не опубликован.",
+    "en": "Final protocol was signed by {COUNTRY_A} and {COUNTRY_B} in a formal setting; the text has not been published."
+  },
+  {
+    "id": "news.protocol.117",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Проверка протокольных документов {COUNTRY_A} и {COUNTRY_B} завершена; окончательное заключение пока не обнародовано.",
+    "en": "Review of protocol documents of {COUNTRY_A} and {COUNTRY_B} is complete; the final conclusion has not yet been released."
+  },
+  {
+    "id": "news.protocol.118",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Обмен подарками между делегациями {COUNTRY_A} и {COUNTRY_B} прошёл в тёплой обстановке; официальных заявлений не делалось.",
+    "en": "Exchange of gifts between the delegations of {COUNTRY_A} and {COUNTRY_B} took place in a warm atmosphere; no official statements were made."
+  },
+  {
+    "id": "news.protocol.119",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официально подтверждено, что {COUNTRY_A} и {COUNTRY_B} провели процедуру подписания в соответствии с согласованными требованиями протокола.",
+    "en": "Formal confirmation states that {COUNTRY_A} and {COUNTRY_B} conducted the signing procedure in line with the agreed protocol requirements."
+  },
+  {
+    "id": "news.protocol.120",
+    "category": "world_news",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Участники церемонии {COUNTRY_A} и {COUNTRY_B} в тёплой обстановке подтвердили выполнение согласованных протокольных требований.",
+    "en": "Participants in the ceremony of {COUNTRY_A} and {COUNTRY_B} confirmed in a warm atmosphere that the agreed protocol requirements had been met."
+  },
+  {
+    "id": "news.general.121",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Контакты {COUNTRY_A} и {COUNTRY_B} продолжаются в рабочем режиме; совместных заявлений не опубликовано.",
+    "en": "Contacts between {COUNTRY_A} and {COUNTRY_B} continue in a working mode; no joint statements have been published."
+  },
+  {
+    "id": "news.general.122",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальная встреча {COUNTRY_A} и {COUNTRY_B} началась с протокольной части; итоги не объявлены.",
+    "en": "Session of {COUNTRY_A} and {COUNTRY_B} opened with the protocol segment; no results have been announced."
+  },
+  {
+    "id": "news.general.123",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наблюдатели подтвердили, что {COUNTRY_A} и {COUNTRY_B} провели консультации в согласованном порядке; часть материалов остаётся закрытой.",
+    "en": "Observers confirmed that {COUNTRY_A} and {COUNTRY_B} held consultations in the agreed order; some materials remain closed."
+  },
+  {
+    "id": "news.general.124",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Диалог {COUNTRY_A} и {COUNTRY_B} проходит в конструктивном ключе; стороны воздерживаются от оценок.",
+    "en": "Dialogue between {COUNTRY_A} and {COUNTRY_B} is proceeding constructively; the sides are withholding assessments."
+  },
+  {
+    "id": "news.general.125",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Рабочая встреча {COUNTRY_A} и {COUNTRY_B}: {TOPIC} и смежные вопросы.",
+    "en": "Working meeting of {COUNTRY_A} and {COUNTRY_B}: {TOPIC} and related issues."
+  },
+  {
+    "id": "news.general.126",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "По итогам проверки официально подтверждено, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные процедуры обмена информацией.",
+    "en": "Review results confirm that {COUNTRY_A} and {COUNTRY_B} completed the agreed information-exchange procedures."
+  },
+  {
+    "id": "news.general.127",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Повестка переговоров {COUNTRY_A} и {COUNTRY_B} остаётся открытой; делегации продолжили обсуждение {TOPIC} без итоговых формулировок.",
+    "en": "Negotiating agenda of {COUNTRY_A} and {COUNTRY_B} remains open; the delegations continued discussing {TOPIC} without final wording."
+  },
+  {
+    "id": "news.general.128",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Стороны — {COUNTRY_A} и {COUNTRY_B} — в дружественной обстановке отметили полезность регулярных контактов.",
+    "en": "Sides — {COUNTRY_A} and {COUNTRY_B} — in a friendly atmosphere noted the value of regular contacts."
+  },
+  {
+    "id": "news.general.129",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Группа совместного мониторинга подтвердила, что {COUNTRY_A} и {COUNTRY_B} соблюдают согласованный регламент встреч.",
+    "en": "Monitoring group confirmed that {COUNTRY_A} and {COUNTRY_B} follow the agreed meeting rules."
+  },
+  {
+    "id": "news.general.130",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В совместном коммюнике {COUNTRY_A} и {COUNTRY_B} отмечена необходимость продолжения диалога.",
+    "en": "Communiqué of {COUNTRY_A} and {COUNTRY_B} notes the need to continue the dialogue."
+  },
+  {
+    "id": "news.general.131",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Формат дальнейших контактов {COUNTRY_A} и {COUNTRY_B} не согласован; обсуждение отложено.",
+    "en": "Format of further contacts between {COUNTRY_A} and {COUNTRY_B} has not been agreed; the discussion was postponed."
+  },
+  {
+    "id": "news.general.132",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Совместная рабочая группа {COUNTRY_A} и {COUNTRY_B} в духе партнёрства подтвердила выполнение согласованных мер по обмену документами.",
+    "en": "Working group of {COUNTRY_A} and {COUNTRY_B}, in a spirit of partnership, confirmed that the agreed measures on document exchange had been completed."
+  },
+  {
+    "id": "news.general.133",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Экспертные консультации {COUNTRY_A} и {COUNTRY_B} охватили {TOPIC} и организационные вопросы.",
+    "en": "Expert consultations between {COUNTRY_A} and {COUNTRY_B} covered {TOPIC} and organisational matters."
+  },
+  {
+    "id": "news.general.134",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "По завершении встречи {COUNTRY_A} и {COUNTRY_B} оглашено краткое официальное заявление; новых обязательств в нём нет.",
+    "en": "Close of the meeting of {COUNTRY_A} and {COUNTRY_B} was marked by a brief official statement; it contains no new commitments."
+  },
+  {
+    "id": "news.general.135",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Переговорные темы {COUNTRY_A} и {COUNTRY_B} проверены; конкретные формулировки пока не раскрыты.",
+    "en": "Negotiating topics of {COUNTRY_A} and {COUNTRY_B} have been reviewed; specific wording has not yet been disclosed."
+  },
+  {
+    "id": "news.general.136",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} обменялись приветствиями и перешли к обсуждению {TOPIC}.",
+    "en": "Delegations of {COUNTRY_A} and {COUNTRY_B} exchanged greetings and moved on to discussing {TOPIC}."
+  },
+  {
+    "id": "news.general.137",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итоговый документ {COUNTRY_A} и {COUNTRY_B} ещё не согласован; работа продолжается.",
+    "en": "Text of the final document of {COUNTRY_A} and {COUNTRY_B} has not yet been agreed; work continues."
+  },
+  {
+    "id": "news.general.138",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальное заключение подтверждает, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные условия сотрудничества.",
+    "en": "Official conclusion confirms that {COUNTRY_A} and {COUNTRY_B} met the agreed terms of cooperation."
+  },
+  {
+    "id": "news.general.139",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вопросы, по которым позиции {COUNTRY_A} и {COUNTRY_B} расходятся, остаются в повестке.",
+    "en": "Issues on which the positions of {COUNTRY_A} and {COUNTRY_B} differ remain on the agenda."
+  },
+  {
+    "id": "news.general.140",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В дружественной обстановке представители {COUNTRY_A} и {COUNTRY_B} обменялись приглашениями и отметили регулярность контактов.",
+    "en": "Friendly atmosphere marked the exchange of invitations between representatives of {COUNTRY_A} and {COUNTRY_B}, who noted the regularity of contacts."
+  },
+  {
+    "id": "news.general.141",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Проверка исполнения подтвердила, что {COUNTRY_A} и {COUNTRY_B} выполнили согласованные обязательства по обмену данными.",
+    "en": "Compliance review confirmed that {COUNTRY_A} and {COUNTRY_B} met the agreed obligations on data exchange."
+  },
+  {
+    "id": "news.general.142",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Официальные лица {COUNTRY_A} и {COUNTRY_B} подчеркнули важность регулярных консультаций.",
+    "en": "Officials of {COUNTRY_A} and {COUNTRY_B} stressed the importance of regular consultations."
+  },
+  {
+    "id": "news.general.143",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Делегации {COUNTRY_A} и {COUNTRY_B} не комментируют ход консультаций; официальных сообщений нет.",
+    "en": "Consultations are not being commented on by the delegations of {COUNTRY_A} and {COUNTRY_B}; there have been no official reports."
+  },
+  {
+    "id": "news.general.144",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Совместная сверка материалов консультаций {COUNTRY_A} и {COUNTRY_B} в дружественном ключе подтвердила выполнение согласованных процедур обмена.",
+    "en": "Joint reconciliation of consultation materials of {COUNTRY_A} and {COUNTRY_B}, in a friendly spirit, confirmed that the agreed exchange procedures had been completed."
+  },
+  {
+    "id": "news.general.145",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "График последующих контактов {COUNTRY_A} и {COUNTRY_B} обсуждается; даты не названы.",
+    "en": "Schedule of follow-up contacts between {COUNTRY_A} and {COUNTRY_B} is under discussion; no dates were given."
+  },
+  {
+    "id": "news.general.146",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Открытие встречи {COUNTRY_A} и {COUNTRY_B} сопровождалось краткими официальными речами.",
+    "en": "Meeting of {COUNTRY_A} and {COUNTRY_B} opened with brief official speeches."
+  },
+  {
+    "id": "news.general.147",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Материалы консультаций {COUNTRY_A} и {COUNTRY_B} проверены; делегации не комментируют отдельные пункты.",
+    "en": "Materials of the consultations between {COUNTRY_A} and {COUNTRY_B} have been reviewed; the delegations do not comment on specific points."
+  },
+  {
+    "id": "news.general.148",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Взаимные консультации {COUNTRY_A} и {COUNTRY_B} проходят в дружественной обстановке, сообщили участники.",
+    "en": "Mutual consultations between {COUNTRY_A} and {COUNTRY_B} are taking place in a friendly atmosphere, participants said."
+  },
+  {
+    "id": "news.general.149",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "execution_confirmed"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Независимый аудит {COUNTRY_A} и {COUNTRY_B} продолжается; предварительные выводы не публикуются.",
+    "en": "Independent audit of {COUNTRY_A} and {COUNTRY_B} continues; preliminary findings are not being published."
+  },
+  {
+    "id": "news.general.150",
+    "category": "world_news",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "execution_verified"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Заключительная сверка {COUNTRY_A} и {COUNTRY_B} прошла в дружественном ключе и подтвердила выполнение согласованных процедур.",
+    "en": "Concluding reconciliation between {COUNTRY_A} and {COUNTRY_B} took place in a friendly spirit and confirmed that the agreed procedures had been completed."
+  }
+]

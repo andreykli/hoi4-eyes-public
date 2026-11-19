@@ -1,0 +1,12 @@
+﻿l_french:
+ EYES_DIPLOMACY_OPEN:0 "Diplomatie EYES"
+ EYES_DIPLOMACY_TITLE:0 "HOI4-EYES — Choix du pays"
+ EYES_DIPLOMACY_HINT:0 "Choisissez un pays pour ouvrir son canal diplomatique. Aucun accord n’est exécuté."
+ EYES_ANNEX_VOLUNTARY:0 "Proposer une union"
+ EYES_ANNEX_PRESSURE:0 "Exigence politique"
+ EYES_DIPLOMACY_SELECTED:0 "Pays sélectionné"
+ EYES_DIPLOMACY_AVAILABLE:0 "Pays possédant des territoires"
+ EYES_DIPLOMACY_SELECT:0 "Choisir"
+ EYES_DIPLOMACY_PREVIOUS:0 "Précédent"
+ EYES_DIPLOMACY_NEXT:0 "Suivant"
+ EYES_DIPLOMACY_PAGE_STATUS:0 "Page [?ROOT.eyes_gui_page_display] / [?ROOT.eyes_gui_page_count]"

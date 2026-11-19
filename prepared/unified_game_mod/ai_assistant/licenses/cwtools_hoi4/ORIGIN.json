@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/cwtools/cwtools-hoi4-config",
+  "revision": "297dd69c42aabe10078a8b7ab7f2d07ee631d4ef",
+  "usage": "Unmodified MIT rule data; a subset index is consumed by EYES, not a full CWTools engine."
+}

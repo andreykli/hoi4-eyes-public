@@ -1,0 +1,4 @@
+﻿l_russian:
+ eyes_personal_message.title:0 "Вам новость от [?event_target:eyes_message_sender.GetName]"
+ eyes_personal_message.desc:0 "Государство [?event_target:eyes_message_sender.GetName] отправило вам новое дипломатическое сообщение. Откройте HOI4-EYES, чтобы прочитать его и ответить."
+ eyes_personal_message.ok:0 "Хорошо"

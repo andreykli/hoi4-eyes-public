@@ -1,0 +1,83 @@
+scripted_diplomatic_actions = {
+ eyes_recognize = {
+  allowed = { always = yes }
+  visible = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } } }
+  selectable = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } } }
+  requires_acceptance = no
+  cost = 0
+  ai_desire = { base = -1000 }
+  send_description = eyes_recognize_confirm
+  complete_effect = {
+   if = { limit = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } } }
+    ROOT = {
+     if = { limit = { is_in_array = { array = eyes_not_recognized value = PREV } } remove_from_array = { array = eyes_not_recognized value = PREV } }
+     add_to_array = { array = eyes_recognized value = PREV }
+     if = { limit = { is_in_array = { array = eyes_recognized value = PREV } NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } }
+      log = "EYES_RECOGNITION_CHANGED_V1|[ROOT.GetTag]|[PREV.GetTag]|recognized"
+      force_update_map_mode = { limit = { is_ai = no } mapmode = eyes_recognition }
+      if = {
+       limit = { has_country_flag = eyes_autonomy_observer_enabled NOT = { has_country_flag = eyes_world_snapshot_busy } }
+       set_country_flag = eyes_world_snapshot_busy
+       eyes_export_world_states = yes
+       clr_country_flag = eyes_world_snapshot_busy
+      }
+     }
+    }
+   }
+  }
+ }
+ eyes_recognize_again = {
+  allowed = { always = yes }
+  visible = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } is_in_array = { array = eyes_not_recognized value = PREV } } }
+  selectable = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } is_in_array = { array = eyes_not_recognized value = PREV } } }
+  requires_acceptance = no
+  cost = 0
+  ai_desire = { base = -1000 }
+  send_description = eyes_recognize_again_confirm
+  complete_effect = {
+   if = { limit = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_recognized value = PREV } } is_in_array = { array = eyes_not_recognized value = PREV } } }
+    ROOT = {
+     if = { limit = { is_in_array = { array = eyes_not_recognized value = PREV } } remove_from_array = { array = eyes_not_recognized value = PREV } }
+     add_to_array = { array = eyes_recognized value = PREV }
+     if = { limit = { is_in_array = { array = eyes_recognized value = PREV } NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } }
+      log = "EYES_RECOGNITION_CHANGED_V1|[ROOT.GetTag]|[PREV.GetTag]|recognized"
+      force_update_map_mode = { limit = { is_ai = no } mapmode = eyes_recognition }
+      if = {
+       limit = { has_country_flag = eyes_autonomy_observer_enabled NOT = { has_country_flag = eyes_world_snapshot_busy } }
+       set_country_flag = eyes_world_snapshot_busy
+       eyes_export_world_states = yes
+       clr_country_flag = eyes_world_snapshot_busy
+      }
+     }
+    }
+   }
+  }
+ }
+ eyes_withdraw_recognition = {
+  allowed = { always = yes }
+  visible = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } is_in_array = { array = eyes_recognized value = PREV } } }
+  selectable = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } is_in_array = { array = eyes_recognized value = PREV } } }
+  requires_acceptance = no
+  cost = 0
+  ai_desire = { base = -1000 }
+  send_description = eyes_withdraw_recognition_confirm
+  complete_effect = {
+   if = { limit = { exists = yes NOT = { tag = ROOT } ROOT = { is_ai = no NOT = { is_in_array = { array = eyes_not_recognized value = PREV } } is_in_array = { array = eyes_recognized value = PREV } } }
+    ROOT = {
+     if = { limit = { is_in_array = { array = eyes_recognized value = PREV } } remove_from_array = { array = eyes_recognized value = PREV } }
+     add_to_array = { array = eyes_not_recognized value = PREV }
+     if = { limit = { is_in_array = { array = eyes_not_recognized value = PREV } NOT = { is_in_array = { array = eyes_recognized value = PREV } } }
+      log = "EYES_RECOGNITION_CHANGED_V1|[ROOT.GetTag]|[PREV.GetTag]|not_recognized"
+      force_update_map_mode = { limit = { is_ai = no } mapmode = eyes_recognition }
+      if = {
+       limit = { has_country_flag = eyes_autonomy_observer_enabled NOT = { has_country_flag = eyes_world_snapshot_busy } }
+       set_country_flag = eyes_world_snapshot_busy
+       eyes_export_world_states = yes
+       clr_country_flag = eyes_world_snapshot_busy
+      }
+     }
+    }
+   }
+  }
+ }
+}

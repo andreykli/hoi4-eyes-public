@@ -1,0 +1,2909 @@
+[
+  {
+    "id": "counter.compromising.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Мы готовы обсуждать {TREATY_TYPE}, если порядок взаимных гарантий станет прозрачнее для {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Our readiness to discuss the {TREATY_TYPE} depends on the procedure for mutual guarantees becoming more transparent for {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "counter.compromising.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Сроки поставок по {TOPIC} можно сдвинуть, но встречно просим зафиксировать {TERMS} в отдельном приложении.",
+    "en": "The delivery timetable under {TOPIC} can be shifted, but in return we ask that {TERMS} be fixed in a separate annex."
+  },
+  {
+    "id": "counter.compromising.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Спорный участок предлагаем оставить под совместным наблюдением до согласования {CONDITIONS}: это наша уступка {COUNTRY_B}.",
+    "en": "Leaving the disputed area under joint observation until {CONDITIONS} is agreed would be our concession to {COUNTRY_B}."
+  },
+  {
+    "id": "counter.compromising.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Вместо немедленного вступления в {TREATY_TYPE} предлагаем переходный период, за который {COUNTRY_A} и {COUNTRY_B} уточнят {TERMS}.",
+    "en": "Instead of immediate accession to the {TREATY_TYPE}, a transition period is proposed, during which {COUNTRY_A} and {COUNTRY_B} clarify {TERMS}."
+  },
+  {
+    "id": "counter.compromising.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "О суверенитете {COUNTRY_B} спорить не станем, но формулировки о гарантиях готовы смягчить ради {TOPIC}.",
+    "en": "Arguing about the sovereignty of {COUNTRY_B} serves no purpose, yet the wording on guarantees can be softened for the sake of {TOPIC}."
+  },
+  {
+    "id": "counter.compromising.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Платёжный график по {TOPIC} пересмотрим в сторону рассрочки, если {COUNTRY_A} примет {CONDITIONS}.",
+    "en": "Payment under {TOPIC} would move to instalments if {COUNTRY_A} accepts {CONDITIONS}."
+  },
+  {
+    "id": "counter.compromising.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Порядок оформления {TREATY_TYPE} упростим: обмен нотами вместо полной ратификации, при условии что {CONDITIONS}.",
+    "en": "Simplification of the {TREATY_TYPE} procedure is possible: an exchange of notes instead of full ratification, provided that {CONDITIONS}."
+  },
+  {
+    "id": "counter.compromising.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Суть {TREATY_TYPE} принимаем, но срок вступления в силу просим привязать к {CONDITIONS} — так компромисс будет прочнее.",
+    "en": "Substance of the {TREATY_TYPE} we accept, but its entry into force should be tied to {CONDITIONS}; that makes the compromise more durable."
+  },
+  {
+    "id": "counter.compromising.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Взамен немедленных гарантий предлагаем поэтапный механизм консультаций между {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Phased consultations between {COUNTRY_A} and {COUNTRY_B} are proposed in place of immediate guarantees."
+  },
+  {
+    "id": "counter.compromising.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Тарифную часть {TOPIC} готовы пересмотреть, если {COUNTRY_B} согласится на {TERMS} без предварительных условий.",
+    "en": "Tariffs within {TOPIC} can be revised if {COUNTRY_B} agrees to {TERMS} without preconditions."
+  },
+  {
+    "id": "counter.compromising.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Границу можно зафиксировать по нынешней линии, но порядок допуска наблюдателей требует отдельного согласования с {COUNTRY_A}.",
+    "en": "Border fixed along the present line is acceptable, yet the procedure for admitting observers needs separate agreement with {COUNTRY_A}."
+  },
+  {
+    "id": "counter.compromising.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Оборонительные обязательства примем, наступательные выведем за рамки {TREATY_TYPE}; это наша встречная редакция условий.",
+    "en": "Defensive obligations we accept; offensive ones stay outside the {TREATY_TYPE}; that is our counter-draft of the conditions."
+  },
+  {
+    "id": "counter.compromising.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Каждую формулировку о внутренних делах {COUNTRY_B} предлагаем заменить оговоркой о невмешательстве, при условии {CONDITIONS}.",
+    "en": "Replacing every clause on the internal affairs of {COUNTRY_B} with a non-interference reservation is what we propose, subject to {CONDITIONS}."
+  },
+  {
+    "id": "counter.compromising.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Долю участия в {TOPIC} готовы обсуждать, но встречно требуем пересмотра порядка распределения поступлений.",
+    "en": "Discussing a share in {TOPIC} is possible, but in return a revision of how revenues are distributed is required."
+  },
+  {
+    "id": "counter.compromising.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Место и порядок подписания {TREATY_TYPE} можно изменить, если {COUNTRY_A} примет {CONDITIONS}.",
+    "en": "Venue and procedure for signing the {TREATY_TYPE} can change if {COUNTRY_A} accepts {CONDITIONS}."
+  },
+  {
+    "id": "counter.compromising.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Компромисс видим так: условия {TREATY_TYPE} остаются, сроки и порядок проверки меняются в пользу {COUNTRY_B}.",
+    "en": "Our compromise looks like this: the terms of the {TREATY_TYPE} remain, while the timetable and verification procedure change in favour of {COUNTRY_B}."
+  },
+  {
+    "id": "counter.compromising.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии безопасности {COUNTRY_B} подтвердим, если механизм их отзыва будет прописан заранее.",
+    "en": "Confirmation of the security guarantees for {COUNTRY_B} depends on the mechanism for withdrawing them being set out in advance."
+  },
+  {
+    "id": "counter.compromising.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} готовы к встречному шагу: доступ сохраняется, но {TERMS} пересматривается в нашу пользу.",
+    "en": "Reciprocal step on {TOPIC}: access is preserved, but {TERMS} is revised in our favour."
+  },
+  {
+    "id": "counter.compromising.019",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Обмен участками возможен, если порядок передачи будет согласован с {COUNTRY_A} до начала любых перемещений.",
+    "en": "Exchange of areas is possible if the transfer procedure is agreed with {COUNTRY_A} before any movement begins."
+  },
+  {
+    "id": "counter.compromising.020",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Ради союза с {COUNTRY_A} готовы смягчить сроки вступления, но требуем ясности по {TERMS}.",
+    "en": "For the sake of the alliance with {COUNTRY_A} the accession timetable can be softened, but clarity on {TERMS} is required."
+  },
+  {
+    "id": "counter.compromising.021",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Постоянных объектов на территории {COUNTRY_B} не будет, если {CONDITIONS}; это наша встречная редакция.",
+    "en": "Permanent facilities on the territory of {COUNTRY_B} we rule out, provided that {CONDITIONS}; this is our counter-draft."
+  },
+  {
+    "id": "counter.compromising.022",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Ограничительную часть {TOPIC} предлагаем заменить мониторингом, а порядок пересмотра зафиксировать в {TERMS}.",
+    "en": "Monitoring replaces the restrictive part of {TOPIC} under our proposal, with the review procedure fixed in {TERMS}."
+  },
+  {
+    "id": "counter.compromising.023",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Протокол о {TOPIC} подпишем после того, как {COUNTRY_A} согласует {CONDITIONS}; раньше это нецелесообразно.",
+    "en": "Signing the protocol on {TOPIC} becomes possible once {COUNTRY_A} agrees {CONDITIONS}; earlier than that makes little sense."
+  },
+  {
+    "id": "counter.compromising.024",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Встречное предложение простое: меняем порядок исполнения {TREATY_TYPE}, оставляя цель прежней.",
+    "en": "Simple is the counter-proposal: the order of implementation of the {TREATY_TYPE} changes, its purpose does not."
+  },
+  {
+    "id": "counter.compromising.025",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Совместные учения возможны, но только по заранее согласованному графику и с уведомлением {COUNTRY_B}.",
+    "en": "Joint exercises are possible, but only on a schedule agreed in advance and with notification to {COUNTRY_B}."
+  },
+  {
+    "id": "counter.compromising.026",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Квоты по {TOPIC} пересмотрим, если {COUNTRY_B} пойдёт на {CONDITIONS} в части транзита.",
+    "en": "Quotas under {TOPIC} can be revised if {COUNTRY_B} moves on {CONDITIONS} regarding transit."
+  },
+  {
+    "id": "counter.compromising.027",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Вопрос о спорной полосе отложим, а доступ к ней откроем на условиях {CONDITIONS}; иначе разговор теряет смысл.",
+    "en": "Setting aside the question of the disputed strip is acceptable, with access opened on the basis of {CONDITIONS}; otherwise the discussion loses its point."
+  },
+  {
+    "id": "counter.compromising.028",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Союз с {COUNTRY_A} поддержим, если гарантии {COUNTRY_B} будут вынесены в отдельный протокол.",
+    "en": "Support for the alliance with {COUNTRY_A} follows from guarantees to {COUNTRY_B} being placed in a separate protocol."
+  },
+  {
+    "id": "counter.compromising.029",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальную целостность {COUNTRY_B} подтверждаем, но порядок подтверждения должен быть взаимным.",
+    "en": "Territorial integrity of {COUNTRY_B} is confirmed, but the procedure for that confirmation must be mutual."
+  },
+  {
+    "id": "counter.compromising.030",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Взамен жёстких обязательств по {TOPIC} предлагаем коридор и пересмотр в согласованный срок.",
+    "en": "Rigid commitments under {TOPIC} give way, in our proposal, to a corridor and a review within an agreed period."
+  },
+  {
+    "id": "counter.compromising.031",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Ратификацию {TREATY_TYPE} можно перенести, если сейчас стороны закрепят {CONDITIONS}.",
+    "en": "Ratification of the {TREATY_TYPE} can be postponed if the parties now fix {CONDITIONS}."
+  },
+  {
+    "id": "counter.compromising.032",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Готовы подписать {TREATY_TYPE} в предложенной редакции, но с протоколом о {TERMS} — это наш компромисс.",
+    "en": "Signing the {TREATY_TYPE} as drafted is possible, but with a protocol on {TERMS}; that is our compromise."
+  },
+  {
+    "id": "counter.compromising.033",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Пограничный режим смягчим, если {COUNTRY_A} примет взаимные гарантии для {COUNTRY_B}.",
+    "en": "Softening the border regime is conditional on {COUNTRY_A} accepting mutual guarantees for {COUNTRY_B}."
+  },
+  {
+    "id": "counter.firm.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Единственный возможный пересмотр {TREATY_TYPE} — письменные гарантии для {COUNTRY_B}; устные заверения не принимаются.",
+    "en": "Written guarantees for {COUNTRY_B} are the only possible revision of the {TREATY_TYPE}; verbal assurances are not accepted."
+  },
+  {
+    "id": "counter.firm.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Сроки по {TOPIC} не продлеваем; пересмотр возможен только при {CONDITIONS}, и это не предмет торга.",
+    "en": "Deadlines under {TOPIC} stay as they are; revision is possible only with {CONDITIONS}, and it is not a bargaining chip."
+  },
+  {
+    "id": "counter.firm.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Граница остаётся неизменной; обсуждать готовы лишь порядок работы комиссии и {TERMS}.",
+    "en": "The border stays unchanged; only the work of the commission and {TERMS} are open to discussion."
+  },
+  {
+    "id": "counter.firm.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Требуем, чтобы {TREATY_TYPE} содержал ясный механизм выхода, иначе союз для {COUNTRY_A} неприемлем.",
+    "en": "Clear exit mechanism in the {TREATY_TYPE} we require; otherwise the alliance is unacceptable to {COUNTRY_A}."
+  },
+  {
+    "id": "counter.firm.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет {COUNTRY_B} не является предметом переговоров; уступки по {TOPIC} возможны только в рамках {CONDITIONS}.",
+    "en": "Sovereignty of {COUNTRY_B} is not a subject for negotiation; concessions on {TOPIC} are possible only within {CONDITIONS}."
+  },
+  {
+    "id": "counter.firm.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Платёжные обязательства по {TOPIC} остаются; готовы обсуждать лишь график и порядок контроля.",
+    "en": "Under {TOPIC} the payment obligations stand; only the schedule and the control procedure are open to discussion."
+  },
+  {
+    "id": "counter.firm.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Порядок подписания {TREATY_TYPE} остаётся нашим; встречно допускаем перенос церемонии, если {CONDITIONS}.",
+    "en": "Procedure for signing the {TREATY_TYPE} stays ours; in return the ceremony may be moved if {CONDITIONS}."
+  },
+  {
+    "id": "counter.firm.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{CONDITIONS}",
+      "{TERMS}"
+    ],
+    "ru": "Настаиваем: сроки {TREATY_TYPE} определяются нами, а {COUNTRY_B} получает {TERMS} только после {CONDITIONS}.",
+    "en": "We insist: the timetable of the {TREATY_TYPE} is set by us, and {COUNTRY_B} receives {TERMS} only after {CONDITIONS}."
+  },
+  {
+    "id": "counter.firm.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии для {COUNTRY_B} будут только взаимными; односторонние обязательства {COUNTRY_A} не подпишет.",
+    "en": "Mutual guarantees for {COUNTRY_B} are the only kind we will give; {COUNTRY_A} will not sign one-sided obligations."
+  },
+  {
+    "id": "counter.firm.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Доступ к {TOPIC} остаётся при условии {CONDITIONS}; иных вариантов мы не рассматриваем.",
+    "en": "Access to {TOPIC} remains subject to {CONDITIONS}; other arrangements are not under consideration."
+  },
+  {
+    "id": "counter.firm.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Любой пересмотр линии разграничения возможен исключительно через согласованную комиссию и {TERMS}.",
+    "en": "Revision of the demarcation line is possible exclusively through an agreed commission and {TERMS}."
+  },
+  {
+    "id": "counter.firm.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Союз возможен, но {COUNTRY_A} не примет автоматического вступления в конфликты; порядок согласования должен быть прописан.",
+    "en": "Automatic entry into conflicts {COUNTRY_A} will not accept; the alliance is possible only with the procedure written down."
+  },
+  {
+    "id": "counter.firm.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Внутренние дела {COUNTRY_B} вне мандата {TREATY_TYPE}; на этом условии переговоры продолжатся.",
+    "en": "Internal affairs of {COUNTRY_B} stay outside the mandate of the {TREATY_TYPE}; talks continue on that condition."
+  },
+  {
+    "id": "counter.firm.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Объём компенсаций по {TOPIC} определяется только по {TERMS}; иначе возвращаться к теме бессмысленно.",
+    "en": "Volume of compensation under {TOPIC} is determined only under {TERMS}; otherwise returning to the topic is pointless."
+  },
+  {
+    "id": "counter.firm.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TOPIC}"
+    ],
+    "ru": "Протокол о {TOPIC} должен быть приложением к {TREATY_TYPE}, а не отдельным документом; это наше условие.",
+    "en": "As an annex to the {TREATY_TYPE}, not a separate document, we require the protocol on {TOPIC}; that is our condition."
+  },
+  {
+    "id": "counter.firm.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Наша редакция {TREATY_TYPE} остаётся в силе; изменить готовы только срок вступления и порядок проверки.",
+    "en": "Draft of the {TREATY_TYPE} stays as ours; we are ready to change only the entry-into-force date and the verification procedure."
+  },
+  {
+    "id": "counter.firm.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Требуем зафиксировать {CONDITIONS} до любых шагов по {TREATY_TYPE}; без этого гарантии {COUNTRY_B} ничего не стоят.",
+    "en": "We demand that {CONDITIONS} be fixed before any steps under the {TREATY_TYPE}; without it the guarantees to {COUNTRY_B} are worthless."
+  },
+  {
+    "id": "counter.firm.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Пошлины по {TOPIC} не снижаем; обсуждаем только поэтапный порядок и {TERMS}.",
+    "en": "Duties under {TOPIC} we are not lowering; only a phased procedure and {TERMS} are discussed."
+  },
+  {
+    "id": "counter.firm.019",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Передача участков возможна лишь при гарантиях для {COUNTRY_B} и {CONDITIONS}; иначе разговор короткий.",
+    "en": "Transfer of areas is possible only with guarantees for {COUNTRY_B} and {CONDITIONS}; otherwise the conversation is short."
+  },
+  {
+    "id": "counter.firm.020",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Совместное командование примем только при равном представительстве; иной порядок для {COUNTRY_A} неприемлем.",
+    "en": "Joint command we will accept only with equal representation; any other procedure is unacceptable to {COUNTRY_A}."
+  },
+  {
+    "id": "counter.firm.021",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Никакие внешние органы не получают полномочий на территории {COUNTRY_B}; пересмотр возможен лишь в части {TERMS}.",
+    "en": "No external bodies receive powers on the territory of {COUNTRY_B}; revision is possible only regarding {TERMS}."
+  },
+  {
+    "id": "counter.firm.022",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Кредитную часть {TOPIC} пересматриваем только при {CONDITIONS} и прозрачном порядке контроля.",
+    "en": "Credit part of {TOPIC} will be revised only with {CONDITIONS} and a transparent control procedure."
+  },
+  {
+    "id": "counter.firm.023",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Встреча возможна лишь после того, как {COUNTRY_A} представит {TERMS}; иначе повестка не готова.",
+    "en": "Meeting is possible only after {COUNTRY_A} presents {TERMS}; otherwise the agenda is not ready."
+  },
+  {
+    "id": "counter.firm.024",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Условия {TREATY_TYPE} для {COUNTRY_A} неизменны; торг возможен исключительно вокруг {TERMS}.",
+    "en": "Terms of the {TREATY_TYPE} for {COUNTRY_A} are unchanged; bargaining is possible solely around {TERMS}."
+  },
+  {
+    "id": "counter.firm.025",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вывод объектов обсуждается только вместе с гарантиями {COUNTRY_B}; по отдельности нет.",
+    "en": "Withdrawal of facilities is discussed only together with guarantees for {COUNTRY_B}; separately, no."
+  },
+  {
+    "id": "counter.firm.026",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Транзит по {TOPIC} сохраняется на наших условиях; изменения только через {CONDITIONS}.",
+    "en": "Transit under {TOPIC} continues on our terms; changes only through {CONDITIONS}."
+  },
+  {
+    "id": "counter.firm.027",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорную зону {COUNTRY_B} не получит без взаимных гарантий; порядок передачи должен быть письменным.",
+    "en": "Disputed zone will not go to {COUNTRY_B} without mutual guarantees; the transfer procedure must be in writing."
+  },
+  {
+    "id": "counter.firm.028",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Оборонительный союз подпишем, но сроки и порядок консультаций определяем мы; {COUNTRY_A} получает {TERMS}.",
+    "en": "Defensive alliance we will sign, but the timetable and consultation procedure are set by us; {COUNTRY_A} receives {TERMS}."
+  },
+  {
+    "id": "counter.firm.029",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Признание суверенитета {COUNTRY_B} не обменивается на уступки по {TOPIC}; встречно готовы обсуждать порядок в {TERMS}.",
+    "en": "Recognition of the sovereignty of {COUNTRY_B} is not traded for concessions on {TOPIC}; in return we are ready to discuss the procedure in {TERMS}."
+  },
+  {
+    "id": "counter.firm.030",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Тарифы по {TOPIC} пересмотрим лишь в обмен на {CONDITIONS}; порядок пересмотра определяем совместно.",
+    "en": "Tariffs under {TOPIC} we will revise only in exchange for {CONDITIONS}; the review procedure is set jointly."
+  },
+  {
+    "id": "counter.firm.031",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Документы по {TREATY_TYPE} готовы подписать только в нашей редакции, с изменением порядка проверки.",
+    "en": "Documents on the {TREATY_TYPE} we are ready to sign only in our draft, with a change to the verification procedure."
+  },
+  {
+    "id": "counter.firm.032",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Исходим из того, что {TREATY_TYPE} не меняет границ; всё остальное, включая {TERMS}, обсуждаемо.",
+    "en": "Borders are not changed by the {TREATY_TYPE}, in our reading; everything else, including {TERMS}, is open to discussion."
+  },
+  {
+    "id": "counter.firm.033",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Наблюдатели {COUNTRY_A} допускаются только при взаимности и по согласованному порядку, а не по факту.",
+    "en": "Observers from {COUNTRY_A} are admitted only on a reciprocal basis and under an agreed procedure, not as a given."
+  },
+  {
+    "id": "counter.cautious.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Прежде чем говорить о {TREATY_TYPE}, нужно понять, как будет устроен контроль; предлагаем зафиксировать {CONDITIONS}.",
+    "en": "Before any discussion of the {TREATY_TYPE}, the design of control must be understood; we propose fixing {CONDITIONS}."
+  },
+  {
+    "id": "counter.cautious.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Осторожно: объёмы по {TOPIC} обсуждать готовы, но сроки поставок требуют пересмотра с учётом {TERMS}.",
+    "en": "Carefully: volumes under {TOPIC} are open to discussion, but the delivery timetable needs revision in light of {TERMS}."
+  },
+  {
+    "id": "counter.cautious.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Любое движение по границе {COUNTRY_B} возможно лишь после проверки; порядок проверки — предмет отдельного протокола.",
+    "en": "Any movement along the border of {COUNTRY_B} requires verification first; the verification procedure is a separate protocol."
+  },
+  {
+    "id": "counter.cautious.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Вступление в {TREATY_TYPE} требует ясности по выходу; без этого мы не готовы назвать сроки.",
+    "en": "Clarity on exit is required before accession to the {TREATY_TYPE}; without it we are not ready to name a timeline."
+  },
+  {
+    "id": "counter.cautious.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Формулировки о суверенитете {COUNTRY_B} слишком широки; предлагаем сузить их до {TOPIC}.",
+    "en": "Wording on the sovereignty of {COUNTRY_B} is too broad; we propose narrowing it to {TOPIC}."
+  },
+  {
+    "id": "counter.cautious.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Сначала расчёты, потом обязательства: график по {TOPIC} нужно пересмотреть и подтвердить через {TERMS}.",
+    "en": "Calculations first, commitments later: the schedule under {TOPIC} must be revised and confirmed through {TERMS}."
+  },
+  {
+    "id": "counter.cautious.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Порядок {TREATY_TYPE} лучше уточнить до подписания; рабочая встреча возможна при {CONDITIONS}.",
+    "en": "Clarification of the {TREATY_TYPE} procedure before signing would help; a working meeting is possible with {CONDITIONS}."
+  },
+  {
+    "id": "counter.cautious.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Согласны двигаться дальше, но с оговоркой: сроки {TREATY_TYPE} зависят от {CONDITIONS}, а не от нашей готовности.",
+    "en": "Moving forward is acceptable with a caveat: the timetable of the {TREATY_TYPE} depends on {CONDITIONS}, not on our willingness."
+  },
+  {
+    "id": "counter.cautious.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии {COUNTRY_B} можно обсуждать, если заранее определить порядок их действия в кризисной ситуации.",
+    "en": "Discussing guarantees for {COUNTRY_B} is possible if the procedure for their operation in a crisis is defined in advance."
+  },
+  {
+    "id": "counter.cautious.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} нужен пробный этап; полноценные обязательства только после оценки {TERMS}.",
+    "en": "A trial stage is needed on {TOPIC}; full commitments only after an assessment of {TERMS}."
+  },
+  {
+    "id": "counter.cautious.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Район спорный, поэтому порядок доступа предлагаем согласовать в {TREATY_TYPE}, а не отдельной нотой.",
+    "en": "Area is disputed, so the access procedure should be agreed within the {TREATY_TYPE}, not by a separate note."
+  },
+  {
+    "id": "counter.cautious.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Союз с {COUNTRY_A} требует постепенности: сначала консультации, затем обязательства, и лишь потом {TERMS}.",
+    "en": "Gradualism is required by the alliance with {COUNTRY_A}: first consultations, then obligations, and only then {TERMS}."
+  },
+  {
+    "id": "counter.cautious.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Осторожный вариант: суверенитет {COUNTRY_B} подтверждается, но порядок подтверждения прописывается отдельно.",
+    "en": "Our option is cautious: the sovereignty of {COUNTRY_B} is confirmed, but the procedure for confirmation is set out separately."
+  },
+  {
+    "id": "counter.cautious.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Валютная часть {TOPIC} вызывает вопросы; предлагаем пересмотреть порядок расчётов и зафиксировать {CONDITIONS}.",
+    "en": "Questions are raised by the currency part of {TOPIC}; we propose revising the settlement procedure and fixing {CONDITIONS}."
+  },
+  {
+    "id": "counter.cautious.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Протокол о {TOPIC} стоит дополнить оговоркой о пересмотре срока; иначе документ быстро устареет.",
+    "en": "Adding a review clause to the protocol on {TOPIC} would help; otherwise the document will age quickly."
+  },
+  {
+    "id": "counter.cautious.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ответ осторожный: направление {TREATY_TYPE} поддерживаем, но сроки и порядок проверки нужно пересмотреть.",
+    "en": "Cautious is our answer: we support the direction of the {TREATY_TYPE}, but the timetable and verification procedure need revision."
+  },
+  {
+    "id": "counter.cautious.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Пока нет ясности по {CONDITIONS}, говорить о гарантиях {COUNTRY_B} преждевременно; предлагаем уточнить формулировку.",
+    "en": "While {CONDITIONS} is unclear, discussing guarantees for {COUNTRY_B} is premature; we propose refining the wording."
+  },
+  {
+    "id": "counter.cautious.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Тарифы по {TOPIC} могут быть пересмотрены, но лишь после того, как {COUNTRY_A} подтвердит {TERMS}.",
+    "en": "Tariffs under {TOPIC} can be revised, but only after {COUNTRY_A} confirms {TERMS}."
+  },
+  {
+    "id": "counter.cautious.019",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Линию разграничения предлагаем закрепить, а порядок её проверки и {TERMS} согласовывать отдельно.",
+    "en": "Fixing the demarcation line while agreeing its verification procedure and {TERMS} separately is what we propose."
+  },
+  {
+    "id": "counter.cautious.020",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Аккуратно заметим: в {TREATY_TYPE} не хватает порядка разрешения споров, и это важнее сроков.",
+    "en": "Noted carefully: the {TREATY_TYPE} lacks a dispute-settlement procedure, and that matters more than the timetable."
+  },
+  {
+    "id": "counter.cautious.021",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Ограничения по {TOPIC} для {COUNTRY_B} следует свести к минимуму; порядок их применения — вопрос переговоров.",
+    "en": "Restrictions on {TOPIC} for {COUNTRY_B} should be kept to a minimum; how they are applied is a matter for talks."
+  },
+  {
+    "id": "counter.cautious.022",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Готовы обсуждать {TOPIC}, если {COUNTRY_A} сначала раскроет {TERMS}; иначе оценки будут односторонними.",
+    "en": "Discussing {TOPIC} is possible if {COUNTRY_A} first discloses {TERMS}; otherwise assessments will be one-sided."
+  },
+  {
+    "id": "counter.cautious.023",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Место и порядок подписания {TREATY_TYPE} предлагаем уточнить ближе к дате; сейчас неясны {CONDITIONS}.",
+    "en": "Clarifying the venue and procedure for signing the {TREATY_TYPE} closer to the date seems right; {CONDITIONS} is unclear now."
+  },
+  {
+    "id": "counter.cautious.024",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TERMS}"
+    ],
+    "ru": "Компромисс возможен, но с проверяемыми условиями: {CONDITIONS} должно быть исполнимым, а {TERMS} измеримым.",
+    "en": "Compromise is possible with verifiable conditions: {CONDITIONS} must be workable and {TERMS} measurable."
+  },
+  {
+    "id": "counter.cautious.025",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Пограничные инциденты требуют механизма разбора; включать такую оговорку в {TREATY_TYPE} мы готовы.",
+    "en": "Border incidents require a review mechanism; such a clause we are ready to include in the {TREATY_TYPE}."
+  },
+  {
+    "id": "counter.cautious.026",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Доступ к {TOPIC} поддерживаем, но квоты обсуждать не готовы, пока не будет порядка мониторинга.",
+    "en": "Access to {TOPIC} we support, but quotas are not up for discussion until a monitoring procedure exists."
+  },
+  {
+    "id": "counter.cautious.027",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Сдавать позиции по {TOPIC} не спешим; сначала взаимные гарантии, потом любые изменения.",
+    "en": "Ground on {TOPIC} will not be given in a hurry: first mutual guarantees, then any changes."
+  },
+  {
+    "id": "counter.cautious.028",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "В {TREATY_TYPE} предлагаем вписать автоматическую консультацию вместо автоматического участия.",
+    "en": "Automatic consultation instead of automatic participation is what we propose to write into the {TREATY_TYPE}."
+  },
+  {
+    "id": "counter.cautious.029",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [],
+    "ru": "Осторожно оцениваем срок передачи полномочий; порядок возврата должен быть прописан заранее.",
+    "en": "Transfer of powers is assessed cautiously on timing; the procedure for returning them must be set in advance."
+  },
+  {
+    "id": "counter.cautious.030",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Предложение по {TOPIC} требует пересмотра сроков; конкретика возможна после {CONDITIONS}.",
+    "en": "Revision of the timetable is required by the proposal on {TOPIC}; specifics are possible after {CONDITIONS}."
+  },
+  {
+    "id": "counter.cautious.031",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Если порядок {TREATY_TYPE} останется прежним, наше участие под вопросом; предлагаем компромиссную процедуру.",
+    "en": "If the procedure for the {TREATY_TYPE} stays as it is, our participation is in question; we propose a compromise procedure."
+  },
+  {
+    "id": "counter.cautious.032",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Слишком быстро идти не готовы: предлагаем зафиксировать {TREATY_TYPE}, а {TERMS} вынести на пересмотр.",
+    "en": "Fast movement is not something we are ready for: we propose fixing the {TREATY_TYPE} and putting {TERMS} up for review."
+  },
+  {
+    "id": "counter.neutral.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Наше встречное предложение: гарантии для {COUNTRY_B} сохраняются, порядок их применения пересматривается.",
+    "en": "Counter-proposal from us: the guarantees for {COUNTRY_B} remain, the procedure for applying them is revised."
+  },
+  {
+    "id": "counter.neutral.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} предлагаем встречную формулу: сроки сдвигаются, а {TERMS} остаётся без изменений.",
+    "en": "On {TOPIC} a reciprocal formula is proposed: the timetable shifts while {TERMS} remains unchanged."
+  },
+  {
+    "id": "counter.neutral.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Пересмотр линии разграничения возможен в обмен на {CONDITIONS}; иного встречного варианта у нас нет.",
+    "en": "A revision of the demarcation line in exchange for {CONDITIONS} is possible; we have no other counter-option."
+  },
+  {
+    "id": "counter.neutral.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "В {TREATY_TYPE} предлагаем изменить только порядок консультаций; обязательства остаются в нынешнем виде.",
+    "en": "Changing only the consultation procedure is what we propose in the {TREATY_TYPE}; the obligations stay as they are."
+  },
+  {
+    "id": "counter.neutral.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{TOPIC}"
+    ],
+    "ru": "Вопрос суверенитета {COUNTRY_B} остаётся вне {TREATY_TYPE}; встречно предлагаем приложение о {TOPIC}.",
+    "en": "Question of the sovereignty of {COUNTRY_B} stays outside the {TREATY_TYPE}; in return we propose an annex on {TOPIC}."
+  },
+  {
+    "id": "counter.neutral.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "График платежей по {TOPIC} пересмотрим, если {COUNTRY_A} примет порядок контроля из {TERMS}.",
+    "en": "Payment schedule under {TOPIC} will be revised if {COUNTRY_A} accepts the control procedure in {TERMS}."
+  },
+  {
+    "id": "counter.neutral.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Порядок оформления {TREATY_TYPE} меняется так: проект идёт через {COUNTRY_B}, подписание после {CONDITIONS}.",
+    "en": "Procedure for the {TREATY_TYPE} changes as follows: the draft goes through {COUNTRY_B}, signing after {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Встречная редакция {TREATY_TYPE} отличается в одном: срок вступления привязан к {CONDITIONS}.",
+    "en": "The counter-draft of the {TREATY_TYPE} differs in a key respect: entry into force is tied to {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Механизм гарантий для {COUNTRY_B} можно упростить; вместо автоматизма уведомление и {TERMS}.",
+    "en": "Simplification of the guarantee mechanism for {COUNTRY_B} is possible: instead of automaticity, notification and {TERMS}."
+  },
+  {
+    "id": "counter.neutral.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Тарифная сетка по {TOPIC} пересматривается поэтапно; окончательные ставки определяются через {TERMS}.",
+    "en": "Stage by stage the tariff schedule under {TOPIC} is revised; final rates are set through {TERMS}."
+  },
+  {
+    "id": "counter.neutral.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорный участок остаётся за {COUNTRY_A}, но порядок доступа для {COUNTRY_B} пересматривается.",
+    "en": "Disputed area stays with {COUNTRY_A}, but the access procedure for {COUNTRY_B} is revised."
+  },
+  {
+    "id": "counter.neutral.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Союз сохраняется, срок вступления в силу переносится; встречно просим закрепить {TERMS}.",
+    "en": "Alliance is preserved, entry into force is postponed; in return we ask that {TERMS} be fixed."
+  },
+  {
+    "id": "counter.neutral.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Формулировку о суверенитете {COUNTRY_B} предлагаем сократить до признания границ и отказа от вмешательства.",
+    "en": "Sovereignty clause on {COUNTRY_B} should be shortened to recognition of borders and a non-interference commitment."
+  },
+  {
+    "id": "counter.neutral.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Основные параметры {TOPIC} принимаем, порядок индексации пересматриваем в сторону {TERMS}.",
+    "en": "Main parameters of {TOPIC} we accept, and the indexation procedure is revised towards {TERMS}."
+  },
+  {
+    "id": "counter.neutral.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Ускорение процедуры {TREATY_TYPE} поддержим в обмен на оговорку о пересмотре, если {CONDITIONS}.",
+    "en": "Speeding up the {TREATY_TYPE} procedure we will support in exchange for a review clause if {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Предлагаем компромисс по {TREATY_TYPE}: цель сохраняется, а порядок исполнения меняется на поэтапный.",
+    "en": "A compromise on the {TREATY_TYPE} is proposed: the goal stays, the implementation becomes phased."
+  },
+  {
+    "id": "counter.neutral.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Консультации по безопасности {COUNTRY_B} продолжатся, если {COUNTRY_A} согласится на регулярность и {TERMS}.",
+    "en": "Consultations on the security of {COUNTRY_B} will continue if {COUNTRY_A} agrees to regularity and {TERMS}."
+  },
+  {
+    "id": "counter.neutral.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} встречно предлагаем: доступ без изменений, {TERMS} по результатам обзора.",
+    "en": "Counter-proposed on {TOPIC}: access unchanged, {TERMS} based on the results of a review."
+  },
+  {
+    "id": "counter.neutral.019",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обмен территориями не исключаем, но порядок компенсаций должен быть согласован в {TREATY_TYPE}.",
+    "en": "Exchange of territories is not ruled out, but the compensation procedure must be agreed in the {TREATY_TYPE}."
+  },
+  {
+    "id": "counter.neutral.020",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обязательства по {TREATY_TYPE} распределяются иначе: {COUNTRY_A} берёт гарантии, {COUNTRY_B} консультации.",
+    "en": "Obligations under the {TREATY_TYPE} are redistributed: {COUNTRY_A} takes guarantees, {COUNTRY_B} takes consultations."
+  },
+  {
+    "id": "counter.neutral.021",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Сроки передачи полномочий по {TOPIC} предлагаем пересмотреть; сам принцип передачи не оспаривается.",
+    "en": "Revising the timetable for transferring powers under {TOPIC} is what we propose; the principle of transfer is not disputed."
+  },
+  {
+    "id": "counter.neutral.022",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Объём помощи по {TOPIC} обсуждаем после того, как будет согласован порядок отчётности и {TERMS}.",
+    "en": "Volume of aid under {TOPIC} will be discussed once the reporting procedure and {TERMS} are agreed."
+  },
+  {
+    "id": "counter.neutral.023",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Документ подписывается в прежнем порядке, меняется лишь перечень приложений и {TERMS}.",
+    "en": "Same signing procedure remains; only the list of annexes and {TERMS} change."
+  },
+  {
+    "id": "counter.neutral.024",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Наш вариант: {TREATY_TYPE} с приложением о {TOPIC}; условия вступления переносятся на {CONDITIONS}.",
+    "en": "Our option: a {TREATY_TYPE} with an annex on {TOPIC}; entry conditions are moved to {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.025",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Гарантии {COUNTRY_B} подтверждаются на срок, который стороны определят через {TERMS}, а не автоматически.",
+    "en": "Guarantees for {COUNTRY_B} are confirmed for a period the parties define through {TERMS}, not automatically."
+  },
+  {
+    "id": "counter.neutral.026",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TOPIC}"
+    ],
+    "ru": "Квоты по {TOPIC} пересматриваются один раз; порядок пересмотра фиксируется в {TREATY_TYPE}.",
+    "en": "Quotas under {TOPIC} are revised once; the review procedure is fixed in the {TREATY_TYPE}."
+  },
+  {
+    "id": "counter.neutral.027",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Вопрос о зоне влияния решается через референдум под наблюдением; порядок наблюдения — {CONDITIONS}.",
+    "en": "Referendum under observation is the way to settle the zone of influence; the observation procedure is {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.028",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Встречно предлагаем не союз целиком, а пакт о консультациях с расширением при {CONDITIONS}.",
+    "en": "Not a full alliance but a consultation pact is our counter-proposal, with an option to expand if {CONDITIONS}."
+  },
+  {
+    "id": "counter.neutral.029",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Права {COUNTRY_B} на {TOPIC} признаются, а порядок их реализации требует уточнения в {TERMS}.",
+    "en": "Rights of {COUNTRY_B} to {TOPIC} are recognised, while how they are exercised needs clarification in {TERMS}."
+  },
+  {
+    "id": "counter.neutral.030",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Структура платежей по {TOPIC} принята; сроки пересматриваются, если {COUNTRY_A} подтвердит {TERMS}.",
+    "en": "Payment structure under {TOPIC} is accepted; the timetable is revised if {COUNTRY_A} confirms {TERMS}."
+  },
+  {
+    "id": "counter.neutral.031",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Предлагаем изменить лишь порядок вступления {TREATY_TYPE}: сначала обмен письмами, затем ратификация.",
+    "en": "Only the entry procedure of the {TREATY_TYPE} would change under our proposal: first an exchange of letters, then ratification."
+  },
+  {
+    "id": "counter.neutral.032",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "counter_offer"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Существо {TREATY_TYPE} не меняем; встречно уточняем порядок проверки и {TERMS}.",
+    "en": "Substance of the {TREATY_TYPE} we do not change; in return we specify the verification procedure and {TERMS}."
+  },
+  {
+    "id": "partial.compromising.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Гарантии для {COUNTRY_B} принимаем, но порядок их применения требует изменения: нужна оговорка о {TERMS}.",
+    "en": "Guarantees for {COUNTRY_B} we accept, but the procedure for applying them requires change: a clause on {TERMS} is needed."
+  },
+  {
+    "id": "partial.compromising.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Доступ к {TOPIC} принимаем, а график поставок требуем пересмотреть; иначе обязательства несбалансированы.",
+    "en": "Access to {TOPIC} we accept, but the delivery timetable must be revised; otherwise the obligations are unbalanced."
+  },
+  {
+    "id": "partial.compromising.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Спорный участок оставляем за {COUNTRY_A}, но порядок пропуска через него принимаем лишь с изменением {CONDITIONS}.",
+    "en": "The disputed area stays with {COUNTRY_A}, but passage through it we accept only with a change to {CONDITIONS}."
+  },
+  {
+    "id": "partial.compromising.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Оборонительную часть {TREATY_TYPE} принимаем; порядок консультаций требует доработки, и это для нас существенно.",
+    "en": "Defensive part of the {TREATY_TYPE} we accept; the consultation procedure needs work, and that matters to us."
+  },
+  {
+    "id": "partial.compromising.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Признание суверенитета {COUNTRY_B} принимаем, а формулировку о {TOPIC} требуем переписать в духе невмешательства.",
+    "en": "Recognition of the sovereignty of {COUNTRY_B} we accept, but the clause on {TOPIC} must be rewritten in the spirit of non-interference."
+  },
+  {
+    "id": "partial.compromising.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Кредитную часть {TOPIC} принимаем, сроки возврата требуют изменения; предлагаем привязать их к {CONDITIONS}.",
+    "en": "Credit part of {TOPIC} we accept; the repayment timetable requires change and should be tied to {CONDITIONS}."
+  },
+  {
+    "id": "partial.compromising.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{TERMS}"
+    ],
+    "ru": "Принимаем порядок подписания {TREATY_TYPE} в целом, но приложение о {TERMS} нужно переработать.",
+    "en": "Signing procedure for the {TREATY_TYPE} is accepted in general, but the annex on {TERMS} needs reworking."
+  },
+  {
+    "id": "partial.compromising.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Большую часть {TREATY_TYPE} принимаем, а пункт о сроке вступления меняем: он должен зависеть от {CONDITIONS}.",
+    "en": "Most of the {TREATY_TYPE} we accept, but the entry-into-force clause changes: it must depend on {CONDITIONS}."
+  },
+  {
+    "id": "partial.compromising.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Совместный мониторинг принимаем, состав наблюдателей требует согласования; без этого часть обязательств не работает.",
+    "en": "Joint monitoring we accept, but the composition of observers needs agreement; without that, part of the obligations does not work."
+  },
+  {
+    "id": "partial.compromising.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Транзит по {TOPIC} принимаем, а тарифную часть принять не можем без пересмотра {TERMS}.",
+    "en": "Transit under {TOPIC} we accept, but the tariff part cannot be accepted without revising {TERMS}."
+  },
+  {
+    "id": "partial.compromising.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Демилитаризацию полосы принимаем, а порядок ввода наблюдателей требует изменения в пользу {COUNTRY_B}.",
+    "en": "Demilitarisation of the strip we accept, but the procedure for bringing in observers requires change in favour of {COUNTRY_B}."
+  },
+  {
+    "id": "partial.compromising.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Пакт о взаимопомощи принимаем, оговорку о {TOPIC} только после переработки; это наше условие.",
+    "en": "Mutual assistance pact we accept; the reservation on {TOPIC} only after reworking; that is our condition."
+  },
+  {
+    "id": "partial.compromising.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Отказ от территориальных претензий принимаем, а порядок разрешения споров нуждается в доработке.",
+    "en": "Renunciation of territorial claims we accept, but the dispute-settlement procedure needs work."
+  },
+  {
+    "id": "partial.compromising.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Расчёты по {TOPIC} принимаем в нынешнем порядке, а объём компенсаций меняем: он должен следовать из {TERMS}.",
+    "en": "Settlement procedure under {TOPIC} we accept, but we change the volume of compensation: it must follow from {TERMS}."
+  },
+  {
+    "id": "partial.compromising.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}",
+      "{TOPIC}"
+    ],
+    "ru": "Протокол о {TOPIC} принимаем, а срок его действия требуем сократить и привязать к {CONDITIONS}.",
+    "en": "Protocol on {TOPIC} we accept, but its term must be shortened and tied to {CONDITIONS}."
+  },
+  {
+    "id": "partial.compromising.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Цель {TREATY_TYPE} принимаем, механизм исполнения нет: предлагаем заменить его на поэтапный.",
+    "en": "Purpose of the {TREATY_TYPE} we accept but not the implementation mechanism: we propose replacing it with a phased one."
+  },
+  {
+    "id": "partial.compromising.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Обмен информацией по {TOPIC} принимаем, но порядок проверки требует изменения; сейчас он односторонний.",
+    "en": "Exchange of information on {TOPIC} we accept, but the verification procedure requires change; it is one-sided now."
+  },
+  {
+    "id": "partial.firm.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Письменные гарантии принимаем, но порядок их отзыва требует изменения, и это не обсуждается.",
+    "en": "Acceptance of the guarantees is limited to written ones: the procedure for withdrawing them requires change, and that is not open to discussion."
+  },
+  {
+    "id": "partial.firm.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} тарифы принимаем, а квоты нет: их порядок должен быть пересмотрен в нашу пользу.",
+    "en": "Tariffs on {TOPIC} we accept but not the quotas: their procedure must be revised in our favour."
+  },
+  {
+    "id": "partial.firm.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Линию разграничения принимаем, порядок передачи участков требует правки; нынешняя редакция для {COUNTRY_B} неприемлема.",
+    "en": "Demarcation line we accept; the transfer procedure needs correction, and the present draft is unacceptable to {COUNTRY_B}."
+  },
+  {
+    "id": "partial.firm.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Союзные обязательства принимаем, а автоматизм вступления нет; это требует изменения, иного не предложим.",
+    "en": "Allied obligations we accept but not automatic entry; that requires change and we will not offer otherwise."
+  },
+  {
+    "id": "partial.firm.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет {COUNTRY_B} признаём, но оговорка о {TOPIC} должна быть переписана; в нынешнем виде она неприемлема.",
+    "en": "Sovereignty of {COUNTRY_B} we recognise, but the reservation on {TOPIC} must be rewritten; as it stands it is unacceptable."
+  },
+  {
+    "id": "partial.firm.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Платёжную дисциплину принимаем, график требуем изменить: он должен следовать из {CONDITIONS}.",
+    "en": "Payment discipline we accept; the schedule must change and follow from {CONDITIONS}."
+  },
+  {
+    "id": "partial.firm.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Подписание принимаем, а приложение о {TERMS} только после переработки; так и запишем.",
+    "en": "Signing procedure we accept, but the annex on {TERMS} only after reworking; that is how it will be recorded."
+  },
+  {
+    "id": "partial.firm.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Условия {TREATY_TYPE} принимаем, сроки нет: они должны определяться нами, а не {COUNTRY_A}.",
+    "en": "Terms of the {TREATY_TYPE} we accept but not the timetable: it must be set by us, not by {COUNTRY_A}."
+  },
+  {
+    "id": "partial.firm.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Совместные патрули принимаем, а подчинение единому командованию требует изменения; иначе {COUNTRY_A} не участвует.",
+    "en": "Joint patrols we accept, but subordination to a single command requires change; otherwise {COUNTRY_A} does not take part."
+  },
+  {
+    "id": "partial.firm.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Доступ к рынку {COUNTRY_B} принимаем, а порядок лицензирования меняем: он не должен быть дискреционным.",
+    "en": "Access to the market of {COUNTRY_B} we accept, but the licensing procedure changes: it must not be discretionary."
+  },
+  {
+    "id": "partial.firm.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Спорную зону принимаем как нейтральную, но порядок её использования требует пересмотра и {TERMS}.",
+    "en": "Neutral status of the disputed zone we accept, but the procedure for its use requires revision and {TERMS}."
+  },
+  {
+    "id": "partial.firm.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Консультации принимаем, совместное планирование только после изменения порядка допуска к {TOPIC}.",
+    "en": "Consultations we accept; joint planning only after a change to the access procedure for {TOPIC}."
+  },
+  {
+    "id": "partial.firm.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Обязательство о невмешательстве принимаем, а формулировку о {TOPIC} меняем: она допускает толкования.",
+    "en": "Non-interference commitment we accept, but the wording on {TOPIC} changes: it allows for interpretation."
+  },
+  {
+    "id": "partial.firm.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Тарифную часть {TOPIC} принимаем, а механизм компенсаций требует изменения; в нынешнем виде он односторонний.",
+    "en": "Tariff part of {TOPIC} we accept, but the compensation mechanism requires change; it is one-sided now."
+  },
+  {
+    "id": "partial.firm.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Протокол о {TOPIC} принимаем, а порядок денонсации меняем: он должен быть симметричным.",
+    "en": "Protocol on {TOPIC} we accept, but the denunciation procedure changes: it must be symmetrical."
+  },
+  {
+    "id": "partial.firm.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Основной текст {TREATY_TYPE} принимаем, приложения нет: их нужно согласовать заново.",
+    "en": "Main text of the {TREATY_TYPE} we accept, the annexes not: they must be agreed anew."
+  },
+  {
+    "id": "partial.firm.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Согласны на гарантии границ, но порядок консультаций требует правки; без неё обязательства {COUNTRY_B} неполны.",
+    "en": "We agree to the border guarantees, but the consultation procedure requires correction; without it the obligations to {COUNTRY_B} are incomplete."
+  },
+  {
+    "id": "partial.cautious.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Часть гарантий для {COUNTRY_B} принимаем, но порядок их проверки требует изменения; иначе смысл теряется.",
+    "en": "Part of the guarantees for {COUNTRY_B} we accept, but their verification procedure requires change; otherwise the point is lost."
+  },
+  {
+    "id": "partial.cautious.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "Принимаем только пробный этап по {TOPIC}; полный график поставок требует пересмотра с учётом {TERMS}.",
+    "en": "Only a trial stage is accepted on {TOPIC}; the full delivery schedule requires revision in light of {TERMS}."
+  },
+  {
+    "id": "partial.cautious.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Статус участка принимаем, а порядок доступа к нему нет: он требует уточнения и {CONDITIONS}.",
+    "en": "Status of the area we accept, the access procedure not: it requires clarification and {CONDITIONS}."
+  },
+  {
+    "id": "partial.cautious.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Оборонительную оговорку принимаем, а срок вступления в {TREATY_TYPE} требует пересмотра; спешить не станем.",
+    "en": "Defensive clause we accept, but the accession timetable to the {TREATY_TYPE} requires revision; we will not rush."
+  },
+  {
+    "id": "partial.cautious.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Признание границ {COUNTRY_B} принимаем, а порядок реализации {TOPIC} требует доработки; сейчас он неясен.",
+    "en": "Recognition of the borders of {COUNTRY_B} we accept, but the procedure for implementing {TOPIC} needs work; it is unclear now."
+  },
+  {
+    "id": "partial.cautious.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Мониторинг по {TOPIC} принимаем, а механизм корректировки требует изменения: он должен быть предсказуемым.",
+    "en": "Monitoring under {TOPIC} we accept, but the adjustment mechanism requires change: it must be predictable."
+  },
+  {
+    "id": "partial.cautious.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Формат {TREATY_TYPE} принимаем, а порядок обмена документами требует правки; иначе возможны задержки.",
+    "en": "Format of the {TREATY_TYPE} we accept, but the document exchange procedure needs correction; otherwise delays are likely."
+  },
+  {
+    "id": "partial.cautious.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Направление {TREATY_TYPE} принимаем, но пункт о {CONDITIONS} требует переработки: он слишком общий.",
+    "en": "Direction of the {TREATY_TYPE} we accept, but the clause on {CONDITIONS} needs reworking: it is too general."
+  },
+  {
+    "id": "partial.cautious.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Обмен данными по {TOPIC} принимаем, а режим доступа к ним требует изменения; доверие пока ограничено.",
+    "en": "Data exchange on {TOPIC} we accept, but the access regime requires change; trust is limited so far."
+  },
+  {
+    "id": "partial.cautious.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Доступ к портам принимаем, а порядок инспекций меняем: он должен быть согласован заранее.",
+    "en": "Port access we accept, but the inspection procedure changes: it must be agreed in advance."
+  },
+  {
+    "id": "partial.cautious.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Нейтральный статус зоны принимаем, а порядок её патрулирования требует пересмотра и {TERMS}.",
+    "en": "Neutral status of the zone we accept, but the patrolling procedure requires revision and {TERMS}."
+  },
+  {
+    "id": "partial.cautious.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Пакт о ненападении принимаем, а пункт о совместных действиях лишь после изменения {CONDITIONS}.",
+    "en": "Non-aggression pact we accept, and the clause on joint action only after a change to {CONDITIONS}."
+  },
+  {
+    "id": "partial.cautious.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Отказ от претензий принимаем, а оговорку о {TOPIC} требуем переписать; нынешняя редакция расплывчата.",
+    "en": "Renunciation of claims we accept, but the reservation on {TOPIC} must be rewritten; the present wording is vague."
+  },
+  {
+    "id": "partial.cautious.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Порядок отчётности по {TOPIC} принимаем, а механизм приостановки требует доработки: он несимметричен.",
+    "en": "Reporting procedure under {TOPIC} we accept, but the suspension mechanism needs work: it is asymmetrical."
+  },
+  {
+    "id": "partial.cautious.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Регламент встреч принимаем, а порядок подписания {TREATY_TYPE} требует изменения; предлагаем обмен нотами.",
+    "en": "Meeting rules we accept, but the signing procedure for the {TREATY_TYPE} requires change; we propose an exchange of notes."
+  },
+  {
+    "id": "partial.cautious.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Общую рамку {TREATY_TYPE} принимаем, а конкретные обязательства требуют переработки; пока они неисполнимы.",
+    "en": "General framework of the {TREATY_TYPE} we accept, but the specific obligations need reworking; they are unworkable for now."
+  },
+  {
+    "id": "partial.cautious.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии для {COUNTRY_B} принимаем частично: механизм их применения требует изменения, срок уточнения.",
+    "en": "In part we accept the guarantees for {COUNTRY_B}: the procedure for applying them requires change and the term needs clarification."
+  },
+  {
+    "id": "partial.cautious.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Квоты по {TOPIC} принимаем, но порядок их пересмотра требует правки: он должен быть регулярным.",
+    "en": "Quotas under {TOPIC} we accept, but the review procedure needs correction: it must be regular."
+  },
+  {
+    "id": "partial.neutral.001",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Принимаем гарантии, но порядок их применения требуем изменить: он должен опираться на {CONDITIONS}.",
+    "en": "Guarantees we accept, but the procedure for applying them must change: it has to rest on {CONDITIONS}."
+  },
+  {
+    "id": "partial.neutral.002",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} принимаем доступ, а сроки поставок требуют изменения; иных возражений нет.",
+    "en": "Access is accepted on {TOPIC}, while the delivery timetable requires change; there are no other objections."
+  },
+  {
+    "id": "partial.neutral.003",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Передачу участка принимаем, а порядок компенсаций требует пересмотра; это единственная правка.",
+    "en": "Transfer of the area we accept, but the compensation procedure requires revision; that is the only amendment."
+  },
+  {
+    "id": "partial.neutral.004",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обязательства по {TREATY_TYPE} принимаем, а порядок выхода из союза требует изменения.",
+    "en": "Obligations under the {TREATY_TYPE} we accept, but the procedure for leaving the alliance requires change."
+  },
+  {
+    "id": "partial.neutral.005",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Формулировку о суверенитете принимаем, а приложение о {TOPIC} только с правкой.",
+    "en": "Sovereignty wording we accept, but the annex on {TOPIC} only with an amendment."
+  },
+  {
+    "id": "partial.neutral.006",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Бюджетную часть {TOPIC} принимаем, а порядок контроля над расходами требует переработки.",
+    "en": "Budgetary part of {TOPIC} we accept, but the procedure for controlling expenditure needs reworking."
+  },
+  {
+    "id": "partial.neutral.007",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Порядок {TREATY_TYPE} принимаем, а срок ратификации требует изменения: он не должен зависеть от {COUNTRY_A}.",
+    "en": "Procedure for the {TREATY_TYPE} we accept, but the ratification term requires change: it must not depend on {COUNTRY_A}."
+  },
+  {
+    "id": "partial.neutral.008",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Основную часть {TREATY_TYPE} принимаем, а раздел о {CONDITIONS} требует изменения.",
+    "en": "Main part of the {TREATY_TYPE} we accept, but the section on {CONDITIONS} requires change."
+  },
+  {
+    "id": "partial.neutral.009",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Обмен наблюдателями принимаем, а порядок их отчётов требует изменения; это техническая правка.",
+    "en": "Observer exchange we accept, but the procedure for their reports requires change; this is a technical amendment."
+  },
+  {
+    "id": "partial.neutral.010",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Тарифы по {TOPIC} принимаем, а механизм их отмены требует доработки; без этого обязательства неполны.",
+    "en": "Tariffs under {TOPIC} we accept, but the mechanism for lifting them needs work; without it the obligations are incomplete."
+  },
+  {
+    "id": "partial.neutral.011",
+    "category": "counteroffer",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [],
+    "ru": "Статус границы принимаем, а режим её охраны требует пересмотра; предлагаем совместный порядок.",
+    "en": "Status of the border we accept, but the guard regime requires revision; we propose a joint procedure."
+  },
+  {
+    "id": "partial.neutral.012",
+    "category": "counteroffer",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Союзный договор принимаем, а приложение о {TERMS} нуждается в изменении формулировок.",
+    "en": "Alliance treaty we accept, but the annex on {TERMS} needs changes to its wording."
+  },
+  {
+    "id": "partial.neutral.013",
+    "category": "counteroffer",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Признание {COUNTRY_B} принимаем, а порядок консультаций по {TOPIC} требует уточнения.",
+    "en": "Recognition of {COUNTRY_B} we accept, but the consultation procedure on {TOPIC} requires clarification."
+  },
+  {
+    "id": "partial.neutral.014",
+    "category": "counteroffer",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Финансовую часть {TOPIC} принимаем, а порядок её пересмотра требует изменения: сейчас он не определён.",
+    "en": "Financial part of {TOPIC} we accept, but the procedure for revising it requires change: it is undefined now."
+  },
+  {
+    "id": "partial.neutral.015",
+    "category": "counteroffer",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Процедуру подписания принимаем, а перечень приложений к {TREATY_TYPE} требует переработки.",
+    "en": "Signing procedure we accept, but the list of annexes to the {TREATY_TYPE} needs reworking."
+  },
+  {
+    "id": "partial.neutral.016",
+    "category": "counteroffer",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Основу {TREATY_TYPE} принимаем, а порядок исполнения требуем изменить на поэтапный.",
+    "en": "Basis of the {TREATY_TYPE} we accept, but the implementation procedure must change to a phased one."
+  },
+  {
+    "id": "partial.neutral.017",
+    "category": "counteroffer",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии {COUNTRY_B} принимаем, а механизм консультаций требует изменения; в остальном текст согласован.",
+    "en": "Guarantees for {COUNTRY_B} we accept, but the consultation mechanism requires change; the rest of the text is agreed."
+  },
+  {
+    "id": "partial.neutral.018",
+    "category": "counteroffer",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "partial_accept"
+    ],
+    "placeholders": [
+      "{TERMS}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} принимаем порядок расчётов, а сроки поставок требуют пересмотра в сторону {TERMS}.",
+    "en": "Settlement procedure is accepted on {TOPIC}, but the delivery timetable requires revision towards {TERMS}."
+  }
+]

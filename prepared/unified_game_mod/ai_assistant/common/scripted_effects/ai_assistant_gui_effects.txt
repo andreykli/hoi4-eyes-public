@@ -1,0 +1,247 @@
+eyes_refresh_country_list = {
+	if = {
+		limit = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+		set_variable = { var = global.eyes_gui_country_count value = 0 }
+		set_variable = { var = global.eyes_gui_array_stored_count value = 0 }
+		set_variable = { var = global.eyes_gui_player_array_stored_count value = 0 }
+		set_variable = { var = global.eyes_gui_dynamic_probe_count value = 0 }
+		log = "EYES_HOI4_COUNTRY_REFRESH_BEGIN_V1|[ROOT.GetTag]"
+	}
+	clear_array = global.eyes_gui_dynamic_probe_values
+	add_to_array = { array = global.eyes_gui_dynamic_probe_values value = 1 }
+	if = {
+		limit = {
+			has_country_flag = eyes_gui_refresh_diagnostics_active
+			is_in_array = { array = global.eyes_gui_dynamic_probe_values value = 1 }
+		}
+		add_to_variable = { var = global.eyes_gui_dynamic_probe_count value = 1 }
+		log = "EYES_HOI4_DYNAMIC_PROBE_ARRAY_STORED_V1|[ROOT.GetTag]|1"
+	}
+	if = {
+		limit = {
+			has_country_flag = eyes_gui_refresh_diagnostics_active
+			NOT = { is_in_array = { array = global.eyes_gui_dynamic_probe_values value = 1 } }
+		}
+		log = "EYES_HOI4_DYNAMIC_PROBE_ARRAY_MISSING_V1|[ROOT.GetTag]|1"
+	}
+	if = {
+		limit = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+		log = "EYES_HOI4_DYNAMIC_PROBE_ARRAY_READY_V1|[ROOT.GetTag]|1|[?global.eyes_gui_dynamic_probe_count]"
+	}
+	clear_array = global.eyes_available_countries
+	clear_array = ROOT.eyes_player_available_countries
+	every_country = {
+		limit = {
+			exists = yes
+			any_owned_state = { always = yes }
+			NOT = { tag = ROOT }
+		}
+		add_to_array = { array = global.eyes_available_countries value = THIS }
+		add_to_array = { array = ROOT.eyes_player_available_countries value = THIS }
+		if = {
+			limit = { ROOT = { has_country_flag = eyes_gui_refresh_diagnostics_active } }
+			add_to_variable = { var = global.eyes_gui_country_count value = 1 }
+			log = "EYES_HOI4_COUNTRY_CANDIDATE_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+		if = {
+			limit = {
+				ROOT = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+				is_in_array = { array = global.eyes_available_countries value = THIS }
+			}
+			add_to_variable = { var = global.eyes_gui_array_stored_count value = 1 }
+			log = "EYES_HOI4_COUNTRY_ARRAY_STORED_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+		if = {
+			limit = {
+				ROOT = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+				is_in_array = { array = ROOT.eyes_player_available_countries value = THIS }
+			}
+			ROOT = { add_to_variable = { var = global.eyes_gui_player_array_stored_count value = 1 } }
+			log = "EYES_HOI4_COUNTRY_PLAYER_ARRAY_STORED_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+		if = {
+			limit = {
+				ROOT = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+				NOT = { is_in_array = { array = ROOT.eyes_player_available_countries value = THIS } }
+			}
+			log = "EYES_HOI4_COUNTRY_PLAYER_ARRAY_MISSING_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+		if = {
+			limit = {
+				ROOT = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+				NOT = { is_in_array = { array = global.eyes_available_countries value = THIS } }
+			}
+			log = "EYES_HOI4_COUNTRY_ARRAY_MISSING_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+	}
+	if = {
+		limit = { has_country_flag = eyes_gui_refresh_diagnostics_active }
+		log = "EYES_HOI4_COUNTRY_REFRESH_END_V1|[ROOT.GetTag]|[?global.eyes_gui_country_count]|[?global.eyes_gui_array_stored_count]"
+		log = "EYES_HOI4_COUNTRY_PLAYER_ARRAY_REFRESH_END_V1|[ROOT.GetTag]|[?global.eyes_gui_country_count]|[?global.eyes_gui_player_array_stored_count]"
+	}
+	eyes_rebuild_country_page = yes
+}
+
+eyes_rebuild_country_page = {
+	clear_array = global.eyes_visible_countries
+	set_variable = { var = ROOT.eyes_gui_page_count value = 1 }
+	set_variable = { var = ROOT.eyes_gui_page_boundary value = 9 }
+
+	# Count pages from zero-based array indices: 0-9 is page one, 10-19 page two, etc.
+	for_each_loop = {
+		array = global.eyes_available_countries
+		index = eyes_gui_page_index
+		value = eyes_gui_page_country
+		if = {
+			limit = {
+				check_variable = { eyes_gui_page_index > ROOT.eyes_gui_page_boundary }
+			}
+			add_to_variable = { var = ROOT.eyes_gui_page_count value = 1 }
+			add_to_variable = { var = ROOT.eyes_gui_page_boundary value = 10 }
+		}
+	}
+
+	set_variable = { var = ROOT.eyes_gui_page_last value = ROOT.eyes_gui_page_count }
+	subtract_from_variable = { var = ROOT.eyes_gui_page_last value = 1 }
+	if = {
+		limit = { check_variable = { ROOT.eyes_gui_page > ROOT.eyes_gui_page_last } }
+		set_variable = { var = ROOT.eyes_gui_page value = ROOT.eyes_gui_page_last }
+	}
+	if = {
+		limit = { check_variable = { ROOT.eyes_gui_page < 0 } }
+		set_variable = { var = ROOT.eyes_gui_page value = 0 }
+	}
+
+	set_variable = { var = ROOT.eyes_gui_page_start value = ROOT.eyes_gui_page }
+	multiply_variable = { var = ROOT.eyes_gui_page_start value = 10 }
+	set_variable = { var = ROOT.eyes_gui_page_end value = ROOT.eyes_gui_page_start }
+	add_to_variable = { var = ROOT.eyes_gui_page_end value = 10 }
+	set_variable = { var = ROOT.eyes_gui_page_display value = ROOT.eyes_gui_page }
+	add_to_variable = { var = ROOT.eyes_gui_page_display value = 1 }
+
+	for_each_loop = {
+		array = global.eyes_available_countries
+		index = eyes_gui_page_index
+		value = eyes_gui_page_country
+		if = {
+			limit = {
+				check_variable = {
+					var = eyes_gui_page_index
+					value = ROOT.eyes_gui_page_start
+					compare = greater_than_or_equals
+				}
+				check_variable = { eyes_gui_page_index < ROOT.eyes_gui_page_end }
+			}
+			add_to_array = {
+				array = global.eyes_visible_countries
+				value = var:eyes_gui_page_country
+			}
+		}
+	}
+}
+
+eyes_ensure_campaign_identity = {
+	if = {
+		limit = { NOT = { has_global_flag = eyes_campaign_identity_seeded } }
+		# These values persist in the save. Bridge derives the campaign UUID from
+		# this token; no static campaign ID is shared by separate campaigns.
+		set_variable_to_random = { var = global.eyes_campaign_seed_1 min = 1 max = 2147483647 integer = yes }
+		set_variable_to_random = { var = global.eyes_campaign_seed_2 min = 1 max = 2147483647 integer = yes }
+		set_variable_to_random = { var = global.eyes_campaign_seed_3 min = 1 max = 2147483647 integer = yes }
+		set_variable_to_random = { var = global.eyes_campaign_seed_4 min = 1 max = 2147483647 integer = yes }
+		set_global_flag = eyes_campaign_identity_seeded
+	}
+}
+
+eyes_select_country_from_list = {
+	if = {
+		limit = {
+			exists = yes
+			any_owned_state = { always = yes }
+			NOT = { tag = ROOT }
+		}
+		if = {
+			limit = { NOT = { has_global_flag = eyes_campaign_identity_seeded } }
+			# Distinguish a new game from a save with an existing EYES identity.
+			# Bridge assigns a unique local campaign UUID to this first selection.
+			log = "EYES_HOI4_CAMPAIGN_FRESH_V1|[ROOT.GetTag]|[THIS.GetTag]"
+		}
+		clear_array = global.eyes_selected_country
+		add_to_array = { array = global.eyes_selected_country value = THIS }
+		ROOT = {
+			eyes_ensure_campaign_identity = yes
+			if = {
+				limit = { NOT = { has_variable = eyes_pair_context_sequence } }
+				set_variable = { var = eyes_pair_context_sequence value = 0 }
+			}
+			add_to_variable = { var = eyes_pair_context_sequence value = 1 }
+		}
+		log = "EYES_HOI4_COUNTRY_SELECTED_V3|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]"
+		set_temp_variable = { eyes_pair_context_at_war = 0 }
+		set_temp_variable = { eyes_pair_context_same_faction = 0 }
+		set_temp_variable = { eyes_pair_context_existing_nap = 0 }
+		if = {
+			limit = { has_war_with = ROOT }
+			set_temp_variable = { eyes_pair_context_at_war = 1 }
+		}
+		if = {
+			limit = { is_in_faction_with = ROOT }
+			set_temp_variable = { eyes_pair_context_same_faction = 1 }
+		}
+		if = {
+			limit = { has_non_aggression_pact_with = ROOT }
+			set_temp_variable = { eyes_pair_context_existing_nap = 1 }
+		}
+		log = "EYES_HOI4_PAIR_CONTEXT_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|[?global.num_days|0]|[?THIS.opinion@ROOT|0]|[?THIS.eyes_pair_context_at_war|0]|[?THIS.eyes_pair_context_same_faction|0]|[?THIS.eyes_pair_context_existing_nap|0]|[?global.threat|2]"
+		set_temp_variable = { eyes_pair_selected_ideology_code = 0 }
+		if = { limit = { has_government = fascism } set_temp_variable = { eyes_pair_selected_ideology_code = 1 } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|fascism" }
+		if = { limit = { has_government = democratic } set_temp_variable = { eyes_pair_selected_ideology_code = 2 } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|democratic" }
+		if = { limit = { has_government = neutrality } set_temp_variable = { eyes_pair_selected_ideology_code = 3 } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|neutrality" }
+		if = { limit = { has_government = communism } set_temp_variable = { eyes_pair_selected_ideology_code = 4 } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|communism" }
+		ROOT = {
+			set_temp_variable = { eyes_pair_player_ideology_code = 0 }
+			if = { limit = { has_government = fascism } set_temp_variable = { eyes_pair_player_ideology_code = 1 } }
+			if = { limit = { has_government = democratic } set_temp_variable = { eyes_pair_player_ideology_code = 2 } }
+			if = { limit = { has_government = neutrality } set_temp_variable = { eyes_pair_player_ideology_code = 3 } }
+			if = { limit = { has_government = communism } set_temp_variable = { eyes_pair_player_ideology_code = 4 } }
+		}
+		if = { limit = { ROOT = { has_government = fascism } } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|fascism" }
+		if = { limit = { ROOT = { has_government = democratic } } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|democratic" }
+		if = { limit = { ROOT = { has_government = neutrality } } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|neutrality" }
+		if = { limit = { ROOT = { has_government = communism } } log = "EYES_HOI4_IDEOLOGY_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|communism" }
+		if = { limit = { is_major = yes } log = "EYES_HOI4_MAJOR_POWER_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|yes" }
+		else = { log = "EYES_HOI4_MAJOR_POWER_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|selected|no" }
+		ROOT = {
+			if = { limit = { is_major = yes } log = "EYES_HOI4_MAJOR_POWER_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|yes" }
+			else = { log = "EYES_HOI4_MAJOR_POWER_MATCH_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|player|no" }
+		}
+		set_temp_variable = { eyes_pair_claim_count = 0 }
+		log = "EYES_HOI4_PAIR_CONTEXT_V2|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|[?global.num_days|0]|[?THIS.opinion@ROOT|0]|[?THIS.eyes_pair_context_at_war|0]|[?THIS.eyes_pair_context_same_faction|0]|[?THIS.eyes_pair_context_existing_nap|0]|[?global.threat|2]|[?ROOT.eyes_pair_player_ideology_code|0]|[?THIS.eyes_pair_selected_ideology_code|0]"
+		every_state = {
+			limit = { is_owned_by = ROOT is_claimed_by = PREV }
+			PREV = { add_to_temp_variable = { var = eyes_pair_claim_count value = 1 } }
+			log = "EYES_HOI4_PAIR_CLAIM_V1|[ROOT.GetTag]|[PREV.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|[PREV.GetTag]|[ROOT.GetTag]|[THIS.GetID]|[?THIS.infrastructure_level|0]"
+		}
+		log = "EYES_HOI4_PAIR_CONTEXT_END_V2|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_pair_context_sequence|0]|[?THIS.eyes_pair_claim_count|0]"
+		eyes_observe_known_leader = yes
+		ROOT = { eyes_observe_known_leader = yes }
+	}
+}
+
+# These are request markers only. They open an editable draft in the existing
+# Bridge chat; neither effect negotiates or changes game state.
+eyes_log_annexation_proposal_voluntary = {
+	if = {
+		limit = { exists = yes any_owned_state = { always = yes } NOT = { tag = ROOT } }
+		ROOT = { eyes_ensure_campaign_identity = yes }
+		log = "EYES_HOI4_ANNEXATION_PROPOSAL_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|voluntary"
+	}
+}
+
+eyes_log_annexation_proposal_pressure = {
+	if = {
+		limit = { exists = yes any_owned_state = { always = yes } NOT = { tag = ROOT } }
+		ROOT = { eyes_ensure_campaign_identity = yes }
+		log = "EYES_HOI4_ANNEXATION_PROPOSAL_V1|[ROOT.GetTag]|[THIS.GetTag]|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|political_pressure"
+	}
+}

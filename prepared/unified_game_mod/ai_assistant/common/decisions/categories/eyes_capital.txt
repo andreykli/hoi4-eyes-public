@@ -1,0 +1,10 @@
+eyes_capital_category = {
+    icon = generic_political_actions
+    visible = {
+        is_ai = no
+        OR = {
+            has_country_flag = eyes_capital_selecting
+            any_owned_state = { eyes_capital_destination = yes }
+        }
+    }
+}

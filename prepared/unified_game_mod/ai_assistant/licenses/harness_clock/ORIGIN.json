@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/Xocas12/hoi4-agent-harness",
+  "revision": "09e52bda349bf0d58d46967edc50791c04e2f8bf",
+  "file": "src/hoi4_harness/adapters/clock.py",
+  "source_sha256": "4e85767ebf4c246ced4ab5ec05443fd47e22c241e9a9bcb1a853df1ecfcbb8e5",
+  "adaptation": "Standalone import; original algorithms retained",
+  "copyright": "Copyright (c) 2026 Xocas Alvarez-Jorge"
+}

@@ -1,0 +1,13 @@
+﻿l_russian:
+ eyes_autonomy_observer_category:0 "HOI4-EYES · Действия"
+ eyes_recognize:0 "Признать страну · позиция неизвестна"
+ eyes_recognize_again:0 "Признать страну · ранее не признана"
+ eyes_withdraw_recognition:0 "Отозвать признание · страна признана"
+ eyes_recognize_confirm:0 "Записать юридическое признание этой страны в HOI4-EYES?"
+ eyes_recognize_again_confirm:0 "Восстановить юридическое признание этой страны в HOI4-EYES?"
+ eyes_withdraw_recognition_confirm:0 "Отозвать юридическое признание этой страны в HOI4-EYES?"
+ MAPMODE_EYES_RECOGNITION_NAME:0 "Дипломатическое признание"
+ MAPMODE_EYES_RECOGNITION_DESCRIPTION:0 "Зелёный: признано. Красный: не признано. Серый: неизвестно."
+ MAPMODE_EYES_RECOGNITION:0 "Дипломатическое признание"
+ eyes_recognition_tooltip:0 "Дипломатическое признание"
+ eyes_recognition_tooltip_delayed:0 "Зелёный: признано. Красный: не признано. Серый: неизвестно."

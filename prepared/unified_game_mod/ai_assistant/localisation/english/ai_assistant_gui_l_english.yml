@@ -1,0 +1,12 @@
+﻿l_english:
+ EYES_DIPLOMACY_OPEN: "EYES Diplomacy"
+ EYES_DIPLOMACY_TITLE: "HOI4-EYES — Country selection"
+ EYES_DIPLOMACY_HINT: "Select a country to open its diplomatic channel. Choices do not execute agreements."
+ EYES_ANNEX_VOLUNTARY: "Offer union"
+ EYES_ANNEX_PRESSURE: "Political demand"
+ EYES_DIPLOMACY_SELECTED: "Selected country"
+ EYES_DIPLOMACY_AVAILABLE: "Countries with owned territory"
+ EYES_DIPLOMACY_SELECT: "Select"
+ EYES_DIPLOMACY_PREVIOUS: "Previous"
+ EYES_DIPLOMACY_NEXT: "Next"
+ EYES_DIPLOMACY_PAGE_STATUS: "Page [?ROOT.eyes_gui_page_display] / [?ROOT.eyes_gui_page_count]"

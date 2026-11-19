@@ -1,0 +1,10 @@
+eyes_capital_destination = {
+    is_owned_by = ROOT
+    is_fully_controlled_by = ROOT
+    is_capital = no
+    impassable = no
+}
+
+eyes_capital_can_pay = {
+    NOT = { has_political_power < 100 }
+}

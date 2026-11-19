@@ -1,0 +1,11 @@
+{
+  "model": "qwen3:4b-instruct",
+  "license": "Apache-2.0",
+  "ollama_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "thinking": false,
+  "transport": "local Ollama JSON Schema",
+  "upstream": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE",
+  "license_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+  "weights_bundled": false,
+  "legacy_research_rollback": "explicit OLLAMA_MODEL only; old weights retained locally"
+}

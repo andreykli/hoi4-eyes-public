@@ -1,0 +1,12 @@
+﻿l_french:
+ eyes_capital_category:0 "EYES : Déplacer la capitale"
+ eyes_begin_capital_selection:0 "Déplacer la capitale"
+ eyes_begin_capital_selection_desc:0 "Afficher les États admissibles sur la carte des décisions. Le pouvoir politique est dépensé lors du transfert."
+ eyes_cancel_capital_selection:0 "Annuler le choix de la capitale"
+ eyes_cancel_capital_selection_desc:0 "Cliquez sur l’icône de décision d’un État admissible sur la carte ou annulez le transfert."
+ eyes_capital_choose_on_map:0 "Choisissez la nouvelle capitale à l’aide des icônes de décision sur la carte."
+ eyes_move_capital:0 "Déplacer la capitale : [FROM.GetName]"
+ eyes_move_capital_desc:0 "Choisissez un État que votre pays possède et contrôle entièrement. Le transfert coûte 100 points de pouvoir politique."
+ eyes_move_capital_cost:0 "£pol_power §Y100§!"
+ eyes_move_capital_cost_blocked:0 "£pol_power §R100§!"
+ eyes_move_capital_cost_tooltip:0 "Le transfert coûte £pol_power §Y100§!."

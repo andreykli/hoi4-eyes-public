@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_eyes_diplomacy_launcher"
+		texturefile = "gfx/interface/eyes_diplomacy_launcher.tga"
+		noOfFrames = 3
+	}
+}

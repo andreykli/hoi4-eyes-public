@@ -1,0 +1,1590 @@
+[
+  {
+    "id": "accept.friendly.001",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Принимаем условия {TREATY_TYPE} с искренней признательностью и рассчитываем на прочную стабильность между {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "With sincere appreciation we accept the terms of the {TREATY_TYPE} and count on lasting stability between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "accept.neutral.002",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Согласны на предложенный обмен: условия {TERMS} кажутся нам честными и выгодными обеим сторонам.",
+    "en": "Agreement covers the proposed exchange: the terms of {TERMS} seem fair and beneficial to both sides."
+  },
+  {
+    "id": "accept.cautious.003",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Наше правительство согласно на союз, но лишь при равных обязательствах для обеих сторон.",
+    "en": "Our government agrees to the alliance, but only with equal obligations for both sides."
+  },
+  {
+    "id": "accept.solemn.004",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Готовы признать согласованную линию границы и с уважением относимся к воле людей, живущих вдоль неё.",
+    "en": "Recognition of the agreed border line is given, together with respect for the will of the people living along it."
+  },
+  {
+    "id": "accept.friendly.005",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Подтверждаем согласие по экономическому плану и надеемся на скорую совместную работу.",
+    "en": "Delighted to confirm our agreement to the economic plan, we hope for early joint work."
+  },
+  {
+    "id": "accept.neutral.006",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Одобряем протокол {TREATY_TYPE}; детали {CONDITIONS} нас вполне устраивают.",
+    "en": "Endorsement is given to the {TREATY_TYPE} protocol; the details of {CONDITIONS} suit us well."
+  },
+  {
+    "id": "accept.cautious.007",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Считаем допустимым принять условия {COUNTRY_B}, если суверенитет сторон не будет затронут.",
+    "en": "Deemed acceptable: {COUNTRY_B}'s terms, provided the sovereignty of the parties is not affected."
+  },
+  {
+    "id": "accept.solemn.008",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Разделяем стремление к прочному миру и свидетельствуем согласие с предложенными условиями.",
+    "en": "Attestation of our agreement to the proposed terms accompanies our shared aspiration for lasting peace."
+  },
+  {
+    "id": "accept.friendly.009",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Приветствуем гарантии безопасности и ценим готовность {COUNTRY_A} идти навстречу.",
+    "en": "A warm welcome to the security guarantees, and appreciation for {COUNTRY_A}'s readiness to meet us halfway."
+  },
+  {
+    "id": "accept.neutral.010",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Поддерживаем торговые условия: они открывают новые возможности для обеих стран.",
+    "en": "Backing is given to the trade terms: they open new opportunities for both countries."
+  },
+  {
+    "id": "accept.cautious.011",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Даём согласие осторожно: по пунктам {TERMS} у нас остаются вопросы.",
+    "en": "Cautious consent is our answer: questions about the points in {TERMS} remain on our side."
+  },
+  {
+    "id": "accept.solemn.012",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Заявляем со всей серьёзностью: союзные обязательства принимаются нами добровольно.",
+    "en": "Stated with all seriousness: the allied commitments are accepted by us voluntarily."
+  },
+  {
+    "id": "accept.friendly.013",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Отмечаем разумность предложенной схемы помощи и охотно соглашаемся с ней.",
+    "en": "Noted with pleasure is the reasonableness of the proposed aid scheme, and we gladly agree to it."
+  },
+  {
+    "id": "accept.neutral.014",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Признаём компромисс по спорному району и не выдвигаем дополнительных претензий.",
+    "en": "Recognised is the compromise on the disputed area; we raise no additional claims."
+  },
+  {
+    "id": "accept.cautious.015",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Фиксируем согласие по регламенту при условии, что каждая сторона сама назначает экспертов.",
+    "en": "Recorded is our agreement on the regulations, provided each side appoints its own experts."
+  },
+  {
+    "id": "accept.solemn.016",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Не посягая на самостоятельность {COUNTRY_B}, принимаем предложенную формулу как достойную.",
+    "en": "Without any encroachment on {COUNTRY_B}'s independence, the proposed formula is accepted as worthy."
+  },
+  {
+    "id": "accept.friendly.017",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Возражений у нас нет, и мы с удовольствием принимаем предложение в нынешней редакции.",
+    "en": "Objections there are none, and the proposal is gladly accepted in its current wording."
+  },
+  {
+    "id": "accept.neutral.018",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Официально сообщаем: гарантии по {TREATY_TYPE} для нас приемлемы, согласие дано.",
+    "en": "Officially stated: the guarantees under the {TREATY_TYPE} are acceptable to us, and consent is given."
+  },
+  {
+    "id": "accept.cautious.019",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "С оговоркой о сохранении действующих лицензий принимаем торговые условия.",
+    "en": "Reserving existing licences, we accept the trade terms."
+  },
+  {
+    "id": "accept.solemn.020",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Без претензий и без торга принимаем согласованную линию разграничения.",
+    "en": "No claims and no bargaining: the agreed demarcation line is accepted."
+  },
+  {
+    "id": "accept.friendly.021",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "В духе доброго партнёрства принимаем приглашение к союзу и благодарим за доверие.",
+    "en": "In a spirit of good partnership the invitation to the alliance is accepted, with thanks for your trust."
+  },
+  {
+    "id": "accept.neutral.022",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Принципиально согласны с условиями {CONDITIONS}; подробности можно свести в приложение.",
+    "en": "Agreed in principle are the terms of {CONDITIONS}; the details can be set out in an annex."
+  },
+  {
+    "id": "accept.cautious.023",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Согласие есть, однако любые изменения статуса мы обсуждаем отдельно.",
+    "en": "Consent stands, although any change of status is discussed by us separately."
+  },
+  {
+    "id": "accept.solemn.024",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Договорились: условия приняты, и наше слово остаётся твёрдым.",
+    "en": "Terms have been reached: the conditions are accepted, and our word remains firm."
+  },
+  {
+    "id": "accept.friendly.025",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Ладно, мы согласны на снижение пошлин и принимаем квоты как предложено.",
+    "en": "Fine, the tariff reduction is agreed, and the quotas are accepted as proposed."
+  },
+  {
+    "id": "accept.neutral.026",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Принято: порядок консультаций возражений не вызывает.",
+    "en": "Accepted is the consultation procedure, which raises no objections on our side."
+  },
+  {
+    "id": "accept.cautious.027",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Коротко: да, но гарантии должны распространяться на обе стороны.",
+    "en": "Briefly: yes, yet the guarantees must apply to both sides."
+  },
+  {
+    "id": "accept.solemn.028",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{DATE}"
+    ],
+    "ru": "Наша делегация подтверждает согласие на условиях, изложенных в ноте {DATE}.",
+    "en": "Confirmed by our delegation is consent on the terms set out in the note of {DATE}."
+  },
+  {
+    "id": "accept.friendly.029",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Мы рады принять гарантии безопасности и считаем их основой доброго соседства.",
+    "en": "Gladly accepted are the security guarantees, seen by us as a foundation for good neighbourliness."
+  },
+  {
+    "id": "accept.neutral.030",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Правительство не возражает против предложенной корректировки границы.",
+    "en": "Objection to the proposed border adjustment is absent on the government's side."
+  },
+  {
+    "id": "accept.cautious.031",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Делегация согласна участвовать, если взнос останется в пределах {CONDITIONS}.",
+    "en": "The delegation agrees to take part, provided the contribution stays within {CONDITIONS}."
+  },
+  {
+    "id": "accept.solemn.032",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Сторона принимает союзные обязательства как долг перед общим будущим.",
+    "en": "A duty towards a shared future: the allied commitments are accepted by the party."
+  },
+  {
+    "id": "accept.friendly.033",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Государство одобряет регламент {TREATY_TYPE} и благодарит за аккуратную работу над текстом.",
+    "en": "Approval of the {TREATY_TYPE} regulations comes from the state, with thanks for careful work on the text."
+  },
+  {
+    "id": "accept.neutral.034",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Кабинет согласен: самостоятельность {COUNTRY_A} этими условиями не затрагивается.",
+    "en": "Cabinet agreement stands: the independence of {COUNTRY_A} is not affected by these terms."
+  },
+  {
+    "id": "accept.cautious.035",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Ведомство согласно, но просит занести оговорку о толковании {TERMS} в протокол.",
+    "en": "Ministry consent is given, with a request to enter a reservation on the interpretation of {TERMS} into the protocol."
+  },
+  {
+    "id": "accept.solemn.036",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Рассмотрев предложение, подтверждаем согласие с гарантиями между {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Considered and confirmed: our agreement to the guarantees between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "accept.friendly.037",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Изучив условия сделки, с радостью соглашаемся: {TERMS} нас устраивают.",
+    "en": "Study of the deal's terms ended in glad agreement: {TERMS} suit us."
+  },
+  {
+    "id": "accept.neutral.038",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Обсудив проект, сообщаем о согласии участвовать в союзе на равных правах.",
+    "en": "Discussion of the draft concluded with consent to take part in the alliance on equal terms."
+  },
+  {
+    "id": "accept.cautious.039",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Учитывая прошлые споры, принимаем разграничение с оговоркой об обмене картами.",
+    "en": "Mindful of past disputes, the demarcation is accepted with a reservation about the exchange of maps."
+  },
+  {
+    "id": "accept.solemn.040",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Исходя из блага народов, соглашаемся на условия {CONDITIONS} без торга и упрёков.",
+    "en": "Proceeding from the good of our peoples, the terms of {CONDITIONS} are agreed without bargaining or reproach."
+  },
+  {
+    "id": "accept.friendly.041",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Касательно кредита: мы согласны и признательны за доверие к нашей экономике.",
+    "en": "As for the credit: agreement is given, with gratitude for the trust in our economy."
+  },
+  {
+    "id": "accept.neutral.042",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Относительно регламента возражений нет, согласие подтверждается.",
+    "en": "Regarding the regulations, no objections exist; consent is confirmed."
+  },
+  {
+    "id": "accept.cautious.043",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "По существу вопроса: согласны, если невмешательство будет записано прямо.",
+    "en": "On the substance: agreement holds if non-interference is written down explicitly."
+  },
+  {
+    "id": "accept.solemn.044",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "После обмена нотами подтверждаем согласие на союз перед лицом будущих испытаний.",
+    "en": "Following the exchange of notes, consent to the alliance is confirmed in the face of trials ahead."
+  },
+  {
+    "id": "accept.friendly.045",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Тем охотнее соглашаемся, что условия разумны и учитывают наши нужды.",
+    "en": "All the more readily is agreement given, since the terms are reasonable and consider our needs."
+  },
+  {
+    "id": "accept.neutral.046",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Вместе с тем подтверждаем: схема патрулирования в предложенных границах приемлема.",
+    "en": "At the same time, the patrol scheme within the proposed boundaries is confirmed as acceptable."
+  },
+  {
+    "id": "accept.cautious.047",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Однако отметим: согласны мы лишь при ежегодном пересмотре квот.",
+    "en": "However, note is taken that agreement holds only with an annual review of quotas."
+  },
+  {
+    "id": "accept.solemn.048",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Перед лицом истории принимаем границы, согласованные сторонами добровольно.",
+    "en": "Before the face of history, the borders agreed by the parties voluntarily are accepted."
+  },
+  {
+    "id": "accept.friendly.049",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Сегодня мы с уверенностью говорим да: торговые условия справедливы.",
+    "en": "Today confidence allows a yes: the trade terms are fair."
+  },
+  {
+    "id": "accept.neutral.050",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Нынешние условия {CONDITIONS} для нас приемлемы, согласие дано.",
+    "en": "Current terms of {CONDITIONS} are acceptable to us; consent is given."
+  },
+  {
+    "id": "accept.cautious.051",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Осторожное да: мы принимаем {TERMS}, но без дополнительных обязательств.",
+    "en": "Yes, but cautiously: {TERMS} are accepted without additional obligations."
+  },
+  {
+    "id": "accept.solemn.052",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сдержанно и твёрдо подтверждаем согласие на союз с {COUNTRY_B}.",
+    "en": "Soberly and firmly, consent to the alliance with {COUNTRY_B} is confirmed."
+  },
+  {
+    "id": "accept.friendly.053",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Дружески принимаем гарантии безопасности и благодарим {COUNTRY_A} за откровенность.",
+    "en": "Warmly accepted are the security guarantees, with thanks to {COUNTRY_A} for candour."
+  },
+  {
+    "id": "accept.neutral.054",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Ответ на вашу ноту положительный: предложение принимается целиком.",
+    "en": "Positive is our reply to your note: the proposal is accepted in full."
+  },
+  {
+    "id": "accept.cautious.055",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Каких-либо возражений по линии разграничения нет, но карты должны быть сверены.",
+    "en": "Any and all objections to the demarcation line are absent, yet the maps must be verified."
+  },
+  {
+    "id": "accept.solemn.056",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Памятуя о цене мира, принимаем условия совместного восстановления хозяйства.",
+    "en": "Mindful of the price of peace, the terms of joint economic reconstruction are accepted."
+  },
+  {
+    "id": "accept.friendly.057",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Искренне рады сообщить: мы согласны с вашим предложением полностью.",
+    "en": "Sincerely glad to report: full agreement with your proposal."
+  },
+  {
+    "id": "accept.neutral.058",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Уважая выбор {COUNTRY_A}, принимаем формулу {CONDITIONS} как основу согласия.",
+    "en": "Respecting {COUNTRY_A}'s choice, the formula of {CONDITIONS} is accepted as the basis for agreement."
+  },
+  {
+    "id": "accept.cautious.059",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Оговариваем: союз приемлем, если он не потребует участия в чужих конфликтах.",
+    "en": "Stipulated: the alliance is acceptable if it does not require our participation in others' conflicts."
+  },
+  {
+    "id": "accept.solemn.060",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Во имя общего блага принимаем условия {TREATY_TYPE} такими, как они есть.",
+    "en": "In the name of the common good, the terms of the {TREATY_TYPE} are accepted as they stand."
+  },
+  {
+    "id": "accept.friendly.061",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Охотно принимаем условия торговли и ждём совместных проектов.",
+    "en": "Trade terms accepted with pleasure; joint projects are awaited."
+  },
+  {
+    "id": "accept.neutral.062",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Согласие по регламенту {TREATY_TYPE} подтверждено по дипломатическим каналам.",
+    "en": "Consent to the {TREATY_TYPE} regulations has been confirmed through diplomatic channels."
+  },
+  {
+    "id": "accept.cautious.063",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "При условии ограниченного мандата соглашаемся на наблюдателей у границы.",
+    "en": "Provided the mandate is limited, observers at the border are agreed to."
+  },
+  {
+    "id": "accept.solemn.064",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Насколько можно судить, суверенитет {COUNTRY_B} условиями не ущемляется, и мы согласны.",
+    "en": "As far as can be judged, the sovereignty of {COUNTRY_B} is not infringed, and agreement is given."
+  },
+  {
+    "id": "accept.friendly.065",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Если говорить прямо, мы довольны предложением и принимаем его.",
+    "en": "Plainly speaking, the proposal pleases us and is accepted."
+  },
+  {
+    "id": "accept.neutral.066",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Подтверждение согласия с гарантиями в изложенном виде даётся нами.",
+    "en": "Confirmation of consent to the guarantees as set out is hereby given."
+  },
+  {
+    "id": "accept.cautious.067",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Условия {TERMS} приемлемы, но только при сохранении права на пересмотр.",
+    "en": "The terms of {TERMS} are acceptable, but only with the right of review preserved."
+  },
+  {
+    "id": "accept.solemn.068",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Слово наше обязывает, и потому предложение принимается без поправок.",
+    "en": "Our word binds us; therefore the proposal is accepted without amendments."
+  },
+  {
+    "id": "accept.friendly.069",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Партнёрство дорого нам, и мы охотно говорим да союзу.",
+    "en": "Partnership is dear to us, and a willing yes is given to the alliance."
+  },
+  {
+    "id": "accept.neutral.070",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Кредитная линия: ответ положительный, условия {CONDITIONS} согласованы.",
+    "en": "Credit line: the answer is positive, and the terms of {CONDITIONS} are agreed."
+  },
+  {
+    "id": "accept.cautious.071",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Оговорку просим учесть: разграничение принимаем, но обмен участками — отдельно.",
+    "en": "Please take our reservation into account: the demarcation is accepted, the exchange of parcels discussed separately."
+  },
+  {
+    "id": "accept.solemn.072",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Предложение по протоколу принимается с уважением к его форме.",
+    "en": "Your proposal on the protocol is accepted with respect for its form."
+  },
+  {
+    "id": "accept.friendly.073",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Готовы сказать да без колебаний: ваши условия нас устраивают.",
+    "en": "Ready to say yes without hesitation: your terms suit us."
+  },
+  {
+    "id": "accept.neutral.074",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Возражений нет: проект союза принимается с нашей стороны.",
+    "en": "Draft alliance raises no objections; consent on our side is in place."
+  },
+  {
+    "id": "accept.cautious.075",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Прозрачность остаётся нашим условием: тогда мы согласны на {TREATY_TYPE}.",
+    "en": "Transparency remains our condition: with it, the {TREATY_TYPE} is agreed to."
+  },
+  {
+    "id": "accept.solemn.076",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{DATE}"
+    ],
+    "ru": "Линия, согласованная {DATE}, представляется нашей стороне приемлемой.",
+    "en": "To our side the line agreed on {DATE} appears acceptable."
+  },
+  {
+    "id": "accept.cautious.077",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Вполне возможно согласие, если транши будут привязаны к отчётности.",
+    "en": "Agreement is quite possible if the tranches are tied to reporting."
+  },
+  {
+    "id": "accept.friendly.078",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Целиком принимаем торговый пакет и благодарим за гибкость.",
+    "en": "Full acceptance of the trade package, with thanks for flexibility."
+  },
+  {
+    "id": "accept.neutral.079",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Полностью поддерживаем меры доверия в предложенном объёме.",
+    "en": "Fully supported are the confidence-building measures as proposed."
+  },
+  {
+    "id": "accept.cautious.080",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Всецело за невмешательство, а потому согласие даём с этой оговоркой.",
+    "en": "Wholly for non-interference, and therefore consent is given with this reservation."
+  },
+  {
+    "id": "accept.solemn.081",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Искренне и торжественно подтверждаем согласие на союз между нашими странами.",
+    "en": "Sincerely and solemnly, consent to the alliance between our countries is confirmed."
+  },
+  {
+    "id": "accept.friendly.082",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Рады согласиться: {CONDITIONS} не вызывают у нас никаких сомнений.",
+    "en": "Glad agreement: {CONDITIONS} raise no doubts on our side."
+  },
+  {
+    "id": "accept.cautious.083",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Довольны не всем, но в целом согласны на торговлю по этим правилам.",
+    "en": "Not pleased with everything, yet on the whole trade under these rules is agreed to."
+  },
+  {
+    "id": "accept.solemn.084",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Удовлетворены гарантиями и принимаем их как нравственный долг перед будущими поколениями.",
+    "en": "Satisfied with the guarantees, we accept them as a moral duty to future generations."
+  },
+  {
+    "id": "accept.friendly.085",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Приемлемо и даже выгодно: соглашаемся на совместный фонд.",
+    "en": "Acceptable and even advantageous: agreement to the joint fund."
+  },
+  {
+    "id": "accept.neutral.086",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Допустимо, если исполнение будет честным; наше согласие дано.",
+    "en": "Admissible if implementation is honest; our consent is given."
+  },
+  {
+    "id": "accept.cautious.087",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Возможно согласие, но границу нужно закрепить на карте до подписания.",
+    "en": "Agreement is possible, but the border must be fixed on a map before signature."
+  },
+  {
+    "id": "accept.solemn.088",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Целесообразным считаем принять {TREATY_TYPE} в нынешней редакции.",
+    "en": "Expedient it is deemed to accept the {TREATY_TYPE} in its current wording."
+  },
+  {
+    "id": "accept.friendly.089",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Разумным признаём порядок, изложенный в проекте, и с удовольствием соглашаемся.",
+    "en": "Reasonable, in our view, is the procedure set out in the draft, and glad agreement follows."
+  },
+  {
+    "id": "accept.neutral.090",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Справедливым считаем предложенное распределение голосов, возражений нет.",
+    "en": "Fair is the proposed distribution of votes; no objections exist."
+  },
+  {
+    "id": "accept.cautious.091",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Верным шагом считаем принятие условий {CONDITIONS} при ясных сроках.",
+    "en": "A right step would be to accept the terms of {CONDITIONS}, given clear timelines."
+  },
+  {
+    "id": "accept.solemn.092",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Достойным называем этот союз и принимаем его условия с честью.",
+    "en": "Worthy is this alliance, and its terms are accepted with honour."
+  },
+  {
+    "id": "accept.friendly.093",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Уместным находим обмен квотами и соглашаемся на него с готовностью.",
+    "en": "Appropriate is the exchange of quotas, and it is agreed to readily."
+  },
+  {
+    "id": "accept.neutral.094",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Своевременным считаем подтверждение суверенитета {COUNTRY_A}; мы согласны.",
+    "en": "Timely is the confirmation of {COUNTRY_A}'s sovereignty; we agree."
+  },
+  {
+    "id": "accept.cautious.095",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Единогласно согласны, но с оговоркой о сроках мандата наблюдателей.",
+    "en": "Unanimously agreed, but with a reservation about the term of the observers' mandate."
+  },
+  {
+    "id": "accept.solemn.096",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Итак, согласие дано, и мы не ищем иных формулировок.",
+    "en": "Thus consent is given, and no other wording is sought."
+  },
+  {
+    "id": "accept.friendly.097",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Теперь можем сказать прямо: предложение нам нравится, мы согласны.",
+    "en": "Now it can be said plainly: the proposal pleases us and is accepted."
+  },
+  {
+    "id": "accept.neutral.098",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Наконец, по бюджету: взносы {CONDITIONS} для нас приемлемы.",
+    "en": "Finally, on the budget: the contributions in {CONDITIONS} are acceptable to us."
+  },
+  {
+    "id": "accept.cautious.099",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Конечно, согласимся, но при условии сверки всех картографических материалов.",
+    "en": "Of course agreement will follow, but on condition that all cartographic materials are verified."
+  },
+  {
+    "id": "accept.solemn.100",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Безусловно, достоинство {COUNTRY_B} требует уважения, и мы принимаем его оговорки.",
+    "en": "Undoubtedly the dignity of {COUNTRY_B} demands respect, and its reservations are accepted."
+  },
+  {
+    "id": "accept.friendly.101",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Именно этот регламент мы и одобряем: он ясен и удобен.",
+    "en": "Precisely these regulations are approved: they are clear and convenient."
+  },
+  {
+    "id": "accept.neutral.102",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Только при равноправии сторон союз имеет смысл, и мы согласны.",
+    "en": "Only with equality of the parties does the alliance make sense, and agreement is given."
+  },
+  {
+    "id": "accept.cautious.103",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Есть одно условие: согласны, если {TERMS} не изменятся без согласования.",
+    "en": "One condition exists: agreement holds if {TERMS} are not changed without consultation."
+  },
+  {
+    "id": "accept.solemn.104",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Имеем честь подтвердить согласие на гарантии безопасности между {COUNTRY_A} и {COUNTRY_B}.",
+    "en": "Honour is ours to confirm consent to the security guarantees between {COUNTRY_A} and {COUNTRY_B}."
+  },
+  {
+    "id": "accept.friendly.105",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Доверительно сообщаем: торговое соглашение принимаем и рады совместной работе.",
+    "en": "Confidentially reported: the trade agreement is accepted, and joint work is welcomed."
+  },
+  {
+    "id": "accept.neutral.106",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Реакция на протокол: согласны, замечаний к тексту нет.",
+    "en": "Reaction to the protocol: agreement, with no remarks on the text."
+  },
+  {
+    "id": "accept.cautious.107",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Позиция ведомства: согласие возможно, если отчётность будет открытой.",
+    "en": "Position of the ministry: consent is possible if reporting is open."
+  },
+  {
+    "id": "accept.solemn.108",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Удостоверяем: согласие на {TREATY_TYPE} дано добровольно и осознанно.",
+    "en": "Certified: consent to the {TREATY_TYPE} is given freely and knowingly."
+  },
+  {
+    "id": "accept.friendly.109",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Констатируем взаимопонимание и подтверждаем согласие по всем пунктам.",
+    "en": "Mutual understanding is noted, and agreement on all points is confirmed."
+  },
+  {
+    "id": "accept.neutral.110",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Декларируем согласие с линией разграничения в её нынешнем виде.",
+    "en": "Declared is agreement to the demarcation line in its present form."
+  },
+  {
+    "id": "accept.cautious.111",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Изъявляем согласие на союз с оговоркой о неучастии в наступательных действиях.",
+    "en": "Expressed is consent to the alliance, with a reservation on non-participation in offensive operations."
+  },
+  {
+    "id": "accept.solemn.112",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Выражаем твёрдое согласие с торговыми статьями {TERMS}.",
+    "en": "Firm agreement to the trade articles of {TERMS} is expressed."
+  },
+  {
+    "id": "accept.friendly.113",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Благодарим за гарантии и с признательностью принимаем их условия.",
+    "en": "Thanks for the guarantees, and their terms are accepted with appreciation."
+  },
+  {
+    "id": "accept.neutral.114",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Ценим уважение к суверенитету {COUNTRY_B} и соглашаемся с условиями.",
+    "en": "Valued is the respect for {COUNTRY_B}'s sovereignty, and the terms are agreed to."
+  },
+  {
+    "id": "accept.cautious.115",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Обязуемся лишь в пределах записанного: при таком чтении мы согласны.",
+    "en": "Committed only within what is written: on that reading agreement is given."
+  },
+  {
+    "id": "accept.solemn.116",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Надеемся на общую пользу и принимаем условия восстановления хозяйства.",
+    "en": "Hope for common benefit accompanies acceptance of the terms of economic reconstruction."
+  },
+  {
+    "id": "accept.friendly.117",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Полагаем протокол удачным и соглашаемся с его регламентом.",
+    "en": "Sound is the protocol in our view, and its regulations are agreed to."
+  },
+  {
+    "id": "accept.neutral.118",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Усматриваем в предложении добрую волю и отвечаем согласием.",
+    "en": "Good will is discerned in the proposal, and consent is the answer."
+  },
+  {
+    "id": "accept.cautious.119",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Готовность к сделке есть, но цены {TERMS} надо перепроверить.",
+    "en": "Readiness for the deal stands, but the prices in {TERMS} must be double-checked."
+  },
+  {
+    "id": "accept.solemn.120",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Отвечая на приглашение, торжественно принимаем союз и его обязательства.",
+    "en": "Answering the invitation, the alliance and its commitments are solemnly accepted."
+  },
+  {
+    "id": "accept.friendly.121",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Соглашаясь, мы надеемся на долгое и честное партнёрство.",
+    "en": "In agreeing, a long and honest partnership is hoped for."
+  },
+  {
+    "id": "accept.neutral.122",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Разногласий по гарантиям нет, согласие подтверждаем.",
+    "en": "No disagreements on the guarantees exist; consent is confirmed."
+  },
+  {
+    "id": "accept.cautious.123",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Претензий к тексту не имеем, но оговорку о толковании оставляем за собой.",
+    "en": "Claims on the text there are none, but a reservation on interpretation is kept."
+  },
+  {
+    "id": "accept.solemn.124",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Оговорок не делаем: линия границы принимается нами без изъятий.",
+    "en": "Reservations are not made: the border line is accepted without exceptions."
+  },
+  {
+    "id": "accept.friendly.125",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [],
+    "ru": "Заверяем: наше согласие полное и окончательное, без тайных условий.",
+    "en": "Assurance is given: our consent is complete and final, without hidden conditions."
+  }
+]

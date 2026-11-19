@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ locale }}" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HOI4–EYES · {{ t('Fleet') }}</title>
+  <link rel="stylesheet" href="/static/world.css">
+  <link rel="stylesheet" href="/static/fleet.css">
+  <script src="/static/fleet.js" defer></script>
+</head>
+<body>
+<header class="fleet-header">
+  <div><small>HOI4–EYES</small><h1>{{ t('Fleet dashboard') }}</h1></div>
+  <div class="fleet-actions"><a href="/world">{{ t('Recognition Atlas') }}</a>
+    <button id="refresh" type="button">{{ t('Refresh observations') }}</button></div>
+</header>
+<main class="fleet-layout">
+  <section class="fleet-panel" aria-labelledby="observed-title">
+    <h2 id="observed-title">{{ t('Naval observations') }}</h2>
+    <p id="observation" class="notice" role="status">{{ t('Loading…') }}</p>
+    <dl class="fleet-counts">
+      {% for field, caption in [('ships','Total ships'), ('carrier','Carriers'), ('capital','Capital ships'), ('screen','Screens'), ('submarine','Submarines'), ('fuel_k','National fuel (thousands)')] %}
+      <div><dt>{{ t(caption) }}</dt><dd id="count-{{ field }}">—</dd></div>
+      {% endfor %}
+    </dl>
+    <h3>{{ t('Fleets and task forces') }}</h3>
+    <dl class="fleet-facts">
+      {% for caption in ['Fleets and task forces','Assigned missions and regions','Damage and repairs','Available ports and naval range'] %}
+      <div><dt>{{ t(caption) }}</dt><dd>{{ t('Unavailable from Bridge') }}</dd></div>
+      {% endfor %}
+    </dl>
+  </section>
+  <section class="fleet-panel" aria-labelledby="planner-title">
+    <h2 id="planner-title">{{ t('Order planner') }}</h2>
+    <div class="fleet-presets" aria-label="{{ t('Built-in templates') }}">
+      {% for role in roles %}<button type="button" data-role="{{ role }}">{{ t('fleet-role-' + role) }}</button>{% endfor %}
+    </div>
+    <form id="fleet-order">
+      <label for="saved">{{ t('Saved templates') }}</label>
+      <select id="saved"></select>
+      <label for="role">{{ t('Mission or purpose') }}</label>
+      <select id="role">
+        {% for role in roles %}<option value="{{ role }}">{{ t('fleet-role-' + role) }}</option>{% endfor %}
+      </select>
+      <label for="title">{{ t('Template name') }}</label>
+      <input id="title" maxlength="80" required>
+      <label for="notes">{{ t('Notes for the player') }}</label>
+      <textarea id="notes" maxlength="800" rows="2"></textarea>
+      <div class="fleet-actions fleet-edit">
+        <button id="save" type="button">{{ t('Save template') }}</button>
+        <button id="remove" type="button" disabled>{{ t('Delete saved template') }}</button>
+      </div>
+      <fieldset>
+        <legend>{{ t('Sea regions') }}</legend>
+        <p class="fleet-muted">{{ t('Regions come from the configured map. Check range and access in HOI4.') }}</p>
+        <label for="region-filter">{{ t('Find a region') }}</label>
+        <input id="region-filter" type="search">
+        <p id="region-status" role="status"></p>
+        <div id="regions"></div>
+      </fieldset>
+      <button type="submit" class="primary">{{ t('Prepare order') }}</button>
+    </form>
+    <p id="message" role="status"></p>
+    <article id="plan" hidden aria-live="polite">
+      <h3>{{ t('Prepared proposal') }}</h3>
+      <p id="plan-context"></p><p id="plan-fit"></p><p id="plan-notes" hidden></p>
+      <ol><li>{{ t('Select the appropriate task force in the HOI4 naval interface.') }}</li>
+        <li id="plan-action"></li><li id="plan-regions" hidden></li>
+        <li>{{ t('Check the result on the task force panel.') }}</li></ol>
+      <p class="warning">{{ t('Automatic orders are unavailable. Apply this checklist in HOI4.') }}</p>
+    </article>
+  </section>
+</main>
+<script id="fleet-text" type="application/json">{{ {
+  'loading':t('Loading…'),'no_observation':t('No fresh Atlas export. Open your campaign and export a snapshot.'),
+  'no_totals':t('This snapshot has no naval counters. Update the EYES mod and export again.'),
+  'source':t('Game observation'),'template_new':t('New template'),'template_saved':t('Template saved.'),
+  'template_deleted':t('Template deleted.'),'delete_prompt':t('Delete this saved template?'),
+  'error':t('The request could not be completed.'),'regions_required':t('Choose at least one sea region.'),
+  'context_changed':t('The campaign or snapshot changed. Refresh and prepare the proposal again.'),
+  'map_unavailable':t('No valid sea regions were found for this playset.'),'selected':t('Selected'),
+  'unknown':t('Available ships are unknown. Inspect the task force in HOI4.'),
+  'no_ships':t('The observed country has no ships.'),'role_group_missing':t('The suggested ship group is absent from the observed national totals.'),
+  'review_in_game':t('National totals are available. Verify the selected task force and its range in HOI4.'),
+  'no_scope':t('Planning without a current game observation.'),
+  'plan_regions':t('Select these regions if they are in range'),
+  'escort':t('Choose Convoy Escort.'),'patrol':t('Choose Patrol.'),'strike':t('Choose Strike Force.'),
+  'submarines':t('Select a submarine task force and choose Convoy Raiding.'),
+  'repair':t('Review damage and choose a repair priority and an accessible naval base.'),
+  'reserve':t('Review assignment and move the selected ships to reserve in the naval interface.'),
+  'custom':t('Apply your notes using the controls for the selected task force.')
+}|tojson }}</script>
+</body>
+</html>

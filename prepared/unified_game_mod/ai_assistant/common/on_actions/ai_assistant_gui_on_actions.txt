@@ -1,0 +1,10 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { is_ai = no }
+				eyes_refresh_country_list = yes
+			}
+		}
+	}
+}

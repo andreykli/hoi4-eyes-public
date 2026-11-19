@@ -1,0 +1,1738 @@
+{
+  "The original messages identify three terms. Resend the full wording to review and confirm the corrected version.": {
+    "ru": "В исходных сообщениях найдены три условия. Отправьте полную формулировку ещё раз, чтобы проверить и подтвердить исправленную редакцию.",
+    "fr": "Les messages d’origine contiennent trois clauses. Renvoyez le texte complet pour examiner et confirmer la version corrigée."
+  },
+  "A combined review is available for a bilateral pact, guarantee and military access with enforceable terms.": {
+    "ru": "Для двустороннего пакта, гарантии и военного доступа можно подготовить общий пакет, если все условия исполнимы.",
+    "fr": "Une révision conjointe est possible pour un pacte bilatéral, une garantie et un accès militaire aux clauses applicables."
+  },
+  "A reciprocal guarantee or access needs two separately agreed directions. It cannot be reduced to a one-way clause.": {
+    "ru": "Для взаимных гарантий или военного доступа нужно отдельно согласовать каждое направление.",
+    "fr": "Pour une garantie ou un accès réciproque, les deux sens doivent être convenus séparément."
+  },
+  "The combined review supports one each of pact, independence guarantee and military access. Other terms require separate review.": {
+    "ru": "Общий пакет поддерживает по одному пакту, гарантии независимости и военному доступу. Остальные условия требуют отдельной проверки.",
+    "fr": "La révision conjointe accepte un pacte, une garantie d’indépendance et un accès militaire. Les autres clauses demandent un examen distinct."
+  },
+  "Game result": {
+    "ru": "Результат в игре",
+    "fr": "Résultat en jeu"
+  },
+  "bundle_partial": {
+    "ru": "Часть условий могла примениться. Игра не подтвердила исполнение всего договора.",
+    "fr": "Certaines clauses ont pu être appliquées. Le jeu n’a pas confirmé le traité dans son ensemble."
+  },
+  "Sign treaty": {
+    "ru": "Подписать договор",
+    "fr": "Signer le traité"
+  },
+  "Continue treaty execution": {
+    "ru": "Продолжить исполнение договора",
+    "fr": "Poursuivre l’exécution du traité"
+  },
+  "SIGNED": {
+    "ru": "ПОДПИСАН В EYES",
+    "fr": "SIGNÉ DANS EYES"
+  },
+  "PENDING GAME EXECUTION": {
+    "ru": "ОЖИДАЕТ ИСПОЛНЕНИЯ В ИГРЕ",
+    "fr": "EN ATTENTE D’EXÉCUTION EN JEU"
+  },
+  "EXECUTION CONFIRMED": {
+    "ru": "ИСПОЛНЕНИЕ ПОДТВЕРЖДЕНО",
+    "fr": "EXÉCUTION CONFIRMÉE"
+  },
+  "Sign this exact version in EYES? Confirm the game effect separately in HOI4.": {
+    "ru": "Подписать эту редакцию в EYES? Игровой эффект подтверждается отдельно в HOI4.",
+    "fr": "Signer cette version dans EYES ? Confirmez l’effet séparément dans HOI4."
+  },
+  "Treaty signed in EYES. Keep the main window open and exit HOI4 once to install queued treaties. Then load the matching save and confirm the decision in HOI4.": {
+    "ru": "Договор подписан в EYES. Оставь главное окно открытым и выйди из HOI4, чтобы установить все договоры из очереди. Затем загрузи нужное сохранение и подтверди решение в HOI4.",
+    "fr": "Traité signé dans EYES. Laissez la fenêtre principale ouverte et quittez HOI4 pour installer les traités en attente. Rechargez la sauvegarde correspondante et confirmez la décision dans HOI4."
+  },
+  "The exact treaty is installed. Review its decision in the matching HOI4 save. If the game has not loaded it, exit and reopen HOI4.": {
+    "ru": "Установлена точная редакция договора. Проверь решение в нужном сохранении. Если игра ещё не загрузила его, выйди и открой HOI4 снова.",
+    "fr": "Cette version du traité est installée. Vérifiez la décision dans la sauvegarde correspondante. Si elle n’a pas été chargée, redémarrez HOI4."
+  },
+  "The matching Atlas export belongs to a different HOI4 process. Export again from this save.": {
+    "ru": "Снимок этой ветки получен из другого процесса HOI4. Повтори экспорт из нужного сохранения.",
+    "fr": "L’export Atlas de cette branche provient d’un autre processus HOI4. Relancez l’export depuis la sauvegarde correspondante."
+  },
+  "More than one HOI4 process is running. Leave one game open and export again.": {
+    "ru": "Запущено несколько процессов HOI4. Оставь одну игру и повтори экспорт.",
+    "fr": "Plusieurs processus HOI4 sont actifs. Gardez une seule partie ouverte et relancez l’export."
+  },
+  "Install the approved treaty after exiting HOI4, then reload the matching save.": {
+    "ru": "Установи подписанный договор после выхода из HOI4. Затем загрузи нужное сохранение.",
+    "fr": "Installez le traité approuvé après avoir quitté HOI4, puis rechargez la sauvegarde correspondante."
+  },
+  "Interface language": {
+    "fr": "Langue de l’interface",
+    "ru": "Язык интерфейса"
+  },
+  "Language saved. Reopen the EYES windows to apply it.": {
+    "fr": "Langue enregistrée. Rouvrez les fenêtres EYES pour l’appliquer.",
+    "ru": "Язык сохранён. Откройте окна EYES заново."
+  },
+  "Could not save the language setting.": {
+    "fr": "Impossible d’enregistrer la langue de l’interface.",
+    "ru": "Не удалось сохранить язык интерфейса."
+  },
+  "The playset defines the same state twice.": {
+    "fr": "Le jeu de mods définit deux fois la même région.",
+    "ru": "В наборе модов одна область определена дважды."
+  },
+  "More Provinces preview · game ownership and territorial actions unavailable.": {
+    "fr": "Aperçu More Provinces · propriété en jeu et actions territoriales indisponibles.",
+    "ru": "Предпросмотр More Provinces · игровое владение и территориальные действия недоступны."
+  },
+  "Open More Provinces preview": {
+    "fr": "Ouvrir l’aperçu de More Provinces",
+    "ru": "Открыть предпросмотр More Provinces"
+  },
+  "World diplomacy": {
+    "fr": "Diplomatie mondiale",
+    "ru": "Мировая дипломатия"
+  },
+  "Regions · installed map": {
+    "fr": "Régions · carte installée",
+    "ru": "Области · установленная карта"
+  },
+  "Political map": {
+    "fr": "Carte politique",
+    "ru": "Политическая карта"
+  },
+  "Military control": {
+    "fr": "Contrôle militaire",
+    "ru": "Военный контроль"
+  },
+  "Provinces": {
+    "fr": "Provinces",
+    "ru": "Провинции"
+  },
+  "Recognition": {
+    "fr": "Reconnaissance",
+    "ru": "Признание"
+  },
+  "Fit": {
+    "fr": "Monde entier",
+    "ru": "Весь мир"
+  },
+  "Snapshot campaign": {
+    "fr": "Campagne des instantanés",
+    "ru": "Кампания снимков"
+  },
+  "Refresh snapshots": {
+    "fr": "Actualiser les instantanés",
+    "ru": "Обновить снимки"
+  },
+  "Register new branch": {
+    "fr": "Enregistrer une nouvelle branche",
+    "ru": "Зарегистрировать новую ветку"
+  },
+  "Bind selected branch": {
+    "fr": "Associer la branche sélectionnée",
+    "ru": "Привязать выбранную ветку"
+  },
+  "Preparing world map…": {
+    "fr": "Préparation de la carte mondiale…",
+    "ru": "Подготовка карты мира…"
+  },
+  "Wheel: zoom · Drag: move · Click: select region": {
+    "fr": "Molette : zoom · Glisser : déplacer · Clic : sélectionner une région",
+    "ru": "Колесо: масштаб · Перетаскивание: перемещение · Щелчок: выбор области"
+  },
+  "Map data and limitations": {
+    "fr": "Données cartographiques et limites",
+    "ru": "Данные карты и ограничения"
+  },
+  "Country Maker": {
+    "fr": "Créateur de pays",
+    "ru": "Конструктор"
+  },
+  "Recognition Atlas": {
+    "fr": "Atlas de reconnaissance",
+    "ru": "Атлас признания"
+  },
+  "A new state": {
+    "fr": "Un nouvel État",
+    "ru": "Новое государство"
+  },
+  "Regions in this export differ from the configured map.": {
+    "fr": "Les régions exportées diffèrent de celles de la carte configurée.",
+    "ru": "Области в экспорте отличаются от настроенной карты."
+  },
+  "The map has not been verified for country creation.": {
+    "fr": "La carte n’a pas été vérifiée pour la création de pays.",
+    "ru": "Карта не проверена для создания государств."
+  },
+  "Country name": {
+    "fr": "Nom du pays",
+    "ru": "Название государства"
+  },
+  "Country tag (optional, XAA–XZZ)": {
+    "fr": "Tag du pays (facultatif, XAA–XZZ)",
+    "ru": "Тег страны (необязательно, XAA–XZZ)"
+  },
+  "Choose a tag between XAA and XZZ.": {
+    "fr": "Choisissez un tag compris entre XAA et XZZ.",
+    "ru": "Выберите тег от XAA до XZZ."
+  },
+  "This tag is already used or reserved. Choose another.": {
+    "fr": "Ce tag est déjà utilisé ou réservé. Choisissez-en un autre.",
+    "ru": "Этот тег уже используется или зарезервирован. Выберите другой."
+  },
+  "Capital region": {
+    "fr": "Région de la capitale",
+    "ru": "Столичная область"
+  },
+  "Status": {
+    "fr": "Statut",
+    "ru": "Статус"
+  },
+  "Independent": {
+    "fr": "Indépendant",
+    "ru": "Независимое"
+  },
+  "Puppet": {
+    "fr": "État fantoche",
+    "ru": "Марионетка"
+  },
+  "Selected regions": {
+    "fr": "Régions sélectionnées",
+    "ru": "Выбранные области"
+  },
+  "Clear selection": {
+    "fr": "Effacer la sélection",
+    "ru": "Очистить выбор"
+  },
+  "Flag · preview only": {
+    "fr": "Drapeau · aperçu",
+    "ru": "Флаг · только предпросмотр"
+  },
+  "Blue and gold": {
+    "fr": "Bleu et or",
+    "ru": "Синий и золотой"
+  },
+  "Crimson and ivory": {
+    "fr": "Carmin et ivoire",
+    "ru": "Бордовый и белый"
+  },
+  "Green and silver": {
+    "fr": "Vert et argent",
+    "ru": "Зелёный и серебряный"
+  },
+  "Custom PNG flag (preview)": {
+    "fr": "Drapeau PNG personnalisé (aperçu)",
+    "ru": "Свой флаг PNG (предпросмотр)"
+  },
+  "Preview country": {
+    "fr": "Aperçu du pays",
+    "ru": "Предпросмотр государства"
+  },
+  "Create country": {
+    "fr": "Créer le pays",
+    "ru": "Создать государство"
+  },
+  "DRAFT · NOT CREATED": {
+    "fr": "PROJET · CRÉATION EN ATTENTE",
+    "ru": "ПРОЕКТ · НЕ СОЗДАНО"
+  },
+  "Recognition history": {
+    "fr": "Historique de reconnaissance",
+    "ru": "История признания"
+  },
+  "Observer country tag": {
+    "fr": "Code du pays observateur",
+    "ru": "Тег страны-наблюдателя"
+  },
+  "Show positions": {
+    "fr": "Afficher les positions",
+    "ru": "Показать позиции"
+  },
+  "Review country proposal": {
+    "fr": "Vérifier le projet de pays",
+    "ru": "Проверка проекта государства"
+  },
+  "Download a test package. In-game confirmation is required.": {
+    "fr": "Téléchargez le paquet de test. Confirmez ensuite dans le jeu.",
+    "ru": "Скачайте тестовый пакет. Подтверждение потребуется в HOI4."
+  },
+  "Confirm and download test package": {
+    "fr": "Confirmer et télécharger le paquet de test",
+    "ru": "Подтвердить и скачать тестовый пакет"
+  },
+  "Close": {
+    "fr": "Fermer",
+    "ru": "Закрыть"
+  },
+  "Region ": {
+    "fr": "Région ",
+    "ru": "Область "
+  },
+  "Remove ": {
+    "fr": "Retirer ",
+    "ru": "Удалить "
+  },
+  "All countries": {
+    "fr": "Tous les pays",
+    "ru": "Все страны"
+  },
+  "Click regions on the map.": {
+    "fr": "Sélectionnez des régions sur la carte.",
+    "ru": "Выберите области на карте."
+  },
+  "Capital: ": {
+    "fr": "Capitale : ",
+    "ru": "Столица: "
+  },
+  "Regions: ": {
+    "fr": "Régions : ",
+    "ru": "Области: "
+  },
+  "Planned cores: ": {
+    "fr": "Territoires nationaux prévus : ",
+    "ru": "Планируемые cores: "
+  },
+  "Waiting for a fresh player observation from HOI4.": {
+    "fr": "En attente d’une nouvelle observation du joueur dans HOI4.",
+    "ru": "Ожидание свежего наблюдения страны игрока из HOI4."
+  },
+  "Player observed: ": {
+    "fr": "Joueur observé : ",
+    "ru": "Наблюдаемая страна игрока: "
+  },
+  "Select or register the branch for the fresh export.": {
+    "fr": "Sélectionnez ou enregistrez la branche du nouvel export.",
+    "ru": "Выберите или зарегистрируйте ветку для свежего экспорта."
+  },
+  "Snapshot: ": {
+    "fr": "Instantané : ",
+    "ru": "Снимок: "
+  },
+  " · Current freshness not verified.": {
+    "fr": " · Actualité des données à vérifier.",
+    "ru": " · Актуальность сейчас не подтверждена."
+  },
+  " · Configured map geometry.": {
+    "fr": " · Géométrie cartographique configurée.",
+    "ru": " · Настроенная геометрия карты."
+  },
+  " · Region list differs from map.": {
+    "fr": " · La liste des régions diffère de la carte.",
+    "ru": " · Список областей отличается от карты."
+  },
+  "No verified position is known.": {
+    "fr": "Aucune position vérifiée.",
+    "ru": "Достоверная позиция неизвестна."
+  },
+  "Recognized": {
+    "fr": "Reconnu",
+    "ru": "Признано"
+  },
+  "Not recognized": {
+    "fr": "Non reconnu",
+    "ru": "Не признано"
+  },
+  "Unknown": {
+    "fr": "Inconnu",
+    "ru": "Неизвестно"
+  },
+  "De facto: ": {
+    "fr": "De facto : ",
+    "ru": "Фактическое принятие: "
+  },
+  "Protest: ": {
+    "fr": "Protestation : ",
+    "ru": "Протест: "
+  },
+  "yes": {
+    "fr": "oui",
+    "ru": "да"
+  },
+  "no": {
+    "fr": "non",
+    "ru": "нет"
+  },
+  "Prepared": {
+    "fr": "Préparé",
+    "ru": "Подготовлено"
+  },
+  "Partial result": {
+    "fr": "Résultat partiel",
+    "ru": "Частичный результат"
+  },
+  "Blocked": {
+    "fr": "Bloqué",
+    "ru": "Заблокировано"
+  },
+  "Confirmed in HOI4": {
+    "fr": "Confirmé dans HOI4",
+    "ru": "Подтверждено HOI4"
+  },
+  "Owner changes since ": {
+    "fr": "Changements de propriétaire depuis ",
+    "ru": "Смена владельцев с даты "
+  },
+  "Register a separate branch for the latest game export?": {
+    "fr": "Enregistrer une branche distincte pour le dernier export du jeu ?",
+    "ru": "Зарегистрировать отдельную ветку для последнего игрового экспорта?"
+  },
+  "Bind the next snapshots to the selected save branch?": {
+    "fr": "Associer les prochains instantanés à la branche sélectionnée ?",
+    "ru": "Привязать следующие снимки к выбранной ветке сохранения?"
+  },
+  "Unable to load snapshots. Refresh to retry.": {
+    "fr": "Impossible de charger les instantanés. Actualisez pour réessayer.",
+    "ru": "Не удалось загрузить снимки. Нажмите «Обновить снимки»."
+  },
+  "Installed geography · current ownership is not verified.": {
+    "fr": "Carte installée · propriétaires actuels à vérifier.",
+    "ru": "Установленная география · текущее владение не подтверждено."
+  },
+  "Choose a valid PNG up to 2 MB and 2048 × 2048.": {
+    "fr": "Choisissez un PNG valide de 2 Mo et 2048 × 2048 au maximum.",
+    "ru": "Выберите корректный PNG до 2 МБ и 2048 × 2048."
+  },
+  "Diplomatic Channel": {
+    "fr": "Canal diplomatique",
+    "ru": "Дипломатический канал"
+  },
+  "Send message": {
+    "fr": "Envoyer le message",
+    "ru": "Отправить сообщение"
+  },
+  "Conditions": {
+    "fr": "Conditions",
+    "ru": "Условия"
+  },
+  "Conference": {
+    "fr": "Conférence",
+    "ru": "Конференция"
+  },
+  "Conferences": {
+    "fr": "Conférences",
+    "ru": "Конференции"
+  },
+  "History": {
+    "fr": "Historique",
+    "ru": "История"
+  },
+  "Campaign": {
+    "fr": "Campagne",
+    "ru": "Кампания"
+  },
+  "Refresh": {
+    "fr": "Actualiser",
+    "ru": "Обновить"
+  },
+  "Start components": {
+    "fr": "Démarrer les composants",
+    "ru": "Запустить компоненты"
+  },
+  "Stop my components": {
+    "fr": "Arrêter mes composants",
+    "ru": "Остановить мои компоненты"
+  },
+  "Diplomacy · history · services": {
+    "fr": "Diplomatie · historique · services",
+    "ru": "Дипломатия · история · службы"
+  },
+  "Negotiations and history": {
+    "fr": "Négociations et historique",
+    "ru": "Переговоры и история"
+  },
+  "Help": {
+    "fr": "Aide",
+    "ru": "Помощь"
+  },
+  "Player": {
+    "fr": "Joueur",
+    "ru": "Игрок"
+  },
+  "Participants": {
+    "fr": "Participants",
+    "ru": "Участники"
+  },
+  "Negotiations": {
+    "fr": "Négociations",
+    "ru": "Переговоры"
+  },
+  "Messages": {
+    "fr": "Messages",
+    "ru": "Реплик"
+  },
+  "Load history": {
+    "fr": "Charger l’historique",
+    "ru": "Загрузить историю"
+  },
+  "All campaigns": {
+    "fr": "Toutes les campagnes",
+    "ru": "Все кампании"
+  },
+  "Open selected chat in Bridge": {
+    "fr": "Ouvrir la conversation dans Bridge",
+    "ru": "Открыть выбранный чат в Bridge"
+  },
+  "Show conferences": {
+    "fr": "Afficher les conférences",
+    "ru": "Показать конференции"
+  },
+  "Open conference controls in Bridge": {
+    "fr": "Gérer la conférence dans Bridge",
+    "ru": "Открыть управление конференцией в Bridge"
+  },
+  "Ready": {
+    "fr": "Prêt",
+    "ru": "Готов"
+  },
+  "Not ready": {
+    "fr": "Indisponible",
+    "ru": "Не готов"
+  },
+  "Loading…": {
+    "fr": "Chargement…",
+    "ru": "Загружаем…"
+  },
+  "Cancel": {
+    "fr": "Annuler",
+    "ru": "Отмена"
+  },
+  "Accept": {
+    "fr": "Accepter",
+    "ru": "Принять"
+  },
+  "Reject": {
+    "fr": "Refuser",
+    "ru": "Отклонить"
+  },
+  "HOI4-EYES — Diplomatic consultations": {
+    "ru": "HOI4-EYES — дипломатические консультации",
+    "fr": "HOI4-EYES — Consultations diplomatiques"
+  },
+  "HOI4-EYES  /  DIPLOMATIC CHANNEL": {
+    "ru": "HOI4-EYES / ДИПЛОМАТИЧЕСКИЙ КАНАЛ",
+    "fr": "HOI4-EYES / CANAL DIPLOMATIQUE"
+  },
+  "Waiting for the HOI4 request marker...": {
+    "ru": "Ожидается запрос из HOI4…",
+    "fr": "En attente d’une requête de HOI4…"
+  },
+  "Retry": {
+    "ru": "Повторить попытку",
+    "fr": "Réessayer"
+  },
+  "Conditions and preparation": {
+    "ru": "Условия договора / подготовка",
+    "fr": "Conditions et préparation"
+  },
+  "Conferences and delegations": {
+    "ru": "Конференции / делегации",
+    "fr": "Conférences et délégations"
+  },
+  "Copy HOI4 confirmation command": {
+    "ru": "Скопировать команду подтверждения HOI4",
+    "fr": "Copier la commande de confirmation HOI4"
+  },
+  "HOI4-EYES / Agreement conditions": {
+    "ru": "HOI4-EYES / Условия договора",
+    "fr": "HOI4-EYES / Conditions de l’accord"
+  },
+  "HOI4 EYES — DIPLOMATIC CHAT": {
+    "ru": "HOI4-EYES — ДИПЛОМАТИЧЕСКИЙ ЧАТ",
+    "fr": "HOI4-EYES — CONVERSATION DIPLOMATIQUE"
+  },
+  "Connecting to Flask and loading saved chat history…": {
+    "ru": "Подключение к Flask и загрузка переписки…",
+    "fr": "Connexion à Flask et chargement de l’historique…"
+  },
+  "Refresh details": {
+    "ru": "Обновить сведения",
+    "fr": "Actualiser les informations"
+  },
+  "Informal consultation without signing": {
+    "ru": "Неофициальная консультация — без подписания",
+    "fr": "Consultation informelle sans signature"
+  },
+  "Create meeting": {
+    "ru": "Создать встречу",
+    "fr": "Créer une réunion"
+  },
+  "Invite adviser": {
+    "ru": "Пригласить советника",
+    "fr": "Inviter un conseiller"
+  },
+  "Continue discussion": {
+    "ru": "Продолжить обсуждение",
+    "fr": "Poursuivre la discussion"
+  },
+  "Send agreement for separate confirmation": {
+    "ru": "Передать договор на отдельное подтверждение",
+    "fr": "Soumettre l’accord à une confirmation distincte"
+  },
+  "End meeting and retain agreements": {
+    "ru": "Закончить встречу, сохранив договоры",
+    "fr": "Clore la réunion et conserver les accords"
+  },
+  "HOI4-EYES — DIPLOMATIC RESPONSE": {
+    "ru": "HOI4-EYES — ДИПЛОМАТИЧЕСКИЙ ОТВЕТ",
+    "fr": "HOI4-EYES — RÉPONSE DIPLOMATIQUE"
+  },
+  "Waiting for player": {
+    "fr": "En attente du joueur",
+    "ru": "Ожидает игрока"
+  },
+  "Country reply": {
+    "fr": "Réponse du pays",
+    "ru": "Ответ страны"
+  },
+  "Closed": {
+    "fr": "Fermé",
+    "ru": "Закрыт"
+  },
+  "Preparing reply": {
+    "fr": "Préparation de la réponse",
+    "ru": "Подготовка ответа"
+  },
+  "Campaign:": {
+    "fr": "Campagne :",
+    "ru": "Кампания:"
+  },
+  "Bridge · chat window": {
+    "fr": "Bridge · fenêtre de conversation",
+    "ru": "Bridge · окно чата"
+  },
+  "Ollama · local Qwen": {
+    "fr": "Ollama · Qwen local",
+    "ru": "Ollama · локальная Qwen"
+  },
+  "HOI4 connection": {
+    "fr": "Connexion à HOI4",
+    "ru": "Связь с HOI4"
+  },
+  "Checking…": {
+    "fr": "Vérification…",
+    "ru": "Проверяем…"
+  },
+  "Click Start components when ready.": {
+    "fr": "Cliquez sur Démarrer les composants.",
+    "ru": "Когда будете готовы, нажмите «Запустить компоненты»."
+  },
+  "Also stop Ollama if started by this window": {
+    "fr": "Arrêter aussi Ollama si cette fenêtre l’a démarré",
+    "ru": "При остановке также завершить Ollama, если её запустило это меню"
+  },
+  "Game running": {
+    "fr": "Jeu en cours",
+    "ru": "Игра запущена"
+  },
+  "Game closed": {
+    "fr": "Jeu fermé",
+    "ru": "Игра закрыта"
+  },
+  "Game status unknown": {
+    "fr": "État du jeu inconnu",
+    "ru": "Состояние неизвестно"
+  },
+  "Done": {
+    "fr": "Terminé",
+    "ru": "Готово"
+  },
+  "Stop components": {
+    "fr": "Arrêter les composants",
+    "ru": "Остановка HOI4-EYES"
+  },
+  "Close menu?": {
+    "fr": "Fermer le menu ?",
+    "ru": "Закрыть только меню?"
+  },
+  "Operation in progress": {
+    "fr": "Opération en cours",
+    "ru": "Дождитесь операции"
+  },
+  "No messages in this chat.": {
+    "fr": "Aucun message dans cette conversation.",
+    "ru": "В этом чате ещё нет сообщений."
+  },
+  "Starting components…": {
+    "fr": "Démarrage des composants…",
+    "ru": "Запускаем компоненты и проверяем готовность…"
+  },
+  "Flask did not become ready. See runtime/flask.log.": {
+    "fr": "Flask n’est pas prêt. Consultez runtime/flask.log.",
+    "ru": "Flask не подтвердил готовность. Смотрите runtime/flask.log."
+  },
+  "Bridge did not become ready.": {
+    "fr": "Bridge n’est pas prêt.",
+    "ru": "Bridge не подтвердил готовность."
+  },
+  "Close the previous Flask instance and launch again.": {
+    "fr": "Fermez l’ancienne instance de Flask puis relancez.",
+    "ru": "Flask использует старую ревизию. Меню не перезапускает прежний процесс. Завершите старую HOI4-EYES штатно и повторите запуск."
+  },
+  "Close the previous Bridge instance and launch again.": {
+    "fr": "Fermez l’ancienne instance de Bridge puis relancez.",
+    "ru": "Bridge использует старую ревизию. Завершите старую HOI4-EYES штатно; второй Bridge не запускается."
+  },
+  "Qwen is installed.": {
+    "fr": "Qwen est installé.",
+    "ru": "Qwen установлена; генерация не проверялась"
+  },
+  "Using the running Ollama service.": {
+    "fr": "Utilisation du service Ollama actif.",
+    "ru": "Используется уже работающая Ollama; владение не присваивается."
+  },
+  "Refresh snapshots and select the observed campaign.": {
+    "fr": "Actualisez les instantanés et sélectionnez la campagne observée.",
+    "ru": "Обновите снимки и выберите наблюдаемую кампанию."
+  },
+  "Binding rejected. Check the selected branch and wait for a fresh export.": {
+    "fr": "Association refusée. Vérifiez la branche et attendez un nouvel export.",
+    "ru": "Привязка отклонена. Проверьте выбранную ветку и дождитесь свежего экспорта."
+  },
+  "Prepare a test package, then confirm the action in HOI4.": {
+    "fr": "Préparez un paquet de test puis confirmez dans HOI4.",
+    "ru": "Подготовьте тестовый пакет, затем подтвердите действие в HOI4."
+  },
+  "A fresh campaign-bound snapshot, eligible regions and a name are required.": {
+    "fr": "Un instantané récent associé à la campagne, des régions admissibles et un nom sont requis.",
+    "ru": "Нужны свежий снимок, привязанный к кампании, допустимые области и название."
+  },
+  "Package preparation failed. Refresh the snapshot and review the project.": {
+    "fr": "La préparation a échoué. Actualisez l’instantané et vérifiez le projet.",
+    "ru": "Не удалось подготовить пакет. Обновите снимок и проверьте проект."
+  },
+  "Government and map colour": {
+    "fr": "Gouvernement et couleur sur la carte",
+    "ru": "Правительство и цвет на карте"
+  },
+  "Map colour": {
+    "fr": "Couleur sur la carte",
+    "ru": "Цвет на карте"
+  },
+  "Starting ideology": {
+    "fr": "Idéologie de départ",
+    "ru": "Начальная идеология"
+  },
+  "Keep the game's default": {
+    "fr": "Conserver le choix du jeu",
+    "ru": "Оставить выбор игры"
+  },
+  "Fill in the profiles you want to use. Titles appear with the leader's name.": {
+    "fr": "Renseignez les profils souhaités. Le titre s’affiche avec le nom du dirigeant.",
+    "ru": "Заполните нужные профили. Должность будет показана рядом с именем лидера."
+  },
+  "President": {
+    "fr": "Président",
+    "ru": "Президент"
+  },
+  "Prime Minister": {
+    "fr": "Premier ministre",
+    "ru": "Премьер-министр"
+  },
+  "Chancellor": {
+    "fr": "Chancelier",
+    "ru": "Канцлер"
+  },
+  "Monarch": {
+    "fr": "Monarque",
+    "ru": "Монарх"
+  },
+  "Democratic": {
+    "fr": "Démocratie",
+    "ru": "Демократия"
+  },
+  "Fascism": {
+    "fr": "Fascisme",
+    "ru": "Фашизм"
+  },
+  "Communism": {
+    "fr": "Communisme",
+    "ru": "Коммунизм"
+  },
+  "Non-Aligned": {
+    "fr": "Non-aligné",
+    "ru": "Нейтралитет"
+  },
+  "First name": {
+    "fr": "Prénom",
+    "ru": "Имя"
+  },
+  "Last name": {
+    "fr": "Nom",
+    "ru": "Фамилия"
+  },
+  "Title": {
+    "fr": "Titre",
+    "ru": "Должность"
+  },
+  "Name under this ideology": {
+    "fr": "Nom sous cette idéologie",
+    "ru": "Название при этой идеологии"
+  },
+  "Party name": {
+    "fr": "Nom du parti",
+    "ru": "Название партии"
+  },
+  "Leader portrait (PNG or JPG)": {
+    "fr": "Portrait du dirigeant (PNG ou JPG)",
+    "ru": "Портрет лидера (PNG или JPG)"
+  },
+  "Remove portrait": {
+    "fr": "Retirer le portrait",
+    "ru": "Удалить портрет"
+  },
+  "Choose a PNG or JPG up to 4 MB and 4096 pixels per side.": {
+    "fr": "Choisissez un PNG ou JPG de 4 Mo maximum et de 4096 pixels maximum par côté.",
+    "ru": "Выберите PNG или JPG до 4 МБ и не более 4096 пикселей по каждой стороне."
+  },
+  "Enter a leader name before adding a title or portrait.": {
+    "fr": "Indiquez le nom du dirigeant avant d’ajouter un titre ou un portrait.",
+    "ru": "Перед добавлением должности или портрета укажите имя лидера."
+  },
+  "A leader, country, party, or title field contains unsupported characters.": {
+    "fr": "Un champ de nom de dirigeant, de pays, de parti ou de titre contient des caractères non pris en charge.",
+    "ru": "Имя лидера, название страны, партии или должности содержит недопустимые символы."
+  },
+  "Verified capital ": {
+    "fr": "Capitale confirmée ",
+    "ru": "Подтверждённая столица "
+  },
+  "Requested capital ": {
+    "fr": "Capitale demandée ",
+    "ru": "Выбранная столица "
+  },
+  "Agreement conditions": {
+    "ru": "Условия договора",
+    "fr": "Conditions de l’accord"
+  },
+  "Prepare game package": {
+    "ru": "Подготовить игровой пакет",
+    "fr": "Préparer le paquet de jeu"
+  },
+  "Prepare this version? HOI4 requires separate confirmation.": {
+    "ru": "Подготовить эту редакцию? В HOI4 потребуется отдельное подтверждение.",
+    "fr": "Préparer cette version ? Une confirmation distincte sera nécessaire dans HOI4."
+  },
+  "With HOI4 closed, unpack the ZIP into the active HOI4-EYES mod. Load the same save and review the decision in HOI4.": {
+    "ru": "При закрытой HOI4 распакуйте ZIP в активный мод HOI4-EYES. Загрузите то же сохранение и откройте игровое решение.",
+    "fr": "HOI4 fermé, décompressez le ZIP dans le mod HOI4-EYES actif. Chargez la même sauvegarde et examinez la décision dans HOI4."
+  },
+  "No game package is available for this version.": {
+    "ru": "Для этой редакции нет игрового пакета.",
+    "fr": "Aucun paquet de jeu n’est disponible pour cette version."
+  },
+  "Export a fresh Atlas snapshot from this campaign and player first.": {
+    "ru": "Сначала экспортируйте свежий снимок Atlas из этой кампании за ту же страну.",
+    "fr": "Exportez d’abord un nouveau relevé Atlas de cette campagne pour le même pays."
+  },
+  "Treaty changed. Review the current conditions again.": {
+    "ru": "Договор изменился. Проверьте текущую редакцию.",
+    "fr": "L’accord a changé. Relisez les conditions actuelles."
+  },
+  "The existing package is expired or belongs to another version.": {
+    "ru": "Срок пакета истёк или он относится к другой редакции.",
+    "fr": "Le paquet a expiré ou correspond à une autre version."
+  },
+  "Accepted by": {
+    "ru": "Приняли",
+    "fr": "Accepté par"
+  },
+  "Rejected by": {
+    "ru": "Отклонили",
+    "fr": "Refusé par"
+  },
+  "Proposed by": {
+    "ru": "Предложили",
+    "fr": "Proposé par"
+  },
+  "Required by": {
+    "ru": "Требуют",
+    "fr": "Demandé par"
+  },
+  "Conditional position": {
+    "ru": "Согласие с оговорками",
+    "fr": "Position conditionnelle"
+  },
+  "Proposal text": {
+    "ru": "Текст предложения",
+    "fr": "Texte proposé"
+  },
+  "Final agreed terms": {
+    "ru": "Согласованная редакция",
+    "fr": "Conditions convenues"
+  },
+  "Game execution blocked": {
+    "ru": "Игровое исполнение заблокировано",
+    "fr": "Exécution bloquée dans le jeu"
+  },
+  "Counteroffer": {
+    "ru": "Встречное предложение",
+    "fr": "Contre-proposition"
+  },
+  "No agreement draft yet. Send a proposal to begin negotiations.": {
+    "ru": "Проекта договора пока нет. Отправьте предложение, чтобы начать переговоры.",
+    "fr": "Aucun projet d’accord. Envoyez une proposition pour ouvrir les négociations."
+  },
+  "AGREED": {
+    "ru": "СОГЛАСОВАНО",
+    "fr": "ACCORD CONVENU"
+  },
+  "PREPARED": {
+    "ru": "ПОДГОТОВЛЕНО",
+    "fr": "PRÉPARÉ"
+  },
+  "SENT": {
+    "ru": "ПЕРЕДАНО В HOI4",
+    "fr": "ENVOYÉ À HOI4"
+  },
+  "CONFIRMED": {
+    "ru": "ПОДТВЕРЖДЕНО HOI4",
+    "fr": "CONFIRMÉ PAR HOI4"
+  },
+  "FAILED": {
+    "ru": "ОШИБКА ИСПОЛНЕНИЯ",
+    "fr": "ÉCHEC DE L’EXÉCUTION"
+  },
+  "PARTIAL": {
+    "ru": "ЧАСТИЧНО ПРИМЕНЕНО",
+    "fr": "APPLIQUÉ EN PARTIE"
+  },
+  "BLOCKED": {
+    "ru": "ЗАБЛОКИРОВАНО",
+    "fr": "BLOQUÉ"
+  },
+  "NEGOTIATING": {
+    "ru": "ПЕРЕГОВОРЫ",
+    "fr": "EN NÉGOCIATION"
+  },
+  "Could not load agreement conditions.": {
+    "ru": "Не удалось загрузить условия договора.",
+    "fr": "Impossible de charger les conditions de l’accord."
+  },
+  "Unconfirmed term": {
+    "ru": "Пункт не подтверждён",
+    "fr": "Clause non confirmée"
+  },
+  "Rejected term": {
+    "ru": "Пункт отклонён",
+    "fr": "Clause refusée"
+  },
+  "HOI4 cannot enforce every agreed term. Review the duration, conditions, and side commitments in this version.": {
+    "ru": "HOI4 не может исполнить все согласованные пункты. Проверьте срок, оговорки и дополнительные обязательства в этой редакции.",
+    "fr": "HOI4 ne peut pas appliquer toutes les clauses convenues. Vérifiez la durée, les conditions et les engagements annexes de cette version."
+  },
+  "The current game state is incomplete. Select the counterpart again in HOI4 to refresh the observation.": {
+    "ru": "Игровых данных недостаточно. Снова выберите другую сторону в HOI4, чтобы обновить наблюдение.",
+    "fr": "Les données de la partie sont incomplètes. Sélectionnez de nouveau l’autre partie dans HOI4 pour actualiser le relevé."
+  },
+  "This agreement needs a separate game action for each applicable term.": {
+    "ru": "Каждый исполнимый пункт этого соглашения требует отдельного игрового действия.",
+    "fr": "Chaque clause applicable de cet accord nécessite une action distincte dans le jeu."
+  },
+  "Awaiting confirmation from": {
+    "ru": "Ожидается подтверждение",
+    "fr": "Confirmation attendue de"
+  },
+  "Diplomatic wording restored from the saved decision.": {
+    "ru": "Ответ сформулирован по сохранённому решению.",
+    "fr": "Réponse formulée à partir de la décision enregistrée."
+  },
+  "Diplomatic reply received.": {
+    "ru": "Дипломатический ответ получен.",
+    "fr": "Réponse diplomatique reçue."
+  },
+  "Check execution": {
+    "ru": "Проверить исполнение",
+    "fr": "Vérifier l’exécution"
+  },
+  "Save prepared ZIP": {
+    "ru": "Сохранить готовый ZIP",
+    "fr": "Enregistrer le ZIP préparé"
+  },
+  "Prepare this exact game package first.": {
+    "ru": "Сначала подготовьте пакет именно этой редакции.",
+    "fr": "Préparez d’abord le paquet de cette version précise."
+  },
+  "Install the ZIP for this exact agreement version, then reload HOI4.": {
+    "ru": "Установите ZIP именно этой редакции, затем перезапустите HOI4.",
+    "fr": "Installez le ZIP de cette version, puis relancez HOI4."
+  },
+  "The running save is not verified for this prepared package.": {
+    "ru": "Загруженное сохранение не подтверждено для этого пакета.",
+    "fr": "La sauvegarde chargée n’est pas vérifiée pour ce paquet."
+  },
+  "The prepared package is outside its game-date window.": {
+    "ru": "Текущая игровая дата выходит за срок действия пакета.",
+    "fr": "La date du jeu est hors de la période de validité du paquet."
+  },
+  "The event is already open in HOI4. Confirm it there or check the result.": {
+    "ru": "Событие уже открыто в HOI4. Подтвердите его в игре или проверьте результат.",
+    "fr": "L’événement est déjà ouvert dans HOI4. Confirmez-le dans le jeu ou vérifiez le résultat."
+  },
+  "Command copied. Open the HOI4 console, paste the command, then confirm the event. Return here and check execution.": {
+    "ru": "Команда скопирована. Откройте консоль HOI4, вставьте команду и подтвердите событие. Затем вернитесь сюда и проверьте исполнение.",
+    "fr": "Commande copiée. Ouvrez la console HOI4, collez la commande et confirmez l’événement. Revenez ici pour vérifier l’exécution."
+  },
+  "No verified Atlas export for this agreement. Export from the matching save first.": {
+    "ru": "Для договора нет подтверждённого экспорта Atlas. Выполните экспорт из нужного сохранения.",
+    "fr": "Aucun export Atlas vérifié pour cet accord. Exportez d’abord depuis la sauvegarde correspondante."
+  },
+  "Bind the pending Atlas export to the agreement campaign.": {
+    "ru": "Привяжите ожидающий экспорт Atlas к кампании договора.",
+    "fr": "Associez l’export Atlas en attente à la campagne de l’accord."
+  },
+  "Atlas is showing a different campaign or player. Bind the matching export to the agreement campaign.": {
+    "ru": "Atlas получил данные другой кампании или игрока. Привяжите подходящий экспорт к кампании договора.",
+    "fr": "Atlas affiche une autre campagne ou un autre joueur. Associez l’export correspondant à la campagne de l’accord."
+  },
+  "The Atlas export is stale or the save was reloaded. Export again from the matching save.": {
+    "ru": "Экспорт Atlas устарел или сохранение было перезагружено. Выполните новый экспорт из нужного сохранения.",
+    "fr": "L’export Atlas est périmé ou la sauvegarde a été rechargée. Exportez à nouveau depuis la sauvegarde correspondante."
+  },
+  "HOI4 restarted. Export from the matching save and bind the new session.": {
+    "ru": "HOI4 перезапущена. Выполните экспорт из нужного сохранения и привяжите новую сессию.",
+    "fr": "HOI4 a redémarré. Exportez depuis la sauvegarde correspondante et associez la nouvelle session."
+  },
+  "Open the matching save in HOI4 first.": {
+    "ru": "Сначала откройте нужное сохранение в HOI4.",
+    "fr": "Ouvrez d’abord la sauvegarde correspondante dans HOI4."
+  },
+  "With HOI4 closed, unpack the ZIP into the active HOI4-EYES mod. Load the same save and copy the confirmation command here.": {
+    "ru": "При закрытой HOI4 распакуйте ZIP в активный мод HOI4-EYES. Загрузите то же сохранение и скопируйте команду подтверждения здесь.",
+    "fr": "HOI4 fermé, décompressez le ZIP dans le mod HOI4-EYES actif. Chargez la même sauvegarde et copiez ici la commande de confirmation."
+  },
+  "Fleet": {
+    "ru": "Флот",
+    "fr": "Flotte"
+  },
+  "Fleet dashboard": {
+    "ru": "Панель флота",
+    "fr": "Tableau de bord naval"
+  },
+  "Review naval observations and prepare orders for the in-game fleet.": {
+    "ru": "Просматривайте данные флота и готовьте планы для игры.",
+    "fr": "Consultez les données navales et préparez vos ordres en jeu."
+  },
+  "Open fleet dashboard": {
+    "ru": "Открыть панель флота",
+    "fr": "Ouvrir le tableau de bord naval"
+  },
+  "Refresh observations": {
+    "ru": "Обновить данные",
+    "fr": "Actualiser les observations"
+  },
+  "Naval observations": {
+    "ru": "Данные из игры",
+    "fr": "Observations navales"
+  },
+  "Total ships": {
+    "ru": "Всего кораблей",
+    "fr": "Total des navires"
+  },
+  "Carriers": {
+    "ru": "Авианосцы",
+    "fr": "Porte-avions"
+  },
+  "Capital ships": {
+    "ru": "Крупные корабли",
+    "fr": "Navires capitaux"
+  },
+  "Screens": {
+    "ru": "Корабли охранения",
+    "fr": "Navires d’escorte"
+  },
+  "Submarines": {
+    "ru": "Подводные лодки",
+    "fr": "Sous-marins"
+  },
+  "National fuel (thousands)": {
+    "ru": "Топливо страны (тыс.)",
+    "fr": "Carburant national (milliers)"
+  },
+  "Fleets and task forces": {
+    "ru": "Флоты и соединения",
+    "fr": "Flottes et forces opérationnelles"
+  },
+  "Assigned missions and regions": {
+    "ru": "Текущие миссии и регионы",
+    "fr": "Missions et régions assignées"
+  },
+  "Damage and repairs": {
+    "ru": "Повреждения и ремонт",
+    "fr": "Dégâts et réparations"
+  },
+  "Available ports and naval range": {
+    "ru": "Доступные порты и дальность",
+    "fr": "Ports accessibles et rayon d’action"
+  },
+  "Unavailable from Bridge": {
+    "ru": "Bridge не передаёт эти данные",
+    "fr": "Donnée indisponible via Bridge"
+  },
+  "Order planner": {
+    "ru": "Планирование приказов",
+    "fr": "Planification navale"
+  },
+  "Built-in templates": {
+    "ru": "Встроенные шаблоны",
+    "fr": "Modèles intégrés"
+  },
+  "Saved templates": {
+    "ru": "Сохранённые шаблоны",
+    "fr": "Modèles enregistrés"
+  },
+  "Mission or purpose": {
+    "ru": "Миссия или задача",
+    "fr": "Mission ou objectif"
+  },
+  "Template name": {
+    "ru": "Название шаблона",
+    "fr": "Nom du modèle"
+  },
+  "Notes for the player": {
+    "ru": "Заметки для игрока",
+    "fr": "Notes du joueur"
+  },
+  "Save template": {
+    "ru": "Сохранить шаблон",
+    "fr": "Enregistrer le modèle"
+  },
+  "Delete saved template": {
+    "ru": "Удалить шаблон",
+    "fr": "Supprimer le modèle"
+  },
+  "Sea regions": {
+    "ru": "Морские регионы",
+    "fr": "Régions maritimes"
+  },
+  "Regions come from the configured map. Check range and access in HOI4.": {
+    "ru": "Регионы взяты из настроенной карты. Дальность и доступ проверяйте в HOI4.",
+    "fr": "Les régions proviennent de la carte configurée. Vérifiez la portée et l’accès dans HOI4."
+  },
+  "Find a region": {
+    "ru": "Найти регион",
+    "fr": "Rechercher une région"
+  },
+  "Prepare order": {
+    "ru": "Подготовить приказ",
+    "fr": "Préparer l’ordre"
+  },
+  "Prepared proposal": {
+    "ru": "Предложение подготовлено",
+    "fr": "Proposition préparée"
+  },
+  "Select the appropriate task force in the HOI4 naval interface.": {
+    "ru": "Выберите подходящее соединение в морском интерфейсе HOI4.",
+    "fr": "Sélectionnez la force appropriée dans l’interface navale de HOI4."
+  },
+  "Check the result on the task force panel.": {
+    "ru": "Проверьте результат на панели соединения.",
+    "fr": "Vérifiez le résultat dans le panneau de la force."
+  },
+  "Automatic orders are unavailable. Apply this checklist in HOI4.": {
+    "ru": "Автоматические приказы недоступны. Выполните шаги в HOI4.",
+    "fr": "Les ordres automatiques sont indisponibles. Suivez ces étapes dans HOI4."
+  },
+  "No fresh Atlas export. Open your campaign and export a snapshot.": {
+    "ru": "Нет свежего экспорта Atlas. Откройте кампанию и сделайте снимок.",
+    "fr": "Aucun export Atlas récent. Ouvrez votre campagne et exportez un instantané."
+  },
+  "This snapshot has no naval counters. Update the EYES mod and export again.": {
+    "ru": "В снимке нет счётчиков флота. Обновите мод EYES и повторите экспорт.",
+    "fr": "Cet instantané ne contient pas de données navales. Mettez EYES à jour et relancez l’export."
+  },
+  "Game observation": {
+    "ru": "Данные игры",
+    "fr": "Observation du jeu"
+  },
+  "New template": {
+    "ru": "Новый шаблон",
+    "fr": "Nouveau modèle"
+  },
+  "Template saved.": {
+    "ru": "Шаблон сохранён.",
+    "fr": "Modèle enregistré."
+  },
+  "Template deleted.": {
+    "ru": "Шаблон удалён.",
+    "fr": "Modèle supprimé."
+  },
+  "Delete this saved template?": {
+    "ru": "Удалить сохранённый шаблон?",
+    "fr": "Supprimer ce modèle enregistré ?"
+  },
+  "The request could not be completed.": {
+    "ru": "Не удалось выполнить запрос.",
+    "fr": "La requête a échoué."
+  },
+  "Choose at least one sea region.": {
+    "ru": "Выберите хотя бы один морской регион.",
+    "fr": "Choisissez au moins une région maritime."
+  },
+  "The campaign or snapshot changed. Refresh and prepare the proposal again.": {
+    "ru": "Кампания или снимок изменились. Обновите данные и подготовьте план заново.",
+    "fr": "La campagne ou l’instantané a changé. Actualisez puis préparez à nouveau la proposition."
+  },
+  "No valid sea regions were found for this playset.": {
+    "ru": "Для набора модов не найдены корректные морские регионы.",
+    "fr": "Aucune région maritime valide pour cette configuration."
+  },
+  "Selected": {
+    "ru": "Выбрано",
+    "fr": "Sélection"
+  },
+  "Available ships are unknown. Inspect the task force in HOI4.": {
+    "ru": "Состав флота неизвестен. Проверьте соединение в HOI4.",
+    "fr": "Les navires disponibles sont inconnus. Vérifiez la force dans HOI4."
+  },
+  "The observed country has no ships.": {
+    "ru": "У наблюдаемой страны нет кораблей.",
+    "fr": "Le pays observé ne dispose d’aucun navire."
+  },
+  "The suggested ship group is absent from the observed national totals.": {
+    "ru": "Рекомендуемой группы кораблей нет в данных страны.",
+    "fr": "Le groupe de navires conseillé est absent des données nationales."
+  },
+  "National totals are available. Verify the selected task force and its range in HOI4.": {
+    "ru": "Есть общие данные по стране. Проверьте состав и дальность соединения в HOI4.",
+    "fr": "Les totaux nationaux sont disponibles. Vérifiez la force choisie et sa portée dans HOI4."
+  },
+  "Planning without a current game observation.": {
+    "ru": "План составлен без свежих данных игры.",
+    "fr": "Planification sans observation récente du jeu."
+  },
+  "Select these regions if they are in range": {
+    "ru": "Выберите эти регионы, если позволяет дальность",
+    "fr": "Sélectionnez ces régions si elles sont à portée"
+  },
+  "Choose Convoy Escort.": {
+    "ru": "Выберите «Сопровождение конвоев».",
+    "fr": "Choisissez « Escorte de convois »."
+  },
+  "Choose Patrol.": {
+    "ru": "Выберите «Патрулирование».",
+    "fr": "Choisissez « Patrouille »."
+  },
+  "Choose Strike Force.": {
+    "ru": "Выберите «Ударное соединение».",
+    "fr": "Choisissez « Force de frappe »."
+  },
+  "Select a submarine task force and choose Convoy Raiding.": {
+    "ru": "Выберите группу подлодок и миссию «Перехват конвоев».",
+    "fr": "Sélectionnez une force sous-marine et choisissez l’attaque de convois."
+  },
+  "Review damage and choose a repair priority and an accessible naval base.": {
+    "ru": "Проверьте повреждения и выберите приоритет ремонта и доступную базу.",
+    "fr": "Vérifiez les dégâts, puis choisissez une priorité de réparation et une base accessible."
+  },
+  "Review assignment and move the selected ships to reserve in the naval interface.": {
+    "ru": "Проверьте назначение и отправьте выбранные корабли в резерв через морской интерфейс.",
+    "fr": "Vérifiez leur affectation, puis placez les navires sélectionnés en réserve dans l’interface navale."
+  },
+  "Apply your notes using the controls for the selected task force.": {
+    "ru": "Используйте свои заметки и элементы управления выбранным соединением.",
+    "fr": "Suivez vos notes à l’aide des commandes de la force sélectionnée."
+  },
+  "fleet-role-escort": {
+    "ru": "Защита конвоев",
+    "fr": "Escorte de convois"
+  },
+  "fleet-role-patrol": {
+    "ru": "Патрулирование",
+    "fr": "Patrouille"
+  },
+  "fleet-role-strike": {
+    "ru": "Ударное соединение",
+    "fr": "Force de frappe"
+  },
+  "fleet-role-submarines": {
+    "ru": "Подводные группы",
+    "fr": "Groupes sous-marins"
+  },
+  "fleet-role-repair": {
+    "ru": "Ремонт",
+    "fr": "Réparations"
+  },
+  "fleet-role-reserve": {
+    "ru": "Резерв",
+    "fr": "Réserve"
+  },
+  "fleet-role-custom": {
+    "ru": "Пользовательский шаблон",
+    "fr": "Modèle personnalisé"
+  },
+  "Government meetings": {
+    "ru": "Совещания",
+    "fr": "Réunions du gouvernement"
+  },
+  "Open government meetings": {
+    "ru": "Открыть совещания",
+    "fr": "Ouvrir les réunions"
+  },
+  "Schedule a meeting": {
+    "ru": "Назначить встречу",
+    "fr": "Planifier une réunion"
+  },
+  "Meeting title": {
+    "ru": "Название встречи",
+    "fr": "Titre de la réunion"
+  },
+  "Agenda": {
+    "ru": "Тема",
+    "fr": "Ordre du jour"
+  },
+  "Historical mode": {
+    "ru": "Исторический режим",
+    "fr": "Mode historique"
+  },
+  "Start after (game days)": {
+    "ru": "Начать через (игровых дней)",
+    "fr": "Début dans (jours de jeu)"
+  },
+  "Meeting history": {
+    "ru": "История встреч",
+    "fr": "Historique des réunions"
+  },
+  "Press": {
+    "ru": "Пресса",
+    "fr": "Presse"
+  },
+  "Editorial perspective": {
+    "ru": "Редакционная точка зрения",
+    "fr": "Angle éditorial"
+  },
+  "Read campaign news": {
+    "ru": "Читать новости кампании",
+    "fr": "Lire les nouvelles de la campagne"
+  },
+  "Discussion, decisions and project progress are recorded in EYES only.": {
+    "ru": "Обсуждения, решения и этапы проектов записываются только в EYES.",
+    "fr": "Les discussions, décisions et étapes sont enregistrées uniquement dans EYES."
+  },
+  "Discuss or record a decision": {
+    "ru": "Обсудить или записать решение",
+    "fr": "Discuter ou consigner une décision"
+  },
+  "Record cabinet decision": {
+    "ru": "Записать решение кабинета",
+    "fr": "Consigner la décision du cabinet"
+  },
+  "Government project": {
+    "ru": "Государственный проект",
+    "fr": "Projet gouvernemental"
+  },
+  "Project name": {
+    "ru": "Название проекта",
+    "fr": "Nom du projet"
+  },
+  "Milestones, one per line": {
+    "ru": "Этапы, по одному на строку",
+    "fr": "Étapes, une par ligne"
+  },
+  "Duration (game days)": {
+    "ru": "Срок (в игровых днях)",
+    "fr": "Durée (jours de jeu)"
+  },
+  "Record project": {
+    "ru": "Записать проект",
+    "fr": "Consigner le projet"
+  },
+  "Close meeting": {
+    "ru": "Завершить встречу",
+    "fr": "Clore la réunion"
+  },
+  "Proposal": {
+    "ru": "Предложение",
+    "fr": "Proposition"
+  },
+  "Objection": {
+    "ru": "Возражение",
+    "fr": "Objection"
+  },
+  "Alternative": {
+    "ru": "Альтернатива",
+    "fr": "Alternative"
+  },
+  "Response": {
+    "ru": "Ответ",
+    "fr": "Réponse"
+  },
+  "What are the government’s stated aims?": {
+    "ru": "Какие цели заявило правительство?",
+    "fr": "Quels objectifs le gouvernement annonce-t-il ?"
+  },
+  "What can be checked from the evidence?": {
+    "ru": "Что можно проверить по источникам?",
+    "fr": "Que peut-on vérifier à partir des sources ?"
+  },
+  "What costs and risks should be scrutinized?": {
+    "ru": "Какие издержки и риски требуют проверки?",
+    "fr": "Quels coûts et risques faut-il examiner ?"
+  },
+  "Export and bind a fresh Atlas snapshot to open meetings.": {
+    "ru": "Сделайте свежий экспорт Atlas и привяжите ветку, чтобы открыть встречи.",
+    "fr": "Exportez puis associez un instantané Atlas récent pour ouvrir les réunions."
+  },
+  "Further records belong to a later day or another session. Use the archive or a separate branch.": {
+    "ru": "Другие записи относятся к более позднему дню или другой сессии. Откройте архив или отдельную ветку.",
+    "fr": "D’autres entrées appartiennent à un jour ultérieur ou à une autre session. Consultez les archives ou une autre branche."
+  },
+  "This meeting is scheduled for a later game day.": {
+    "ru": "Встреча назначена на более поздний игровой день.",
+    "fr": "Cette réunion est prévue pour un jour de jeu ultérieur."
+  },
+  "Choose a meeting": {
+    "ru": "Выберите встречу",
+    "fr": "Choisir une réunion"
+  },
+  "Cabinet decision": {
+    "ru": "Решение кабинета",
+    "fr": "Décision du cabinet"
+  },
+  "Game day": {
+    "ru": "Игровой день",
+    "fr": "Jour de jeu"
+  },
+  "Record this in EYES? No change will be sent to HOI4.": {
+    "ru": "Записать в EYES? В HOI4 изменения не отправляются.",
+    "fr": "Consigner dans EYES ? Aucune modification ne sera envoyée à HOI4."
+  },
+  "No valid reply from Ollama. The player message has been saved.": {
+    "ru": "Ollama не вернула корректный ответ. Сообщение игрока сохранено.",
+    "fr": "Ollama n’a pas fourni de réponse valide. Le message du joueur a été enregistré."
+  },
+  "Record milestone evidence": {
+    "ru": "Записать результат этапа",
+    "fr": "Consigner le résultat de l’étape"
+  },
+  "Player record": {
+    "ru": "Запись игрока",
+    "fr": "Compte rendu du joueur"
+  },
+  "Meeting closed": {
+    "ru": "Встреча завершена",
+    "fr": "Réunion close"
+  },
+  "No confirmed news in this campaign archive.": {
+    "ru": "В архиве кампании нет подтверждённых новостей.",
+    "fr": "Aucune nouvelle confirmée dans les archives de cette campagne."
+  },
+  "meeting-role-head": {
+    "ru": "Глава государства",
+    "fr": "Chef de l’État"
+  },
+  "meeting-role-minister": {
+    "ru": "Министр",
+    "fr": "Ministre"
+  },
+  "meeting-role-general": {
+    "ru": "Генерал",
+    "fr": "Général"
+  },
+  "meeting-role-admiral": {
+    "ru": "Адмирал",
+    "fr": "Amiral"
+  },
+  "meeting-role-diplomat": {
+    "ru": "Дипломат",
+    "fr": "Diplomate"
+  },
+  "meeting-topic-economy": {
+    "ru": "Экономика",
+    "fr": "Économie"
+  },
+  "meeting-topic-laws": {
+    "ru": "Законы",
+    "fr": "Lois"
+  },
+  "meeting-topic-industry": {
+    "ru": "Промышленность",
+    "fr": "Industrie"
+  },
+  "meeting-topic-army": {
+    "ru": "Армия",
+    "fr": "Armée"
+  },
+  "meeting-topic-fleet": {
+    "ru": "Флот",
+    "fr": "Marine"
+  },
+  "meeting-topic-foreign": {
+    "ru": "Внешняя политика",
+    "fr": "Politique étrangère"
+  },
+  "meeting-topic-custom": {
+    "ru": "Своя тема",
+    "fr": "Sujet libre"
+  },
+  "meeting-mode-realistic": {
+    "ru": "Реалистичный",
+    "fr": "Réaliste"
+  },
+  "meeting-mode-plausible": {
+    "ru": "Правдоподобная альтернатива",
+    "fr": "Alternative plausible"
+  },
+  "meeting-mode-sandbox": {
+    "ru": "Песочница",
+    "fr": "Bac à sable"
+  },
+  "meeting-press-government": {
+    "ru": "Государственная",
+    "fr": "Gouvernementale"
+  },
+  "meeting-press-independent": {
+    "ru": "Независимая",
+    "fr": "Indépendante"
+  },
+  "meeting-press-opposition": {
+    "ru": "Оппозиционная",
+    "fr": "Opposition"
+  },
+  "Mod setup": {
+    "ru": "Установка мода",
+    "fr": "Installation du mod"
+  },
+  "Check registration": {
+    "ru": "Проверить регистрацию",
+    "fr": "Vérifier l’enregistrement"
+  },
+  "Register or repair mod": {
+    "ru": "Установить или восстановить регистрацию",
+    "fr": "Enregistrer ou réparer le mod"
+  },
+  "Remove registration": {
+    "ru": "Снять регистрацию",
+    "fr": "Retirer l’enregistrement"
+  },
+  "Choose the HOI4 game folder": {
+    "ru": "Выберите папку игры HOI4",
+    "fr": "Choisir le dossier du jeu HOI4"
+  },
+  "Choose the HOI4 user data folder": {
+    "ru": "Выберите папку пользовательских данных HOI4",
+    "fr": "Choisir le dossier utilisateur de HOI4"
+  },
+  "Change this launcher registration?": {
+    "ru": "Изменить регистрацию мода в лаунчере?",
+    "fr": "Modifier l’enregistrement dans le lanceur ?"
+  },
+  "valid": {
+    "ru": "Целостность подтверждена",
+    "fr": "Intégrité vérifiée"
+  },
+  "not_registered": {
+    "ru": "Мод не зарегистрирован",
+    "fr": "Mod non enregistré"
+  },
+  "unmanaged_or_changed": {
+    "ru": "Регистрация изменилась или не управляется EYES",
+    "fr": "Enregistrement modifié ou non géré"
+  },
+  "removed": {
+    "ru": "Регистрация снята",
+    "fr": "Enregistrement retiré"
+  },
+  "modified": {
+    "ru": "Карта набора модов изменена",
+    "fr": "Carte de la configuration modifiée"
+  },
+  "vanilla_map": {
+    "ru": "Базовая карта",
+    "fr": "Carte de base"
+  },
+  "unverified": {
+    "ru": "Набор модов не удалось проверить",
+    "fr": "Configuration non vérifiée"
+  },
+  "game_version_unsupported": {
+    "ru": "Требуется HOI4 1.19.5.0",
+    "fr": "HOI4 1.19.5.0 est requis"
+  },
+  "descriptor_owned_by_someone_else": {
+    "ru": "Файл регистрации принадлежит другой установке или изменён",
+    "fr": "Le fichier appartient à une autre installation ou a été modifié"
+  },
+  "close_hoi4_and_confirm": {
+    "ru": "Закройте HOI4 и подтвердите операцию",
+    "fr": "Fermez HOI4 et confirmez l’opération"
+  },
+  "managed_descriptor_required": {
+    "ru": "Эта регистрация не управляется данным установщиком",
+    "fr": "Cet enregistrement n’est pas géré par cet installateur"
+  },
+  "unsafe_mod_directory": {
+    "ru": "Выберите отдельную папку пользовательских данных HOI4",
+    "fr": "Choisissez un dossier utilisateur HOI4 séparé"
+  },
+  "setup_busy_or_game_running": {
+    "ru": "Игра запущена или выполняется установка",
+    "fr": "Le jeu est ouvert ou une installation est en cours"
+  },
+  "Select a participant.": {
+    "ru": "Выберите участника.",
+    "fr": "Sélectionnez un participant."
+  },
+  "The services start automatically. Open HOI4 manually when ready.": {
+    "ru": "Службы запускаются автоматически. HOI4 откройте вручную, когда будете готовы.",
+    "fr": "Les services démarrent automatiquement. Ouvrez HOI4 manuellement le moment venu."
+  },
+  "Meeting timeline": {
+    "ru": "Хронология встреч",
+    "fr": "Chronologie des réunions"
+  },
+  "Cabinet motion": {
+    "ru": "Предложение кабинету",
+    "fr": "Motion du cabinet"
+  },
+  "Question for the cabinet": {
+    "ru": "Вопрос кабинету",
+    "fr": "Question au cabinet"
+  },
+  "Two to four options, one per line": {
+    "ru": "От двух до четырёх вариантов, по одному на строку",
+    "fr": "Deux à quatre options, une par ligne"
+  },
+  "Propose motion": {
+    "ru": "Внести предложение",
+    "fr": "Déposer une motion"
+  },
+  "Active timeline": {
+    "ru": "Текущая хронология",
+    "fr": "Chronologie active"
+  },
+  "Archive only": {
+    "ru": "Архив для чтения",
+    "fr": "Archives en lecture seule"
+  },
+  "Selected option": {
+    "ru": "Выбранный вариант",
+    "fr": "Option retenue"
+  },
+  "Meeting format": {
+    "ru": "Формат встречи",
+    "fr": "Format de réunion"
+  },
+  "meeting-format-private": {
+    "ru": "Личная встреча",
+    "fr": "Entretien individuel"
+  },
+  "meeting-format-roundtable": {
+    "ru": "Заседание",
+    "fr": "Table ronde"
+  },
+  "meeting-format-discussion": {
+    "ru": "Свободная дискуссия",
+    "fr": "Discussion libre"
+  },
+  "meeting-role-marshal": {
+    "ru": "Фельдмаршал",
+    "fr": "Maréchal"
+  },
+  "Stop discussion": {
+    "ru": "Остановить",
+    "fr": "Arrêter"
+  },
+  "Propose a compromise": {
+    "ru": "Предложить компромисс",
+    "fr": "Proposer un compromis"
+  },
+  "Latest participant positions": {
+    "ru": "Последние позиции участников",
+    "fr": "Dernières positions des participants"
+  },
+  "Support": {
+    "ru": "Поддержка",
+    "fr": "Soutien"
+  },
+  "Concern": {
+    "ru": "Возражение",
+    "fr": "Réserve"
+  },
+  "Conditional": {
+    "ru": "Условная поддержка",
+    "fr": "Soutien conditionnel"
+  },
+  "Undecided": {
+    "ru": "Позиция открыта",
+    "fr": "Indécis"
+  },
+  "Political adviser": {
+    "ru": "Политический советник",
+    "fr": "Conseiller politique"
+  },
+  "Unnamed role": {
+    "ru": "Участник без подтверждённого имени",
+    "fr": "Rôle sans nom confirmé"
+  },
+  "Generating a reply…": {
+    "ru": "Готовится ответ…",
+    "fr": "Réponse en cours…"
+  },
+  "Discussion paused": {
+    "ru": "Дискуссия приостановлена",
+    "fr": "Discussion suspendue"
+  },
+  "Ollama did not return a valid reply. The discussion has paused.": {
+    "ru": "Ollama не вернула корректную реплику. Дискуссия приостановлена.",
+    "fr": "Ollama n’a pas fourni de réponse valide. La discussion est suspendue."
+  },
+  "Compromise requested": {
+    "ru": "Запрошен компромисс",
+    "fr": "Compromis demandé"
+  },
+  "Intervene in discussion": {
+    "ru": "Вмешаться в обсуждение",
+    "fr": "Intervenir"
+  },
+  "Discussion limit reached. Send a message to start another round.": {
+    "ru": "Лимит дискуссии исчерпан. Отправьте реплику, чтобы начать новый раунд.",
+    "fr": "Limite atteinte. Envoyez un message pour ouvrir un nouveau tour."
+  },
+  "The selected participant is absent from the current Atlas roster.": {
+    "ru": "Выбранного участника нет в актуальном списке Atlas.",
+    "fr": "Le participant sélectionné ne figure pas dans le registre actuel d’Atlas."
+  },
+  "Choose one participant for a private meeting or several for a group.": {
+    "ru": "Выберите одного участника для личной встречи или нескольких для группы.",
+    "fr": "Choisissez une personne pour un entretien ou plusieurs pour une réunion."
+  },
+  "The meeting or game context changed. Refresh before continuing.": {
+    "ru": "Встреча или игровой контекст изменились. Обновите данные перед продолжением.",
+    "fr": "La réunion ou le contexte du jeu a changé. Actualisez avant de continuer."
+  },
+  "Diplomatic recognition": {
+    "ru": "Дипломатическое признание",
+    "fr": "Reconnaissance diplomatique"
+  },
+  "Selected workspace": {
+    "ru": "Выбранная панель",
+    "fr": "Espace de travail sélectionné"
+  },
+  "No diplomatic chats yet. Choose a country in HOI4.": {
+    "ru": "Переговоров пока нет. Выберите страну в HOI4.",
+    "fr": "Aucune discussion. Choisissez un pays dans HOI4."
+  },
+  "Stop components started by this window?": {
+    "ru": "Остановить компоненты, запущенные этим окном?",
+    "fr": "Arrêter les composants lancés par cette fenêtre ?"
+  },
+  "Unassigned export session": {
+    "fr": "Session d’export non attribuée",
+    "ru": "Непривязанная сессия экспорта"
+  },
+  "Geography follows the launcher playset. Live borders and territorial actions require compatible campaign data. Modified maps are available for viewing.": {
+    "fr": "La géographie suit le playset du lanceur. Les frontières actuelles et les actions territoriales nécessitent des données de campagne compatibles. Les cartes modifiées sont consultables.",
+    "ru": "География берётся из набора модов лаунчера. Для границ кампании и территориальных действий нужны совместимые данные партии. Изменённые карты доступны для просмотра."
+  },
+  "Creation requires installing the test package and confirming in HOI4. The test package includes flag files.": {
+    "fr": "La création nécessite l’installation du paquet de test et une confirmation dans HOI4. Le paquet contient les fichiers du drapeau.",
+    "ru": "Для создания нужно установить тестовый пакет и подтвердить действие в HOI4. Тестовый пакет включает файлы флага."
+  },
+  "Recognition colours: green legal recognition, red non-recognition, gold protest, blue de facto acceptance, grey unknown.": {
+    "fr": "Couleurs : vert pour la reconnaissance juridique, rouge pour la non-reconnaissance, doré pour la protestation, bleu pour l’acceptation de fait, gris pour un statut inconnu.",
+    "ru": "Цвета признания: зелёный — признание, красный — непризнание, золотой — протест, синий — фактическое принятие, серый — неизвестно."
+  }
+}

@@ -1,0 +1,2227 @@
+[
+  {
+    "id": "memory.cautious.001",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Помним, что прошлое обсуждение {TOPIC} с {COUNTRY_A} осталось без ответа; просим уточнить, сохраняется ли та позиция.",
+    "en": "Recalling that the earlier discussion of {TOPIC} with {COUNTRY_A} went unanswered, we ask whether that position still stands."
+  },
+  {
+    "id": "memory.cautious.002",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "В прошлый раз торговый пункт {TREATY_TYPE} между {COUNTRY_A} и {COUNTRY_B} вызвал вопросы; хотели бы понять, что изменилось с тех пор.",
+    "en": "Previously the trade clause of the {TREATY_TYPE} between {COUNTRY_A} and {COUNTRY_B} raised questions; we would like to understand what has changed since."
+  },
+  {
+    "id": "memory.cautious.003",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальная формула, обсуждавшаяся между {COUNTRY_A} и {COUNTRY_B}, так и не была разъяснена; уточните, пожалуйста, её рамки.",
+    "en": "Territorial wording discussed between {COUNTRY_A} and {COUNTRY_B} was never explained; please clarify its scope."
+  },
+  {
+    "id": "memory.cautious.004",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Осторожно возвращаемся к союзной части {TREATY_TYPE}: ранее {COUNTRY_A} не дала ясного ответа, и мы просим обозначить его теперь.",
+    "en": "Cautiously returning to the alliance section of the {TREATY_TYPE}: earlier {COUNTRY_A} gave no clear answer, and we ask for one now."
+  },
+  {
+    "id": "memory.cautious.005",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Ссылаясь на прошлую переписку о суверенитете {COUNTRY_B}, просим подтвердить, что прежние оговорки по-прежнему отражают вашу позицию.",
+    "en": "Referring to the earlier exchange on the sovereignty of {COUNTRY_B}, we ask you to confirm that the previous reservations still reflect your position."
+  },
+  {
+    "id": "memory.cautious.006",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "После {DATE} наши контакты с {COUNTRY_A} прервались на середине; хотелось бы уточнить, где именно мы остановились.",
+    "en": "Since {DATE} our contacts with {COUNTRY_A} broke off midway; we would like to clarify exactly where we stopped."
+  },
+  {
+    "id": "memory.cautious.007",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Напоминаем о сорванных переговорах по {TOPIC}: {COUNTRY_B} тогда отложила ответ, и теперь нам нужна ясность, а не новый круг ожидания.",
+    "en": "Our reminder concerns the broken talks on {TOPIC}: {COUNTRY_B} postponed its answer then, and now we need clarity rather than another round of waiting."
+  },
+  {
+    "id": "memory.cautious.008",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ранее отклонённый пункт {TREATY_TYPE} о гарантиях всё ещё требует пояснений; просим сказать, какие формулировки для {COUNTRY_A} приемлемы.",
+    "en": "An earlier rejected clause of the {TREATY_TYPE} on guarantees still needs explanation; please say which wording is acceptable to {COUNTRY_A}."
+  },
+  {
+    "id": "memory.cautious.009",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Если вернуться к спору о {TOPIC}, то {COUNTRY_A} и {COUNTRY_B} разошлись в деталях; уточните, какая из прежних редакций считается рабочей.",
+    "en": "If we return to the dispute over {TOPIC}, {COUNTRY_A} and {COUNTRY_B} differed on details; clarify which of the earlier drafts is treated as the working one."
+  },
+  {
+    "id": "memory.cautious.010",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{DATE}"
+    ],
+    "ru": "Ваше прошлое предложение о союзе, сделанное около {DATE}, осталось без движения; просим уточнить, готовы ли вы к нему вернуться.",
+    "en": "Your earlier proposal of an alliance, made around {DATE}, has not moved; we ask you to clarify whether you are ready to return to it."
+  },
+  {
+    "id": "memory.cautious.011",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вопрос о том, как {COUNTRY_A} понимает суверенитет {COUNTRY_B}, уже поднимался; просим дать более точное определение, чем в прошлый раз.",
+    "en": "How {COUNTRY_A} understands the sovereignty of {COUNTRY_B} has come up before; please give a more precise definition than last time."
+  },
+  {
+    "id": "memory.cautious.012",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Стоит вспомнить, что по {TOPIC} мы уже обменялись формулировками; сейчас важно понять, какая из них остаётся вашей позицией.",
+    "en": "It is worth recalling that we already exchanged wording on {TOPIC}; what matters now is which of it remains your position."
+  },
+  {
+    "id": "memory.cautious.013",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Не станем торопить события с торговой главой {TREATY_TYPE}: прошлый отказ {COUNTRY_B} ещё не объяснён, и мы просим пояснить его причины.",
+    "en": "No rush is warranted with the trade chapter of the {TREATY_TYPE}: {COUNTRY_B}'s earlier refusal has not been explained, and we ask for its reasons."
+  },
+  {
+    "id": "memory.cautious.014",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Уточняем: после прошлого раунда у нас осталось впечатление, что {COUNTRY_A} не возражает против самого принципа; так ли это?",
+    "en": "To be clear: after the last round we were left with the impression that {COUNTRY_A} does not object to the principle itself; is that so?"
+  },
+  {
+    "id": "memory.cautious.015",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Осторожность подсказывает переспросить: ранее {COUNTRY_A} и {COUNTRY_B} согласовали лишь общие слова о безопасности, и мы хотим знать, достаточно ли этого сторонам.",
+    "en": "Caution suggests asking again: earlier {COUNTRY_A} and {COUNTRY_B} agreed only on general words about security, and we want to know whether that is enough for the parties."
+  },
+  {
+    "id": "memory.cautious.016",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Хотя тема {TOPIC} уже поднималась, мы предпочитаем отложить её до того момента, когда станут ясны прошлые расхождения; дверь остаётся открытой.",
+    "en": "Although {TOPIC} has been raised before, we prefer to defer it until the earlier differences become clear; the door remains open."
+  },
+  {
+    "id": "memory.cautious.017",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Отложим территориальный вопрос: {COUNTRY_A} в прошлый раз уклонилась от конкретики, и без неё мы не хотим повторять обмен заявлениями.",
+    "en": "Let us defer the territorial question: {COUNTRY_A} avoided specifics last time, and without them we do not wish to repeat an exchange of statements."
+  },
+  {
+    "id": "memory.cautious.018",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзная часть {TREATY_TYPE} пока откладывается: после прошлой паузы {COUNTRY_A} не обозначила сроков, и мы не станем спешить с новым раундом.",
+    "en": "Set aside for now is the alliance part of the {TREATY_TYPE}: after the earlier pause {COUNTRY_A} named no timing, and we will not rush a new round."
+  },
+  {
+    "id": "memory.cautious.019",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "По суверенитету {COUNTRY_B} мы воздержимся от нового шага: прежняя беседа оборвалась на полуслове, и продолжать её без подготовки было бы неосторожно.",
+    "en": "On the sovereignty of {COUNTRY_B} we will hold back from a new step: the previous conversation broke off mid-sentence, and continuing without preparation would be imprudent."
+  },
+  {
+    "id": "memory.cautious.020",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Безопасность по {TOPIC} лучше обсудить позже: прошлый обмен упрёками показал, что стороны ещё не готовы к спокойному разговору с {COUNTRY_A}.",
+    "en": "Security around {TOPIC} is better discussed later: the last exchange of reproaches showed that the sides are not yet ready for a calm conversation with {COUNTRY_A}."
+  },
+  {
+    "id": "memory.cautious.021",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Торговлю между {COUNTRY_A} и {COUNTRY_B} мы пока не трогаем: прошлые оценки не проверены, а без проверки повторять их не будем.",
+    "en": "Trade between {COUNTRY_A} and {COUNTRY_B} we leave aside for now: earlier estimates remain unverified, and we will not repeat them without verification."
+  },
+  {
+    "id": "memory.cautious.022",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{DATE}"
+    ],
+    "ru": "До {DATE} мы вряд ли вернёмся к этому разговору; у нас есть вопросы к прошлому раунду, и торопить ответ не станем.",
+    "en": "Before {DATE} we are unlikely to return to this conversation; we have questions about the last round and will not press for an answer."
+  },
+  {
+    "id": "memory.cautious.023",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Предложение о союзе с {COUNTRY_B} отложено, но не снято: пусть сначала прояснится, почему прошлый вариант не устроил вашу сторону.",
+    "en": "Postponed, though not withdrawn, is the alliance proposal with {COUNTRY_B}: let it first become clear why the earlier version did not suit your side."
+  },
+  {
+    "id": "memory.cautious.024",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Пункт {TREATY_TYPE} о суверенитете мы придержим до следующего раунда: {COUNTRY_A} просила паузу, и мы уважаем эту просьбу, не отказываясь от темы.",
+    "en": "Held until the next round is the sovereignty clause of the {TREATY_TYPE}: {COUNTRY_A} asked for a pause, and we respect that request without abandoning the topic."
+  },
+  {
+    "id": "memory.cautious.025",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "cautious",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спокойнее вернуться к безопасности {COUNTRY_A} и {COUNTRY_B} позже: сейчас нет ясности, какие прежние формулировки стороны считают приемлемыми.",
+    "en": "Returning to the security of {COUNTRY_A} and {COUNTRY_B} later would be calmer: there is no clarity now on which earlier wording the sides consider acceptable."
+  },
+  {
+    "id": "memory.distrustful.026",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Не скроем скепсиса: по {TOPIC} {COUNTRY_A} уже однажды отступила от сказанного, и мы хотим услышать, чем нынешние слова отличаются.",
+    "en": "Frankly, we remain sceptical: on {TOPIC} {COUNTRY_A} has already retreated from its word once, and we want to hear how the present words differ."
+  },
+  {
+    "id": "memory.distrustful.027",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "После прошлого отказа {COUNTRY_B} подписать торговую часть {TREATY_TYPE} у нас остались вопросы: что именно тогда не устроило и не повторится ли это.",
+    "en": "After {COUNTRY_B}'s earlier refusal to sign the trade part of the {TREATY_TYPE}, questions remain: what exactly was unacceptable then, and whether it will recur."
+  },
+  {
+    "id": "memory.distrustful.028",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Ваши заверения о безопасности {COUNTRY_B} звучали и раньше, но расходились с делом; поясните, какие гарантии {COUNTRY_A} готова обсуждать теперь.",
+    "en": "Assurances about the security of {COUNTRY_B} were heard before and did not match practice; explain which guarantees {COUNTRY_A} is ready to discuss now."
+  },
+  {
+    "id": "memory.distrustful.029",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Молчание {COUNTRY_A} вокруг {TREATY_TYPE} затянулось после прошлого отказа; хотим знать, какие из прежних поправок действительно сняты.",
+    "en": "Silence around the {TREATY_TYPE} has lasted since {COUNTRY_A}'s earlier refusal; we want to know which of the former amendments are actually withdrawn."
+  },
+  {
+    "id": "memory.distrustful.030",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Территориальный вопрос по {TOPIC} уже переписывался, и каждый раз {COUNTRY_A} меняла акценты; уточните, какая версия окончательная.",
+    "en": "Wording on the territorial question of {TOPIC} has been rewritten before, and each time {COUNTRY_A} shifted emphasis; clarify which version is final."
+  },
+  {
+    "id": "memory.distrustful.031",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{DATE}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Сославшись на {DATE}, вы обещали вернуться к союзу с {COUNTRY_B}, но разговора не последовало; просим объяснить эту паузу.",
+    "en": "Relying on {DATE}, you promised to return to the alliance with {COUNTRY_B}, but no conversation followed; please explain that pause."
+  },
+  {
+    "id": "memory.distrustful.032",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Опыт подсказывает недоверие: в прошлый раз суверенитет {COUNTRY_B} обсуждался в обход {COUNTRY_A}, и мы просим пояснить, изменился ли подход.",
+    "en": "Experience counsels distrust: last time the sovereignty of {COUNTRY_B} was discussed around {COUNTRY_A}, and we ask you to explain whether the approach has changed."
+  },
+  {
+    "id": "memory.distrustful.033",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Повторное обращение по {TOPIC} вынуждает спросить прямо: считаете ли вы прошлые договорённости обязательными для себя или только удобными?",
+    "en": "Raising {TOPIC} again forces a direct question: do you consider past understandings binding on you, or merely convenient?"
+  },
+  {
+    "id": "memory.distrustful.034",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сорванные переговоры о {TREATY_TYPE} оставили у {COUNTRY_A} осадок; мы просим назвать причину срыва, прежде чем обсуждать новый торговый текст.",
+    "en": "Broken negotiations on the {TREATY_TYPE} left a residue with {COUNTRY_A}; we ask you to name the cause of the breakdown before discussing a new trade text."
+  },
+  {
+    "id": "memory.distrustful.035",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Помнится, по {TOPIC} {COUNTRY_B} получила обещания, которых не дождалась; уточните, что из обещанного по безопасности вообще выполнимо.",
+    "en": "Memory serves that on {TOPIC} {COUNTRY_B} received promises it never saw fulfilled; clarify what of the promised security is feasible at all."
+  },
+  {
+    "id": "memory.distrustful.036",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Обещание союза, данное {COUNTRY_A} ранее, до сих пор без продолжения; скажите, это забывчивость или осознанная позиция.",
+    "en": "A promise of alliance given earlier by {COUNTRY_A} still has no follow-up; say whether this is forgetfulness or a deliberate position."
+  },
+  {
+    "id": "memory.distrustful.037",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Пояснения по территории {COUNTRY_B} уже расходились между собой; просим свести их в одну понятную формулу, прежде чем мы продолжим.",
+    "en": "Explanations on the territory of {COUNTRY_B} have already contradicted each other; please bring them into one clear formula before we continue."
+  },
+  {
+    "id": "memory.distrustful.038",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Трудно поверить в искренность поправки {TREATY_TYPE}: {COUNTRY_A} настояла на ней после того, как суверенитет был обсуждён иначе; поясните этот поворот.",
+    "en": "Contradiction marks the {TREATY_TYPE} amendment: {COUNTRY_A} insisted on it after sovereignty had been discussed differently; explain this turn."
+  },
+  {
+    "id": "memory.distrustful.039",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "С тех пор как {DATE} {COUNTRY_B} перестала отвечать на запросы, доверия не прибавилось; уточните, что мешает возобновить обмен.",
+    "en": "Trust has not grown since {DATE}, when {COUNTRY_B} stopped answering our queries; clarify what prevents resuming the exchange."
+  },
+  {
+    "id": "memory.distrustful.040",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Настораживает, что торговый вопрос с {COUNTRY_B} всплывает лишь тогда, когда вам нужна уступка; поясните, есть ли здесь постоянный интерес.",
+    "en": "Disquieting is the pattern that the trade issue with {COUNTRY_B} surfaces only when you need a concession; explain whether there is a lasting interest here."
+  },
+  {
+    "id": "memory.distrustful.041",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Мы не станем торопиться с ответом {COUNTRY_A}: прошлый опыт показал, что поспешность здесь обходится дорого, и мы подождём более ясных сигналов.",
+    "en": "We will not hurry our answer to {COUNTRY_A}: past experience shows that haste is costly here, and we will wait for clearer signals."
+  },
+  {
+    "id": "memory.distrustful.042",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обсуждать безопасность {COUNTRY_B} в рамках {TREATY_TYPE} мы пока не будем: слишком свежи воспоминания о том, как прошлый текст переписывался в одностороннем порядке.",
+    "en": "Security of {COUNTRY_B} within the {TREATY_TYPE} we will not discuss yet: memories are too fresh of how the earlier text was rewritten unilaterally."
+  },
+  {
+    "id": "memory.distrustful.043",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Торговый разговор о {TOPIC} отложен до того времени, когда {COUNTRY_A} объяснит прошлый отказ; пока мы не видим смысла повторять одни и те же аргументы.",
+    "en": "Deferred is the trade conversation on {TOPIC} until {COUNTRY_A} explains its earlier refusal; for now we see no point in repeating the same arguments."
+  },
+  {
+    "id": "memory.distrustful.044",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "К идее союза с {COUNTRY_B} мы вернёмся позже: после прошлой небрежности в переписке есть сомнения, что ваша сторона доведёт дело до конца.",
+    "en": "Doubts remain about an alliance with {COUNTRY_B}: after the earlier carelessness in correspondence, we are not sure your side will see it through."
+  },
+  {
+    "id": "memory.distrustful.045",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет в связи с {TOPIC} мы обсуждать не готовы именно сейчас: прошлые формулировки {COUNTRY_A} оставляли слишком много исключений.",
+    "en": "Sovereignty in connection with {TOPIC} we are not ready to discuss right now: {COUNTRY_A}'s earlier wording left too many exceptions."
+  },
+  {
+    "id": "memory.distrustful.046",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Ответ {COUNTRY_B} по прошлому обращению мы отложим до {DATE}: спешить не станем, пока не увидим, что прежние ошибки признаны.",
+    "en": "Until {DATE} we will defer our reply to {COUNTRY_B} on the earlier approach: we will not hurry until we see the earlier mistakes acknowledged."
+  },
+  {
+    "id": "memory.distrustful.047",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Территориальные претензии {COUNTRY_A} мы пока оставляем без нового обсуждения: в прошлый раз спор закончился взаимными упрёками, и повторять это не стоит.",
+    "en": "Claims of {COUNTRY_A} on territory we leave without new discussion for now: last time the dispute ended in mutual reproaches, and repeating it is not worthwhile."
+  },
+  {
+    "id": "memory.distrustful.048",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Новый раунд по безопасности {COUNTRY_A} и {COUNTRY_B} подождёт: у нас нет уверенности, что прошлые договорённости не будут пересмотрены при первом удобном случае.",
+    "en": "New round on the security of {COUNTRY_A} and {COUNTRY_B} can wait: we are not sure the earlier understandings will not be revisited at the first opportunity."
+  },
+  {
+    "id": "memory.distrustful.049",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзная глава {TREATY_TYPE} откладывается: {COUNTRY_A} уже отказывалась от похожего текста, и у нас нет оснований ждать иного исхода сейчас.",
+    "en": "Alliance chapter of the {TREATY_TYPE} is put off: {COUNTRY_A} has already refused a similar text, and we have no grounds to expect a different outcome now."
+  },
+  {
+    "id": "memory.distrustful.050",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Обсуждение {TOPIC} с {COUNTRY_B} мы придержим: прошлый срыв переговоров ещё не объяснён, а начинать заново без объяснений было бы странно.",
+    "en": "Discussion of {TOPIC} with {COUNTRY_B} we will hold back: the earlier breakdown of talks has not been explained, and starting over without explanation would be strange."
+  },
+  {
+    "id": "memory.conciliatory.051",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Ценим, что прошлый разговор о безопасности {COUNTRY_A} и {COUNTRY_B} не был закрыт окончательно; хотим понять, на каких условиях его можно продолжить.",
+    "en": "Appreciating that the earlier conversation on the security of {COUNTRY_A} and {COUNTRY_B} was not closed for good, we want to understand on what terms it can continue."
+  },
+  {
+    "id": "memory.conciliatory.052",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Готовы вернуться к торговой части {TREATY_TYPE}, которую {COUNTRY_A} ранее отклонила; подскажите, какие поправки сделали бы её приемлемой.",
+    "en": "Ready are we to return to the trade part of the {TREATY_TYPE} that {COUNTRY_A} rejected earlier; tell us which amendments would make it acceptable."
+  },
+  {
+    "id": "memory.conciliatory.053",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}"
+    ],
+    "ru": "Признаём, что в прошлом раунде по {TOPIC} наша сторона была излишне жёсткой; хотим уточнить, что именно мешало согласию тогда.",
+    "en": "Admitting that in the last round on {TOPIC} our side was overly rigid, we want to clarify what exactly prevented agreement then."
+  },
+  {
+    "id": "memory.conciliatory.054",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Понимаем чувствительность территориального вопроса для {COUNTRY_B} и не торопим {COUNTRY_A}; просим лишь пояснить, что из прошлых идей остаётся для вас важным.",
+    "en": "Understanding the sensitivity of the territorial question for {COUNTRY_B}, we do not press {COUNTRY_A}; we only ask you to clarify what of the earlier ideas remains important to you."
+  },
+  {
+    "id": "memory.conciliatory.055",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Надеемся, что прошлая сдержанность {COUNTRY_A} в отношении {TREATY_TYPE} была вызвана обстоятельствами; уточните, что позволило бы вернуться к союзной теме.",
+    "en": "Hopes are that {COUNTRY_A}'s earlier reticence about the {TREATY_TYPE} was caused by circumstances; clarify what would allow a return to the alliance topic."
+  },
+  {
+    "id": "memory.conciliatory.056",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Уважаем озабоченность {COUNTRY_B} по поводу суверенитета в связи с {TOPIC} и просим уточнить, какие заверения были бы для вас достаточными.",
+    "en": "Respect for {COUNTRY_B}'s concern about sovereignty in connection with {TOPIC} is genuine; please clarify what assurances would be sufficient for you."
+  },
+  {
+    "id": "memory.conciliatory.057",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "После прошлого обмена у нас осталось ощущение недопонимания, а не спора; хотим уточнить у {COUNTRY_A}, что было услышано неверно.",
+    "en": "Misunderstanding, rather than dispute, is what we were left with after the last exchange; we want to clarify with {COUNTRY_A} what was heard incorrectly."
+  },
+  {
+    "id": "memory.conciliatory.058",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "С {DATE} торговый диалог с {COUNTRY_B} замер, и нам жаль это признавать; просим подсказать, что помогло бы его оживить.",
+    "en": "Regretting that since {DATE} the trade dialogue with {COUNTRY_B} has stalled, we ask you to suggest what would help revive it."
+  },
+  {
+    "id": "memory.conciliatory.059",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Прошлые опасения {COUNTRY_A} по {TOPIC} нам понятны; хотим уточнить, какие шаги по безопасности вы сочли бы достаточными для продолжения разговора.",
+    "en": "Concerns voiced earlier by {COUNTRY_A} about {TOPIC} are understandable; we want to clarify which security steps you would consider sufficient to continue the conversation."
+  },
+  {
+    "id": "memory.conciliatory.060",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Нам неловко за прошлую паузу в переговорах о союзе с {COUNTRY_B}; готовы объяснить её и просим уточнить, сохраняется ли интерес с вашей стороны.",
+    "en": "Awkwardness about the earlier pause in the alliance talks with {COUNTRY_B} is ours to explain; please clarify whether your interest remains."
+  },
+  {
+    "id": "memory.conciliatory.061",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Если {COUNTRY_A} помнит прошлый спор о {TOPIC} как отказ, мы хотели бы это исправить: уточните, какую формулу вы сочли бы справедливой.",
+    "en": "Should {COUNTRY_A} remember the earlier dispute over {TOPIC} as a refusal, we would like to correct that: clarify which formula you would consider fair."
+  },
+  {
+    "id": "memory.conciliatory.062",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сожалеем, что формулировка {TREATY_TYPE} о суверенитете прозвучала как давление на {COUNTRY_A}; просим уточнить, какая редакция была бы приемлемой.",
+    "en": "Sorry we are that the {TREATY_TYPE} wording on sovereignty sounded like pressure on {COUNTRY_A}; please clarify which revision would be acceptable."
+  },
+  {
+    "id": "memory.conciliatory.063",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Пересмотреть своё прошлое предложение по торговле между {COUNTRY_A} и {COUNTRY_B} мы готовы; уточните, какая из его частей вызвала у вас наибольшие возражения.",
+    "en": "Revisions of our earlier trade proposal between {COUNTRY_A} and {COUNTRY_B} are possible; clarify which of its parts drew your strongest objections."
+  },
+  {
+    "id": "memory.conciliatory.064",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{DATE}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Помним о разговоре с {COUNTRY_A}, прерванном около {DATE}, и не держим обиды; хотим понять, при каких условиях его можно возобновить.",
+    "en": "Interrupted around {DATE}, our conversation with {COUNTRY_A} is remembered without grudge; we want to understand on what conditions it can be resumed."
+  },
+  {
+    "id": "memory.conciliatory.065",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Рады, что {COUNTRY_A} и {COUNTRY_B} не отказались от темы безопасности окончательно; хотим уточнить, какие из прошлых идей вы готовы обсуждать снова.",
+    "en": "Glad we are that {COUNTRY_A} and {COUNTRY_B} have not abandoned the security topic for good; we want to clarify which earlier ideas you are ready to discuss again."
+  },
+  {
+    "id": "memory.conciliatory.066",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Пусть разговор о {TOPIC} немного подождёт: мы хотим сначала понять прошлые возражения {COUNTRY_A}, а потом возвращаться к теме без спешки.",
+    "en": "Waiting a little would do the conversation on {TOPIC} good: we want first to understand {COUNTRY_A}'s earlier objections, then return to the topic without haste."
+  },
+  {
+    "id": "memory.conciliatory.067",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговлю с {COUNTRY_B} по {TREATY_TYPE} отложим до спокойного момента: прошлый отказ был неприятен, но мы не считаем его окончательным.",
+    "en": "Deferring trade with {COUNTRY_B} under the {TREATY_TYPE} to a calmer moment, we note the earlier refusal was unpleasant but not final in our eyes."
+  },
+  {
+    "id": "memory.conciliatory.068",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальную тему между {COUNTRY_A} и {COUNTRY_B} придержим: не хотим опять ставить стороны в неудобное положение резким вопросом.",
+    "en": "Postponing the territorial topic between {COUNTRY_A} and {COUNTRY_B}, we wish to avoid putting the sides in an awkward position again with an abrupt question."
+  },
+  {
+    "id": "memory.conciliatory.069",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "К союзу с {COUNTRY_A} вернёмся после {DATE}: прежний отказ объясним, и мы предпочтём подготовить почву, чем настаивать сейчас.",
+    "en": "Returning to the alliance with {COUNTRY_A} after {DATE} suits us: the earlier refusal is explicable, and we would rather prepare the ground than insist now."
+  },
+  {
+    "id": "memory.conciliatory.070",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Тема суверенитета {COUNTRY_B} в связи с {TOPIC} откладывается по нашей инициативе: хотим избежать нового недопонимания, а не закрыть вопрос.",
+    "en": "Deferred at our initiative is the matter of {COUNTRY_B}'s sovereignty in connection with {TOPIC}: we want to avoid fresh misunderstanding, not to close the question."
+  },
+  {
+    "id": "memory.conciliatory.071",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Ответ {COUNTRY_B} на прошлое обращение мы дадим позже: пусть страсти улягутся, а мы тем временем поищем приемлемую для всех формулировку.",
+    "en": "Answers to {COUNTRY_B} on the earlier approach will come later: let tempers cool while we look for wording acceptable to all."
+  },
+  {
+    "id": "memory.conciliatory.072",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Следующий раунд начнём с безопасности {COUNTRY_A} и {COUNTRY_B}: сегодняшняя осторожность продиктована желанием сохранить достигнутое, а не отказаться от него.",
+    "en": "While the security of {COUNTRY_A} and {COUNTRY_B} waits for the next round, today's caution stems from a wish to preserve what was reached, not to abandon it."
+  },
+  {
+    "id": "memory.conciliatory.073",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Разговор о {TOPIC} с {COUNTRY_A} отложим ненадолго: хотим собрать более точные аргументы, чтобы не повторить прошлое расхождение.",
+    "en": "Briefly postponed is the conversation on {TOPIC} with {COUNTRY_A}: we want to gather more precise arguments so as not to repeat the earlier disagreement."
+  },
+  {
+    "id": "memory.conciliatory.074",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзную часть {TREATY_TYPE} с {COUNTRY_B} пока отложим: наш прошлый порыв был воспринят как нажим, и мы не хотим повторять ошибку.",
+    "en": "Given that our earlier impulse was taken as pressure, we will defer the alliance part of the {TREATY_TYPE} with {COUNTRY_B} for now and not repeat the mistake."
+  },
+  {
+    "id": "memory.conciliatory.075",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "Возвращаться к вопросу о территории с {COUNTRY_A} раньше {DATE} мы не станем: за это время можно спокойно разобрать прошлые возражения.",
+    "en": "Not earlier than {DATE} will we bring the territorial question with {COUNTRY_A} back for discussion: meanwhile the earlier objections can be calmly examined."
+  },
+  {
+    "id": "memory.neutral.076",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "По {TOPIC} ранее состоялся обмен мнениями с {COUNTRY_A}; уточните, сохраняется ли изложенная тогда позиция по безопасности.",
+    "en": "Regarding {TOPIC}, an exchange of views with {COUNTRY_A} took place earlier; clarify whether the security position stated then remains unchanged."
+  },
+  {
+    "id": "memory.neutral.077",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговая глава {TREATY_TYPE} обсуждалась с {COUNTRY_B} в прошлом раунде; просим указать, какие пункты остаются несогласованными.",
+    "en": "Concerning the trade chapter of the {TREATY_TYPE}, it was discussed with {COUNTRY_B} in the previous round; please indicate which points remain unagreed."
+  },
+  {
+    "id": "memory.neutral.078",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ранее {COUNTRY_A} поднимала {TOPIC}; для продолжения работы нужно уточнить, какие формулировки вы считаете действующими.",
+    "en": "Clarity is needed on {TOPIC}, which {COUNTRY_A} raised earlier: which wording do you consider current for further work?"
+  },
+  {
+    "id": "memory.neutral.079",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Обмен мнениями по территории между {COUNTRY_A} и {COUNTRY_B} завершился без итога; уточните, продолжается ли обсуждение и в каком формате.",
+    "en": "Exchange on territory between {COUNTRY_A} and {COUNTRY_B} ended without result; clarify whether the discussion continues and in what format."
+  },
+  {
+    "id": "memory.neutral.080",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзная тема в рамках {TREATY_TYPE} затрагивалась ранее; просим подтвердить, что {COUNTRY_A} по-прежнему рассматривает её как открытую.",
+    "en": "Allied topic within the {TREATY_TYPE} was touched upon earlier; please confirm that {COUNTRY_A} still regards it as open."
+  },
+  {
+    "id": "memory.neutral.081",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "После {DATE} вопрос о суверенитете {COUNTRY_B} в переписке не возникал; уточните, снят ли он с обсуждения или отложен.",
+    "en": "Since {DATE} the question of {COUNTRY_B}'s sovereignty has not arisen in correspondence; clarify whether it has been removed from discussion or postponed."
+  },
+  {
+    "id": "memory.neutral.082",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Прошлое обращение {COUNTRY_B} осталось без формального ответа; просим сообщить, был ли он направлен по иным каналам.",
+    "en": "Reply to the earlier approach of {COUNTRY_B} was never formalised; please say whether one was sent through other channels."
+  },
+  {
+    "id": "memory.neutral.083",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Стороны {COUNTRY_A} и {COUNTRY_B} уже обменивались торговыми перечнями; уточните, какой из вариантов считается исходным для дальнейшей работы.",
+    "en": "Lists of trade items were already exchanged by {COUNTRY_A} and {COUNTRY_B}; clarify which version is treated as the baseline for further work."
+  },
+  {
+    "id": "memory.neutral.084",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Гарантии безопасности {COUNTRY_B} обсуждались с {COUNTRY_A} лишь в общем виде; для ясности просим указать, какие из них обсуждались конкретно.",
+    "en": "Guarantees regarding the security of {COUNTRY_B} were discussed with {COUNTRY_A} only in general terms; for clarity, please indicate which ones specifically."
+  },
+  {
+    "id": "memory.neutral.085",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Территориальная часть по {TOPIC} с {COUNTRY_A} была отложена в прошлый раз; просим уточнить, кто и когда намерен к ней вернуться.",
+    "en": "Timing of the territorial part on {TOPIC} with {COUNTRY_A}, postponed last time, is unclear; please clarify who intends to return to it and when."
+  },
+  {
+    "id": "memory.neutral.086",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Предложение о союзе, переданное {COUNTRY_B} около {DATE}, остаётся без ответа; уточните его статус, чтобы мы могли планировать дальше.",
+    "en": "Status of the alliance proposal conveyed to {COUNTRY_B} around {DATE} remains unclear; please clarify it so that we can plan further."
+  },
+  {
+    "id": "memory.neutral.087",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "В прошлом раунде {COUNTRY_A} связывала суверенитет {COUNTRY_B} с иными условиями; просим уточнить, сохраняется ли эта связка.",
+    "en": "Linkage between the sovereignty of {COUNTRY_B} and other conditions was made by {COUNTRY_A} in the previous round; please clarify whether it remains."
+  },
+  {
+    "id": "memory.neutral.088",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "По {TREATY_TYPE} остаётся несколько незакрытых пунктов; уточните, какие из них {COUNTRY_A} относит к прошлым договорённостям, а какие к новым.",
+    "en": "Points of the {TREATY_TYPE} still remain open; clarify which of them {COUNTRY_A} attributes to earlier understandings and which to new ones."
+  },
+  {
+    "id": "memory.neutral.089",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Торговый вопрос {TOPIC} с {COUNTRY_B} возвращается в повестку; просим пояснить, чем прошлая редакция не устроила вашу сторону.",
+    "en": "Why the earlier draft did not suit your side is what we ask you to explain, as the trade issue of {TOPIC} with {COUNTRY_B} returns to the agenda."
+  },
+  {
+    "id": "memory.neutral.090",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Прежние заверения {COUNTRY_A} по безопасности не были оформлены; уточните, предполагается ли придать им какую-либо форму в будущем.",
+    "en": "Formalising the earlier security assurances of {COUNTRY_A} was never done; clarify whether they are meant to be given any form in the future."
+  },
+  {
+    "id": "memory.neutral.091",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{DATE}"
+    ],
+    "ru": "Рассмотрение {TOPIC} откладывается до {DATE}: к этому времени будут собраны материалы прошлого раунда, и обсуждение станет предметным.",
+    "en": "Consideration of {TOPIC} is deferred until {DATE}: by then the materials of the previous round will be collected and the discussion will become substantive."
+  },
+  {
+    "id": "memory.neutral.092",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговая часть {TREATY_TYPE} с {COUNTRY_A} переносится на следующий раунд; иных решений по ней пока не принято.",
+    "en": "Moved to the next round is the trade part of the {TREATY_TYPE} with {COUNTRY_A}; no other decisions on it have been taken yet."
+  },
+  {
+    "id": "memory.neutral.093",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Тема территории {COUNTRY_B} снята с текущей повестки до появления новых вводных; прошлые материалы сохраняются в работе.",
+    "en": "Removed from the current agenda until new inputs appear is the territorial question of {COUNTRY_B}; the earlier materials remain in work."
+  },
+  {
+    "id": "memory.neutral.094",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Союзное предложение {COUNTRY_A} по {TOPIC} отложено до завершения внутренних согласований; о возобновлении сообщим отдельно.",
+    "en": "Pending internal consultations is {COUNTRY_A}'s alliance proposal on {TOPIC}; we will announce the resumption separately."
+  },
+  {
+    "id": "memory.neutral.095",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Обсуждение суверенитета {COUNTRY_B} с {COUNTRY_A} приостановлено; вопрос не закрыт, но требует дополнительной проработки.",
+    "en": "Suspended is the discussion of {COUNTRY_B}'s sovereignty with {COUNTRY_A}; the question is not closed but requires further study."
+  },
+  {
+    "id": "memory.neutral.096",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "Ответ по прошлому обращению {COUNTRY_A} будет дан после {DATE}; до тех пор тема остаётся в ожидании.",
+    "en": "Answer on {COUNTRY_A}'s earlier approach will be given after {DATE}; until then the matter remains pending."
+  },
+  {
+    "id": "memory.neutral.097",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Пункт {TREATY_TYPE} о безопасности {COUNTRY_B} отложен до следующего заседания; преждевременных выводов мы не делаем.",
+    "en": "No premature conclusions are drawn as the {TREATY_TYPE} clause on the security of {COUNTRY_B} is deferred to the next session."
+  },
+  {
+    "id": "memory.neutral.098",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Торговые переговоры {COUNTRY_A} и {COUNTRY_B} по {TOPIC} приостановлены по взаимному согласию; срок возобновления не определён.",
+    "en": "Mutual agreement has suspended the trade negotiations between {COUNTRY_A} and {COUNTRY_B} on {TOPIC}; no date for resumption has been set."
+  },
+  {
+    "id": "memory.neutral.099",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Рассмотрение союза с {COUNTRY_B} перенесено на период после {DATE}; до этого времени сторонам полезно уточнить прошлые расхождения.",
+    "en": "Review of the alliance with {COUNTRY_B} is moved to the period after {DATE}; until then it is useful for the sides to clarify earlier differences."
+  },
+  {
+    "id": "memory.neutral.100",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет в связи с {TOPIC} отложен до получения разъяснений {COUNTRY_A}; без них обсуждать формулировки преждевременно.",
+    "en": "Explanations from {COUNTRY_A} are awaited before the sovereignty question in connection with {TOPIC} is taken up; without them wording talks are premature."
+  },
+  {
+    "id": "memory.firm.101",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Требуем ясности по {TOPIC}: {COUNTRY_A} уже уходила от прямого ответа, и повторения этого мы не примем.",
+    "en": "Directness is required on {TOPIC}: {COUNTRY_A} has already evaded a direct answer, and we will not accept a repetition."
+  },
+  {
+    "id": "memory.firm.102",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Настаиваем: прошлый отказ {COUNTRY_B} от гарантий в рамках {TREATY_TYPE} должен быть объяснён, а не просто повторён.",
+    "en": "Insistence is warranted: {COUNTRY_B}'s earlier refusal of guarantees under the {TREATY_TYPE} must be explained, not simply repeated."
+  },
+  {
+    "id": "memory.firm.103",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "С {DATE} торговый вопрос с {COUNTRY_A} остаётся без движения; требуем назвать причину и сроки, иначе обсуждение теряет смысл.",
+    "en": "Reason and timeframe for the trade matter with {COUNTRY_A}, stalled since {DATE}, are what we require; otherwise the discussion loses its point."
+  },
+  {
+    "id": "memory.firm.104",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Позиция {COUNTRY_A} по территории {COUNTRY_B} менялась без объяснений; просим зафиксировать её в одной редакции, иначе говорить не о чем.",
+    "en": "Fix the position of {COUNTRY_A} on the territory of {COUNTRY_B} in a single version, as it has changed without explanation; otherwise there is nothing to discuss."
+  },
+  {
+    "id": "memory.firm.105",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзная глава {TREATY_TYPE} не может висеть бесконечно: {COUNTRY_A} должна сказать, намерена ли она продолжать прежнюю линию или нет.",
+    "en": "Indefinitely the alliance chapter of the {TREATY_TYPE} cannot hang: {COUNTRY_A} must say whether it intends to continue the earlier line or not."
+  },
+  {
+    "id": "memory.firm.106",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Напоминаем твёрдо: суверенитет {COUNTRY_B} обсуждался с {COUNTRY_A} как отдельный вопрос, и смешивать его с другими темами мы не позволим.",
+    "en": "Firm is our reminder: the sovereignty of {COUNTRY_B} was discussed with {COUNTRY_A} as a separate matter, and we will not allow it to be mixed with other topics."
+  },
+  {
+    "id": "memory.firm.107",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Прямо скажем: ответ {COUNTRY_B} на прошлое обращение был уклончивым, и нам нужен либо ясный отказ, либо ясное согласие.",
+    "en": "Evasiveness marked {COUNTRY_B}'s answer to the earlier approach, and we need either a clear refusal or a clear consent."
+  },
+  {
+    "id": "memory.firm.108",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Обещание {COUNTRY_A} пояснить свои опасения по {TOPIC} осталось невыполненным; требуем конкретики, а не общих слов о безопасности.",
+    "en": "Specifics, not general words about security, are what we require: on {TOPIC} {COUNTRY_A} promised to explain its concerns and did not."
+  },
+  {
+    "id": "memory.firm.109",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Считаем нужным заявить: торговая редакция {TREATY_TYPE} с {COUNTRY_B} не была отклонена окончательно, но и молчание ответом не считаем.",
+    "en": "Silence is not an answer, we state plainly: the trade version of the {TREATY_TYPE} with {COUNTRY_B} was not finally rejected, but neither do we treat silence as a reply."
+  },
+  {
+    "id": "memory.firm.110",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Формулировки по {TOPIC} должны быть приведены к одной версии: {COUNTRY_A} не может ссылаться то на одну, то на другую.",
+    "en": "One version of the wording on {TOPIC} must be settled: {COUNTRY_A} cannot cite one and then the other."
+  },
+  {
+    "id": "memory.firm.111",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "После {DATE} союзная тема с {COUNTRY_B} обсуждалась лишь вскользь; настаиваем на полноценном разговоре, иначе прошлые слова теряют вес.",
+    "en": "Full conversation on the alliance with {COUNTRY_B} is what we insist on, since after {DATE} the topic was discussed only in passing; otherwise earlier words lose weight."
+  },
+  {
+    "id": "memory.firm.112",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Пункт {TREATY_TYPE} о суверенитете требует прямого подтверждения {COUNTRY_A}: двусмысленность здесь для нас неприемлема.",
+    "en": "Ambiguity here is unacceptable to us: the sovereignty clause of the {TREATY_TYPE} requires {COUNTRY_A}'s direct confirmation."
+  },
+  {
+    "id": "memory.firm.113",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{TOPIC}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Возвращение к {TOPIC} неизбежно, и {COUNTRY_B} должна решить: продолжать прежнюю линию или предложить иную, но определённо.",
+    "en": "Return to {TOPIC} is inevitable, and {COUNTRY_B} must decide: continue the earlier line or propose another, but definitively."
+  },
+  {
+    "id": "memory.firm.114",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Безопасность {COUNTRY_B} не предмет торга; просим {COUNTRY_A} подтвердить это прямо, как и было заявлено в прошлый раз.",
+    "en": "Bargaining over the security of {COUNTRY_B} is unacceptable; we ask {COUNTRY_A} to confirm this directly, as was stated last time."
+  },
+  {
+    "id": "memory.firm.115",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Вопрос {TOPIC} с {COUNTRY_A} мы поднимаем повторно и ждём содержательного ответа: прежние отговорки уже были услышаны.",
+    "en": "Raising the issue of {TOPIC} with {COUNTRY_A} again, we expect a substantive answer: the earlier evasions have already been heard."
+  },
+  {
+    "id": "memory.firm.116",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Обсуждение {TOPIC} с {COUNTRY_A} приостанавливаем до появления ясной позиции; наше терпение не бесконечно, но время мы даём.",
+    "en": "Patience is not endless, yet time we grant: discussion of {TOPIC} with {COUNTRY_A} is suspended until a clear position appears."
+  },
+  {
+    "id": "memory.firm.117",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Решение по безопасности {COUNTRY_B} отложено до {DATE}; если к тому времени ничего не изменится, мы вернёмся к нему в ином тоне.",
+    "en": "Should nothing change by {DATE}, we will return to the security of {COUNTRY_B} in a different tone; the decision is deferred until then."
+  },
+  {
+    "id": "memory.firm.118",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союз по {TREATY_TYPE} с {COUNTRY_A} пока отложен: мы не намерены предлагать его снова, пока прошлые условия не пересмотрены.",
+    "en": "Proposal of the alliance under the {TREATY_TYPE} to {COUNTRY_A} will not be repeated until the earlier terms are revisited; for now it is deferred."
+  },
+  {
+    "id": "memory.firm.119",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Торговый вопрос {TOPIC} с {COUNTRY_B} снимаем с ближайшей повестки; вернёмся, когда прошлый отказ будет объяснён по существу.",
+    "en": "Removal of the trade issue of {TOPIC} with {COUNTRY_B} from the immediate agenda follows; we will return when the earlier refusal is explained in substance."
+  },
+  {
+    "id": "memory.firm.120",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальный спор {COUNTRY_A} и {COUNTRY_B} приостанавливаем: без признания прошлых формулировок продолжать его бессмысленно.",
+    "en": "Pointless without acknowledging the earlier wording is any continuation of the territorial dispute between {COUNTRY_A} and {COUNTRY_B}; we suspend it."
+  },
+  {
+    "id": "memory.firm.121",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет в связи с {TOPIC} откладываем до ответа {COUNTRY_A}; до тех пор никаких новых предложений по этой теме не будет.",
+    "en": "Until {COUNTRY_A} answers, sovereignty in connection with {TOPIC} is deferred; no new proposals on this matter will be made before that."
+  },
+  {
+    "id": "memory.firm.122",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Ответ на прошлое обращение {COUNTRY_B} отложен до {DATE}: мы ждём, что к этому сроку будет названа причина прежнего отказа.",
+    "en": "Expectation that the reason for the earlier refusal will be named by {DATE} is why our answer to {COUNTRY_B} is deferred until then."
+  },
+  {
+    "id": "memory.firm.123",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии безопасности {COUNTRY_B} с {COUNTRY_A} пока не обсуждаем; сначала пусть будет сказано, что именно понимается под гарантиями.",
+    "en": "Understanding must come first: let it be stated what is meant by guarantees before we discuss security guarantees for {COUNTRY_B} with {COUNTRY_A}."
+  },
+  {
+    "id": "memory.firm.124",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Предложение о союзе с {COUNTRY_B} придержано: мы не станем повторять его, пока не увидим, что прошлые оговорки восприняты серьёзно.",
+    "en": "Repetition of the alliance proposal to {COUNTRY_B} will not follow until we see that the earlier reservations were taken seriously."
+  },
+  {
+    "id": "memory.firm.125",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговую главу {TREATY_TYPE} с {COUNTRY_A} откладываем до прояснения прошлых расхождений; нажимать на этот пункт сейчас не станем.",
+    "en": "Pressure on the trade chapter of the {TREATY_TYPE} with {COUNTRY_A} will not be applied now; we defer it until the earlier differences are clarified."
+  },
+  {
+    "id": "memory.disappointed.126",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Жаль, что {COUNTRY_A} оставила без ответа прошлый запрос по {TOPIC}; хотим понять, было ли это случайностью или решением.",
+    "en": "Regret is what we feel that {COUNTRY_A} left our earlier request on {TOPIC} unanswered; we want to understand whether this was an accident or a decision."
+  },
+  {
+    "id": "memory.disappointed.127",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Досадно, что торговая часть {TREATY_TYPE} с {COUNTRY_B} так и осталась на словах; просим пояснить, что помешало делу.",
+    "en": "Disappointment is ours that the trade part of the {TREATY_TYPE} with {COUNTRY_B} remained only words; please explain what hindered the matter."
+  },
+  {
+    "id": "memory.disappointed.128",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Нас огорчает, что {COUNTRY_A} и {COUNTRY_B} разошлись в территориальном вопросе после того, как казалось, что спор улажен; уточните, что осталось.",
+    "en": "Sadness came with {COUNTRY_A} and {COUNTRY_B} parting ways on the territorial question after the dispute seemed settled; clarify what remains."
+  },
+  {
+    "id": "memory.disappointed.129",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Обидно сознавать, что союзное предложение {COUNTRY_A} осталось без продолжения; просим сказать, стоит ли нам ждать его вообще.",
+    "en": "Painful it is to realise that {COUNTRY_A}'s alliance proposal went nowhere; please say whether we should expect it at all."
+  },
+  {
+    "id": "memory.disappointed.130",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Вызывает сожаление, что суверенитет {COUNTRY_B} в связи с {TOPIC} снова под вопросом; хотим знать, что изменилось с прошлого раза.",
+    "en": "Doubt is cast again on the sovereignty of {COUNTRY_B} in connection with {TOPIC}, which we regret; we want to know what changed since last time."
+  },
+  {
+    "id": "memory.disappointed.131",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{DATE}"
+    ],
+    "ru": "Горько, что после {DATE} наши обращения к {COUNTRY_A} остались без содержательного ответа; уточните, в чём причина молчания.",
+    "en": "Bitterness is what remains after {DATE}, when our approaches to {COUNTRY_A} drew no substantive response; clarify the reason for the silence."
+  },
+  {
+    "id": "memory.disappointed.132",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_A}"
+    ],
+    "ru": "Разочарованы тем, как {COUNTRY_A} обошлась с прошлым предложением о безопасности {COUNTRY_B}; просим объяснить, почему это предложение не обсуждалось.",
+    "en": "Treatment of the earlier proposal on the security of {COUNTRY_B} by {COUNTRY_A} disappointed us; please explain why that proposal was not discussed."
+  },
+  {
+    "id": "memory.disappointed.133",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Неприятно, что {TOPIC} с {COUNTRY_A} обсуждается волнами: то оживление, то молчание; хотели бы понять, есть ли у вас постоянная линия.",
+    "en": "Waves of activity followed by silence mark the discussion of {TOPIC} with {COUNTRY_A}; we would like to understand whether you have a steady line."
+  },
+  {
+    "id": "memory.disappointed.134",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "С грустью отмечаем: территориальная тема {TOPIC} с {COUNTRY_B} осталась недосказанной; просим договорить, а не откладывать вновь.",
+    "en": "Unfinished was the territorial topic of {TOPIC} with {COUNTRY_B}, we note with regret; we ask you to finish it rather than postpone again."
+  },
+  {
+    "id": "memory.disappointed.135",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Долгое молчание {COUNTRY_A} по {TREATY_TYPE} нас озадачило; уточните, союзная тема оставлена намеренно или забыта.",
+    "en": "Puzzlement followed {COUNTRY_A}'s long silence on the {TREATY_TYPE}; clarify whether the alliance topic was left deliberately or forgotten."
+  },
+  {
+    "id": "memory.disappointed.136",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Огорчает, что оговорка {COUNTRY_A} о суверенитете {COUNTRY_B} прозвучала как условие; просим пояснить, так ли это задумано.",
+    "en": "Reservation by {COUNTRY_A} about the sovereignty of {COUNTRY_B} sounded like a condition, which disappoints us; please explain whether that was the intent."
+  },
+  {
+    "id": "memory.disappointed.137",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Неловко, что прошлый раунд с {COUNTRY_B} закончился без протокола; уточните, будут ли зафиксированы хотя бы обсуждённые темы.",
+    "en": "Record of the last round with {COUNTRY_B} was never made, which we find awkward; clarify whether at least the topics discussed will be documented."
+  },
+  {
+    "id": "memory.disappointed.138",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Печально, что торговый диалог с {COUNTRY_B} с {DATE} не возобновлялся; просим сообщить, что мешает вернуться за стол.",
+    "en": "Revival of the trade dialogue with {COUNTRY_B} has not happened since {DATE}, which is sad; please say what prevents a return to the table."
+  },
+  {
+    "id": "memory.disappointed.139",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Мы разочарованы отказом {COUNTRY_A} обсуждать {TOPIC}, но хотим уточнить: это отказ от темы или от конкретной формулировки.",
+    "en": "Topic or wording, which is it: we are disappointed by {COUNTRY_A}'s refusal to discuss {TOPIC} and want to clarify what exactly was refused."
+  },
+  {
+    "id": "memory.disappointed.140",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "clarify"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Не скроем досады: союзная инициатива с {COUNTRY_B} от {DATE} осталась без хода; уточните, стоит ли её переоформлять.",
+    "en": "Reworking of the alliance initiative with {COUNTRY_B} of {DATE} may be needed; we admit our annoyance that it has not advanced, and ask whether to rework it."
+  },
+  {
+    "id": "memory.disappointed.141",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Отложим {TOPIC} с {COUNTRY_A}, хотя рассчитывали на иной приём; вернёмся, когда появится надежда на содержательный разговор.",
+    "en": "Deferral of {TOPIC} with {COUNTRY_A} is what we choose, though we had hoped for a different reception; we will return when there is hope of substance."
+  },
+  {
+    "id": "memory.disappointed.142",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговлю по {TREATY_TYPE} с {COUNTRY_B} откладываем без энтузиазма: прошлый отказ был для нас неожиданным, и повторять шаг сейчас не станем.",
+    "en": "Enthusiasm is lacking as we defer trade under the {TREATY_TYPE} with {COUNTRY_B}: the earlier refusal surprised us, and we will not repeat the step now."
+  },
+  {
+    "id": "memory.disappointed.143",
+    "category": "memory",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальный вопрос {COUNTRY_A} и {COUNTRY_B} оставляем на потом: после прошлого раза у нас нет желания открывать его заново без нового подхода.",
+    "en": "Reluctance to reopen the territorial question of {COUNTRY_A} and {COUNTRY_B} without a new approach leaves it for later."
+  },
+  {
+    "id": "memory.disappointed.144",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Союзную инициативу с {COUNTRY_B} по {TOPIC} придержим: прежний опыт подсказывает, что спешка лишь закрепляет непонимание.",
+    "en": "Hesitation is justified on the alliance initiative with {COUNTRY_B} on {TOPIC}: earlier experience suggests that haste only entrenches misunderstanding."
+  },
+  {
+    "id": "memory.disappointed.145",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Тему суверенитета с {COUNTRY_A} пока не продолжаем: нам нужно время, чтобы понять, был ли прошлый отказ связан с существом вопроса.",
+    "en": "Time is needed to understand whether the earlier refusal concerned the substance, so the sovereignty topic with {COUNTRY_A} is not continued yet."
+  },
+  {
+    "id": "memory.disappointed.146",
+    "category": "memory",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Ответ {COUNTRY_B} по прошлому обращению откладываем до {DATE}, хотя ждали его раньше; спешить после такого опыта не хочется.",
+    "en": "Haste after such experience is unappealing, so our reply to {COUNTRY_B} on the earlier approach is deferred until {DATE}, though we expected it sooner."
+  },
+  {
+    "id": "memory.disappointed.147",
+    "category": "memory",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Безопасность {COUNTRY_B} с {COUNTRY_A} обсуждать сейчас не станем: прошлый разговор оставил чувство, что нас слушали невнимательно.",
+    "en": "Carelessly we seemed to be heard in the last conversation, so the security of {COUNTRY_B} with {COUNTRY_A} will not be discussed now."
+  },
+  {
+    "id": "memory.disappointed.148",
+    "category": "memory",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TOPIC}"
+    ],
+    "ru": "Обращение по {TOPIC} к {COUNTRY_A} откладываем: после прошлого отказа у нас нет уверенности, что новое будет воспринято иначе.",
+    "en": "Uncertainty that a new approach would be received differently after the earlier refusal is why the issue of {TOPIC} with {COUNTRY_A} is deferred."
+  },
+  {
+    "id": "memory.disappointed.149",
+    "category": "memory",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Оставляем союзную главу {TREATY_TYPE} с {COUNTRY_A} до лучших времён; не хочется вновь услышать отказ без объяснений.",
+    "en": "Better times are awaited for the alliance chapter of the {TREATY_TYPE} with {COUNTRY_A}; we do not wish to hear another unexplained refusal."
+  },
+  {
+    "id": "memory.disappointed.150",
+    "category": "memory",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "defer"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TOPIC}"
+    ],
+    "ru": "Суверенитет {COUNTRY_B} в связи с {TOPIC} отложен с сожалением: мы рассчитывали на иной ход, но не станем настаивать сегодня.",
+    "en": "Sorrow accompanies the deferral of {COUNTRY_B}'s sovereignty in connection with {TOPIC}: we had expected a different course but will not insist today."
+  }
+]

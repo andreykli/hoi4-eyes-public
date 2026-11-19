@@ -1,0 +1,1 @@
+Local AI diplomacy and government companion for Hearts of Iron IV: negotiations, guarded treaties, Atlas and Bridge verification. By NightPulse. Windows beta.

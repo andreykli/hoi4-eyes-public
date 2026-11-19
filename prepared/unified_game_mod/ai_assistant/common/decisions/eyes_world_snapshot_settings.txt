@@ -1,0 +1,64 @@
+eyes_autonomy_observer_category = {
+ eyes_world_snapshot_now = {
+  cost = 0
+  ai_will_do = { factor = 0 }
+  visible = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+  available = { NOT = { has_country_flag = eyes_world_snapshot_busy } }
+  complete_effect = {
+   if = {
+    limit = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled NOT = { has_country_flag = eyes_world_snapshot_busy } }
+    set_country_flag = eyes_world_snapshot_busy
+    eyes_export_world_states = yes
+    clr_country_flag = eyes_world_snapshot_busy
+   }
+  }
+ }
+ eyes_world_snapshot_interval_1 = {
+  cost = 0
+  ai_will_do = { factor = 0 }
+  visible = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+  complete_effect = {
+   clr_country_flag = eyes_world_interval_1
+   clr_country_flag = eyes_world_interval_7
+   clr_country_flag = eyes_world_interval_14
+   set_variable = { eyes_world_next_day = 0 }
+   set_country_flag = eyes_world_interval_1
+  }
+ }
+ eyes_world_snapshot_interval_3 = {
+  cost = 0
+  ai_will_do = { factor = 0 }
+  visible = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+  complete_effect = {
+   clr_country_flag = eyes_world_interval_1
+   clr_country_flag = eyes_world_interval_7
+   clr_country_flag = eyes_world_interval_14
+   set_variable = { eyes_world_next_day = 0 }
+   
+  }
+ }
+ eyes_world_snapshot_interval_7 = {
+  cost = 0
+  ai_will_do = { factor = 0 }
+  visible = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+  complete_effect = {
+   clr_country_flag = eyes_world_interval_1
+   clr_country_flag = eyes_world_interval_7
+   clr_country_flag = eyes_world_interval_14
+   set_variable = { eyes_world_next_day = 0 }
+   set_country_flag = eyes_world_interval_7
+  }
+ }
+ eyes_world_snapshot_interval_14 = {
+  cost = 0
+  ai_will_do = { factor = 0 }
+  visible = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+  complete_effect = {
+   clr_country_flag = eyes_world_interval_1
+   clr_country_flag = eyes_world_interval_7
+   clr_country_flag = eyes_world_interval_14
+   set_variable = { eyes_world_next_day = 0 }
+   set_country_flag = eyes_world_interval_14
+  }
+ }
+}

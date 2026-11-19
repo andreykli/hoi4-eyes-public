@@ -1,0 +1,6 @@
+﻿l_russian:
+ eyes_world_snapshot_interval_1:0 "Интервал снимков мира · 1"
+ eyes_world_snapshot_interval_3:0 "Интервал снимков мира · 3"
+ eyes_world_snapshot_interval_7:0 "Интервал снимков мира · 7"
+ eyes_world_snapshot_interval_14:0 "Интервал снимков мира · 14"
+ eyes_world_snapshot_now:0 "Экспортировать снимок Atlas сейчас"

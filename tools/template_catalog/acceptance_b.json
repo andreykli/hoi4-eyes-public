@@ -1,0 +1,1844 @@
+[
+  {
+    "id": "accept.distrustful.001",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сдержанно принимаем условия {TREATY_TYPE}: доверия к {COUNTRY_A} у нас мало. За поведением {COUNTRY_B} будем следить внимательно.",
+    "en": "Restrained acceptance is given to the terms of the {TREATY_TYPE}: we have little trust in {COUNTRY_A}. {COUNTRY_B}'s conduct will be watched closely."
+  },
+  {
+    "id": "accept.distrustful.002",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Согласны на {TERMS}, но считаем, что нас к этому подтолкнули. При первом же нарушении вернёмся к разговору.",
+    "en": "Agreed on {TERMS}, but we believe we were pushed into it. At the first violation we will return to this conversation."
+  },
+  {
+    "id": "accept.distrustful.003",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Территориальную уступку принимаем без радости: {COUNTRY_A} слишком часто менял позицию. {COUNTRY_B} пусть не рассчитывает на большее.",
+    "en": "This territorial concession is accepted without joy: {COUNTRY_A} has changed position too often. {COUNTRY_B} should not count on more."
+  },
+  {
+    "id": "accept.distrustful.004",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Вступать в {TREATY_TYPE} с {COUNTRY_A} не хотелось, но мы соглашаемся. Каждый пункт будем проверять сами.",
+    "en": "Entering the {TREATY_TYPE} with {COUNTRY_A} was not our wish, yet we agree. Every clause will be verified by us."
+  },
+  {
+    "id": "accept.distrustful.005",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Оговорку о суверенитете принимаем, но {COUNTRY_B} не должен считать это признанием его правоты.",
+    "en": "Clause on sovereignty is accepted, but {COUNTRY_B} must not take this as recognition that it was right."
+  },
+  {
+    "id": "accept.distrustful.006",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Экономические {CONDITIONS} принимаем, поскольку иначе {COUNTRY_A} снова начнёт давить. Доверие к таким обещаниям у нас низкое.",
+    "en": "Otherwise {COUNTRY_A} would start pressing again, so the economic {CONDITIONS} are accepted. Our trust in such promises is low."
+  },
+  {
+    "id": "accept.distrustful.007",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Текст протокола подписываем, но {TERMS} считаем неполными и оставляем за собой право вернуться к ним.",
+    "en": "The protocol is signed, though {TERMS} remain incomplete and we reserve the right to return to them."
+  },
+  {
+    "id": "accept.distrustful.008",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Начиная с {DATE}, принимаем предложенный порядок, хотя {COUNTRY_A} и {COUNTRY_B} явно торопятся. Спешка здесь дорого стоит.",
+    "en": "Starting {DATE}, the proposed arrangement is accepted, though {COUNTRY_A} and {COUNTRY_B} are clearly rushing. Haste here is costly."
+  },
+  {
+    "id": "accept.distrustful.009",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Торговое соглашение принимаем. {COUNTRY_B} выигрывает от него больше нас, и это мы запомним.",
+    "en": "Trade terms are accepted. {COUNTRY_B} gains more from them than we do, and this we will remember."
+  },
+  {
+    "id": "accept.distrustful.010",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Ладно, принимаем. Но каждое слово будем сверять с тем, что {COUNTRY_A} говорил раньше.",
+    "en": "Very well, we accept. But every word will be checked against what {COUNTRY_A} said earlier."
+  },
+  {
+    "id": "accept.distrustful.011",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Союзнические {TERMS} принимаем сквозь зубы: союзник, которого надо проверять, — плохой союзник.",
+    "en": "Allied {TERMS} are accepted through gritted teeth: an ally who must be watched is a poor ally."
+  },
+  {
+    "id": "accept.distrustful.012",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Спорную территорию по {TREATY_TYPE} принимаем, но {COUNTRY_A} и {COUNTRY_B} должны понимать: это не решение, а пауза.",
+    "en": "Under the {TREATY_TYPE} the disputed territory is accepted, but {COUNTRY_A} and {COUNTRY_B} must understand: this is a pause, not a settlement."
+  },
+  {
+    "id": "accept.distrustful.013",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Денежные условия принимаем. {COUNTRY_B} пусть не думает, что щедрость купит нашу уступчивость в другом.",
+    "en": "Money terms are accepted. {COUNTRY_B} should not think that generosity will buy our compliance elsewhere."
+  },
+  {
+    "id": "accept.distrustful.014",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Формально согласны, {TERMS} принимаем. {COUNTRY_A} получил бумагу, но не доверие.",
+    "en": "Formally we agree and accept {TERMS}; {COUNTRY_A} has received a document, but not trust."
+  },
+  {
+    "id": "accept.distrustful.015",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Формулировки о невмешательстве принимаем, но проверять их будем строго. {COUNTRY_A} и {COUNTRY_B} вправе знать об этом прямо.",
+    "en": "Non-interference wording is accepted, but it will be checked strictly. {COUNTRY_A} and {COUNTRY_B} may know this plainly."
+  },
+  {
+    "id": "accept.distrustful.016",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Соглашаемся на {CONDITIONS}, потому что альтернатива хуже. Облегчения от согласия мы не чувствуем.",
+    "en": "Consent is given to {CONDITIONS} because the alternative is worse. No relief is felt from this consent."
+  },
+  {
+    "id": "accept.distrustful.017",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Доверие к {TREATY_TYPE} у нас небольшое, но {COUNTRY_B} предлагает приемлемый вариант. Принимаем.",
+    "en": "Confidence in the {TREATY_TYPE} is limited, but {COUNTRY_B} offers an acceptable option. We accept."
+  },
+  {
+    "id": "accept.distrustful.018",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "На {TERMS} отвечаем согласием. {COUNTRY_A} не должен считать это нашей слабостью.",
+    "en": "To {TERMS} our answer is consent. {COUNTRY_A} should not treat this as our weakness."
+  },
+  {
+    "id": "accept.distrustful.019",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Условия {CONDITIONS} принимаем, но участие {COUNTRY_A} и {COUNTRY_B} в союзе считаем неравноценным.",
+    "en": "The {CONDITIONS} are accepted, but the participation of {COUNTRY_A} and {COUNTRY_B} in the alliance seems unequal."
+  },
+  {
+    "id": "accept.distrustful.020",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Экономическую часть принимаем: {TERMS} дают {COUNTRY_A} слишком выгодные позиции, и мы это отметили.",
+    "en": "Terms of the economic part are accepted: {TERMS} give {COUNTRY_A} positions that are too advantageous, and we have noted it."
+  },
+  {
+    "id": "accept.distrustful.021",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "distrustful",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Подписываем, хотя {CONDITIONS} составлены так, будто {COUNTRY_B} диктует, а мы только киваем.",
+    "en": "Signature is given, though {CONDITIONS} are drafted as if {COUNTRY_B} dictates and we merely nod."
+  },
+  {
+    "id": "accept.cold.022",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Приняты условия {TREATY_TYPE}. Ответственность за соблюдение лежит на {COUNTRY_A} и {COUNTRY_B}; наше дело — фиксировать.",
+    "en": "Terms of the {TREATY_TYPE} are accepted. Responsibility for compliance rests with {COUNTRY_A} and {COUNTRY_B}; our task is to record."
+  },
+  {
+    "id": "accept.cold.023",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Торговые {CONDITIONS} принимаются в предложенном виде. Существенных причин для споров мы не видим.",
+    "en": "Commerce: {CONDITIONS} are accepted as proposed. We see no substantial grounds for dispute."
+  },
+  {
+    "id": "accept.cold.024",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Границы фиксируем по {TREATY_TYPE}; {COUNTRY_A} не должен ждать большего.",
+    "en": "Frontier fixed under the {TREATY_TYPE}; {COUNTRY_A} should not expect more."
+  },
+  {
+    "id": "accept.cold.025",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Заключаем союз на {TERMS}. Праздничных речей не будет: это расчёт, а не дружба. {COUNTRY_B} понимает.",
+    "en": "Concluded is the alliance on {TERMS}. There will be no festive speeches: this is calculation, not friendship. {COUNTRY_B} understands."
+  },
+  {
+    "id": "accept.cold.026",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Вопрос суверенитета решаем в предложенной редакции. {COUNTRY_A} и {COUNTRY_B} получают то, о чём просили, — не больше.",
+    "en": "Sovereignty questions are settled in the proposed wording. {COUNTRY_A} and {COUNTRY_B} get what they asked for, no more."
+  },
+  {
+    "id": "accept.cold.027",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Экономические {CONDITIONS} принимаем. Возражений по существу нет, энтузиазма тоже.",
+    "en": "Finance-related {CONDITIONS} are accepted. No objections on substance, and no enthusiasm either."
+  },
+  {
+    "id": "accept.cold.028",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Формально принимаем. {TERMS} изложены сухо, но {COUNTRY_A} не оставил нам выбора.",
+    "en": "Formally accepted. {TERMS} are stated drily, but {COUNTRY_A} left us no choice."
+  },
+  {
+    "id": "accept.cold.029",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Охрану порядка обсуждать больше не будем: {CONDITIONS} принимаем, тема закрыта.",
+    "en": "Order-keeping will not be debated further: {CONDITIONS} are accepted, the matter is closed."
+  },
+  {
+    "id": "accept.cold.030",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Коммерческие условия приняты без поправок. {COUNTRY_B} может считать вопрос решённым.",
+    "en": "Commercial terms are accepted without amendments. {COUNTRY_B} may consider the matter settled."
+  },
+  {
+    "id": "accept.cold.031",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Разграничение проводим по {CONDITIONS}. {COUNTRY_A} уведомлён; иных толкований мы не примем.",
+    "en": "Demarcation follows {CONDITIONS}. {COUNTRY_A} is notified; no other reading will be accepted."
+  },
+  {
+    "id": "accept.cold.032",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "К союзу присоединяемся. {COUNTRY_A} и {COUNTRY_B} вольны объяснять это как угодно.",
+    "en": "Accession to the alliance is made. {COUNTRY_A} and {COUNTRY_B} are free to explain it as they wish."
+  },
+  {
+    "id": "accept.cold.033",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенные права не обсуждаем: они вне {TREATY_TYPE}. {COUNTRY_A} пусть учтёт это в дальнейшем.",
+    "en": "Sovereign rights are not up for debate: they lie outside the {TREATY_TYPE}. {COUNTRY_A} should bear this in mind."
+  },
+  {
+    "id": "accept.cold.034",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Практические {TERMS} принимаем. {COUNTRY_B} получает доступ, мы — обязательства; такова цена.",
+    "en": "Practical {TERMS} are accepted. {COUNTRY_B} gets access, we get obligations; that is the price."
+  },
+  {
+    "id": "accept.cold.035",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Документ подписан; {CONDITIONS} внесены в текст без правок.",
+    "en": "Document signed; {CONDITIONS} appear in the text without amendments."
+  },
+  {
+    "id": "accept.cold.036",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Безопасность обсуждаем в узком формате. {COUNTRY_B} согласен, мы не возражаем.",
+    "en": "Security is discussed in a narrow format. {COUNTRY_B} agrees, we do not object."
+  },
+  {
+    "id": "accept.cold.037",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Поставки и пошлины по {TERMS} принимаем в нынешнем виде. {COUNTRY_A} получает рынок, мы — неприятный осадок.",
+    "en": "Supplies and tariffs under {TERMS} are accepted as they stand. {COUNTRY_A} gets the market, we get an unpleasant aftertaste."
+  },
+  {
+    "id": "accept.cold.038",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорный район оставляем в обсуждении, но границу признаём. {COUNTRY_B} пусть не ждёт благодарности.",
+    "en": "Disputed district remains in discussion, but the border is recognised. {COUNTRY_B} should not expect gratitude."
+  },
+  {
+    "id": "accept.cold.039",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Союзнический долг по {CONDITIONS} принимаем. Дружеских чувств это не добавляет.",
+    "en": "Duty under {CONDITIONS} as an ally is accepted. It adds no friendly feeling."
+  },
+  {
+    "id": "accept.cold.040",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Кредитную линию принимаем. {COUNTRY_A} получает проценты, мы — повод для осторожности.",
+    "en": "Credit line accepted. {COUNTRY_A} gets interest, we get a reason for caution."
+  },
+  {
+    "id": "accept.cold.041",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Бумаги подписаны, {TERMS} зафиксированы. {COUNTRY_A} может строить из этого что угодно.",
+    "en": "Papers are signed, {TERMS} are on record. {COUNTRY_A} may make of it what it wishes."
+  },
+  {
+    "id": "accept.cold.042",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "cold",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Принципиальных возражений нет. {TREATY_TYPE} с {COUNTRY_B} принимаем, но без иллюзий.",
+    "en": "No objections of principle remain. The {TREATY_TYPE} with {COUNTRY_B} is accepted, but without illusions."
+  },
+  {
+    "id": "accept.compromising.043",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Идём навстречу: {CONDITIONS} принимаем, если {COUNTRY_A} согласится на симметричный шаг.",
+    "en": "Halfway we come: {CONDITIONS} are accepted if {COUNTRY_A} agrees to a symmetrical step."
+  },
+  {
+    "id": "accept.compromising.044",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Компромисс ищем и здесь: {TERMS} принимаем, хотя рассчитывали на большее. Обе стороны сдвинулись.",
+    "en": "As a compromise we accept {TERMS}, though we had hoped for more. Both sides have moved."
+  },
+  {
+    "id": "accept.compromising.045",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорный участок делим пополам — иначе спор не кончится никогда. {COUNTRY_A} и {COUNTRY_B} получают равные части.",
+    "en": "Disputed stretch is split in half — otherwise the argument never ends. {COUNTRY_A} and {COUNTRY_B} get equal shares."
+  },
+  {
+    "id": "accept.compromising.046",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Согласны на союз по {CONDITIONS}: мы получаем гарантии, вы — партнёра. Обмен честный.",
+    "en": "An alliance under {CONDITIONS} is agreeable: we get guarantees, you get our partnership. A fair exchange."
+  },
+  {
+    "id": "accept.compromising.047",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "По суверенитету ищем середину: {TERMS} принимаем, но формулировки о контроле смягчаем. {COUNTRY_A}, надеемся, оценит шаг.",
+    "en": "On sovereignty we seek the middle: {TERMS} are accepted, but the control wording is softened. {COUNTRY_A}, we hope, will value the step."
+  },
+  {
+    "id": "accept.compromising.048",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "В обмен на смягчение {CONDITIONS} принимаем экономический блок. Лучше половина, чем ничего.",
+    "en": "In exchange for softer {CONDITIONS} we take the economic block. Half is better than nothing."
+  },
+  {
+    "id": "accept.compromising.049",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Текст с поправкой {COUNTRY_A} подписываем. {TERMS} в целом приемлемы, детали обсудим отдельно.",
+    "en": "Amended protocol is signed as {COUNTRY_A} proposed. {TERMS} are broadly acceptable; details can be discussed separately."
+  },
+  {
+    "id": "accept.compromising.050",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Готовы принять {CONDITIONS} ради общей безопасности. {COUNTRY_B} получил своё, мы — спокойствие на границе.",
+    "en": "Ready to accept {CONDITIONS} for the sake of shared security. {COUNTRY_B} got its point, we get calm on the border."
+  },
+  {
+    "id": "accept.compromising.051",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Территориальный обмен по {TREATY_TYPE} принимаем: {COUNTRY_A} и {COUNTRY_B} теряют меньше, чем могли бы.",
+    "en": "Territorial exchange under the {TREATY_TYPE} is accepted: {COUNTRY_A} and {COUNTRY_B} lose less than they might have."
+  },
+  {
+    "id": "accept.compromising.052",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Союзный договор подписываем в усечённом виде. {COUNTRY_A} уступил в {TERMS}, мы — в сроках.",
+    "en": "A trimmed alliance treaty is signed. {COUNTRY_A} conceded on {TERMS}, we conceded on timing."
+  },
+  {
+    "id": "accept.compromising.053",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Уступаем в вопросе о наблюдателях, но право выхода оставляем за собой. {COUNTRY_B} пусть не считает это окончательным.",
+    "en": "Concession on observers is made, but the right of withdrawal is kept. {COUNTRY_B} should not consider this final."
+  },
+  {
+    "id": "accept.compromising.054",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Взаимные уступки по {CONDITIONS} принимаем. {COUNTRY_A} смягчает требования, мы смягчаем тон.",
+    "en": "Mutual concessions on {CONDITIONS} are accepted. {COUNTRY_A} softens its demands, we soften our tone."
+  },
+  {
+    "id": "accept.compromising.055",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Компромиссный текст {TERMS} считаем приемлемым. Он нравится нам не полностью, но развязывает узел.",
+    "en": "Compromise text on {TERMS} is acceptable. We do not like all of it, but it unties the knot."
+  },
+  {
+    "id": "accept.compromising.056",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}",
+      "{DATE}"
+    ],
+    "ru": "Дату {DATE} берём за точку отсчёта: {CONDITIONS} принимаем как основу. {COUNTRY_A} тоже идёт навстречу, и это мы ценим.",
+    "en": "Dating from {DATE}, {CONDITIONS} are taken as a basis. {COUNTRY_A} is also moving our way, and we value that."
+  },
+  {
+    "id": "accept.compromising.057",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Делим зоны влияния так, чтобы ни {COUNTRY_A}, ни {COUNTRY_B} не чувствовали себя проигравшими. Принимаем.",
+    "en": "Spheres of influence are divided so that neither {COUNTRY_A} nor {COUNTRY_B} feels defeated. We accept."
+  },
+  {
+    "id": "accept.compromising.058",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Часть требований по {CONDITIONS} отпадает, остальное принимаем. {COUNTRY_A} и {COUNTRY_B} должны увидеть жест.",
+    "en": "Half of the {CONDITIONS} fall away, the rest is accepted. {COUNTRY_A} and {COUNTRY_B} should see the gesture."
+  },
+  {
+    "id": "accept.compromising.059",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Тарифный спор закрываем компромиссом: {TERMS} принимаем, взаимные претензии по пошлинам откладываем.",
+    "en": "Tariff dispute closed by compromise: {TERMS} are accepted, mutual claims on duties are set aside."
+  },
+  {
+    "id": "accept.compromising.060",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Суверенитет не предмет торга, но {CONDITIONS} принимаем — при условии взаимной сдержанности.",
+    "en": "Not for sale is sovereignty, but {CONDITIONS} are accepted, provided restraint is mutual."
+  },
+  {
+    "id": "accept.compromising.061",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Итог переговоров принимаем как есть. {COUNTRY_A} и {COUNTRY_B} получили по пункту, мы — по пункту.",
+    "en": "Outcome of the talks is accepted as it stands. {COUNTRY_A} and {COUNTRY_B} each got a clause, we got a clause."
+  },
+  {
+    "id": "accept.compromising.062",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Считаем возможным принять предложение {COUNTRY_B} целиком, без новых условий с нашей стороны.",
+    "en": "Possible is acceptance of {COUNTRY_B}'s proposal in full, with no new conditions from us."
+  },
+  {
+    "id": "accept.compromising.063",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Торговый раздел принимаем, если {COUNTRY_A} смягчит {TERMS}. Это наша цена согласия.",
+    "en": "Section on trade is accepted if {COUNTRY_A} softens {TERMS}. That is our price for consent."
+  },
+  {
+    "id": "accept.firm.064",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Условия {TREATY_TYPE} принимаем. Дальнейших уступок по безопасности не будет: {COUNTRY_A} и {COUNTRY_B} знают предел.",
+    "en": "These terms of the {TREATY_TYPE} are accepted. No further security concessions: {COUNTRY_A} and {COUNTRY_B} know the limit."
+  },
+  {
+    "id": "accept.firm.065",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Торговые {CONDITIONS} принимаем жёстко и без поправок. Кто попросит больше, услышит отказ.",
+    "en": "Trade {CONDITIONS} are accepted firmly and without amendments. Anyone asking for more will hear a refusal."
+  },
+  {
+    "id": "accept.firm.066",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Границу принимаем в нынешнем начертании. {COUNTRY_A} и {COUNTRY_B} могут оспаривать её сколько угодно — наше слово сказано.",
+    "en": "Borders are accepted as drawn. {COUNTRY_A} and {COUNTRY_B} may contest them as they like; our word is given."
+  },
+  {
+    "id": "accept.firm.067",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "В союз вступаем на {TERMS}, но командование не отдаём. {COUNTRY_A} пусть не рассчитывает на большее.",
+    "en": "Joining the alliance on {TERMS} is agreed, but command is not surrendered. {COUNTRY_A} should not count on more."
+  },
+  {
+    "id": "accept.firm.068",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Хорошо, {CONDITIONS} принимаем, но оговорку о вмешательстве вычёркиваем. {COUNTRY_B}, это не обсуждается.",
+    "en": "Struck out is the intervention clause, while {CONDITIONS} are accepted. {COUNTRY_B}, this is not negotiable."
+  },
+  {
+    "id": "accept.firm.069",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Экономическую сделку принимаем. {COUNTRY_A} получает ровно оговорённое, ни позиции больше.",
+    "en": "Deal accepted on the economic side: {COUNTRY_A} gets exactly what is stipulated, not one position more."
+  },
+  {
+    "id": "accept.firm.070",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Ставим подпись; {TERMS} далее не пересматриваются. {COUNTRY_B} услышал нашу позицию.",
+    "en": "Signed off: {TERMS} will not be reopened. {COUNTRY_B} has heard our position."
+  },
+  {
+    "id": "accept.firm.071",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Безопасность обеспечиваем сами. {CONDITIONS} принимаем как рамку, не как опеку.",
+    "en": "Security is our own affair. {CONDITIONS} are accepted as a framework, not as tutelage."
+  },
+  {
+    "id": "accept.firm.072",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Линию по {TREATY_TYPE} фиксируем и закрываем вопрос. {COUNTRY_A} получает документ, а не право требовать ещё.",
+    "en": "Line fixed under the {TREATY_TYPE}, and the matter closed. {COUNTRY_A} gets a document, not a right to demand more."
+  },
+  {
+    "id": "accept.firm.073",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Союз принимаем, но выход оставляем открытым. {COUNTRY_B} должен это понимать с самого начала.",
+    "en": "Alliance accepted, but exit remains open. {COUNTRY_B} must understand this from the outset."
+  },
+  {
+    "id": "accept.firm.074",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Внутренние дела закрыты для обсуждения. {COUNTRY_A} и {COUNTRY_B} получают заверение, а не доступ.",
+    "en": "Internal affairs are closed to discussion. {COUNTRY_A} and {COUNTRY_B} get an assurance, not access."
+  },
+  {
+    "id": "accept.firm.075",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Финансовые {CONDITIONS} принимаем при одном условии: контроля над нашим банком не будет.",
+    "en": "Financial {CONDITIONS} are accepted on one condition: no control over our bank."
+  },
+  {
+    "id": "accept.firm.076",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Каждый пункт {CONDITIONS} принимаем отдельно; общих формулировок не признаём.",
+    "en": "Each point of {CONDITIONS} is accepted separately; blanket wording is not recognised."
+  },
+  {
+    "id": "accept.firm.077",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Гарантии принимаем только взаимные. Односторонние обещания {COUNTRY_A} и {COUNTRY_B} нам не нужны.",
+    "en": "Guarantees are accepted only if mutual. One-sided promises from {COUNTRY_A} and {COUNTRY_B} are of no use to us."
+  },
+  {
+    "id": "accept.firm.078",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Экспортные {TERMS} принимаем, квоты — нет. {COUNTRY_A} пусть не путает согласие с капитуляцией.",
+    "en": "Export {TERMS} are accepted, quotas are not. {COUNTRY_A} should not confuse consent with capitulation."
+  },
+  {
+    "id": "accept.firm.079",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Район принимаем в границах по {CONDITIONS}, без совместного управления. {COUNTRY_B}, это наша последняя позиция.",
+    "en": "District accepted within the {CONDITIONS} borders, without joint administration. {COUNTRY_B}, this is our final position."
+  },
+  {
+    "id": "accept.firm.080",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенное равенство по {TREATY_TYPE} подтверждаем и на этом ставим точку. Исключений не будет.",
+    "en": "Sovereign equality under the {TREATY_TYPE} is confirmed, and there we end it. There will be no exceptions."
+  },
+  {
+    "id": "accept.firm.081",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Подписываем протокол и требуем того же от других. {TERMS} для нас не пустая формула.",
+    "en": "Signature on the protocol is given, and the same is demanded of others. {TERMS} are not an empty formula for us."
+  },
+  {
+    "id": "accept.firm.082",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Принято, и точка. {COUNTRY_A} и {COUNTRY_B} не должны ждать от нас ничего сверх записанного.",
+    "en": "Full stop: accepted. {COUNTRY_A} and {COUNTRY_B} should expect nothing beyond what is written."
+  },
+  {
+    "id": "accept.firm.083",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Хозяйственные вопросы решаем сами. {TERMS} с {COUNTRY_B} принимаем, но без инспекций.",
+    "en": "Material questions are ours to decide. {TERMS} with {COUNTRY_B} are accepted, but without inspections."
+  },
+  {
+    "id": "accept.firm.084",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "firm",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Союзный договор принимаем с поправкой о равных обязательствах. {CONDITIONS} для {COUNTRY_A} те же, что для нас.",
+    "en": "Treaty of alliance is accepted with an amendment on equal obligations. {CONDITIONS} for {COUNTRY_A} are the same as for us."
+  },
+  {
+    "id": "accept.disappointed.085",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Жаль, но принимаем: рассчитывали на иное. {COUNTRY_A} и {COUNTRY_B} получили больше, чем мы.",
+    "en": "Regrettably, we accept: we had expected otherwise. {COUNTRY_A} and {COUNTRY_B} got more than we did."
+  },
+  {
+    "id": "accept.disappointed.086",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Коммерческие {TERMS} принимаем с горечью: мы просили о другом, но выбора не осталось.",
+    "en": "Commercial {TERMS} are accepted with bitterness: we asked for something else, but no choice remained."
+  },
+  {
+    "id": "accept.disappointed.087",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Территориальный вопрос решаем не в нашу пользу. {COUNTRY_A} получает спорное, мы — сожаление.",
+    "en": "Territorial question settled against our interest. {COUNTRY_A} gets the disputed part, we get regret."
+  },
+  {
+    "id": "accept.disappointed.088",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Блок по {CONDITIONS} принимаем без радости. {COUNTRY_B} настоял, а мы не стали спорить до конца.",
+    "en": "Union under {CONDITIONS} is accepted without joy. {COUNTRY_B} insisted, and we did not argue to the end."
+  },
+  {
+    "id": "accept.disappointed.089",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Наш суверенитет пострадал сильнее, чем мы надеялись. {TERMS} принимаем, {COUNTRY_B} своего добился.",
+    "en": "Our sovereignty suffered more than we hoped. {TERMS} are accepted, {COUNTRY_B} got its way."
+  },
+  {
+    "id": "accept.disappointed.090",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Экономическая часть соглашения нас разочаровывает. {COUNTRY_A} получает рынок, мы — обязательства.",
+    "en": "Disappointing is the economic part of the agreement. {COUNTRY_A} gets the market, we get obligations."
+  },
+  {
+    "id": "accept.disappointed.091",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Нехотя подписываем: {TERMS} выглядят односторонними. {COUNTRY_B} этого и хотел.",
+    "en": "Reluctantly signed: {TERMS} look one-sided. {COUNTRY_B} wanted exactly that."
+  },
+  {
+    "id": "accept.disappointed.092",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{DATE}"
+    ],
+    "ru": "Приходится принять порядок, навязанный нам с {DATE}. {COUNTRY_A} и {COUNTRY_B} этого добивались.",
+    "en": "Forced acceptance is given to an arrangement imposed from {DATE}. {COUNTRY_A} and {COUNTRY_B} sought exactly this."
+  },
+  {
+    "id": "accept.disappointed.093",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Уступаем по {CONDITIONS}, но {COUNTRY_A} должен знать: мы согласились не потому, что поверили.",
+    "en": "Acceptance of {CONDITIONS} is given, but {COUNTRY_A} should know: belief played no part in it."
+  },
+  {
+    "id": "accept.disappointed.094",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Границу подписываем с тяжёлым чувством. {COUNTRY_B} получил район, мы — тему для объяснений дома.",
+    "en": "Borders signed with a heavy heart. {COUNTRY_B} got the district, we got explaining to do at home."
+  },
+  {
+    "id": "accept.disappointed.095",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Вступаем в {TREATY_TYPE} с {COUNTRY_A} без энтузиазма. Лучшего варианта у нас не было.",
+    "en": "Entering the {TREATY_TYPE} with {COUNTRY_A} is done without enthusiasm. No better option existed."
+  },
+  {
+    "id": "accept.disappointed.096",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Уступка не по сердцу: {CONDITIONS} принимаем, хотя они урезают нашу самостоятельность. {COUNTRY_A} об этом ещё услышит.",
+    "en": "Unwillingly, {CONDITIONS} are accepted, though they cut into our independence. {COUNTRY_A} will hear about it again."
+  },
+  {
+    "id": "accept.disappointed.097",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Финансовые {TERMS} принимаем скрепя сердце. {COUNTRY_B} выторговал больше, чем мы рассчитывали.",
+    "en": "Financial {TERMS} are accepted grudgingly. {COUNTRY_B} bargained for more than we expected."
+  },
+  {
+    "id": "accept.disappointed.098",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Документ принимаем, но осадок остался. {COUNTRY_A} и {COUNTRY_B} получили свои пункты, мы — свои сожаления.",
+    "en": "Document accepted, but a residue remains. {COUNTRY_A} and {COUNTRY_B} got their clauses, we got our regrets."
+  },
+  {
+    "id": "accept.disappointed.099",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Уступили в безопасности больше, чем следовало. {CONDITIONS} принимаем, {COUNTRY_A} знает цену.",
+    "en": "On security we conceded more than we should have. {CONDITIONS} are accepted, {COUNTRY_A} knows the cost."
+  },
+  {
+    "id": "accept.disappointed.100",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Тарифные {TERMS} принимаем с неохотой. Наши промышленники ждали другого.",
+    "en": "Tariff {TERMS} are accepted reluctantly. Our industry expected something else."
+  },
+  {
+    "id": "accept.disappointed.101",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Спорную землю делим, хотя считаем раздел несправедливым. {COUNTRY_A} и {COUNTRY_B} настаивали.",
+    "en": "Land in dispute is divided, though we consider the split unfair. {COUNTRY_A} and {COUNTRY_B} insisted."
+  },
+  {
+    "id": "accept.disappointed.102",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Союзнические обязательства по {CONDITIONS} принимаем. {COUNTRY_B} получил союзника, мы — бремя.",
+    "en": "Obligations of an ally under {CONDITIONS} are accepted. {COUNTRY_B} gained an ally, we gained a burden."
+  },
+  {
+    "id": "accept.disappointed.103",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Теряем по {TREATY_TYPE} часть самостоятельности. {COUNTRY_A} и {COUNTRY_B} называют это стабильностью.",
+    "en": "Lost under the {TREATY_TYPE} is part of our independence. {COUNTRY_A} and {COUNTRY_B} call it stability."
+  },
+  {
+    "id": "accept.disappointed.104",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{CONDITIONS}"
+    ],
+    "ru": "Фискальные {CONDITIONS} принимаем, хотя считаем их невыгодными. Счёт за это нам ещё предъявят.",
+    "en": "Fiscal {CONDITIONS} are accepted, though we consider them unprofitable. We will be held to account for it."
+  },
+  {
+    "id": "accept.disappointed.105",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Согласие даём, но без веры в успех. {COUNTRY_B} пусть не ждёт от нас воодушевления.",
+    "en": "Consent is given, but without faith in success. {COUNTRY_B} should not expect enthusiasm from us."
+  },
+  {
+    "id": "accept.conciliatory.106",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Рады принять условия {TREATY_TYPE}. {COUNTRY_A} и {COUNTRY_B} сделали шаг навстречу, и мы отвечаем тем же.",
+    "en": "Gladly we accept the terms of the {TREATY_TYPE}. {COUNTRY_A} and {COUNTRY_B} moved towards us, and we answer in kind."
+  },
+  {
+    "id": "accept.conciliatory.107",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Радостно принимаем {TERMS}: это начало хорошей работы, а не конец торга.",
+    "en": "With pleasure we accept {TERMS}: this is the start of good work, not the end of bargaining."
+  },
+  {
+    "id": "accept.conciliatory.108",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Территориальную формулу по {CONDITIONS} принимаем охотно. {COUNTRY_A} проявил сдержанность, и это внушает надежду.",
+    "en": "Formula on territory under {CONDITIONS} accepted willingly. {COUNTRY_A} showed restraint, and that gives hope."
+  },
+  {
+    "id": "accept.conciliatory.109",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Союз с {COUNTRY_A} и {COUNTRY_B} принимаем с надеждой. Доверие придётся строить, но начало положено.",
+    "en": "Alliance with {COUNTRY_A} and {COUNTRY_B} is accepted with hope. Trust must be built, but a start is made."
+  },
+  {
+    "id": "accept.conciliatory.110",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TERMS}"
+    ],
+    "ru": "Искренне ценим, что {COUNTRY_B} не давил: {TERMS} принимаем. На такой основе можно работать дальше.",
+    "en": "Gratefully noted: {COUNTRY_B} did not press, and {TERMS} are accepted. On such a basis work can continue."
+  },
+  {
+    "id": "accept.conciliatory.111",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Бюджетные {CONDITIONS} принимаем с готовностью. {COUNTRY_A} пошёл навстречу, и мы это ценим.",
+    "en": "Fiscal {CONDITIONS} are accepted readily. {COUNTRY_A} met us halfway, and we appreciate it."
+  },
+  {
+    "id": "accept.conciliatory.112",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Тепло принимаем протокол с {COUNTRY_A} — не из вежливости, а потому что видим пользу для всех.",
+    "en": "Warmly accepted is the protocol with {COUNTRY_A} — not out of courtesy, but because we see benefit for all."
+  },
+  {
+    "id": "accept.conciliatory.113",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Готовы принять {CONDITIONS} ради спокойствия в регионе. {COUNTRY_B} проявил понимание, и мы это ценим.",
+    "en": "Ready to accept {CONDITIONS} for calm in the region. {COUNTRY_B} showed understanding, and we value it."
+  },
+  {
+    "id": "accept.conciliatory.114",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Союзное соглашение по {CONDITIONS} принимаем с удовлетворением. {COUNTRY_A} слышал наши опасения.",
+    "en": "Allied agreement on {CONDITIONS} is accepted with satisfaction. {COUNTRY_A} heard our concerns."
+  },
+  {
+    "id": "accept.conciliatory.115",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}"
+    ],
+    "ru": "Формулировки о равенстве принимаем с облегчением: {COUNTRY_A} и {COUNTRY_B} услышали друг друга.",
+    "en": "Equality wording is accepted with relief: {COUNTRY_A} and {COUNTRY_B} heard each other."
+  },
+  {
+    "id": "accept.conciliatory.116",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Хозяйственное соглашение принимаем радушно. {TERMS} выглядят разумными, и мы готовы к совместной работе.",
+    "en": "Economic agreement accepted warmly. {TERMS} look reasonable, and we are ready for joint work."
+  },
+  {
+    "id": "accept.conciliatory.117",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Ставим подпись с лёгким сердцем: {CONDITIONS} учитывают и наши нужды. {COUNTRY_B} это заслужил.",
+    "en": "Signed with a light heart: {CONDITIONS} take our needs into account too. {COUNTRY_B} earned it."
+  },
+  {
+    "id": "accept.conciliatory.118",
+    "category": "acceptance",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}"
+    ],
+    "ru": "Согласие на предложение {COUNTRY_A} даём охотно. Нам важно не победить в споре, а закрыть вопрос.",
+    "en": "Willingly given is consent to {COUNTRY_A}'s proposal. Winning the argument matters less to us than closing the issue."
+  },
+  {
+    "id": "accept.conciliatory.119",
+    "category": "acceptance",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Благодарим {COUNTRY_B} за гибкость: границу по {TREATY_TYPE} принимаем. Ответим тем же.",
+    "en": "Border accepted under the {TREATY_TYPE}, and we thank {COUNTRY_B} for flexibility. We will answer in kind."
+  },
+  {
+    "id": "accept.conciliatory.120",
+    "category": "acceptance",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Вступаем в союз с {COUNTRY_A} и {COUNTRY_B} по {CONDITIONS} с искренней надеждой на прочную дружбу.",
+    "en": "Joining the alliance with {COUNTRY_A} and {COUNTRY_B} under {CONDITIONS} is done with sincere hope for durable friendship."
+  },
+  {
+    "id": "accept.conciliatory.121",
+    "category": "acceptance",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{CONDITIONS}"
+    ],
+    "ru": "Охотно принимаем {CONDITIONS}: {COUNTRY_A} уважил наши границы, и это дорогого стоит.",
+    "en": "Gladly accepted are {CONDITIONS}: {COUNTRY_A} respected our borders, and that is worth a great deal."
+  },
+  {
+    "id": "accept.conciliatory.122",
+    "category": "acceptance",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{TERMS}"
+    ],
+    "ru": "Торговое предложение принимаем дружелюбно. {TERMS} устраивают обе стороны, на такой основе торговать легче.",
+    "en": "Friendly acceptance of the trade offer: {TERMS} suit both sides; trade is easier on such a basis."
+  },
+  {
+    "id": "accept.conciliatory.123",
+    "category": "acceptance",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}"
+    ],
+    "ru": "Соглашаемся с радостью. {COUNTRY_B} вёл переговоры честно, и мы отплатим той же монетой.",
+    "en": "Agreement is given with pleasure. {COUNTRY_B} negotiated honestly, and we will repay in the same coin."
+  },
+  {
+    "id": "accept.conciliatory.124",
+    "category": "acceptance",
+    "subcategory": "economy",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TERMS}"
+    ],
+    "ru": "Экономическая часть договора по {TERMS} нас устраивает. {COUNTRY_A} не пытался выторговать лишнего, и это обнадёживает.",
+    "en": "Economic part of the treaty under {TERMS} suits us. {COUNTRY_A} did not try to bargain for extra, and that is encouraging."
+  },
+  {
+    "id": "accept.conciliatory.125",
+    "category": "acceptance",
+    "subcategory": "protocol",
+    "tone": "conciliatory",
+    "statuses": [
+      "accept"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{CONDITIONS}"
+    ],
+    "ru": "По-доброму, без оговорок принимаем протокол. {CONDITIONS} согласованы, {COUNTRY_B} может на нас опереться.",
+    "en": "Kindly and without reservations the protocol is accepted. {CONDITIONS} are agreed, and {COUNTRY_B} can rely on us."
+  }
+]

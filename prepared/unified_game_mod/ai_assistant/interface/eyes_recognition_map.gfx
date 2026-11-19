@@ -1,0 +1,4 @@
+spriteTypes = {
+ spriteType = { name = "GFX_mapmode_buttons_deselected_small_eyes_recognition" texturefile = "gfx/interface/mapmode/mapmode_button_all.dds" }
+ spriteType = { name = "GFX_mapmode_buttons_selected_small_eyes_recognition" texturefile = "gfx/interface/mapmode/mapmode_button_all.dds" }
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ eyes_capital_category:0 "EYES: Move capital"
+ eyes_begin_capital_selection:0 "Move capital"
+ eyes_begin_capital_selection_desc:0 "Show eligible states on the decisions map. Political power is spent when the capital moves."
+ eyes_cancel_capital_selection:0 "Cancel capital selection"
+ eyes_cancel_capital_selection_desc:0 "Choose an eligible state's decision marker on the map or cancel the move."
+ eyes_capital_choose_on_map:0 "Choose a new capital using the decision markers on the map."
+ eyes_move_capital:0 "Move capital to [FROM.GetName]"
+ eyes_move_capital_desc:0 "Choose an owned state under your full control. A successful move costs 100 political power."
+ eyes_move_capital_cost:0 "£pol_power §Y100§!"
+ eyes_move_capital_cost_blocked:0 "£pol_power §R100§!"
+ eyes_move_capital_cost_tooltip:0 "A successful move costs £pol_power §Y100§!."

@@ -1,0 +1,5 @@
+﻿l_french:
+ eyes_exp_disable_news:0 "EYES : désactiver les nouvelles internationales"
+ eyes_exp_enable_news:0 "EYES : activer les nouvelles internationales (au plus une fois tous les 7 jours)"
+ eyes_exp_disable_personal:0 "EYES : désactiver les messages personnels"
+ eyes_exp_enable_personal:0 "EYES : activer les messages personnels préchargés"

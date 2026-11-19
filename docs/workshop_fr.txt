@@ -1,0 +1,29 @@
+[h1]HOI4-EYES — Local AI Diplomacy & Government[/h1]
+[b]NightPulse | 0.9.0-beta.1 | HOI4 1.19.5.0[/b]
+[url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
+
+HOI4-EYES par [b]NightPulse[/b] : négociez avec les pays et consultez votre
+gouvernement grâce à une IA locale. Discussions, conférences, clauses précises,
+confirmations, actions contrôlées, reçus Bridge, mémoire et nouvelles.
+Atlas, Recognition Atlas, Country Maker, réunions et modèles navals sont inclus.
+
+IMPORTANT : Workshop installe le mod, pas l’application IA. Télécharger le
+compagnon Windows-source sur GitHub. Python 3.10+, WebView2 et Ollama avec
+qwen3:4b-instruct sont requis. Lancer setup_windows.bat une fois, puis start.bat.
+Une seule copie EYES active : ne pas combiner le mod local géré et la copie Workshop.
+
+Beta pour HOI4 [b]1.19.5.0[/b]. Toutes les propositions ne sont pas exécutables ;
+certains scripts nécessitent un redémarrage. La signature ne remplace pas une
+preuve du Bridge. Les cartes modifiées exigent une géométrie validée. Certaines
+réformes et fonctions navales restent consultatives. Commencer par une campagne
+jetable. Multijoueur, Ironman/succès et toutes les combinaisons DLC non certifiés.
+
+Original project: HOI4-EYES. Author: NightPulse.
+Apache-2.0; retain applicable NOTICE and third-party notices when redistributing.
+Please also credit the author and link the original GitHub/Workshop in your
+public description. This request does not add a condition to Apache-2.0.
+Unofficial project; not affiliated with or endorsed by Paradox Interactive.
+
+The owner-authorized cover uses the existing project-owned EYES icon. It is not an in-game screenshot.
+
+Original Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3842411221

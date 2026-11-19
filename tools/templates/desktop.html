@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="{{ locale }}" translate="no">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/static/world.css">
+<title>HOI4-EYES</title>
+<style>
+ body{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+ header{padding:8px 15px;gap:8px;flex-wrap:wrap}h1{font-size:20px}
+ #tabs{flex-wrap:wrap;gap:0 8px;padding:0 10px}#tabs button{flex:0 1 auto;padding:8px}
+ #workspaces{flex:1;min-height:0}#workspaces iframe{border:0;width:100%;height:100%;display:block}
+ #workspaces iframe[hidden]{display:none}#service-status{margin:2px 12px;font-size:12px}
+ #chat-list{display:grid;gap:8px;margin:16px;min-height:0;overflow:auto}
+ #chat-list article{margin:0}#chat-list p{white-space:pre-wrap}
+</style>
+<script src="/static/desktop.js" defer></script></head>
+<body>
+<header><h1>HOI4-EYES</h1>
+ <div><select id="language-choice" aria-label="{{ t('Interface language') }}">
+  {% for code,label in [('en','English'),('ru','Русский'),('fr','Français')] %}<option value="{{ code }}" {% if locale==code %}selected{% endif %}>{{ label }}</option>{% endfor %}
+ </select>
+ <button id="service-refresh">{{ t('Refresh') }}</button>
+ <button id="game-actions-open">{{ workspace.title }}</button>
+ <button id="qa-open">{{ workspace.qa }}</button>
+ <button id="live-qa-open">{{ workspace.qa_live }}</button>
+ <button id="service-stop">{{ t('Stop my components') }}</button></div></header>
+<nav id="tabs" aria-label="HOI4-EYES">
+{% for page, label in [('diplomacy','Diplomacy'),('atlas','Recognition Atlas'),('recognition','Diplomatic recognition'),('meetings','Government meetings'),('fleet','Fleet'),('maker','Country Maker')] %}
+ <button data-page="{{ page }}">{{ t(label) }}</button>
+{% endfor %}
+</nav>
+<p id="service-status" role="status"></p>
+<section id="chat-list" hidden aria-live="polite"></section>
+<div id="workspaces" data-title="{{ t('Selected workspace') }}" hidden></div>
+<dialog id="treaty-actions">
+ <h2>{{ actions.text.button }}</h2>
+ <label>{{ actions.text.preview }}
+  <select id="treaty-action-select">
+   {% for id, name in actions.names.items() %}<option value="{{ id }}">{{ name }}</option>{% endfor %}
+  </select>
+ </label>
+ <p id="treaty-preview"></p>
+ <ul id="treaty-history"></ul>
+ <p role="status" id="treaty-status"></p>
+ <button id="treaty-propose" disabled>{{ actions.text.send }}</button>
+ <form method="dialog"><button>{{ actions.text.close }}</button></form>
+</dialog>
+<dialog id="game-actions">
+ <h2>{{ workspace.title }}</h2>
+ <label>{{ workspace.search }} <input id="game-actions-query" type="search"></label>
+ <select id="game-actions-category" aria-label="{{ workspace.all }}">
+  {% for category in ('all','diplomatic','domestic','administrative') %}<option value="{{ category }}">{{ workspace[category] }}</option>{% endfor %}
+ </select>
+ <select id="game-actions-choice" aria-label="{{ workspace.title }}"></select>
+ <div id="game-actions-state" hidden>
+  <label>{{ workspace.target }} <select id="game-actions-target"></select></label>
+  <label id="game-actions-capital-label" hidden>{{ workspace.capital }} <select id="game-actions-capital"></select></label>
+  <div id="game-actions-infrastructure" hidden>
+   <label>{{ workspace.current_level }} <input type="number" id="game-actions-current-level" min="0" max="5"></label>
+   <label>{{ workspace.level }} <input type="number" id="game-actions-level" min="0" max="5"></label>
+  </div>
+ </div>
+ <p id="game-actions-preview" aria-live="polite"></p>
+ <button id="game-actions-next" disabled></button>
+ <details><summary>{{ workspace.history }}</summary><ul id="game-actions-history"></ul></details>
+ <form method="dialog"><button>{{ actions.text.close }}</button></form>
+</dialog>
+<dialog id="qa-dialog">
+ <h2>{{ workspace.qa }}</h2>
+ <p role="status" id="qa-state"></p>
+ <p>{{ workspace.qa_manual }}</p>
+ <p id="qa-report" style="overflow-wrap:anywhere"></p>
+ <form method="dialog"><button>{{ actions.text.close }}</button></form>
+</dialog>
+<dialog id="live-qa-dialog" style="max-width:min(760px,90vw);max-height:85vh;overflow:auto">
+ <h2>{{ workspace.qa_live }}</h2>
+ <p role="status" id="live-qa-state"></p>
+ <p>{{ workspace.qa_live_instructions }}</p>
+ <button id="live-qa-prepare">{{ workspace.qa_live_prepare }}</button>
+ <p id="live-qa-report"></p>
+ <ol id="live-qa-results"></ol>
+ <form method="dialog"><button>{{ actions.text.close }}</button></form>
+</dialog>
+<script type="application/json" id="desktop-labels">{{ {
+ 'open':t('Open selected chat in Bridge'),'none':t('No diplomatic chats yet. Choose a country in HOI4.'),
+ 'ready':t('Ready'),'not_ready':t('Not ready'),'error':t('The request could not be completed.'),
+ 'confirm_stop':t('Stop components started by this window?'),'treaty_actions':actions,
+ 'game_catalog':game_catalog,'workspace':workspace
+}|tojson }}</script>
+<script src="/static/game_actions.js" defer></script>
+<script src="/static/live_qa.js" defer></script>
+</body></html>

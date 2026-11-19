@@ -1,0 +1,12 @@
+﻿l_russian:
+ eyes_capital_category:0 "EYES: Перенос столицы"
+ eyes_begin_capital_selection:0 "Перенести столицу"
+ eyes_begin_capital_selection_desc:0 "Показать подходящие области на карте решений. Политическая власть списывается при переносе столицы."
+ eyes_cancel_capital_selection:0 "Отменить выбор столицы"
+ eyes_cancel_capital_selection_desc:0 "Нажмите значок решения над подходящей областью на карте или отмените перенос."
+ eyes_capital_choose_on_map:0 "Выберите новую столицу по значку решения на карте."
+ eyes_move_capital:0 "Перенести столицу: [FROM.GetName]"
+ eyes_move_capital_desc:0 "Выберите свою область под полным контролем. Успешный перенос стоит 100 политической власти."
+ eyes_move_capital_cost:0 "£pol_power §Y100§!"
+ eyes_move_capital_cost_blocked:0 "£pol_power §R100§!"
+ eyes_move_capital_cost_tooltip:0 "Успешный перенос стоит £pol_power §Y100§!."

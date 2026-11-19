@@ -1,0 +1,9 @@
+add_namespace = eyes_personal_message
+country_event = {
+ id = eyes_personal_message.1
+ title = eyes_personal_message.title
+ desc = eyes_personal_message.desc
+ is_triggered_only = yes
+ trigger = { is_ai = no }
+ option = { name = eyes_personal_message.ok }
+}

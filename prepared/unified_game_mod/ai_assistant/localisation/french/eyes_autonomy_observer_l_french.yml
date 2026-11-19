@@ -1,0 +1,5 @@
+﻿l_french:
+ eyes_autonomy_observer_category:0 "HOI4-EYES · Actions"
+ eyes_autonomy_enable_observer:0 "Activer les observations diplomatiques hebdomadaires"
+ eyes_autonomy_enable_observer_desc:0 "Export en lecture seule pour le Bridge. Aucun traité approuvé ou exécuté. L’autonomie du serveur s’active séparément."
+ eyes_autonomy_disable_observer:0 "Désactiver les observations diplomatiques"

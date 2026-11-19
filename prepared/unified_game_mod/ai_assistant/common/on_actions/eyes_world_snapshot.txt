@@ -1,0 +1,30 @@
+# Opt-in exports run in a synchronous country effect.
+on_actions = {
+ on_startup = { effect = {
+  every_country = {
+   limit = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled }
+   set_variable = { eyes_world_next_day = 0 }
+  }
+ } }
+ on_daily = { effect = {
+  if = {
+   limit = { is_ai = no has_country_flag = eyes_autonomy_observer_enabled
+    NOT = { check_variable = { var = eyes_world_next_day value = global.num_days compare = greater_than } }
+    NOT = { has_country_flag = eyes_world_snapshot_busy } }
+   set_country_flag = eyes_world_snapshot_busy
+   set_variable = { eyes_world_next_day = global.num_days }
+   if = { limit = { has_country_flag = eyes_world_interval_1 }
+    add_to_variable = { eyes_world_next_day = 1 }
+   }
+   else_if = { limit = { has_country_flag = eyes_world_interval_7 }
+    add_to_variable = { eyes_world_next_day = 7 }
+   }
+   else_if = { limit = { has_country_flag = eyes_world_interval_14 }
+    add_to_variable = { eyes_world_next_day = 14 }
+   }
+   else = { add_to_variable = { eyes_world_next_day = 3 } }
+   eyes_export_world_states = yes
+   clr_country_flag = eyes_world_snapshot_busy
+  }
+ } }
+}

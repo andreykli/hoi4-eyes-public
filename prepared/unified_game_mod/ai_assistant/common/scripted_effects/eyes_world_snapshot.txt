@@ -1,0 +1,45 @@
+eyes_export_world_states = {
+ eyes_ensure_campaign_identity = yes
+ add_to_variable = { eyes_world_sequence = 1 }
+ set_variable = { eyes_export_countries = 0 }
+ set_variable = { eyes_export_states = 0 }
+log = "EYES_WORLD_V1|BEGIN|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[?global.num_days|0]|[GetDateText]|[ROOT.GetTag]"
+ every_country = { limit = { exists = yes }
+ log = "EYES_WORLD_V1|COUNTRY|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[THIS.GetTag]"
+ ROOT = { add_to_variable = { eyes_export_countries = 1 } }
+  if = {
+   limit = { NOT = { tag = ROOT } ROOT = { is_in_array = { array = eyes_recognized value = PREV } } }
+   log = "EYES_WORLD_V1|RECOGNITION|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[THIS.GetTag]|recognized"
+  }
+  else_if = {
+   limit = { NOT = { tag = ROOT } ROOT = { is_in_array = { array = eyes_not_recognized value = PREV } } }
+   log = "EYES_WORLD_V1|RECOGNITION|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[THIS.GetTag]|not_recognized"
+  }
+ }
+ every_state = {
+ log = "EYES_WORLD_V1|STATE|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[THIS.GetID]|[THIS.Owner.GetTag]|[THIS.Controller.GetTag]"
+ ROOT = { add_to_variable = { eyes_export_states = 1 } }
+ }
+ # National totals only. Country task forces are not exposed by this scope.
+ set_temp_variable = { eyes_fleet_ship_count = num_ships }
+ set_temp_variable = { eyes_fleet_carrier = num_ships_with_type@carrier }
+ set_temp_variable = { eyes_fleet_capital = num_ships_with_type@capital }
+ set_temp_variable = { eyes_fleet_screen = num_ships_with_type@screen }
+ set_temp_variable = { eyes_fleet_submarine = num_ships_with_type@submarine }
+ set_temp_variable = { eyes_fleet_fuel = fuel_k }
+ log = "EYES_WORLD_V1|NAVY|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[?eyes_fleet_ship_count|0]|[?eyes_fleet_carrier|0]|[?eyes_fleet_capital|0]|[?eyes_fleet_screen|0]|[?eyes_fleet_submarine|0]|[?eyes_fleet_fuel|2]"
+ # Cabinet evidence belongs only to this authenticated Atlas batch.
+ set_variable = { eyes_cabinet_rows = 0 }
+ log = "EYES_WORLD_V1|CABINET|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|head|[ROOT.GetLeader]" ROOT = { add_to_variable = { eyes_cabinet_rows = 1 } }
+ every_character = {
+  limit = { is_political_advisor = yes }
+  log = "EYES_WORLD_V1|CABINET|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|minister|[THIS.GetName]" ROOT = { add_to_variable = { eyes_cabinet_rows = 1 } }
+ }
+ every_army_leader = {
+  if = { limit = { is_field_marshal = yes } log = "EYES_WORLD_V1|CABINET|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|marshal|[THIS.GetName]" ROOT = { add_to_variable = { eyes_cabinet_rows = 1 } } }
+  else = { log = "EYES_WORLD_V1|CABINET|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|general|[THIS.GetName]" ROOT = { add_to_variable = { eyes_cabinet_rows = 1 } } }
+ }
+ every_navy_leader = { log = "EYES_WORLD_V1|CABINET|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|admiral|[THIS.GetName]" ROOT = { add_to_variable = { eyes_cabinet_rows = 1 } } }
+ log = "EYES_WORLD_V1|CABINET_END|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[?ROOT.eyes_cabinet_rows|0]"
+ log = "EYES_WORLD_V1|END|[?global.eyes_campaign_seed_1|0]-[?global.eyes_campaign_seed_2|0]-[?global.eyes_campaign_seed_3|0]-[?global.eyes_campaign_seed_4|0]|[?ROOT.eyes_world_sequence|0]|[?ROOT.eyes_export_countries|0]|[?ROOT.eyes_export_states|0]"
+}

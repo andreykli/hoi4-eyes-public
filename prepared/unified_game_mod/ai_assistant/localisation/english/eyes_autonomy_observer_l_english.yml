@@ -1,0 +1,5 @@
+﻿l_english:
+ eyes_autonomy_observer_category:0 "HOI4-EYES · Actions"
+ eyes_autonomy_enable_observer:0 "Enable weekly diplomacy observations"
+ eyes_autonomy_enable_observer_desc:0 "Read-only export for EYES Bridge. No treaty is approved or executed. Server autonomy must be enabled separately."
+ eyes_autonomy_disable_observer:0 "Disable diplomacy observations"

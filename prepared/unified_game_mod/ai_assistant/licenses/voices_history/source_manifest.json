@@ -1,0 +1,45 @@
+{
+  "repository": "https://github.com/tierrewwalessio-crypto/voices-of-history",
+  "revision": "3226478a81edfc376d63502fa9708c48d309b447",
+  "files": {
+    "middleware/game_state.py": {
+      "sha256": "966071d440c5a1fb8e94b347ce89f65231cb80ddb4c4cd9f23c24867d9cc2330",
+      "functions": [
+        "_nation_compact",
+        "_nation_line",
+        "diplomatic_contact",
+        "diplomatic_context",
+        "world_snapshot_block"
+      ],
+      "function_ast_sha256": {
+        "diplomatic_contact": "a205d1486b9d726c09ac39f69a6159b35a21149a23838970487ef421800667f2",
+        "diplomatic_context": "4eeba91265cccee3ecfcee9f1cb43d6d3ba293b5cfa4e4b9283ebc63ece8ac32",
+        "_nation_line": "826e8a79c9994cde17799f1a60f2da5d96142e81b2805adb76504c9f135c9bda",
+        "_nation_compact": "36e4ad41dbc4bc87045800b85f8905fb78173170d5d3a1f4ca640b70d20d0127",
+        "world_snapshot_block": "3905777986307ef7092f8544106bd9e7ea353c2cb3b2954027e80d01ec891fc0"
+      }
+    },
+    "LICENSE": {
+      "sha256": "ab8680a75b3d757dd39fd879ec7acba9271fab026cf942e74b66bb6ccdfb64bf"
+    },
+    "middleware/strategist.py": {
+      "sha256": "bb343da70ef0eb2c1c7252a519e4483a61291eabbf3d95a36ef78588b517c059",
+      "functions": [
+        "Strategist.due",
+        "Strategist.finish",
+        "Strategist.history"
+      ],
+      "status": "adapted; storage, scope and safety changes documented in ORIGIN.md"
+    },
+    "middleware/safe_actions.py": {
+      "sha256": "50c2800d5ea9005f0cd87f9df88fd01374261357d075699ed7a8933cdeaf3bb7",
+      "copied": [
+        "CATALOG"
+      ],
+      "usage": "isolated local-model experiment only",
+      "adapted_functions": [
+        "response_schema (diplomacy-only experiment)"
+      ]
+    }
+  }
+}

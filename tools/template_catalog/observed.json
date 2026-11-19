@@ -1,0 +1,62 @@
+[
+  {
+    "id": "news.verified.001", "category": "world_news", "subcategory": "general",
+    "tone": "neutral", "statuses": ["execution_confirmed"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "en": "{COUNTRY_A} and {COUNTRY_B}: the game logged successful execution of the action — {TREATY_TYPE}.",
+    "ru": "{COUNTRY_A} и {COUNTRY_B}: игра зафиксировала успешное выполнение действия — {TREATY_TYPE}."
+  },
+  {
+    "id": "news.verified.002", "category": "world_news", "subcategory": "general",
+    "tone": "neutral", "statuses": ["execution_verified"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{TREATY_TYPE}"],
+    "en": "{COUNTRY_A} and {COUNTRY_B}: the observed game state confirms the outcome — {TREATY_TYPE}.",
+    "ru": "{COUNTRY_A} и {COUNTRY_B}: наблюдаемое состояние игры подтверждает результат — {TREATY_TYPE}."
+  },
+  {
+    "id": "third.observed.001", "category": "third_country", "subcategory": "general",
+    "tone": "neutral", "statuses": ["not_factual"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{COUNTRY_C}"],
+    "en": "{COUNTRY_A} will assess what the agreement between {COUNTRY_B} and {COUNTRY_C} means for its interests.",
+    "ru": "{COUNTRY_A} оценит, что соглашение между {COUNTRY_B} и {COUNTRY_C} означает для её интересов.",
+    "fr": "{COUNTRY_A} évaluera les implications de l’accord entre {COUNTRY_B} et {COUNTRY_C} pour ses intérêts."
+  },
+  {
+    "id": "third.observed.002", "category": "third_country", "subcategory": "general",
+    "tone": "friendly", "statuses": ["not_factual"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{COUNTRY_C}"],
+    "en": "{COUNTRY_A} welcomes the agreement between {COUNTRY_B} and {COUNTRY_C} and hopes it will encourage further dialogue.",
+    "ru": "{COUNTRY_A} приветствует соглашение между {COUNTRY_B} и {COUNTRY_C} и надеется на продолжение диалога.",
+    "fr": "{COUNTRY_A} salue l’accord entre {COUNTRY_B} et {COUNTRY_C} et espère que le dialogue se poursuivra."
+  },
+  {
+    "id": "third.observed.003", "category": "third_country", "subcategory": "general",
+    "tone": "cautious", "statuses": ["not_factual"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{COUNTRY_C}"],
+    "en": "{COUNTRY_A} is reserving judgment on the implications of the agreement between {COUNTRY_B} and {COUNTRY_C}.",
+    "ru": "{COUNTRY_A} пока воздерживается от оценки последствий соглашения между {COUNTRY_B} и {COUNTRY_C}.",
+    "fr": "{COUNTRY_A} réserve son jugement sur les conséquences de l’accord entre {COUNTRY_B} et {COUNTRY_C}."
+  },
+  {
+    "id": "third.observed.004", "category": "third_country", "subcategory": "general",
+    "tone": "distrustful", "statuses": ["not_factual"],
+    "placeholders": ["{COUNTRY_A}", "{COUNTRY_B}", "{COUNTRY_C}"],
+    "en": "{COUNTRY_A} views the agreement between {COUNTRY_B} and {COUNTRY_C} with concern and will examine what it means for its interests.",
+    "ru": "{COUNTRY_A} с обеспокоенностью восприняла соглашение между {COUNTRY_B} и {COUNTRY_C} и оценит его последствия для своих интересов.",
+    "fr": "{COUNTRY_A} accueille avec inquiétude l’accord entre {COUNTRY_B} et {COUNTRY_C} et en examinera les conséquences pour ses intérêts."
+  },
+  {
+    "id": "memory.observed.001", "category": "memory", "subcategory": "general",
+    "tone": "neutral", "statuses": ["clarify"], "placeholders": [],
+    "en": "We are taking the existing diplomatic record into account as we consider this question.",
+    "ru": "Рассматривая этот вопрос, мы учитываем зафиксированную историю переговоров и договорённостей.",
+    "fr": "Nous examinerons cette question à la lumière des éléments diplomatiques déjà consignés."
+  },
+  {
+    "id": "memory.observed.002", "category": "memory", "subcategory": "general",
+    "tone": "cautious", "statuses": ["defer"], "placeholders": [],
+    "en": "We will keep the existing record of our discussions in view when we return to this matter.",
+    "ru": "Когда мы вернёмся к этому вопросу, мы учтём записи предыдущих переговоров.",
+    "fr": "Lorsque nous reviendrons sur cette question, nous tiendrons compte des échanges déjà consignés."
+  }
+]

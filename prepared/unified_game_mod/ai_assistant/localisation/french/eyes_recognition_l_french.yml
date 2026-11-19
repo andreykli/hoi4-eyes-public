@@ -1,0 +1,13 @@
+﻿l_french:
+ eyes_autonomy_observer_category:0 "HOI4-EYES · Actions"
+ eyes_recognize:0 "Reconnaître le pays · position inconnue"
+ eyes_recognize_again:0 "Reconnaître le pays · auparavant non reconnu"
+ eyes_withdraw_recognition:0 "Retirer la reconnaissance · pays reconnu"
+ eyes_recognize_confirm:0 "Consigner la reconnaissance juridique de ce pays dans HOI4-EYES ?"
+ eyes_recognize_again_confirm:0 "Rétablir la reconnaissance juridique de ce pays dans HOI4-EYES ?"
+ eyes_withdraw_recognition_confirm:0 "Retirer la reconnaissance juridique de ce pays dans HOI4-EYES ?"
+ MAPMODE_EYES_RECOGNITION_NAME:0 "Reconnaissance diplomatique"
+ MAPMODE_EYES_RECOGNITION_DESCRIPTION:0 "Vert : reconnu. Rouge : non reconnu. Gris : inconnu."
+ MAPMODE_EYES_RECOGNITION:0 "Reconnaissance diplomatique"
+ eyes_recognition_tooltip:0 "Reconnaissance diplomatique"
+ eyes_recognition_tooltip_delayed:0 "Vert : reconnu. Rouge : non reconnu. Gris : inconnu."

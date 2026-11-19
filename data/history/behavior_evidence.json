@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "policy": "Evidence supplements the existing profiles. Texts are authored interpretations, not quotations. They never determine legal decisions. Unknown risk, temperament and unverified speech traits remain null.",
+  "features": [
+    {
+      "person": "usa_hull",
+      "id": "trade_cooperation",
+      "from": "1935-01-01",
+      "actions": [
+        "embargo",
+        "lift_embargo",
+        "market_access"
+      ],
+      "claim": "Advocated trade liberalization and reciprocal tariff reductions.",
+      "source": "https://history.state.gov/departmenthistory/people/hull-cordell",
+      "argument": {
+        "en": "I would weigh commercial cooperation alongside the pressure a restriction is meant to exert.",
+        "ru": "Я сопоставил бы возможности торгового сотрудничества с давлением, ради которого вводится ограничение."
+      }
+    },
+    {
+      "person": "eng_baldwin",
+      "id": "international_restraint",
+      "from": "1932-01-01",
+      "actions": [
+        "non_aggression_pact",
+        "truce",
+        "guarantee"
+      ],
+      "claim": "Initially promoted international disarmament as Lord President; subsequently supported rearmament. Historical concern, not an unconditional disarmament rule.",
+      "source": "https://www.gov.uk/government/history/past-prime-ministers/stanley-baldwin",
+      "argument": {
+        "en": "I would examine whether restraint could reduce insecurity rather than merely leave it unspoken.",
+        "ru": "Я рассмотрел бы, уменьшит ли сдержанность тревогу за безопасность, а не просто оставит её невысказанной."
+      }
+    },
+    {
+      "person": "wd_q10664",
+      "id": "negotiated_war_avoidance",
+      "from": "1937-06-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "territory_partition",
+        "truce",
+        "peace_conference"
+      ],
+      "claim": "Sought to avert destructive war through negotiation; subsequently declared war in 1939. Not an unconditional appeasement rule.",
+      "source": "https://www.gov.uk/government/history/past-prime-ministers/neville-chamberlain",
+      "argument": {
+        "en": "I would exhaust a credible diplomatic opening before accepting that confrontation is unavoidable.",
+        "ru": "Я использовал бы заслуживающую доверия дипломатическую возможность, прежде чем признать столкновение неизбежным."
+      }
+    },
+    {
+      "person": "wd_q8016",
+      "id": "credible_security",
+      "from": "1936-01-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "alliance",
+        "faction_join",
+        "territory_partition"
+      ],
+      "claim": "Opposed appeasement of Nazi Germany. This records an orientation, not evidence of a threat in the current campaign.",
+      "speech_evidence": "Government biography documents wartime public oratory sustaining morale; no private temperament or imitation of quotations inferred.",
+      "source": "https://www.gov.uk/government/history/past-prime-ministers/winston-churchill",
+      "argument": {
+        "en": "An assurance must be judged by the security it offers, not by the relief of hearing reassuring words.",
+        "ru": "О заверении нужно судить по обеспечиваемой безопасности, а не по облегчению от обнадёживающих слов."
+      }
+    },
+    {
+      "person": "ger_hitler",
+      "id": "territorial_power",
+      "from": "1926-01-01",
+      "actions": [
+        "territory_partition",
+        "political_annexation"
+      ],
+      "claim": "National Socialist goals included territorial expansion, alongside racist and antisemitic aims. Only territorial power is used in expression; no specific claim or hateful speech is generated.",
+      "source": "https://encyclopedia.ushmm.org/content/en/article/adolf-hitler",
+      "argument": {
+        "en": "I would judge a territorial arrangement by its effect on the state's power and freedom of action.",
+        "ru": "Я оценивал бы территориальную договорённость по её влиянию на могущество государства и свободу действий."
+      }
+    },
+    {
+      "person": "wd_q23559",
+      "id": "influence_and_autonomy",
+      "from": "1933-01-01",
+      "actions": [
+        "territory_partition",
+        "political_annexation",
+        "alliance",
+        "faction_join"
+      ],
+      "claim": "Pursued imperial expansion while German-Italian relations included conflicting interests, notably Austria. No fixed claim or current alliance inferred.",
+      "source": "https://www.dhm.de/lemo/kapitel/ns-regime/aussenpolitik/die-deutsch-italienischen-beziehungen",
+      "argument": {
+        "en": "I would weigh the influence an arrangement brings against the room for action it leaves us.",
+        "ru": "Я сопоставил бы влияние, которое даёт договорённость, со свободой действий, которую она нам оставляет."
+      }
+    },
+    {
+      "person": "wd_q313128",
+      "id": "neutral_independence",
+      "from": "1939-05-24",
+      "actions": [
+        "alliance",
+        "faction_join",
+        "non_aggression_pact",
+        "market_access",
+        "guarantee"
+      ],
+      "claim": "Contemporary diplomatic report records Prince Paul's wish for neutrality and rejection of economic dependence threatening independence. A reported position, not access to private thoughts.",
+      "source": "https://history.state.gov/historicaldocuments/frus1939v02/d857",
+      "argument": {
+        "en": "I would be reluctant to purchase immediate assistance at the cost of independent judgement.",
+        "ru": "Я не хотел бы оплачивать немедленную помощь утратой самостоятельности суждений."
+      }
+    },
+    {
+      "person": "wd_q18434",
+      "id": "nonintervention_and_defence",
+      "from": "1936-08-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "military_access",
+        "truce",
+        "peace_conference"
+      ],
+      "claim": "Pursued non-intervention in Spain with Britain while accelerating defence production in response to Germany. Not general pacifism.",
+      "source": "https://www.assemblee-nationale.fr/13/evenements/Ceremonie_quatre-vingts/leon-blum.asp",
+      "argument": {
+        "en": "I would seek security without treating intervention as the automatic answer to every difficulty.",
+        "ru": "Я стремился бы к безопасности, не считая вмешательство автоматическим ответом на любое затруднение."
+      }
+    },
+    {
+      "person": "wd_q335191",
+      "id": "noninterference",
+      "from": "1924-08-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "territory_partition",
+        "military_access",
+        "market_access"
+      ],
+      "claim": "Defended non-interference in China in a July 1924 Diet speech. Joint history report, chapter 3, printed page 77. Historical orientation, not present government policy.",
+      "source": "https://www.mofa.go.jp/mofaj/files/100512970.pdf",
+      "argument": {
+        "en": "I would look for cooperation that does not require directing another country's internal affairs.",
+        "ru": "Я искал бы сотрудничества, не требующего распоряжаться внутренними делами другой страны."
+      }
+    },
+    {
+      "person": "wd_q781476",
+      "id": "collective_security",
+      "from": "1934-01-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "alliance",
+        "faction_join",
+        "territory_partition",
+        "peace_conference"
+      ],
+      "claim": "Romania's UN statement describes advocacy of collective security, stable borders, sovereignty and political/legal settlement. Retrospective official assessment, not a direct quotation.",
+      "source": "https://digitallibrary.un.org/record/764707/files/S_PV.7105-EN.pdf",
+      "argument": {
+        "en": "I would connect security with respect for sovereignty and a political means of settling differences.",
+        "ru": "Я связывал бы безопасность с уважением суверенитета и политическим способом разрешения разногласий."
+      }
+    },
+    {
+      "person": "wd_q317462",
+      "id": "territorial_consent",
+      "from": "1919-04-22",
+      "actions": [
+        "territory_partition",
+        "political_annexation",
+        "peace_conference"
+      ],
+      "claim": "Examined treaty obligations and consent while arguing China's Shantung case at the Paris meeting on 22 April 1919. A documented activity, not a complete ideology.",
+      "source": "https://history.state.gov/historicaldocuments/frus1919Parisv05/d15",
+      "argument": {
+        "en": "I would examine the basis of consent and the rights being transferred before accepting a territorial argument.",
+        "ru": "Я изучил бы основания согласия и передаваемые права, прежде чем принять территориальный довод."
+      }
+    },
+    {
+      "person": "wd_q314826",
+      "id": "treaty_rights",
+      "from": "1932-01-07",
+      "actions": [
+        "territory_partition",
+        "political_annexation",
+        "peace_conference",
+        "non_aggression_pact"
+      ],
+      "claim": "Articulated nonrecognition of impairment of treaty rights through aggression; led naval and disarmament delegations.",
+      "source": "https://history.state.gov/departmenthistory/people/stimson-henry-lewis",
+      "argument": {
+        "en": "I would distinguish an arrangement freely agreed from a change presented as valid merely because force made it possible.",
+        "ru": "Я отличал бы свободно согласованную договорённость от изменения, объявленного правомерным лишь потому, что его позволила сила."
+      }
+    },
+    {
+      "person": "wd_q362118",
+      "id": "continuing_institutions",
+      "from": "1945-04-25",
+      "actions": [
+        "peace_conference",
+        "alliance",
+        "faction_join",
+        "guarantee"
+      ],
+      "claim": "Chaired the US San Francisco delegation and later advocated the UN forum for Soviet-American tensions. No UN existence is inferred in an alternate campaign.",
+      "source": "https://history.state.gov/departmenthistory/people/stettinius-edward-reilly",
+      "argument": {
+        "en": "I would ask what continuing forum could help governments address differences after this meeting ends.",
+        "ru": "Я спросил бы, какой постоянный механизм поможет правительствам обсуждать разногласия после завершения встречи."
+      }
+    },
+    {
+      "person": "usa_fdr",
+      "id": "good_neighbor",
+      "from": "1934-01-01",
+      "actions": [
+        "non_aggression_pact",
+        "guarantee",
+        "military_access",
+        "market_access"
+      ],
+      "claim": "Office of the Historian identifies Roosevelt's Good Neighbor policy and non-intervention commitment. No geographical neighbour relationship is inferred.",
+      "source": "https://history.state.gov/departmenthistory/people/hull-cordell",
+      "argument": {
+        "en": "I would seek a practical understanding that respects each country's ability to conduct its own affairs.",
+        "ru": "Я стремился бы к практической договорённости, уважающей право каждой страны вести собственные дела."
+      }
+    }
+  ],
+  "date_policy": "from is a conservative activation threshold for expression, not a newly asserted biographical date; month/year-only evidence is activated after that period."
+}

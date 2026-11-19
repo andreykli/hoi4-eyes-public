@@ -1,0 +1,214 @@
+guiTypes = {
+	containerWindowType = {
+		name = "eyes_diplomacy_launcher_window"
+		# One button, one atlas: frame, art and hit area cannot drift independently.
+		position = { x = 624 y = -8 }
+		size = { width = 46 height = 46 }
+		Orientation = upper_left
+		clipping = no
+
+		buttonType = {
+			name = "eyes_diplomacy_open_button"
+			position = { x = 23 y = 23 }
+			Orientation = CENTER
+			size = { x = 46 y = 46 }
+			spriteType = "GFX_eyes_diplomacy_launcher"
+			pdx_tooltip = "EYES_DIPLOMACY_OPEN"
+			clicksound = click_action
+		}
+	}
+
+	containerWindowType = {
+		name = "eyes_diplomacy_panel_window"
+		position = { x = 30 y = 100 }
+		size = { width = 460 height = 570 }
+		moveable = yes
+		clipping = no
+
+		background = {
+			name = "eyes_diplomacy_panel_background"
+			quadTextureSprite = "GFX_tiled_window_1b_border"
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_title"
+			position = { x = 18 y = 10 }
+			font = "hoi_20b"
+			text = "EYES_DIPLOMACY_TITLE"
+			maxWidth = 365
+			maxHeight = 28
+		}
+
+		buttonType = {
+			name = "eyes_diplomacy_close_button"
+			position = { x = -18 y = 10 }
+			Orientation = upper_right
+			quadTextureSprite = "GFX_closebutton"
+			clicksound = click_close
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_hint"
+			position = { x = 18 y = 42 }
+			font = "cg_16b"
+			text = "EYES_DIPLOMACY_HINT"
+			maxWidth = 425
+			maxHeight = 44
+			multiline = yes
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_selected_label"
+			position = { x = 18 y = 91 }
+			font = "hoi_18mbs"
+			text = "EYES_DIPLOMACY_SELECTED"
+			maxWidth = 425
+			maxHeight = 24
+		}
+
+		gridBoxType = {
+			name = "eyes_selected_country_list"
+			position = { x = 18 y = 119 }
+			size = { width = 424 height = 40 }
+			slotsize = { width = 404 height = 34 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_available_label"
+			position = { x = 18 y = 163 }
+			font = "hoi_18mbs"
+			text = "EYES_DIPLOMACY_AVAILABLE"
+			maxWidth = 425
+			maxHeight = 24
+		}
+
+		containerWindowType = {
+			name = "eyes_country_list_viewport"
+			position = { x = 18 y = 190 }
+			size = { width = 424 height = 340 }
+			margin = { right = 20 }
+			clipping = yes
+
+			gridBoxType = {
+				name = "eyes_country_list"
+				position = { x = 0 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 404 height = 34 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+				format = "UPPER_LEFT"
+			}
+		}
+
+		buttonType = {
+			name = "eyes_country_page_previous_button"
+			position = { x = 70 y = 535 }
+			size = { x = 94 y = 31 }
+			quadTextureSprite = "GFX_button_94x31"
+			buttonText = "EYES_DIPLOMACY_PREVIOUS"
+			buttonFont = "cg_16b"
+			clicksound = click_action
+		}
+
+		instantTextBoxType = {
+			name = "eyes_country_page_status"
+			position = { x = 175 y = 539 }
+			font = "hoi_16mbs"
+			text = "EYES_DIPLOMACY_PAGE_STATUS"
+			maxWidth = 110
+			maxHeight = 24
+			format = centre
+		}
+
+		buttonType = {
+			name = "eyes_country_page_next_button"
+			position = { x = 296 y = 535 }
+			size = { x = 94 y = 31 }
+			quadTextureSprite = "GFX_button_94x31"
+			buttonText = "EYES_DIPLOMACY_NEXT"
+			buttonFont = "cg_16b"
+			clicksound = click_action
+		}
+	}
+
+	containerWindowType = {
+		name = "eyes_diplomacy_country_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 404 height = 34 }
+		clipping = no
+
+		iconType = {
+			name = "eyes_diplomacy_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 8 y = 5 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_country_name"
+			position = { x = 50 y = 6 }
+			font = "hoi_16mbs"
+			text = "[THIS.GetName]"
+			maxWidth = 245
+			maxHeight = 24
+			truncate = yes
+		}
+
+		buttonType = {
+			name = "eyes_country_select_button"
+			position = { x = 307 y = 1 }
+			size = { x = 94 y = 31 }
+			orientation = upper_left
+			buttonText = "EYES_DIPLOMACY_SELECT"
+			buttonFont = "cg_16b"
+			quadTextureSprite = "GFX_button_94x31"
+			clicksound = click_action
+		}
+	}
+
+	containerWindowType = {
+		name = "eyes_diplomacy_selected_country_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 404 height = 34 }
+		clipping = no
+
+		iconType = {
+			name = "eyes_diplomacy_selected_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 8 y = 5 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "eyes_diplomacy_selected_country_name"
+			position = { x = 50 y = 6 }
+			font = "hoi_16mbs"
+			text = "[THIS.GetName]"
+			maxWidth = 122
+			maxHeight = 24
+			truncate = yes
+		}
+
+		buttonType = {
+			name = "eyes_annex_voluntary_button"
+			position = { x = 177 y = 1 }
+			size = { x = 108 y = 31 }
+			quadTextureSprite = "GFX_button_94x31"
+			buttonText = "EYES_ANNEX_VOLUNTARY"
+			buttonFont = "cg_16b"
+			clicksound = click_action
+		}
+
+		buttonType = {
+			name = "eyes_annex_pressure_button"
+			position = { x = 291 y = 1 }
+			size = { x = 108 y = 31 }
+			quadTextureSprite = "GFX_button_94x31"
+			buttonText = "EYES_ANNEX_PRESSURE"
+			buttonFont = "cg_16b"
+			clicksound = click_action
+		}
+	}
+}

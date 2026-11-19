@@ -1,0 +1,2123 @@
+[
+  {
+    "id": "third.friendly.001",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Добрые вести из {COUNTRY_B} и {COUNTRY_C} о {TREATY_TYPE} {COUNTRY_A} встречает с надеждой: пусть наши озабоченности тоже будут услышаны.",
+    "en": "Good news from {COUNTRY_B} and {COUNTRY_C} on {TREATY_TYPE} is met by {COUNTRY_A} with hope: may our concerns be heard as well."
+  },
+  {
+    "id": "third.friendly.002",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Приветствуем шаг {COUNTRY_B} и {COUNTRY_C} к {TREATY_TYPE} и приглашаем их к консультациям о торговых путях через {COUNTRY_A}.",
+    "en": "Welcomed is the step of {COUNTRY_B} and {COUNTRY_C} toward {TREATY_TYPE}, and {COUNTRY_A} invites them to consultations on trade routes through its territory."
+  },
+  {
+    "id": "third.friendly.003",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "С интересом и симпатией следит {COUNTRY_A} за обсуждением {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C}; границы в нём лучше обсуждать открыто.",
+    "en": "With interest and sympathy does {COUNTRY_A} follow the discussion of {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}; borders there are better discussed openly."
+  },
+  {
+    "id": "third.friendly.004",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Если союз {COUNTRY_B} и {COUNTRY_C} закрепляется {TREATY_TYPE}, {COUNTRY_A} рада это слышать и напоминает о своих интересах.",
+    "en": "If the union of {COUNTRY_B} and {COUNTRY_C} is anchored by {TREATY_TYPE}, {COUNTRY_A} is glad to hear it and recalls its own interests."
+  },
+  {
+    "id": "third.friendly.005",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Уважение к голосу {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} вызывает у {COUNTRY_A} искреннее одобрение.",
+    "en": "Respect for the voice of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} earns sincere approval from {COUNTRY_A}."
+  },
+  {
+    "id": "third.friendly.006",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Рады, что {COUNTRY_B} и {COUNTRY_C} ищут выход через {TREATY_TYPE}; {COUNTRY_A} открыта для разговора и надеется на сдержанность.",
+    "en": "Glad are we that {COUNTRY_B} and {COUNTRY_C} seek a way out through {TREATY_TYPE}; {COUNTRY_A} is open to talk and hopes for restraint."
+  },
+  {
+    "id": "third.friendly.007",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Хорошее начало, считает {COUNTRY_A}: {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} заслуживает внимательного и дружелюбного прочтения.",
+    "en": "Good start, in the view of {COUNTRY_A}: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} deserves a careful and friendly reading."
+  },
+  {
+    "id": "third.friendly.008",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "С надеждой смотрит {COUNTRY_A} на {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} и просит учесть её интересы безопасности.",
+    "en": "Hopeful is {COUNTRY_A} about {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} and asks that its security interests be taken into account."
+  },
+  {
+    "id": "third.friendly.009",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Открытые торговые консультации с {COUNTRY_B} и {COUNTRY_C} по {TREATY_TYPE} {COUNTRY_A} приветствует и охотно продолжит.",
+    "en": "Open trade consultations with {COUNTRY_B} and {COUNTRY_C} on {TREATY_TYPE} are welcomed by {COUNTRY_A}, which will gladly continue them."
+  },
+  {
+    "id": "third.friendly.010",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Территориальные вопросы в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} советует решать так, чтобы соседи не чувствовали угрозы.",
+    "en": "Territorial questions in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} should, {COUNTRY_A} advises, be settled so that neighbours feel no threat."
+  },
+  {
+    "id": "third.friendly.011",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Дружеский жест: {COUNTRY_A} не против союзных планов {COUNTRY_B} и {COUNTRY_C} и просит держать её в курсе {TREATY_TYPE}.",
+    "en": "Friendly gesture: {COUNTRY_A} does not object to the union plans of {COUNTRY_B} and {COUNTRY_C} and asks to be kept informed on {TREATY_TYPE}."
+  },
+  {
+    "id": "third.friendly.012",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенитет {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} для {COUNTRY_A} важен, и она рада, что об этом говорят вслух.",
+    "en": "Dear to {COUNTRY_A} is the sovereignty of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B}, and it is glad this is said aloud."
+  },
+  {
+    "id": "third.friendly.013",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Кризис вокруг {COUNTRY_B} и {COUNTRY_C} тревожит, но {TREATY_TYPE} даёт {COUNTRY_A} повод для осторожного оптимизма.",
+    "en": "Worrying is the crisis around {COUNTRY_B} and {COUNTRY_C}, yet {TREATY_TYPE} gives {COUNTRY_A} grounds for cautious optimism."
+  },
+  {
+    "id": "third.friendly.014",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Тепло отзывается {COUNTRY_A} о тоне переговоров {COUNTRY_B} и {COUNTRY_C} по {TREATY_TYPE} и желает им успеха.",
+    "en": "Warmly does {COUNTRY_A} speak of the tone of the talks between {COUNTRY_B} and {COUNTRY_C} on {TREATY_TYPE} and wishes them success."
+  },
+  {
+    "id": "third.friendly.015",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Позитивно оценивает {COUNTRY_A} первые сигналы по {TREATY_TYPE} от {COUNTRY_B} и {COUNTRY_C}, сохраняя надежду на прочный мир.",
+    "en": "Positive is the assessment of {COUNTRY_A} of the first signals on {TREATY_TYPE} from {COUNTRY_B} and {COUNTRY_C}, with hope for a durable peace."
+  },
+  {
+    "id": "third.friendly.016",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Симпатична {COUNTRY_A} идея {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C}; она готова обсудить, как это отразится на её рынке.",
+    "en": "Sympathetic is {COUNTRY_A} to the idea of {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} and is ready to discuss how it affects its market."
+  },
+  {
+    "id": "third.friendly.017",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Спокойное отношение к {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} высказывает {COUNTRY_A}, напоминая о своих границах и интересах.",
+    "en": "Calm is the attitude of {COUNTRY_A} to {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}, and it recalls its borders and interests."
+  },
+  {
+    "id": "third.friendly.018",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Приглашаем {COUNTRY_B} и {COUNTRY_C} к консультациям о {TREATY_TYPE}: {COUNTRY_A} хотела бы понимать, куда движется их союз.",
+    "en": "Invited to consultations on {TREATY_TYPE} are {COUNTRY_B} and {COUNTRY_C}: {COUNTRY_A} would like to understand where their union is heading."
+  },
+  {
+    "id": "third.friendly.019",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Голос {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} звучит для {COUNTRY_A} обнадёживающе, и она надеется, что так и останется.",
+    "en": "Encouraging to {COUNTRY_A} sounds the voice of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B}, and it hopes this stays so."
+  },
+  {
+    "id": "third.friendly.020",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Осторожный оптимизм {COUNTRY_A} по поводу {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C}: главное, чтобы кризис не углублялся.",
+    "en": "Cautious optimism from {COUNTRY_A} about {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}: the main thing is that the crisis does not deepen."
+  },
+  {
+    "id": "third.friendly.021",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "friendly",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Искренне добрые пожелания шлёт {COUNTRY_A} {COUNTRY_B} и {COUNTRY_C}: пусть {TREATY_TYPE} принесёт им спокойствие, а нам — ясность.",
+    "en": "Sincerely good wishes are sent by {COUNTRY_A} to {COUNTRY_B} and {COUNTRY_C}: may {TREATY_TYPE} bring them calm and bring us clarity."
+  },
+  {
+    "id": "third.neutral.022",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Нейтральная позиция {COUNTRY_A}: {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} будет изучен на предмет влияния на нашу безопасность.",
+    "en": "Neutral is the position of {COUNTRY_A}: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} will be studied for its effect on our security."
+  },
+  {
+    "id": "third.neutral.023",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "К {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} относится ровно: торговые потоки важнее заявлений, и мы будем их отслеживать.",
+    "en": "Level is the attitude of {COUNTRY_A} to {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}: trade flows matter more than statements, and we will track them."
+  },
+  {
+    "id": "third.neutral.024",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Вопрос территорий в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} рассматривает без спешки и без предварительных выводов.",
+    "en": "Examined without haste and without preliminary conclusions is the territorial question in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} by {COUNTRY_A}."
+  },
+  {
+    "id": "third.neutral.025",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзные планы {COUNTRY_B} и {COUNTRY_C} по {TREATY_TYPE} {COUNTRY_A} принимает к сведению, не более того.",
+    "en": "Noted, and nothing more, are the union plans of {COUNTRY_B} and {COUNTRY_C} under {TREATY_TYPE} for {COUNTRY_A}."
+  },
+  {
+    "id": "third.neutral.026",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенные дела {COUNTRY_C} и {COUNTRY_B} в {TREATY_TYPE} {COUNTRY_A} комментирует сдержанно: это их решение, а не наше.",
+    "en": "Sovereign affairs of {COUNTRY_C} and {COUNTRY_B} in {TREATY_TYPE} are commented on by {COUNTRY_A} with restraint: that is their decision, not ours."
+  },
+  {
+    "id": "third.neutral.027",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ровно, без эмоций воспринимает {COUNTRY_A} кризис вокруг {COUNTRY_B} и {COUNTRY_C}; {TREATY_TYPE} в этом контексте лишь один из факторов.",
+    "en": "Evenly, without emotion does {COUNTRY_A} take the crisis around {COUNTRY_B} and {COUNTRY_C}; {TREATY_TYPE} is only one factor in it."
+  },
+  {
+    "id": "third.neutral.028",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Официальная реакция {COUNTRY_A} на {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C}: принято, зафиксировано, будет рассмотрено.",
+    "en": "Official reaction of {COUNTRY_A} to {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}: noted, recorded, to be considered."
+  },
+  {
+    "id": "third.neutral.029",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Безопасность {COUNTRY_A} от {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} напрямую не зависит — так мы оцениваем ситуацию сегодня.",
+    "en": "Security of {COUNTRY_A} does not directly depend on {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}, as we assess the situation today."
+  },
+  {
+    "id": "third.neutral.030",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговая сторона {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} для {COUNTRY_A} интересна, но пока без выводов и обещаний.",
+    "en": "Trade side of {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} interests {COUNTRY_A}, but so far without conclusions or promises."
+  },
+  {
+    "id": "third.neutral.031",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Границы, затронутые {TREATY_TYPE}, {COUNTRY_A} изучает по документам, а не по газетным заголовкам о {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Borders touched by {TREATY_TYPE} are studied by {COUNTRY_A} from documents, not from headlines about {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.neutral.032",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "К союзу {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} относится как к факту их политики: {TREATY_TYPE} не меняет нашего курса.",
+    "en": "To the union of {COUNTRY_B} and {COUNTRY_C} {COUNTRY_A} relates as to a fact of their policy: {TREATY_TYPE} does not change our course."
+  },
+  {
+    "id": "third.neutral.033",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Самостоятельность {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} {COUNTRY_A} отмечает вежливо, без оценок и без поддержки.",
+    "en": "Independence of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} is noted politely by {COUNTRY_A}, without judgement and without support."
+  },
+  {
+    "id": "third.neutral.034",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Кризисные консультации {COUNTRY_B} и {COUNTRY_C} о {TREATY_TYPE} {COUNTRY_A} слышит, но в них не участвует и не мешает.",
+    "en": "Crisis consultations of {COUNTRY_B} and {COUNTRY_C} on {TREATY_TYPE} are heard by {COUNTRY_A}, which neither joins nor obstructs them."
+  },
+  {
+    "id": "third.neutral.035",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сдержанность — вот ответ {COUNTRY_A} на {TREATY_TYPE}: мы видим договорённость {COUNTRY_B} и {COUNTRY_C} и ждём деталей.",
+    "en": "Restraint is the answer of {COUNTRY_A} to {TREATY_TYPE}: we see an arrangement between {COUNTRY_B} and {COUNTRY_C} and await details."
+  },
+  {
+    "id": "third.neutral.036",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Оборонные статьи {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} прочтёт в свой срок, без поспешных заявлений.",
+    "en": "Defence clauses of {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} will be read by {COUNTRY_A} in due course, without hasty statements."
+  },
+  {
+    "id": "third.neutral.037",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Экономический смысл {TREATY_TYPE} для {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} понимает, но свою выгоду пока не подсчитала.",
+    "en": "Economic sense of {TREATY_TYPE} for {COUNTRY_B} and {COUNTRY_C} is understood by {COUNTRY_A}, though we have not yet counted our own gain."
+  },
+  {
+    "id": "third.neutral.038",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Никаких территориальных претензий {COUNTRY_A} из {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} не выводит.",
+    "en": "No territorial claims does {COUNTRY_A} derive from {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.neutral.039",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Блок {COUNTRY_B} и {COUNTRY_C} строят сами; {COUNTRY_A} наблюдает за {TREATY_TYPE} со стороны и без обязательств.",
+    "en": "Built by {COUNTRY_B} and {COUNTRY_C} themselves is their bloc; {COUNTRY_A} watches {TREATY_TYPE} from the outside and without obligations."
+  },
+  {
+    "id": "third.neutral.040",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Формулы суверенитета в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} трактует буквально, не расширяя и не сужая их.",
+    "en": "Formulas of sovereignty in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} are read literally by {COUNTRY_A}, neither widened nor narrowed."
+  },
+  {
+    "id": "third.neutral.041",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Кризис {COUNTRY_B} и {COUNTRY_C} — их ответственность; {COUNTRY_A} готова слушать, но {TREATY_TYPE} не считает решением.",
+    "en": "Their responsibility is the crisis of {COUNTRY_B} and {COUNTRY_C}; {COUNTRY_A} is ready to listen but does not see {TREATY_TYPE} as a solution."
+  },
+  {
+    "id": "third.neutral.042",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "neutral",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ровный, протокольный отклик {COUNTRY_A}: {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} принят к сведению без оценки.",
+    "en": "Even, formal response from {COUNTRY_A}: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} is noted without assessment."
+  },
+  {
+    "id": "third.solemn.043",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торжественно и с полной серьёзностью {COUNTRY_A} заявляет: {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} касается судеб людей.",
+    "en": "Solemnly and in full seriousness {COUNTRY_A} declares: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} concerns the fate of peoples."
+  },
+  {
+    "id": "third.solemn.044",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Мир между {COUNTRY_B} и {COUNTRY_C} — не разменная монета; так {COUNTRY_A} говорит о {TREATY_TYPE} перед лицом истории.",
+    "en": "Peace between {COUNTRY_B} and {COUNTRY_C} is no bargaining chip; so speaks {COUNTRY_A} of {TREATY_TYPE} before the face of history."
+  },
+  {
+    "id": "third.solemn.045",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Земля, затронутая {TREATY_TYPE}, помнит больше, чем подписи; {COUNTRY_A} призывает {COUNTRY_B} и {COUNTRY_C} к сдержанности.",
+    "en": "Land touched by {TREATY_TYPE} remembers more than signatures do; {COUNTRY_A} calls {COUNTRY_B} and {COUNTRY_C} to restraint."
+  },
+  {
+    "id": "third.solemn.046",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союз, скреплённый {TREATY_TYPE}, требует от {COUNTRY_B} и {COUNTRY_C} верности слову — об этом {COUNTRY_A} напоминает без пафоса.",
+    "en": "Union sealed by {TREATY_TYPE} demands of {COUNTRY_B} and {COUNTRY_C} fidelity to the word, which {COUNTRY_A} recalls without pomp."
+  },
+  {
+    "id": "third.solemn.047",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Святость суверенитета {COUNTRY_C} для {COUNTRY_A} не предмет торга; {TREATY_TYPE} с {COUNTRY_B} должен это уважать.",
+    "en": "Sanctity of the sovereignty of {COUNTRY_C} is no subject of bargaining for {COUNTRY_A}; {TREATY_TYPE} with {COUNTRY_B} must respect it."
+  },
+  {
+    "id": "third.solemn.048",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "В час испытания для {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} говорит о {TREATY_TYPE} сдержанно и призывает к ответственности, а не к расчёту.",
+    "en": "In the hour of trial for {COUNTRY_B} and {COUNTRY_C}, {COUNTRY_A} speaks of {TREATY_TYPE} with restraint and calls for responsibility rather than calculation."
+  },
+  {
+    "id": "third.solemn.049",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Хлеб и торговля — не только цифры; {COUNTRY_A} напоминает {COUNTRY_B} и {COUNTRY_C}, что {TREATY_TYPE} касается живых людей.",
+    "en": "Bread and trade are more than figures; {COUNTRY_A} reminds {COUNTRY_B} and {COUNTRY_C} that {TREATY_TYPE} touches living people."
+  },
+  {
+    "id": "third.solemn.050",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Память о прошлом велит {COUNTRY_A} быть осторожной: {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} заслуживает взвешенного слова.",
+    "en": "Memory of the past bids {COUNTRY_A} be careful: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} deserves a considered word."
+  },
+  {
+    "id": "third.solemn.051",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ответственность за безопасность в регионе {COUNTRY_A} не снимает с себя, но и {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} её не отменяет.",
+    "en": "Responsibility for regional security is not shed by {COUNTRY_A}, and {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} does not cancel it either."
+  },
+  {
+    "id": "third.solemn.052",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Каждая пядь земли, упомянутая в {TREATY_TYPE}, для {COUNTRY_A} значит больше, чем строка в протоколе между {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Every inch of land mentioned in {TREATY_TYPE} means more to {COUNTRY_A} than a line in a protocol between {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.solemn.053",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Клятвы, звучащие в {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C}, {COUNTRY_A} выслушивает с уважением, но без восторга.",
+    "en": "Oaths sounded in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} are heard by {COUNTRY_A} with respect, but without delight."
+  },
+  {
+    "id": "third.solemn.054",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Достоинство {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} — не уступка, а основа; {COUNTRY_A} стоит на этой мысли.",
+    "en": "Dignity of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} is not a concession but a foundation; {COUNTRY_A} holds to that thought."
+  },
+  {
+    "id": "third.solemn.055",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Скорбные страницы кризиса вокруг {COUNTRY_B} и {COUNTRY_C} обязывают говорить о {TREATY_TYPE} без спешки и без торга.",
+    "en": "Sorrowful pages of the crisis around {COUNTRY_B} and {COUNTRY_C} oblige us to speak of {TREATY_TYPE} without haste and without bargaining."
+  },
+  {
+    "id": "third.solemn.056",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Честная торговля между {COUNTRY_B} и {COUNTRY_C} по {TREATY_TYPE} — вклад в мир; {COUNTRY_A} приветствует сам замысел.",
+    "en": "Fair trade between {COUNTRY_B} and {COUNTRY_C} under {TREATY_TYPE} is a contribution to peace; {COUNTRY_A} welcomes the intention itself."
+  },
+  {
+    "id": "third.solemn.057",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Весомо и неспешно звучит слово {COUNTRY_A} о {TREATY_TYPE}: судить будем по последствиям, а не по обещаниям {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Weighty and unhurried is the word of {COUNTRY_A} on {TREATY_TYPE}: we will judge by consequences, not by the promises of {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.solemn.058",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Спокойствие границ {COUNTRY_B} и {COUNTRY_C} — залог общего мира; {COUNTRY_A} говорит об этом в {TREATY_TYPE} серьёзно.",
+    "en": "Calm of the borders of {COUNTRY_B} and {COUNTRY_C} is a pledge of common peace; {COUNTRY_A} speaks of this in {TREATY_TYPE} seriously."
+  },
+  {
+    "id": "third.solemn.059",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Осторожность в союзах — не слабость; {COUNTRY_A} напоминает {COUNTRY_B} и {COUNTRY_C} об этом, глядя на {TREATY_TYPE}.",
+    "en": "Caution in alliances is not weakness; {COUNTRY_A} reminds {COUNTRY_B} and {COUNTRY_C} of this while looking at {TREATY_TYPE}."
+  },
+  {
+    "id": "third.solemn.060",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Незыблемость суверенитета {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} {COUNTRY_A} подтверждает как принцип, а не как условие.",
+    "en": "Inviolability of the sovereignty of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} is affirmed by {COUNTRY_A} as a principle, not a condition."
+  },
+  {
+    "id": "third.solemn.061",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Молчать о границах {COUNTRY_A} не станет: {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} должен помнить о них вслух.",
+    "en": "Silent about borders {COUNTRY_A} will not stay: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} must remember them aloud."
+  },
+  {
+    "id": "third.solemn.062",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Тяжёлое время для {COUNTRY_B} и {COUNTRY_C} требует не сделок, а ясности; {COUNTRY_A} читает {TREATY_TYPE} именно так.",
+    "en": "Trying is the time for {COUNTRY_B} and {COUNTRY_C}, and it calls not for deals but for clarity; {COUNTRY_A} reads {TREATY_TYPE} exactly so."
+  },
+  {
+    "id": "third.solemn.063",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "solemn",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Серьёзный разговор, а не ритуал: так {COUNTRY_A} воспринимает {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} и не спешит с выводами.",
+    "en": "Serious conversation, not a ritual: so {COUNTRY_A} receives {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} and does not rush to conclusions."
+  },
+  {
+    "id": "third.compromising.064",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Почву для сближения {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} видит: {TREATY_TYPE} можно дополнить взаимными оговорками.",
+    "en": "Ground for rapprochement between {COUNTRY_B} and {COUNTRY_C} is seen by {COUNTRY_A}: {TREATY_TYPE} could be supplemented with mutual reservations."
+  },
+  {
+    "id": "third.compromising.065",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Компромисс по {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} возможен — {COUNTRY_A} предлагает формулу, где учтены все озабоченности.",
+    "en": "Compromise on {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} is possible, and {COUNTRY_A} proposes a formula that covers every concern."
+  },
+  {
+    "id": "third.compromising.066",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Взаимные уступки по {TREATY_TYPE} {COUNTRY_A} считает разумными: пусть {COUNTRY_B} и {COUNTRY_C} обсудят квоты спокойно.",
+    "en": "Mutual concessions on {TREATY_TYPE} seem reasonable to {COUNTRY_A}: let {COUNTRY_B} and {COUNTRY_C} discuss quotas calmly."
+  },
+  {
+    "id": "third.compromising.067",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Территориальный спор в {TREATY_TYPE} {COUNTRY_A} предлагает решать по частям: сначала то, где {COUNTRY_B} и {COUNTRY_C} близки.",
+    "en": "Territorial dispute in {TREATY_TYPE} should, {COUNTRY_A} proposes, be settled piece by piece: first where {COUNTRY_B} and {COUNTRY_C} are close."
+  },
+  {
+    "id": "third.compromising.068",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Не союз, а согласование шагов — так {COUNTRY_A} видит развязку для {COUNTRY_B} и {COUNTRY_C} в рамках {TREATY_TYPE}.",
+    "en": "Not a union but a coordination of steps is how {COUNTRY_A} sees the way out for {COUNTRY_B} and {COUNTRY_C} within {TREATY_TYPE}."
+  },
+  {
+    "id": "third.compromising.069",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенитет {COUNTRY_C} и интересы {COUNTRY_B} в {TREATY_TYPE} {COUNTRY_A} предлагает развести формулировками, а не силой.",
+    "en": "Sovereignty of {COUNTRY_C} and interests of {COUNTRY_B} in {TREATY_TYPE} should, {COUNTRY_A} proposes, be separated by wording, not by force."
+  },
+  {
+    "id": "third.compromising.070",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Кризис вокруг {COUNTRY_B} и {COUNTRY_C} требует паузы; {COUNTRY_A} предлагает свою площадку для переговоров о {TREATY_TYPE}.",
+    "en": "Crisis around {COUNTRY_B} and {COUNTRY_C} calls for a pause; {COUNTRY_A} offers its venue for talks on {TREATY_TYPE}."
+  },
+  {
+    "id": "third.compromising.071",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Середину ищет {COUNTRY_A} там, где {COUNTRY_B} и {COUNTRY_C} упёрлись: {TREATY_TYPE} можно переписать в нейтральном ключе.",
+    "en": "Middle ground is sought by {COUNTRY_A} where {COUNTRY_B} and {COUNTRY_C} are stuck: {TREATY_TYPE} can be rewritten in a neutral key."
+  },
+  {
+    "id": "third.compromising.072",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Гарантии безопасности в {TREATY_TYPE} {COUNTRY_A} советует заменить взаимными обязательствами {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Security guarantees in {TREATY_TYPE} should, {COUNTRY_A} advises, be replaced by mutual commitments of {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.compromising.073",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Торговый компромисс между {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} видит в поэтапном снижении пошлин по {TREATY_TYPE}.",
+    "en": "Trade compromise between {COUNTRY_B} and {COUNTRY_C} is seen by {COUNTRY_A} in a phased reduction of duties under {TREATY_TYPE}."
+  },
+  {
+    "id": "third.compromising.074",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Размен территориями {COUNTRY_A} не одобряет, но допускает обмен гарантиями доступа в {TREATY_TYPE} для {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Exchange of territories is not approved by {COUNTRY_A}, though it allows an exchange of access guarantees in {TREATY_TYPE} for {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.compromising.075",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзнические амбиции {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} предлагает ограничить рамками {TREATY_TYPE} и прозрачных консультаций.",
+    "en": "Allied ambitions of {COUNTRY_B} and {COUNTRY_C} should, {COUNTRY_A} proposes, be limited by {TREATY_TYPE} and transparent consultations."
+  },
+  {
+    "id": "third.compromising.076",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Формулу суверенитета {COUNTRY_C} в {TREATY_TYPE} {COUNTRY_A} советует {COUNTRY_B} сделать мягче, а не жёстче.",
+    "en": "Softer, not harder, should the sovereignty formula for {COUNTRY_C} in {TREATY_TYPE} be made, {COUNTRY_A} advises {COUNTRY_B}."
+  },
+  {
+    "id": "third.compromising.077",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Готовность к посредничеству в кризисе {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} подтверждает, но {TREATY_TYPE} не подменяет переговоров.",
+    "en": "Readiness to mediate in the crisis of {COUNTRY_B} and {COUNTRY_C} is confirmed by {COUNTRY_A}, though {TREATY_TYPE} is no substitute for talks."
+  },
+  {
+    "id": "third.compromising.078",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Шаг навстречу — не слабость: {COUNTRY_A} призывает {COUNTRY_B} и {COUNTRY_C} к сдержанному обмену уступками по {TREATY_TYPE}.",
+    "en": "Step by step, not by pressure: {COUNTRY_A} calls on {COUNTRY_B} and {COUNTRY_C} to a measured exchange of concessions on {TREATY_TYPE}."
+  },
+  {
+    "id": "third.compromising.079",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Общую рамку безопасности для {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} описывает так: {TREATY_TYPE} без скрытых приложений.",
+    "en": "Common security frame for {COUNTRY_B} and {COUNTRY_C} is described by {COUNTRY_A} thus: {TREATY_TYPE} with no hidden annexes."
+  },
+  {
+    "id": "third.compromising.080",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Компромисс по {TREATY_TYPE} {COUNTRY_A} готова обсуждать без предварительных условий — лишь бы {COUNTRY_B} и {COUNTRY_C} сели за стол.",
+    "en": "Compromise on {TREATY_TYPE} is open for {COUNTRY_A} to discuss without preconditions, so long as {COUNTRY_B} and {COUNTRY_C} sit at the table."
+  },
+  {
+    "id": "third.compromising.081",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "По спорным районам {TREATY_TYPE} {COUNTRY_A} предлагает мораторий: пусть {COUNTRY_B} и {COUNTRY_C} сначала договорятся о статусе.",
+    "en": "On the disputed areas of {TREATY_TYPE} {COUNTRY_A} proposes a moratorium: let {COUNTRY_B} and {COUNTRY_C} first agree on status."
+  },
+  {
+    "id": "third.compromising.082",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союз {COUNTRY_B} и {COUNTRY_C} может остаться их делом, если {TREATY_TYPE} даст {COUNTRY_A} понятные и взаимные правила.",
+    "en": "Union of {COUNTRY_B} and {COUNTRY_C} may remain their affair if {TREATY_TYPE} gives {COUNTRY_A} clear and mutual rules."
+  },
+  {
+    "id": "third.compromising.083",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Спор о суверенитете в {TREATY_TYPE} {COUNTRY_A} переводит в плоскость процедуры: кто, когда и с кем согласует шаги {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Dispute over sovereignty in {TREATY_TYPE} is moved by {COUNTRY_A} to procedure: who agrees steps, when and with whom, for {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.compromising.084",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "compromising",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Устраивающую всех редакцию {TREATY_TYPE} {COUNTRY_A} предлагает искать вместе, по пунктам, без ультиматумов со стороны {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "Wording of {TREATY_TYPE} that suits everyone should, {COUNTRY_A} proposes, be sought together, item by item, without ultimatums from {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.disappointed.085",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Разочарование, а не гнев: {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} ожидала более взвешенным.",
+    "en": "Disappointment, not anger: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} was expected by {COUNTRY_A} to be more balanced."
+  },
+  {
+    "id": "third.disappointed.086",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Жаль, что в {TREATY_TYPE} голос {COUNTRY_A} не прозвучал; {COUNTRY_B} и {COUNTRY_C} решили иначе.",
+    "en": "Regrettable is that the voice of {COUNTRY_A} was not heard in {TREATY_TYPE}; {COUNTRY_B} and {COUNTRY_C} decided otherwise."
+  },
+  {
+    "id": "third.disappointed.087",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Надежды {COUNTRY_A} на открытый торговый режим в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} не оправдали.",
+    "en": "Hopes of {COUNTRY_A} for an open trade regime in {TREATY_TYPE} were not met by {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.disappointed.088",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Горький осадок оставляет {TREATY_TYPE}: границы {COUNTRY_B} и {COUNTRY_C} обсуждались без участия {COUNTRY_A}.",
+    "en": "Bitter aftertaste is left by {TREATY_TYPE}: the borders of {COUNTRY_B} and {COUNTRY_C} were discussed without {COUNTRY_A}."
+  },
+  {
+    "id": "third.disappointed.089",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Горечь вызывает у {COUNTRY_A} союз {COUNTRY_B} и {COUNTRY_C}, закреплённый {TREATY_TYPE}: её интересы остались в стороне.",
+    "en": "Bitterness is caused in {COUNTRY_A} by the union of {COUNTRY_B} and {COUNTRY_C} anchored by {TREATY_TYPE}: its interests were left aside."
+  },
+  {
+    "id": "third.disappointed.090",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обидно видеть, как суверенитет {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} стал предметом торга, а {COUNTRY_A} не спросили.",
+    "en": "Painful it is to see the sovereignty of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} turned into a bargaining chip, with {COUNTRY_A} not asked."
+  },
+  {
+    "id": "third.disappointed.091",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Кризис вокруг {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} надеялась погасить иначе; {TREATY_TYPE} лишь продлил неопределённость.",
+    "en": "Crisis around {COUNTRY_B} and {COUNTRY_C} was hoped by {COUNTRY_A} to be damped differently; {TREATY_TYPE} only extended the uncertainty."
+  },
+  {
+    "id": "third.disappointed.092",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Лучшего ждали от {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C}: {COUNTRY_A} рассчитывала на консультации, а получила готовый текст.",
+    "en": "Better was expected of {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C}: {COUNTRY_A} counted on consultations and received a finished text."
+  },
+  {
+    "id": "third.disappointed.093",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Тревога {COUNTRY_A} не услышана: {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} оставляет её границы без внимания.",
+    "en": "Alarm of {COUNTRY_A} went unheard: {TREATY_TYPE} of {COUNTRY_B} and {COUNTRY_C} leaves its borders unattended."
+  },
+  {
+    "id": "third.disappointed.094",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Неприятно, когда {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} обсуждают как сделку за спиной {COUNTRY_A}.",
+    "en": "Unpleasant it is when {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} is discussed as a deal behind the back of {COUNTRY_A}."
+  },
+  {
+    "id": "third.disappointed.095",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "С досадой отмечает {COUNTRY_A}, что в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} земли у её рубежей названы без оговорок.",
+    "en": "With annoyance {COUNTRY_A} notes that in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} the lands near its borders are named without reservations."
+  },
+  {
+    "id": "third.disappointed.096",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Разочарование вызывает не сам союз {COUNTRY_B} и {COUNTRY_C}, а молчание вокруг {TREATY_TYPE} и роли {COUNTRY_A}.",
+    "en": "Not the union of {COUNTRY_B} and {COUNTRY_C} itself but the silence around {TREATY_TYPE} and the role of {COUNTRY_A} is what disappoints."
+  },
+  {
+    "id": "third.disappointed.097",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Суверенитет {COUNTRY_C} в {TREATY_TYPE} с {COUNTRY_B} {COUNTRY_A} защищала бы твёрже — и жалеет, что не была услышана.",
+    "en": "Sovereignty of {COUNTRY_C} in {TREATY_TYPE} with {COUNTRY_B} would have been defended more firmly by {COUNTRY_A}, which regrets not being heard."
+  },
+  {
+    "id": "third.disappointed.098",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Надежда на спокойный выход из кризиса {COUNTRY_B} и {COUNTRY_C} тает: {TREATY_TYPE} не снимает причин спора.",
+    "en": "Hope for a calm way out of the crisis of {COUNTRY_B} and {COUNTRY_C} is fading: {TREATY_TYPE} does not remove the causes of the dispute."
+  },
+  {
+    "id": "third.disappointed.099",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Осадок остался: {COUNTRY_A} ждала от {TREATY_TYPE} шага к {COUNTRY_B} и {COUNTRY_C}, а увидела формальность.",
+    "en": "Residue remains: {COUNTRY_A} expected a step toward {COUNTRY_B} and {COUNTRY_C} from {TREATY_TYPE} and saw a formality."
+  },
+  {
+    "id": "third.disappointed.100",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Безопасность {COUNTRY_A} в {TREATY_TYPE} учтена лишь на словах — так считает наша сторона, и это огорчает.",
+    "en": "Security of {COUNTRY_A} in {TREATY_TYPE} is accounted for only in words, as our side sees it, and that is saddening."
+  },
+  {
+    "id": "third.disappointed.101",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Досадно, что торговые интересы {COUNTRY_A} в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} обошли молчанием.",
+    "en": "Vexing it is that the trade interests of {COUNTRY_A} in {TREATY_TYPE} were passed over in silence by {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.disappointed.102",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обиднее всего, что о землях у границ {COUNTRY_A} в {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} не сказано ничего.",
+    "en": "Most hurtful is that nothing is said in {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} about the lands by the borders of {COUNTRY_A}."
+  },
+  {
+    "id": "third.disappointed.103",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзный формат {COUNTRY_B} и {COUNTRY_C} вызывает у {COUNTRY_A} сожаление, и {TREATY_TYPE} это не исправляет.",
+    "en": "Allied format of {COUNTRY_B} and {COUNTRY_C} is a matter of regret for {COUNTRY_A}, and {TREATY_TYPE} does not correct it."
+  },
+  {
+    "id": "third.disappointed.104",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Жаль, что в {TREATY_TYPE} суверенитет {COUNTRY_C} и интересы {COUNTRY_B} {COUNTRY_A} так и не удалось согласовать.",
+    "en": "Pity it is that in {TREATY_TYPE} the sovereignty of {COUNTRY_C} and the interests of {COUNTRY_B} could not be reconciled with {COUNTRY_A}."
+  },
+  {
+    "id": "third.disappointed.105",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "disappointed",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Разочаровывает поспешность вокруг {TREATY_TYPE}: {COUNTRY_A} просила времени, а {COUNTRY_B} и {COUNTRY_C} не дали его.",
+    "en": "Disappointing is the haste around {TREATY_TYPE}: {COUNTRY_A} asked for time, and {COUNTRY_B} and {COUNTRY_C} did not give it."
+  },
+  {
+    "id": "third.conciliatory.106",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Примирительно настроена {COUNTRY_A}: {TREATY_TYPE} между {COUNTRY_B} и {COUNTRY_C} не повод для ссоры, а повод для разговора.",
+    "en": "Conciliatory is the mood of {COUNTRY_A}: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} is a reason for talk, not for quarrel."
+  },
+  {
+    "id": "third.conciliatory.107",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Сгладить остроту по {TREATY_TYPE} {COUNTRY_A} предлагает {COUNTRY_B} и {COUNTRY_C} спокойным обменом разъяснениями.",
+    "en": "To smooth the edge over {TREATY_TYPE} {COUNTRY_A} proposes to {COUNTRY_B} and {COUNTRY_C} a calm exchange of explanations."
+  },
+  {
+    "id": "third.conciliatory.108",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Без обид и ультиматумов: {COUNTRY_A} приглашает {COUNTRY_B} и {COUNTRY_C} вернуться к разговору о {TREATY_TYPE}.",
+    "en": "Without grievance or ultimatum: {COUNTRY_A} invites {COUNTRY_B} and {COUNTRY_C} back to the conversation about {TREATY_TYPE}."
+  },
+  {
+    "id": "third.conciliatory.109",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Территориальные страсти по {TREATY_TYPE} {COUNTRY_A} предлагает остудить: {COUNTRY_B} и {COUNTRY_C} теряют больше, чем находят.",
+    "en": "Territorial passions over {TREATY_TYPE} should, {COUNTRY_A} proposes, be cooled: {COUNTRY_B} and {COUNTRY_C} lose more than they gain."
+  },
+  {
+    "id": "third.conciliatory.110",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Спокойнее относиться к союзу {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} призывает и себя, и других: {TREATY_TYPE} — не конец света.",
+    "en": "Calmer view of the union of {COUNTRY_B} and {COUNTRY_C} is urged by {COUNTRY_A} on itself and on others: {TREATY_TYPE} is not the end of the world."
+  },
+  {
+    "id": "third.conciliatory.111",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Взаимное уважение к суверенитету в {TREATY_TYPE} {COUNTRY_A} ставит выше споров {COUNTRY_B} и {COUNTRY_C} о формулировках.",
+    "en": "Mutual respect for sovereignty in {TREATY_TYPE} is placed by {COUNTRY_A} above the disputes of {COUNTRY_B} and {COUNTRY_C} over wording."
+  },
+  {
+    "id": "third.conciliatory.112",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Разрядке вокруг {COUNTRY_B} и {COUNTRY_C} {COUNTRY_A} готова способствовать: {TREATY_TYPE} стоит обсуждать без нажима.",
+    "en": "De-escalation around {COUNTRY_B} and {COUNTRY_C} is something {COUNTRY_A} is ready to encourage: {TREATY_TYPE} should be discussed without pressure."
+  },
+  {
+    "id": "third.conciliatory.113",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Дружелюбный тон важнее громких слов: {COUNTRY_A} предлагает {COUNTRY_B} и {COUNTRY_C} начать с малого по {TREATY_TYPE}.",
+    "en": "Friendly tone matters more than loud words: {COUNTRY_A} suggests {COUNTRY_B} and {COUNTRY_C} start small on {TREATY_TYPE}."
+  },
+  {
+    "id": "third.conciliatory.114",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Обещаний не даём, но и вражды не хотим: так {COUNTRY_A} говорит о {TREATY_TYPE} с {COUNTRY_B} и {COUNTRY_C}.",
+    "en": "No promises do we give, nor do we want enmity: so speaks {COUNTRY_A} of {TREATY_TYPE} with {COUNTRY_B} and {COUNTRY_C}."
+  },
+  {
+    "id": "third.conciliatory.115",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Помириться в торговле проще, чем в политике: {COUNTRY_A} предлагает {COUNTRY_B} и {COUNTRY_C} вернуться к {TREATY_TYPE} без обид.",
+    "en": "Reconciling in trade is easier than in politics: {COUNTRY_A} suggests {COUNTRY_B} and {COUNTRY_C} return to {TREATY_TYPE} without grudges."
+  },
+  {
+    "id": "third.conciliatory.116",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Мягче формулировки о землях в {TREATY_TYPE} — вот просьба {COUNTRY_A} к {COUNTRY_B} и {COUNTRY_C}, без требований и угроз.",
+    "en": "Softer wording on land in {TREATY_TYPE} is the request of {COUNTRY_A} to {COUNTRY_B} and {COUNTRY_C}, without demands or threats."
+  },
+  {
+    "id": "third.conciliatory.117",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союзные вопросы {COUNTRY_A} предлагает обсуждать без раздражения: {TREATY_TYPE} {COUNTRY_B} и {COUNTRY_C} ещё может стать яснее.",
+    "en": "Discussed without irritation should the allied matters be, {COUNTRY_A} proposes: {TREATY_TYPE} between {COUNTRY_B} and {COUNTRY_C} can still become clearer."
+  },
+  {
+    "id": "third.conciliatory.118",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Готовность слушать о суверенитете {COUNTRY_C} в {TREATY_TYPE} {COUNTRY_A} подтверждает с {COUNTRY_B} — спокойно и без условий.",
+    "en": "Willingness to listen on the sovereignty of {COUNTRY_C} in {TREATY_TYPE} is confirmed by {COUNTRY_A} with {COUNTRY_B}, calmly and unconditionally."
+  },
+  {
+    "id": "third.conciliatory.119",
+    "category": "third_country",
+    "subcategory": "crisis",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Остроту кризиса {COUNTRY_B} и {COUNTRY_C} можно снять, считает {COUNTRY_A}: {TREATY_TYPE} пусть станет поводом для связи, а не разрыва.",
+    "en": "Edge of the crisis of {COUNTRY_B} and {COUNTRY_C} can be taken off, {COUNTRY_A} believes: let {TREATY_TYPE} become a reason for contact, not rupture."
+  },
+  {
+    "id": "third.conciliatory.120",
+    "category": "third_country",
+    "subcategory": "general",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Тихо и по-доброму: {COUNTRY_A} предлагает {COUNTRY_B} и {COUNTRY_C} вернуться к {TREATY_TYPE} без взаимных упрёков.",
+    "en": "Quietly and kindly: {COUNTRY_A} suggests {COUNTRY_B} and {COUNTRY_C} return to {TREATY_TYPE} without mutual reproaches."
+  },
+  {
+    "id": "third.conciliatory.121",
+    "category": "third_country",
+    "subcategory": "security",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Ссоры с {COUNTRY_B} и {COUNTRY_C} безопасность {COUNTRY_A} не требует; {TREATY_TYPE} можно уточнить к общему спокойствию.",
+    "en": "Quarrel with {COUNTRY_B} and {COUNTRY_C} is not required by the security of {COUNTRY_A}; {TREATY_TYPE} can be refined to common calm."
+  },
+  {
+    "id": "third.conciliatory.122",
+    "category": "third_country",
+    "subcategory": "trade",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Мирно и по делу: {COUNTRY_A} просит {COUNTRY_B} и {COUNTRY_C} снять лишние ограничения по {TREATY_TYPE}, без ответных мер.",
+    "en": "Peaceably and to the point: {COUNTRY_A} asks {COUNTRY_B} and {COUNTRY_C} to lift needless restrictions under {TREATY_TYPE}, with no countermeasures."
+  },
+  {
+    "id": "third.conciliatory.123",
+    "category": "third_country",
+    "subcategory": "territory",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "По спорным участкам {TREATY_TYPE} {COUNTRY_A} предлагает {COUNTRY_B} и {COUNTRY_C} не повышать тон, пока идут консультации.",
+    "en": "On the disputed sections of {TREATY_TYPE} {COUNTRY_A} suggests {COUNTRY_B} and {COUNTRY_C} keep their tone down while consultations continue."
+  },
+  {
+    "id": "third.conciliatory.124",
+    "category": "third_country",
+    "subcategory": "alliance",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Союз {COUNTRY_B} и {COUNTRY_C} — не повод для ссоры с {COUNTRY_A}: {TREATY_TYPE} можно читать спокойнее и мягче.",
+    "en": "Union of {COUNTRY_B} and {COUNTRY_C} is no reason for a quarrel with {COUNTRY_A}: {TREATY_TYPE} can be read more calmly and softly."
+  },
+  {
+    "id": "third.conciliatory.125",
+    "category": "third_country",
+    "subcategory": "sovereignty",
+    "tone": "conciliatory",
+    "statuses": [
+      "not_factual"
+    ],
+    "placeholders": [
+      "{COUNTRY_A}",
+      "{COUNTRY_B}",
+      "{COUNTRY_C}",
+      "{TREATY_TYPE}"
+    ],
+    "ru": "Согласие по суверенитету {COUNTRY_C} в {TREATY_TYPE} {COUNTRY_A} ищет вместе с {COUNTRY_B}, но без обещаний и без нажима.",
+    "en": "Agreement on the sovereignty of {COUNTRY_C} in {TREATY_TYPE} is sought by {COUNTRY_A} together with {COUNTRY_B}, but without promises or pressure."
+  }
+]

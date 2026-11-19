@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/klimPaskov/HOI4-Live-Tools",
+  "revision": "f644f9a0c8f86c8d8d635687b93116437870e085",
+  "file": "hoi4_live/game/log_hints.py",
+  "source_sha256": "2c1897f8b82d6116787d98fbfa7b708d3b96996b99ef4f486044a378257daeb0",
+  "adaptation": "Header added; standalone diagnostics only. No memory reader, input driver or dependencies copied."
+}
