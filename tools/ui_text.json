@@ -21,7 +21,8 @@
   },
   "bundle_partial": {
     "ru": "Часть условий могла примениться. Игра не подтвердила исполнение всего договора.",
-    "fr": "Certaines clauses ont pu être appliquées. Le jeu n’a pas confirmé le traité dans son ensemble."
+    "fr": "Certaines clauses ont pu être appliquées. Le jeu n’a pas confirmé le traité dans son ensemble.",
+    "en": "Some treaty clauses were applied; review the results."
   },
   "Sign treaty": {
     "ru": "Подписать договор",
@@ -1237,31 +1238,38 @@
   },
   "fleet-role-escort": {
     "ru": "Защита конвоев",
-    "fr": "Escorte de convois"
+    "fr": "Escorte de convois",
+    "en": "Convoy protection"
   },
   "fleet-role-patrol": {
     "ru": "Патрулирование",
-    "fr": "Patrouille"
+    "fr": "Patrouille",
+    "en": "Patrol"
   },
   "fleet-role-strike": {
     "ru": "Ударное соединение",
-    "fr": "Force de frappe"
+    "fr": "Force de frappe",
+    "en": "Strike force"
   },
   "fleet-role-submarines": {
     "ru": "Подводные группы",
-    "fr": "Groupes sous-marins"
+    "fr": "Groupes sous-marins",
+    "en": "Submarine groups"
   },
   "fleet-role-repair": {
     "ru": "Ремонт",
-    "fr": "Réparations"
+    "fr": "Réparations",
+    "en": "Repair"
   },
   "fleet-role-reserve": {
     "ru": "Резерв",
-    "fr": "Réserve"
+    "fr": "Réserve",
+    "en": "Reserve"
   },
   "fleet-role-custom": {
     "ru": "Пользовательский шаблон",
-    "fr": "Modèle personnalisé"
+    "fr": "Modèle personnalisé",
+    "en": "Custom template"
   },
   "Government meetings": {
     "ru": "Совещания",
@@ -1421,75 +1429,93 @@
   },
   "meeting-role-head": {
     "ru": "Глава государства",
-    "fr": "Chef de l’État"
+    "fr": "Chef de l’État",
+    "en": "Head of state"
   },
   "meeting-role-minister": {
     "ru": "Министр",
-    "fr": "Ministre"
+    "fr": "Ministre",
+    "en": "Minister"
   },
   "meeting-role-general": {
     "ru": "Генерал",
-    "fr": "Général"
+    "fr": "Général",
+    "en": "General"
   },
   "meeting-role-admiral": {
     "ru": "Адмирал",
-    "fr": "Amiral"
+    "fr": "Amiral",
+    "en": "Admiral"
   },
   "meeting-role-diplomat": {
     "ru": "Дипломат",
-    "fr": "Diplomate"
+    "fr": "Diplomate",
+    "en": "Diplomat"
   },
   "meeting-topic-economy": {
     "ru": "Экономика",
-    "fr": "Économie"
+    "fr": "Économie",
+    "en": "Economy"
   },
   "meeting-topic-laws": {
     "ru": "Законы",
-    "fr": "Lois"
+    "fr": "Lois",
+    "en": "Laws"
   },
   "meeting-topic-industry": {
     "ru": "Промышленность",
-    "fr": "Industrie"
+    "fr": "Industrie",
+    "en": "Industry"
   },
   "meeting-topic-army": {
     "ru": "Армия",
-    "fr": "Armée"
+    "fr": "Armée",
+    "en": "Army"
   },
   "meeting-topic-fleet": {
     "ru": "Флот",
-    "fr": "Marine"
+    "fr": "Marine",
+    "en": "Navy"
   },
   "meeting-topic-foreign": {
     "ru": "Внешняя политика",
-    "fr": "Politique étrangère"
+    "fr": "Politique étrangère",
+    "en": "Foreign policy"
   },
   "meeting-topic-custom": {
     "ru": "Своя тема",
-    "fr": "Sujet libre"
+    "fr": "Sujet libre",
+    "en": "Custom topic"
   },
   "meeting-mode-realistic": {
     "ru": "Реалистичный",
-    "fr": "Réaliste"
+    "fr": "Réaliste",
+    "en": "Realistic"
   },
   "meeting-mode-plausible": {
     "ru": "Правдоподобная альтернатива",
-    "fr": "Alternative plausible"
+    "fr": "Alternative plausible",
+    "en": "Plausible alternate history"
   },
   "meeting-mode-sandbox": {
     "ru": "Песочница",
-    "fr": "Bac à sable"
+    "fr": "Bac à sable",
+    "en": "Sandbox"
   },
   "meeting-press-government": {
     "ru": "Государственная",
-    "fr": "Gouvernementale"
+    "fr": "Gouvernementale",
+    "en": "State press"
   },
   "meeting-press-independent": {
     "ru": "Независимая",
-    "fr": "Indépendante"
+    "fr": "Indépendante",
+    "en": "Independent press"
   },
   "meeting-press-opposition": {
     "ru": "Оппозиционная",
-    "fr": "Opposition"
+    "fr": "Opposition",
+    "en": "Opposition press"
   },
   "Mod setup": {
     "ru": "Установка мода",
@@ -1525,11 +1551,13 @@
   },
   "not_registered": {
     "ru": "Мод не зарегистрирован",
-    "fr": "Mod non enregistré"
+    "fr": "Mod non enregistré",
+    "en": "Not installed"
   },
   "unmanaged_or_changed": {
     "ru": "Регистрация изменилась или не управляется EYES",
-    "fr": "Enregistrement modifié ou non géré"
+    "fr": "Enregistrement modifié ou non géré",
+    "en": "Installation requires review"
   },
   "removed": {
     "ru": "Регистрация снята",
@@ -1541,7 +1569,8 @@
   },
   "vanilla_map": {
     "ru": "Базовая карта",
-    "fr": "Carte de base"
+    "fr": "Carte de base",
+    "en": "Vanilla map"
   },
   "unverified": {
     "ru": "Набор модов не удалось проверить",
@@ -1549,27 +1578,33 @@
   },
   "game_version_unsupported": {
     "ru": "Требуется HOI4 1.19.5.0",
-    "fr": "HOI4 1.19.5.0 est requis"
+    "fr": "HOI4 1.19.5.0 est requis",
+    "en": "This game version is not supported."
   },
   "descriptor_owned_by_someone_else": {
     "ru": "Файл регистрации принадлежит другой установке или изменён",
-    "fr": "Le fichier appartient à une autre installation ou a été modifié"
+    "fr": "Le fichier appartient à une autre installation ou a été modifié",
+    "en": "This mod registration belongs to another installation."
   },
   "close_hoi4_and_confirm": {
     "ru": "Закройте HOI4 и подтвердите операцию",
-    "fr": "Fermez HOI4 et confirmez l’opération"
+    "fr": "Fermez HOI4 et confirmez l’opération",
+    "en": "Close HOI4 before confirming installation."
   },
   "managed_descriptor_required": {
     "ru": "Эта регистрация не управляется данным установщиком",
-    "fr": "Cet enregistrement n’est pas géré par cet installateur"
+    "fr": "Cet enregistrement n’est pas géré par cet installateur",
+    "en": "Only an EYES-managed registration can be removed."
   },
   "unsafe_mod_directory": {
     "ru": "Выберите отдельную папку пользовательских данных HOI4",
-    "fr": "Choisissez un dossier utilisateur HOI4 séparé"
+    "fr": "Choisissez un dossier utilisateur HOI4 séparé",
+    "en": "Choose a valid mod installation folder."
   },
   "setup_busy_or_game_running": {
     "ru": "Игра запущена или выполняется установка",
-    "fr": "Le jeu est ouvert ou une installation est en cours"
+    "fr": "Le jeu est ouvert ou une installation est en cours",
+    "en": "Installation is busy or HOI4 is running."
   },
   "Select a participant.": {
     "ru": "Выберите участника.",
@@ -1617,19 +1652,23 @@
   },
   "meeting-format-private": {
     "ru": "Личная встреча",
-    "fr": "Entretien individuel"
+    "fr": "Entretien individuel",
+    "en": "Private meeting"
   },
   "meeting-format-roundtable": {
     "ru": "Заседание",
-    "fr": "Table ronde"
+    "fr": "Table ronde",
+    "en": "Cabinet meeting"
   },
   "meeting-format-discussion": {
     "ru": "Свободная дискуссия",
-    "fr": "Discussion libre"
+    "fr": "Discussion libre",
+    "en": "Open discussion"
   },
   "meeting-role-marshal": {
     "ru": "Фельдмаршал",
-    "fr": "Maréchal"
+    "fr": "Maréchal",
+    "en": "Field marshal"
   },
   "Stop discussion": {
     "ru": "Остановить",
@@ -1734,5 +1773,43 @@
   "Recognition colours: green legal recognition, red non-recognition, gold protest, blue de facto acceptance, grey unknown.": {
     "fr": "Couleurs : vert pour la reconnaissance juridique, rouge pour la non-reconnaissance, doré pour la protestation, bleu pour l’acceptation de fait, gris pour un statut inconnu.",
     "ru": "Цвета признания: зелёный — признание, красный — непризнание, золотой — протест, синий — фактическое принятие, серый — неизвестно."
+  },
+  "Atlas shortcut": {
+    "en": "Atlas shortcut",
+    "ru": "Клавиша Atlas",
+    "fr": "Raccourci Atlas"
+  },
+  "Off": {
+    "en": "Off",
+    "ru": "Выключено",
+    "fr": "Désactivé"
+  },
+  "Game data is incomplete or ambiguous. Refresh the counterpart observation before signing; no refusal or consent has been recorded.": {
+    "ru": "Игровые данные неполны или неоднозначны. Обновите наблюдение за собеседником перед подписанием. Ни отказ, ни согласие не зафиксированы.",
+    "fr": "Les données de jeu sont incomplètes ou ambiguës. Actualisez les observations avant de signer ; aucun refus ni accord n’a été enregistré."
+  },
+  "The counterpart rejects these terms on strategic grounds. Change the terms or wait for a real change in circumstances.": {
+    "ru": "Другая страна отклоняет эти условия по стратегическим причинам. Измените условия или дождитесь реального изменения обстоятельств.",
+    "fr": "L’autre pays refuse ces clauses pour des raisons stratégiques. Modifiez les clauses ou attendez un changement réel de la situation."
+  },
+  "The counterpart requests a compromise. Review the disputed terms and obtain fresh confirmations.": {
+    "ru": "Другая страна предлагает компромисс. Пересмотрите спорные условия и получите новые подтверждения.",
+    "fr": "L’autre pays demande un compromis. Réexaminez les clauses contestées et obtenez de nouvelles confirmations."
+  },
+  "The policy record does not match this treaty version. Review the treaty again before signing.": {
+    "ru": "Запись дипломатической проверки не соответствует редакции договора. Повторно проверьте договор перед подписанием.",
+    "fr": "Le contrôle diplomatique ne correspond pas à cette version du traité. Réexaminez le traité avant de signer."
+  },
+  "Information unavailable": {
+    "ru": "Сведения недоступны",
+    "fr": "Informations indisponibles"
+  },
+  "Diplomatic agreement": {
+    "ru": "Дипломатическое соглашение",
+    "fr": "Accord diplomatique"
+  },
+  "Send": {
+    "ru": "Отправить",
+    "fr": "Envoyer"
   }
 }

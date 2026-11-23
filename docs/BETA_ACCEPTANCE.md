@@ -10,7 +10,7 @@ state, new-country creation, news delivery/acknowledgment and replay/rejection.
 Main-mod GER–FRA simple pact was previously confirmed. This does not validate
 all current product routes or clean release archives.
 
-Before public publication:
+Recommended beta checks (live acceptance incomplete; required before stable 1.0):
 
 1. Extract to a new writable path with spaces, install dependencies, start the
    desktop and inspect all tabs. No unauthorized legacy import; existing profiles preserved.
@@ -22,8 +22,8 @@ Before public publication:
 5. Capital: enter selection, advance a day, cancel; icons disappear. Valid move
    costs exactly 100 PP once. Reject foreign/current/impassable states and insufficient PP.
 6. Check one real native news popup, text, language and game display settings.
-7. Run the separate QA button scenario in a disposable playset, not a normal
-   campaign. Follow its instructions and inspect each PASS/FAIL/BLOCKED and receipt.
+7. Owner only: run the private QA scenario in a disposable playset, not a normal
+   campaign. Public builds have no QA controls or game-test executors. Follow its instructions and inspect each PASS/FAIL/BLOCKED and receipt.
 8. Atlas ownership/controller and geometry safeguards; Country Maker ownership,
    actual capital, cores, puppet/independence, portraits, names, flags and colors.
 

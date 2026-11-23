@@ -27,3 +27,20 @@ Game package retains licenses/ and THIRD_PARTY_NOTICES.md.
 See [LICENSE](../LICENSE), [NOTICE](../NOTICE), [component notices](../THIRD-PARTY-NOTICES.md).
 
 Public model: qwen3:4b-instruct, Apache-2.0, installed separately. Old qwen2.5-coder:3b is research/evaluation-only and is not the public default. See docs/MODEL_LICENSE.md.
+
+## Negotiation research (2026-11-23; not incorporated)
+
+[AI_Diplomacy](https://github.com/GoodStartLabs/AI_Diplomacy) uses the
+[Good Start Labs Non-Commercial License](https://raw.githubusercontent.com/GoodStartLabs/AI_Diplomacy/main/LICENSE).
+[End-to-end negotiator](https://github.com/facebookresearch/end-to-end-negotiator) uses
+[CC BY-NC 4.0](https://raw.githubusercontent.com/facebookresearch/end-to-end-negotiator/master/LICENSE).
+Their code, weights and dialogue data were not copied into EYES. Neither is
+redistributed under EYES' Apache-2.0 license. They are not runtime dependencies.
+The Hugging Face negotiation catalogue has no blanket dataset license. The
+[negotiation-spec-experiment card](https://huggingface.co/datasets/spectralbranding/negotiation-spec-experiment)
+states CC BY 4.0; its synthetic commercial bargaining transcripts are not
+evidence of historical national interests. No dataset was imported or used
+for training. EYES' new expression library is original NightPulse text,
+Apache-2.0: 540 indexed entries, each in EN/RU/FR, constructed from six
+register frames, five stances and eighteen subjects. This count describes
+wording variants, not 540 independent diplomatic strategies.

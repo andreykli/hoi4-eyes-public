@@ -9,7 +9,7 @@ quick start. Setup needs no ExecutionPolicy change and does not launch HOI4.
   Python, dependencies, WebView2, Ollama and weights install separately.
 - Workshop: game scripts only, not a full AI installation or an upload tool.
   Enable the application's local mod for managed package installation.
-  Never enable both local and Workshop copies; QA is also a separate playset.
+  Never enable both local and Workshop copies; internal QA tools are not distributed to players.
 - Personal generated events, treaties, flags, portraits, databases, snapshots,
   saves, profiles, backups and developer fixtures are omitted, including tracked ones.
 - RELEASE-MANIFEST.json lists every file's SHA-256; checksums.json hashes archives.
@@ -38,11 +38,11 @@ Ollama and retry once. Model failure must never grant consent.
 Session/map mismatch: export from the actual campaign, bind its branch. Review-only
 output does not authorize execution. Missing desktop: install WebView2 and rerun setup.
 Clean-distribution automatic checks cover integrity, Python imports and static
-scripts, not the full developer regressions. Live QA needs its own disposable campaign.
+scripts, not the full developer regressions. Live QA is available only in the owner’s private developer build, with a disposable campaign.
 
 ## Limitations
 
-- Target 1.19.5.0 only. Other versions/playsets need testing. Matching descriptors
+- Candidate target: 1.20.0.0; the reviewed 1.19.5.0 engine profile remains available. Both need applicable live acceptance. Matching descriptors
   do not prove compatibility. Static validation covers a subset of engine semantics.
 - Negotiation scope exceeds execution scope. Unsupported obligations, arbitrary
   durations, contradictory terms and unsupported bundle types must block execution.

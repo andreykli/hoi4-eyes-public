@@ -1,6 +1,11 @@
 [h1]HOI4-EYES — Local AI Diplomacy & Government[/h1]
-[b]NightPulse | 0.9.0-beta.1 | HOI4 1.19.5.0[/b]
+[b]NightPulse | 0.9.0-beta.2 | HOI4 1.20.0.0[/b]
 [url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
+
+Beta.2 : contrôle indépendant, protection contre la manipulation, analyse accélérée
+et 540 entrées originales EN/RU/FR. Reconnaissance et interface corrigées.
+Recette complète encore inachevée ; outils QA internes exclus.
+
 
 HOI4-EYES par [b]NightPulse[/b] : négociez avec les pays et consultez votre
 gouvernement grâce à une IA locale. Discussions, conférences, clauses précises,
@@ -12,7 +17,7 @@ compagnon Windows-source sur GitHub. Python 3.10+, WebView2 et Ollama avec
 qwen3:4b-instruct sont requis. Lancer setup_windows.bat une fois, puis start.bat.
 Une seule copie EYES active : ne pas combiner le mod local géré et la copie Workshop.
 
-Beta pour HOI4 [b]1.19.5.0[/b]. Toutes les propositions ne sont pas exécutables ;
+Beta pour HOI4 [b]1.20.0.0[/b]. Toutes les propositions ne sont pas exécutables ;
 certains scripts nécessitent un redémarrage. La signature ne remplace pas une
 preuve du Bridge. Les cartes modifiées exigent une géométrie validée. Certaines
 réformes et fonctions navales restent consultatives. Commencer par une campagne

@@ -33,6 +33,7 @@ class AtlasHotkey:
         self.commands = Queue()
         self.events = Queue()
         self.worker = None
+        self.last_error = 0
 
     def set(self, key):
         if key not in ('Off', 'F8', 'F9', 'F10', 'F11'):
@@ -46,8 +47,12 @@ class AtlasHotkey:
             self.worker.start()
         result = Queue()
         self.commands.put((key, result))
-        if not result.get(timeout=2):
-            raise OSError('Atlas shortcut is already in use or unavailable.')
+        try:
+            registered = result.get(timeout=5)
+        except Empty as error:
+            raise OSError('Atlas shortcut registration timed out.') from error
+        if not registered:
+            raise OSError(self.last_error, 'Atlas shortcut is already in use or unavailable.')
 
     def register(self, key):
         previous = self.key
@@ -57,9 +62,12 @@ class AtlasHotkey:
         if key == 'Off':
             self.key = key
             return True
+        ctypes.set_last_error(0)
         if self.native and self.native.RegisterHotKey(None, HOTKEY_ID, 0x4003, 0x6F + int(key[1:])):
             self.key = key
+            self.last_error = 0
             return True
+        self.last_error = ctypes.get_last_error()
         if (previous and previous != 'Off' and self.native
                 and self.native.RegisterHotKey(None, HOTKEY_ID, 0x4003, 0x6F + int(previous[1:]))):
             self.key = previous
@@ -90,6 +98,7 @@ class AtlasHotkey:
     def close(self):
         if self.worker:
             self.commands.put((None, None))
+            self.worker.join(timeout=1)
 
     def unregister(self):
         if self.native and self.key not in (None, 'Off'):

@@ -1,5 +1,6 @@
 from flask import Flask, g, make_response, request, jsonify
 import logging
+import time
 import os
 import threading
 from runtime_revision import compute_runtime_source_revision
@@ -52,6 +53,26 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
     state_store = ChatStateStore(state_db_path) if state_db_path else None
     state_loaded_from_store = False
     chat_state_lock = threading.RLock()
+
+    @app.before_request
+    def measure_diplomacy_start():
+        if request.path=='/respond' or request.path.endswith('/advance'):
+            request.environ['eyes_started']=time.monotonic()
+
+    @app.after_request
+    def measure_diplomacy_end(response):
+        started=request.environ.get('eyes_started')
+        if started is not None:
+            diagnostic_logger.info('diplomacy_http status=%d seconds=%.3f bytes=%d',
+                response.status_code,time.monotonic()-started,response.calculate_content_length() or 0)
+        return response
+
+    @app.before_request
+    def guard_developer_assets():
+        if request.path in {'/static/live_qa.js','/static/developer_checks.js'}:
+            from developer_access import enabled
+            if not enabled():
+                return jsonify(error='forbidden'),403
 
     def require_bridge_auth():
         failure = bridge_auth_error(bridge_token, request.headers.get(BRIDGE_TOKEN_HEADER))
@@ -162,6 +183,9 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
 
         # Preserve the old malformed-response switch for provider error tests.
         if data.get('simulate') == 'malformed':
+            from developer_access import enabled
+            if not enabled():
+                return jsonify(error='forbidden',detail='Developer tools are unavailable.'),403
             return "THIS IS NOT JSON", 200, {'Content-Type': 'text/plain'}
 
         try:
@@ -179,7 +203,12 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
             response.status_code = 404
             return response
         except ChatConflict as error:
-            response = jsonify({'error': 'conflict', 'detail': str(error)})
+            detail = str(error)
+            payload = {'error': 'conflict', 'detail': detail}
+            if detail.startswith('independent_policy_requires_review:'):
+                from player_diplomacy import preparation_issue
+                payload.update(policy_code=detail, detail=preparation_issue(detail))
+            response = jsonify(payload)
             response.status_code = 409
             return response
         except ValueError as error:
@@ -568,6 +597,16 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
     def get_chat_agreement(chat_id, agreement_id):
         return chat_result(lambda: diplomacy_engine.get_agreement(chat_id, agreement_id))
 
+    @app.get('/chats/<chat_id>/agreements/<agreement_id>/presentation')
+    def present_chat_agreement(chat_id, agreement_id):
+        from agreement_manager import agreement_display
+        from ui_locale import language
+        locale = request.args.get('language') or language()
+        if locale not in {'ru','en','fr'}:
+            return jsonify(error='unsupported_language'),400
+        return chat_result(lambda: agreement_display(
+            diplomacy_engine.get_agreement(chat_id, agreement_id),locale))
+
     @app.route('/treaty-mechanisms', methods=['GET'])
     def treaty_mechanisms():
         from treaty_lifecycle import mechanisms
@@ -674,6 +713,7 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
                 raise ValueError('This action has no bilateral native package.')
             if agreement.get('status') != 'manual_required' or agreement.get('execution_result'):
                 raise ValueError('This version has no pending native action.')
+            diplomacy_engine._revalidate_signed_policy(chat, agreement)
             if (agreement.get('native_delivery') or {}).get('sent'):
                 raise ValueError('The event is already open in HOI4. Confirm it there or check the result.')
             cached = saved_packet(agreement)
@@ -1055,8 +1095,13 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
         from game_actions import catalog, presentation, workspace
         from ui_locale import language, tr
         locale = language()
+        from developer_access import enabled
+        developer_mode=enabled()
+        labels=workspace(locale)
+        if not developer_mode:
+            labels={k:v for k,v in labels.items() if not k.startswith('qa')}
         return render_template('desktop.html',locale=locale,t=tr,actions=presentation(locale),
-                               game_catalog=catalog(locale), workspace=workspace(locale))
+                               game_catalog=catalog(locale), workspace=labels, developer_mode=developer_mode)
 
     from world_diplomacy import register as register_world_diplomacy
     world_observation = register_world_diplomacy(app, state_db_path, require_bridge_auth)

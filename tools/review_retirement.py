@@ -2,7 +2,6 @@
 from contextlib import closing
 from hashlib import sha256
 import json
-from pathlib import Path
 import re
 import sqlite3
 from uuid import uuid4

@@ -6,10 +6,12 @@ Auteur : **NightPulse** · [Projet original](https://github.com/andreykli/hoi4-e
 
 [English](README.md) · [Русский](README_RU.md)
 
-**0.9.0-beta.1 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
-HOI4 **1.19.5.0**, Python 3.10+, Ollama `qwen3:4b-instruct`.
+**0.9.0-beta.2 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
+HOI4 **1.20.0.0**, Python 3.10+, Ollama `qwen3:4b-instruct`.
 La fenêtre utilise PyWebView/WebView2 et le serveur Flask existant.
 Aucune API payante nécessaire ; par défaut, le modèle fonctionne localement.
+
+**Mise à jour beta.2 : recette en jeu du mod principal encore incomplète.** Le contrôle indépendant des traités est obligatoire pour Windows, Flask et le moteur direct. Les données manquantes reportent la signature. Le texte du joueur et l’accord du modèle n’autorisent pas l’exécution. Les signatures anciennes sont conservées sans créer de nouveaux accords. Le profil moteur 1.19.5 reste disponible, sans nouveau test en jeu.
 
 ## Installation
 
@@ -20,7 +22,7 @@ Aucune API payante nécessaire ; par défaut, le modèle fonctionne localement.
    `setup_windows.bat`, puis utiliser `start.bat` pour les démarrages suivants.
 4. Vérifier les services. Enregistrer le mod local dans les contrôles existants,
    HOI4 fermé. Activer une seule copie EYES.
-5. Créer une nouvelle campagne jetable pour le premier essai. Le mod QA est distinct.
+5. Créer une nouvelle campagne jetable pour le premier essai. Les outils QA internes sont exclus de la distribution publique.
 
 Le jeu ne démarre pas automatiquement. Cette distribution Python source n’est pas
 un EXE signé. Sauvegarder l’installation avant remplacement. L’historique et les

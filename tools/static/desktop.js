@@ -6,7 +6,9 @@ const workspaces=new Map();
 let activePage='diplomacy';
 let lastChats=null, statusPending=false, chatRequest=0;
 const bridge=()=>window.pywebview?.api;
-const trace=(event,page=activePage)=>bridge()?.trace(event,page).catch(()=>{});
+const trace=(event,page=activePage,details=null)=>{
+  try { Promise.resolve(bridge()?.trace(event,page,details)).catch(()=>{}); } catch {}
+};
 function statusText(value) {
   if ($('service-status').textContent===value) return;
   $('service-status').textContent=value;
@@ -161,8 +163,21 @@ $('language-choice').onchange=async event=>{
   if (result.ok) location.replace('/desktop?page='+activePage);
 };
 window.eyesShowWorkspace=show;
-window.addEventListener('error',()=>trace('script_error'));
-window.addEventListener('unhandledrejection',()=>trace('script_error'));
-window.addEventListener('pywebviewready',()=>{trace('shell_loaded');refreshStatus();});
+function errorDetails(error,source='',line=0,column=0) {
+  return {kind:error?.name||'Error',source:source.split('/').pop().split('?')[0],line,column};
+}
+window.addEventListener('error',event=>trace('script_error',activePage,
+  errorDetails(event.error,event.filename,event.lineno,event.colno)));
+window.addEventListener('unhandledrejection',event=>trace('script_error',activePage,errorDetails(event.reason)));
+async function refreshShortcut(key=null) {
+  if(!bridge())return;
+  try {
+    const result=await bridge().atlas_shortcut(key);
+    if(result.key)$('atlas-shortcut').value=result.key;
+    $('atlas-shortcut-status').textContent=result.error||'';
+  } catch { $('atlas-shortcut-status').textContent=labels.error; }
+}
+$('atlas-shortcut').onchange=event=>refreshShortcut(event.target.value);
+window.addEventListener('pywebviewready',()=>{trace('shell_loaded');refreshStatus();refreshShortcut();});
 setInterval(refreshStatus,15000);
 show(new URLSearchParams(location.search).get('page')||'diplomacy');

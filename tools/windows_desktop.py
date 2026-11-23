@@ -24,33 +24,19 @@ class Controls:
     def __init__(self,backend):
         self._backend=backend
         self._lock=threading.Lock()
-        from desktop_acceptance import DesktopAcceptance
-        from live_qa import LiveQA
-        self._qa=DesktopAcceptance()
-        self._qa_lock=threading.Lock()
-        self._game_qa=LiveQA()
+        self._hotkey=None
 
-    def prepare_game_qa(self):
-        with self._qa_lock:
+    def atlas_shortcut(self, key=None):
+        if self._hotkey is None:
+            return {'error':tr('Not ready')}
+        if key is not None:
             try:
-                return self._game_qa.prepare()
-            except (OSError,ValueError,TypeError,KeyError) as error:
-                return {'phase':'error','error':str(error)}
-
-    def game_qa_status(self):
-        with self._qa_lock:
-            try:
-                return self._game_qa.status()
-            except (OSError,ValueError,TypeError,KeyError) as error:
-                return {'phase':'error','error':str(error)}
-
-    def start_acceptance(self):
-        with self._qa_lock:
-            return self._qa.start()
-
-    def acceptance_status(self):
-        with self._qa_lock:
-            return self._qa.status()
+                self._hotkey.set(key)
+                atomic_json(self._backend.runtime/'atlas-ui.json',{'key':key})
+            except (OSError,ValueError) as error:
+                logging.warning('atlas_shortcut registration_failed key=%s error=%s',key,error)
+                return {'key':self._hotkey.key,'error':str(error)}
+        return {'key':self._hotkey.key}
 
     def status(self):
         result=self._backend.status()
@@ -59,9 +45,14 @@ class Controls:
         return {name:bool(result[key].get('ready')) for name,key in
                 (('Flask','flask'),('Bridge','bridge'),('Ollama','ollama'))}
 
-    def trace(self, event, page):
+    def trace(self, event, page, details=None):
         if event in DESKTOP_EVENTS and page in TABS:
             logging.info('desktop_render event=%s page=%s', event, page)
+            if event in {'script_error','workspace_error'} and isinstance(details,dict):
+                # No chat text, URL queries, stack dumps or model output in diagnostics.
+                safe={key:details[key] for key in ('kind','source','line','column')
+                      if key in details and isinstance(details[key],(str,int))}
+                logging.warning('desktop_script %s',json.dumps(safe,ensure_ascii=True)[:600])
 
     def open_chat(self, identifier):
         if not isinstance(identifier,str) or not re.fullmatch(r'[a-f0-9]{32}',identifier):
@@ -91,6 +82,14 @@ def window_size(runtime):
         return 1170,780
 
 
+def controls_for_backend(backend):
+    from developer_access import enabled
+    if enabled(backend.root):
+        from developer_desktop import DeveloperControls
+        return DeveloperControls(backend)
+    return Controls(backend)
+
+
 def main():
     import webview
     webview.settings['ALLOW_DOWNLOADS'] = True
@@ -109,7 +108,7 @@ def main():
         if not acquired:
             atomic_json(runtime/'hub_focus.json',{'issued':time.time(),'page':args.page})
             return
-        controls=Controls(backend)
+        controls=controls_for_backend(backend)
         width,height=window_size(runtime)
         done=threading.Event()
         size={'width':width,'height':height}
@@ -132,9 +131,12 @@ def main():
         def operate():
             from atlas_window import AtlasHotkey, DEFAULT_KEY
             hotkey=AtlasHotkey()
+            controls._hotkey=hotkey
             try:
                 with controls._lock:
                     backend.start()
+                from ollama_warmup import schedule
+                schedule()
                 if done.is_set():
                     return
                 window.load_url(URL+'?page='+args.page)
@@ -144,8 +146,8 @@ def main():
                     key=DEFAULT_KEY
                 try:
                     hotkey.set(key)
-                except (OSError,ValueError):
-                    logging.warning('Atlas shortcut unavailable')
+                except (OSError,ValueError) as error:
+                    logging.warning('Atlas shortcut unavailable key=%s error=%s; retrying while unavailable',key,error)
             except Exception as error:
                 logging.exception('Desktop service startup failed')
                 if not done.is_set():
@@ -170,6 +172,12 @@ def main():
                 if time.monotonic() < next_process_check:
                     continue
                 next_process_check=time.monotonic()+5
+                if hotkey.key is None:
+                    try:
+                        hotkey.set(key)
+                        logging.info('atlas_shortcut recovered key=%s',key)
+                    except (OSError,ValueError) as error:
+                        logging.debug('atlas_shortcut still unavailable: %s',error)
                 from treaty_package_install import hoI4_running
                 from treaty_exit_queue import queued_paths
                 running=hoI4_running()

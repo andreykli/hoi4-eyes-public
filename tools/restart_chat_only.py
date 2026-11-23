@@ -54,7 +54,7 @@ def classify(arguments):
     return 'other'
 
 
-def processes():
+def _process_snapshot():
     system = Path(os.environ['SystemRoot']) / 'System32'
     result = subprocess.run([str(system / 'cscript.exe'), '//nologo',
         str(ROOT / 'tools/bridge_processes.vbs')], capture_output=True, text=True, timeout=20,
@@ -69,6 +69,18 @@ def processes():
         rows[int(pid)] = {'parent': int(parent), 'created': created, 'executable': executable,
                           'kind': classify(argv(command))}
     return rows
+
+
+def processes():
+    # WMI can enumerate a Python process while it is exiting, then return an
+    # empty command line. Retry the entire snapshot; never accept that PID.
+    for attempt in range(3):
+        try:
+            return _process_snapshot()
+        except RuntimeError as error:
+            if str(error)!='Process identity unavailable. No processes stopped.' or attempt==2:
+                raise
+            time.sleep(.1)
 
 
 def main():

@@ -19,10 +19,12 @@
  <div><select id="language-choice" aria-label="{{ t('Interface language') }}">
   {% for code,label in [('en','English'),('ru','Русский'),('fr','Français')] %}<option value="{{ code }}" {% if locale==code %}selected{% endif %}>{{ label }}</option>{% endfor %}
  </select>
+ <label>{{ t('Atlas shortcut') }} <select id="atlas-shortcut" aria-label="{{ t('Atlas shortcut') }}">
+  {% for key in ['F8','F9','F10','F11','Off'] %}<option value="{{ key }}">{% if key=='Off' %}{{ t('Off') }}{% else %}Ctrl+Alt+{{ key }}{% endif %}</option>{% endfor %}
+ </select></label><span id="atlas-shortcut-status" role="status"></span>
  <button id="service-refresh">{{ t('Refresh') }}</button>
  <button id="game-actions-open">{{ workspace.title }}</button>
- <button id="qa-open">{{ workspace.qa }}</button>
- <button id="live-qa-open">{{ workspace.qa_live }}</button>
+ 
  <button id="service-stop">{{ t('Stop my components') }}</button></div></header>
 <nav id="tabs" aria-label="HOI4-EYES">
 {% for page, label in [('diplomacy','Diplomacy'),('atlas','Recognition Atlas'),('recognition','Diplomatic recognition'),('meetings','Government meetings'),('fleet','Fleet'),('maker','Country Maker')] %}
@@ -65,22 +67,7 @@
  <details><summary>{{ workspace.history }}</summary><ul id="game-actions-history"></ul></details>
  <form method="dialog"><button>{{ actions.text.close }}</button></form>
 </dialog>
-<dialog id="qa-dialog">
- <h2>{{ workspace.qa }}</h2>
- <p role="status" id="qa-state"></p>
- <p>{{ workspace.qa_manual }}</p>
- <p id="qa-report" style="overflow-wrap:anywhere"></p>
- <form method="dialog"><button>{{ actions.text.close }}</button></form>
-</dialog>
-<dialog id="live-qa-dialog" style="max-width:min(760px,90vw);max-height:85vh;overflow:auto">
- <h2>{{ workspace.qa_live }}</h2>
- <p role="status" id="live-qa-state"></p>
- <p>{{ workspace.qa_live_instructions }}</p>
- <button id="live-qa-prepare">{{ workspace.qa_live_prepare }}</button>
- <p id="live-qa-report"></p>
- <ol id="live-qa-results"></ol>
- <form method="dialog"><button>{{ actions.text.close }}</button></form>
-</dialog>
+
 <script type="application/json" id="desktop-labels">{{ {
  'open':t('Open selected chat in Bridge'),'none':t('No diplomatic chats yet. Choose a country in HOI4.'),
  'ready':t('Ready'),'not_ready':t('Not ready'),'error':t('The request could not be completed.'),
@@ -88,5 +75,5 @@
  'game_catalog':game_catalog,'workspace':workspace
 }|tojson }}</script>
 <script src="/static/game_actions.js" defer></script>
-<script src="/static/live_qa.js" defer></script>
+
 </body></html>

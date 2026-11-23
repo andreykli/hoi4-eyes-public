@@ -2,7 +2,6 @@
 import json
 from pathlib import Path
 from datetime import date
-from copy import deepcopy
 from validate_hoi4_gui import TOKEN_RE
 from hoi4_country_tags import COUNTRY_TAG_RE
 

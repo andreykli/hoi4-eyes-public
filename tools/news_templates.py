@@ -9,7 +9,7 @@ are listed in ``PRERARED_NOT_CONNECTED``.
 from __future__ import annotations
 
 import os
-from typing import Any, Mapping, Sequence
+from typing import Any, Sequence
 
 import diplomatic_templates as catalog
 

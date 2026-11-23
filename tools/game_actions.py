@@ -121,7 +121,7 @@ def workspace(language):
         'qa_live_passed':('All live checks passed','Все игровые проверки пройдены','Tous les tests en jeu ont réussi'),
         'qa_live_failed':('Game test failed','Игровая проверка выявила ошибки','Le test a détecté des erreurs'),
         'qa_live_close_game':('Close HOI4 before preparing the mod.','Закройте HOI4 перед подготовкой мода.','Fermez HOI4 avant de préparer le mod.'),
-        'qa_live_version':('The QA overlay requires HOI4 1.19.5.0.','Для QA-мода нужна HOI4 1.19.5.0.','Le mod QA exige HOI4 1.19.5.0.'),
+        'qa_live_version':('The QA overlay requires a reviewed HOI4 1.19.5.0 or 1.20.0.0 installation.','Для QA-мода нужна проверенная установка HOI4 1.19.5.0 или 1.20.0.0.','Le mod QA exige une installation vérifiée de HOI4 1.19.5.0 ou 1.20.0.0.'),
         'qa_live_static_failed':('The generated QA scripts did not pass validation.','Игровые скрипты QA не прошли проверку.','Les scripts QA n’ont pas passé la validation.'),
         'qa_live_playset':('Select the standalone QA playset in the launcher.','Выберите отдельный набор QA в лаунчере.','Sélectionnez le playset QA distinct dans le lanceur.'),
     }

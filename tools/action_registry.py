@@ -5,7 +5,6 @@ does not claim that a Python proposal is an in-game diplomatic command.
 """
 
 from copy import deepcopy
-import re
 from typing import Any, Mapping, Optional
 from hoi4_country_tags import is_country_tag
 from guarded_treaty_effects import EFFECTS, NEW_ACTIONS

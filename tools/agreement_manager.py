@@ -610,10 +610,10 @@ _TERM_LABELS = {
         "uk": "Взаємний пакт про ненапад між учасниками.",
     },
     "independence_guarantee": {
-        "ru": "Государство-собеседник гарантирует независимость страны игрока; срок действия определяется механикой HOI4.",
-        "en": "The counterpart guarantees the player's independence; HOI4 controls the guarantee's duration.",
-        "fr": "Le pays interlocuteur garantit l'indépendance du pays du joueur ; HOI4 gère la durée.",
-        "uk": "Держава-співрозмовник гарантує незалежність країни гравця; строк визначає механіка HOI4.",
+        "ru": "Гарантия независимости",
+        "en": "Independence guarantee",
+        "fr": "Garantie d’indépendance",
+        "uk": "Гарантія незалежності",
     },
     "embargo_target": {
         "ru": "Эмбарго против указанной третьей страны; HOI4 не задаёт срок действия.",
@@ -685,8 +685,48 @@ def directional_term_label(term, language):
     label = labels.get(language, labels.get("en", term.get("term_id", ""))).rstrip(".")
     actor, recipient = directional_parties(term)
     if actor != recipient and {actor, recipient} == set(term.get("required_participants", [])):
+        wording = {
+            'independence_guarantee': {
+                'ru':'{actor} гарантирует независимость {recipient}',
+                'en':"{actor} guarantees the independence of {recipient}",
+                'fr':'{actor} garantit l’indépendance de {recipient}',
+                'uk':'{actor} гарантує незалежність {recipient}',
+            },
+            'military_access': {
+                'ru':'{actor} предоставляет войскам {recipient} доступ на свою территорию',
+                'en':'{actor} grants troops of {recipient} access to its territory',
+                'fr':'{actor} accorde aux troupes de {recipient} l’accès à son territoire',
+                'uk':'{actor} надає військам {recipient} доступ на свою територію',
+            },
+        }.get(term.get('term_id'))
+        if wording:
+            label += ': ' + wording.get(language,wording['en']).format(actor=actor,recipient=recipient)
         return f"{label} · {actor} → {recipient}"
     return label
+
+
+def display_final_text(version, language):
+    """Render old signed text without changing the stored revision or its hash."""
+    text = version.get('final_text', '')
+    for term in version.get('terms', []):
+        if term.get('term_id') in {'independence_guarantee','military_access'}:
+            old = term.get('text')
+            if isinstance(old,str) and old:
+                text = text.replace('• '+old, '• '+directional_term_label(term,language),1)
+    return text
+
+
+def agreement_display(agreement, language):
+    """Presentation metadata only; authoritative terms and evidence stay intact."""
+    result = deepcopy(agreement)
+    from player_diplomacy import agreement_title
+    result['display_name'] = agreement_title(agreement,language)
+    for version in result.get('versions', []):
+        version['display_final_text'] = display_final_text(version,language)
+        for term in version.get('terms', []):
+            term['display_text'] = (directional_term_label(term,language)
+                if term.get('term_id') in {'independence_guarantee','military_access'} else term.get('text'))
+    return result
 
 
 def recoverable_draft_terms(chat, agreement, version):

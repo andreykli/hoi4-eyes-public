@@ -26,6 +26,8 @@ def stack_environment(root, owner_token=None):
         EYES_RESPONSE_PROVIDER='ollama',OLLAMA_MODEL=selected_model(),AI_BRIDGE_URL=f'http://127.0.0.1:{PORT}',
         EYES_BRIDGE_STATUS_FILE=str(runtime/'bridge_status.json'))
     env.setdefault('EYES_EXPRESSION_MODE','auto');env.setdefault('EYES_EXPRESSION_TIMEOUT','12');env.setdefault('EYES_OLLAMA_THREADS','2')
+    env.setdefault('OLLAMA_DIALOGUE_TOTAL_TIMEOUT','120')
+    env['EYES_INDEPENDENT_TREATY_POLICY']='1'
     env.pop('EYES_BRIDGE_AUTH_TOKEN',None)
     if owner_token:env['EYES_MENU_OWNER_TOKEN']=owner_token
     else:env.pop('EYES_MENU_OWNER_TOKEN',None)

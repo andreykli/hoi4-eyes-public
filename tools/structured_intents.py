@@ -294,7 +294,7 @@ _ACTION_CUES = {
     "docking_rights": re.compile(r"docking rights|naval basing|права стоянки|port access", re.I),
     "air_base_access": re.compile(r"air.?base access|доступ к авиабаз|доступ до авіабаз", re.I),
     "faction_join": re.compile(r"join.{0,25}faction|вступить.{0,20}фракц|вступити.{0,20}фракц|admitting.{0,25}faction|принять.{0,25}фракц|admettre.{0,25}faction", re.I),
-    "territory_partition": re.compile(r"territorial (?:agreement|proposal|question)|transfer.{0,25}state|cede.{0,25}territor|территориальн\w* (?:соглашен|вопрос|предложен)|передач.{0,20}(?:штат|област|территор)|розділ територ|раздел территор", re.I),
+    "territory_partition": re.compile(r"territorial (?:agreement|proposal|question)|transfer\w*.{0,90}(?:state|city|region|area|territor)|\bcede\b|give.{0,60}(?:territor|surrounding|land|region)|территориальн\w* (?:соглашен|вопрос|предложен)|переда.{0,80}(?:штат|област|территор)|отда.{0,80}(?:област|территор)|\bcéder\b|розділ територ|раздел территор", re.I),
     "political_annexation": re.compile(
         r"peaceful.{0,25}(?:annexation|incorporation|union)|voluntary.{0,25}(?:annexation|incorporation|union)|"
         r"political.{0,25}(?:annexation|incorporation|union)|annexation|annex\w*|incorporat\w*|"
@@ -1483,6 +1483,14 @@ def build_analysis_from_summary(source_text: str, semantic_summary: str, *,
                                      if action.get("context_reference")
                                      and action_source_positions[index] < relation_offset]
                 matched_indices = list(dict.fromkeys(matched_indices + contextual_before))
+                # "If France cedes territory, Germany will accept the treaty"
+                # constrains the preceding offer as well as naming a new action.
+                # Recognising the territorial condition must not detach it from
+                # the pact and make that pact appear unconditional.
+                if re.search(r'прим\w*\s+договор|accept\w*.{0,20}(?:treaty|pact)|accepter\w*.{0,20}(?:traité|pacte)',clause,re.I):
+                    prior=[i for i in range(len(actions)) if action_source_positions[i]<relation_offset]
+                    if prior:
+                        matched_indices=list(dict.fromkeys(matched_indices+[max(prior,key=lambda i:action_source_positions[i])]))
             if not matched_indices and clause_kind == "exception" and re.search(
                     r"shipment|food|medicine|medical supplies|goods|trade|livraison|marchandise|aliment|"
                     r"médicament\w*|aide humanitaire|поставк\w*|лекарств\w*|медикамент\w*|"

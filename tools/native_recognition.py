@@ -5,6 +5,21 @@ import re
 
 TAG=re.compile(r'[A-Z][A-Z0-9]{2}')
 STATUSES=('recognized','not_recognized')
+ACTIONS=('eyes_recognize','eyes_recognize_again','eyes_withdraw_recognition')
+
+def localisation(source, locale):
+    """HOI4 resolves scripted diplomatic titles using UPPERCASE_ID_TITLE."""
+    description={
+        'english':'Record the player country’s unilateral recognition position in EYES. This does not sign a treaty, grant military access or change another country’s consent.',
+        'russian':'Записать одностороннюю позицию страны игрока о признании в EYES. Это не подписывает договор, не предоставляет военный доступ и не меняет согласия другой страны.',
+        'french':'Consigner la position unilatérale du pays du joueur dans EYES. Cela ne signe aucun traité, n’accorde aucun accès militaire et ne modifie pas le consentement d’un autre pays.'}[locale]
+    text=source.lstrip('\ufeff').rstrip()+'\n'
+    for action in ACTIONS:
+        label=re.search(r'^\s*'+action+r':0\s+"([^"]+)"',text,re.M)
+        if not label:raise ValueError('recognition_localisation_missing')
+        for key,value in ((action.upper()+'_TITLE',label[1]),(action.upper()+'_DESC',description)):
+            if not re.search(r'^\s*'+key+r':',text,re.M):text+=f' {key}:0 "{value}"\n'
+    return '\ufeff'+text
 
 
 def validate(value, player, countries):

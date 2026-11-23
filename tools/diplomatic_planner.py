@@ -546,6 +546,9 @@ def render_point_policy(row, country, other, language="en"):
     stance = row.get("stance", "clarify")
     actors = row.get('actors', row.get('actor_country_tags', []))
     target = row.get('target', row.get('target_country_tag'))
+    if (language=='fr' and row.get('action_id')=='territory_partition' and stance=='clarify'
+            and 'verified_state_allocation' in set(row.get('clarification_reasons',[])+row.get('unresolved_fields',[]))):
+        return 'Précisez les États concernés, leurs propriétaires actuels et le destinataire proposé. Les territoires environnants ne définissent pas une répartition vérifiée ; aucune cession n’est acceptée.'
     if language == 'fr':
         action = row.get('action_id')
         if row.get('conversation_stage') == 'confirmation_needed':

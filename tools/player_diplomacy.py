@@ -2,6 +2,33 @@
 from ui_locale import tr
 
 
+def agreement_title(agreement, locale=None):
+    """Readable projection only. Never rename signed records or their files."""
+    import re
+    from ui_locale import language
+    from game_actions import catalog
+    from hoi4_country_names import load_country_names
+    locale=locale or language()
+    name=agreement.get('name')
+    generated=(str(agreement.get('action_id') or '').replace('_',' ').strip().title()
+               + ' — ' + '–'.join(agreement.get('participants',[])))
+    technical=(not isinstance(name,str) or not name.strip() or name==agreement.get('action_id')
+        or name==generated
+        or re.search(r'(?:\.(?:txt|json|zip|mod|sqlite3?)$|^[A-Z]{3}[-_].*txt$|^eyes_|^agreement:|^[a-f0-9]{16,}$)',name or '',re.I))
+    if not technical:
+        return name
+    names={row['id']:row['name'] for row in catalog(locale)}
+    versions=agreement.get('versions') or []
+    current=agreement.get('current_version',1)
+    terms=versions[current-1].get('terms',[]) if 0<current<=len(versions) else []
+    title=names.get(agreement.get('action_id')) if len(terms)<=1 else None
+    if not title:
+        title={'en':'Diplomatic agreement','ru':'Дипломатическое соглашение','fr':'Accord diplomatique'}.get(locale,'Diplomatic agreement')
+    countries=load_country_names(locale)
+    parties=' – '.join(countries.get(tag,tag) for tag in agreement.get('participants',[]))
+    return title+(' · '+parties if parties else '')
+
+
 def agreement_stage(agreement):
     status = agreement.get('status')
     if status == 'execution_confirmed':
@@ -30,6 +57,14 @@ def agreement_stage(agreement):
 def preparation_issue(code):
     if not code:
         return tr('No game package is available for this version.')
+    if code.startswith('independent_policy_requires_review:defer:'):
+        return tr('Game data is incomplete or ambiguous. Refresh the counterpart observation before signing; no refusal or consent has been recorded.')
+    if code.startswith('independent_policy_requires_review:reject:'):
+        return tr('The counterpart rejects these terms on strategic grounds. Change the terms or wait for a real change in circumstances.')
+    if code.startswith('independent_policy_requires_review:counteroffer:'):
+        return tr('The counterpart requests a compromise. Review the disputed terms and obtain fresh confirmations.')
+    if code.startswith('independent_policy_requires_review:'):
+        return tr('The policy record does not match this treaty version. Review the treaty again before signing.')
     if 'reciprocal_direction_not_enforceable' in code:
         return tr('A reciprocal guarantee or access needs two separately agreed directions. It cannot be reduced to a one-way clause.')
     if code.startswith(('approved_effect_contains_unenforced_details:',
@@ -51,7 +86,7 @@ def agreement_summary(chat):
     for a in chat.get('agreements', {}).values():
         v = a['versions'][a['current_version'] - 1]
         stage = agreement_stage(a)
-        lines.append(f"{a.get('name', a['action_id'])} | v{a['current_version']} | {tr(stage)}")
+        lines.append(f"{agreement_title(a,locale)} | v{a['current_version']} | {tr(stage)}")
         for term in v.get('terms', []):
             labels = {'agreed':'AGREED', 'rejected':'Rejected term', 'unconfirmed':'Unconfirmed term'}
             text = (directional_term_label(term, locale) if term.get('term_id') in {'military_access', 'independence_guarantee'}

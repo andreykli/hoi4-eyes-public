@@ -1,5 +1,4 @@
 """Conservative destination labels, separate from diplomatic semantic categories."""
-import re
 SPEECH_IDS=frozenset({'greeting.1','greeting.3','greeting.5','greeting.6','invitation.1','invitation.5','reject.1','reject.4','exp.invitation.01','exp.invitation.04','exp.conclusion.02'})
 # Editorially reviewed IDs. An empty action set means any root action;
 # applicability is checked against the saved stance, not inferred from prose.

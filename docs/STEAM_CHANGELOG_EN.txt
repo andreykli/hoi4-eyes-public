@@ -1,0 +1,13 @@
+HOI4-EYES 0.9.0-beta.2 by NightPulse
+
+- Mandatory independent diplomatic decisions: model prose, repeated requests and invented consent cannot authorize execution.
+- Better use of verified ideology, relations, memory and interests. Unknown facts defer decisions instead of inventing agreement or refusal.
+- Exact treaty revisions, directed obligations, safer legacy-signature migration and replay protection.
+- Faster typed proposals, model warmup and 540 original EN/RU/FR entries. Qwen selects wording without changing the engine position.
+- Fixed recognition titles and meeting/interface localization. Internal developer QA executors are excluded from public packages.
+- Unified mod identity and reviewed HOI4 1.20.0.0 scripts; 1.19.5 profile retained without a new live retest.
+
+Beta, not stable 1.0: complete main-mod live acceptance remains pending. Historical 21/21 QA does not certify all new routes. Some packages require restarting HOI4; Bridge must verify actual effects. Fleet plans and many reforms remain advisory.
+
+Update the Windows companion too: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.2
+Enable one EYES mod copy. Back up important saves and try a disposable campaign first.

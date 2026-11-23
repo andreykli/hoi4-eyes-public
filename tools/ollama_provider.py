@@ -3635,6 +3635,17 @@ class OllamaTextProvider:
         binding = context["structured_treaty_binding"]
         terms = term_specs(points)
         reference, fields, allowed, schema = wire_contract(binding, terms)
+        if os.getenv('EYES_EXPRESSION_MODE','legacy').strip().lower()=='auto':
+            if not callable(context.get('engine_point_policy')):
+                self._diagnostics.dialogue_positions=[]
+                self._diagnostics.result={'provider':self.diagnostic_name,'status':'invalid_json',
+                    'reason':'engine_policy_unavailable','request_id':context.get('request_id')}
+                return None
+            # Normal desktop route: the model selects wording, never votes.
+            pending=[{**term,'decision':'defer','reason':'insufficient_context',
+                      'counter':'none','questions':[]} for term in terms]
+            policy=context['engine_point_policy'](deepcopy(points),(binding,pending))
+            return self._express_saved_policy(policy,context,language,request_timeout)
         prior = context.get("saved_point_positions") or []
         current_terms = {term['term_id']:term for term in terms}
         previous = [{key: row[key] for key in ("action_id", "stance", "negotiated_reason", "counter_change")
@@ -3669,7 +3680,9 @@ class OllamaTextProvider:
             {"role":"user","content":json.dumps(evidence, ensure_ascii=False)}]
         payload = {"model":self.model,"format":schema,"messages":messages,"stream":False,
                    "keep_alive":"10m","options":{"temperature":0,"num_ctx":2048,"num_predict":230}}
-        deadline = time.monotonic() + min(self.timeout, request_timeout or self.timeout, 45)
+        # Loading a cold local model shares the caller's bounded budget. A
+        # separate 45s cap cancelled CPU loading before any vote was generated.
+        deadline = time.monotonic() + min(self.timeout, request_timeout or self.timeout)
         self._diagnostics.dialogue_positions = []
         self._diagnostics.dialogue_position_status = "unavailable"
         self._diagnostics.raw_output = None
@@ -3682,7 +3695,10 @@ class OllamaTextProvider:
             try:
                 response = _local_model_post(f"{self.base_url}/api/chat", json=payload, timeout=remaining)
                 response.raise_for_status()
-                raw = response.json().get("message", {}).get("content", "")
+                data = response.json()
+                logger.info('structured_treaty metrics=%s request_id=%s',
+                            self._performance_metrics(data), context.get('request_id'))
+                raw = data.get("message", {}).get("content", "")
                 rows, prose = expand_wire(raw, binding, terms, reference, fields, allowed)
             except requests.Timeout:
                 reason = "timeout"
@@ -3720,9 +3736,25 @@ class OllamaTextProvider:
                                         "request_id":context.get("request_id")}
             return reply
         logger.info("structured_treaty status=rejected reason=%s request_id=%s", reason, context.get("request_id"))
-        self._diagnostics.result = {"provider":self.diagnostic_name,"status":"invalid_json",
-                                    "reason":reason,"request_id":context.get("request_id")}
-        return None
+        if not callable(context.get('engine_point_policy')):
+            self._diagnostics.result={'provider':self.diagnostic_name,'status':'invalid_json',
+                'reason':'engine_policy_unavailable','request_id':context.get('request_id')}
+            return None
+        # Only the engine's typed callback can produce this fallback. A broken
+        # model response supplies no votes, identities, terms or permissions.
+        unresolved=[{**term,'decision':'defer','reason':'insufficient_context',
+                     'counter':'none','questions':[]} for term in terms]
+        policy=context['engine_point_policy'](deepcopy(points),(binding,unresolved))
+        committed=[row['negotiated_term'] for row in policy]
+        reply=render_decision(committed,language)
+        self._diagnostics.dialogue_positions=[{**deepcopy(row),'text':render_decision([item],language),
+            'validation_reason':'engine_confirmed_template','origin':'engine_policy',
+            'authority':'advisory_only','consent_status':'unconfirmed'} for row,item in zip(policy,committed)]
+        self._diagnostics.dialogue_position_status='complete'
+        self._diagnostics.result={'provider':self.diagnostic_name,'status':'generated','engine_policy':True,
+            'text_origin':'engine_template','reason':'engine_policy_fallback','expression_error':reason,
+            'request_id':context.get('request_id')}
+        return reply
 
     def _express_saved_policy(self, policy, context, language, request_timeout=None):
         """Text-only adapter. Policy is already durable; rendering cannot change it."""
@@ -3739,6 +3771,12 @@ class OllamaTextProvider:
         mode = os.getenv('EYES_EXPRESSION_MODE', 'legacy').strip().lower()
         library_enabled = mode in {'auto','ollama','template'} and language in {'ru','en','fr'}
         selected = [choose(core, row, context, language) for core,row in zip(canonical,policy)] if library_enabled else list(canonical)
+        selection_mode = library_enabled and mode == 'auto'
+        safe_choices = None
+        if selection_mode:
+            from diplomatic_expression_library import search
+            safe_choices=[search(core,row,context,language) for core,row in zip(canonical,policy)]
+            selected=[rows[0] for rows in safe_choices]
         origin, error, raw = ('template' if library_enabled else 'deterministic'), None, None
         expression_performance = {}
         template_only = library_enabled and (mode == 'template' or (mode == 'auto' and fast_path(policy)))
@@ -3759,6 +3797,14 @@ class OllamaTextProvider:
             "options": {"temperature": 0.2, "num_ctx": 2048, "num_predict": min(512, 100 * len(policy))},
             "keep_alive": "10m"}
         styles = context.get("leader_expression_style", [])
+        if selection_mode:
+            payload['format']={'type':'object','properties':{'choices':{'type':'array',
+                'items':{'type':'integer','minimum':0,'maximum':2},'minItems':len(policy),'maxItems':len(policy)}},
+                'required':['choices'],'additionalProperties':False}
+            payload['messages']=[{'role':'system','content':
+                'Select one diplomatic wording per point from the provided alternatives. Return only choices: zero-based integer indices. Never invent text or change a position.'},
+                {'role':'user','content':json.dumps({'alternatives':safe_choices},ensure_ascii=False)}]
+            payload['options']={'temperature':0,'num_ctx':2048,'num_predict':max(16,4*len(policy)+8)}
         if isinstance(styles, list):
             styles = [s for s in styles if isinstance(s, str) and s in {"formal", "concise", "cautious", "direct", "conciliatory"}]
             if styles:
@@ -3777,6 +3823,12 @@ class OllamaTextProvider:
             expression_performance = self._performance_metrics(body)
             raw = body.get("message", {}).get("content", "")
             data = json.loads(raw)
+            if selection_mode:
+                indices=data.get('choices')
+                if (set(data)!={'choices'} or not isinstance(indices,list) or len(indices)!=len(policy)
+                        or any(type(n) is not int or not 0<=n<len(safe_choices[i]) for i,n in enumerate(indices))):
+                    raise ValueError('invalid_template_selection')
+                data={'positions':[{'point':i,'text':safe_choices[i][n]} for i,n in enumerate(indices)]}
             rows = data.get("positions")
             if not isinstance(rows, list) or len(rows) != len(policy):
                 raise ValueError("incomplete_expression")
@@ -3790,7 +3842,7 @@ class OllamaTextProvider:
                    and not matches_output_language(mapped[i], language) for i in range(len(policy))):
                 raise ValueError("wrong_language")
             from diplomatic_planner import expression_matches_policy
-            if not all(expression_matches_policy(policy[i], mapped[i], canonical[i], country, other, language)
+            if not selection_mode and not all(expression_matches_policy(policy[i], mapped[i], canonical[i], country, other, language)
                        and not self._has_unapproved_claim(mapped[i], {"reply_seed": selected[i]})
                        for i in range(len(policy))):
                 raise ValueError("expression_policy_mismatch")
@@ -4337,6 +4389,21 @@ class OllamaTextProvider:
             analysis["completeness"], len(analysis["actions"]),
             len(analysis["clarification_targets"]), request_id or "unknown",
         )
+
+        if (analysis.get('completeness') != 'complete' and not analysis.get('actions')
+                and summary_diagnostic.get('reason') in {'analysis_timeout','analysis_transport_or_json_error'}):
+            # No exact obligations were established. A second, much larger
+            # prose request cannot repair missing legal structure safely.
+            from diplomatic_expression_library import unavailable
+            self._diagnostics.dialogue_positions=[]
+            self._diagnostics.dialogue_position_status='unavailable'
+            self._diagnostics.result={'provider':self.diagnostic_name,'status':'generated',
+                'reason':'analysis_requires_clarification','engine_policy':True,'text_origin':'template',
+                'expression_error':summary_diagnostic.get('reason'),
+                'request_id':dialogue_context.get('request_id')}
+            return {'reply':unavailable(language),'message_analysis':analysis,
+                    'effective_decision':'defer','dialogue_positions':[],
+                    'dialogue_position_status':'unavailable'}
 
         elapsed = time.monotonic() - total_started
         remaining = max(1.0, total_budget - elapsed)
@@ -4953,6 +5020,7 @@ class OllamaTextProvider:
     def _cached_analysis_matches(analysis, source_text: str, request_id: str | None,
                                  source_hash: str) -> bool:
         if (not isinstance(analysis, dict)
+                or analysis.get('completeness') != 'complete'
                 or analysis.get("source_request_id") != request_id
                 or analysis.get("source_text_sha256") != source_hash
                 or not isinstance(analysis.get("actions"), list)
@@ -5063,6 +5131,13 @@ class OllamaTextProvider:
             ],
             "options": {"temperature": 0, "num_predict": 256, "num_ctx": 2048},
         }
+        if len(source_text)<=800 and len(candidates)<=1 and not history:
+            payload['messages']=[{'role':'system','content':
+                'Classify each candidate: copy candidate number/id and label act. Discover additional supported actions only by exact source quotations (id/src). Proposals are not consent. Never infer game effects. Return actions and discoveries using the schema.'},
+                {'role':'user','content':json.dumps({'sender':context.get('other_country_tag'),
+                    'recipient':context.get('speaking_country_tag'),'candidates':candidate_text,
+                    'source':source_text},ensure_ascii=False)}]
+            payload['options']['num_predict']=128
         started = time.monotonic()
         request_id = context.get("latest_player_request_id") or context.get("request_id")
         suffix = f" request_id={request_id}" if request_id else ""
@@ -9224,7 +9299,8 @@ def _local_model_post(url, **kwargs):
     timeout = float(kwargs.get('timeout', 150))
     import time
     started = time.monotonic()
-    if not _MODEL_GENERATION_GATE.acquire(timeout=timeout):
+    if not _MODEL_GENERATION_GATE.acquire(timeout=min(timeout,2.0)):
+        logger.info('ollama_stage status=queue_busy queue_seconds=%.3f',time.monotonic()-started)
         raise requests.exceptions.Timeout('Local model queue budget exceeded')
     try:
         waited = time.monotonic() - started
@@ -9233,6 +9309,8 @@ def _local_model_post(url, **kwargs):
         payload = dict(kwargs.get('json', {}))
         if payload.get('model') == 'qwen3:4b-instruct':
             payload.setdefault('think', False)
+            if payload.get('keep_alive') in (None,'5m'):
+                payload['keep_alive']='10m'
         threads = os.getenv('EYES_OLLAMA_THREADS', '').strip()
         if threads:
             value = int(threads)
@@ -9240,6 +9318,14 @@ def _local_model_post(url, **kwargs):
             payload['options'] = {**payload.get('options', {}), 'num_thread': value}
         kwargs['json'] = payload
         kwargs['timeout'] = remaining
-        return requests.post(url, **kwargs)
+        response=requests.post(url, **kwargs)
+        logger.info('ollama_stage status=response queue_seconds=%.3f http_seconds=%.3f prompt_chars=%d num_predict=%s',
+                    waited,time.monotonic()-started-waited,
+                    sum(len(str(m.get('content',''))) for m in payload.get('messages',[])),
+                    payload.get('options',{}).get('num_predict'))
+        return response
+    except requests.RequestException as error:
+        logger.info('ollama_stage status=%s elapsed_seconds=%.3f',type(error).__name__,time.monotonic()-started)
+        raise
     finally:
         _MODEL_GENERATION_GATE.release()

@@ -26,7 +26,6 @@ from typing import Any, Dict, Optional
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ai_provider import AIProvider
-from action_registry import ActionRegistry
 from campaign_identity_registry import CampaignIdentityRegistry
 from hoi4_time import MAX_HOI4_ABSOLUTE_DAY
 from hoi4_country_tags import COUNTRY_TAG_RE
@@ -2278,6 +2277,9 @@ class Hoi4LogBridge:
 
     def process_line(self, line: str) -> Optional[Dict[str, Any]]:
         if 'EYES_LIVE_QA_V1|' in line:
+            from developer_access import enabled
+            if not enabled():
+                return None
             from live_qa import LiveQA
             try:
                 if LiveQA().record_bridge(line):
@@ -3307,6 +3309,7 @@ class ResponseOverlay:
         return "break"
 
     def _render_chat(self, chat: Dict[str, Any]):
+        render_started=time.monotonic()
         self.active_chat = chat
         self.chat_id = chat.get("chat_id")
         self._chat_open = True
@@ -3376,17 +3379,22 @@ class ResponseOverlay:
             ))
         self._sync_game_window_visibility()
 
+        log_bridge_ui_event('chat_render_timing',seconds=round(time.monotonic()-render_started,4))
+
     def _start_chat_worker(self, operation: str, callback, *, generation=None, chat_id=None,
                            attempt_id=None):
         if getattr(self,'_hub_closing',False) is True:return
         if not hasattr(self,'_hub_worker_lock'):self._hub_worker_lock=threading.Lock()
         with self._hub_worker_lock:self._hub_inflight=getattr(self,'_hub_inflight',0)+1
         def run():
+            started=time.monotonic()
             try:
                 self._chat_results.put((operation, generation, chat_id, callback(), None, attempt_id))
             except Exception as error:
                 self._chat_results.put((operation, generation, chat_id, None, str(error), attempt_id))
             finally:
+                log_bridge_ui_event('chat_request_timing',operation=operation,
+                                    seconds=round(time.monotonic()-started,4))
                 with self._hub_worker_lock:self._hub_inflight-=1
         threading.Thread(target=run, daemon=True).start()
 
@@ -3519,7 +3527,7 @@ class ResponseOverlay:
     def _show_player_agreement(self, chat):
         import tkinter as tk
         from tkinter import messagebox, ttk
-        from player_diplomacy import agreement_summary, sign_and_queue
+        from player_diplomacy import agreement_summary, agreement_title, sign_and_queue
         from player_native_actions import DELIVERY_ACTIONS
         from treaty_bundle import is_pending
         summary = agreement_summary(chat)
@@ -3546,7 +3554,7 @@ class ResponseOverlay:
         if self._chat_busy or not ready or chat.get('chat_mode') == 'ai_to_ai':
             return
         choice = ttk.Combobox(window, state='readonly', values=[
-            f"{a.get('name', a['action_id'])} · v{a['current_version']}" for a in ready])
+            f"{agreement_title(a)} · v{a['current_version']}" for a in ready])
         choice.current(0)
         choice.pack(fill='x', padx=8, pady=4)
 
@@ -4114,4 +4122,3 @@ if __name__ == "__main__":
             print('HOI4-EYES Bridge already owns this channel.')
             raise SystemExit(0)
         raise SystemExit(main())
-

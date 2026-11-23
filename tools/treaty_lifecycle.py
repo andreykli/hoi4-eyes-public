@@ -76,7 +76,10 @@ def terms_projection(agreement):
         action = spec.get('action') or {}
         duration = period(action.get('duration'))
         family = TYPES.get(term.get('action_id'), {}).get('family', 'unsupported')
-        item = {'term_id': term['term_id'], 'family': family, 'content': term.get('text'),
+        from agreement_manager import directional_term_label
+        content = (directional_term_label(term,'en') if term.get('term_id') in
+                   {'independence_guarantee','military_access'} else term.get('text'))
+        item = {'term_id': term['term_id'], 'family': family, 'content': content,
             'participants': deepcopy(term.get('required_participants', agreement['participants'])),
             'duration': {'amount': duration[0], 'unit': duration[1]} if duration else None,
             'conditions': deepcopy(action.get('conditions', [])), 'exceptions': deepcopy(action.get('exceptions', [])),
@@ -97,10 +100,17 @@ def terms_projection(agreement):
 def view(agreement):
     version = str(agreement['current_version'])
     stored = (agreement.get('lifecycle') or {}).get('versions', {}).get(version)
-    return deepcopy(stored) if stored else {'schema_version': SCHEMA, 'registered': False,
+    result = deepcopy(stored) if stored else {'schema_version': SCHEMA, 'registered': False,
         'agreement_id': agreement['agreement_id'], 'version': int(version),
         'participants': deepcopy(agreement['participants']), 'terms': terms_projection(agreement),
         'phase': 'not_registered', 'fully_verified': False}
+    from agreement_manager import directional_term_label
+    canonical = {term['term_id']:term for term in agreement['versions'][int(version)-1]['terms']}
+    for row in result.get('terms', []):
+        term = canonical.get(row.get('term_id'))
+        if term and term.get('term_id') in {'independence_guarantee','military_access'}:
+            row['content'] = directional_term_label(term,'en')
+    return result
 
 
 def register(agreement, *, version, request_id):

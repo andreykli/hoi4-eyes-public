@@ -1,11 +1,16 @@
 # HOI4-EYES — Local AI Diplomacy & Government
 
-Author: **NightPulse** · Version **0.9.0-beta.1** · Target **HOI4 1.19.5.0**
+Author: **NightPulse** · Version **0.9.0-beta.2** · Target **HOI4 1.20.0.0**
 Companion and original source: https://github.com/andreykli/hoi4-eyes-public
-Downloads: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.1
-These addresses become available only after the owner publishes them.
+Downloads: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.2
 
 ## English description
+
+Beta.2: mandatory independent treaty decisions, resistance to prompt manipulation,
+faster typed proposals and 540 original EN/RU/FR wording entries. Qwen selects wording;
+it cannot turn refusal into acceptance. Recognition and public UI labels are fixed.
+HOI4 1.20 scripts were reviewed; complete main-mod live acceptance remains pending.
+Internal QA executors are excluded from the public distribution.
 
 
 Talk to countries, negotiate precise treaties and consult your government with
@@ -31,6 +36,10 @@ First use: a disposable campaign. Keep backups of important saves.
 
 ## Русское описание
 
+Beta.2: независимая проверка решений, защита от манипуляций, ускоренный разбор
+и 540 собственных записей EN/RU/FR. Исправлены интерфейс и признание.
+Полная игровая приёмка ещё не завершена; QA-исполнители не распространяются.
+
 
 HOI4-EYES от **NightPulse** — дипломатия и обсуждение управления государством
 через локальный ИИ. Чаты, конференции, точные редакции договоров, согласования,
@@ -43,13 +52,17 @@ Ollama с qwen3:4b-instruct. Один раз запустите setup_windows.ba
 Платные API не нужны. Включайте одну копию EYES: локальный мод приложения и
 Workshop-копию нельзя включать одновременно.
 
-Это beta для HOI4 **1.19.5.0**. Не всякая идея исполнима; часть установки требует
+Это beta для HOI4 **1.20.0.0**. Не всякая идея исполнима; часть установки требует
 перезапуска игры. Подпись не заменяет подтверждение эффекта Bridge.
 Модифицированные карты требуют проверки геометрии. Морские шаблоны и многие
 реформы пока служат планированию. Начните с новой тестовой кампании.
 Мультиплеер, Ironman/достижения и все сочетания DLC не сертифицированы.
 
 ## Description française
+
+Beta.2 : contrôle indépendant, protection contre la manipulation, analyse accélérée
+et 540 entrées originales EN/RU/FR. Reconnaissance et interface corrigées.
+Recette complète encore inachevée ; outils QA internes exclus.
 
 
 HOI4-EYES par **NightPulse** : négociez avec les pays et consultez votre
@@ -62,7 +75,7 @@ compagnon Windows-source sur GitHub. Python 3.10+, WebView2 et Ollama avec
 qwen3:4b-instruct sont requis. Lancer setup_windows.bat une fois, puis start.bat.
 Une seule copie EYES active : ne pas combiner le mod local géré et la copie Workshop.
 
-Beta pour HOI4 **1.19.5.0**. Toutes les propositions ne sont pas exécutables ;
+Beta pour HOI4 **1.20.0.0**. Toutes les propositions ne sont pas exécutables ;
 certains scripts nécessitent un redémarrage. La signature ne remplace pas une
 preuve du Bridge. Les cartes modifiées exigent une géométrie validée. Certaines
 réformes et fonctions navales restent consultatives. Commencer par une campagne

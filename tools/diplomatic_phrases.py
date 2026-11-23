@@ -145,6 +145,8 @@ def matches(text,core,row,language):
 def fast_path(policy):
     if len(policy)!=1:return False
     row=policy[0]
+    if row.get('stance') in {'clarify','discuss','defer'} and row.get('unresolved_fields'):
+        return True  # Another generation cannot resolve unknown game facts.
     return (row.get('stance') in {'accept','reject'} and not row.get('term_id')
             and not any(row.get(k) for k in ('conditions','exceptions','additional_terms','unresolved_fields'))
             and row.get('action_id') in {'guarantee','non_aggression_pact','military_access','embargo','lift_embargo'})

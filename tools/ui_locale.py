@@ -34,10 +34,16 @@ def save_language(value):
 
 
 def tr(english, russian=None):
+    if not isinstance(english,str):
+        return tr('Information unavailable')
     selected = language()
+    entry = CATALOGUE.get(english,{})
+    fallback = english
+    if re.fullmatch(r'[a-z][a-z0-9]*(?:[-_][a-z0-9]+)+',english):
+        fallback = CATALOGUE.get('Information unavailable',{}).get(selected,'Information unavailable')
     if selected == 'ru':
-        return russian or CATALOGUE.get(english, {}).get('ru', english)
-    return CATALOGUE.get(english, {}).get(selected, english)
+        return russian or entry.get('ru', entry.get('en',fallback))
+    return entry.get(selected, entry.get('en',fallback))
 
 
 def translations(selected):

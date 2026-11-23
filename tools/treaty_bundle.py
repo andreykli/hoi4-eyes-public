@@ -29,6 +29,7 @@ def _relation_step(engine, chat, agreement, term):
     term_id = term['term_id']
     temporary = object.__new__(DiplomacyEngine)
     temporary.action_registry = engine.action_registry
+    temporary.diplomatic_memory = deepcopy(engine.diplomatic_memory)
     temporary.chats = {chat['chat_id']: {**chat, 'agreements': {
         agreement['agreement_id']: deepcopy(agreement)}}}
     prepared = temporary.prepare_agreement_term_execution(
@@ -166,4 +167,16 @@ def _clause_label(effect, folder):
         grantor, recipient = effect['guarantor'], effect['beneficiary']
     else:
         grantor, recipient = effect['grantor'], effect['recipient']
-    return f'{label}: {grantor} → {recipient}'
+    wording = {
+        'guarantee': {
+            'english': '{a} guarantees {b}',
+            'russian': '{a} гарантирует независимость {b}',
+            'french': '{a} garantit l’indépendance de {b}',
+        },
+        'military_access': {
+            'english': '{a} grants military access to {b}',
+            'russian': '{a} предоставляет военный доступ войскам {b}',
+            'french': '{a} accorde un accès militaire aux troupes de {b}',
+        },
+    }
+    return wording[action][folder].format(a=grantor,b=recipient)

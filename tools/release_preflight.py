@@ -39,6 +39,18 @@ def main():
                 raise RuntimeError('preflight_route_failed: '+path)
         if not all(client.get('/health?features=1').json['features'].values()):
             raise RuntimeError('preflight_features_unavailable')
+        from developer_access import PUBLIC_BUILD, enabled
+        if PUBLIC_BUILD:
+            import importlib.util
+            from windows_desktop import Controls
+            if enabled() or any(hasattr(Controls, name) for name in
+                    ('start_acceptance','prepare_game_qa','game_qa_status','acceptance_status')):
+                raise RuntimeError('public_developer_api_exposed')
+            for module in ('live_qa','developer_desktop','desktop_acceptance','release_acceptance'):
+                if importlib.util.find_spec(module) is not None:
+                    raise RuntimeError('public_developer_module_present')
+            if 'live-qa-open' in client.get('/desktop?developer=1').text:
+                raise RuntimeError('public_developer_controls_visible')
     print('HOI4-EYES isolated offline preflight passed; no game or model invoked.')
 
 

@@ -25,7 +25,7 @@ from guarded_treaty_effects import (EFFECTS as GUARDED_EFFECTS, NEW_ACTIONS, PRO
                                    exact_scope, build_package as build_guarded_treaty)
 from execution_markers import matches_prepared_result
 from diplomatic_doctrine import (
-    assess_doctrine, ideology_from_context, profile_for_ideology,
+    assess_doctrine,
 )
 from diplomatic_planner import build_strategic_plan, build_point_decisions, resolve_point_scopes
 from strategic_interests import refresh_interests, leader_style
@@ -623,7 +623,7 @@ class IntentClassifier:
     """Small multilingual keyword/phrase classifier; not an LLM or parser."""
 
     RULES = [
-        ("territory_partition", r"\b(territorial partition|partition(?:ing)? (?:the )?territor(?:y|ies)|divide (?:the )?territor(?:y|ies)|state transfer|раздел территори[ийю]|разделить территори[юи]|передача территори[ийю]|перераспределени[ея] территори[ийю]|розподіл територі[йї]|поділ територі[йї]|répartition des territoires|répartissons les territoires|partage des territoires)\b"),
+        ("territory_partition", r"\b(transfer\w*.{0,90}(?:city|region|area|territor)|\bcede\b|переда.{0,80}(?:област|территор)|territorial partition|partition(?:ing)? (?:the )?territor(?:y|ies)|divide (?:the )?territor(?:y|ies)|state transfer|раздел территори[ийю]|разделить территори[юи]|передача территори[ийю]|перераспределени[ея] территори[ийю]|розподіл територі[йї]|поділ територі[йї]|répartition des territoires|répartissons les territoires|partage des territoires)\b"),
         ("lift_embargo", r"\b(lift|remove|end) (?:the )?embargo\b|сним\w* эмбарго|сня\w* эмбарго|отмен\w* эмбарго|скасув\w* ембарго|знят\w* ембарго|lever l'embargo"),
         ("embargo", r"\b(?:impose|place|enact|declare|introduce) (?:an? )?embargo\b|\bembargo (?:against|on)\b|ввод\w* эмбарго|введ\w* эмбарго|объяв\w* эмбарго|ембарго проти|встанов\w* ембарго|imposer un embargo|embargo contre"),
         ("declare_war", r"\b(declare war|declaration of war|объявля(?:ю|ем|йте) войну|начинаем войну)\b"),
@@ -2977,6 +2977,7 @@ class DiplomacyEngine:
                     or snapshot.get('countries', {}).get(observer, {}).get('ai_controlled') is not False):
                 raise ChatConflict('current human observer must explicitly authorize the AI agreement')
             approval_country = observer
+        agreement['policy_validation'] = self._check_independent_acceptance(chat, agreement)
         agreement["status"] = "approved"
         agreement["approved_version"] = version
         agreement["approved_by"] = approval_country
@@ -3002,6 +3003,7 @@ class DiplomacyEngine:
             raise ChatConflict("player must approve the current agreement before action preparation")
         if agreement.get("approved_version") != agreement.get("current_version"):
             raise ChatConflict("approved agreement version is stale")
+        self._revalidate_signed_policy(chat, agreement)
 
         version_number = agreement["current_version"]
         execution_request_id = _execution_request_id or f"agreement:{agreement_id}:v{version_number}"
@@ -3290,6 +3292,7 @@ class DiplomacyEngine:
             raise ChatConflict("player must approve the current agreement before term preparation")
         if agreement.get("approved_version") != agreement.get("current_version"):
             raise ChatConflict("approved agreement version is stale")
+        self._revalidate_signed_policy(chat, agreement)
         if (agreement.get("execution_package") or {}).get("bundle_term_ids"):
             raise ChatConflict("this agreement already has a combined native review")
         version_number = agreement["current_version"]
@@ -3409,6 +3412,7 @@ class DiplomacyEngine:
         temporary_engine = object.__new__(DiplomacyEngine)
         temporary_engine.chats = {chat_id: term_chat}
         temporary_engine.action_registry = self.action_registry
+        temporary_engine.diplomatic_memory = deepcopy(self.diplomatic_memory)
         temporary_result = DiplomacyEngine.prepare_agreement_execution(
             temporary_engine, chat_id, agreement_id,
             request_id=f"term-prepare:{term_id}",
@@ -3697,6 +3701,86 @@ class DiplomacyEngine:
             return chat.setdefault("agreements", {})[str(agreement_id)]
         except KeyError as error:
             raise KeyError("unknown agreement_id") from error
+
+    def _independent_inputs(self, chat, speaker):
+        contexts = chat.get('country_contexts', {})
+        facts = deepcopy(contexts.get(speaker) or {})
+        rows = chat.get('game_context_observations', {}).get('by_country', {}).get(speaker, [])
+        native = next((r for r in reversed(rows) if r.get('campaign_id')==chat['campaign_id']
+                       and r.get('country')==speaker
+                       and str(r.get('source','')).startswith('bridge_parsed_hoi4_game_log_v')), None)
+        for key in ('ideology','ideology_group','player_ideology_group','claims','_bridge_verified'):
+            facts.pop(key,None)
+        if native:
+            facts.update(native.get('context', {}))
+            if native.get('schema_version') in (8,9):facts['_bridge_verified']=True
+        for key in ('war_status','same_faction','existing_non_aggression_pact'):
+            values=[_normalize_context_value(key,row[key]) for row in contexts.values()
+                    if isinstance(row,dict) and key in row]
+            if len(set(values))>1:facts.pop(key,None)
+        from strategic_interests import select_context
+        return select_context(facts)[0]
+
+    def _independent_vote(self, chat, speaker, point):
+        from treaty_interest_gate import decision
+        from diplomatic_planner import build_strategic_plan
+        from diplomatic_doctrine import assess_doctrine
+        from strategic_interests import refresh_interests
+        facts = self._independent_inputs(chat,speaker)
+        other = chat.get('player_country')
+        action = self.action_registry.get(point.get('action_id')) or {}
+        doctrine = assess_doctrine(speaker,facts,other,'',{'intent':action.get('intent')})
+        memory = diplomatic_memory_pair_summary(self.diplomatic_memory,
+            campaign_id=chat['campaign_id'],observer_tag=speaker,counterpart_tag=other)
+        memory.pop('prior_negotiation_positions',None)
+        interests = refresh_interests(deepcopy(self.diplomatic_memory),chat['campaign_id'],speaker,facts)
+        relationship = DiplomaticRelationship.from_context(facts)
+        relationship.promise_trust = _number((memory.get('promise_trust') or {}).get('value'),0.5,0.0,1.0)
+        plan = build_strategic_plan(intent=action.get('intent','unknown/general'),engine_decision='defer',
+            relationship=relationship.to_dict(), game_context=facts,
+            doctrine=doctrine,profile=doctrine.get('profile',{}),memory=memory,interests=interests,
+            campaign_id=chat['campaign_id'],allow_override=True)
+        return decision(point,facts,speaker,plan), facts
+
+    def _check_independent_acceptance(self, chat, agreement):
+        from agreement_manager import directional_parties
+        inputs={}
+        for term in agreement['versions'][agreement['current_version']-1]['terms']:
+            actor,recipient=directional_parties(term)
+            spec=(term.get('proposal_spec') or {}).get('action') or {}
+            point={**spec,
+                   'action_id':term.get('action_id'),'actors':[actor], 'recipient':recipient,
+                   'conditions':term.get('conditions',spec.get('conditions')),
+                   'exceptions':term.get('exceptions',spec.get('exceptions')),
+                   'unresolved_fields': ['execution_details'] if term.get('unparsed_execution_details') else []}
+            for speaker in chat.get('participants',[]):
+                if speaker==chat.get('player_country'):continue
+                if actor and recipient and speaker not in {actor,recipient}:continue
+                vote,facts=self._independent_vote(chat,speaker,point)
+                inputs[speaker]=facts
+                if vote['decision']!='accept':
+                    raise ChatConflict('independent_policy_requires_review:'+vote['decision']+':'+vote['reason']+':'+str(term.get('term_id')))
+        return {'schema':1,'version':agreement['current_version'],'facts':inputs}
+
+    def _revalidate_signed_policy(self, chat, agreement):
+        # Old signatures are not recreated from today's advisory recommendation.
+        # Existing source/signatory and native execution guards still apply.
+        receipt=agreement.get('policy_validation')
+        if receipt is None:
+            # Keep historic consent, but never guess an issuer/beneficiary when
+            # preparing a new native effect for a legacy directed obligation.
+            from agreement_manager import directional_parties
+            for term in agreement['versions'][agreement['current_version']-1]['terms']:
+                if term.get('action_id') not in {'guarantee','military_access'}:
+                    continue
+                actor,recipient=directional_parties(term)
+                if (not actor or actor==recipient
+                        or {actor,recipient} != set(term.get('required_participants',[]))):
+                    raise ChatConflict('independent_policy_requires_review:defer:insufficient_context:legacy_direction_requires_review')
+            return
+        if not isinstance(receipt,dict) or receipt.get('schema')!=1 or receipt.get('version')!=agreement.get('current_version'):
+            raise ChatConflict('independent_policy_requires_review:stale_policy_receipt')
+        self._check_independent_acceptance(chat,agreement)
 
     @staticmethod
     def _agreement_context(chat: Dict[str, Any], required: List[str]) -> tuple[dict, list]:
@@ -5745,13 +5829,18 @@ class DiplomacyEngine:
                                    and row.get("campaign_id") == payload.get("campaign_id")
                                    and row.get("conversation_id") == conversation_id]
                         planned = []
+                        policy_relationship = DiplomaticRelationship.from_context(context)
+                        if trusted_memory:
+                            policy_relationship.promise_trust = _number(
+                                (trusted_memory.get('promise_trust') or {}).get('value'),0.5,0.0,1.0)
                         for index, point in enumerate(points):
                             catalog_action = self.action_registry.get(str(point.get("action_id") or ""))
                             point_strategy = build_strategic_plan(
                                 intent=(catalog_action or {}).get("intent", "unknown/general"),
-                                engine_decision=decision, relationship=relationship.to_dict(),
+                                engine_decision=decision, relationship=policy_relationship.to_dict(),
                                 game_context=context, doctrine=doctrine, profile=asdict(profile),
-                                memory=trusted_memory, allow_override=True,
+                                memory={k:v for k,v in (trusted_memory or {}).items()
+                                        if k != 'prior_negotiation_positions'}, allow_override=True,
                                 interests=strategic_interests,
                                 campaign_id=str(payload.get("campaign_id") or ""),
                                 conversation_id=conversation_id, request_id=str(payload.get("request_id") or ""),
@@ -5760,6 +5849,10 @@ class DiplomacyEngine:
                             if negotiated is not None:
                                 binding, model_rows = negotiated
                                 item = model_rows[index]
+                                from treaty_interest_gate import decision as interest_decision
+                                independent=interest_decision(point,context,receiver,point_strategy)
+                                item={**item,**independent}
+                                row['independent_policy']=deepcopy(independent)
                                 from negotiation_progress import mark_progress
                                 row.update(stance={'counteroffer':'counter_offer','defer':'discuss'}.get(
                                     item['decision'], item['decision']), clarification_reasons=item['questions'],

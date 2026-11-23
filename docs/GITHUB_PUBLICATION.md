@@ -11,11 +11,11 @@ Local AI diplomacy and government companion for Hearts of Iron IV: negotiations,
 guarded treaties, Atlas and Bridge verification. By NightPulse. Windows beta.
 
 Suggested topics: hearts-of-iron-iv, hoi4, diplomacy, ollama, local-ai, modding, python.
-Default branch: main. Initial release tag: v0.9.0-beta.1. Mark the GitHub Release
+Default branch: main. Current release tag: v0.9.0-beta.2. Mark the GitHub Release
 as a **pre-release**. Do not publish the old private repository or its history.
 
 The clean export contains the runtime sources and isolated distribution checks.
-The historical 1408-test private developer suite is not copied wholesale: it
+The private developer private developer suite is not copied wholesale: it
 depends on omitted developer fixtures and historical installation layouts.
 This distinction must remain in the release description. Historical test totals
 are not represented as the number of tests bundled in the public repository.

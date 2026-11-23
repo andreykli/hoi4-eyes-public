@@ -11,13 +11,23 @@ import subprocess
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+VERSION = '0.9.0-beta.2'
+MOD_NAME = f'HOI4-EYES {VERSION}'
+PRIVATE_DEVELOPER_FILES = frozenset({
+    'tools/developer_desktop.py', 'tools/desktop_acceptance.py',
+    'tools/live_qa.py', 'tools/live_qa_scripts.py',
+    'tools/release_acceptance.py', 'tools/release_acceptance_offline.py',
+    'tools/release_smoke_checks.py', 'tools/static/live_qa.js',
+    'tools/static/developer_checks.js',
+})
 MOD = 'prepared/unified_game_mod/ai_assistant/'
 DOCS = ('README.md', 'README_RU.md', 'README_FR.md', 'LICENSE', 'NOTICE',
         'THIRD-PARTY-NOTICES.md', 'CHANGELOG.md', 'docs/BETA_GUIDE.md',
         'docs/BETA_ACCEPTANCE.md', 'docs/WORKSHOP.md', 'docs/LICENSES.md', 'docs/BETA_REPORT_RU.md',
         'CREDITS.md', 'ATTRIBUTION.md', 'THIRD_PARTY_NOTICES.md',
         'docs/GITHUB_PUBLICATION.md', 'docs/GITHUB_RELEASE.md',
-        'docs/WORKSHOP_PUBLICATION.md', 'docs/PUBLISH_STEPS_RU.md', 'docs/MODEL_LICENSE.md')
+        'docs/WORKSHOP_PUBLICATION.md', 'docs/PUBLISH_STEPS_RU.md', 'docs/MODEL_LICENSE.md',
+        'docs/STEAM_CHANGELOG_EN.txt', 'docs/RELEASE_CLEANUP_RU.md')
 
 
 def tracked(root):
@@ -46,6 +56,8 @@ def payloads(root, inventory):
     if not allowed or any(not name.startswith(MOD) for name in allowed):
         raise ValueError('invalid_mod_manifest')
     app_names = set(policy['application_files']) | set(DOCS)
+    if app_names & PRIVATE_DEVELOPER_FILES:
+        raise ValueError('developer_file_in_public_manifest')
     # Any newly added file must be reviewed, including files tracked by Git.
     required = app_names | allowed
     for name in required:
@@ -64,8 +76,24 @@ def payloads(root, inventory):
         app[name] = data
         if name in allowed:
             workshop[name[len(MOD):]] = data
+    # Public builds contain no grant loader/override and no QA executors.
+    app['tools/developer_access.py'] = b'''"""Public build: internal developer operations are not distributed."""
+PUBLIC_BUILD = True
+def enabled(root=None):
+    return False
+def require(root=None):
+    raise PermissionError('developer_access_required')
+'''
+    import re
+    template = 'tools/templates/desktop.html'
+    app[template] = re.sub(r'{% if developer_mode %}.*?{% endif %}', '',
+                          app[template].decode('utf-8'), flags=re.S).encode()
     # Launcher-generated paths and remote file IDs must never enter archives.
-    descriptor = b'name="HOI4-EYES"\nsupported_version="1.19.5.*"\nversion="0.9.0-beta.1"\n'
+    from hoi4_compatibility import DEFAULT_VERSION, supported_version
+    if policy['version'] != VERSION:
+        raise ValueError('release_version_mismatch')
+    descriptor = (f'name="{MOD_NAME}"\nsupported_version="{supported_version(DEFAULT_VERSION)}"\n'
+                  f'version="{VERSION}"\n').encode()
     app[MOD+'descriptor.mod'] = workshop['descriptor.mod'] = descriptor
     # Legacy internal marker used by launch controllers; never an installed
     # launcher descriptor and deliberately contains no machine-specific path.
@@ -88,7 +116,7 @@ def payloads(root, inventory):
 def write_archive(path, files, revision):
     entries = {name: {'sha256': sha256(data).hexdigest(), 'bytes': len(data)}
                for name, data in sorted(files.items())}
-    manifest = json.dumps({'version':'0.9.0-beta.1', 'revision':revision,
+    manifest = json.dumps({'version':VERSION, 'revision':revision,
                           'gameplay_verified_by_build':False, 'files':entries},
                          ensure_ascii=False, indent=2).encode('utf-8')
     with zipfile.ZipFile(path, 'x', compression=zipfile.ZIP_DEFLATED) as archive:
@@ -130,7 +158,7 @@ def build(root, output):
     output.mkdir(parents=True, exist_ok=False)
     report = {}
     for kind, files in distributions.items():
-        path = output/f'HOI4-EYES-0.9.0-beta.1-{kind}.zip'
+        path = output/f'HOI4-EYES-{VERSION}-{kind}.zip'
         write_archive(path, files, revision)
         report[kind] = {'file':path.name, 'files':len(files), 'bytes':path.stat().st_size,
                         'sha256':sha256(path.read_bytes()).hexdigest()}

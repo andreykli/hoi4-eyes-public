@@ -3,6 +3,7 @@ import argparse
 from hashlib import sha256
 import json
 import os
+import re
 from pathlib import Path
 from uuid import uuid4
 
@@ -11,6 +12,7 @@ from hub_control import atomic_json
 from treaty_package_install import hoI4_running
 from user_storage import APP_ROOT, profile_dir
 from validate_hoi4_gui import discover_hoi4_install, parse_pdx
+from hoi4_compatibility import inspect_game, descriptor as game_descriptor
 
 DESCRIPTOR = 'HOI4_EYES_Experimental.mod'
 VERSION = '1.19.5.0'
@@ -32,9 +34,8 @@ def digest(data):
 
 
 def setup_manifest(game, documents, source):
-    version = json.loads((game/'launcher-settings.json').read_text(encoding='utf-8-sig')).get('rawVersion')
-    if not (game/'hoi4.exe').is_file() or version != VERSION:
-        raise ValueError('game_version_unsupported')
+    compatibility = inspect_game(game)
+    version = compatibility['version']
     hashes = {}
     for name in ASSETS:
         file = (source/name).resolve()
@@ -49,7 +50,15 @@ def setup_manifest(game, documents, source):
         playset = 'modified' if any(not path.is_relative_to(game) for path in atlas.values()) else 'vanilla_map'
     except (OSError, ValueError, TypeError):
         playset = 'unverified'
-    return {'version':version,'assets':hashes,'playset':playset}
+    identity = parse_pdx((source/'descriptor.mod').read_text(encoding='utf-8-sig'))
+    mod_version = str(identity.first('version') or '').strip('"')
+    if mod_version and not re.fullmatch(r'\d+\.\d+\.\d+(?:-[a-z0-9.]+)?', mod_version):
+        raise ValueError('invalid_mod_version')
+    mod_name = str(identity.first('name') or '"HOI4-EYES"').strip('"')
+    if mod_name not in {'HOI4-EYES', 'HOI4-EYES '+mod_version}:
+        raise ValueError('invalid_mod_identity')
+    return {'version':version,'assets':hashes,'playset':playset,'compatibility':compatibility,
+            'mod_name':mod_name,'mod_version':mod_version}
 
 
 def change_setup(action, game, documents, *, root=APP_ROOT, profile=None, confirm=False):
@@ -88,7 +97,8 @@ def change_setup(action, game, documents, *, root=APP_ROOT, profile=None, confir
             descriptor = parse_pdx(current.decode('utf-8-sig'))
             path = descriptor.first('path')
             # Existing official registrations of this exact project are safe to adopt on explicit install.
-            if (action != 'install' or expected or descriptor.first('name') != '"HOI4-EYES"'
+            if (action != 'install' or expected or descriptor.first('name') not in
+                    {'"HOI4-EYES"', '"'+report['mod_name']+'"'}
                     or not isinstance(path, str) or Path(path.strip('"')).resolve() != source):
                 raise ValueError('descriptor_owned_by_someone_else')
         if action == 'remove' and (not current or not expected):
@@ -103,7 +113,10 @@ def change_setup(action, game, documents, *, root=APP_ROOT, profile=None, confir
             target.unlink()
             return dict(report, integrity='removed', backup=str(backup))
         target_dir.mkdir(exist_ok=True)
-        data = f'name="HOI4-EYES"\nsupported_version="1.19.5.*"\npath="{source.as_posix()}"\n'.encode('utf-8')
+        text = game_descriptor(report['mod_name'],report['version'],source)
+        if report['mod_version']:
+            text += f'version="{report["mod_version"]}"\n'
+        data = text.encode('utf-8')
         temp = target_dir / f'.eyes-setup-{uuid4().hex}.tmp'
         try:
             temp.write_bytes(data)

@@ -1,8 +1,8 @@
 """Conference lifecycle attached to existing chat/memory, never a treaty authority."""
 from copy import deepcopy
-from datetime import date,datetime,timezone
+from datetime import datetime,timezone
 import hashlib,json,uuid
-from historical_people import load_people,eligibility,representative
+from historical_people import load_people,eligibility
 
 
 def normalize(value):

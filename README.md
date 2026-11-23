@@ -6,10 +6,12 @@ By **NightPulse** · [Original project](https://github.com/andreykli/hoi4-eyes-p
 
 [Русский](README_RU.md) · [Français](README_FR.md)
 
-**0.9.0-beta.1 — public beta, not a finished 1.0.** Target: Windows,
-HOI4 **1.19.5.0**, Python 3.10+, local Ollama `qwen3:4b-instruct`.
+**0.9.0-beta.2 — public beta, not a finished 1.0.** Target: Windows,
+HOI4 **1.20.0.0**, Python 3.10+, local Ollama `qwen3:4b-instruct`.
 The desktop uses PyWebView/WebView2 and the existing Flask backend.
 No paid API required. Default model inference is local.
+
+**Beta.2 release: main-mod game acceptance is incomplete.** Independent treaty authorization is mandatory for desktop, Flask and direct engine launches. Unknown facts defer signing; player prose and model votes cannot authorize execution. Legacy signatures are preserved without creating new consent. The reviewed 1.19.5 engine profile remains available; this build has not been retested in that game version.
 
 ## Start
 
@@ -20,7 +22,7 @@ No paid API required. Default model inference is local.
    `setup_windows.bat` once, then `start.bat` for subsequent launches.
 4. Inspect component readiness. Register the bundled local mod using the
    existing setup controls with HOI4 closed. Enable exactly one EYES copy.
-5. Start a new disposable campaign for the first trial. The QA mod is separate.
+5. Start a new disposable campaign for the first trial. Internal QA tools are excluded from public builds.
 
 Setup does not start HOI4. This is a Python source distribution, not a signed EXE.
 Do not overwrite an installation without a backup. Settings and history remain

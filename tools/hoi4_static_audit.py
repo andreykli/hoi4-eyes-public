@@ -208,6 +208,21 @@ def audit(mod_root, game_dir, parent_mods=()):
             emit('error', 'localisation_bom', path, 'HOI4 localisation requires UTF-8 BOM')
         try: data.decode('utf-8-sig')
         except UnicodeError as error: emit('error', 'encoding', path, str(error))
+    # Scripted diplomatic action titles are implicit engine lookups; checking
+    # only explicit references missed EYES_RECOGNIZE_TITLE in real gameplay.
+    for path, tree in trees.items():
+        if path.parent.name!='scripted_diplomatic_actions':continue
+        outer=tree.first('scripted_diplomatic_actions')
+        if not isinstance(outer,Block):continue
+        for name, action in outer.entries:
+            if not name.startswith('eyes_') or not isinstance(action,Block):continue
+            required={name.upper()+'_TITLE',name.upper()+'_DESC'}
+            if isinstance(action.first('send_description'),str):required.add(action.first('send_description'))
+            for locale in ('english','russian','french'):
+                keys=set()
+                for loc in (root/'localisation'/locale).glob('*.yml'):
+                    keys.update(re.findall(r'^\s*([A-Za-z0-9_.-]+):',loc.read_text(encoding='utf-8-sig'),re.M))
+                for key in sorted(required-keys):emit('error','missing_diplomatic_localisation',path,locale+':'+key)
     missing = {k: sorted(v - set(docs[k])) for k, v in cwt.items()}
     return {'scope': 'EYES subset static audit; NOT CWTools execution or HOI4 validation',
         'files_parsed': len(trees), 'findings': findings,

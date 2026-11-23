@@ -1,6 +1,13 @@
 [h1]HOI4-EYES — Local AI Diplomacy & Government[/h1]
-[b]NightPulse | 0.9.0-beta.1 | HOI4 1.19.5.0[/b]
+[b]NightPulse | 0.9.0-beta.2 | HOI4 1.20.0.0[/b]
 [url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
+
+Beta.2: mandatory independent treaty decisions, resistance to prompt manipulation,
+faster typed proposals and 540 original EN/RU/FR wording entries. Qwen selects wording;
+it cannot turn refusal into acceptance. Recognition and public UI labels are fixed.
+HOI4 1.20 scripts were reviewed; complete main-mod live acceptance remains pending.
+Internal QA executors are excluded from the public distribution.
+
 
 Talk to countries, negotiate precise treaties and consult your government with
 a local AI. HOI4-EYES combines a Windows companion with guarded game scripts.

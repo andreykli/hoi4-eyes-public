@@ -2,7 +2,7 @@
 const actionText = labels.workspace;
 let atlasActionContext = null;
 let contextRequest = 0;
-let acceptanceTimer = null;
+
 
 function filterGameActions() {
   const choice = $('game-actions-choice'), previous=choice.value;
@@ -115,21 +115,3 @@ for(const id of ['game-actions-choice','game-actions-target','game-actions-capit
   $(id).onchange=renderGameAction;
 for(const id of ['game-actions-current-level','game-actions-level'])
   $(id).oninput=renderGameAction;
-
-function displayAcceptance(result) {
-  $('qa-state').textContent=actionText['qa_'+result.state]||actionText.qa_failed;
-  const counters=Number.isInteger(result.tests)?result.tests+' / '+result.packages:'';
-  $('qa-report').textContent=[counters,result.report||result.log].filter(Boolean).join(' · ');
-  if(result.state==='running'&&$('qa-dialog').open){
-    acceptanceTimer=setTimeout(async()=>{
-      try{displayAcceptance(await bridge().acceptance_status());}catch{displayAcceptance({state:'failed'});}
-    },700);
-  }
-}
-$('qa-open').onclick=async()=>{
-  $('qa-dialog').showModal();
-  $('qa-state').textContent=actionText.qa_running;
-  clearTimeout(acceptanceTimer);
-  try{displayAcceptance(await bridge().start_acceptance());}catch{displayAcceptance({state:'failed'});}
-};
-$('qa-dialog').addEventListener('close',()=>clearTimeout(acceptanceTimer));

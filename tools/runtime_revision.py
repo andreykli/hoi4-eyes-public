@@ -8,13 +8,17 @@ from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 _RUNTIME_COMPONENTS = (
+    "tools/treaty_interest_gate.py",
+    "tools/diplomatic_expression_library.py",
+    "data/diplomatic_expression_library.json",
+    "tools/hoi4_compatibility.py",
     "tools/model_profile.py",
     "tools/runtime_revision.py",
     "tools/mock_ai_server.py",
     "tools/templates/desktop.html",
     "tools/static/desktop.js",
     "tools/static/game_actions.js",
-    "tools/static/live_qa.js",
+    "tools/developer_access.py",
     "tools/domestic_advice.py",
     "tools/government_meetings.py",
     "tools/cabinet_roster.py",
