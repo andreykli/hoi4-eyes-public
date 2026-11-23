@@ -1,0 +1,23 @@
+HOI4-EYES installer C preview — original code by NightPulse, Apache-2.0.
+
+The companion retains LICENSE, NOTICE and all existing third-party notices.
+Dependency wheels retain their original source, metadata and bundled licenses.
+wheel-provenance.json records official PyPI origins, versions and SHA-256.
+requirements.lock records the exact wheel digests. No package build scripts
+are run on the user's machine; installation is offline from these wheels.
+
+proxy_tools 0.1.0: the upstream source copyright identifies Armin Ronacher
+(2013) and Jonathan Tushman (2014), under BSD. Package metadata says MIT.
+Retain both the original source notice and licenses/proxy_tools-BSD.txt.
+Source: https://pypi.org/project/proxy_tools/0.1.0/
+BSD notice: https://github.com/jtushman/proxy_tools/blob/master/LICENSE.txt
+The pure-Python wheel is built locally from the reviewed official source.
+
+Python, Ollama, Qwen and Microsoft WebView2 are NOT bundled binaries.
+Their official installers/model downloads require separate explicit consent.
+Installer URLs, licenses, sizes and SHA-256 are in the embedded installation plan.
+Qwen must match release/model_profile.json; existing different models are not
+silently replaced. Vendor runtimes retain their own terms, including bundled
+GPU notices. Shared runtimes, models, user data and game saves are not removed.
+
+This is an unpublished preview, not a signed or game-certified installer.

@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class DistributionTests(unittest.TestCase):
  def test_identity(self):
   data=json.loads((ROOT/'PUBLICATION.json').read_text())
-  self.assertEqual(data['version'],'0.9.0-beta.2')
+  self.assertEqual(data['version'],'0.9.0-beta.3')
   self.assertEqual(data['author'],'NightPulse')
  def test_notices(self):
   for name in ('LICENSE','NOTICE','CREDITS.md','ATTRIBUTION.md','THIRD_PARTY_NOTICES.md'):

@@ -3,6 +3,7 @@ import argparse
 from html import escape
 import json
 import logging
+import os
 from pathlib import Path
 import re
 import threading
@@ -97,6 +98,31 @@ def main():
     parser.add_argument('--page',choices=TABS,default='diplomacy')
     parser.add_argument('--root',type=Path,default=APP_ROOT)
     args=parser.parse_args()
+    # Variant-C builds opt in at export. Run BEFORE HubBackend or SQLite opens.
+    if (args.root/'release/installation_protocol.json').is_file():
+        from workshop_update import startup_check
+        from unified_mod_setup import documents_directory
+        from ui_locale import language
+        import tkinter as tk
+        from tkinter import messagebox
+        update_text=json.loads((Path(__file__).with_name('installer_text.json')).read_text(encoding='utf-8'))
+        selected_language=language()
+        parent=tk.Tk();parent.withdraw()
+        try:
+            try:
+                update=startup_check(args.root,documents_directory())
+            except (OSError,ValueError,KeyError,TypeError):
+                update={'blocked':True,'status':'compatibility_check_failed','updates':[]}
+            if update['blocked']:
+                logging.warning('Installer compatibility gate: %s',update['status'])
+                messagebox.showerror('HOI4-EYES',update_text['startup_blocked'][selected_language],parent=parent)
+                return
+            for row in update['updates']:
+                if row['newer'] and messagebox.askyesno('HOI4-EYES',
+                        update_text['startup_update'][selected_language]+'\n'+row['version'],parent=parent):
+                    os.startfile(row['folder'])
+        finally:
+            parent.destroy()
     backend=HubBackend(args.root)
     runtime=backend.runtime
     runtime.mkdir(parents=True,exist_ok=True)

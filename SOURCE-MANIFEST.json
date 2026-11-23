@@ -1,5 +1,5 @@
 {
-  "version": "0.9.0-beta.2",
+  "version": "0.9.0-beta.3",
   "files": {
     ".gitattributes": {
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
@@ -22,7 +22,7 @@
       "bytes": 1679
     },
     "HOI4_EYES_Experimental.mod": {
-      "sha256": "2bcb522d37ac3c03cdcd1055752b4b93892b89dc894e3905197626b5a0cc44e1",
+      "sha256": "b6b6e44bf01fc912d401f58611f530e2dc10bfdcfb3ef07af39712b9f4288b66",
       "bytes": 82
     },
     "LICENSE": {
@@ -34,20 +34,20 @@
       "bytes": 472
     },
     "PUBLICATION.json": {
-      "sha256": "e75d3aed98c9011f5311b8cc1f93926222f366f4eba7ec52d374f80ca6f9974a",
+      "sha256": "0ccce68e68dde5937d10795eb8925a8436adcc410ec53a5e69b1a967012dc4e7",
       "bytes": 464
     },
     "README.md": {
-      "sha256": "738a278ebe406f0206d89fc58c2be1fc203e8d6d22e376a53a1ec0f27ef6216e",
-      "bytes": 3712
+      "sha256": "7f8a2481c33ad85bad3ef87fa7bdc06ac793614b19cf1493c4c098035d409a8a",
+      "bytes": 3794
     },
     "README_FR.md": {
-      "sha256": "f4cde3ae36e9feb015517ae76ad7675d0121aa7f22bdbc705389867bbe291891",
-      "bytes": 3682
+      "sha256": "6696943e412aa41f91518d93bc01d220a95b9174b70db05167c14ab88dbfc509",
+      "bytes": 3764
     },
     "README_RU.md": {
-      "sha256": "8539a03359e33ba56e1aa9509010aabcb8417bbeb56e3dfb5327b549e9e254d8",
-      "bytes": 5240
+      "sha256": "4c6aa0c7049557c214638a2a16a760bb5b56f6e384e397c1344df7b2d6406a55",
+      "bytes": 5322
     },
     "THIRD-PARTY-NOTICES.md": {
       "sha256": "5597d48cc4756c261986f4b93cdbaaa6e118f167b159319b5efcc409d2c6a9ca",
@@ -62,8 +62,8 @@
       "bytes": 178
     },
     "assets/cover-candidate.png": {
-      "sha256": "ddf0d67f95c7d843eb473bbacc24122bb6017d8c2e05d48e8c25c4677a99bbe3",
-      "bytes": 73447
+      "sha256": "57e2f8ed53b8f0eaf2d08262e6115b2e5376cd83bbb931dcc5224db6874dffac",
+      "bytes": 73493
     },
     "data/diplomatic_expression_library.json": {
       "sha256": "34678f2bc3878cad6025ce03f950c77761e2ee2dc7460df376648fcff9d947f0",
@@ -138,8 +138,12 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "11185c92db7eaeb0dd6a3e5a7b028418a8dd169b1c0776fb9845b5f3858ad125",
-      "bytes": 5136
+      "sha256": "fe8cb151c188e1cec5489b18a80eed19cafa04c1301d6107c8623494bf1435c2",
+      "bytes": 2187
+    },
+    "docs/INSTALLER_C2.md": {
+      "sha256": "fe8cb151c188e1cec5489b18a80eed19cafa04c1301d6107c8623494bf1435c2",
+      "bytes": 2187
     },
     "docs/LICENSES.md": {
       "sha256": "cf599bb3f4c34b74890c9418db5f28b6dfab4f9170835c727c75a51a3d9bf63a",
@@ -158,8 +162,8 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "5dc2f3ab09bdde84eac5d07c696e8178d7192b9e51d35a915fa5a6b3eb53f38d",
-      "bytes": 1224
+      "sha256": "fe8cb151c188e1cec5489b18a80eed19cafa04c1301d6107c8623494bf1435c2",
+      "bytes": 2187
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
@@ -170,16 +174,44 @@
       "bytes": 6047
     },
     "docs/workshop_en.txt": {
-      "sha256": "f4b067636eb8b7bf1b3e5cc080a77147e76f932cb89f20573aab4af2350c210d",
-      "bytes": 2458
+      "sha256": "fe8cb151c188e1cec5489b18a80eed19cafa04c1301d6107c8623494bf1435c2",
+      "bytes": 2187
     },
     "docs/workshop_fr.txt": {
-      "sha256": "b097690524c740d7f56d7101e47135fff6dbb527787d70a887ee07f4d6d1129c",
+      "sha256": "731ef5f90868994946301048b8b558b54ae2e8006083249c5796239e0a13003a",
       "bytes": 2037
     },
     "docs/workshop_ru.txt": {
-      "sha256": "47eee63201e3f71764337fb5e631481c2afa0e68b12131ae541f39f61a9e2672",
+      "sha256": "293913d382231f06a07aa47c987e36b52dee7727bcd6adf29852ca8a45d4b1ad",
       "bytes": 2854
+    },
+    "installer/Bootstrap.cs": {
+      "sha256": "e9eca60e3447b39a2f2beb4cdb6c11e1ed871ff3ca91beff5d7366f9c86e8800",
+      "bytes": 12900
+    },
+    "installer/HOW_TO_INSTALL.txt": {
+      "sha256": "1cf4afe0785dc34217d1d168898108104dad5811f2b6c3a490588dffc3a85404",
+      "bytes": 4036
+    },
+    "installer/SHA256SUMS.txt": {
+      "sha256": "68b214f98eaa020ec62a0b2f8afd894f8cecf0c837586c5dcda8927e806660b5",
+      "bytes": 88
+    },
+    "installer/THIRD-PARTY.txt": {
+      "sha256": "b0d933f8cf3001a33bfac60bd2591995ce95605c96b9774433a9394e5dcbb5b9",
+      "bytes": 1422
+    },
+    "installer/WORKSHOP_POLICY_QUESTION.txt": {
+      "sha256": "4015b0a3cf77ce19ace34fa200b59a92c7d72b0a33cf22c3190b30caec4f2f6d",
+      "bytes": 1076
+    },
+    "installer/app.manifest": {
+      "sha256": "0d85968b177a39f8181bc52d9cea2c1b3dfb13cec37dd5834c22d2d432f590d8",
+      "bytes": 774
+    },
+    "installer/licenses/proxy_tools-BSD.txt": {
+      "sha256": "f96cf2b17c9b0cede77438165fdc6ea2f91bedb248d1779538727a2b93d71e12",
+      "bytes": 1437
     },
     "prepared/unified_game_mod/ai_assistant/THIRD_PARTY_NOTICES.md": {
       "sha256": "e9761f8aef361d3f335bccb83468a664e41fb37ef164d9f4435e510c55ef0917",
@@ -258,7 +290,7 @@
       "bytes": 196
     },
     "prepared/unified_game_mod/ai_assistant/descriptor.mod": {
-      "sha256": "2bcb522d37ac3c03cdcd1055752b4b93892b89dc894e3905197626b5a0cc44e1",
+      "sha256": "b6b6e44bf01fc912d401f58611f530e2dc10bfdcfb3ef07af39712b9f4288b66",
       "bytes": 82
     },
     "prepared/unified_game_mod/ai_assistant/events/eyes_personal_messages.txt": {
@@ -425,9 +457,25 @@
       "sha256": "3a9b2f7744a2234a8e3920c3aa4e26ab4070d3f98026dd01b4c0e847923047a2",
       "bytes": 305
     },
+    "prepared/unified_game_mod/ai_assistant/release/installation_protocol.json": {
+      "sha256": "6b4e4f224c350953dcf8c6f9d8f75a0f9e41d28a078e80c0590f94ded08ee4e8",
+      "bytes": 75
+    },
     "release/files.json": {
-      "sha256": "0b61a24d6f092dea293eb152cf22948db76892027a7971ee0b458911d59d8f50",
-      "bytes": 19822
+      "sha256": "02e5220ef3ad2cd52917a66d022a469c559a79853f259ad8489ea6b7a6835df6",
+      "bytes": 20179
+    },
+    "release/installation_protocol.json": {
+      "sha256": "6b4e4f224c350953dcf8c6f9d8f75a0f9e41d28a078e80c0590f94ded08ee4e8",
+      "bytes": 75
+    },
+    "release/installer_sources.json": {
+      "sha256": "3a73abcaf1ec171f10be573dc5b96e54450a5c11d6de47b35c5af16597e64348",
+      "bytes": 1131
+    },
+    "release/installer_wheels.json": {
+      "sha256": "4d3186ba98d2eba80f959c8b3e3a6929e640765d5f902a6c342fdd72f5496ee2",
+      "bytes": 9810
     },
     "release/model_gate_summary.json": {
       "sha256": "dc56081977bff60a068f7944113d20d733ab947740de98412fd15a2dca4e2358",
@@ -440,6 +488,10 @@
     "release/publication_links.json": {
       "sha256": "bc17ef644d338640b15b7ab7006a58ff396e32747bd5b58af7f834b2b88b1755",
       "bytes": 155
+    },
+    "release/requirements-installer.lock": {
+      "sha256": "820a0987d03011e53bc152fecb0d2d7747e7ebd9e9ae38c91953b5e0fe4145f8",
+      "bytes": 2112
     },
     "requirements.txt": {
       "sha256": "9ad81982b2123a975f78bf34cc14c042a0ec0c63c3e5cd9f4c05b88ca3b73e08",
@@ -454,7 +506,7 @@
       "bytes": 2430
     },
     "tests/test_publication.py": {
-      "sha256": "50ea0d6d7caa787ed8132788a2bd9f91c4e7cb34201caaeb578b004c92f3e24d",
+      "sha256": "fd074406caa09f36713a70ad7f2210dab0efe655e23fa85b85803a901fbdfe15",
       "bytes": 1710
     },
     "tools/action_registry.py": {
@@ -506,8 +558,12 @@
       "bytes": 5621
     },
     "tools/build_beta_release.py": {
-      "sha256": "9cd10b7fc392d9f9dace254d90ca8dbf354ddba5d480f10041d139326dcec503",
-      "bytes": 8715
+      "sha256": "ea213344fb7080629d2b49bfe43d26549d3d379a03595d35d064ccbe3a5d1ca6",
+      "bytes": 8888
+    },
+    "tools/build_workshop_installer.py": {
+      "sha256": "d99fc61b253f0ef132a818892f417111a45ef26860877ced819b75de9dab756d",
+      "bytes": 7620
     },
     "tools/cabinet_roster.py": {
       "sha256": "453338981b9bb5ff2937a3537b21c33b83f9e4c653701ddc770362682674d77f",
@@ -680,6 +736,26 @@
     "tools/initiative_compromise.py": {
       "sha256": "1cba6cda06f6f773941d6b217ee0f0c630c0af382490a757b0a67e07e86af9ca",
       "bytes": 770
+    },
+    "tools/install_manager.py": {
+      "sha256": "41d642f781a32ed16c92582bf395bb290675d7e355374cbf1a7b7d7194ff5df0",
+      "bytes": 15270
+    },
+    "tools/installation_wizard.py": {
+      "sha256": "534308159a61e9787eafbdc263694e41cd465b807a4097bf4f30fce86fd42a79",
+      "bytes": 15224
+    },
+    "tools/installer_lifecycle.py": {
+      "sha256": "6f60c53782433dfff977bb8bdc5704ea47fa80823eb14a19b697a5c433e39e55",
+      "bytes": 15897
+    },
+    "tools/installer_mod_migration.py": {
+      "sha256": "41f9bee685bd52dea7d9e25aeaa46ce9db025e9d884dffe6aa8a8b555185cd83",
+      "bytes": 3499
+    },
+    "tools/installer_text.json": {
+      "sha256": "023783314d0dad9879a3e7a6c41cda6b6f39c27727b451f0342f7dd59c53704c",
+      "bytes": 12747
     },
     "tools/language_detection.py": {
       "sha256": "f200393edbdfb8a4ff9394040f6db39275f8a26b55b6c02a1d066543f6dfca8f",
@@ -1518,8 +1594,12 @@
       "bytes": 481
     },
     "tools/windows_desktop.py": {
-      "sha256": "c9e33bcd805e2e57e71f2efec651ecb99496aaf28b59451486596dd26d75aca5",
-      "bytes": 8771
+      "sha256": "4d92ad29e3711d798aa4c77d359bd1d353d8d9c49956da66d04aa43a6a3e2257",
+      "bytes": 10152
+    },
+    "tools/workshop_update.py": {
+      "sha256": "9f4e7def5b1a8456c7e07996242f3c10fa2017e96a5b4028274700e397b7b0a2",
+      "bytes": 5256
     },
     "tools/world_diplomacy.py": {
       "sha256": "fe060b763fcee826b9999309c8b9b8b9e19a254936dc214b79120524fcecfb6d",
