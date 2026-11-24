@@ -40,11 +40,9 @@ class Controls:
         return {'key':self._hotkey.key}
 
     def status(self):
-        result=self._backend.status()
-        if result.get('error'):
-            return {'error':result['error']}
-        return {name:bool(result[key].get('ready')) for name,key in
-                (('Flask','flask'),('Bridge','bridge'),('Ollama','ollama'))}
+        from service_diagnostics import diagnose
+        from ollama_warmup import state
+        return diagnose(self._backend,warmup=state())
 
     def trace(self, event, page, details=None):
         if event in DESKTOP_EVENTS and page in TABS:

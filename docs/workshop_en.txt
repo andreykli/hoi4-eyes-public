@@ -1,4 +1,5 @@
-HOI4-EYES 0.9.0-beta.3 — Experimental Installer C2
+HOI4-EYES 0.9.0-beta.4 — Experimental Installer C2
+New in beta.4: compact command-room UI, unified Recognition, live Flask/Bridge/Ollama/Qwen checks. Model installation and memory residency are reported separately. EN/RU/FR, accessible status reasons and manual recheck.
 By NightPulse. HOI4 1.20 compatibility work remains beta; new game acceptance is incomplete.
 
 NEW USERS: Subscribe, open this Workshop folder and manually run Install HOI4-EYES.exe.
@@ -23,9 +24,9 @@ by Valve or Paradox. Native setup is Windows x64. Allow at least 8 GB free for a
 installation, caches and model. Existing compatible components can be reused.
 Automatic execution of a new unsigned updater is disabled; updates require manual approval.
 
-Source: https://github.com/andreykli/hoi4-eyes-public/tree/v0.9.0-beta.3
-Downloads and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.3
-EYES license: https://github.com/andreykli/hoi4-eyes-public/blob/v0.9.0-beta.3/LICENSE
+Source: https://github.com/andreykli/hoi4-eyes-public/tree/v0.9.0-beta.4
+Downloads and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.4
+EYES license: https://github.com/andreykli/hoi4-eyes-public/blob/v0.9.0-beta.4/LICENSE
 Dependency notices: _eyes_setup/THIRD-PARTY.txt, licenses and wheel-provenance.json.
 EYES: Apache-2.0; Python: PSF; Ollama: MIT/component notices; Qwen3:4b-instruct:
 Apache-2.0; WebView2: Microsoft terms. SHA-256 is not a publisher signature.

@@ -521,9 +521,13 @@ if(new URLSearchParams(location.search).get('panel')==='recognition'){
  $('mode').value='recognition';
 }
 window.addEventListener('eyes-workspace',event=>{
+ if(['atlas','recognition','maker'].includes(event.detail))document.body.dataset.workspaceContext=event.detail;
  $((event.detail==='maker'?'maker':'atlas')+'Tab').click();
  if(event.detail==='recognition'&&$('mode').value!=='recognition'){
   $('mode').value='recognition';paint();
+ }
+ if(event.detail==='atlas'&&$('mode').value==='recognition'){
+  $('mode').value='political';paint();
  }
 });
 translate();init();refreshCampaigns();refreshPlayer();refreshPendingSessions();

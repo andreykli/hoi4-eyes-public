@@ -39,7 +39,7 @@ class HubBackend:
 
  def _remember(self,kind,child):
   # Retain the actual process handle; never reconstruct ownership from a PID file.
-  self.owned[kind]={'process':child,'created':None}
+  self.owned[kind]={'process':child,'created':None,'started':time.monotonic()}
   if kind!='ollama':
    row=processes().get(child.pid)
    if row:self.owned[kind]['created']=row.get('created')

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.9.0-beta.4 — compact UI and verified service states
+
+- Compact command-room styling, responsive header and unified Recognition modes.
+- Live Flask and Bridge readiness/revision checks; independent Ollama API,
+  Qwen installation and memory-residency checks. Missing inventory is not success.
+- EN/RU/FR state reasons, manual recheck, accessible indicators and reduced motion.
+- No diplomatic-engine, database-schema or treaty-execution changes.
+- Experimental unsigned C2 remains available; clean-Windows and new HOI4 1.20
+  gameplay acceptance remain pending. Preserve existing profiles and Acceptance.
+
 ## 0.9.0-beta.2 — local candidate, publication blocked pending live acceptance
 
 - Translate internal meeting/fleet keys in EN/RU/FR; provide readable treaty

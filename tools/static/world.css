@@ -15,3 +15,92 @@ aside,.map-panel{border-radius:8px;box-shadow:0 12px 25px #0004;overflow:hidden}
 aside section{background:linear-gradient(150deg,#202e37,#15212b)}
 nav .active{background:#c6ac7012}
 .primary{background:linear-gradient(#67583b,#4e412b);color:#fff4d9}
+
+/* Command room — original EYES artwork, no game textures or external fonts. */
+body>header,body>nav,body>section,body>div,body>p{min-width:0;max-width:100%}
+body header>div:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+body header label{display:inline-flex;align-items:center;gap:5px;margin:0}
+:root{--ink:#101511;--panel:#1c241e;--edge:#424b3e;--gold:#c6ad75;--text:#e6e8dd;--muted:#afb7a6;--radius:4px}
+body{background:radial-gradient(ellipse at top left,#26312655,transparent 65%),var(--ink);font-size:13px;line-height:1.5}
+body header{padding:10px 16px;gap:12px;background:linear-gradient(110deg,#30392d,#1a231d 65%,#141b16);border-bottom:1px solid #776b48;box-shadow:0 2px 10px #0005}
+header>div{min-width:0}header h1{font:600 21px/1.25 Cambria,Georgia,serif;letter-spacing:.3px;color:#eee6ce;margin:2px 0}
+header small{color:var(--gold);letter-spacing:2px}
+header h1::before{content:'◈';display:inline-block;color:var(--gold);font:22px Georgia,serif;margin-right:9px}
+h2{font:600 20px/1.3 Cambria,Georgia,serif;color:#e8dfc8;margin:5px 0 14px}
+h3{margin:16px 0 8px;color:var(--gold)}
+main{gap:12px;padding:12px;grid-template-columns:minmax(0,1fr) 320px}
+body aside,body .map-panel,body .fleet-panel{border:1px solid var(--edge);border-radius:var(--radius);background:linear-gradient(145deg,#242d24,#181f1a);box-shadow:0 5px 16px #0003;min-width:0}
+body aside section{padding:14px;background:transparent}
+body .fleet-panel{padding:16px}
+button,input,select,textarea{font:inherit;border-radius:3px;color:var(--text);border:1px solid #58604e;background:#18221c;padding:6px 9px;min-height:32px}
+button{background:linear-gradient(#3b4535,#293226);box-shadow:inset 0 1px #ffffff0b,0 1px 2px #0004;font-weight:600;transition:background .14s,border-color .14s,box-shadow .14s}
+button:hover:not(:disabled){background:linear-gradient(#4a553e,#35412e);border-color:#b5a16c;box-shadow:inset 0 1px #ffffff12,0 2px 7px #0005}
+button:active:not(:disabled){background:#252e23;box-shadow:inset 0 2px 4px #0006}
+button:disabled{opacity:.48;box-shadow:none;cursor:not-allowed}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #e0c78b;outline-offset:3px}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+textarea{background:#141d17;resize:vertical;line-height:1.6;padding:9px 11px;max-width:100%}
+label{margin:10px 0 4px;color:var(--muted);font-size:12px}
+a{color:#d2bc86;text-underline-offset:3px}a:hover{color:#f1dfad}
+body .primary{background:linear-gradient(#7d6b43,#5c4e32);color:#fff0cf;border-color:#9e8957;margin:12px 0 6px;min-height:34px}
+body .primary:hover:not(:disabled){background:linear-gradient(#947f50,#75623d)}
+nav{gap:2px;background:#151d17;padding:0 8px;border-bottom:1px solid #4e5845}
+nav button{padding:9px 12px;min-height:36px;box-shadow:none;font-size:12px}
+nav .active,nav button[aria-selected=true]{background:#b8a16a12;color:#e7ce91;box-shadow:inset 0 -2px #c6ad75}
+body #tabs{gap:2px;padding:0 10px}
+body #tabs button{padding:9px 11px;white-space:normal;text-align:left;display:inline-flex;align-items:center;gap:7px}
+.workspace-icon{width:15px;height:15px;flex:0 0 15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
+body #chat-list{margin:12px;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));align-content:start;flex:1}
+body #chat-list article{margin:0;padding:14px 16px;background:linear-gradient(130deg,#273025,#19211b);border:1px solid #48533f;border-top:2px solid #9a8759;border-radius:4px;box-shadow:0 5px 16px #0004;align-self:start}
+#chat-list article h2{font:600 16px/1.35 'Segoe UI',sans-serif;letter-spacing:.4px;border-bottom:1px solid #56604666;padding-bottom:10px;margin:0 0 12px}
+#chat-list article p{color:#d0d6c7;line-height:1.65;margin:10px 0;overflow-wrap:anywhere}
+#chat-list article button{margin:6px 6px 0 0}
+.diplomatic-reply{margin:8px 0;padding:8px 10px;border-left:2px solid #a18e5d;background:#10181288;white-space:pre-wrap;overflow-wrap:anywhere}
+.diplomatic-reply strong{display:block;font-size:11px;letter-spacing:.7px;color:#cfb881;margin-bottom:3px}
+body .notice,body #service-status{background:#202a21;border:1px solid #414f3c;border-left:2px solid #a18e5d;color:#cccfb6;border-radius:3px;font-size:12px;padding:7px 10px;min-height:0}
+body #service-status:empty{display:none}
+body #service-status{margin:7px 12px}
+body dialog{width:min(620px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100dvh - 32px);overflow:auto;padding:18px;background:linear-gradient(140deg,#2d3529,#19211b);border:1px solid #ac9662;border-top:3px solid #c6ad75;border-radius:5px;box-shadow:0 24px 70px #000a;animation:eyes-panel-in .14s ease-out}
+dialog::backdrop{background:#070c09c9}dialog h2{padding-bottom:12px;border-bottom:1px solid #596044}
+dialog input,dialog select{max-width:100%}dialog form[method=dialog]{margin-top:12px;text-align:right}
+body .fleet-layout{gap:12px}body .fleet-counts{gap:7px}body .fleet-counts div,body .fleet-facts div{padding:9px 11px;background:#141e17;border:1px solid #3f4a39;border-radius:3px}
+body .fleet-counts dd{font-size:1.4rem;color:#d8c18c}body .fleet-muted,body .fleet-facts dd{color:var(--muted)}
+.toolbar,footer{padding:8px 12px;gap:8px}.columns{gap:10px}.record{padding:9px 0}.warning{margin-top:12px;border-color:#b59d66;color:#d2c49d}.badge{color:#d3bd86}
+body #viewport{background:#14211a;border-color:#45513d}body #tooltip{background:#111a14f5;color:#eee5cf;border-radius:3px}
+body #flagPreview{border:1px solid #ad9865;border-radius:3px;box-shadow:0 3px 10px #0006;max-width:100%}
+body .portrait-preview{object-fit:contain;border:1px solid var(--edge);border-radius:3px;background:#131b15}
+fieldset{border-color:var(--edge)}input[type=checkbox],input[type=radio]{accent-color:#c6ad75;min-height:auto}
+@keyframes eyes-panel-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){main{grid-template-columns:1fr;padding:8px;gap:8px}body .fleet-layout{grid-template-columns:1fr}body header{padding:9px 12px;flex-wrap:wrap}header h1{font-size:19px}body #tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}body #tabs button{flex:0 0 auto;white-space:nowrap}body #chat-list{margin:8px;gap:8px}body .fleet-panel{padding:12px}}
+@media(max-width:520px){body{font-size:13px}header>div{width:100%}header label{display:inline-block}header button,header select{margin:2px 0}body dialog{padding:13px}.columns{grid-template-columns:1fr}body #chat-list{grid-template-columns:minmax(0,1fr)}body #chat-list article{padding:12px;min-width:0}.fleet-actions{gap:5px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Compact operations desk, pass two. State colours always include text. */
+body header{padding:6px 12px;gap:6px}body header h1{font-size:18px}
+body header button,body header select{min-height:28px;padding:4px 7px;font-size:12px}
+body header label{font-size:11px}body #tabs button{min-height:33px;padding:7px 10px}
+body #tabs button.active{color:#ffebad;background:linear-gradient(#70643e88,#443e2888);border-inline:1px solid #9e8d5955;box-shadow:inset 0 -3px #e5ca7f,inset 0 1px #ffffff14}
+#recognition-modes{padding:3px 12px;gap:5px;flex-wrap:wrap;background:#1c251d}
+#recognition-modes button{flex:0 1 auto;min-height:28px;padding:4px 10px;border:1px solid #49543f;border-radius:3px}
+#recognition-modes .active{background:#685c3580;color:#f1d999;border-color:#a7925b}
+body[data-workspace-context] aside>nav{display:none}
+body[data-workspace-context]>header{display:none}
+#service-indicators{display:flex;flex-wrap:wrap;gap:6px;padding:6px 12px;background:#121a14;border-bottom:1px solid #34422f}
+.service-chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#d5dccd;border:1px solid #3d4936;border-radius:3px;padding:2px 7px;background:#1b251b}
+.service-chip i{width:6px;height:6px;border-radius:50%;background:#92998c}
+.service-value{color:#aab5a3;font-size:10px}.service-chip[data-state=ready] i{background:#93bd7d;box-shadow:0 0 5px #94bc7955}.service-chip[data-state=offline] i{background:#d29a7f}
+body #chat-list{margin:8px 12px;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+body #chat-list article{padding:10px 12px}body #chat-list article h2{padding-bottom:7px;margin-bottom:5px;font-size:15px}
+.chat-meta{color:#bac3ad;font-size:11px;margin:0 0 8px;display:flex;gap:6px}
+.diplomatic-reply{padding:7px 9px;margin:6px 0;line-height:1.55;border-left-color:#a08e5f}
+.diplomatic-reply strong{display:flex;align-items:center;gap:6px;font-size:11px;margin-bottom:3px}
+.country-pennant{width:15px;height:10px;display:inline-block;border:1px solid #c5ac70;background:linear-gradient(90deg,#c5ac70 2px,transparent 2px),linear-gradient(135deg,#6c7954,#293728);clip-path:polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);flex:none}
+body #chat-list article button{padding:5px 8px;min-height:29px;font-size:12px;margin-top:3px}
+body #workspaces{background:#111a14}
+@media(max-width:760px){body header h1{font-size:17px}body #chat-list{grid-template-columns:minmax(0,1fr);margin:8px}#service-indicators{padding:5px 8px}.service-chip{padding:2px 5px}}
+body>header{flex-wrap:wrap;flex-shrink:0;overflow:visible}body header>div:last-child{flex:1 1 500px;justify-content:flex-end;min-width:0;max-width:100%}
+body header button{white-space:normal;overflow-wrap:anywhere;max-width:100%;height:auto}body header label{flex-wrap:wrap;max-width:100%}
+body>nav,body>#service-indicators{flex-shrink:0}
+.service-chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.service-chip[data-state=working] i{background:#94bf7c}.service-chip[data-state=starting] i,.service-chip[data-state=checking] i{background:#dbbd73}.service-chip[data-state=unavailable] i{background:#a1a598}.service-chip[data-state=error] i{background:#df8b74}
+@media(max-width:900px){body header>div:last-child{flex-basis:100%;justify-content:flex-start}}

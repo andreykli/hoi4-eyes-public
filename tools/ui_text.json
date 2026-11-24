@@ -1,4 +1,114 @@
 {
+  "Check services":{"en":"Check services","ru":"Проверить службы","fr":"Vérifier les services"},
+  "Checking": {
+    "en": "Checking",
+    "ru": "Проверяется",
+    "fr": "Vérification"
+  },
+  "Starting": {
+    "en": "Starting",
+    "ru": "Запускается",
+    "fr": "Démarrage"
+  },
+  "Working": {
+    "en": "Working",
+    "ru": "Работает",
+    "fr": "En service"
+  },
+  "Unavailable": {
+    "en": "Unavailable",
+    "ru": "Недоступен",
+    "fr": "Indisponible"
+  },
+  "Error": {
+    "en": "Error",
+    "ru": "Ошибка",
+    "fr": "Erreur"
+  },
+  "Readiness verified": {
+    "en": "Readiness verified",
+    "ru": "Готовность подтверждена",
+    "fr": "Disponibilité vérifiée"
+  },
+  "Component revision mismatch": {
+    "en": "Component revision mismatch",
+    "ru": "Версия компонента не совпадает",
+    "fr": "Version du composant incompatible"
+  },
+  "Readiness check failed": {
+    "en": "Readiness check failed",
+    "ru": "Проверка готовности не выполнена",
+    "fr": "Échec du contrôle de disponibilité"
+  },
+  "Waiting for component readiness": {
+    "en": "Waiting for component readiness",
+    "ru": "Ожидание готовности компонента",
+    "fr": "En attente du composant"
+  },
+  "Component is not ready": {
+    "en": "Component is not ready",
+    "ru": "Компонент не подтвердил готовность",
+    "fr": "Le composant n’est pas prêt"
+  },
+  "Ollama API responds": {
+    "en": "Ollama API responds",
+    "ru": "API Ollama отвечает",
+    "fr": "L’API Ollama répond"
+  },
+  "Ollama API is unavailable": {
+    "en": "Ollama API is unavailable",
+    "ru": "API Ollama недоступен",
+    "fr": "L’API Ollama est indisponible"
+  },
+  "Model inventory could not be verified": {
+    "en": "Model inventory could not be verified",
+    "ru": "Не удалось проверить список моделей",
+    "fr": "Impossible de vérifier les modèles"
+  },
+  "Model is loaded in memory": {
+    "en": "Model is loaded in memory",
+    "ru": "Модель загружена в память",
+    "fr": "Le modèle est chargé en mémoire"
+  },
+  "Model is not installed": {
+    "en": "Model is not installed",
+    "ru": "Модель не установлена",
+    "fr": "Le modèle n’est pas installé"
+  },
+  "Model loading is in progress": {
+    "en": "Model loading is in progress",
+    "ru": "Выполняется загрузка модели",
+    "fr": "Chargement du modèle en cours"
+  },
+  "Model loading failed": {
+    "en": "Model loading failed",
+    "ru": "Не удалось загрузить модель",
+    "fr": "Échec du chargement du modèle"
+  },
+  "Model is installed but not loaded in memory": {
+    "en": "Model is installed but not loaded in memory",
+    "ru": "Модель установлена, но не загружена в память",
+    "fr": "Modèle installé mais non chargé en mémoire"
+  },
+  "Component status": {
+    "en": "Component status",
+    "ru": "Состояние служб",
+    "fr": "État des services"
+  },
+  "Messages": {
+    "fr": "Messages",
+    "ru": "Реплик"
+  },
+  "Unread": {
+    "en": "Unread",
+    "ru": "Непрочитанные",
+    "fr": "Non lus"
+  },
+  "Diplomacy": {
+    "en": "Diplomacy",
+    "ru": "Дипломатия",
+    "fr": "Diplomatie"
+  },
   "The original messages identify three terms. Resend the full wording to review and confirm the corrected version.": {
     "ru": "В исходных сообщениях найдены три условия. Отправьте полную формулировку ещё раз, чтобы проверить и подтвердить исправленную редакцию.",
     "fr": "Les messages d’origine contiennent trois clauses. Renvoyez le texte complet pour examiner et confirmer la version corrigée."
@@ -459,10 +569,6 @@
   "Negotiations": {
     "fr": "Négociations",
     "ru": "Переговоры"
-  },
-  "Messages": {
-    "fr": "Messages",
-    "ru": "Реплик"
   },
   "Load history": {
     "fr": "Charger l’historique",

@@ -15,15 +15,30 @@ function statusText(value) {
   trace('status_changed');
 }
 
-async function refreshStatus() {
-  if (!bridge()||statusPending||document.hidden) return;
+function serviceState(chip,state,reason) {
+  const caption=labels.states[state]||labels.states.error;
+  const explanation=labels.reasons[reason]||reason||caption;
+  chip.dataset.state=state;chip.title=explanation;
+  chip.setAttribute('aria-label',chip.dataset.service+': '+caption+'. '+explanation);
+  const value=chip.querySelector('.service-value');
+  if(value.textContent!==caption)value.textContent=caption;
+}
+async function refreshStatus(manual=false) {
+  if(statusPending||document.hidden)return;
+  const chips=[...document.querySelectorAll('[data-service]')];
+  if(!bridge()) {for(const chip of chips)serviceState(chip,'unavailable',labels.error);return;}
   statusPending=true;
+  if(manual)for(const chip of chips)serviceState(chip,'checking','');
   try {
     const result=await bridge().status();
-    statusText(result.error || Object.entries(result)
-      .map(([name,value])=>name+' '+(value?labels.ready:labels.not_ready)).join(' · '));
-  } catch {trace('request_error');statusText(labels.error);}
-  finally {statusPending=false;}
+    for(const chip of chips) {
+      const data=result.services?.[chip.dataset.service];
+      if(data&&Object.hasOwn(labels.states,data.state))serviceState(chip,data.state,data.reason);
+      else serviceState(chip,'error','probe_failed');
+    }
+    statusText('');
+  } catch {for(const chip of chips)serviceState(chip,'error','probe_failed');trace('request_error');}
+  finally{statusPending=false;}
 }
 
 function selectAtlas(frame) {
@@ -34,7 +49,15 @@ function show(page) {
   if (!(page==='diplomacy'||Object.hasOwn(pages,page))) return;
   if (activePage!==page) trace('workspace_changed',page);
   activePage=page;
-  for (const button of $('tabs').querySelectorAll('button')) button.classList.toggle('active',button.dataset.page===page);
+  for (const button of $('tabs').querySelectorAll('button')) {
+    const selected=button.dataset.page===page||(button.dataset.page==='recognition'&&page==='atlas');
+    button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));
+  }
+  $('recognition-modes').hidden=!['atlas','recognition'].includes(page);
+  for(const button of $('recognition-modes').querySelectorAll('button')) {
+    button.classList.toggle('active',button.dataset.page===page);
+    button.setAttribute('aria-pressed',String(button.dataset.page===page));
+  }
   $('workspaces').hidden=page==='diplomacy';
   $('chat-list').hidden=page!=='diplomacy';
   for (const [path,frame] of workspaces) frame.hidden=path!==pages[page];
@@ -63,7 +86,7 @@ async function refreshChats() {
     if (!response.ok) throw Error();
     const result=await response.json();
     if (activePage!=='diplomacy'||request!==chatRequest) return;
-    const view=JSON.stringify(result.chats.map(chat=>[chat.chat_id,chat.participants,chat.messages.slice(-3)]));
+    const view=JSON.stringify(result.chats.map(chat=>[chat.chat_id,chat.participants,chat.messages.length,chat.unread_count,chat.messages.slice(-3)]));
     if(view===lastChats) return;
     lastChats=view;
     const focused=document.activeElement?.dataset.chatId, scroll=$('chat-list').scrollTop;
@@ -73,8 +96,17 @@ async function refreshChats() {
       const card=document.createElement('article');
       const name=document.createElement('h2');
       name.textContent=chat.participants.join(' · ');
-      const details=document.createElement('p');
-      details.textContent=chat.messages.slice(-3).map(message=>message.speaker+': '+message.text).join('\n');
+      const meta=document.createElement('div');meta.className='chat-meta';
+      meta.textContent=labels.messages+': '+chat.messages.length+' · '+labels.unread+': '+(Number.isInteger(chat.unread_count)?chat.unread_count:labels.unknown);
+      const details=document.createElement('div');
+      for(const message of chat.messages.slice(-3)) {
+        const reply=document.createElement('div');reply.className='diplomatic-reply';
+        const speaker=document.createElement('strong');speaker.textContent=message.speaker;
+        // Original neutral pennant, not an unverified historical national flag.
+        const flag=document.createElement('i');flag.className='country-pennant';flag.setAttribute('aria-hidden','true');speaker.prepend(flag);
+        const text=document.createElement('span');text.textContent=message.text;
+        reply.append(speaker,text);details.append(reply);
+      }
       const button=document.createElement('button');
       button.dataset.chatId=chat.chat_id;
       button.textContent=labels.open;
@@ -83,7 +115,7 @@ async function refreshChats() {
         const result=await bridge().open_chat(chat.chat_id);
         statusText(result.error||labels.ready);
       };
-      card.append(name,details,button);
+      card.append(name,meta,details,button);
       if(chat.participants.length===2&&chat.chat_mode!=='ai_to_ai') {
         const actionButton=document.createElement('button');
         actionButton.textContent=labels.treaty_actions.text.button;
@@ -149,12 +181,15 @@ $('treaty-propose').onclick=async()=>{
     if(version===previewVersion)$('treaty-status').textContent=labels.error;
   }
 };
-$('tabs').onclick=event=>show(event.target.dataset.page);
-$('service-refresh').onclick=()=>{refreshStatus();if(activePage==='diplomacy')show(activePage);};
+function navigationClick(event){const button=event.target.closest('button[data-page]');if(button)show(button.dataset.page);}
+$('tabs').onclick=navigationClick;
+$('recognition-modes').onclick=navigationClick;
+$('service-refresh').onclick=()=>{refreshStatus(true);if(activePage==='diplomacy')show(activePage);};
 $('service-stop').onclick=async()=>{
   if (bridge()&&confirm(labels.confirm_stop)) {
     const result=await bridge().stop();
     $('service-status').textContent=result.error||result.detail;
+    await refreshStatus();
   }
 };
 $('language-choice').onchange=async event=>{
@@ -179,5 +214,5 @@ async function refreshShortcut(key=null) {
 }
 $('atlas-shortcut').onchange=event=>refreshShortcut(event.target.value);
 window.addEventListener('pywebviewready',()=>{trace('shell_loaded');refreshStatus();refreshShortcut();});
-setInterval(refreshStatus,15000);
+setInterval(refreshStatus,5000);
 show(new URLSearchParams(location.search).get('page')||'diplomacy');
