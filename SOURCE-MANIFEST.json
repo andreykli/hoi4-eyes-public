@@ -34,8 +34,8 @@
       "bytes": 472
     },
     "PUBLICATION.json": {
-      "sha256": "2fa51827e83f36076b7eaa54a654d4378a96b509e9b4c23117809cfa0aaf8808",
-      "bytes": 464
+      "sha256": "0ce43c19b5ac9ed3d54c94e396c58c679dd4f733333451db31e9b88a6bee1bd3",
+      "bytes": 487
     },
     "README.md": {
       "sha256": "84fbfce8a2ba34e58076f0b0d4a73cfa378baf1c2fa6184beefa324b44a499b3",
@@ -138,8 +138,8 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "e5443009be21c1f672f7617c55c2ded745a59dfdbc2155286b3d8b8c1445c158",
-      "bytes": 2407
+      "sha256": "89766156215b1fe19c42cd6b7d1084fb3861edc2cbe22b265a2f93cc9cc63d76",
+      "bytes": 2842
     },
     "docs/INSTALLER_C2.md": {
       "sha256": "e5443009be21c1f672f7617c55c2ded745a59dfdbc2155286b3d8b8c1445c158",
@@ -162,8 +162,8 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "e5443009be21c1f672f7617c55c2ded745a59dfdbc2155286b3d8b8c1445c158",
-      "bytes": 2407
+      "sha256": "89766156215b1fe19c42cd6b7d1084fb3861edc2cbe22b265a2f93cc9cc63d76",
+      "bytes": 2842
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
@@ -174,8 +174,8 @@
       "bytes": 6047
     },
     "docs/workshop_en.txt": {
-      "sha256": "e5443009be21c1f672f7617c55c2ded745a59dfdbc2155286b3d8b8c1445c158",
-      "bytes": 2407
+      "sha256": "89766156215b1fe19c42cd6b7d1084fb3861edc2cbe22b265a2f93cc9cc63d76",
+      "bytes": 2842
     },
     "docs/workshop_fr.txt": {
       "sha256": "fd84bbb5db9ac053b3aaa445e2bbb0a3117db7e153fed1f208a2ba0cee01064e",
@@ -194,7 +194,7 @@
       "bytes": 4036
     },
     "installer/SHA256SUMS.txt": {
-      "sha256": "7ce88bda69564fa1112bfe7b4929e895fe676279d52b99e62fda29b8980faa6d",
+      "sha256": "ba80b4176e37f90487335a4e01ac22b641596dca4f3812a593b596e644236417",
       "bytes": 88
     },
     "installer/THIRD-PARTY.txt": {
@@ -462,8 +462,8 @@
       "bytes": 75
     },
     "release/files.json": {
-      "sha256": "386dbfd0798ce539af7c786cddb4d5f6ca078e00b34c82d32d79c6a616bb2045",
-      "bytes": 20216
+      "sha256": "c8b78b5d00bf0db212947874bff39727445e7378b9c4e2bd73b2a1fe8267e273",
+      "bytes": 20246
     },
     "release/installation_protocol.json": {
       "sha256": "cbf0ee49805b774a7345e02d85c42076018ebaae63a58fbda22c2ba073d9c5cf",
@@ -576,6 +576,10 @@
     "tools/chat_state_store.py": {
       "sha256": "a7f4259e582a294ef509e8b6cc76fc2ec65110442b28c072754baf17b5ddae27",
       "bytes": 4956
+    },
+    "tools/chat_widgets.py": {
+      "sha256": "d01dc645c88ccb57ef268aacdebd95f0d418238fe9907ae5b31a8a3926dfd1f5",
+      "bytes": 1622
     },
     "tools/conference_phrases.py": {
       "sha256": "51598dc38245074e697af150887f912d21f989011f876e4165bde03220f37b0f",
@@ -694,8 +698,8 @@
       "bytes": 5324
     },
     "tools/hoi4_bridge.py": {
-      "sha256": "f1d40d9609b45a5adb51ddb8c8280fba1c136eaa1fd2a6d79a9f60bd704cf655",
-      "bytes": 230948
+      "sha256": "bd362ec77300fe56ede7702c1048c016f7ebd2d91effd7ae93d1da6c8e0ecfff",
+      "bytes": 232976
     },
     "tools/hoi4_campaign_identity.py": {
       "sha256": "b3ada3fe3562404625277ff622dfd51b166a1bf5ee3decce55be9ed899bc76ab",
@@ -1522,8 +1526,8 @@
       "bytes": 1797
     },
     "tools/ui_text.json": {
-      "sha256": "4eac7c177cb22595041713f054fa3e252b29866941ced4162253cffec04a6868",
-      "bytes": 79427
+      "sha256": "7be0f943b5a465bd20541c8e75fe05c768e457b1b93bf6c18dc73f9773ba1fa8",
+      "bytes": 80250
     },
     "tools/unified_mod_setup.py": {
       "sha256": "cbcd2ecd98a2408f98dd7e81976779b1154511d0f4dcd5119b6b97965b20e39f",

@@ -290,7 +290,8 @@
     "tools/diplomatic_expression_library.py",
     "tools/ollama_warmup.py",
     "docs/DIPLOMATIC_LATENCY_RU.md",
-    "tools/service_diagnostics.py"
+    "tools/service_diagnostics.py",
+    "tools/chat_widgets.py"
   ],
   "mod_files": [
     "prepared/unified_game_mod/ai_assistant/THIRD_PARTY_NOTICES.md",

@@ -1,4 +1,10 @@
 {
+  "Negotiation history":{"en":"Negotiation history","ru":"История переговоров","fr":"Historique des négociations"},
+  "Latest messages":{"en":"Latest messages","ru":"К последним сообщениям","fr":"Derniers messages"},
+  "Enter: send · Shift+Enter: new line":{"en":"Enter: send · Shift+Enter: new line","ru":"Enter: отправить · Shift+Enter: новая строка","fr":"Entrée : envoyer · Maj+Entrée : nouvelle ligne"},
+  "Waiting for AI reply":{"en":"Waiting for AI reply","ru":"Ожидание ответа ИИ","fr":"En attente de la réponse de l’IA"},
+  "Diplomatic negotiations":{"en":"Diplomatic negotiations","ru":"Дипломатические переговоры","fr":"Négociations diplomatiques"},
+  "You":{"en":"You","ru":"Вы","fr":"Vous"},
   "Check services":{"en":"Check services","ru":"Проверить службы","fr":"Vérifier les services"},
   "Checking": {
     "en": "Checking",

@@ -9,5 +9,6 @@
   "model": "qwen3:4b-instruct",
   "model_license": "Apache-2.0",
   "general_gameplay_model_clearance": true,
-  "artwork": "owner_authorized_project_icon_cover"
+  "artwork": "owner_authorized_project_icon_cover",
+  "build": "chat-ui-1"
 }

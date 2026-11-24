@@ -3000,20 +3000,26 @@ class ResponseOverlay:
             padx=12, pady=10, relief="flat",
         )
         self.message.pack(fill="both", expand=True, padx=16, pady=(8, 15))
-        self.chat_history_frame = tk.Frame(self.root, bg="#17212b")
+        self.chat_history_frame = tk.Frame(self.root, bg="#1b241c")
+        chat_tools=tk.Frame(self.chat_history_frame,bg="#1b241c")
+        chat_tools.pack(fill='x')
+        self.chat_history_count=tk.Label(chat_tools,text=tr('Negotiation history'),bg='#1b241c',fg='#c8b27c',font=('Segoe UI',9))
+        self.chat_history_count.pack(side='left',padx=8,pady=4)
+        tk.Button(chat_tools,text=tr('Latest messages'),command=lambda:self.chat_history.see('end'),
+                  bg='#35412e',fg='#ead9af',relief='flat',font=('Segoe UI',9)).pack(side='right',padx=5,pady=3)
         self.chat_history = tk.Text(
             self.chat_history_frame, wrap="word", height=18, state="disabled",
-            bg="#121a21", fg="#f2f0e8", insertbackground="#f2f0e8",
+            bg="#141d16", fg="#f2f0e8", insertbackground="#f2f0e8",
             font=("Segoe UI", 10), relief="flat", padx=10, pady=8,
             selectbackground="#3a5260", selectforeground="#ffffff",
         )
         self.chat_history.tag_configure(
-            "player_message", background="#24394a", foreground="#f2f0e8",
-            lmargin1=62, lmargin2=62, rmargin=14, justify="right", spacing1=7, spacing3=9,
+            "player_message", background="#303b2b", foreground="#f2f0e8",
+            lmargin1=36, lmargin2=36, rmargin=12, justify="left", spacing1=4, spacing3=5,
         )
         self.chat_history.tag_configure(
-            "country_message", background="#263832", foreground="#f2f0e8",
-            lmargin1=14, lmargin2=14, rmargin=62, justify="left", spacing1=7, spacing3=9,
+            "country_message", background="#202c22", foreground="#f2f0e8",
+            lmargin1=12, lmargin2=12, rmargin=36, justify="left", spacing1=4, spacing3=5,
         )
         self.chat_scrollbar = tk.Scrollbar(
             self.chat_history_frame, command=self.chat_history.yview,
@@ -3037,14 +3043,19 @@ class ResponseOverlay:
         self.retry_row.pack(fill="x", padx=16, pady=(0, 8))
         self.retry_row.pack_forget()
         self.chat_input_row = tk.Frame(self.root, bg="#111820")
-        self.chat_input = tk.Entry(
+        from chat_widgets import ChatComposer
+        self.chat_input = ChatComposer(
             self.chat_input_row, font=("Segoe UI", 11),
-            bg="#202b33", fg="#f2f0e8", insertbackground="#f2f0e8",
+            bg="#202b20", fg="#f2f0e8", insertbackground="#f2f0e8",
             relief="flat", highlightthickness=1,
             highlightbackground="#43504b", highlightcolor="#d1b475",
         )
-        self.chat_input.pack(side="left", fill="x", expand=True, padx=(0, 8))
+        self.chat_input.grid(row=0,column=0,sticky='nsew',padx=(0,8))
+        self.chat_input_row.columnconfigure(0,weight=1)
         self.chat_input.bind("<Return>", self._on_chat_input_return)
+        self.chat_input.bind('<Shift-Return>',lambda event:None)
+        self.chat_input.bind('<Control-Return>',self._on_chat_input_return)
+        tk.Label(self.chat_input_row,text=tr('Enter: send · Shift+Enter: new line'),bg='#111820',fg='#b6bea9',font=('Segoe UI',8)).grid(row=1,column=0,columnspan=2,sticky='w',pady=3)
         self._install_clipboard_support()
         self.send_button = tk.Button(
             self.chat_input_row, text=tr('Send message'), command=self.send_chat_message,
@@ -3053,7 +3064,7 @@ class ResponseOverlay:
             font=("Segoe UI", 10, "bold"), padx=14, pady=6,
             disabledforeground="#7e8988",
         )
-        self.send_button.pack(side="right")
+        self.send_button.grid(row=0,column=1,sticky='se')
         self.review_button = tk.Button(self.root, text=tr('Conditions and preparation'), command=self.review_player_agreement,
             bg="#344c4c", fg="#f2f0e8", relief="flat", padx=8)
         self.review_button.pack(fill="x", padx=16, pady=4)
@@ -3176,13 +3187,15 @@ class ResponseOverlay:
         if enabled:
             self.message.pack_forget()
             self.action.pack_forget()
-            self.chat_history_frame.pack(fill="both", expand=True, padx=16, pady=(5, 8))
+            self.chat_input_row.pack(side='bottom',fill="x", padx=16, pady=(0, 10))
             if not self._chat_busy:
-                self.retry_row.pack(fill="x", padx=16, pady=(0, 8))
-            self.chat_input_row.pack(fill="x", padx=16, pady=(0, 10))
+                self.retry_row.pack(side='bottom',fill="x", padx=16, pady=(0, 8))
+            self.chat_history_frame.pack(fill="both", expand=True, padx=16, pady=(5, 8))
             self.root.minsize(680, 460)
-            self.root.geometry("800x640+40+40")
+            if not getattr(self,'_chat_layout_active',False):self.root.geometry("800x640+40+40")
+            self._chat_layout_active=True
         else:
+            self._chat_layout_active=False
             self.chat_history_frame.pack_forget()
             self.retry_row.pack_forget()
             self.chat_input_row.pack_forget()
@@ -3310,10 +3323,12 @@ class ResponseOverlay:
 
     def _render_chat(self, chat: Dict[str, Any]):
         render_started=time.monotonic()
+        from chat_widgets import message_time,scroll_state
+        follow,position=scroll_state(self.chat_history,self.chat_id==chat.get('chat_id'))
         self.active_chat = chat
         self.chat_id = chat.get("chat_id")
         self._chat_open = True
-        self.title.config(text=tr('HOI4-EYES / Agreement conditions'))
+        self.title.config(text=tr('Diplomatic negotiations'))
         player_country = str(chat.get("player_country") or "?")
         self.summary.config(text=self._chat_pair_label(chat))
         self.chat_history.config(state="normal")
@@ -3322,13 +3337,13 @@ class ResponseOverlay:
         for item in unique_messages(chat.get("messages", [])):
             speaker = str(item.get("speaker") or "?")
             is_player = speaker == player_country or item.get("kind") in {"player", "player_request"}
-            role = "YOU" if is_player else "COUNTRY"
+            role = tr('You') if is_player else tr('Country')
             tag = "player_message" if is_player else "country_message"
             representative=item.get('representative') or {}
             if representative.get('person_id') and representative.get('name'):
                 speaker += ' / ' + representative['name']
             self.chat_history.insert(
-                "end", f"{speaker} · {role}\n{item.get('text', '')}\n\n", tag,
+                "end", f"{speaker} · {role}"+(f"  {message_time(item)}" if message_time(item) else '')+f"\n{item.get('text', '')}\n\n", tag,
             )
             diagnostic = item.get("provider_diagnostic_text")
             if (os.getenv("EYES_DEVELOPER_DIAGNOSTICS", "0") == "1"
@@ -3338,7 +3353,10 @@ class ResponseOverlay:
                     "country_message",
                 )
         self.chat_history.config(state="disabled")
-        self.chat_history.see("end")
+        if follow:self.chat_history.see("end")
+        else:self.chat_history.yview_moveto(position)
+        if hasattr(self,'chat_history_count'):
+            self.chat_history_count.config(text=tr('Negotiation history')+' · '+str(len(unique_messages(chat.get('messages',[])))))
         bridge = getattr(self, '_bridge', None)
         if chat.get('unread_count') and bridge and callable(getattr(bridge.provider, 'mark_chat_read', None)):
             from diplomatic_inbox import unread
@@ -3613,9 +3631,9 @@ class ResponseOverlay:
         self.send_button.config(state="disabled")
         self.retry_button.config(state="disabled")
         self._chat_busy_chat_id = chat_id
-        timeout = getattr(self, "ollama_timeout_seconds", 150)
+        self._chat_wait_started=time.monotonic()
         self.summary.config(
-            text=f"Message sent; waiting for a reply (up to {timeout} seconds)…"
+            text=self._chat_pair_label(self.active_chat or {})+'  ·  '+tr('Waiting for AI reply')+'  0:00'
         )
         self._start_chat_worker(
             "send", lambda: bridge.send_chat_message(chat_id, text),
@@ -3638,12 +3656,13 @@ class ResponseOverlay:
         bridge = self._bridge
         attempt_id = uuid.uuid4().hex
         self._active_retry_attempt_id = attempt_id
+        self._chat_wait_started=time.monotonic()
         self._chat_busy = True
         self._chat_busy_chat_id = chat_id
         self.retry_button.config(state="disabled")
         self.chat_input.config(state="disabled")
         self.send_button.config(state="disabled")
-        self.summary.config(text=f"{self._chat_pair_label(chat)}  •  Формируется ответ…")
+        self.summary.config(text=self._chat_pair_label(chat)+'  ·  '+tr('Waiting for AI reply')+'  0:00')
         self._start_chat_worker(
             "retry", lambda: bridge.retry_chat_response(
                 chat_id, response_request_id, attempt_id,
@@ -3651,6 +3670,10 @@ class ResponseOverlay:
         )
 
     def _drain_chat_results(self):
+        if (getattr(self,'_chat_busy',False) and getattr(self,'_chat_busy_chat_id',None)==self.chat_id
+                and hasattr(self,'_chat_wait_started')):
+            elapsed=max(0,int(time.monotonic()-self._chat_wait_started))
+            self.summary.config(text=self._chat_pair_label(self.active_chat or {})+'  ·  '+tr('Waiting for AI reply')+f'  {elapsed//60}:{elapsed%60:02d}')
         while True:
             try:
                 item = self._chat_results.get_nowait()
