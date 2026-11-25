@@ -79,7 +79,14 @@ def main():
             rows=ollama_status();state=model_state(rows,plan['model'])
             emit('model_ready' if state=='ready' else 'model_changed' if state=='different_digest' else 'model_missing')
         except Exception:emit('ollama_missing')
-    def run_python(python,arguments,cwd):run_visible([python,*arguments],consent=True,cwd=cwd)
+    def run_python(python,arguments,cwd):
+        # Identify the failing setup step even when launched without a console.
+        step = (arguments[1] if arguments[0] == '-m' else
+                'python_check' if arguments[0] == '-c' else Path(arguments[0]).name)
+        try:
+            run_visible([python,*arguments],consent=True,cwd=cwd)
+        except RuntimeError as error:
+            raise RuntimeError(step+': '+str(error)) from error
     idle_check=('from treaty_package_install import hoI4_running; '
                 'from install_manager import require_idle,local_app_pids,require_launcher_closed; '
                 'require_idle(hoI4_running(),local_app_pids()); require_launcher_closed()')

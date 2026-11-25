@@ -1,5 +1,3 @@
-Experimental beta.6 C2: unsigned installer; clean Windows acceptance incomplete.
-
 # HOI4-EYES Beta
 
 

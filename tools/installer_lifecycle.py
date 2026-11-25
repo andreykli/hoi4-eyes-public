@@ -138,14 +138,20 @@ def adopt_registration(documents, profile, *, consent=False, managed_root=None):
     if journal.exists():
         if read_json(journal).get('descriptor') == expected:
             return False
-        # Recover a stale journal only for the intact ACTIVE managed release.
+        # Recover a stale journal for an intact installer-owned release.
+        # An interrupted upgrade can leave the descriptor on the previous version.
         # An arbitrary same-name source or changed file still requires review.
         data=parse_pdx(raw.decode('utf-8-sig'))
         mod=Path(str(data.first('path') or '').strip('"'))
         if managed_root is None or not mod.is_absolute() or mod.parts[-3:] != ('prepared','unified_game_mod','ai_assistant'):
             raise ValueError('registration_changed_requires_review')
-        release=active(managed_root)
-        if mod.parents[2].resolve()!=release.resolve():raise ValueError('registration_changed_requires_review')
+        managed=owned_root(managed_root)
+        release=mod.parents[2].resolve()
+        if release.parent != (managed/'versions').resolve():
+            raise ValueError('registration_changed_requires_review')
+        child(managed,release.relative_to(managed).as_posix())
+        if read_json(release/'installer-stage.json').get('owner') != OWNER:
+            raise ValueError('registration_changed_requires_review')
         identity=identify_source(release)
         if (str(data.first('name')).strip('"')!='HOI4-EYES '+identity['version']
                 or str(data.first('version')).strip('"')!=identity['version']
