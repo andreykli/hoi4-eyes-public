@@ -1,3 +1,3 @@
-name="HOI4-EYES 0.9.0-beta.5"
+name="HOI4-EYES 0.9.0-beta.6"
 supported_version="1.20.0.*"
-version="0.9.0-beta.5"
+version="0.9.0-beta.6"

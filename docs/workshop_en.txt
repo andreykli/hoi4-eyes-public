@@ -1,5 +1,5 @@
-HOI4-EYES 0.9.0-beta.5 — Experimental Installer C2
-New in beta.5: repaired startup with third-party mod tag lists, safe recovery of stale managed registration and simplified installer advanced settings. Also: compact native diplomatic chat, message times, multiline input and scroll preservation; corrected explicit treaty directions, negative reciprocal clauses and Russian country labels. Existing compact service indicators and unified Recognition are retained.
+HOI4-EYES 0.9.0-beta.6 — Experimental Installer C2
+New in beta.6: read-only save browser, explicit file-to-history association, separate conversations and diplomatic memory per save file, localized full country names and save labels. EN/RU/FR; original filenames are preserved. Existing approval, campaign and Bridge protections remain mandatory.
 By NightPulse. HOI4 1.20 compatibility work remains beta; new game acceptance is incomplete.
 
 NEW USERS: Subscribe, open this Workshop folder and manually run Install HOI4-EYES.exe.
@@ -18,7 +18,9 @@ UNINSTALL: Windows Settings > Apps > Installed apps > HOI4-EYES opens the saved 
 Confirm removal there. Profiles, models, shared runtimes and recovery copies remain.
 Unsubscribing alone does not uninstall the companion app.
 
-DIPLOMACY LIMITATIONS: Ten sequential isolated chat trials were run against the local setup; this is NOT ten successful Qwen answers or live game acceptance. Some replies still use safe templates after Qwen timeouts. Duration exclusions, natural-language peace/faction offers and embargo responses may require clarification; no agreement is signed or executed automatically.
+SAVE BROWSER: Local standard/custom folders and local Steam Cloud copies. Plain text and ZIP metadata are read without changing files. Binary/unknown saves show why metadata is unavailable. Add a folder for other locations. Scans are bounded and report incomplete results. Steam server-only saves must first be downloaded by Steam.
+Choose a save and a conversation, then Use selected save. A different file creates a separate empty history; old messages and treaty approvals remain intact. Legacy campaign memory is retained separately. Selecting a filename does not prove the loaded campaign or authorize game actions.
+UPGRADING BETA.5: Update the companion app using this wizard too. Protocol 2 blocks incompatible old app/mod combinations before the database opens. Known Qwen timeout/fallback limitations remain; no new live-game acceptance is claimed.
 
 LIMITATIONS: No Authenticode signature. Clean-Windows/vendor-installer and real-launcher
 acceptance are incomplete. This is an owner-authorized experimental beta, not certification
@@ -26,9 +28,9 @@ by Valve or Paradox. Native setup is Windows x64. Allow at least 8 GB free for a
 installation, caches and model. Existing compatible components can be reused.
 Automatic execution of a new unsigned updater is disabled; updates require manual approval.
 
-Source: https://github.com/andreykli/hoi4-eyes-public/tree/v0.9.0-beta.5
-Downloads and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.5
-EYES license: https://github.com/andreykli/hoi4-eyes-public/blob/v0.9.0-beta.5/LICENSE
+Source: https://github.com/andreykli/hoi4-eyes-public/tree/v0.9.0-beta.6
+Downloads and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6
+EYES license: https://github.com/andreykli/hoi4-eyes-public/blob/v0.9.0-beta.6/LICENSE
 Dependency notices: _eyes_setup/THIRD-PARTY.txt, licenses and wheel-provenance.json.
 EYES: Apache-2.0; Python: PSF; Ollama: MIT/component notices; Qwen3:4b-instruct:
 Apache-2.0; WebView2: Microsoft terms. SHA-256 is not a publisher signature.

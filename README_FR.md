@@ -1,4 +1,4 @@
-Experimental beta.5 C2: unsigned installer; clean Windows acceptance incomplete.
+Experimental beta.6 C2: unsigned installer; clean Windows acceptance incomplete.
 
 # HOI4-EYES Beta
 
@@ -8,12 +8,12 @@ Auteur : **NightPulse** · [Projet original](https://github.com/andreykli/hoi4-e
 
 [English](README.md) · [Русский](README_RU.md)
 
-**0.9.0-beta.5 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
+**0.9.0-beta.6 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
 HOI4 **1.20.0.0**, Python 3.10+, Ollama `qwen3:4b-instruct`.
 La fenêtre utilise PyWebView/WebView2 et le serveur Flask existant.
 Aucune API payante nécessaire ; par défaut, le modèle fonctionne localement.
 
-**Mise à jour beta.5 : recette en jeu du mod principal encore incomplète.** Le contrôle indépendant des traités est obligatoire pour Windows, Flask et le moteur direct. Les données manquantes reportent la signature. Le texte du joueur et l’accord du modèle n’autorisent pas l’exécution. Les signatures anciennes sont conservées sans créer de nouveaux accords. Le profil moteur 1.19.5 reste disponible, sans nouveau test en jeu.
+**Mise à jour beta.6 : recette en jeu du mod principal encore incomplète.** Le contrôle indépendant des traités est obligatoire pour Windows, Flask et le moteur direct. Les données manquantes reportent la signature. Le texte du joueur et l’accord du modèle n’autorisent pas l’exécution. Les signatures anciennes sont conservées sans créer de nouveaux accords. Le profil moteur 1.19.5 reste disponible, sans nouveau test en jeu.
 
 ## Installation
 
@@ -55,6 +55,9 @@ Code original sous [Apache-2.0](LICENSE). Conserver [NOTICE](NOTICE), l’auteur
 son pseudonyme et le lien original, et signaler les modifications.
 Les [composants tiers](THIRD-PARTY-NOTICES.md) conservent leurs licences.
 Projet non officiel, sans affiliation à Paradox Interactive.
+
+
+Sauvegardes : choisissez un fichier et une conversation, puis Lier à la sauvegarde. Un autre fichier crée une conversation vide ; aucun message ou consentement n’est copié. Les anciens historiques et la mémoire de campagne sont conservés séparément. La mémoire du nouveau fichier est indépendante. Le nom du fichier ne prouve pas la campagne chargée. Les sauvegardes binaires restent utilisables comme étiquettes, même sans date ou pays lisible. Pour mettre à jour beta.5, fermez EYES, HOI4 et le lanceur puis utilisez l’assistant Workshop. Le protocole 2 exige des versions compatibles.
 
 Author attribution and links: [NOTICE](NOTICE), [CREDITS](CREDITS.md), [ATTRIBUTION](ATTRIBUTION.md).
 

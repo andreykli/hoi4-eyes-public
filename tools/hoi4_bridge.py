@@ -1935,11 +1935,13 @@ class Hoi4LogBridge:
         listing = self.provider.list_chats(campaign_id)
         if listing.get("error"):
             return listing
+        selected_save = listing.get("active_save_context")
         matches = [chat for chat in listing["chats"]
                    if chat.get("campaign_id") == campaign_id
                    and chat.get("player_country") == player
                    and set(chat.get("participants", [])) == {player, selected}
-                   and chat.get("state") != "closed"]
+                   and chat.get("state") != "closed"
+                   and (selected_save is None or chat.get("save_scope_id") == selected_save)]
         if matches:
             chosen = max(matches, key=lambda item: item.get("updated_at", ""))
             chat = self.provider.get_chat(chosen["chat_id"])
@@ -3209,7 +3211,10 @@ class ResponseOverlay:
         others = [str(tag) for tag in chat.get("participants", []) if tag != player_country]
         count = chat.get('unread_count', 0)
         suffix = f'  •  {count} unread / непрочитано' if count else ''
-        return f"{player_country} ↔ {', '.join(others) if others else 'Diplomatic channel'}" + suffix
+        from chat_presentation import decorate
+        from ui_locale import language
+        view = decorate(chat, language())
+        return view['display_title']+'\n'+view['save_label']+suffix
 
     def _on_chat_input_return(self, _event=None):
         self.send_chat_message()
@@ -3337,6 +3342,9 @@ class ResponseOverlay:
         for item in unique_messages(chat.get("messages", [])):
             speaker = str(item.get("speaker") or "?")
             is_player = speaker == player_country or item.get("kind") in {"player", "player_request"}
+            from chat_presentation import decorate
+            from ui_locale import language
+            speaker = decorate(chat, language())['country_labels'].get(speaker, speaker)
             role = tr('You') if is_player else tr('Country')
             tag = "player_message" if is_player else "country_message"
             representative=item.get('representative') or {}

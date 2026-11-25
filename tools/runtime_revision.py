@@ -8,6 +8,8 @@ from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 _RUNTIME_COMPONENTS = (
+    "tools/save_catalogue.py",
+    "tools/chat_presentation.py",
     "tools/treaty_interest_gate.py",
     "tools/diplomatic_expression_library.py",
     "data/diplomatic_expression_library.json",

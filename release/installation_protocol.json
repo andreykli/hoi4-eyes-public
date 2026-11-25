@@ -1,5 +1,5 @@
 {
-  "protocol": 1,
-  "version": "0.9.0-beta.5",
-  "installer_revision": 2
+  "protocol": 2,
+  "version": "0.9.0-beta.6",
+  "installer_revision": 3
 }

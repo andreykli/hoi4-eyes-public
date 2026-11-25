@@ -310,7 +310,45 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
 
     @app.route('/chats', methods=['GET'])
     def list_chats():
-        return chat_result(lambda: {'chats': diplomacy_engine.list_chats(request.args.get('campaign_id'))})
+        from chat_presentation import decorate
+        from ui_locale import language
+        return chat_result(lambda: {'chats': [decorate(c, request.args.get('locale') or language())
+            for c in diplomacy_engine.list_chats(request.args.get('campaign_id'))],
+            'active_save_context': diplomacy_engine.active_save_by_campaign.get(request.args.get('campaign_id'))})
+
+    @app.get('/saves')
+    def save_catalogue():
+        from save_catalogue import scan, _metadata, settings
+        if request.args.get('refresh') == '1':_metadata.cache_clear()
+        return jsonify({**scan(),'selected_filter':settings().get('last_filter','')})
+
+    @app.post('/saves/filter')
+    def select_save_filter():
+        failure = require_bridge_auth()
+        if failure is not None:return failure
+        from save_catalogue import save_filter
+        data=request.get_json(silent=True)
+        if not isinstance(data,dict):return jsonify(error='request'),400
+        return chat_result(lambda:(save_filter(data.get('value')),{'saved':True})[1])
+
+    @app.post('/saves/folders')
+    def save_folder():
+        failure = require_bridge_auth()
+        if failure is not None:return failure
+        from save_catalogue import add_folder
+        data = request.get_json(silent=True)
+        if not isinstance(data, dict):return jsonify(error='request'),400
+        return chat_result(lambda: (add_folder(data.get('path', '')), {'added': True})[1])
+
+    @app.post('/chats/<chat_id>/save-context')
+    def chat_save_context(chat_id):
+        failure = require_bridge_auth()
+        if failure is not None:return failure
+        from save_catalogue import resolve
+        data = request.get_json(silent=True)
+        if not isinstance(data, dict):return jsonify(error='request'),400
+        return chat_result(lambda: diplomacy_engine.select_chat_save(chat_id,
+            resolve(data.get('save_id')), confirm=data.get('confirm')))
 
     @app.route('/chats/<chat_id>', methods=['GET'])
     def get_chat(chat_id):

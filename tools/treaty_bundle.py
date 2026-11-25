@@ -28,6 +28,7 @@ def _relation_step(engine, chat, agreement, term):
     from diplomacy_engine import DiplomacyEngine
     term_id = term['term_id']
     temporary = object.__new__(DiplomacyEngine)
+    engine._copy_save_context_to(temporary)
     temporary.action_registry = engine.action_registry
     temporary.diplomatic_memory = deepcopy(engine.diplomatic_memory)
     temporary.chats = {chat['chat_id']: {**chat, 'agreements': {

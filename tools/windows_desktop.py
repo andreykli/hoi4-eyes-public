@@ -53,6 +53,34 @@ class Controls:
                       if key in details and isinstance(details[key],(str,int))}
                 logging.warning('desktop_script %s',json.dumps(safe,ensure_ascii=True)[:600])
 
+    def save_history_filter(self, value):
+        from bridge_auth import BRIDGE_TOKEN_HEADER
+        try:
+            return self._backend._http('POST','/saves/filter',json={'value':value},
+                headers={BRIDGE_TOKEN_HEADER:self._backend._token()})
+        except (OSError,RuntimeError,ValueError) as error:return {'error':tr(str(error))}
+
+    def choose_save_folder(self):
+        import webview
+        from bridge_auth import BRIDGE_TOKEN_HEADER
+        try:
+            selected = webview.windows[0].create_file_dialog(webview.FileDialog.FOLDER)
+            if not selected:return {'cancelled': True}
+            return self._backend._http('POST','/saves/folders',json={'path':selected[0]},
+                headers={BRIDGE_TOKEN_HEADER:self._backend._token()})
+        except (OSError,RuntimeError,ValueError) as error:return {'error':tr(str(error))}
+
+    def save_chat_context(self, identifier, save_id, confirm=False):
+        from bridge_auth import BRIDGE_TOKEN_HEADER
+        if (not isinstance(identifier,str) or not re.fullmatch('[a-f0-9]{32}',identifier)
+                or not isinstance(save_id,str) or not re.fullmatch('[a-f0-9]{64}',save_id) or confirm is not True):
+            return {'error':tr('The request could not be completed.')}
+        try:
+            return self._backend._http('POST','/chats/'+identifier+'/save-context',
+                json={'save_id':save_id,'confirm':True},timeout=30,
+                headers={BRIDGE_TOKEN_HEADER:self._backend._token()})
+        except (OSError,RuntimeError,ValueError) as error:return {'error':tr(str(error))}
+
     def open_chat(self, identifier):
         if not isinstance(identifier,str) or not re.fullmatch(r'[a-f0-9]{32}',identifier):
             return {'error':tr('No diplomatic chats yet. Choose a country in HOI4.')}

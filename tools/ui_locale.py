@@ -29,7 +29,12 @@ def save_language(value):
         raise ValueError('invalid_ui_language')
     CONFIG.parent.mkdir(parents=True,exist_ok=True)
     temporary = CONFIG.with_name(f'.{CONFIG.name}.{uuid.uuid4().hex}.tmp')
-    temporary.write_text(f'language = {value}\n', encoding='utf-8')
+    try:current = CONFIG.read_text(encoding='utf-8-sig')
+    except FileNotFoundError:current = ''
+    if re.search(r'^\s*language\s*=.*$',current,re.M):
+        current = re.sub(r'^\s*language\s*=.*$',lambda _:f'language = {value}',current,flags=re.M)
+    else:current += ('\n' if current and not current.endswith('\n') else '')+f'language = {value}\n'
+    temporary.write_text(current, encoding='utf-8')
     os.replace(temporary, CONFIG)
 
 

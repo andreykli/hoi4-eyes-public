@@ -5,6 +5,7 @@ const pages={atlas:'/world',recognition:'/world',meetings:'/meetings',fleet:'/fl
 const workspaces=new Map();
 let activePage='diplomacy';
 let lastChats=null, statusPending=false, chatRequest=0;
+let saveCatalogue=[], savedChats=[], saveChoiceInitialized=false, pendingSavedChoice=null, saveFilterRestored=false;
 const bridge=()=>window.pywebview?.api;
 const trace=(event,page=activePage,details=null)=>{
   try { Promise.resolve(bridge()?.trace(event,page,details)).catch(()=>{}); } catch {}
@@ -60,6 +61,7 @@ function show(page) {
   }
   $('workspaces').hidden=page==='diplomacy';
   $('chat-list').hidden=page!=='diplomacy';
+  $('save-browser').hidden=page!=='diplomacy';
   for (const [path,frame] of workspaces) frame.hidden=path!==pages[page];
   if (page==='diplomacy') {refreshChats();return;}
   const path=pages[page];
@@ -86,22 +88,34 @@ async function refreshChats() {
     if (!response.ok) throw Error();
     const result=await response.json();
     if (activePage!=='diplomacy'||request!==chatRequest) return;
-    const view=JSON.stringify(result.chats.map(chat=>[chat.chat_id,chat.participants,chat.messages.length,chat.unread_count,chat.messages.slice(-3)]));
+    savedChats=result.chats;
+    rebuildSaveOptions();
+    const chatChoice=$('save-chat-choice'), signature=JSON.stringify(savedChats.map(chat=>[chat.chat_id,chat.display_title,chat.save_label]));
+    if(chatChoice.dataset.signature!==signature){
+      const selected=chatChoice.value;chatChoice.replaceChildren();
+      for(const chat of savedChats)chatChoice.add(new Option(chat.display_title+' · '+chat.save_label,chat.chat_id));
+      if(savedChats.some(chat=>chat.chat_id===selected))chatChoice.value=selected;
+      chatChoice.dataset.signature=signature;
+    }
+    const chosenSave=$('save-choice').value;
+    const visible=result.chats.filter(chat=>!chosenSave || (chosenSave==='unlinked'?!chat.save_scope_id:chat.save_scope_id===chosenSave));
+    const view=JSON.stringify([chosenSave,visible.map(chat=>[chat.chat_id,chat.display_title,chat.save_label,chat.messages.length,chat.unread_count,chat.messages.slice(-3)])]);
     if(view===lastChats) return;
     lastChats=view;
     const focused=document.activeElement?.dataset.chatId, scroll=$('chat-list').scrollTop;
     $('chat-list').replaceChildren();
-    if (!result.chats.length) $('chat-list').textContent=labels.none;
-    for (const chat of result.chats) {
+    if (!visible.length) $('chat-list').textContent=labels.none;
+    for (const chat of visible) {
       const card=document.createElement('article');
       const name=document.createElement('h2');
-      name.textContent=chat.participants.join(' · ');
+      name.textContent=chat.display_title||chat.participants.join(' · ');
+      const save=document.createElement('p');save.className='save-reference';save.textContent=chat.save_label||labels.saves.unlinked;
       const meta=document.createElement('div');meta.className='chat-meta';
       meta.textContent=labels.messages+': '+chat.messages.length+' · '+labels.unread+': '+(Number.isInteger(chat.unread_count)?chat.unread_count:labels.unknown);
       const details=document.createElement('div');
       for(const message of chat.messages.slice(-3)) {
         const reply=document.createElement('div');reply.className='diplomatic-reply';
-        const speaker=document.createElement('strong');speaker.textContent=message.speaker;
+        const speaker=document.createElement('strong');speaker.textContent=chat.country_labels?.[message.speaker]||message.speaker;
         // Original neutral pennant, not an unverified historical national flag.
         const flag=document.createElement('i');flag.className='country-pennant';flag.setAttribute('aria-hidden','true');speaker.prepend(flag);
         const text=document.createElement('span');text.textContent=message.text;
@@ -115,7 +129,7 @@ async function refreshChats() {
         const result=await bridge().open_chat(chat.chat_id);
         statusText(result.error||labels.ready);
       };
-      card.append(name,meta,details,button);
+      card.append(name,save,meta,details,button);
       if(chat.participants.length===2&&chat.chat_mode!=='ai_to_ai') {
         const actionButton=document.createElement('button');
         actionButton.textContent=labels.treaty_actions.text.button;
@@ -216,3 +230,58 @@ $('atlas-shortcut').onchange=event=>refreshShortcut(event.target.value);
 window.addEventListener('pywebviewready',()=>{trace('shell_loaded');refreshStatus();refreshShortcut();});
 setInterval(refreshStatus,5000);
 show(new URLSearchParams(location.search).get('page')||'diplomacy');
+
+function rebuildSaveOptions(){
+    const select=$('save-choice');let previous=select.value;
+    if(!saveChoiceInitialized){try{pendingSavedChoice=localStorage.getItem('eyes-save-filter')||null;}catch{}saveChoiceInitialized=true;}
+    previous=previous||pendingSavedChoice||'';
+    const rows=new Map(saveCatalogue.map(row=>[row.save_id,row]));
+    for(const chat of savedChats)if(chat.save_reference&&!rows.has(chat.save_scope_id))rows.set(chat.save_scope_id,chat.save_reference);
+    const signature=JSON.stringify([...rows.values()].map(row=>[row.save_id,row.name,row.date,row.player]));
+    if(select.dataset.signature!==signature){
+      select.replaceChildren(new Option(labels.saves.all,''),new Option(labels.saves.unlinked,'unlinked'));
+      for(const row of rows.values()){
+        const option=new Option(row.name+(row.date?' — '+row.date:'')+(row.player?' · '+row.player:''),row.save_id);
+        option.title=row.path||row.filename||row.name;select.add(option);
+      }
+      select.dataset.signature=signature;
+    }
+    if([...select.options].some(option=>option.value===previous)){select.value=previous;pendingSavedChoice=null;}
+    $('save-associate').disabled=!saveCatalogue.some(row=>row.save_id===select.value)||!savedChats.length;
+}
+async function refreshSaves(){
+  try{
+    const response=await fetch('/saves?refresh=1',{cache:'no-store'});if(!response.ok)throw Error();
+    const result=await response.json();saveCatalogue=result.saves;
+    if(!saveFilterRestored){pendingSavedChoice=pendingSavedChoice||result.selected_filter||null;saveFilterRestored=true;}
+    rebuildSaveOptions();
+    $('save-state').textContent=(result.saves.length?String(result.saves.length):labels.saves.none)+(result.truncated?' · '+labels.saves.incomplete:'');
+    $('save-state').title=(result.warnings||[]).join(' ');
+    if(activePage==='diplomacy'){lastChats=null;refreshChats();}
+  }catch{$('save-state').textContent=labels.error;}
+}
+$('save-choice').addEventListener('change',()=>{
+  pendingSavedChoice=null;saveFilterRestored=true;
+  try{bridge()?.save_history_filter?.($('save-choice').value).catch(()=>{});}catch{}
+  try{localStorage.setItem('eyes-save-filter',$('save-choice').value);}catch{}
+  rebuildSaveOptions();
+  const row=saveCatalogue.find(row=>row.save_id===$('save-choice').value);
+  $('save-state').textContent=row?(labels.saves.errors[row.reason]||row.filename):'';
+  lastChats=null;refreshChats();
+});
+$('save-refresh').addEventListener('click',refreshSaves);
+$('save-folder').addEventListener('click',async()=>{
+ if(!bridge())return;
+ const result=await bridge().choose_save_folder();
+ if(result.error)statusText(result.error);else await refreshSaves();
+});
+refreshSaves();
+
+$('save-associate').addEventListener('click',async()=>{
+ const selected=$('save-choice').value, chat=$('save-chat-choice').value;
+ if(!saveCatalogue.some(row=>row.save_id===selected)||!chat)return statusText(labels.saves.none);
+ if(!bridge()||!window.confirm(labels.saves.confirm))return;
+ const result=await bridge().save_chat_context(chat,selected,true);
+ if(result.error)return statusText(result.error);
+ lastChats=null;await refreshChats();
+});

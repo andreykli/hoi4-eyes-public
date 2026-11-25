@@ -829,6 +829,9 @@ class DiplomacyEngine:
         self._verified_observation_capability = object()
         self._verified_memory_capability = object()
         self.diplomatic_memory = empty_diplomatic_memory()
+        self.save_memories = {}
+        self.save_references = {}
+        self.active_save_by_campaign = {}
         self.direct_point_policy_state = {"engine_point_policies": {}, "engine_point_policy_versions": {}}
         self.conversations: "OrderedDict[str, Conversation]" = OrderedDict()
         # Group chat state is intentionally unbounded by conversation eviction:
@@ -881,6 +884,9 @@ class DiplomacyEngine:
         """Return JSON-safe chat, proposal, idempotency, and engine history state."""
         return {
             "chats": deepcopy(self.chats),
+            "save_memories": deepcopy(self.save_memories),
+            "save_references": deepcopy(self.save_references),
+            "active_save_by_campaign": deepcopy(self.active_save_by_campaign),
             "direct_point_policy_state": deepcopy(self.direct_point_policy_state),
             "conversations": [self._conversation_snapshot(value) for value in self.conversations.values()],
             "random_state": self.random.getstate(),
@@ -909,6 +915,28 @@ class DiplomacyEngine:
         if not isinstance(chats, dict):
             raise ValueError("stored chats must be an object")
         self.chats = deepcopy(chats)
+        memories = state.get("save_memories", {})
+        references = state.get("save_references", {})
+        selected = state.get("active_save_by_campaign", {})
+        if not all(isinstance(v,dict) for v in (memories,references,selected)):
+            raise ValueError('Invalid save history indexes')
+        for key,reference in references.items():
+            if (not isinstance(key,str) or not re.fullmatch('[a-f0-9]{64}',key)
+                    or not isinstance(reference,dict) or reference.get('save_id')!=key
+                    or not isinstance(reference.get('name'),str)
+                    or any(reference.get(field) is not None and not isinstance(reference[field],str)
+                           for field in ('date','filename','path'))):
+                raise ValueError('Invalid saved history reference')
+        if any(k not in references for k in memories):raise ValueError('Orphan save memory')
+        if any(not _CAMPAIGN_ID_RE.fullmatch(str(k)) or v not in references for k,v in selected.items()):
+            raise ValueError('Invalid selected save history')
+        for chat in chats.values():
+            scope=chat.get('save_scope_id')
+            if scope is not None and (scope not in references or (chat.get('save_reference') or {}).get('save_id')!=scope):
+                raise ValueError('Invalid chat save history')
+        self.save_memories = {k: normalize_diplomatic_memory(v) for k,v in memories.items()}
+        self.save_references = deepcopy(references)
+        self.active_save_by_campaign = deepcopy(selected)
         direct_state = state.get("direct_point_policy_state", {})
         if not isinstance(direct_state, dict):
             raise ValueError("stored direct point policy state must be an object")
@@ -992,7 +1020,7 @@ class DiplomacyEngine:
                 max_history=max(self.max_history, 10000), max_conversations=1,
                 response_text_provider=self.response_text_provider,
             )
-            child.diplomatic_memory = self.diplomatic_memory
+            child.diplomatic_memory = self._memory_for_chat(self.chats[chat_id])
             saved = child_states.get(chat_id, {})
             child.conversations = OrderedDict(
                 (item["conversation_id"], self._conversation_from_snapshot(item))
@@ -1051,14 +1079,67 @@ class DiplomacyEngine:
             "created_at": now,
             "updated_at": now,
         }
+        scope = self.active_save_by_campaign.get(campaign_id)
+        if scope in self.save_references:
+            chat["save_scope_id"] = scope
+            chat["save_reference"] = deepcopy(self.save_references[scope])
         self.chats[chat_id] = chat
         self._chat_engines[chat_id] = DiplomacyEngine(
             max_history=max(self.max_history, 10000), max_conversations=1,
             response_text_provider=self.response_text_provider,
         )
-        self._chat_engines[chat_id].diplomatic_memory = self.diplomatic_memory
+        self._chat_engines[chat_id].diplomatic_memory = self._memory_for_chat(chat)
         self._chat_retry_locks[chat_id] = threading.Lock()
         return self._public_chat(chat)
+
+    def _copy_save_context_to(self, other):
+        other.save_memories = deepcopy(self.save_memories)
+        other.save_references = deepcopy(self.save_references)
+        other.active_save_by_campaign = deepcopy(self.active_save_by_campaign)
+
+    def _require_current_save_scope(self, chat):
+        selected=self.active_save_by_campaign.get(chat['campaign_id'])
+        if selected is not None and chat.get('save_scope_id') != selected:
+            raise ChatConflict("Select this chat's save before modifying its history")
+
+    def _memory_for_chat(self, chat):
+        scope = chat.get('save_scope_id')
+        if scope is None:
+            return self.diplomatic_memory
+        if scope not in self.save_references:
+            raise ValueError('Unknown saved history scope')
+        return self.save_memories.setdefault(scope, empty_diplomatic_memory())
+
+    def select_chat_save(self, chat_id, reference, *, confirm=False):
+        """Explicitly label an unbound chat, or fork for a different save snapshot.
+
+        File selection is not game evidence. Campaign IDs, approvals, messages
+        and effect receipts are never reassigned or copied into another chat.
+        """
+        if confirm is not True:
+            raise ValueError('Confirm the history-to-save association')
+        chat = self._chat(chat_id)
+        scope = reference.get('save_id')
+        if not isinstance(scope, str) or not re.fullmatch('[0-9a-f]{64}', scope):
+            raise ValueError('Invalid saved history scope')
+        self.save_references[scope] = deepcopy(reference)
+        prior = chat.get('save_scope_id')
+        if prior is not None and prior != scope:
+            self.active_save_by_campaign[chat['campaign_id']] = scope
+            existing = [c for c in self.chats.values() if c.get('save_scope_id') == scope
+                and c['campaign_id'] == chat['campaign_id'] and c['player_country'] == chat['player_country']
+                and set(c['participants']) == set(chat['participants']) and c.get('state') != 'closed']
+            if existing:
+                return {**self._public_chat(max(existing, key=lambda c:c['updated_at'])), 'history_forked': True}
+            result = self.create_chat(chat['campaign_id'], chat['player_country'],
+                [p for p in chat['participants'] if p != chat['player_country']],
+                response_language=chat.get('response_language'), interface_language=chat.get('interface_language'))
+            return {**result, 'history_forked': True}
+        chat['save_scope_id'] = scope
+        chat['save_reference'] = deepcopy(self.save_references[scope])
+        self.active_save_by_campaign[chat['campaign_id']] = scope
+        self._chat_engines[chat_id].diplomatic_memory = self._memory_for_chat(chat)
+        return {**self._public_chat(chat), 'history_forked': False}
 
     def update_chat_languages(self, chat_id: str, *, interface_language: Optional[str] = None,
                               dialogue_language: Optional[str] = None) -> Dict[str, Any]:
@@ -1099,14 +1180,14 @@ class DiplomacyEngine:
                 if observer == counterpart:
                     continue
                 pairs.append(diplomatic_memory_pair_summary(
-                    self.diplomatic_memory, campaign_id=chat["campaign_id"],
+                    self._memory_for_chat(chat), campaign_id=chat["campaign_id"],
                     observer_tag=observer, counterpart_tag=counterpart,
                 ))
         return {
             "chat_id": chat["chat_id"],
             "campaign_id": chat["campaign_id"],
-            "memory_schema_version": self.diplomatic_memory.get("schema_version", 1),
-            "strategic_countries": [deepcopy(row) for row in self.diplomatic_memory.get("strategic_countries", {}).values()
+            "memory_schema_version": self._memory_for_chat(chat).get("schema_version", 1),
+            "strategic_countries": [deepcopy(row) for row in self._memory_for_chat(chat).get("strategic_countries", {}).values()
                                     if row.get("campaign_id") == chat["campaign_id"]
                                     and row.get("country_tag") in participants],
             "pairs": pairs,
@@ -1243,6 +1324,7 @@ class DiplomacyEngine:
         military strength, guarantees, ideology, or ally counts.
         """
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         tag = _country_tag(country, "country")
         if tag == chat["player_country"] or tag not in chat["participants"]:
             raise ValueError("game observations must identify a participating AI country")
@@ -1448,14 +1530,14 @@ class DiplomacyEngine:
         }
         self.update_chat_country_context(chat_id, tag, normalized)
         remember_verified_game_observation(
-            self.diplomatic_memory, campaign_id=campaign_id,
+            self._memory_for_chat(chat), campaign_id=campaign_id,
             observer_tag=tag, counterpart_tag=chat["player_country"],
             source=observation["source"], schema_version=schema_version,
             request_id=request_id, game_date=str(normalized.get("date") or normalized.get("game_day") or "unknown"),
             facts=normalized,
         )
         chat["updated_at"] = observation["observed_at"]
-        if self.diplomatic_memory.get('historical_diplomacy', {}).get('conferences'):
+        if self._memory_for_chat(chat).get('historical_diplomacy', {}).get('conferences'):
             from historical_conferences import Conferences
             conferences = Conferences(self)
             active = conferences.active(chat_id)
@@ -2004,6 +2086,7 @@ class DiplomacyEngine:
 
     def send_chat_message(self, chat_id: str, message: str, request_id: str) -> Dict[str, Any]:
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         cached = self._cached_chat_request(chat, request_id)
         if cached is not None:
             return cached
@@ -2043,7 +2126,7 @@ class DiplomacyEngine:
         from native_leadership import attribution
         entry['representative']=attribution(self,chat)
         chat["messages"].append(entry)
-        if self.diplomatic_memory.get('historical_diplomacy', {}).get('conferences'):
+        if self._memory_for_chat(chat).get('historical_diplomacy', {}).get('conferences'):
             from historical_conferences import Conferences
             Conferences(self).review_player_text(chat_id, entry)
         chat["round_responded"] = []
@@ -2136,6 +2219,7 @@ class DiplomacyEngine:
 
     def advance_chat(self, chat_id: str, request_id: str) -> Dict[str, Any]:
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         cached = self._cached_chat_request(chat, request_id)
         if cached is not None:
             return cached
@@ -2228,7 +2312,7 @@ class DiplomacyEngine:
             "response_language": chat.get("response_language", "en"),
             "interface_language": chat.get("interface_language", "en"),
             "diplomatic_memory": diplomatic_memory_pair_summary(
-                self.diplomatic_memory, campaign_id=chat["campaign_id"],
+                self._memory_for_chat(chat), campaign_id=chat["campaign_id"],
                 observer_tag=country, counterpart_tag=str(previous.get("speaker") or "").upper(),
             ),
             "_verified_memory_capability": chat_engine._verified_memory_capability,
@@ -2401,7 +2485,7 @@ class DiplomacyEngine:
                     and isinstance(position.get("source_request_id"), str)
                 ), request_id)
             remember_validated_positions(
-                self.diplomatic_memory,
+                self._memory_for_chat(chat),
                 campaign_id=chat["campaign_id"], observer_tag=country,
                 counterpart_tag=str(entry.get("recipient") or "").upper(),
                 source_request_id=position_source_request_id,
@@ -2446,6 +2530,7 @@ class DiplomacyEngine:
         if not isinstance(response_request_id, str) or not response_request_id.strip():
             raise ValueError("response_request_id is required")
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         chat.setdefault("retry_attempts", {})
         cached = chat["retry_attempts"].get(attempt_id)
         if cached is not None:
@@ -2511,7 +2596,7 @@ class DiplomacyEngine:
                 chat_engine.import_chat_state(context["child_state_before"])
             # Child restore reconstructs an independent JSON copy; keep it
             # attached to the root campaign ledger for this bounded retry.
-            chat_engine.diplomatic_memory = self.diplomatic_memory
+            chat_engine.diplomatic_memory = self._memory_for_chat(chat)
             retry_payload = deepcopy(context["response_payload"])
             agreement_snapshot = context.get("agreement_snapshot")
             if isinstance(agreement_snapshot, Mapping):
@@ -2647,7 +2732,7 @@ class DiplomacyEngine:
                         and isinstance(position.get("source_request_id"), str)
                     ), response_request_id)
                 remember_validated_positions(
-                    self.diplomatic_memory,
+                    self._memory_for_chat(chat),
                     campaign_id=chat["campaign_id"],
                     observer_tag=str(replacement.get("speaker") or "").upper(),
                     counterpart_tag=str(replacement.get("recipient") or "").upper(),
@@ -2939,6 +3024,7 @@ class DiplomacyEngine:
     def approve_agreement(self, chat_id: str, agreement_id: str, *, version: int,
                           request_id: str, confirm: bool) -> Dict[str, Any]:
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         agreement = self._agreement(chat, agreement_id)
         if not isinstance(request_id, str) or not request_id.strip():
             raise ValueError("request_id is required for idempotent approval")
@@ -2972,7 +3058,7 @@ class DiplomacyEngine:
         if origin:
             from v6_autonomy import status as autonomy_status
             observer = origin.get('human_observer')
-            snapshot = autonomy_status(self.diplomatic_memory, chat['campaign_id']).get('snapshot')
+            snapshot = autonomy_status(self._memory_for_chat(chat), chat['campaign_id']).get('snapshot')
             if (not snapshot or snapshot.get('player_country') != observer
                     or snapshot.get('countries', {}).get(observer, {}).get('ai_controlled') is not False):
                 raise ChatConflict('current human observer must explicitly authorize the AI agreement')
@@ -2993,6 +3079,7 @@ class DiplomacyEngine:
                                     request_id: str,
                                     _execution_request_id: Optional[str] = None) -> Dict[str, Any]:
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         agreement = self._agreement(chat, agreement_id)
         preparations = agreement.setdefault("preparation_requests", {})
         if not isinstance(request_id, str) or not request_id.strip():
@@ -3276,6 +3363,7 @@ class DiplomacyEngine:
         supported term receives its own exact V2 marker.
         """
         chat = self._chat(chat_id)
+        self._require_current_save_scope(chat)
         agreement = self._agreement(chat, agreement_id)
         if not isinstance(request_id, str) or not request_id.strip() or len(request_id) > 200:
             raise ValueError("request_id is required for idempotent term preparation")
@@ -3410,9 +3498,10 @@ class DiplomacyEngine:
         term_version["terms"] = [deepcopy(term)]
 
         temporary_engine = object.__new__(DiplomacyEngine)
+        self._copy_save_context_to(temporary_engine)
         temporary_engine.chats = {chat_id: term_chat}
         temporary_engine.action_registry = self.action_registry
-        temporary_engine.diplomatic_memory = deepcopy(self.diplomatic_memory)
+        temporary_engine.diplomatic_memory = deepcopy(self._memory_for_chat(chat))
         temporary_result = DiplomacyEngine.prepare_agreement_execution(
             temporary_engine, chat_id, agreement_id,
             request_id=f"term-prepare:{term_id}",
@@ -3578,7 +3667,7 @@ class DiplomacyEngine:
                         agreement_name=agreement.get("name"),
                         agreement_version=agreement.get("current_version"),
                         summary="All executable agreement terms were confirmed by exact HOI4 markers.",
-                        diplomatic_memory=self.diplomatic_memory,
+                        diplomatic_memory=self._memory_for_chat(chat),
                     )
                     self._record_agreement_promise_trust(agreement, request_id)
                 else:
@@ -3628,7 +3717,7 @@ class DiplomacyEngine:
                 agreement_id=agreement_id, agreement_name=agreement.get("name"),
                 agreement_version=agreement.get("current_version"),
                 summary="HOI4 confirmed the approved agreement effect.",
-                diplomatic_memory=self.diplomatic_memory,
+                diplomatic_memory=self._memory_for_chat(chat),
             )
             self._record_agreement_promise_trust(agreement, request_id)
         agreement["updated_at"] = _utc_now()
@@ -3730,10 +3819,10 @@ class DiplomacyEngine:
         other = chat.get('player_country')
         action = self.action_registry.get(point.get('action_id')) or {}
         doctrine = assess_doctrine(speaker,facts,other,'',{'intent':action.get('intent')})
-        memory = diplomatic_memory_pair_summary(self.diplomatic_memory,
+        memory = diplomatic_memory_pair_summary(self._memory_for_chat(chat),
             campaign_id=chat['campaign_id'],observer_tag=speaker,counterpart_tag=other)
         memory.pop('prior_negotiation_positions',None)
-        interests = refresh_interests(deepcopy(self.diplomatic_memory),chat['campaign_id'],speaker,facts)
+        interests = refresh_interests(deepcopy(self._memory_for_chat(chat)),chat['campaign_id'],speaker,facts)
         relationship = DiplomaticRelationship.from_context(facts)
         relationship.promise_trust = _number((memory.get('promise_trust') or {}).get('value'),0.5,0.0,1.0)
         plan = build_strategic_plan(intent=action.get('intent','unknown/general'),engine_decision='defer',
@@ -5095,7 +5184,7 @@ class DiplomacyEngine:
             arguments.append({'request_id':key,'positions':[{'action_id':p.get('action_id'),'point':p.get('point'),'stance':p.get('stance'),'stage':p.get('conversation_stage'),'open_questions':deepcopy(p.get('open_questions',[])),'next_step':p.get('next_step'),'basis':deepcopy(p.get('expression_basis',{}))} for p in points]})
         chat['argument_memory']=arguments[-64:]
         version_bindings[key] = deepcopy(current_versions)
-        if chat.get('chat_id') and self.diplomatic_memory.get('historical_diplomacy', {}).get('conferences'):
+        if chat.get('chat_id') and self._memory_for_chat(chat).get('historical_diplomacy', {}).get('conferences'):
             from historical_conferences import Conferences
             for country in dict.fromkeys(p.get('speaker_tag') for p in points if p.get('speaker_tag')):
                 Conferences(self).review_plan(chat['chat_id'], country, key,

@@ -10,6 +10,7 @@
  #tabs{flex-wrap:wrap;gap:0 8px;padding:0 10px}#tabs button{flex:0 1 auto;padding:8px}
  #workspaces{flex:1;min-height:0}#workspaces iframe{border:0;width:100%;height:100%;display:block}
  #workspaces iframe[hidden]{display:none}#service-status{margin:2px 12px;font-size:12px}
+ .save-browser{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:8px 12px;border-bottom:1px solid #59603f}.save-browser select{max-width:55vw;min-width:180px}.save-browser[hidden]{display:none}.save-browser small{flex-basis:100%;color:#aab4a2;font-size:11px;letter-spacing:0;text-transform:none}.save-reference{color:#d8c38e;margin:6px 0;font-size:12px;overflow-wrap:anywhere}
  #chat-list{display:grid;gap:8px;margin:16px;min-height:0;overflow:auto}
  #chat-list article{margin:0}#chat-list p{white-space:pre-wrap}
 </style>
@@ -39,6 +40,16 @@
  {% for service in ['Flask','Bridge','Ollama','Qwen'] %}<span class="service-chip" tabindex="0" data-service="{{ service }}" data-state="checking"><i aria-hidden="true"></i>{{ service }}<span class="service-value">{{ t('Checking') }}</span></span>{% endfor %}
 </div>
 <p id="service-status" role="status"></p>
+<section id="save-browser" class="save-browser" aria-label="{{ t('Game saves') }}">
+ <label for="save-choice">{{ t('Game saves') }}</label>
+ <select id="save-choice"><option value="">{{ t('All histories') }}</option></select>
+ <select id="save-chat-choice" aria-label="{{ t('Choose conversation') }}"></select>
+ <button id="save-associate">{{ t('Use selected save') }}</button>
+ <button id="save-refresh">{{ t('Refresh saves') }}</button>
+ <button id="save-folder">{{ t('Add save folder') }}</button>
+ <span id="save-state" role="status"></span>
+ <small>{{ t('Save selection labels history; Bridge still verifies the live campaign.') }}</small>
+</section>
 <section id="chat-list" hidden aria-live="polite"></section>
 <div id="workspaces" data-title="{{ t('Selected workspace') }}" hidden></div>
 <dialog id="treaty-actions">
@@ -76,6 +87,7 @@
 </dialog>
 
 <script type="application/json" id="desktop-labels">{{ {
+ 'saves':{'all':t('All histories'),'unlinked':t('Unlinked histories'),'link':t('Use selected save'),'confirm':t('Associate this history with the selected save? A different save starts a separate conversation; existing messages and treaties are preserved.'),'none':t('No saves found'),'incomplete':t('Scan incomplete; select a narrower folder'),'errors':{'unknown_format':t('Unknown save format'),'binary_format':t('Binary save: metadata unavailable'),'unsupported_encoding_or_binary':t('Unsupported encoding or binary save'),'access_denied':t('Access denied'),'damaged_archive':t('Damaged save archive'),'file_unavailable':t('Save unavailable'),'file_changed_retry':t('Save is being written; refresh later')}},
  'open':t('Open selected chat in Bridge'),'none':t('No diplomatic chats yet. Choose a country in HOI4.'),
  'ready':t('Ready'),'not_ready':t('Not ready'),'error':t('The request could not be completed.'),
  'unknown':t('Unknown'),'messages':t('Messages'),'unread':t('Unread'),
