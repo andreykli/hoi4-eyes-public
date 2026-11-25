@@ -138,8 +138,8 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "7889158bb5bbb8043c8c64cbfd57b48cded05762233a5a2153006d7c553f06b0",
-      "bytes": 2722
+      "sha256": "953674ca6367578481f01efe693dbe55d229d56956f18ed4e676b1d24f20f69e",
+      "bytes": 1970
     },
     "docs/LICENSES.md": {
       "sha256": "cf599bb3f4c34b74890c9418db5f28b6dfab4f9170835c727c75a51a3d9bf63a",
@@ -158,28 +158,52 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "076263858b0ed71cc907a99bab6a23535147799985f8829561a8003b2c3e70ba",
-      "bytes": 1731
+      "sha256": "e3de6a0ecf28daf06d8a1fa1530289847e6ec9a806cf9ebbe0f0c98e03544bfd",
+      "bytes": 1878
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
       "bytes": 2330
     },
     "docs/WORKSHOP_PUBLICATION.md": {
-      "sha256": "3258934e3ff1e6508210447f059d67a6f4e3b433e22a3241fdacc1b4959b5649",
-      "bytes": 6047
+      "sha256": "224d2da477dfa1e5c8ad8c909e6fdddd4bd997e91c72c05f38d21866faed12e1",
+      "bytes": 6819
     },
     "docs/workshop_en.txt": {
-      "sha256": "74cdde1528fb54a5dd2b6e06ff4f7a41db32df6ce40883267fc506b96edc4eb0",
-      "bytes": 2458
+      "sha256": "c2f0e326d29a674e1fbd5dbd95e0aebbe06b6fcabe48322ebf90209ec7cb3cd8",
+      "bytes": 2652
     },
     "docs/workshop_fr.txt": {
-      "sha256": "b6a0ab1b78c08f9e2545a7b525c8f9d5e7027678e80c7597ceb79c481c8c4444",
-      "bytes": 2037
+      "sha256": "2627d464583f39ca513220c517d421fff9201386afeeb92ecf95af345eac7bb4",
+      "bytes": 2266
     },
     "docs/workshop_ru.txt": {
-      "sha256": "d0f223487a4c175500c15f9f5245b992e20420a5807ef4f033f69360abcc7730",
-      "bytes": 2854
+      "sha256": "e810f4ce028253f57c8107753396ecb907331f2363dd0a53642f6411412c1166",
+      "bytes": 3203
+    },
+    "installer/Bootstrap.cs": {
+      "sha256": "e9eca60e3447b39a2f2beb4cdb6c11e1ed871ff3ca91beff5d7366f9c86e8800",
+      "bytes": 12900
+    },
+    "installer/HOW_TO_INSTALL.txt": {
+      "sha256": "289c8823f3c2ac0f9fe319ef1364b93b063fbdf827a1bed41e31a007a586be7f",
+      "bytes": 5683
+    },
+    "installer/THIRD-PARTY.txt": {
+      "sha256": "b0d933f8cf3001a33bfac60bd2591995ce95605c96b9774433a9394e5dcbb5b9",
+      "bytes": 1422
+    },
+    "installer/WORKSHOP_POLICY_QUESTION.txt": {
+      "sha256": "4015b0a3cf77ce19ace34fa200b59a92c7d72b0a33cf22c3190b30caec4f2f6d",
+      "bytes": 1076
+    },
+    "installer/app.manifest": {
+      "sha256": "0d85968b177a39f8181bc52d9cea2c1b3dfb13cec37dd5834c22d2d432f590d8",
+      "bytes": 774
+    },
+    "installer/licenses/proxy_tools-BSD.txt": {
+      "sha256": "f96cf2b17c9b0cede77438165fdc6ea2f91bedb248d1779538727a2b93d71e12",
+      "bytes": 1437
     },
     "prepared/unified_game_mod/ai_assistant/THIRD_PARTY_NOTICES.md": {
       "sha256": "e9761f8aef361d3f335bccb83468a664e41fb37ef164d9f4435e510c55ef0917",
@@ -425,9 +449,25 @@
       "sha256": "3a9b2f7744a2234a8e3920c3aa4e26ab4070d3f98026dd01b4c0e847923047a2",
       "bytes": 305
     },
+    "prepared/unified_game_mod/ai_assistant/release/installation_protocol.json": {
+      "sha256": "2481dc123756d1c185e61f35cae55d6003cd1c350349dbe978055b67d457ecb9",
+      "bytes": 75
+    },
     "release/files.json": {
-      "sha256": "d287cb3d5d7a9019b8ae487795ce580aae37da50d884fc0b80a28d3f26b37e8d",
-      "bytes": 20313
+      "sha256": "5fe28b444e35571d71a0385a9d2b133e169ce304c4c904c2b95512543a8ebcdd",
+      "bytes": 20348
+    },
+    "release/installation_protocol.json": {
+      "sha256": "2481dc123756d1c185e61f35cae55d6003cd1c350349dbe978055b67d457ecb9",
+      "bytes": 75
+    },
+    "release/installer_sources.json": {
+      "sha256": "3a73abcaf1ec171f10be573dc5b96e54450a5c11d6de47b35c5af16597e64348",
+      "bytes": 1131
+    },
+    "release/installer_wheels.json": {
+      "sha256": "4d3186ba98d2eba80f959c8b3e3a6929e640765d5f902a6c342fdd72f5496ee2",
+      "bytes": 9810
     },
     "release/model_gate_summary.json": {
       "sha256": "dc56081977bff60a068f7944113d20d733ab947740de98412fd15a2dca4e2358",
@@ -440,6 +480,10 @@
     "release/publication_links.json": {
       "sha256": "bc17ef644d338640b15b7ab7006a58ff396e32747bd5b58af7f834b2b88b1755",
       "bytes": 155
+    },
+    "release/requirements-installer.lock": {
+      "sha256": "820a0987d03011e53bc152fecb0d2d7747e7ebd9e9ae38c91953b5e0fe4145f8",
+      "bytes": 2112
     },
     "requirements.txt": {
       "sha256": "9ad81982b2123a975f78bf34cc14c042a0ec0c63c3e5cd9f4c05b88ca3b73e08",
@@ -509,6 +553,10 @@
       "sha256": "e9b8ee752a7c055e37bd717c6fa61bcccc988047600d159f7afad834957a1f07",
       "bytes": 8888
     },
+    "tools/build_workshop_installer.py": {
+      "sha256": "64a3b2e87df799cf9c4e22053f105881e8e18d4eaf91402afb4f147236e1e28e",
+      "bytes": 7620
+    },
     "tools/cabinet_roster.py": {
       "sha256": "453338981b9bb5ff2937a3537b21c33b83f9e4c653701ddc770362682674d77f",
       "bytes": 2761
@@ -518,16 +566,16 @@
       "bytes": 4222
     },
     "tools/chat_presentation.py": {
-      "sha256": "2723600c07eea4a442293b8865be77bc71740e9bbbe099dd22ec0d020db266ee",
-      "bytes": 5414
+      "sha256": "9a294e8fb9e9093b7ebc843516535114fdbfc7b336b6e33beaec34d4b3aa2681",
+      "bytes": 5804
     },
     "tools/chat_state_store.py": {
       "sha256": "a7f4259e582a294ef509e8b6cc76fc2ec65110442b28c072754baf17b5ddae27",
       "bytes": 4956
     },
     "tools/chat_widgets.py": {
-      "sha256": "d01dc645c88ccb57ef268aacdebd95f0d418238fe9907ae5b31a8a3926dfd1f5",
-      "bytes": 1622
+      "sha256": "192092cc4df9e51464620ced6fc8b28b885b6512d9ee5b214dbb90eef105cfff",
+      "bytes": 6785
     },
     "tools/conference_phrases.py": {
       "sha256": "51598dc38245074e697af150887f912d21f989011f876e4165bde03220f37b0f",
@@ -554,8 +602,8 @@
       "bytes": 211
     },
     "tools/diplomacy_engine.py": {
-      "sha256": "417fea156aaaff2158b2438467e4c866551a18fdbfcf43ebaf1a500da8bec6cc",
-      "bytes": 485787
+      "sha256": "133998cc8df0453cf706fca45c375f7a79d237010735f564bb785a053b73e12a",
+      "bytes": 488470
     },
     "tools/diplomatic_catalog.py": {
       "sha256": "6e52a794015a26367094da4ccf1dc12e5992ba1bf1449709f2dd0f9fd35620f5",
@@ -629,6 +677,10 @@
       "sha256": "be1ec96cec8078faebde8fdedc8e15890e5b21fd5826b6d41abac280cacc5e18",
       "bytes": 9075
     },
+    "tools/group_negotiation.py": {
+      "sha256": "7a8ce52d302ca0ee0efaa2789eb93cbcdb380afd25d1274c5bdc2e6ed7d57d22",
+      "bytes": 7541
+    },
     "tools/guarded_treaty_effects.py": {
       "sha256": "4572bb78433e292b45d2e69d2060b78ad3d6ad80a66ee6973e11917ff672226b",
       "bytes": 12522
@@ -646,8 +698,8 @@
       "bytes": 5324
     },
     "tools/hoi4_bridge.py": {
-      "sha256": "3cb1129091cfb20dddf31ad50656a372c6d0a2a2da4352315979dd56dcd5f867",
-      "bytes": 233411
+      "sha256": "2ac0ca63e32b2512e0f4e551549d8e382878625e0859cc76d328eb18ce5cd493",
+      "bytes": 239501
     },
     "tools/hoi4_campaign_identity.py": {
       "sha256": "b3ada3fe3562404625277ff622dfd51b166a1bf5ee3decce55be9ed899bc76ab",
@@ -722,8 +774,8 @@
       "bytes": 2640
     },
     "tools/mock_ai_server.py": {
-      "sha256": "b0a0ae396f529777d3d3d64af8268ed004ef087f0831b7be8707ebad1408595d",
-      "bytes": 65058
+      "sha256": "965dd8fb9abb80f34d4836987277885969eef6fd222f172e833c496fc11dcb81",
+      "bytes": 68082
     },
     "tools/model_profile.py": {
       "sha256": "165a3bc2b10d6dc261504cbeda9c419023ac81d06fd537c549d996eb91a30d6d",
@@ -754,16 +806,16 @@
       "bytes": 3809
     },
     "tools/ollama_provider.py": {
-      "sha256": "2ba41854342ed2c66414cc0aae1af9b3a0805a5e950d9a2a777f0efb50f109a4",
-      "bytes": 596411
+      "sha256": "982bc6a60096d32a016ad07427a85b352b0c8492b1b5de09666c6900e27de484",
+      "bytes": 599846
     },
     "tools/ollama_warmup.py": {
       "sha256": "e48df245b9bc6c0e476c12e75c00091ba1e628bf7d58e0d0989618a647d19022",
       "bytes": 1443
     },
     "tools/overlay_control.py": {
-      "sha256": "abfc736b3f41d11257a898cd1211d1033789947fdfc3060fdce9d368f436c438",
-      "bytes": 2557
+      "sha256": "082024bf6064b639be5c52f2f4f433dbc80304d670f29ab714602e8506ac7fbc",
+      "bytes": 2597
     },
     "tools/phrase_destinations.py": {
       "sha256": "9871f767a7c7b99d8ef66d131f096f7a46206f2549079ada23cc5e7045b0aef8",
@@ -798,8 +850,8 @@
       "bytes": 3928
     },
     "tools/runtime_revision.py": {
-      "sha256": "6b197bb3a52bc0073128cb211cf8c0414f3be519cee28b7feea8040bd182511e",
-      "bytes": 5020
+      "sha256": "0dbf1a8fbd90e9ed156789077123d4f7f7e6aeb9c25754e1594e9615ad22ba2e",
+      "bytes": 5054
     },
     "tools/save_catalogue.py": {
       "sha256": "4f24536168f42bfb9bd67328ab757809bcee5f76b50f4243bbae7bb93c71cf08",
@@ -826,8 +878,8 @@
       "bytes": 8180
     },
     "tools/static/desktop.js": {
-      "sha256": "d2b1a32d4dc3f7a3e84d7b388405c63e45ce2fdc53d3cafa4aa36ab5e36a068d",
-      "bytes": 14916
+      "sha256": "fac970e6381bded748d1daabaf3e8ebf42257a5575016a8c747eddeedbc16905",
+      "bytes": 18582
     },
     "tools/static/fleet.css": {
       "sha256": "eecb4871a37f35459ebc055b89d136e7ece6ed9f6f88647d4af7ba84a421162e",
@@ -910,8 +962,8 @@
       "bytes": 86296
     },
     "tools/templates/desktop.html": {
-      "sha256": "c1680a9303c6435a01058eedac5d42389a297613a26216fd5c6938fcbb744ba6",
-      "bytes": 8266
+      "sha256": "8daa33d8644d8d7a28a72c06618117a1242f1378573436690353149fe29e838a",
+      "bytes": 9811
     },
     "tools/templates/fleet.html": {
       "sha256": "7f9b43901b1aa297b893af36cca676e5988c2c22f81c28243e58dbe80ef574d3",
@@ -1478,8 +1530,8 @@
       "bytes": 2140
     },
     "tools/ui_text.json": {
-      "sha256": "eb46d9ac4b3a381dac29463a6e5b07dd33e80dab83edb90aa12fac30251992c1",
-      "bytes": 84708
+      "sha256": "82162fc91137f53e64d0c5427d55211c931fd2b236219fdfe9c3b74f102e8421",
+      "bytes": 86261
     },
     "tools/unified_mod_setup.py": {
       "sha256": "cbcd2ecd98a2408f98dd7e81976779b1154511d0f4dcd5119b6b97965b20e39f",

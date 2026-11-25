@@ -61,6 +61,7 @@ from political_annexation import (
 )
 from structured_intents import analyze_communication_acts, extract_duration
 from hoi4_time import MAX_HOI4_ABSOLUTE_DAY
+from group_negotiation import MAX_AI_COUNTRIES, MAX_AUTO_REPLIES, position_context
 from hoi4_country_tags import COUNTRY_TAG_RE
 from hoi4_country_names import load_country_names
 from diplomatic_memory import (
@@ -1045,8 +1046,8 @@ class DiplomacyEngine:
         ai_tags = [_country_tag(tag, "ai_countries") for tag in ai_countries]
         if len(set(ai_tags)) != len(ai_tags) or player in ai_tags:
             raise ValueError("chat participants must be unique and cannot repeat the player")
-        if len(ai_tags) + 1 > 6:
-            raise ValueError("a diplomatic chat may have at most six participants including the player")
+        if len(ai_tags) > MAX_AI_COUNTRIES:
+            raise ValueError("a diplomatic chat requires one to six AI countries, excluding the player")
         contexts = _normalize_country_contexts(country_contexts or {}, [player, *ai_tags])
         response_language = normalize_language(response_language) or "en"
         interface_language = normalize_language(interface_language) or "en"
@@ -1260,13 +1261,12 @@ class DiplomacyEngine:
             if tag not in participants:
                 raise ValueError(f"cannot remove non-member {tag}")
             participants.remove(tag)
-            chat["response_queue"] = [queued for queued in chat["response_queue"] if queued != tag]
         for tag in add_tags:
             if tag in participants:
                 raise ValueError(f"country {tag} is already a participant")
             participants.append(tag)
-        if len(participants) > 6:
-            raise ValueError("a diplomatic chat may have at most six participants including the player")
+        if not 2 <= len(participants) <= MAX_AI_COUNTRIES + 1:
+            raise ValueError("a diplomatic chat requires one to six AI countries, excluding the player")
         contexts = _normalize_country_contexts(country_contexts or {}, participants)
         for tag, context in contexts.items():
             chat["country_contexts"][tag] = context
@@ -1275,6 +1275,7 @@ class DiplomacyEngine:
                 chat["country_contexts"][tag] = {}
         for tag in remove_tags:
             chat["country_contexts"].pop(tag, None)
+        chat["response_queue"] = [tag for tag in chat["response_queue"] if tag in participants]
         chat["participants"] = participants
         if chat["state"] == "awaiting_ai":
             queued = set(chat["response_queue"])
@@ -2130,6 +2131,7 @@ class DiplomacyEngine:
             from historical_conferences import Conferences
             Conferences(self).review_player_text(chat_id, entry)
         chat["round_responded"] = []
+        chat["turn_reply_limit"] = min(MAX_AUTO_REPLIES, len(chat["participants"])-1)
         chat["response_queue"] = [
             tag for tag in chat["participants"] if tag != chat["player_country"]
         ]
@@ -2230,7 +2232,16 @@ class DiplomacyEngine:
             raise ChatConflict("the player must send the first message")
         if not chat["response_queue"]:
             raise ChatConflict("no country is waiting to respond")
-        country = chat["response_queue"].pop(0)
+        if len(chat['round_responded']) >= chat.get('turn_reply_limit', MAX_AUTO_REPLIES):
+            raise ChatConflict('automatic turn limit reached')
+        if len(chat['participants']) > 2:
+            from group_negotiation import choose_speaker, observed_contexts
+            ranking = {**chat,'country_contexts':{**chat.get('country_contexts',{}),
+                **observed_contexts(chat,self.chats.values())}}
+            country = choose_speaker(ranking, chat['response_queue'])
+            chat['response_queue'].remove(country)
+        else:
+            country = chat["response_queue"].pop(0)
         chat["round_responded"].append(country)
         previous = chat["messages"][-1]
         player_source = next((item for item in reversed(chat["messages"])
@@ -2247,6 +2258,17 @@ class DiplomacyEngine:
         ) else []
         if not isinstance(country_observations, list):
             country_observations = []
+        if len(chat['participants']) > 2 or chat.get('group_negotiation'):
+            # Reuse actual Bridge observations of these countries in this same
+            # campaign/save. A newly opened group must not lose verified pair facts.
+            for peer in self.chats.values():
+                if (peer['chat_id'] != chat_id and peer['campaign_id'] == chat['campaign_id']
+                        and peer['player_country'] == chat['player_country']
+                        and peer.get('save_scope_id') == chat.get('save_scope_id')):
+                    rows = peer.get('game_context_observations',{}).get('by_country',{}).get(country,[])
+                    if isinstance(rows,list):country_observations = country_observations + rows
+            country_observations = sorted((row for row in country_observations if isinstance(row,Mapping)),
+                key=lambda row:str(row.get('observed_at','')))
         latest_observation = next((item for item in reversed(country_observations)
                                    if isinstance(item, Mapping)
                                    and item.get("campaign_id") == chat["campaign_id"]
@@ -2265,6 +2287,11 @@ class DiplomacyEngine:
         participant_country_names = {
             tag: self._country_name(tag) for tag in chat.get("participants", [])
         }
+        is_group = len(chat['participants']) > 2 or chat.get('group_negotiation',False)
+        if is_group:
+            from group_negotiation import english_names
+            labels = english_names()
+            participant_country_names = {tag:labels.get(tag,tag) for tag in chat['participants']}
         active_agreement_action_participants = self._active_agreement_action_participant_context(chat)
         if active_agreement_action_participants:
             _PROVIDER_LOGGER.info(
@@ -2295,7 +2322,9 @@ class DiplomacyEngine:
                 if latest_observation is not None else None
             ),
             "group_chat": True,
-            "recent_messages": deepcopy(chat["messages"][-8:]),
+            "recent_messages": deepcopy(chat["messages"][-16:]),
+            "group_position_memory": position_context(chat, country) if is_group else {},
+            "canonical_group_names": is_group,
             "phrase_recent": phrase_history(chat,country,phrase_person),
             "phrase_person_id":phrase_person,
             # Group participants may answer the immediately preceding country
@@ -2492,6 +2521,8 @@ class DiplomacyEngine:
                 response_request_id=request_id, version=version,
                 positions=entry["dialogue_positions"],
             )
+        if len(chat['round_responded']) >= chat.get('turn_reply_limit',MAX_AUTO_REPLIES):
+            chat['response_queue'] = []
         if not chat["response_queue"]:
             chat["state"] = "awaiting_player"
         chat["updated_at"] = _utc_now()
@@ -4912,6 +4943,7 @@ class DiplomacyEngine:
         result.pop("retry_contexts", None)
         result.pop("retry_attempts", None)
         result['unread_count'] = len(unread(chat))
+        result['automatic_reply_limit'] = MAX_AUTO_REPLIES if len(chat.get('participants',[]))>2 else 1
         result["next_request_id"] = (
             f"{result['campaign_id']}:chat:{result['chat_id']}:{result['request_sequence']:06d}"
         )
@@ -5350,6 +5382,9 @@ class DiplomacyEngine:
         participant_country_names = payload.get("participant_country_names", {})
         participant_country_names = (dict(participant_country_names)
                                      if isinstance(participant_country_names, Mapping) else {})
+        if payload.get('canonical_group_names'):
+            country_name = participant_country_names.get(receiver,country_name)
+            sender_name = participant_country_names.get(sender,sender_name)
         participant_country_names[sender] = sender_name
         participant_country_names[receiver] = country_name
         participant_aliases = dict(participant_country_names)
@@ -5695,7 +5730,7 @@ class DiplomacyEngine:
                             for item in conversation.messages[-8:]
                         ]
                     normalized_history = []
-                    for item in recent_messages[-8:]:
+                    for item in recent_messages[-16:]:
                         if not isinstance(item, Mapping):
                             continue
                         speaker = str(item.get("speaker") or item.get("sender") or "UNKNOWN").upper()
@@ -5791,7 +5826,8 @@ class DiplomacyEngine:
                         "latest_utterance_text": payload.get("latest_utterance_text", text),
                         "latest_utterance_speaker": payload.get("latest_utterance_speaker", sender),
                         "latest_utterance_request_id": payload.get("latest_utterance_request_id"),
-                        "recent_messages": normalized_history[-8:],
+                        "recent_messages": normalized_history[-16:],
+                        "group_position_memory": payload.get('group_position_memory', {}),
                         "known_game_context": known_game_context,
                         "diplomatic_memory": trusted_memory,
                         "interface_language": payload.get("interface_language", "en"),

@@ -1,0 +1,58 @@
+NATIVE DIPLOMACY UPDATE (native-groups-1)
+The diplomacy window opened by the EYES button in HOI4 now includes the country selector, removable participant chips, Apply participants, and Saved negotiations. Select up to six countries without opening the main EYES app. Applied groups preserve the original bilateral chat. Replies appear incrementally and run sequentially through Qwen. A maximum of three AI replies returns control to the player; treaty signing and game execution remain separate confirmations.
+Close EYES, HOI4 and the Paradox launcher before manually running the updated installer and choosing Update / repair. Existing campaign histories, profiles, models and treaty files are preserved.
+
+BETA.6 GROUP NEGOTIATIONS (group-negotiations-1)
+In Diplomacy, choose Group negotiation on a conversation from the current HOI4 campaign. Select 1-6 other countries and apply. The player speaks first; up to 3 AI countries reply sequentially. Use the name chips to remove countries. Keep Start a separate negotiation enabled to retain the existing bilateral conversation and its treaties.
+В Diplomacy нажмите «Групповые переговоры» у переписки текущей кампании. Выберите 1-6 стран и примените состав. Первое сообщение отправляете вы; затем отвечают до 3 стран по очереди. Удалить участника можно кнопкой с его именем. Отдельные переговоры сохраняют прежний двусторонний чат и договоры.
+
+HOI4-EYES 0.9.0-beta.6 — Experimental Installer C2 / NightPulse / UNSIGNED PUBLIC BETA
+
+EN: Run "Install HOI4-EYES.exe" yourself. No Python is required to open the
+bootstrap. Downloads and vendor installers need your consent. Keep only the
+managed local EYES mod active; the Workshop copy is the update source.
+Settings, SQLite, saves and models are preserved. This preview is unsigned
+and has not passed clean-machine installation acceptance. Do not publish it.
+
+RU: Запустите "Install HOI4-EYES.exe" самостоятельно. Для первого окна Python
+не требуется. Загрузки и установщики требуют согласия. В игре включайте только
+управляемую локальную EYES; Workshop служит источником обновлений. Настройки,
+SQLite, сохранения и модели сохраняются. Это неподписанный локальный прототип,
+приёмка на чистой Windows не завершена. Не публиковать.
+
+FR : Lancez vous-même "Install HOI4-EYES.exe". Python n’est pas nécessaire
+pour ouvrir le bootstrap. Téléchargements et installateurs demandent votre
+accord. Activer seulement EYES local ; Workshop fournit les mises à jour.
+Réglages, SQLite, sauvegardes et modèles sont conservés. Prototype non signé,
+recette sur Windows vierge inachevée. Ne pas publier.
+
+EXISTING USERS / ПРЕЖНИЕ ПОЛЬЗОВАТЕЛИ / UTILISATEURS EXISTANTS
+
+EN: Close EYES, HOI4 and the Paradox launcher. Run this setup once even if
+you previously downloaded EYES from GitHub. The shared profile is reused.
+Choose the previous source folder only if it was not discovered. Import old
+local history only into an empty profile, with explicit permission; conflicting
+profiles are never merged automatically. Old source files and models remain.
+New clients check Workshop updates at startup and can offer to open the folder;
+they never automatically run a newly downloaded unsigned installer.
+Uninstall: Windows Settings > Apps > Installed apps > HOI4-EYES. Confirm in
+the saved setup. Personal data and shared Python/Ollama/WebView2 are kept.
+
+RU: Закройте EYES, HOI4 и лаунчер Paradox. Один раз запустите этот мастер,
+даже если ранее скачали EYES с GitHub. Общий профиль используется повторно.
+Если старая папка не найдена, выберите её вручную. Импорт старой локальной
+истории возможен только в пустой профиль с отдельным согласием; автоматического
+слияния нет. Старые исходники и модели остаются. Новый клиент проверяет
+обновления при запуске и предлагает открыть папку Workshop, но не запускает
+новый неподписанный EXE автоматически. Удаление: Параметры Windows > Приложения >
+Установленные приложения > HOI4-EYES, затем подтверждение в сохранённом мастере.
+Личные данные и общие Python/Ollama/WebView2 сохраняются.
+
+FR : Fermez EYES, HOI4 et le lanceur Paradox. Lancez cet assistant une fois,
+même après une installation GitHub. Le profil partagé est réutilisé. Si besoin,
+sélectionnez l’ancien dossier. L’import de l’historique local nécessite un
+profil vide et votre accord ; aucun mélange automatique. Sources et modèles
+restent intacts. Le nouveau client propose les mises à jour Workshop au démarrage
+sans exécuter automatiquement un nouvel EXE non signé. Désinstallation :
+Paramètres Windows > Applications > Applications installées > HOI4-EYES,
+puis confirmation dans l’assistant conservé. Données et composants partagés conservés.

@@ -293,7 +293,8 @@
     "tools/world_diplomacy.py",
     "tools/world_freshness.py",
     "tools/world_sessions.py",
-    "tools/world_snapshot.py"
+    "tools/world_snapshot.py",
+    "tools/group_negotiation.py"
   ],
   "mod_files": [
     "prepared/unified_game_mod/ai_assistant/THIRD_PARTY_NOTICES.md",

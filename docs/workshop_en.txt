@@ -2,6 +2,8 @@
 [b]NightPulse | 0.9.0-beta.6 | HOI4 1.20.0.0[/b]
 [url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
 
+The existing diplomacy window opened from HOI4 now supports 1–6 counterpart countries, saved groups and sequential Qwen replies. The player speaks first; treaties still require confirmation.
+
 Beta.2: mandatory independent treaty decisions, resistance to prompt manipulation,
 faster typed proposals and 540 original EN/RU/FR wording entries. Qwen selects wording;
 it cannot turn refusal into acceptance. Recognition and public UI labels are fixed.

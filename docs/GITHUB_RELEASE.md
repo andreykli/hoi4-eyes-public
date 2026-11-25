@@ -1,19 +1,17 @@
-Installer repair: a verified previous managed release can recover its stale registration after an interrupted upgrade. The active application and descriptor no longer need to point at the same release during recovery. Unrecognized or modified sources remain rejected. Python setup failures identify their setup step.
+HOI4-EYES 0.9.0-beta.6 — native-groups-1
 
-Validated: 83 installer tests; fresh offline dependency installation; application preflight; WebView2; English, Russian and French installer layouts; rollback and uninstall data preservation. Existing local beta.6 registration repaired and startup gate reports ready. Historical component_exit_1 was not reproduced. Real gameplay and clean Windows VM acceptance were not run.
+Group negotiations now work directly in the existing diplomacy window opened by the EYES button in HOI4. The main EYES application is optional for these controls.
 
-HOI4-EYES 0.9.0-beta.6 by NightPulse
-- Read-only save browser: standard Documents/OneDrive, local Steam Cloud, custom user directories and additional folders.
-- Plain-text and ZIP metadata: original filename, game date and player tag when readable. Binary/unknown formats are listed with a reason; no guessing or save conversion.
-- Explicit save-to-history association. Different files receive separate conversations and diplomatic memory; existing transcripts and treaty approvals remain intact. Inactive save histories cannot be modified accidentally.
-- Localized full country names from active directory/ZIP mods, including generated Country Maker definitions; safe tag fallback when unavailable.
-- EN/RU/FR, persistent save filter, save labels in native chat and desktop cards. Language changes preserve other connection settings.
-Upgrade from beta.5: close EYES, HOI4 and the Paradox launcher, then manually run Install HOI4-EYES.exe and choose Update / repair. Existing history, settings, models and Acceptance are preserved. Protocol 2 blocks incompatible old app/mod combinations before opening the database.
-Limits: only local save copies are discoverable; Steam server-only saves must first be downloaded by Steam. Binary or unsupported metadata may be unavailable. Scans are bounded and report truncation. Selecting a filename is NOT proof of the loaded campaign; Bridge/Atlas checks and player approval remain mandatory.
-HOI4 1.20 remains beta; new live-game acceptance is pending. Known Qwen timeout/fallback limitations remain.
-Unsigned Installer C2 requires manual execution and user consent. Archives, source, licenses and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6
+- Select 1–6 other countries, add or remove country chips, and apply the participant list in the native window.
+- Saved negotiations reopens group or bilateral histories from the same campaign and save. Creating a separate group retains the original bilateral chat and treaties.
+- The player speaks first. Explicitly addressed countries get priority; other speakers are selected using interests, relations, topic and recent participation. At most three AI replies are generated sequentially per turn and appear as each finishes.
+- Qwen receives the common transcript, the speaking country's own prior positions and campaign-matched Bridge observations. The speaker lottery never decides acceptance or refusal. Countries keep full English names while interface controls support English, Russian and French.
+- Signing and native game execution still require explicit player confirmation. Discussion cannot apply game effects.
 
+Existing users: close EYES, HOI4 and the Paradox launcher, then manually run Install HOI4-EYES.exe from the updated Workshop folder or GitHub installer archive and choose Update / repair. Settings, histories, saves, models and existing personal treaty packages are preserved.
 
-Beta distribution: original EYES code Apache-2.0; dependency notices retained. No saves, personal profiles or model weights are distributed. Clean Windows acceptance and new in-game acceptance remain incomplete.
+Validation includes native-window interaction tests, a real three-country Qwen response cycle selected from six counterparts, restart/history checks, bilateral/treaty regressions and isolated offline installer verification. New HOI4 game effects and clean Windows VM acceptance were not tested in this update. Installer C2 remains unsigned.
+
+By NightPulse. Source and archives: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6
 
 Original Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3842411221

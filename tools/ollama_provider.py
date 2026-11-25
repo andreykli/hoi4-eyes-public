@@ -2531,7 +2531,7 @@ class OllamaTextProvider:
             "speaking_country", "speaking_country_tag", "other_country", "other_country_tag",
             "other_participants", "recent_dialogue", "known_game_facts", "game_observation",
             "latest_utterance_to_answer", "negotiation_points", "state_doctrine",
-            "diplomatic_memory", "strategic_plan",
+            "diplomatic_memory", "strategic_plan", "own_position_memory",
         )
         compact_context_size = len(json.dumps({
             key: prompt_context[key] for key in compact_context_keys
@@ -3348,6 +3348,31 @@ class OllamaTextProvider:
                         "an offered state only when its ID matches a listed claim; an offer is not acceptance. "
                     )
                 payload["messages"][0]["content"] += doctrine_guidance
+        if (dialogue_context.get('group_position_memory') and not payload.get('format')
+                and not has_game_action_points and not structured_analysis):
+            # General group discussion needs no clause schemas or treaty prompt.
+            # Keep the same speaker/factuality validators on the generated prose.
+            from group_negotiation import discussion_year
+            campaign_year = discussion_year(dialogue_context)
+            group_context = {key:prompt_context[key] for key in (
+                'speaking_country','other_country','other_participants','recent_dialogue',
+                'latest_utterance_to_answer','known_game_facts','own_position_memory',
+            ) if prompt_context.get(key)}
+            payload['messages'] = [
+                {'role':'system','content':(
+                    f"You are {prompt_context.get('speaking_country')}'s delegate in campaign year {campaign_year}. "
+                    f"Reply in {language_name(language)} from that year's perspective. "
+                    "This is a shared HOI4 diplomatic discussion. Answer the latest speaker directly in "
+                    "one or two complete sentences, at most 35 words. State a diplomatic concern as a principle "
+                    "or ask another delegation a relevant question. Do not claim that military investment, "
+                    "mobilization, troop deployments, territorial changes or treaty commitments are happening. "
+                    "Do not introduce later institutions or events. Preserve your own prior positions; explain any "
+                    "change using new terms or evidence. Do not invent current events, claim others' consent, "
+                    "or sign or execute treaties. Use the supplied country names. Return only diplomatic "
+                    "prose, without JSON, speaker labels or a preamble." )},
+                {'role':'user','content':json.dumps(group_context,ensure_ascii=False,separators=(',',':'))},
+            ]
+            payload['options'] = {'temperature':.2,'num_predict':96,'num_ctx':2048}
         previous_replies = [
             item.get("text", "") for item in dialogue_context.get("recent_messages", [])
             if isinstance(item, dict)
@@ -3366,6 +3391,7 @@ class OllamaTextProvider:
         if dialogue_context.get("new_negotiation_input") is True:
             previous_replies = []
         approved_context = {
+            "group_discussion": bool(dialogue_context.get("group_position_memory")),
             "reply_seed": template,
             "expected_decision": decision,
             "strategic_plan": {
@@ -5591,6 +5617,7 @@ class OllamaTextProvider:
                 for tag, name in participants.items() if tag not in {speaking_tag, other_tag}
             ],
             "recent_dialogue": transcript,
+            "own_position_memory": compact_prompt_value(context.get('group_position_memory', {}), 900, 20),
             "known_game_facts": compact_prompt_value(
                 context.get("known_game_context", {}), 80, 16 if verified_observation_context else 3,
             ),
@@ -6002,6 +6029,21 @@ class OllamaTextProvider:
             content = content.strip()
             if not content:
                 return self._fallback("empty_response")
+            if ((approved_context or {}).get('group_discussion') and not payload.get('format')
+                    and content.lstrip().startswith(('{','```'))):
+                try:
+                    envelope = json.loads(re.sub(r'^```(?:json)?\s*|\s*```$', '', content, flags=re.I))
+                except (ValueError,TypeError):
+                    return self._fallback('unexpected_json_reply')
+                if (not isinstance(envelope,dict) or not set(envelope) <= {'text','reply','index'}
+                        or not isinstance(envelope.get('text',envelope.get('reply')),str)):
+                    return self._fallback('unexpected_json_reply')
+                content = envelope.get('text',envelope.get('reply')).strip()
+                if not content:return self._fallback('empty_response')
+            if (approved_context or {}).get('group_discussion'):
+                from group_negotiation import unsupported_institution
+                if unsupported_institution(content,dialogue_context or {}):
+                    return self._fallback('unsupported_group_institution')
             # Retain only model-authored response text for a later retry
             # diagnostic. This is never fed into agreement parsing or stance
             # validation after the provider rejects the response.

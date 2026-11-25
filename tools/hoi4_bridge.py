@@ -76,7 +76,7 @@ def compute_bridge_source_revision() -> str:
     try:
         root = Path(__file__).resolve().parent
         payload = b''.join((root / name).read_bytes() for name in (
-            'hoi4_bridge.py', 'ai_provider.py', 'autonomy_game_transport.py', 'world_snapshot.py', 'cabinet_roster.py', 'native_recognition.py', 'world_freshness.py', 'v6_autonomy.py', 'treaty_monitor.py', 'treaty_lifecycle.py', 'execution_markers.py', 'window_session_policy.py', 'bridge_instance.py', 'stack_readiness.py', 'hub_control.py', 'overlay_control.py'))
+            'hoi4_bridge.py', 'ai_provider.py', 'autonomy_game_transport.py', 'world_snapshot.py', 'cabinet_roster.py', 'native_recognition.py', 'world_freshness.py', 'v6_autonomy.py', 'treaty_monitor.py', 'treaty_lifecycle.py', 'execution_markers.py', 'window_session_policy.py', 'bridge_instance.py', 'stack_readiness.py', 'hub_control.py', 'overlay_control.py', 'chat_widgets.py', 'group_negotiation.py'))
     except OSError:
         return "unavailable"
     return hashlib.sha256(payload).hexdigest()[:16]
@@ -2014,7 +2014,9 @@ class Hoi4LogBridge:
                 "country": request["receiver"], "request_id": request["request_id"],
                 "game_context": stored, "observation_persisted": False}
 
-    def send_chat_message(self, chat_id: str, message: str) -> Dict[str, Any]:
+    supports_chat_progress = True
+
+    def send_chat_message(self, chat_id: str, message: str, on_progress=None) -> Dict[str, Any]:
         """Use the persistent chat's request sequence and existing idempotent endpoints."""
         chat = self.provider.get_chat(chat_id)
         if chat.get("error"):
@@ -2032,7 +2034,7 @@ class Hoi4LogBridge:
         chat = self.provider.get_chat(chat_id)
         if chat.get("error"):
             return chat
-        for _ in range(5):
+        for _ in range(6):
             if chat.get("state") != "awaiting_ai":
                 return chat
             advance_id = chat.get("next_request_id")
@@ -2044,6 +2046,7 @@ class Hoi4LogBridge:
             if advanced.get("error"):
                 return advanced
             chat = advanced.get("chat")
+            if isinstance(chat,dict) and callable(on_progress):on_progress(chat)
             if not isinstance(chat, dict):
                 return {"error": "schema", "detail": "Chat advance response is invalid."}
         if chat.get("state") == "awaiting_ai":
@@ -3002,6 +3005,8 @@ class ResponseOverlay:
             padx=12, pady=10, relief="flat",
         )
         self.message.pack(fill="both", expand=True, padx=16, pady=(8, 15))
+        from chat_widgets import GroupParticipants
+        self.group_panel = GroupParticipants(self.root,self.apply_group_participants,self._refresh_chat_controls,self.saved_group_negotiations)
         self.chat_history_frame = tk.Frame(self.root, bg="#1b241c")
         chat_tools=tk.Frame(self.chat_history_frame,bg="#1b241c")
         chat_tools.pack(fill='x')
@@ -3193,11 +3198,14 @@ class ResponseOverlay:
             if not self._chat_busy:
                 self.retry_row.pack(side='bottom',fill="x", padx=16, pady=(0, 8))
             self.chat_history_frame.pack(fill="both", expand=True, padx=16, pady=(5, 8))
+            if getattr(self,'group_panel',None):
+                self.group_panel.pack(fill='x',padx=16,pady=4,before=self.chat_history_frame)
             self.root.minsize(680, 460)
             if not getattr(self,'_chat_layout_active',False):self.root.geometry("800x640+40+40")
             self._chat_layout_active=True
         else:
             self._chat_layout_active=False
+            if getattr(self,'group_panel',None):self.group_panel.pack_forget()
             self.chat_history_frame.pack_forget()
             self.retry_row.pack_forget()
             self.chat_input_row.pack_forget()
@@ -3332,6 +3340,8 @@ class ResponseOverlay:
         follow,position=scroll_state(self.chat_history,self.chat_id==chat.get('chat_id'))
         self.active_chat = chat
         self.chat_id = chat.get("chat_id")
+        if getattr(self,'group_panel',None):
+            self.group_panel.set_chat(chat,chat.get('state')=='awaiting_player' and not self._chat_busy and chat.get('chat_mode')!='ai_to_ai')
         self._chat_open = True
         self.title.config(text=tr('Diplomatic negotiations'))
         player_country = str(chat.get("player_country") or "?")
@@ -3372,7 +3382,8 @@ class ResponseOverlay:
             self._start_chat_worker('read', lambda: bridge.provider.mark_chat_read(chat['chat_id'], ids),
                                     chat_id=chat['chat_id'])
         self._set_chat_mode(True)
-        ready = chat.get("state") == "awaiting_player" and not self._chat_busy
+        ready = (chat.get("state") == "awaiting_player" and not self._chat_busy
+                 and not (getattr(self,"group_panel",None) and self.group_panel.dirty))
         self.chat_input.config(state="normal" if ready else "disabled")
         self.send_button.config(state="normal" if ready else "disabled")
         pending_draft = getattr(self, "_pending_chat_draft", None)
@@ -3533,7 +3544,10 @@ class ResponseOverlay:
 
     def _refresh_chat_controls(self):
         chat = self.active_chat or {}
-        ready = chat.get("state") == "awaiting_player" and not self._chat_busy
+        if getattr(self,'group_panel',None):
+            self.group_panel.set_enabled(chat.get('state')=='awaiting_player' and not self._chat_busy and chat.get('chat_mode')!='ai_to_ai')
+        ready = (chat.get("state") == "awaiting_player" and not self._chat_busy
+                 and not (getattr(self,"group_panel",None) and self.group_panel.dirty))
         self.chat_input.config(state="normal" if ready else "disabled")
         self.send_button.config(state="normal" if ready else "disabled")
         last_response = next((item for item in reversed(chat.get("messages", []))
@@ -3624,7 +3638,36 @@ class ResponseOverlay:
         choice.bind('<<ComboboxSelected>>', selection_changed)
         selection_changed()
 
+    def saved_group_negotiations(self):
+        if self._chat_busy or not self._bridge or not self.active_chat:return
+        chat_id=self.chat_id;generation=self._chat_view_generation
+        campaign=self.active_chat['campaign_id'];provider=self._bridge.provider
+        self._chat_busy=True;self._chat_busy_chat_id=chat_id;self._refresh_chat_controls()
+        self._start_chat_worker('groups',lambda:provider.list_chats(campaign),generation=generation,chat_id=chat_id)
+
+    def switch_group_negotiation(self, target_id):
+        if self._chat_busy or not self._bridge or not self.active_chat:return
+        current=dict(self.active_chat);chat_id=self.chat_id;provider=self._bridge.provider
+        def load():
+            result=provider.get_chat(target_id)
+            if result.get('error'):return result
+            if (result.get('campaign_id')!=current.get('campaign_id') or result.get('player_country')!=current.get('player_country')
+                    or result.get('save_scope_id')!=current.get('save_scope_id') or result.get('chat_mode')=='ai_to_ai'):
+                return {'error':'conflict','detail':'Choose a negotiation from the current campaign and save.'}
+            return result
+        self._chat_busy=True;self._chat_busy_chat_id=chat_id;self._refresh_chat_controls()
+        self._start_chat_worker('group',load,generation=self._chat_view_generation,chat_id=chat_id)
+
+    def apply_group_participants(self, countries, separate=False):
+        if self._chat_busy or not self.chat_id or not self._bridge:return
+        chat_id=self.chat_id;generation=self._chat_view_generation;provider=self._bridge.provider
+        self._chat_busy=True;self._chat_busy_chat_id=chat_id
+        self._refresh_chat_controls()
+        self._start_chat_worker('group',lambda:provider._chat_api('POST','/chats/'+chat_id+'/group',
+            {'ai_countries':countries,'new_group':separate}),generation=generation,chat_id=chat_id)
+
     def send_chat_message(self):
+        if getattr(self,'group_panel',None) and self.group_panel.dirty:return
         if self._chat_busy or not self.chat_id or not self._bridge:
             return
         chat_id = self.chat_id
@@ -3643,8 +3686,13 @@ class ResponseOverlay:
         self.summary.config(
             text=self._chat_pair_label(self.active_chat or {})+'  ·  '+tr('Waiting for AI reply')+'  0:00'
         )
+        def send():
+            if getattr(bridge,'supports_chat_progress',False):
+                return bridge.send_chat_message(chat_id,text,on_progress=lambda value:self._chat_results.put(
+                    ('progress',generation,chat_id,value,None,None)))
+            return bridge.send_chat_message(chat_id,text)
         self._start_chat_worker(
-            "send", lambda: bridge.send_chat_message(chat_id, text),
+            "send", send,
             generation=generation, chat_id=chat_id,
         )
 
@@ -3783,6 +3831,39 @@ class ResponseOverlay:
                     saved_message_count=len(result.get("messages", [])),
                     overlay_visible=self._window_visible,
                 )
+            elif operation == 'groups':
+                if chat_id==self._chat_busy_chat_id:self._chat_busy=False;self._chat_busy_chat_id=None
+                if (self._chat_open and chat_id==self.chat_id and generation==self._chat_view_generation):
+                    if error or (isinstance(result,dict) and result.get('error')):
+                        self.summary.config(text=str(error or result.get('detail',result.get('error'))))
+                    else:
+                        from chat_presentation import decorate
+                        current=self.active_chat or {};menu=self.tk.Menu(self.root,tearoff=0)
+                        rows=[row for row in result.get('chats',[]) if row.get('campaign_id')==current.get('campaign_id')
+                            and row.get('player_country')==current.get('player_country')
+                            and row.get('save_scope_id')==current.get('save_scope_id') and row.get('chat_mode')!='ai_to_ai']
+                        for row in sorted(rows,key=lambda row:row.get('updated_at',''),reverse=True)[:30]:
+                            title=decorate(row,'en')['display_title']
+                            if len(title)>90:title=title[:87]+'…'
+                            menu.add_command(label=title,command=lambda identifier=row['chat_id']:self.switch_group_negotiation(identifier))
+                        if not rows:menu.add_command(label=tr('No diplomatic chats yet. Choose a country in HOI4.'),state='disabled')
+                        try:menu.tk_popup(self.root.winfo_rootx()+20,self.root.winfo_rooty()+100)
+                        finally:menu.grab_release()
+                self._refresh_chat_controls()
+            elif operation == 'group':
+                if chat_id == self._chat_busy_chat_id:
+                    self._chat_busy=False;self._chat_busy_chat_id=None
+                current=(self._chat_open and chat_id==self.chat_id and generation==self._chat_view_generation)
+                if current:
+                    if error or (isinstance(result,dict) and result.get('error')):
+                        self.summary.config(text=str(error or result.get('detail',result.get('error'))))
+                    else:
+                        self._render_chat(result)
+                self._refresh_chat_controls()
+            elif operation == 'progress':
+                if (self._chat_open and chat_id==self.chat_id and generation==self._chat_view_generation
+                        and chat_id==self._chat_busy_chat_id and isinstance(result,dict)):
+                    self._render_chat(result)
             elif operation == "send":
                 if chat_id == self._chat_busy_chat_id:
                     self._chat_busy = False

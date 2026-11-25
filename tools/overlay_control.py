@@ -20,7 +20,7 @@ def handle(overlay,bridge,body):
  def get_existing():
   chat=bridge.provider.get_chat(body['chat_id'])
   if (chat.get('campaign_id')!=selection['campaign_id'] or chat.get('player_country')!=selection['player_country']
-      or selection.get('selected_country') not in chat.get('participants',[])):
+      or (not chat.get('group_negotiation') and selection.get('selected_country') not in chat.get('participants',[]))):
    raise RuntimeError(tr('The chat belongs to a different game selection.', 'Чат не соответствует текущему игровому выбору.'))
   return chat
  overlay._chat_view_generation+=1;overlay._bridge=bridge;overlay._chat_open=True

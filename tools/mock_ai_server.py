@@ -222,6 +222,50 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
         return jsonify({'mechanics':[status(a['action_id']) for a in diplomacy_engine.action_registry.all()],
                         'game_effect_applied':False})
 
+    @app.get('/diplomacy/countries')
+    def diplomatic_countries():
+        from group_negotiation import country_options
+        import re
+        countries = country_options()
+        return jsonify(countries=[{'tag':tag,'name':name} for tag,name in
+            sorted(countries.items(),key=lambda row:row[1]) if re.fullmatch(r'[A-Z0-9]{3}',tag)])
+
+    @app.post('/chats/<chat_id>/group')
+    def configure_group(chat_id):
+        data = request.get_json(silent=True)
+        if not isinstance(data,dict):return jsonify(error='request'),400
+        def operation():
+            source = diplomacy_engine._chat(chat_id)
+            diplomacy_engine._require_current_save_scope(source)
+            if source.get('chat_mode') == 'ai_to_ai' or source['state'] != 'awaiting_player':
+                raise ChatConflict('Finish the current turn before changing participants.')
+            tags = data.get('ai_countries')
+            if (not isinstance(tags,list) or not 1 <= len(tags) <= 6
+                    or any(not isinstance(tag,str) for tag in tags)
+                    or len(set(tags)) != len(tags) or source['player_country'] in tags):
+                raise ValueError('Choose one to six different countries, excluding the player.')
+            from group_negotiation import country_options
+            known = country_options()
+            if any(tag not in known or len(tag)!=3 for tag in tags):
+                raise ValueError('Choose countries from the country list.')
+            if source.get('group_negotiation') and not data.get('new_group'):
+                if source.get('agreements') or source.get('territory_proposals'):
+                    raise ChatConflict('This negotiation has treaty drafts. Create a new group to keep their participants unchanged.')
+                current = set(source['participants'])-{source['player_country']}
+                diplomacy_engine.update_chat_participants(chat_id,add=sorted(set(tags)-current),remove=sorted(current-set(tags)))
+                return diplomacy_engine.get_chat(chat_id)
+            for chat in diplomacy_engine.chats.values():
+                if (not data.get('new_group') and chat.get('group_negotiation') and chat['campaign_id']==source['campaign_id']
+                        and chat['player_country']==source['player_country'] and chat['state']!='closed'
+                        and chat.get('save_scope_id')==source.get('save_scope_id')
+                        and set(chat['participants'])=={source['player_country'],*tags}):
+                    return diplomacy_engine.get_chat(chat['chat_id'])
+            result=diplomacy_engine.create_chat(source['campaign_id'],source['player_country'],tags,
+                response_language=source.get('response_language'),interface_language=source.get('interface_language'))
+            diplomacy_engine.chats[result['chat_id']]['group_negotiation']=True
+            return diplomacy_engine.get_chat(result['chat_id'])
+        return chat_result(operation)
+
     @app.route('/chats', methods=['POST'])
     def create_chat():
         data = request.get_json(silent=True)

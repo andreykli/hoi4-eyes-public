@@ -130,6 +130,10 @@ async function refreshChats() {
         statusText(result.error||labels.ready);
       };
       card.append(name,save,meta,details,button);
+      if(chat.chat_mode!=='ai_to_ai') {
+        const participants=document.createElement('button');participants.textContent=labels.group.title;
+        participants.onclick=()=>openGroup(chat);card.append(participants);
+      }
       if(chat.participants.length===2&&chat.chat_mode!=='ai_to_ai') {
         const actionButton=document.createElement('button');
         actionButton.textContent=labels.treaty_actions.text.button;
@@ -285,3 +289,52 @@ $('save-associate').addEventListener('click',async()=>{
  if(result.error)return statusText(result.error);
  lastChats=null;await refreshChats();
 });
+
+let groupSource=null, groupCountries=[], groupMembers=new Set(), groupPending=false;
+function renderGroupCountries() {
+  const search=$('group-search').value.trim().toLocaleLowerCase();
+  $('group-members').replaceChildren();
+  for(const tag of groupMembers) {
+    const chip=document.createElement('button');chip.type='button';
+    const name=groupCountries.find(row=>row.tag===tag)?.name||tag;
+    chip.textContent=name+' ×';chip.setAttribute('aria-label',labels.group.remove+': '+name);
+    chip.disabled=groupPending;chip.onclick=()=>{groupMembers.delete(tag);renderGroupCountries();};
+    $('group-members').append(chip);
+  }
+  $('group-options').replaceChildren();
+  for(const row of groupCountries.filter(row=>row.tag!==groupSource?.player_country&&row.name.toLocaleLowerCase().includes(search)).sort((a,b)=>Number(groupMembers.has(b.tag))-Number(groupMembers.has(a.tag))||a.name.localeCompare(b.name))) {
+    const label=document.createElement('label'),input=document.createElement('input');
+    input.type='checkbox';input.checked=groupMembers.has(row.tag);
+    input.disabled=groupPending||(!input.checked&&groupMembers.size>=6);
+    input.onchange=()=>{if(input.checked)groupMembers.add(row.tag);else groupMembers.delete(row.tag);renderGroupCountries();};
+    label.append(input,document.createTextNode(row.name));$('group-options').append(label);
+  }
+  $('group-apply').disabled=groupPending||groupMembers.size<1||groupMembers.size>6;
+  $('group-status').textContent=labels.group.count+': '+groupMembers.size+' / 6';
+}
+async function openGroup(chat) {
+  groupSource=chat;groupMembers=new Set(chat.participants.filter(tag=>tag!==chat.player_country));
+  $('group-new').checked=!chat.group_negotiation;$('group-search').value='';
+  $('group-source').textContent=(chat.country_labels?.[chat.player_country]||chat.player_country)+' · '+chat.save_label;
+  $('group-dialog').showModal();groupPending=true;renderGroupCountries();
+  try {
+    const response=await fetch('/diplomacy/countries');if(!response.ok)throw Error();
+    groupCountries=(await response.json()).countries;
+    $('group-source').textContent=(groupCountries.find(row=>row.tag===chat.player_country)?.name||chat.player_country)+' · '+chat.save_label;
+  } catch {$('group-status').textContent=labels.group.error;}
+  finally{groupPending=false;renderGroupCountries();}
+}
+$('group-search').oninput=renderGroupCountries;
+$('group-cancel').onclick=()=>$('group-dialog').close();
+$('group-dialog').addEventListener('cancel',event=>{if(groupPending)event.preventDefault();});
+$('group-apply').onclick=async()=>{
+  if(groupPending||!groupSource)return;
+  groupPending=true;$('group-cancel').disabled=true;renderGroupCountries();
+  try {
+    const response=await fetch('/chats/'+groupSource.chat_id+'/group',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ai_countries:[...groupMembers],new_group:$('group-new').checked})});
+    const chat=await response.json();if(!response.ok)throw Error(chat.detail||labels.group.error);
+    $('group-dialog').close();lastChats=null;await refreshChats();
+    if(bridge()){const result=await bridge().open_chat(chat.chat_id);statusText(result.error||labels.ready);}
+  } catch(error){$('group-status').textContent=error.message||labels.group.error;}
+  finally{groupPending=false;$('group-cancel').disabled=false;$('group-apply').disabled=false;}
+};

@@ -6,6 +6,8 @@ Downloads: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-bet
 
 ## English description
 
+The existing diplomacy window opened from HOI4 now supports 1–6 counterpart countries, saved groups and sequential Qwen replies. The player speaks first; treaties still require confirmation.
+
 Beta.2: mandatory independent treaty decisions, resistance to prompt manipulation,
 faster typed proposals and 540 original EN/RU/FR wording entries. Qwen selects wording;
 it cannot turn refusal into acceptance. Recognition and public UI labels are fixed.
@@ -36,6 +38,8 @@ First use: a disposable campaign. Keep backups of important saves.
 
 ## Русское описание
 
+В существующем окне дипломатии из HOI4 теперь можно выбрать 1–6 стран, открыть сохранённые переговоры и читать последовательные ответы Qwen. Игрок пишет первым; договоры требуют подтверждения.
+
 Beta.2: независимая проверка решений, защита от манипуляций, ускоренный разбор
 и 540 собственных записей EN/RU/FR. Исправлены интерфейс и признание.
 Полная игровая приёмка ещё не завершена; QA-исполнители не распространяются.
@@ -59,6 +63,8 @@ Workshop-копию нельзя включать одновременно.
 Мультиплеер, Ironman/достижения и все сочетания DLC не сертифицированы.
 
 ## Description française
+
+La fenêtre diplomatique ouverte depuis HOI4 permet désormais de choisir 1 à 6 pays, de reprendre les négociations et de lire les réponses successives de Qwen. Le joueur parle en premier ; les traités exigent confirmation.
 
 Beta.2 : contrôle indépendant, protection contre la manipulation, analyse accélérée
 et 540 entrées originales EN/RU/FR. Reconnaissance et interface corrigées.

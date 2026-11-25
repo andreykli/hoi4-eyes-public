@@ -2,6 +2,8 @@
 [b]NightPulse | 0.9.0-beta.6 | HOI4 1.20.0.0[/b]
 [url=https://github.com/andreykli/hoi4-eyes-public]GitHub & companion application[/url]
 
+La fenêtre diplomatique ouverte depuis HOI4 permet désormais de choisir 1 à 6 pays, de reprendre les négociations et de lire les réponses successives de Qwen. Le joueur parle en premier ; les traités exigent confirmation.
+
 Beta.2 : contrôle indépendant, protection contre la manipulation, analyse accélérée
 et 540 entrées originales EN/RU/FR. Reconnaissance et interface corrigées.
 Recette complète encore inachevée ; outils QA internes exclus.

@@ -1,4 +1,13 @@
 {
+  "Saved negotiations":{"en": "Saved negotiations", "ru": "Сохранённые переговоры", "fr": "Négociations enregistrées"},
+  "Add country":{"en": "Add country", "ru": "Добавить страну", "fr": "Ajouter un pays"},
+  "Group negotiation":{"en": "Group negotiation", "ru": "Групповые переговоры", "fr": "Négociation de groupe"},
+  "Choose 1–6 countries. You send the first message; up to 3 countries reply in sequence.":{"en": "Choose 1–6 countries. You send the first message; up to 3 countries reply in sequence.", "ru": "Выберите 1–6 стран. Первое сообщение отправляете вы; затем последовательно отвечают до 3 стран.", "fr": "Choisissez 1 à 6 pays. Vous parlez en premier ; jusqu’à 3 pays répondent successivement."},
+  "Search countries":{"en": "Search countries", "ru": "Найти страну", "fr": "Rechercher un pays"},
+  "Start a separate negotiation":{"en": "Start a separate negotiation", "ru": "Начать отдельные переговоры", "fr": "Commencer une négociation séparée"},
+  "Apply participants":{"en": "Apply participants", "ru": "Применить состав участников", "fr": "Appliquer les participants"},
+  "Remove participant":{"en": "Remove participant", "ru": "Удалить участника", "fr": "Retirer un participant"},
+  "Countries selected":{"en": "Countries selected", "ru": "Выбрано стран", "fr": "Pays sélectionnés"},
   "Scan incomplete; select a narrower folder":{"en":"Scan incomplete; select a narrower folder","ru":"Поиск неполный — выберите более узкую папку","fr":"Recherche incomplète : choisissez un dossier plus précis"},
   "Game saves":{"en": "Game saves", "ru": "Игровые сохранения", "fr": "Sauvegardes de jeu"},
   "All histories":{"en": "All histories", "ru": "Все переписки", "fr": "Tous les historiques"},

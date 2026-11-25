@@ -12,6 +12,7 @@
  #workspaces iframe[hidden]{display:none}#service-status{margin:2px 12px;font-size:12px}
  .save-browser{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:8px 12px;border-bottom:1px solid #59603f}.save-browser select{max-width:55vw;min-width:180px}.save-browser[hidden]{display:none}.save-browser small{flex-basis:100%;color:#aab4a2;font-size:11px;letter-spacing:0;text-transform:none}.save-reference{color:#d8c38e;margin:6px 0;font-size:12px;overflow-wrap:anywhere}
  #chat-list{display:grid;gap:8px;margin:16px;min-height:0;overflow:auto}
+ #group-dialog{width:min(720px,92vw);max-height:90vh;overflow:auto}#group-options{max-height:35vh;overflow:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px;margin:12px 0}#group-options input[type=checkbox],#group-new{width:auto;flex:0 0 auto;margin:0 6px 0 0}#group-options label{display:flex;justify-content:flex-start;gap:8px;align-items:center;padding:6px;text-transform:none;letter-spacing:0}#group-members{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}#group-members button{padding:6px 10px}#group-search{width:100%;box-sizing:border-box}#group-dialog::backdrop{background:#0009}
  #chat-list article{margin:0}#chat-list p{white-space:pre-wrap}
 </style>
 <script src="/static/desktop.js" defer></script></head>
@@ -50,6 +51,18 @@
  <span id="save-state" role="status"></span>
  <small>{{ t('Save selection labels history; Bridge still verifies the live campaign.') }}</small>
 </section>
+<dialog id="group-dialog" aria-labelledby="group-title">
+ <h2 id="group-title">{{ t('Group negotiation') }}</h2>
+ <p id="group-source"></p>
+ <p>{{ t('Choose 1–6 countries. You send the first message; up to 3 countries reply in sequence.') }}</p>
+ <div id="group-members" aria-live="polite"></div>
+ <input id="group-search" type="search" placeholder="{{ t('Search countries') }}" aria-label="{{ t('Search countries') }}">
+ <div id="group-options"></div>
+ <label><input id="group-new" type="checkbox">{{ t('Start a separate negotiation') }}</label>
+ <p id="group-status" role="status"></p>
+ <button id="group-apply">{{ t('Apply participants') }}</button>
+ <button id="group-cancel">{{ t('Cancel') }}</button>
+</dialog>
 <section id="chat-list" hidden aria-live="polite"></section>
 <div id="workspaces" data-title="{{ t('Selected workspace') }}" hidden></div>
 <dialog id="treaty-actions">
@@ -88,6 +101,7 @@
 
 <script type="application/json" id="desktop-labels">{{ {
  'saves':{'all':t('All histories'),'unlinked':t('Unlinked histories'),'link':t('Use selected save'),'confirm':t('Associate this history with the selected save? A different save starts a separate conversation; existing messages and treaties are preserved.'),'none':t('No saves found'),'incomplete':t('Scan incomplete; select a narrower folder'),'errors':{'unknown_format':t('Unknown save format'),'binary_format':t('Binary save: metadata unavailable'),'unsupported_encoding_or_binary':t('Unsupported encoding or binary save'),'access_denied':t('Access denied'),'damaged_archive':t('Damaged save archive'),'file_unavailable':t('Save unavailable'),'file_changed_retry':t('Save is being written; refresh later')}},
+ 'group':{'title':t('Group negotiation'),'apply':t('Apply participants'),'remove':t('Remove participant'),'count':t('Countries selected'),'error':t('The request could not be completed.')},
  'open':t('Open selected chat in Bridge'),'none':t('No diplomatic chats yet. Choose a country in HOI4.'),
  'ready':t('Ready'),'not_ready':t('Not ready'),'error':t('The request could not be completed.'),
  'unknown':t('Unknown'),'messages':t('Messages'),'unread':t('Unread'),

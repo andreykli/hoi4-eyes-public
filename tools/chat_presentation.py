@@ -86,16 +86,21 @@ def names(locale):
 def decorate(chat, locale=None):
     locale = locale or chat.get('interface_language', 'en')
     locale = locale if locale in {'en', 'ru', 'fr'} else 'en'
-    labels = names(locale)
+    if chat.get('group_negotiation') or len(chat.get('participants',[]))>2:
+        from group_negotiation import english_names
+        labels = english_names()
+    else:
+        labels = names(locale)
     countries = {}
-    for tag in chat.get('participants', []):
+    for tag in dict.fromkeys([*chat.get('participants', []), *[m.get('speaker') for m in chat.get('messages',[]) if m.get('speaker')]]):
         observations=chat.get('game_context_observations',{}).get('by_country',{}).get(tag,[])
         context=observations[-1].get('context',{}) if observations else {}
         ideology=context.get('ideology') or context.get('ideology_group') or context.get('ruling_ideology')
         key=tag+'_'+str(ideology) if ideology in {'democratic','fascism','communism','neutrality'} else tag
+        if chat.get('group_negotiation') or len(chat.get('participants',[]))>2:key=tag
         countries[tag]=labels.get(key,labels.get(tag,tag))
     joining = {'en': ' and ', 'ru': ' и ', 'fr': ' et '}[locale]
-    values=list(countries.values())
+    values=[countries[tag] for tag in chat.get('participants',[])]
     participants = ', '.join(values[:-1])+joining+values[-1] if len(values)>2 else joining.join(values)
     title = {'en': participants+' Conversation', 'ru': 'Переговоры: '+participants,
              'fr': 'Conversation : '+participants}[locale]

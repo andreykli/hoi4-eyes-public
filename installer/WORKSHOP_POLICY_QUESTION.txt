@@ -1,0 +1,17 @@
+Draft for the owner to submit through official Paradox/Steam support. Not sent.
+
+For Hearts of Iron IV Workshop item 3842411221 (HOI4-EYES), is it permitted
+to distribute our own Windows x64 companion-app setup executable, its Python
+source and pinned third-party Python wheels in the Workshop item folder?
+
+The executable would run only when the user explicitly opens it. It would
+verify a built-in SHA-256 manifest, request separate permission for components,
+and obtain missing Python/Ollama/WebView2 from official vendor sources and an
+Apache-2.0 Qwen model via Ollama. Vendor installers remain visible. No game
+memory modification, process injection, security-policy changes, automatic
+game launch or silent installation is involved. Personal data stays local.
+
+Please identify the applicable HOI4 Workshop rules and any restrictions on
+executables, native dependency wheels, external downloads and publisher code
+signatures. Is a publicly trusted Authenticode signature required? The current
+unpublished candidate is unsigned and will not be uploaded without clearance.
