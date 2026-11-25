@@ -1,4 +1,4 @@
-HOI4-EYES 0.9.0-beta.2 — Installer C candidate 2 / NightPulse / NOT PUBLISHED
+HOI4-EYES 0.9.0-beta.5 — Experimental Installer C2 / NightPulse / UNSIGNED PUBLIC BETA
 
 EN: Run "Install HOI4-EYES.exe" yourself. No Python is required to open the
 bootstrap. Downloads and vendor installers need your consent. Keep only the

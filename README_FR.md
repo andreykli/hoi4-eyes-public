@@ -1,4 +1,4 @@
-Experimental beta.4 C2: unsigned installer; clean Windows acceptance incomplete.
+Experimental beta.5 C2: unsigned installer; clean Windows acceptance incomplete.
 
 # HOI4-EYES Beta
 
@@ -8,12 +8,12 @@ Auteur : **NightPulse** · [Projet original](https://github.com/andreykli/hoi4-e
 
 [English](README.md) · [Русский](README_RU.md)
 
-**0.9.0-beta.2 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
+**0.9.0-beta.5 : beta publique, pas une version 1.0 achevée.** Cible : Windows,
 HOI4 **1.20.0.0**, Python 3.10+, Ollama `qwen3:4b-instruct`.
 La fenêtre utilise PyWebView/WebView2 et le serveur Flask existant.
 Aucune API payante nécessaire ; par défaut, le modèle fonctionne localement.
 
-**Mise à jour beta.2 : recette en jeu du mod principal encore incomplète.** Le contrôle indépendant des traités est obligatoire pour Windows, Flask et le moteur direct. Les données manquantes reportent la signature. Le texte du joueur et l’accord du modèle n’autorisent pas l’exécution. Les signatures anciennes sont conservées sans créer de nouveaux accords. Le profil moteur 1.19.5 reste disponible, sans nouveau test en jeu.
+**Mise à jour beta.5 : recette en jeu du mod principal encore incomplète.** Le contrôle indépendant des traités est obligatoire pour Windows, Flask et le moteur direct. Les données manquantes reportent la signature. Le texte du joueur et l’accord du modèle n’autorisent pas l’exécution. Les signatures anciennes sont conservées sans créer de nouveaux accords. Le profil moteur 1.19.5 reste disponible, sans nouveau test en jeu.
 
 ## Installation
 

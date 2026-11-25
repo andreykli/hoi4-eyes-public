@@ -11,7 +11,7 @@ import subprocess
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '0.9.0-beta.4'
+VERSION = '0.9.0-beta.5'
 MOD_NAME = f'HOI4-EYES {VERSION}'
 PRIVATE_DEVELOPER_FILES = frozenset({
     'tools/developer_desktop.py', 'tools/desktop_acceptance.py',

@@ -382,3 +382,31 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+def parse_mod_descriptor(text: str) -> Block:
+    """Read launcher scalar fields; tag/dependency arrays are valid PDX lists.
+
+    Keep the stricter GUI parser unchanged. Duplicate identity fields and
+    malformed braces fail closed rather than choosing a convenient value.
+    """
+    tokens=[m.group(0) for m in TOKEN_RE.finditer(text)
+            if not m.group(0).isspace() and not m.group(0).startswith('#')]
+    result=Block(); index=0
+    while index < len(tokens):
+        key=tokens[index].strip('"'); index+=1
+        if index>=len(tokens) or tokens[index]!='=':raise PdxParseError('Invalid descriptor assignment')
+        index+=1
+        if index>=len(tokens):raise PdxParseError('Missing descriptor value')
+        value=tokens[index]; index+=1
+        if value=='{':
+            depth=1
+            while index<len(tokens) and depth:
+                depth += (tokens[index]=='{')-(tokens[index]=='}'); index+=1
+            if depth:raise PdxParseError('Unclosed descriptor list')
+            value=Block()
+        elif value in {'}','='}:raise PdxParseError('Invalid descriptor value')
+        if key in {'name','path','remote_file_id','version','supported_version'}:
+            if result.values(key) or isinstance(value,Block):raise PdxParseError('Invalid or duplicate descriptor identity')
+        result.entries.append((key,value))
+    return result

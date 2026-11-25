@@ -1,4 +1,5 @@
 {
+  "Country":{"en":"Country","ru":"Страна","fr":"Pays"},
   "Negotiation history":{"en":"Negotiation history","ru":"История переговоров","fr":"Historique des négociations"},
   "Latest messages":{"en":"Latest messages","ru":"К последним сообщениям","fr":"Derniers messages"},
   "Enter: send · Shift+Enter: new line":{"en":"Enter: send · Shift+Enter: new line","ru":"Enter: отправить · Shift+Enter: новая строка","fr":"Entrée : envoyer · Maj+Entrée : nouvelle ligne"},

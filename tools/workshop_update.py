@@ -49,7 +49,7 @@ def startup_check(app, documents):
         for record in (app.parent.parent/'transactions').glob('*/transaction.json'):
             if json.loads(record.read_text(encoding='utf-8')).get('status') in {'started','pending','needs_review'}:
                 return {'status':'interrupted_update_requires_repair','blocked':True,'updates':[]}
-    from validate_hoi4_gui import parse_pdx
+    from validate_hoi4_gui import parse_mod_descriptor as parse_pdx
     load = documents/'dlc_load.json'
     if not load.is_file():
         return {'status': 'no_playset', 'blocked': True, 'updates': []}
@@ -60,7 +60,7 @@ def startup_check(app, documents):
     seen = set()
     for descriptor in (documents/'mod').glob('*.mod'):
         data = parse_pdx(descriptor.read_text(encoding='utf-8-sig'))
-        if str(data.first('remote_file_id') or '').strip('"') == '3842411221':
+        if registered_workshop_id(descriptor,data) == '3842411221':
             path = str(data.first('path') or '').strip('"')
             if path:
                 updates.append(inspect_update(app, Path(path))); seen.add(str(Path(path).resolve()))
@@ -73,7 +73,7 @@ def startup_check(app, documents):
             continue
         data = parse_pdx(descriptor.read_text(encoding='utf-8-sig'))
         title = str(data.first('name') or '').strip('"')
-        item = str(data.first('remote_file_id') or '').strip('"')
+        item = registered_workshop_id(descriptor,data)
         if not (title.startswith('HOI4-EYES') or item == '3842411221'):
             continue
         copies.append(name)
@@ -94,3 +94,17 @@ def startup_check(app, documents):
         return {'status': 'multiple_eyes_copies', 'blocked': True, 'updates': updates}
     return {'status': 'ready' if copies else 'eyes_not_enabled',
             'blocked': not copies or any(not row['compatible'] for row in updates), 'updates': updates}
+
+
+def registered_workshop_id(descriptor, data):
+    """Paradox may omit remote_file_id from an otherwise valid ugc record."""
+    item=str(data.first('remote_file_id') or '').strip('"')
+    if item:return item
+    if Path(descriptor).name!='ugc_3842411221.mod':return ''
+    folder=Path(str(data.first('path') or '').strip('"'))
+    if not folder.is_absolute() or folder.parts[-2:]!=('394360','3842411221'):return ''
+    metadata=json.loads((folder/'PUBLICATION.json').read_text(encoding='utf-8-sig'))
+    if (metadata.get('project')!='HOI4-EYES' or metadata.get('author')!='NightPulse'
+            or metadata.get('github_url')!='https://github.com/andreykli/hoi4-eyes-public'):
+        raise ValueError('unknown_workshop_identity')
+    return '3842411221'

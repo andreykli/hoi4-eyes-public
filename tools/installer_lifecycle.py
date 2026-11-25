@@ -35,7 +35,7 @@ def identify_source(root):
 
 def discover_previous(documents, extra=(), managed_root=None):
     """Bounded discovery: registered mods, the managed root and user-selected folders."""
-    from validate_hoi4_gui import parse_pdx
+    from validate_hoi4_gui import parse_mod_descriptor as parse_pdx
     candidates = list(extra)
     registrations = []
     for descriptor in sorted((Path(documents)/'mod').glob('*.mod')):
@@ -126,19 +126,41 @@ def registration_controls(documents, profile):
     return [descriptor, Path(profile)/'mod-setup'/key/'installation.json', Path(documents)/'dlc_load.json']
 
 
-def adopt_registration(documents, profile, *, consent=False):
+def adopt_registration(documents, profile, *, consent=False, managed_root=None):
     """Adopt only an intact older public source, never an arbitrary same-name mod."""
     if not consent:
         raise PermissionError('registration_consent_required')
-    from validate_hoi4_gui import parse_pdx
+    from validate_hoi4_gui import parse_mod_descriptor as parse_pdx
     descriptor, journal, _ = registration_controls(documents, profile)
     if not descriptor.exists():
         return False
     raw = descriptor.read_bytes(); expected = digest(descriptor)
     if journal.exists():
-        if read_json(journal).get('descriptor') != expected:
+        if read_json(journal).get('descriptor') == expected:
+            return False
+        # Recover a stale journal only for the intact ACTIVE managed release.
+        # An arbitrary same-name source or changed file still requires review.
+        data=parse_pdx(raw.decode('utf-8-sig'))
+        mod=Path(str(data.first('path') or '').strip('"'))
+        if managed_root is None or not mod.is_absolute() or mod.parts[-3:] != ('prepared','unified_game_mod','ai_assistant'):
             raise ValueError('registration_changed_requires_review')
-        return False
+        release=active(managed_root)
+        if mod.parents[2].resolve()!=release.resolve():raise ValueError('registration_changed_requires_review')
+        identity=identify_source(release)
+        if (str(data.first('name')).strip('"')!='HOI4-EYES '+identity['version']
+                or str(data.first('version')).strip('"')!=identity['version']
+                or any(k not in {'name','version','path','supported_version'} for k,_ in data.entries)):
+            raise ValueError('registration_changed_requires_review')
+        from unified_mod_setup import ASSETS
+        manifest=read_json(release/'SOURCE-MANIFEST.json')['files']
+        if any('prepared/unified_game_mod/ai_assistant/'+name not in manifest for name in ASSETS):
+            raise ValueError('registration_changed_requires_review')
+        assets={name:digest(mod/name) for name in ASSETS}
+        backup=journal.with_name('before-registration-repair-'+uuid4().hex+'.json')
+        shutil.copyfile(journal,backup)
+        if descriptor.read_bytes()!=raw:raise ValueError('registration_changed_during_repair')
+        atomic(journal,{'descriptor':expected,'assets':assets,'recovered_managed_registration':True})
+        return True
     data = parse_pdx(raw.decode('utf-8-sig'))
     name = str(data.first('name') or '').strip('"')
     mod = Path(str(data.first('path') or '').strip('"'))
@@ -156,7 +178,7 @@ def select_single_mod(documents, *, consent=False):
     if not consent:
         raise PermissionError('playset_consent_required')
     from unified_mod_setup import DESCRIPTOR
-    from validate_hoi4_gui import parse_pdx
+    from validate_hoi4_gui import parse_mod_descriptor as parse_pdx
     documents = Path(documents); load = documents/'dlc_load.json'
     data = read_json(load) if load.exists() else {'enabled_mods': []}
     previous = load.read_bytes() if load.exists() else None
@@ -172,7 +194,8 @@ def select_single_mod(documents, *, consent=False):
             result.append(name); continue
         descriptor = parse_pdx(path.read_text(encoding='utf-8-sig'))
         title = str(descriptor.first('name') or '').strip('"')
-        item = str(descriptor.first('remote_file_id') or '').strip('"')
+        from workshop_update import registered_workshop_id
+        item = registered_workshop_id(path,descriptor)
         if item == '3842411221':
             continue
         if title == 'HOI4-EYES' or title.startswith('HOI4-EYES 0.'):

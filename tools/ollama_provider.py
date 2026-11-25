@@ -3877,7 +3877,8 @@ class OllamaTextProvider:
             "expression_performance": expression_performance,
             "request_id": context.get("request_id"), "elapsed_seconds": round(time.monotonic()-started, 3),
             **({"diagnostic_text": raw[:4000]} if raw and error else {})}
-        return "\n".join(selected)
+        from diplomatic_phrases import connected_reply
+        return connected_reply(selected)
 
     def generate_dialogue_with_analysis(self, intent: str, decision: str, template: str, *,
                                         dialogue_context: dict, language: str) -> dict:
@@ -4325,7 +4326,8 @@ class OllamaTextProvider:
         # Carry every participant's canonical/localized names into the reply
         # prompt and validator, not just the current bilateral pair.
         reply_context["country_tag_aliases"] = aliases
-        if explicit_offer and callable(dialogue_context.get("engine_point_policy")):
+        if (explicit_offer and len(explicit_offer["actions"]) == 3
+                and callable(dialogue_context.get("engine_point_policy"))):
             active = dialogue_context.get("active_agreement_action_participants") or {}
             editions = {(row["agreement_id"], row["agreement_version"])
                         for rows in active.values() for row in rows}

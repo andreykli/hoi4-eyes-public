@@ -150,3 +150,25 @@ def fast_path(policy):
     return (row.get('stance') in {'accept','reject'} and not row.get('term_id')
             and not any(row.get(k) for k in ('conditions','exceptions','additional_terms','unresolved_fields'))
             and row.get('action_id') in {'guarantee','non_aggression_pact','military_access','embargo','lift_embargo'})
+
+
+def connected_reply(texts):
+    """Join point replies, dropping only an identical repeated opening sentence.
+
+    Each individual point and its legal core remain stored verbatim. Distinct
+    objections and differently worded openings are never merged by similarity.
+    """
+    import re
+    rendered=[]
+    openings=set()
+    for text in texts:
+        text=str(text).strip()
+        match=re.match(r'^(.+?[.!?])\s+(.+)$',text,flags=re.S)
+        if match:
+            opening,rest=match.groups()
+            if opening in openings:
+                text=rest
+            else:
+                openings.add(opening)
+        if text:rendered.append(text)
+    return ' '.join(rendered)

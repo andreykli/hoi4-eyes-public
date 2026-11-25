@@ -1,8 +1,8 @@
 # HOI4-EYES — Local AI Diplomacy & Government
 
-Author: **NightPulse** · Version **0.9.0-beta.2** · Target **HOI4 1.20.0.0**
+Author: **NightPulse** · Version **0.9.0-beta.5** · Target **HOI4 1.20.0.0**
 Companion and original source: https://github.com/andreykli/hoi4-eyes-public
-Downloads: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.2
+Downloads: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.5
 
 ## English description
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.9.0-beta.5 — native chat and explicit treaty understanding
+
+HOI4-EYES 0.9.0-beta.5 by NightPulse
+- Compact native diplomatic chat with message timestamps, multiline input and preserved reading position.
+- Corrected explicit GER/POL treaty directions, shared country aliases, and negative reciprocal obligations.
+- Connected point replies without identical repeated openings; Russian country labels fixed.
+- Independent diplomatic approval, player confirmation and Bridge verification remain mandatory.
+- HOI4 1.20 support remains beta; full live-game acceptance is pending.
+Known limitations: Qwen can still time out and use safe engine-owned wording. Natural-language peace/faction offers, duration exclusions and embargo responses may need clarification. Ten sequential isolated trials do not mean ten successful Qwen replies or verified game effects.
+Unsigned Installer C2 requires manual launch and consent. Existing profiles and Acceptance are preserved.
+Downloads, source, licenses and SHA-256: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.5
+
 ## 0.9.0-beta.4 — compact UI and verified service states
 
 - Compact command-room styling, responsive header and unified Recognition modes.

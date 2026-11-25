@@ -40,21 +40,26 @@ def main():
         option_labels.append(label)
     window.bind('<Configure>',lambda event:[label.configure(wraplength=max(450,event.width-90)) for label in option_labels]
                 if event.widget is window else None)
-    game=tk.StringVar();row=ttk.Frame(frame);row.pack(fill='x',pady=8)
+    details=ttk.Frame(frame)
+    def toggle_details():
+        if details.winfo_manager():details.pack_forget()
+        else:details.pack(fill='x',before=out)
+    ttk.Button(frame,text=tr('advanced'),command=toggle_details).pack(anchor='w',pady=3)
+    game=tk.StringVar();row=ttk.Frame(details);row.pack(fill='x',pady=8)
     ttk.Label(row,text=tr('game')).pack(side='left');ttk.Entry(row,textvariable=game).pack(side='left',fill='x',expand=True)
     def browse():
         selected=filedialog.askdirectory(parent=window)
         if selected:game.set(selected)
     ttk.Button(row,text=tr('browse'),command=browse).pack(side='right')
     previous=tk.StringVar();legacy=tk.BooleanVar(value=False)
-    row=ttk.Frame(frame);row.pack(fill='x',pady=4)
+    row=ttk.Frame(details);row.pack(fill='x',pady=4)
     ttk.Label(row,text=tr('previous_folder')).pack(side='left')
     ttk.Entry(row,textvariable=previous).pack(side='left',fill='x',expand=True)
     def browse_previous():
         selected=filedialog.askdirectory(parent=window)
         if selected:previous.set(selected)
     ttk.Button(row,text=tr('browse'),command=browse_previous).pack(side='right')
-    ttk.Checkbutton(frame,text=tr('legacy_import'),variable=legacy).pack(anchor='w')
+    ttk.Checkbutton(details,text=tr('legacy_import'),variable=legacy).pack(anchor='w')
     out=tk.Text(frame,height=8,wrap='word',state='disabled');out.pack(fill='both',expand=True,pady=8)
     progress=ttk.Progressbar(frame,maximum=100);progress.pack(fill='x',pady=4)
     events=queue.Queue();busy=False;installed=None
@@ -157,7 +162,7 @@ def main():
             if chosen['register']:
                 emit('registering')
                 run_python(python,[str(target/'tools/installer_mod_migration.py'),'--root',str(target)],target)
-                if adopt_registration(docs,profile,consent=True):
+                if adopt_registration(docs,profile,consent=True,managed_root=args.root):
                     transaction.checkpoint([registration_controls(docs,profile)[1]])
                 command=[str(target/'tools/unified_mod_setup.py'),'install','--confirm']
                 if game_path:command+=['--game',game_path]
@@ -185,7 +190,7 @@ def main():
             if transaction is not None:
                 try:transaction.rollback()
                 except (OSError,ValueError):pass  # Conflicting control files remain untouched for review.
-            events.put(('failed',None))
+            events.put(('failed',type(error).__name__+': '+str(error)[:160]))
             # Record only an error category, never tokens, chat or installer output.
             try:
                 root=owned_root(args.root);atomic(root/'last-setup-error.json',{'kind':type(error).__name__,'reason':str(error)[:160]})
@@ -212,7 +217,7 @@ def main():
         button=ttk.Button(buttons,text=tr(label),command=lambda action=action:begin(action));button.pack(side='left',padx=4);controls.append(button)
     def launch():
         if installed is not None:os.startfile(str(args.root/'Start HOI4-EYES.bat'))
-    button=ttk.Button(buttons,text=tr('launch'),command=launch);button.pack(side='right');controls.append(button)
+    launch_button=ttk.Button(buttons,text=tr('launch'),command=launch,state='normal' if installed is not None else 'disabled');launch_button.pack(side='right');controls.append(launch_button)
     def poll():
         nonlocal busy
         while True:
@@ -223,7 +228,10 @@ def main():
             else:
                 busy=False
                 for button in controls:button.configure(state='normal')
-                if kind=='failed':messagebox.showerror('HOI4-EYES',tr('failed'))
+                if kind=='failed':
+                    out.configure(state='normal');out.insert('end',str(value)+'\n');out.configure(state='disabled')
+                    messagebox.showerror('HOI4-EYES',tr('failed')+'\n\n'+str(value))
+                launch_button.configure(state='normal' if installed is not None else 'disabled')
         window.after(150,poll)
     def close():
         if busy:messagebox.showinfo('HOI4-EYES',tr('busy'));return

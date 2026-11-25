@@ -1090,8 +1090,10 @@ def _alias_token_matches(alias_word: str, candidate: str) -> bool:
 
 _CLEAR_BILATERAL = (
     ("non_aggression_pact", r"(.+?) предлагает (.+?) заключить (?:взаимный )?пакт о ненападении"),
+    ("non_aggression_pact", r"(.+?) предлагает (.+?) (?:взаимный )?пакт о ненападении"),
     ("non_aggression_pact", r"(.+?) и (.+?) заключают (?:взаимный )?пакт о ненападении"),
     ("guarantee", r"(.+?) гарантирует независимость (.+)"),
+    ("military_access", r"(.+?) предоставляет (.+?) военный доступ на (.+?) территорию"),
     ("military_access", r"(.+?) предоставляет (.+?) военный доступ(?: на территорию (.+))?"),
     ("non_aggression_pact", r"(.+?) proposes (?:a mutual|a) non-aggression pact with (.+)"),
     ("non_aggression_pact", r"(.+?) and (.+?) agree to (?:a mutual|a) non-aggression pact"),
@@ -1104,7 +1106,9 @@ _CLEAR_BILATERAL = (
 )
 _NO_RECIPROCITY_RU = (
     ("guarantee", r"(.+?) не обязан[ао]? гарантировать независимость (.+)"),
+    ("guarantee", r"(.+?) не обязан[ао]? гарантировать (.+)"),
     ("military_access", r"(.+?) не обязан[ао]? предоставлять (.+?) военный доступ"),
+    ("military_access", r"(.+?) не предоставляет (.+?) встречного военного доступа"),
 )
 
 
@@ -1166,7 +1170,7 @@ def explicit_bilateral_offer(source, request_id, player, counterpart, aliases):
                 actor, recipient = party(match[1]), party(match[2])
                 if {actor, recipient} != parties or (match.lastindex == 3 and party(match[3]) != actor):
                     return None
-                if "не обязан" in match[0].casefold():
+                if (action_id, pattern) in _NO_RECIPROCITY_RU:
                     disclaimers.append((action_id, actor, recipient))
                     break
                 prior = actions.get(action_id)
@@ -1187,9 +1191,9 @@ def explicit_bilateral_offer(source, request_id, player, counterpart, aliases):
                 break
             else:
                 return None
-    if set(actions) != {"non_aggression_pact", "guarantee", "military_access"}:
+    if not actions or not set(actions).issubset({"non_aggression_pact", "guarantee", "military_access"}):
         return None
-    if any(actions[k]["actor_country_tag"] != recipient or actions[k]["recipient_country_tag"] != actor
+    if any(k not in actions or actions[k]["actor_country_tag"] != recipient or actions[k]["recipient_country_tag"] != actor
            for k, actor, recipient in disclaimers):
         return None
     return {"source_request_id": request_id, "source_text_sha256": hashlib.sha256(source.encode()).hexdigest(),
@@ -1308,11 +1312,15 @@ def build_analysis_from_summary(source_text: str, semantic_summary: str, *,
             if len(actor_tags) < 2:
                 unresolved.append("parties")
         elif action_id in {"embargo", "lift_embargo"}:
+            explicit_actor=_explicit_action_actor(span,action_id,source_action_participants,aliases)
             target = third_party_tags[0] if len(third_party_tags) == 1 else None
             joint = bool(re.search(r"joint|mutual|shared|совмест\w*|взаимн\w*|conjoint\w*|commun\w*",
                                    grounding_text + " " + summary, re.I))
-            actor_tags = participants if joint else ([addressed] if addressed else [])
-            role_basis = "explicit_joint_action" if joint else "proposal_addressed_country"
+            actor_tags = participants if joint else [explicit_actor or addressed] if (explicit_actor or addressed) else []
+            if explicit_actor and not joint:
+                candidates=_distinct_targets(mentioned_tags,actor_tags,aliases,grounding_text)
+                target=candidates[0] if len(candidates)==1 else None
+            role_basis = "explicit_joint_action" if joint else "explicit_embargo_actor" if explicit_actor else "proposal_addressed_country"
             if target is None:
                 unresolved.append("target_country")
             if not actor_tags:
@@ -1351,6 +1359,7 @@ def build_analysis_from_summary(source_text: str, semantic_summary: str, *,
             role_basis = "explicit_subject_before_guarantee_verb" if explicit_actor \
                 else "proposal_addressed_country_guarantees"
             target_candidates = [tag for tag in mentioned_tags if tag not in actor_tags]
+            target_candidates=_distinct_targets(target_candidates,actor_tags,aliases,grounding_text)
             # Several tags may share a short name (e.g. alternative regimes).
             # Resolve only aliases wholly shared with a known chat participant;
             # an explicitly distinct third-country name must remain ambiguous.
@@ -1750,6 +1759,14 @@ def _source_position(source_text: str, action_id: str) -> int:
     return source_text.casefold().find(span.casefold()) if span else len(source_text)
 
 
+def _distinct_targets(tags,actors,aliases,text):
+    def matched(tag):
+        names=aliases.get(tag,());names=(names,) if isinstance(names,str) else names
+        return {str(n).casefold() for n in names if _country_alias_occurs((n,),text)}
+    actor_names=set().union(*(matched(tag) for tag in actors))
+    literal=set(_TAG.findall(text))
+    return [tag for tag in tags if tag not in actors and (tag in literal or not matched(tag) or not matched(tag).issubset(actor_names))]
+
 def _tags_in_text(source_text: str, aliases: dict[str, Any],
                   allowed_tags: list[str] | set[str] | tuple[str, ...] | None = None) -> list[str]:
     allowed = ({str(tag).upper() for tag in allowed_tags if _valid_tag(str(tag))}
@@ -1804,6 +1821,8 @@ def _explicit_action_actor(source_excerpt: str, action_id: str, participants: li
                           if _country_alias_positions(aliases, tag, subject)]
             return candidates[0] if len(candidates) == 1 else None
     effect_verbs = {
+        "embargo":re.compile(r"impos\w*|ввод\w*|ввести",re.I),
+        "lift_embargo":re.compile(r"lift\w*|remov\w*|снима\w*|снять|отмен\w*|lev\w*",re.I),
         "military_access": re.compile(
             r"grant\w*|provid\w*|giv(?:e|es|ing)|open\w*|accord\w*|предостав\w*|открыва\w*|accord\w*|donne\w*",
             re.I,
@@ -2078,6 +2097,7 @@ def _source_polarity(source_text: str) -> str:
                              + polarity_text[end:])
     negative = re.search(
         r"\b(?:do not|don't|never|reject\w*|refus\w*|not|no)\b|"
+        r"\bне\s+(?:обязан\w*|долж\w*)\s+(?:гарантир\w*|предостав\w*|заключ\w*|подпис\w*)|"
         r"отклон\w*|\b(?:не|ни|без)\s+(?:соглас\w*|ввод\w*|предостав\w*|гарантир\w*|заключ\w*|приним\w*|будем|станем)|"
         r"\b(?:ne\s+pas|ne\b.{0,35}\b(?:pas|plus|jamais)\b|n['’]est pas|"
         r"n['’]accepte pas|n['’]\w+\s+pas|ne\s+sera pas|ni\s+ne\b|refus\w*|rejett?\w*|interdit\w*)\b",

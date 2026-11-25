@@ -7,7 +7,7 @@ import shutil
 from install_manager import child,atomic
 from treaty_package_install import read_manifest,hoI4_running
 from unified_mod_setup import documents_directory,DESCRIPTOR
-from validate_hoi4_gui import parse_pdx
+from validate_hoi4_gui import parse_mod_descriptor as parse_pdx
 
 def copy_owned(old,new):
     old,new=Path(old).resolve(),Path(new).resolve()

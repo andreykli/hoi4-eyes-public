@@ -96,6 +96,12 @@ def main():
     parser.add_argument('--page',choices=TABS,default='diplomacy')
     parser.add_argument('--root',type=Path,default=APP_ROOT)
     args=parser.parse_args()
+    # Log startup failures before compatibility checks or service creation.
+    from user_storage import profile_dir
+    from logging.handlers import RotatingFileHandler
+    startup_runtime=profile_dir()/'runtime';startup_runtime.mkdir(parents=True,exist_ok=True)
+    logging.basicConfig(level=logging.INFO,format='%(asctime)s %(levelname)s %(message)s',
+        handlers=[RotatingFileHandler(startup_runtime/'desktop.log',maxBytes=512*1024,backupCount=2,encoding='utf8')])
     # Variant-C builds opt in at export. Run BEFORE HubBackend or SQLite opens.
     if (args.root/'release/installation_protocol.json').is_file():
         from workshop_update import startup_check
@@ -110,10 +116,11 @@ def main():
             try:
                 update=startup_check(args.root,documents_directory())
             except (OSError,ValueError,KeyError,TypeError):
+                logging.exception('Startup compatibility inspection failed')
                 update={'blocked':True,'status':'compatibility_check_failed','updates':[]}
             if update['blocked']:
                 logging.warning('Installer compatibility gate: %s',update['status'])
-                messagebox.showerror('HOI4-EYES',update_text['startup_blocked'][selected_language],parent=parent)
+                messagebox.showerror('HOI4-EYES',update_text['startup_blocked'][selected_language]+'\n\n'+update_text.get('reason_'+update['status'],{}).get(selected_language,update['status']),parent=parent)
                 return
             for row in update['updates']:
                 if row['newer'] and messagebox.askyesno('HOI4-EYES',

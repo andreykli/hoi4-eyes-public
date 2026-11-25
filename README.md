@@ -1,4 +1,4 @@
-Experimental beta.4 C2: unsigned installer; clean Windows acceptance incomplete.
+Experimental beta.5 C2: unsigned installer; clean Windows acceptance incomplete.
 
 # HOI4-EYES Beta
 
@@ -8,7 +8,7 @@ By **NightPulse** · [Original project](https://github.com/andreykli/hoi4-eyes-p
 
 [Русский](README_RU.md) · [Français](README_FR.md)
 
-**0.9.0-beta.2 — public beta, not a finished 1.0.** Target: Windows,
+**0.9.0-beta.5 — public beta, not a finished 1.0.** Target: Windows,
 HOI4 **1.20.0.0**, Python 3.10+, local Ollama `qwen3:4b-instruct`.
 The desktop uses PyWebView/WebView2 and the existing Flask backend.
 No paid API required. Default model inference is local.

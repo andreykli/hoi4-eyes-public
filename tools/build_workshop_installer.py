@@ -58,11 +58,11 @@ def build(output,wheelhouse):
         raise ValueError('new_isolated_installer_output_required')
     app,mod=source_files(ROOT)
     for name in EXTRA:app[name]=(ROOT/name).read_bytes()
-    protocol=json.dumps({'protocol':1,'version':'0.9.0-beta.4','installer_revision':2},indent=2).encode()
+    protocol=json.dumps({'protocol':1,'version':'0.9.0-beta.5','installer_revision':2},indent=2).encode()
     app['release/installation_protocol.json']=protocol
     app['prepared/unified_game_mod/ai_assistant/release/installation_protocol.json']=protocol
     mod['release/installation_protocol.json']=protocol
-    app['SOURCE-MANIFEST.json']=(json.dumps({'version':'0.9.0-beta.4','files':{
+    app['SOURCE-MANIFEST.json']=(json.dumps({'version':'0.9.0-beta.5','files':{
         n:{'sha256':sha256(d).hexdigest(),'bytes':len(d)} for n,d in sorted(app.items())}},indent=2)+'\n').encode()
     scan(app);scan(mod)
     if b'PUBLIC_BUILD = True' not in app['tools/developer_access.py']:raise ValueError('public_capability_stub_required')
@@ -83,7 +83,7 @@ def build(output,wheelhouse):
     files['_eyes_setup/wheel-provenance.json']=json.dumps(rows,indent=2).encode()
     files['_eyes_setup/licenses/proxy_tools-BSD.txt']=(ROOT/'installer/licenses/proxy_tools-BSD.txt').read_bytes()
     files['_eyes_setup/THIRD-PARTY.txt']=(ROOT/'installer/THIRD-PARTY.txt').read_bytes()
-    plan={'schema':1,'owner':OWNER,'version':'0.9.0-beta.4-installer.c2',
+    plan={'schema':1,'owner':OWNER,'version':'0.9.0-beta.5-installer.c2',
           'sources':json.loads((ROOT/'release/installer_sources.json').read_text())['sources'],
           'model':json.loads((ROOT/'release/model_profile.json').read_text()),
           'files':{n:{'sha256':sha256(d).hexdigest(),'bytes':len(d)}
