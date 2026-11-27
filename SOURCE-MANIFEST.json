@@ -746,8 +746,8 @@
       "bytes": 15270
     },
     "tools/installation_wizard.py": {
-      "sha256": "7dcaa07bf1db0fddaa082715df936655138e29b543b6f51e7188a384a3042232",
-      "bytes": 16970
+      "sha256": "d20c8da50dac564375682dc3503fa3be6230810d5bfed17374f071b3a5e7adc2",
+      "bytes": 16972
     },
     "tools/installer_lifecycle.py": {
       "sha256": "2a31d1f9c73c372fcaebad7ec0bcf896bd65ea90fa566b32bfc2a7d237654e96",

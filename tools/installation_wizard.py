@@ -14,6 +14,13 @@ from install_manager import (load_plan,stage,activate,active,remove,run_visible,
 from installer_lifecycle import (cache_setup,installed_apps,discover_previous,UpdateTransaction,
     registration_controls,adopt_registration,select_single_mod,import_legacy_profile,recover_pending)
 
+def transaction_controls(root,documents=None,profile=None):
+    controls=[Path(root)/'installation.json',Path(root)/'Start HOI4-EYES.bat']
+    if documents is not None:
+        from single_mod import registration_paths
+        controls+=registration_controls(documents,profile)+registration_paths(documents)
+    return list(dict.fromkeys(controls))
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--bundle',type=Path,required=True)
@@ -164,13 +171,7 @@ def main():
             if chosen['legacy']:
                 if not chosen['previous']:raise ValueError('choose_previous_folder_for_import')
                 import_legacy_profile(Path(chosen['previous']),profile,consent=True)
-            controls=[args.root/'installation.json',args.root/'Start HOI4-EYES.bat']
-            if chosen['register']:
-                controls+=registration_controls(docs,profile)
-                from single_mod import registration_paths
-                controls+=registration_paths(docs)
-                if (docs/'launcher-v2.sqlite').is_file():controls.append(docs/'launcher-v2.sqlite')
-                controls=list(dict.fromkeys(controls))
+            controls=transaction_controls(args.root,docs if chosen['register'] else None,profile)
             recover_pending(args.root,controls,consent=True,game_closed=True)
             transaction=UpdateTransaction(args.root,controls)
             if chosen['register']:
