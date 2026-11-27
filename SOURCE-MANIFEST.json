@@ -138,8 +138,8 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "e700dec7fbf6e392967f2e8b8f9b03651873968dc2ed3f02bb4be73464c70a10",
-      "bytes": 1154
+      "sha256": "597568b196fa7a59e43ba1353495bdc9a308d25594aa27e675c2624328eccb11",
+      "bytes": 1099
     },
     "docs/LICENSES.md": {
       "sha256": "cf599bb3f4c34b74890c9418db5f28b6dfab4f9170835c727c75a51a3d9bf63a",
@@ -158,8 +158,8 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "1d9fdf1bcbc02fb53b660c7c74efcce687ba40454a1b9e495a5653306138c2fe",
-      "bytes": 1062
+      "sha256": "2c9e0fe4dfcedf62e1db597150f1503412a2002c23f2f7005bf3e98c5fba875d",
+      "bytes": 1007
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
@@ -186,8 +186,8 @@
       "bytes": 12900
     },
     "installer/HOW_TO_INSTALL.txt": {
-      "sha256": "be887f7581de767dda389856a798062466926fc2a35294a6b37b8980474d8ed3",
-      "bytes": 6165
+      "sha256": "74d22e6b68d81ff0237381b4773ebbc4d51cf3eb653f73f1e20ed94453608e35",
+      "bytes": 6155
     },
     "installer/THIRD-PARTY.txt": {
       "sha256": "b0d933f8cf3001a33bfac60bd2591995ce95605c96b9774433a9394e5dcbb5b9",
@@ -274,8 +274,8 @@
       "bytes": 4750
     },
     "prepared/unified_game_mod/ai_assistant/common/scripted_guis/ai_assistant_diplomacy_gui.txt": {
-      "sha256": "be28faf7d1ac007a7f1ae46468fcf778c533044ae18543d2655d8d77962721df",
-      "bytes": 2948
+      "sha256": "347037a028be3fa7418e333db60b0c52a42cb0a0504606501265289a7afb52b3",
+      "bytes": 2980
     },
     "prepared/unified_game_mod/ai_assistant/common/scripted_triggers/eyes_capital.txt": {
       "sha256": "115d7c5cb38822bd7c8350e30de29d6b3e54de520fc9fec9eb86c5bc1c503cb2",
@@ -298,8 +298,8 @@
       "bytes": 160
     },
     "prepared/unified_game_mod/ai_assistant/interface/ai_assistant_diplomacy_gui.gui": {
-      "sha256": "ee1b59a839ffdf779b0448a8ae00924d339f051b4d05ba1a232c3cb1297aab38",
-      "bytes": 5124
+      "sha256": "781e9a1cb8d9f34221531bd43af8c893a97a547ba258709b7cb9b74b4ef0a367",
+      "bytes": 5061
     },
     "prepared/unified_game_mod/ai_assistant/interface/eyes_recognition_map.gfx": {
       "sha256": "b2441cb17d121c245e25616452def8b1695131a0c266eb08d0035b442565383b",

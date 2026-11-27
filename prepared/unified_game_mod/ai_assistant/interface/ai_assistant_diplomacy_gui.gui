@@ -1,21 +1,22 @@
 guiTypes = {
 	containerWindowType = {
-        name = "eyes_diplomacy_launcher_window"
-        position = { x = 18 y = 108 }
-        size = { width = 148 height = 34 }
-        Orientation = upper_left
-        clipping = no
-        buttonType = {
-            name = "eyes_diplomacy_open_button"
-            position = { x = 0 y = 0 }
-            size = { x = 148 y = 34 }
-            quadTextureSprite = "GFX_button_148x34"
-            buttonText = "HOI4-EYES"
-            buttonFont = "cg_16b"
-            pdx_tooltip = "EYES_DIPLOMACY_OPEN"
-            clicksound = click_action
-        }
-    }
+		name = "eyes_diplomacy_launcher_window"
+		# One button, one atlas: frame, art and hit area cannot drift independently.
+		position = { x = 624 y = -8 }
+		size = { width = 46 height = 46 }
+		Orientation = upper_left
+		clipping = no
+
+		buttonType = {
+			name = "eyes_diplomacy_open_button"
+			position = { x = 23 y = 23 }
+			Orientation = CENTER
+			size = { x = 46 y = 46 }
+			spriteType = "GFX_eyes_diplomacy_launcher"
+			pdx_tooltip = "EYES_DIPLOMACY_OPEN"
+			clicksound = click_action
+		}
+	}
 
 	containerWindowType = {
 		name = "eyes_diplomacy_panel_window"

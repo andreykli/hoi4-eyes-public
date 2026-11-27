@@ -1,6 +1,7 @@
 scripted_gui = {
 	eyes_diplomacy_launcher = {
 		context_type = player_context
+		parent_window_token = top_bar
 		window_name = "eyes_diplomacy_launcher_window"
 		visible = { always = yes }
 

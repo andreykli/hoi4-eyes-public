@@ -1,10 +1,10 @@
-HOI4-EYES 0.9.0-beta.6 — single-mod-button-2, HOI4 1.20
+HOI4-EYES 0.9.0-beta.6 — single-mod-button-4, HOI4 1.20
 
 - One HOI4-EYES registration: setup uses the official Workshop copy and archives duplicate local registrations. Other mods, saves, profiles, models and old source folders are retained.
-- A labelled HOI4-EYES button is positioned at the upper left of the map, below the HUD, without depending on the top-bar container.
+- Restored the original diplomacy icon, size, artwork and position in the top bar.
 - Treaty installation and confirmation use the exact enabled mod, including the official Workshop copy. Application and Workshop revision must match.
 - Setup avoids stale local registration adoption when the official Workshop copy is present. Backups are saved before consolidation.
 
 Close HOI4, EYES and the launcher, let Steam download the update, then run Install HOI4-EYES.exe and choose Update / repair.
-Live verification of the new button and full native game effects remains pending. Automated validation covers the GUI files, registration, treaty routing and retained user data.
+Live verification of the restored button and full native game effects remains pending. Automated validation covers the GUI files, registration, treaty routing and retained user data.
 By NightPulse. https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6
