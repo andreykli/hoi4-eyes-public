@@ -80,6 +80,9 @@ class GroupParticipants(tk.Frame):
     def refresh(self):
         from ui_locale import tr
         from group_negotiation import MAX_AI_COUNTRIES
+        signature=(tuple(self.members),getattr(self,'player',None),self.enabled,bool(self.separate.get()),tuple(sorted(self.available.items())))
+        if getattr(self,'_rendered_signature',None)==signature:return
+        self._rendered_signature=signature
         values=sorted(name for tag,name in self.available.items() if tag not in self.members and tag != getattr(self,'player',None))
         self.choice.configure(values=values,state='readonly' if self.enabled and len(self.members)<MAX_AI_COUNTRIES else 'disabled')
         if self.choice.get() not in values:self.choice.set(values[0] if values else '')

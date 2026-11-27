@@ -1,7 +1,7 @@
-HOI4-EYES 0.9.0-beta.6 — single-mod-button-4, HOI4 1.20
+HOI4-EYES 0.9.0-beta.6 — single-mod-button-5, HOI4 1.20
 
 - One HOI4-EYES registration: setup uses the official Workshop copy and archives duplicate local registrations. Other mods, saves, profiles, models and old source folders are retained.
-- Restored the original diplomacy icon, size, artwork and position in the top bar.
+- Fixed the participant country dropdown closing during background updates: preserve owned-popup focus, avoid redundant topmost changes and skip unchanged control redraws. Original top-bar icon and placement are retained.
 - Treaty installation and confirmation use the exact enabled mod, including the official Workshop copy. Application and Workshop revision must match.
 - Setup avoids stale local registration adoption when the official Workshop copy is present. Backups are saved before consolidation.
 

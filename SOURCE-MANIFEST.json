@@ -138,8 +138,8 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "597568b196fa7a59e43ba1353495bdc9a308d25594aa27e675c2624328eccb11",
-      "bytes": 1099
+      "sha256": "2d828abfdac3efd53f81b423b69276e18b908df04e5455e96eab893f8616fb3c",
+      "bytes": 1238
     },
     "docs/LICENSES.md": {
       "sha256": "cf599bb3f4c34b74890c9418db5f28b6dfab4f9170835c727c75a51a3d9bf63a",
@@ -158,8 +158,8 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "2c9e0fe4dfcedf62e1db597150f1503412a2002c23f2f7005bf3e98c5fba875d",
-      "bytes": 1007
+      "sha256": "f9a19b2f43a01a3626b1a2b0c87017620df4783b237291728e93ac863be0911e",
+      "bytes": 1146
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
@@ -574,8 +574,8 @@
       "bytes": 4956
     },
     "tools/chat_widgets.py": {
-      "sha256": "192092cc4df9e51464620ced6fc8b28b885b6512d9ee5b214dbb90eef105cfff",
-      "bytes": 6785
+      "sha256": "54eb849b02f8baa6a044e5b2f6314e319c23465d48d64fe30e6f8549bfe84f04",
+      "bytes": 7046
     },
     "tools/conference_phrases.py": {
       "sha256": "51598dc38245074e697af150887f912d21f989011f876e4165bde03220f37b0f",
@@ -698,8 +698,8 @@
       "bytes": 5324
     },
     "tools/hoi4_bridge.py": {
-      "sha256": "01794cb5a58b3ee93d40961dc433d28df599bace58125db58e2e919c214ae293",
-      "bytes": 239542
+      "sha256": "2016babc7a018e21e2de24dbc74183b6da30ac4c27d2092a75dedf7bd5784c83",
+      "bytes": 239850
     },
     "tools/hoi4_campaign_identity.py": {
       "sha256": "b3ada3fe3562404625277ff622dfd51b166a1bf5ee3decce55be9ed899bc76ab",

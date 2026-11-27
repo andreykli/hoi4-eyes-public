@@ -206,11 +206,11 @@ def get_hoi4_window_state(overlay_hwnd=None):
         user32.GetWindowThreadProcessId(foreground, ctypes.byref(foreground_pid))
     minimized = bool(foreground and user32.IsIconic(foreground))
     foreground_value = int(foreground or 0)
-    foreground_root = user32.GetAncestor(foreground, 2) if foreground else None  # GA_ROOT
+    foreground_root = user32.GetAncestor(foreground, 3) if foreground else None  # GA_ROOTOWNER: include owned dropdowns/dialogs
     foreground_root_value = int(foreground_root or foreground_value)
     overlay_root = (
-        user32.GetAncestor(overlay_hwnd, 2) if overlay_hwnd else None
-    )  # Tk may provide a child HWND; compare top-level windows.
+        user32.GetAncestor(overlay_hwnd, 3) if overlay_hwnd else None
+    )  # Compare owner roots so dropdowns remain part of the overlay.
     overlay_root_value = int(overlay_root or (overlay_hwnd or 0))
     overlay_foreground = bool(
         overlay_hwnd and foreground_root_value and foreground_root_value == overlay_root_value
@@ -2974,6 +2974,13 @@ class ResponseOverlay:
 
     FOCUS_LOSS_GRACE_SECONDS = 0.75
 
+    def _set_topmost(self, enabled):
+        # Reapplying this Windows attribute dismisses an open ttk dropdown.
+        enabled = bool(enabled)
+        if getattr(self, '_topmost_state', None) != enabled:
+            self.root.attributes("-topmost", enabled)
+            self._topmost_state = enabled
+
     def __init__(self):
         import tkinter as tk
 
@@ -2985,7 +2992,7 @@ class ResponseOverlay:
         self.root = tk.Tk()
         self.root.title(tr('HOI4-EYES — Diplomatic consultations'))
         self.root.geometry("620x260+40+40")
-        self.root.attributes("-topmost", True)
+        self._set_topmost(True)
         self.root.configure(bg="#111820")
         self.root.withdraw()
 
@@ -3154,11 +3161,11 @@ class ResponseOverlay:
                 self.chat_id = None
                 self.active_chat = None
             self._focus_lost_since = None
-            self.root.attributes("-topmost", session['topmost'])
+            self._set_topmost(session['topmost'])
         if should_show and not self._window_visible:
             self.root.deiconify()
             self.root.lift()
-            self.root.attributes("-topmost", bool(state and (state.get("game_foreground", state.get("foreground")) or state.get("overlay_foreground"))))
+            self._set_topmost(bool(state and (state.get("game_foreground", state.get("foreground")) or state.get("overlay_foreground"))))
             self._window_visible = True
         elif not should_show and self._window_visible:
             self.root.withdraw()
