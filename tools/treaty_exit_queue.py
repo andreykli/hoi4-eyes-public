@@ -89,18 +89,6 @@ def install_all_after_exit(runtime, mod, get_agreement):
 
 
 def active_unified_mod(root, documents=None):
-    documents = Path(documents or Path.home() / 'Documents/Paradox Interactive/Hearts of Iron IV')
-    mod = (Path(root) / 'prepared/unified_game_mod/ai_assistant').resolve()
-    config = json.loads((documents / 'dlc_load.json').read_text(encoding='utf-8-sig'))
-    candidates=[]
-    for entry in config.get('enabled_mods', []):
-        descriptor = (documents / entry).read_text(encoding='utf-8-sig')
-        source = re.search(r'^\s*path\s*=\s*"([^"]+)"', descriptor, re.M)
-        resolved=(documents/source[1]).resolve() if source else None
-        if resolved==mod or re.search(r'^\s*name\s*=\s*"HOI4[- ]EYES(?:[^"]*)"',descriptor,re.I|re.M):
-            candidates.append(resolved)
-    if len(candidates)>1:
-        raise ValueError('Enable only one HOI4-EYES mod in the launcher.')
-    if candidates==[mod]:
-        return mod
-    raise ValueError('Enable the unified HOI4-EYES mod in the launcher.')
+    from single_mod import active_source
+    from unified_mod_setup import documents_directory
+    return active_source(root,documents or documents_directory())

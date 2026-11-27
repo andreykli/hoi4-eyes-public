@@ -11,6 +11,7 @@ _RUNTIME_COMPONENTS = (
     "tools/save_catalogue.py",
     "tools/chat_presentation.py",
     "tools/group_negotiation.py",
+    "tools/single_mod.py",
     "tools/treaty_interest_gate.py",
     "tools/diplomatic_expression_library.py",
     "data/diplomatic_expression_library.json",

@@ -102,7 +102,9 @@ def main():
                 run_python(python,['-c',idle_check],target/'tools')
                 state=json.loads((args.root/'installation.json').read_text(encoding='utf-8'))
                 # Existing registration removal is ownership-checked and backed up.
-                if chosen['register']:
+                from single_mod import workshop_registration
+                from unified_mod_setup import documents_directory
+                if chosen['register'] and not workshop_registration(documents_directory()):
                     command=[str(target/'tools/unified_mod_setup.py'),'remove','--confirm']
                     if game_path:command+=['--game',game_path]
                     run_python(python,command,target)
@@ -163,19 +165,29 @@ def main():
                 if not chosen['previous']:raise ValueError('choose_previous_folder_for_import')
                 import_legacy_profile(Path(chosen['previous']),profile,consent=True)
             controls=[args.root/'installation.json',args.root/'Start HOI4-EYES.bat']
-            if chosen['register']:controls+=registration_controls(docs,profile)
+            if chosen['register']:
+                controls+=registration_controls(docs,profile)
+                from single_mod import registration_paths
+                controls+=registration_paths(docs)
+                if (docs/'launcher-v2.sqlite').is_file():controls.append(docs/'launcher-v2.sqlite')
+                controls=list(dict.fromkeys(controls))
             recover_pending(args.root,controls,consent=True,game_closed=True)
             transaction=UpdateTransaction(args.root,controls)
             if chosen['register']:
                 emit('registering')
                 run_python(python,[str(target/'tools/installer_mod_migration.py'),'--root',str(target)],target)
-                if adopt_registration(docs,profile,consent=True,managed_root=args.root):
-                    transaction.checkpoint([registration_controls(docs,profile)[1]])
-                command=[str(target/'tools/unified_mod_setup.py'),'install','--confirm']
-                if game_path:command+=['--game',game_path]
-                run_python(python,command,target)
-                transaction.checkpoint(registration_controls(docs,profile)[:2])
-                select_single_mod(docs,consent=True);transaction.checkpoint([docs/'dlc_load.json'])
+                from single_mod import workshop_registration,consolidate
+                if workshop_registration(docs):
+                    consolidate(target,docs,profile,consent=True)
+                    transaction.checkpoint(controls)
+                else:
+                    if adopt_registration(docs,profile,consent=True,managed_root=args.root):
+                        transaction.checkpoint([registration_controls(docs,profile)[1]])
+                    command=[str(target/'tools/unified_mod_setup.py'),'install','--confirm']
+                    if game_path:command+=['--game',game_path]
+                    run_python(python,command,target)
+                    transaction.checkpoint(registration_controls(docs,profile)[:2])
+                    select_single_mod(docs,consent=True);transaction.checkpoint([docs/'dlc_load.json'])
             migrated=target/'installer-migrated.json'
             preserved=json.loads(migrated.read_text(encoding='utf-8'))['preserved'] if migrated.exists() else []
             activate(args.root,target,consent=True,game_closed=True,preserved=preserved);installed=target

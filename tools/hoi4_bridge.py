@@ -76,7 +76,7 @@ def compute_bridge_source_revision() -> str:
     try:
         root = Path(__file__).resolve().parent
         payload = b''.join((root / name).read_bytes() for name in (
-            'hoi4_bridge.py', 'ai_provider.py', 'autonomy_game_transport.py', 'world_snapshot.py', 'cabinet_roster.py', 'native_recognition.py', 'world_freshness.py', 'v6_autonomy.py', 'treaty_monitor.py', 'treaty_lifecycle.py', 'execution_markers.py', 'window_session_policy.py', 'bridge_instance.py', 'stack_readiness.py', 'hub_control.py', 'overlay_control.py', 'chat_widgets.py', 'group_negotiation.py'))
+            'hoi4_bridge.py', 'ai_provider.py', 'autonomy_game_transport.py', 'world_snapshot.py', 'cabinet_roster.py', 'native_recognition.py', 'world_freshness.py', 'v6_autonomy.py', 'treaty_monitor.py', 'treaty_lifecycle.py', 'execution_markers.py', 'window_session_policy.py', 'bridge_instance.py', 'stack_readiness.py', 'hub_control.py', 'overlay_control.py', 'chat_widgets.py', 'group_negotiation.py', 'single_mod.py', 'treaty_exit_queue.py'))
     except OSError:
         return "unavailable"
     return hashlib.sha256(payload).hexdigest()[:16]

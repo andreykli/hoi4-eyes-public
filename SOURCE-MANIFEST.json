@@ -22,8 +22,8 @@
       "bytes": 1679
     },
     "HOI4_EYES_Experimental.mod": {
-      "sha256": "754eee29085afae9ae9f680216eba503e8c0bca0d08d468a31382e7da6e69b78",
-      "bytes": 82
+      "sha256": "aef96dd26c87b24abcc4a04e11422ab1ec0ac754ce19a282cb403d8a79ed8669",
+      "bytes": 69
     },
     "LICENSE": {
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
@@ -138,8 +138,8 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "953674ca6367578481f01efe693dbe55d229d56956f18ed4e676b1d24f20f69e",
-      "bytes": 1970
+      "sha256": "22f75163f648aacedef214216c51846c86668365e40ae72445ec25d695609f4a",
+      "bytes": 1154
     },
     "docs/LICENSES.md": {
       "sha256": "cf599bb3f4c34b74890c9418db5f28b6dfab4f9170835c727c75a51a3d9bf63a",
@@ -158,8 +158,8 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "e3de6a0ecf28daf06d8a1fa1530289847e6ec9a806cf9ebbe0f0c98e03544bfd",
-      "bytes": 1878
+      "sha256": "b5ed3d7600fd83f9cca83ff52b6738ff78d4c9427d86501020ea55b2be9c9ef1",
+      "bytes": 1062
     },
     "docs/WORKSHOP.md": {
       "sha256": "bde2276b139bd5c3bffda5c875860bb15a169f09f9a5cc2007acd74537fafff8",
@@ -186,8 +186,8 @@
       "bytes": 12900
     },
     "installer/HOW_TO_INSTALL.txt": {
-      "sha256": "289c8823f3c2ac0f9fe319ef1364b93b063fbdf827a1bed41e31a007a586be7f",
-      "bytes": 5683
+      "sha256": "b1ddaedb3b05f475590305b02785dca1d353ecf065558adb5940aa3c3c27f644",
+      "bytes": 6165
     },
     "installer/THIRD-PARTY.txt": {
       "sha256": "b0d933f8cf3001a33bfac60bd2591995ce95605c96b9774433a9394e5dcbb5b9",
@@ -274,16 +274,16 @@
       "bytes": 4750
     },
     "prepared/unified_game_mod/ai_assistant/common/scripted_guis/ai_assistant_diplomacy_gui.txt": {
-      "sha256": "347037a028be3fa7418e333db60b0c52a42cb0a0504606501265289a7afb52b3",
-      "bytes": 2980
+      "sha256": "be28faf7d1ac007a7f1ae46468fcf778c533044ae18543d2655d8d77962721df",
+      "bytes": 2948
     },
     "prepared/unified_game_mod/ai_assistant/common/scripted_triggers/eyes_capital.txt": {
       "sha256": "115d7c5cb38822bd7c8350e30de29d6b3e54de520fc9fec9eb86c5bc1c503cb2",
       "bytes": 196
     },
     "prepared/unified_game_mod/ai_assistant/descriptor.mod": {
-      "sha256": "754eee29085afae9ae9f680216eba503e8c0bca0d08d468a31382e7da6e69b78",
-      "bytes": 82
+      "sha256": "aef96dd26c87b24abcc4a04e11422ab1ec0ac754ce19a282cb403d8a79ed8669",
+      "bytes": 69
     },
     "prepared/unified_game_mod/ai_assistant/events/eyes_personal_messages.txt": {
       "sha256": "196518e2fb2a80df02c37edf08ca7259f3d9dd0a7f2162b0d6a5ca9638d75370",
@@ -298,8 +298,8 @@
       "bytes": 160
     },
     "prepared/unified_game_mod/ai_assistant/interface/ai_assistant_diplomacy_gui.gui": {
-      "sha256": "781e9a1cb8d9f34221531bd43af8c893a97a547ba258709b7cb9b74b4ef0a367",
-      "bytes": 5061
+      "sha256": "ee1b59a839ffdf779b0448a8ae00924d339f051b4d05ba1a232c3cb1297aab38",
+      "bytes": 5124
     },
     "prepared/unified_game_mod/ai_assistant/interface/eyes_recognition_map.gfx": {
       "sha256": "b2441cb17d121c245e25616452def8b1695131a0c266eb08d0035b442565383b",
@@ -450,15 +450,15 @@
       "bytes": 305
     },
     "prepared/unified_game_mod/ai_assistant/release/installation_protocol.json": {
-      "sha256": "2481dc123756d1c185e61f35cae55d6003cd1c350349dbe978055b67d457ecb9",
+      "sha256": "726b050856bbe11bdc605faf7ba0bf881966c0de12c39c391582bd87131a28ee",
       "bytes": 75
     },
     "release/files.json": {
-      "sha256": "5fe28b444e35571d71a0385a9d2b133e169ce304c4c904c2b95512543a8ebcdd",
-      "bytes": 20348
+      "sha256": "f11e4fbb997edf497ffead1037944a4788e80d1dd0be52a003acf5df9849d30c",
+      "bytes": 20376
     },
     "release/installation_protocol.json": {
-      "sha256": "2481dc123756d1c185e61f35cae55d6003cd1c350349dbe978055b67d457ecb9",
+      "sha256": "726b050856bbe11bdc605faf7ba0bf881966c0de12c39c391582bd87131a28ee",
       "bytes": 75
     },
     "release/installer_sources.json": {
@@ -550,11 +550,11 @@
       "bytes": 5621
     },
     "tools/build_beta_release.py": {
-      "sha256": "e9b8ee752a7c055e37bd717c6fa61bcccc988047600d159f7afad834957a1f07",
-      "bytes": 8888
+      "sha256": "ed74ebc59ad1d62b323735da45be23334a50964384f31d39bbf8061537eb62ce",
+      "bytes": 8877
     },
     "tools/build_workshop_installer.py": {
-      "sha256": "64a3b2e87df799cf9c4e22053f105881e8e18d4eaf91402afb4f147236e1e28e",
+      "sha256": "eb8c6a13859f102c74caf4fc5b32e60e79325d51fbd2dfdda958359211f13070",
       "bytes": 7620
     },
     "tools/cabinet_roster.py": {
@@ -698,8 +698,8 @@
       "bytes": 5324
     },
     "tools/hoi4_bridge.py": {
-      "sha256": "2ac0ca63e32b2512e0f4e551549d8e382878625e0859cc76d328eb18ce5cd493",
-      "bytes": 239501
+      "sha256": "01794cb5a58b3ee93d40961dc433d28df599bace58125db58e2e919c214ae293",
+      "bytes": 239542
     },
     "tools/hoi4_campaign_identity.py": {
       "sha256": "b3ada3fe3562404625277ff622dfd51b166a1bf5ee3decce55be9ed899bc76ab",
@@ -746,12 +746,12 @@
       "bytes": 15270
     },
     "tools/installation_wizard.py": {
-      "sha256": "957af5b9a9e6da754c942ac13c9b20dc898e2c57624477c17a749458188b3b60",
-      "bytes": 16219
+      "sha256": "7dcaa07bf1db0fddaa082715df936655138e29b543b6f51e7188a384a3042232",
+      "bytes": 16970
     },
     "tools/installer_lifecycle.py": {
-      "sha256": "ea75a9541cc6911c00bc05c331f6b932ff46dc67dbb94f06471986a50008e1d2",
-      "bytes": 17977
+      "sha256": "2a31d1f9c73c372fcaebad7ec0bcf896bd65ea90fa566b32bfc2a7d237654e96",
+      "bytes": 17997
     },
     "tools/installer_mod_migration.py": {
       "sha256": "80922585c1275f4795b8b07419ded7241d8dd30327bd4fbeff0c526f995881b0",
@@ -774,8 +774,8 @@
       "bytes": 2640
     },
     "tools/mock_ai_server.py": {
-      "sha256": "965dd8fb9abb80f34d4836987277885969eef6fd222f172e833c496fc11dcb81",
-      "bytes": 68082
+      "sha256": "ce722576880ae9481753ea26a9fe75d385ca4ed137f18e7d9f7e318ddc48a3c8",
+      "bytes": 68101
     },
     "tools/model_profile.py": {
       "sha256": "165a3bc2b10d6dc261504cbeda9c419023ac81d06fd537c549d996eb91a30d6d",
@@ -850,8 +850,8 @@
       "bytes": 3928
     },
     "tools/runtime_revision.py": {
-      "sha256": "0dbf1a8fbd90e9ed156789077123d4f7f7e6aeb9c25754e1594e9615ad22ba2e",
-      "bytes": 5054
+      "sha256": "ad86b1c702879cf8f939b723c4b858ce8b64020942b5e7ca3ab4d0efbed406e3",
+      "bytes": 5081
     },
     "tools/save_catalogue.py": {
       "sha256": "4f24536168f42bfb9bd67328ab757809bcee5f76b50f4243bbae7bb93c71cf08",
@@ -864,6 +864,10 @@
     "tools/service_diagnostics.py": {
       "sha256": "ef6cf9592f91020d3e2efcf0b9044115c09e86fbc13ca89aa23fc53efe839e3c",
       "bytes": 3236
+    },
+    "tools/single_mod.py": {
+      "sha256": "e5f76e5288b7664d944daddc30c8bbebee6db5ed30fd32e18621cbfc55753ba4",
+      "bytes": 7655
     },
     "tools/stack_readiness.py": {
       "sha256": "05d0599a83dc4b1d262bacbc164aee516c68b9cc2a58d050f2ed66575dfc24c1",
@@ -1506,8 +1510,8 @@
       "bytes": 9200
     },
     "tools/treaty_exit_queue.py": {
-      "sha256": "f9f96946edb7047c1fe51ac58dcb349ec6d071ef046dfadbaf5ef0196332e0c0",
-      "bytes": 4641
+      "sha256": "f68a026437cf96c24bcce4c05e77b73c6a232c11429bfe9375403776eec154c4",
+      "bytes": 3894
     },
     "tools/treaty_interest_gate.py": {
       "sha256": "8a746e8be27d90d86c9f22c4d347118dcf0a6f4f3bc547d931dbd9cc88dd8df8",
@@ -1522,8 +1526,8 @@
       "bytes": 7294
     },
     "tools/treaty_package_install.py": {
-      "sha256": "20088acf01bbcdafa06b243f7426bd7b78420233bdd86c1919e6d8a18074fdc0",
-      "bytes": 23300
+      "sha256": "883541ff8d8e80cd264a5f9df35b8d207b9f7a42397a787b240e9e284e4ece81",
+      "bytes": 23702
     },
     "tools/ui_locale.py": {
       "sha256": "e8c59760dff126b7f2408f90a9893695c836a9f0778f5bb7617966f792be079f",
@@ -1610,8 +1614,8 @@
       "bytes": 12272
     },
     "tools/workshop_update.py": {
-      "sha256": "b094749f8157a8c9a990156237c465591cecb7370c35115ef856748b1611e34e",
-      "bytes": 6016
+      "sha256": "01372474f5ba7d49761d7e811dfd08d998779d4a7af37945aecdaa44d1f8dfca",
+      "bytes": 6110
     },
     "tools/world_diplomacy.py": {
       "sha256": "fe060b763fcee826b9999309c8b9b8b9e19a254936dc214b79120524fcecfb6d",

@@ -895,8 +895,8 @@ def create_app(engine=None, response_text_provider=None, state_db_path=None, bri
             if not saved_packet(agreement):
                 raise ValueError('Prepare this exact game package first.')
             observation = current_treaty_observation(chat, for_confirmation=True)
-            mod = app.config.get('EYES_TREATY_MOD_ROOT') or (
-                Path(__file__).resolve().parents[1] / 'prepared/unified_game_mod/ai_assistant')
+            from treaty_exit_queue import active_unified_mod
+            mod = app.config.get('EYES_TREATY_MOD_ROOT') or active_unified_mod(Path(__file__).resolve().parents[1])
             return confirmation_command(agreement, chat, observation, mod)
 
         return chat_result(command)

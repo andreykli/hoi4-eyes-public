@@ -153,7 +153,7 @@ def adopt_registration(documents, profile, *, consent=False, managed_root=None):
         if read_json(release/'installer-stage.json').get('owner') != OWNER:
             raise ValueError('registration_changed_requires_review')
         identity=identify_source(release)
-        if (str(data.first('name')).strip('"')!='HOI4-EYES '+identity['version']
+        if (str(data.first('name')).strip('"') not in {'HOI4-EYES','HOI4-EYES '+identity['version']}
                 or str(data.first('version')).strip('"')!=identity['version']
                 or any(k not in {'name','version','path','supported_version'} for k,_ in data.entries)):
             raise ValueError('registration_changed_requires_review')

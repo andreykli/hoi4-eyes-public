@@ -31,7 +31,8 @@ def inspect_update(app, workshop):
     incoming = json.loads(incoming_file.read_text(encoding='utf-8')) if incoming_file.is_file() else None
     # Absence is allowed only for the exact older published version. A new
     # unknown protocol cannot start services which might write to the profile.
-    compatible = (incoming is not None and incoming.get('protocol') == current['protocol'])
+    compatible = (incoming is not None and incoming.get('protocol') == current['protocol']
+                  and incoming.get('installer_revision') == current.get('installer_revision'))
     if incoming is None:
         compatible = metadata['version'] == current['version']
     if incoming and incoming.get('version') != metadata['version']:

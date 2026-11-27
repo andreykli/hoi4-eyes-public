@@ -58,7 +58,7 @@ def build(output,wheelhouse):
         raise ValueError('new_isolated_installer_output_required')
     app,mod=source_files(ROOT)
     for name in EXTRA:app[name]=(ROOT/name).read_bytes()
-    protocol=json.dumps({'protocol':2,'version':'0.9.0-beta.6','installer_revision':3},indent=2).encode()
+    protocol=json.dumps({'protocol':2,'version':'0.9.0-beta.6','installer_revision':4},indent=2).encode()
     app['release/installation_protocol.json']=protocol
     app['prepared/unified_game_mod/ai_assistant/release/installation_protocol.json']=protocol
     mod['release/installation_protocol.json']=protocol

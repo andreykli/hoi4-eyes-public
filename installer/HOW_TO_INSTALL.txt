@@ -1,3 +1,7 @@
+ONE HOI4-EYES MOD — single-mod-button-1
+Let Steam download the updated Workshop files. Close HOI4, EYES and the launcher, run Install HOI4-EYES.exe and choose Update / repair. Setup retains the official Workshop mod, backs up and removes duplicate local registrations, and keeps profiles, saves, old source folders and personal treaty files.
+The labelled HOI4-EYES button is at the upper left of the map below the HUD. It is shown in a loaded campaign, not on the main menu.
+
 NATIVE DIPLOMACY UPDATE (native-groups-1)
 The diplomacy window opened by the EYES button in HOI4 now includes the country selector, removable participant chips, Apply participants, and Saved negotiations. Select up to six countries without opening the main EYES app. Applied groups preserve the original bilateral chat. Replies appear incrementally and run sequentially through Qwen. A maximum of three AI replies returns control to the player; treaty signing and game execution remain separate confirmations.
 Close EYES, HOI4 and the Paradox launcher before manually running the updated installer and choosing Update / repair. Existing campaign histories, profiles, models and treaty files are preserved.

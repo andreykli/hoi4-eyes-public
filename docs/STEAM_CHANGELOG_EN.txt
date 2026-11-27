@@ -1,15 +1,10 @@
-HOI4-EYES 0.9.0-beta.6 — native-groups-1
+HOI4-EYES 0.9.0-beta.6 — single-mod-button-1, HOI4 1.20
 
-Group negotiations now work directly in the existing diplomacy window opened by the EYES button in HOI4. The main EYES application is optional for these controls.
+- One HOI4-EYES registration: setup uses the official Workshop copy and archives duplicate local registrations. Other mods, saves, profiles, models and old source folders are retained.
+- A labelled HOI4-EYES button is positioned at the upper left of the map, below the HUD, without depending on the top-bar container.
+- Treaty installation and confirmation use the exact enabled mod, including the official Workshop copy. Application and Workshop revision must match.
+- Setup avoids stale local registration adoption when the official Workshop copy is present. Backups are saved before consolidation.
 
-- Select 1–6 other countries, add or remove country chips, and apply the participant list in the native window.
-- Saved negotiations reopens group or bilateral histories from the same campaign and save. Creating a separate group retains the original bilateral chat and treaties.
-- The player speaks first. Explicitly addressed countries get priority; other speakers are selected using interests, relations, topic and recent participation. At most three AI replies are generated sequentially per turn and appear as each finishes.
-- Qwen receives the common transcript, the speaking country's own prior positions and campaign-matched Bridge observations. The speaker lottery never decides acceptance or refusal. Countries keep full English names while interface controls support English, Russian and French.
-- Signing and native game execution still require explicit player confirmation. Discussion cannot apply game effects.
-
-Existing users: close EYES, HOI4 and the Paradox launcher, then manually run Install HOI4-EYES.exe from the updated Workshop folder or GitHub installer archive and choose Update / repair. Settings, histories, saves, models and existing personal treaty packages are preserved.
-
-Validation includes native-window interaction tests, a real three-country Qwen response cycle selected from six counterparts, restart/history checks, bilateral/treaty regressions and isolated offline installer verification. New HOI4 game effects and clean Windows VM acceptance were not tested in this update. Installer C2 remains unsigned.
-
-By NightPulse. Source and archives: https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6
+Close HOI4, EYES and the launcher, let Steam download the update, then run Install HOI4-EYES.exe and choose Update / repair.
+Live verification of the new button and full native game effects remains pending. Automated validation covers the GUI files, registration, treaty routing and retained user data.
+By NightPulse. https://github.com/andreykli/hoi4-eyes-public/releases/tag/v0.9.0-beta.6

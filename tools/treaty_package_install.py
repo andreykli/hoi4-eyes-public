@@ -198,6 +198,14 @@ def allowed_install_roots(default_root: Any = None) -> list[Path]:
     if not roots:
         base = Path(default_root) if default_root is not None else Path(__file__).resolve().parents[1] / "prepared"
         roots = [base.resolve()]
+        if default_root is None:
+            try:
+                from single_mod import active_source
+                from unified_mod_setup import documents_directory
+                selected=active_source(Path(__file__).resolve().parents[1],documents_directory())
+                if selected not in roots:roots.append(selected)
+            except (OSError,ValueError,KeyError):
+                pass
     return roots
 
 

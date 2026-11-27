@@ -12,7 +12,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.9.0-beta.6'
-MOD_NAME = f'HOI4-EYES {VERSION}'
+MOD_NAME = 'HOI4-EYES'
 PRIVATE_DEVELOPER_FILES = frozenset({
     'tools/developer_desktop.py', 'tools/desktop_acceptance.py',
     'tools/live_qa.py', 'tools/live_qa_scripts.py',
