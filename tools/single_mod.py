@@ -11,18 +11,40 @@ CORE=('interface/ai_assistant_diplomacy_gui.gui','common/scripted_guis/ai_assist
 
 def read(path):return json.loads(Path(path).read_text(encoding='utf-8-sig'))
 
+def cache_candidates(registered):
+    from validate_hoi4_gui import discover_hoi4_install
+    result=[Path(registered)]
+    game=discover_hoi4_install()
+    if game is not None:
+        game=Path(game)
+        if game.parent.name.casefold()=='common':
+            result.append(game.parent.parent/'workshop/content/394360'/ITEM)
+    return list(dict.fromkeys(result))
+
 def workshop_registration(documents):
     from validate_hoi4_gui import parse_mod_descriptor
-    from workshop_update import registered_workshop_id
+    from workshop_update import registered_workshop_id,version_key
     for path in sorted((Path(documents)/'mod').glob('*.mod')):
         data=parse_mod_descriptor(path.read_text(encoding='utf-8-sig'))
-        if registered_workshop_id(path,data)!=ITEM:continue
-        folder=Path(str(data.first('path') or '').strip('"')).resolve()
-        meta=read(folder/'PUBLICATION.json')
-        if (folder.parts[-2:]!=('394360',ITEM) or meta.get('project')!='HOI4-EYES'
-                or meta.get('author')!='NightPulse' or meta.get('github_url')!='https://github.com/andreykli/hoi4-eyes-public'):
-            raise ValueError('unknown_workshop_identity')
-        return path,folder
+        registered=Path(str(data.first('path') or '').strip('"'))
+        try:item=registered_workshop_id(path,data)
+        except FileNotFoundError:
+            item=ITEM if path.name=='ugc_'+ITEM+'.mod' and registered.parts[-2:]==('394360',ITEM) else ''
+        if item!=ITEM:continue
+        verified=[]
+        for folder in cache_candidates(registered):
+            folder=folder.resolve()
+            try:
+                meta=read(folder/'PUBLICATION.json')
+                protocol=read(folder/'release/installation_protocol.json')
+            except FileNotFoundError:continue
+            if (folder.parts[-2:]!=('394360',ITEM) or meta.get('project')!='HOI4-EYES'
+                    or meta.get('author')!='NightPulse' or meta.get('github_url')!='https://github.com/andreykli/hoi4-eyes-public'):
+                raise ValueError('unknown_workshop_identity')
+            verified.append((version_key(meta['version']),int(protocol.get('installer_revision',0)),
+                (folder/'release/installation_protocol.json').stat().st_mtime_ns,folder))
+        if not verified:raise ValueError('official_workshop_files_unavailable')
+        return path,max(verified,key=lambda row:row[:3])[3]
     return None
 
 def registration_paths(documents):
@@ -99,11 +121,16 @@ def consolidate(app,documents,profile,*,consent=False):
         from user_storage import copy_database
         copy_database(database,backup/'launcher-v2.sqlite')
     try:
+        primary_data=parse_mod_descriptor(primary.read_text(encoding='utf-8-sig'))
+        old_primary=Path(str(primary_data.first('path') or '').strip('"'))
+        if old_primary.is_dir() and old_primary.resolve()!=folder:
+            copy_owned(old_primary,folder)
         for _,old in duplicates:
             if old.resolve()!=folder:copy_owned(old,folder)
         text=primary.read_text(encoding='utf-8-sig')
         import re
         text=re.sub(r'(?m)^\s*name\s*=\s*"[^"\r\n]*"','name="HOI4-EYES"',text,count=1)
+        text=re.sub(r'(?m)^\s*path\s*=\s*"[^"\r\n]*"',lambda _: 'path="'+folder.as_posix()+'"',text,count=1)
         primary.write_bytes(text.encode('utf-8'))
         config=read(load) if load.exists() else {'enabled_mods':[]}
         removed={'mod/'+p.name for p,_ in duplicates};chosen='mod/'+primary.name
@@ -123,7 +150,7 @@ def consolidate(app,documents,profile,*,consent=False):
                     if (not steam and (str(title or '')=='HOI4-EYES' or str(title or '').startswith('HOI4-EYES '))):
                         db.execute('DELETE FROM playsets_mods WHERE modId=?',(identifier,))
                         db.execute('DELETE FROM mods WHERE id=?',(identifier,))
-                db.execute('UPDATE mods SET name=?,displayName=? WHERE id=?',('HOI4-EYES','HOI4-EYES',keep))
+                db.execute('UPDATE mods SET name=?,displayName=?,dirPath=? WHERE id=?',('HOI4-EYES','HOI4-EYES',str(folder),keep))
                 active=db.execute('SELECT id FROM playsets WHERE isActive=1').fetchall()
                 for (playset,) in active:
                     if db.execute('SELECT 1 FROM playsets_mods WHERE playsetId=? AND modId=?',(playset,keep)).fetchone():

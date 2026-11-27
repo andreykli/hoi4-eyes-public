@@ -1,4 +1,4 @@
-HOI4-EYES 0.9.0-beta.6 — single-mod-button-1, HOI4 1.20
+HOI4-EYES 0.9.0-beta.6 — single-mod-button-2, HOI4 1.20
 
 - One HOI4-EYES registration: setup uses the official Workshop copy and archives duplicate local registrations. Other mods, saves, profiles, models and old source folders are retained.
 - A labelled HOI4-EYES button is positioned at the upper left of the map, below the HUD, without depending on the top-bar container.

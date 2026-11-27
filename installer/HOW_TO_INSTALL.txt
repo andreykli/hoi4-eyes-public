@@ -1,4 +1,4 @@
-ONE HOI4-EYES MOD — single-mod-button-1
+ONE HOI4-EYES MOD — single-mod-button-2
 Let Steam download the updated Workshop files. Close HOI4, EYES and the launcher, run Install HOI4-EYES.exe and choose Update / repair. Setup retains the official Workshop mod, backs up and removes duplicate local registrations, and keeps profiles, saves, old source folders and personal treaty files.
 The labelled HOI4-EYES button is at the upper left of the map below the HUD. It is shown in a loaded campaign, not on the main menu.
 

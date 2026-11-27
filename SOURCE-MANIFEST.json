@@ -138,7 +138,7 @@
       "bytes": 1002
     },
     "docs/GITHUB_RELEASE.md": {
-      "sha256": "22f75163f648aacedef214216c51846c86668365e40ae72445ec25d695609f4a",
+      "sha256": "e700dec7fbf6e392967f2e8b8f9b03651873968dc2ed3f02bb4be73464c70a10",
       "bytes": 1154
     },
     "docs/LICENSES.md": {
@@ -158,7 +158,7 @@
       "bytes": 2118
     },
     "docs/STEAM_CHANGELOG_EN.txt": {
-      "sha256": "b5ed3d7600fd83f9cca83ff52b6738ff78d4c9427d86501020ea55b2be9c9ef1",
+      "sha256": "1d9fdf1bcbc02fb53b660c7c74efcce687ba40454a1b9e495a5653306138c2fe",
       "bytes": 1062
     },
     "docs/WORKSHOP.md": {
@@ -186,7 +186,7 @@
       "bytes": 12900
     },
     "installer/HOW_TO_INSTALL.txt": {
-      "sha256": "b1ddaedb3b05f475590305b02785dca1d353ecf065558adb5940aa3c3c27f644",
+      "sha256": "be887f7581de767dda389856a798062466926fc2a35294a6b37b8980474d8ed3",
       "bytes": 6165
     },
     "installer/THIRD-PARTY.txt": {
@@ -866,8 +866,8 @@
       "bytes": 3236
     },
     "tools/single_mod.py": {
-      "sha256": "e5f76e5288b7664d944daddc30c8bbebee6db5ed30fd32e18621cbfc55753ba4",
-      "bytes": 7655
+      "sha256": "a314df8353f9790181764156f955bc5880a121b2f077868c1deb1611ce55a513",
+      "bytes": 9160
     },
     "tools/stack_readiness.py": {
       "sha256": "05d0599a83dc4b1d262bacbc164aee516c68b9cc2a58d050f2ed66575dfc24c1",
